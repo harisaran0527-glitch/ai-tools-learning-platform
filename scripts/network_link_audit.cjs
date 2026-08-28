@@ -25,8 +25,8 @@ const VERIFIED_TOOL_DATABASE = {
   'huggingchat': { officialUrl: 'https://huggingface.co/chat', docsUrl: 'https://huggingface.co/docs', ctaLabel: 'Open Hugging Face →' },
   'grok': { officialUrl: 'https://x.ai', docsUrl: 'https://docs.x.ai', ctaLabel: 'View Official Project →' },
   'qwen-chat': { officialUrl: 'https://chat.qwenlm.ai', docsUrl: 'https://qwen.readthedocs.io', ctaLabel: 'Try Tool for Free →' },
-  'phind': { officialUrl: 'https://www.phind.com', docsUrl: 'https://www.phind.com', ctaLabel: 'Try Tool for Free →' },
-  'you-com': { officialUrl: 'https://you.com', ctaLabel: 'Try Tool for Free →' },
+  'phind': { officialUrl: 'https://www.phind.com', docsUrl: 'https://www.phind.com', ctaLabel: 'Try Tool for Free →', tutorialVideo: { title: 'Phind AI Search Engine for Developers', url: 'https://www.youtube.com/watch?v=pY52LzE6M64', source: 'YouTube' } },
+  'you-com': { officialUrl: 'https://you.com', docsUrl: 'https://about.you.com', ctaLabel: 'Try Tool for Free →', tutorialVideo: { title: 'How to Use You.com AI Search & Assistant (Full Tutorial)', url: 'https://www.youtube.com/watch?v=5V_24C3nN_o', source: 'YouTube' } },
   'duckduckgo-ai-chat': { officialUrl: 'https://duckduckgo.com/chat', ctaLabel: 'Try Tool for Free →' },
   'jan-ai': { officialUrl: 'https://jan.ai', docsUrl: 'https://jan.ai/docs', ctaLabel: 'Open Official GitHub →' },
   'lm-studio': { officialUrl: 'https://lmstudio.ai', docsUrl: 'https://lmstudio.ai/docs', ctaLabel: 'View Official Project →' },
@@ -265,14 +265,19 @@ function checkUrlNetwork(url, timeoutMs = 4000) {
 async function runFullAudit() {
   console.log("=================== STARTING LIVE LINK & VIDEO AUDIT ===================");
 
-  const fileContent = fs.readFileSync(toolsDataPath, 'utf8');
-  const match = fileContent.match(/export const ALL_TOOLS: AITool\[\] = (\[[\s\S]*\]);/);
-  if (!match) {
-    console.error("Could not parse ALL_TOOLS!");
-    process.exit(1);
-  }
-
-  const tools = JSON.parse(match[1]);
+  const categoriesDir = path.join(__dirname, '../src/data/catalog/categories');
+  const catFiles = fs.readdirSync(categoriesDir).filter(f => f.endsWith('.ts'));
+  let tools = [];
+  catFiles.forEach(f => {
+    const raw = fs.readFileSync(path.join(categoriesDir, f), 'utf8');
+    const jsonMatch = raw.match(/export const \w+: AITool\[\] = (\[[\s\S]*\]);\s*$/);
+    if (jsonMatch) {
+      try {
+        const catTools = JSON.parse(jsonMatch[1]);
+        tools.push(...catTools);
+      } catch (e) {}
+    }
+  });
   console.log(`Loaded ${tools.length} tool records from catalog.`);
 
   let officialVerified = 0;
@@ -381,7 +386,6 @@ async function runFullAudit() {
   }
 
   // Create categories directory if not exists
-  const categoriesDir = path.join(__dirname, '../src/data/catalog/categories');
   if (!fs.existsSync(categoriesDir)) {
     fs.mkdirSync(categoriesDir, { recursive: true });
   }

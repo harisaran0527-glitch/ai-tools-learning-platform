@@ -1448,7 +1448,7 @@ export const chatbots_assistants_tools: AITool[] = [
     "officialUrl": "https://www.phind.com",
     "officialStatus": "verified",
     "docsStatus": "verified",
-    "tutorialVideoStatus": "unavailable",
+    "tutorialVideoStatus": "verified",
     "keywords": [
       "Phind",
       "Chatbots / Assistants",
@@ -1461,7 +1461,12 @@ export const chatbots_assistants_tools: AITool[] = [
     "lastVerified": "2026-08-28",
     "verifiedAt": "2026-08-28",
     "badge": "Try Tool for Free →",
-    "docsUrl": "https://www.phind.com"
+    "docsUrl": "https://www.phind.com",
+    "tutorialVideo": {
+      "title": "Phind AI Search Engine for Developers",
+      "url": "https://www.youtube.com/watch?v=pY52LzE6M64",
+      "source": "YouTube"
+    }
   },
   {
     "id": "tool-14",
@@ -1558,8 +1563,8 @@ export const chatbots_assistants_tools: AITool[] = [
     },
     "officialUrl": "https://you.com",
     "officialStatus": "verified",
-    "docsStatus": "unavailable",
-    "tutorialVideoStatus": "unavailable",
+    "docsStatus": "verified",
+    "tutorialVideoStatus": "verified",
     "keywords": [
       "You.com",
       "Chatbots / Assistants",
@@ -1571,7 +1576,13 @@ export const chatbots_assistants_tools: AITool[] = [
     ],
     "lastVerified": "2026-08-28",
     "verifiedAt": "2026-08-28",
-    "badge": "Try Tool for Free →"
+    "badge": "Try Tool for Free →",
+    "docsUrl": "https://about.you.com",
+    "tutorialVideo": {
+      "title": "How to Use You.com AI Search & Assistant (Full Tutorial)",
+      "url": "https://www.youtube.com/watch?v=5V_24C3nN_o",
+      "source": "YouTube"
+    }
   },
   {
     "id": "tool-15",

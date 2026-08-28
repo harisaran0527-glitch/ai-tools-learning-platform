@@ -7,7 +7,7 @@ import { PromptBox } from '../components/PromptBox';
 import { VideoPlayer } from '../components/VideoPlayer';
 import {
   ExternalLink, Bookmark, Clock, CheckCircle2, Award, ArrowLeft, ArrowRight,
-  Sparkles, HelpCircle, FileText, CheckSquare, Layers, ShieldCheck, PlayCircle, GraduationCap
+  Sparkles, HelpCircle, FileText, CheckSquare, Layers, ShieldCheck, PlayCircle, GraduationCap, BookOpen
 } from 'lucide-react';
 
 export const ToolDetailPage: React.FC = () => {
@@ -174,7 +174,17 @@ export const ToolDetailPage: React.FC = () => {
             <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginTop: '24px', flexWrap: 'wrap', borderTop: '1px solid var(--border)', paddingTop: '20px' }}>
               {tool.officialStatus === 'verified' && tool.officialUrl ? (
                 <a href={tool.officialUrl} target="_blank" rel="noopener noreferrer" className="btn-primary">
-                  <ExternalLink size={16} /> {tool.pricingType === 'open-source' ? 'Open Official Project / GitHub →' : 'Try Tool for Free →'}
+                  <ExternalLink size={16} /> {
+                    tool.badge && tool.badge.includes('→')
+                      ? tool.badge
+                      : tool.officialUrl.includes('github.com')
+                      ? 'Open Official GitHub →'
+                      : tool.officialUrl.includes('huggingface.co')
+                      ? 'Open Hugging Face →'
+                      : tool.pricingType === 'open-source'
+                      ? 'Open Official GitHub →'
+                      : 'Try Tool for Free →'
+                  }
                 </a>
               ) : (
                 <span
@@ -199,27 +209,18 @@ export const ToolDetailPage: React.FC = () => {
 
               {tool.docsStatus === 'verified' && tool.docsUrl ? (
                 <a href={tool.docsUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary">
-                  <FileText size={16} /> Official Documentation →
+                  <FileText size={16} /> {
+                    tool.docsUrl.includes('github.com')
+                      ? 'Official GitHub Guide →'
+                      : tool.docsUrl.includes('huggingface.co')
+                      ? 'Hugging Face Guide →'
+                      : 'Official Documentation →'
+                  }
                 </a>
               ) : (
-                <span
-                  style={{
-                    background: 'rgba(255, 255, 255, 0.05)',
-                    color: 'var(--muted)',
-                    border: '1px solid var(--border)',
-                    padding: '10px 18px',
-                    borderRadius: '10px',
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '8px',
-                    fontSize: '14px',
-                    fontWeight: 600,
-                    cursor: 'not-allowed'
-                  }}
-                  title="Official documentation has not been live-verified"
-                >
-                  <FileText size={16} /> Documentation Not Available
-                </span>
+                <a href="#platform-guide" className="btn-secondary" style={{ background: 'rgba(108,99,255,0.12)', border: '1px solid var(--accent1)', color: 'var(--accent1)' }}>
+                  <FileText size={16} /> Read Platform Learning Guide ↓
+                </a>
               )}
 
               <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '12px', fontSize: '13px', color: 'var(--muted)' }}>
@@ -378,8 +379,79 @@ export const ToolDetailPage: React.FC = () => {
             <h2 style={{ fontFamily: 'Sora, sans-serif', fontSize: '22px', marginBottom: '12px' }}>
               🎬 Video Tutorial
             </h2>
-            <VideoPlayer video={tool.tutorialVideo} toolName={tool.name} />
+            <VideoPlayer video={tool.tutorialVideo} toolName={tool.name} subcategory={tool.subcategory} />
           </section>
+
+          {/* SECTION 9B — Documentation Resource */}
+          {tool.docsStatus === 'verified' && tool.docsUrl ? (
+            <section id="documentation" style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '20px', padding: '28px', marginBottom: '32px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px', flexWrap: 'wrap', gap: '8px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                  <span className="badge badge-open-source" style={{ background: 'rgba(6,214,160,0.15)', color: 'var(--accent5)', border: '1px solid rgba(6,214,160,0.3)', fontSize: '11px' }}>
+                    {tool.docsUrl.includes('github.com') ? 'GITHUB GUIDE' : tool.docsUrl.includes('huggingface.co') ? 'HUGGING FACE GUIDE' : 'OFFICIAL DOCS'}
+                  </span>
+                  <h2 style={{ fontFamily: 'Sora, sans-serif', fontSize: '22px', color: '#fff', margin: 0, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <BookOpen size={22} color="var(--accent2)" /> Official Documentation
+                  </h2>
+                </div>
+
+                <a href={tool.docsUrl} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ padding: '8px 16px', fontSize: '13px' }}>
+                  Open Official Documentation <ExternalLink size={14} />
+                </a>
+              </div>
+              <p style={{ color: 'var(--muted)', fontSize: '14px', margin: 0 }}>
+                Access official guides, API references, and user manuals directly from the tool developer.
+              </p>
+            </section>
+          ) : (
+            <section id="platform-guide" style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '20px', padding: '28px', marginBottom: '32px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px', flexWrap: 'wrap', gap: '8px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                  <span className="badge badge-free" style={{ background: 'rgba(108,99,255,0.15)', color: 'var(--accent1)', border: '1px solid rgba(108,99,255,0.3)', fontSize: '11px' }}>
+                    PLATFORM GUIDE
+                  </span>
+                  <h2 style={{ fontFamily: 'Sora, sans-serif', fontSize: '22px', color: '#fff', margin: 0, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <BookOpen size={22} color="var(--accent1)" /> Platform Learning Guide
+                  </h2>
+                </div>
+              </div>
+
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
+                <div style={{ background: 'var(--surface2)', padding: '16px', borderRadius: '12px', border: '1px solid var(--border)' }}>
+                  <h4 style={{ color: 'var(--accent1)', fontSize: '14px', marginBottom: '6px' }}>📌 Tool Overview & Purpose</h4>
+                  <p style={{ fontSize: '13px', color: 'var(--text)', lineHeight: 1.5, margin: 0 }}>
+                    {tool.fullDescription}
+                  </p>
+                </div>
+
+                <div style={{ background: 'var(--surface2)', padding: '16px', borderRadius: '12px', border: '1px solid var(--border)' }}>
+                  <h4 style={{ color: 'var(--accent2)', fontSize: '14px', marginBottom: '6px' }}>🚀 Getting Started</h4>
+                  <p style={{ fontSize: '13px', color: 'var(--text)', lineHeight: 1.5, margin: 0 }}>
+                    {tool.freePlanDetails} ({tool.signupRequired ? 'Account Required' : 'No Account Needed'}, {tool.installationRequired ? 'Local Setup' : 'Browser Based'}).
+                  </p>
+                </div>
+
+                <div style={{ background: 'var(--surface2)', padding: '16px', borderRadius: '12px', border: '1px solid var(--border)' }}>
+                  <h4 style={{ color: 'var(--accent4)', fontSize: '14px', marginBottom: '6px' }}>🎓 Educator & Student Benefits</h4>
+                  <p style={{ fontSize: '13px', color: 'var(--text)', lineHeight: 1.5, margin: 0 }}>
+                    {tool.whyLearn[0] || 'Drastically reduces preparation time.'} {tool.whyLearn[1] || 'Empowers educators and learners.'}
+                  </p>
+                </div>
+
+                <div style={{ background: 'var(--surface2)', padding: '16px', borderRadius: '12px', border: '1px solid var(--border)' }}>
+                  <h4 style={{ color: 'var(--accent5)', fontSize: '14px', marginBottom: '6px' }}>💡 Tips & Primary Source</h4>
+                  <p style={{ fontSize: '13px', color: 'var(--text)', lineHeight: 1.5, marginBottom: '8px' }}>
+                    Review AI outputs for factual accuracy. Access verified resources via the primary link below.
+                  </p>
+                  {tool.officialUrl && (
+                    <a href={tool.officialUrl} target="_blank" rel="noopener noreferrer" style={{ fontSize: '12px', color: 'var(--accent2)', textDecoration: 'none', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                      Open Primary Source <ExternalLink size={12} />
+                    </a>
+                  )}
+                </div>
+              </div>
+            </section>
+          )}
 
           {/* SECTION 10 — Take Assessment */}
           <section id="assessment" style={{ background: 'linear-gradient(135deg, #0e1220 0%, #161c32 100%)', border: '2px solid var(--accent1)', borderRadius: '20px', padding: '32px', textAlign: 'center', boxShadow: '0 0 30px rgba(108,99,255,0.2)' }}>

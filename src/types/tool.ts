@@ -1,6 +1,9 @@
 export type PricingType = 'free' | 'free-tier' | 'open-source' | 'free-trial';
 export type DifficultyLevel = 'Beginner' | 'Intermediate' | 'Advanced';
 
+export type TutorialResourceType = 'youtube' | 'platform';
+export type DocumentationResourceType = 'official' | 'github' | 'huggingface' | 'platform';
+
 export interface ToolFeature {
   title: string;
   description: string;
@@ -20,12 +23,36 @@ export interface PracticalExercise {
   skillsLearned: string[];
 }
 
-export interface TutorialVideo {
+export interface InteractiveTutorialStep {
+  stepNumber: number;
   title: string;
-  url: string;
-  source: string;
+  description: string;
+  examplePrompt?: string;
+  expectedOutcome?: string;
+}
+
+export interface TutorialVideo {
+  type?: TutorialResourceType;
+  title: string;
+  url?: string;
+  source?: string;
   sourceType?: string;
   embedUrl?: string;
+  steps?: InteractiveTutorialStep[];
+  verifiedAt?: string;
+}
+
+export interface DocumentationSection {
+  title: string;
+  content: string;
+}
+
+export interface DocumentationResource {
+  type: DocumentationResourceType;
+  title: string;
+  url?: string;
+  sections?: DocumentationSection[];
+  verifiedAt?: string;
 }
 
 export interface AITool {
@@ -67,6 +94,8 @@ export interface AITool {
 
   tutorialVideo?: TutorialVideo;
   tutorialVideoStatus?: 'verified' | 'unavailable';
+  tutorialResource?: TutorialVideo;
+  documentationResource?: DocumentationResource;
 
   keywords: string[];
 
@@ -75,3 +104,4 @@ export interface AITool {
   iconBgGradient?: string;
   badge?: string;
 }
+
