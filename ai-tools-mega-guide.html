@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Tools Mega Guide 2026 – Nexflow Studio</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Sora:wght@300;400;600;800&display=swap');
+
+  :root {
+    --bg: #080b14;
+    --surface: #0e1220;
+    --surface2: #141928;
+    --border: #1e2640;
+    --accent1: #6c63ff;
+    --accent2: #00d4aa;
+    --accent3: #ff6b6b;
+    --accent4: #ffd166;
+    --accent5: #06d6a0;
+    --text: #e8eaf0;
+    --muted: #7a84a0;
+    --card-hover: #181f35;
+    --glow: rgba(108,99,255,0.15);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* HEADER */
+  .hero {
+    background: linear-gradient(135deg, #080b14 0%, #0d0f1f 50%, #080b14 100%);
+    padding: 60px 24px 48px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -120px; left: 50%;
+    transform: translateX(-50%);
+    width: 600px; height: 300px;
+    background: radial-gradient(ellipse, rgba(108,99,255,0.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(108,99,255,0.12);
+    border: 1px solid rgba(108,99,255,0.3);
+    color: #9c94ff;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'JetBrains Mono', monospace;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: 'Sora', sans-serif;
+    font-size: clamp(28px, 5vw, 52px);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, #ffffff 0%, #9c94ff 50%, #00d4aa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .hero p {
+    color: var(--muted);
+    font-size: 15px;
+    max-width: 520px;
+    margin: 0 auto 28px;
+  }
+  .stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .stat {
+    text-align: center;
+  }
+  .stat-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--accent2);
+    display: block;
+  }
+  .stat-label {
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* NAV */
+  .nav-tabs {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(8,11,20,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 16px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-tabs::-webkit-scrollbar { display: none; }
+  .nav-inner {
+    display: inline-flex;
+    gap: 2px;
+    padding: 8px 0;
+  }
+  .tab-btn {
+    background: none;
+    border: none;
+    color: var(--muted);
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .tab-btn:hover { color: var(--text); background: var(--surface); }
+  .tab-btn.active {
+    background: var(--accent1);
+    color: #fff;
+  }
+
+  /* MAIN */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+  }
+
+  /* SECTION */
+  .section { display: none; }
+  .section.active { display: block; }
+
+  .section-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 36px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-icon {
+    font-size: 44px;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+  .section-meta h2 {
+    font-family: 'Sora', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 6px;
+  }
+  .section-meta p {
+    color: var(--muted);
+    font-size: 14px;
+    max-width: 600px;
+  }
+  .tool-count-badge {
+    display: inline-block;
+    background: rgba(0,212,170,0.1);
+    border: 1px solid rgba(0,212,170,0.25);
+    color: var(--accent2);
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    margin-top: 8px;
+  }
+
+  /* TOOLS GRID */
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+  }
+
+  .tool-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.25s;
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+  }
+  .tool-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent1), var(--accent2));
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+  .tool-card:hover {
+    background: var(--card-hover);
+    border-color: rgba(108,99,255,0.35);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+  }
+  .tool-card:hover::before { opacity: 1; }
+
+  .tool-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 10px;
+  }
+  .tool-name {
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--text);
+  }
+  .tool-tag {
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .tag-free { background: rgba(0,212,170,0.1); color: var(--accent2); border: 1px solid rgba(0,212,170,0.2); }
+  .tag-freemium { background: rgba(255,209,102,0.1); color: var(--accent4); border: 1px solid rgba(255,209,102,0.2); }
+  .tag-paid { background: rgba(255,107,107,0.1); color: var(--accent3); border: 1px solid rgba(255,107,107,0.2); }
+  .tag-open { background: rgba(108,99,255,0.1); color: #9c94ff; border: 1px solid rgba(108,99,255,0.2); }
+
+  .tool-desc {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.65;
+    margin-bottom: 12px;
+  }
+  .tool-superpower {
+    background: rgba(108,99,255,0.08);
+    border-left: 2px solid var(--accent1);
+    padding: 7px 10px;
+    border-radius: 0 6px 6px 0;
+    font-size: 12px;
+    color: #b0aee8;
+    font-style: italic;
+  }
+
+  /* SEARCH */
+  .search-bar {
+    width: 100%;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 16px 12px 40px;
+    color: var(--text);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 32px;
+    transition: border-color 0.2s;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%237a84a0' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.099zm-5.242 1.56a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 14px center;
+  }
+  .search-bar:focus { border-color: var(--accent1); }
+  .search-bar::placeholder { color: var(--muted); }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    padding: 32px 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .hidden { display: none !important; }
+
+  @media (max-width: 600px) {
+    .tools-grid { grid-template-columns: 1fr; }
+    .section-header { flex-direction: column; gap: 10px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">Nexflow Studio · AI Tools Mastery 2026</div>
+  <h1>The Hidden AI Arsenal</h1>
+  <p>200+ underrated & unknown AI tools across 12 categories. Tools most people have never heard of — but shouldn't sleep on.</p>
+  <div class="stats-row">
+    <div class="stat"><span class="stat-num">12</span><span class="stat-label">Categories</span></div>
+    <div class="stat"><span class="stat-num">200+</span><span class="stat-label">Tools</span></div>
+    <div class="stat"><span class="stat-num">2026</span><span class="stat-label">Updated</span></div>
+  </div>
+</div>
+
+<!-- NAV -->
+<div class="nav-tabs">
+  <div class="nav-inner">
+    <button class="tab-btn active" onclick="showSection('chatbots')">🧠 Chatbots</button>
+    <button class="tab-btn" onclick="showSection('image')">🖼️ Image Gen</button>
+    <button class="tab-btn" onclick="showSection('video')">🎥 Video Gen</button>
+    <button class="tab-btn" onclick="showSection('audio')">🔊 Audio/Voice</button>
+    <button class="tab-btn" onclick="showSection('search')">🔍 Search/Research</button>
+    <button class="tab-btn" onclick="showSection('writing')">📄 Writing/Docs</button>
+    <button class="tab-btn" onclick="showSection('education')">🎓 Education</button>
+    <button class="tab-btn" onclick="showSection('gaming')">🎮 Gaming/3D</button>
+    <button class="tab-btn" onclick="showSection('music')">🎵 Music Gen</button>
+    <button class="tab-btn" onclick="showSection('speech')">🗣️ Speech to Text</button>
+    <button class="tab-btn" onclick="showSection('photo')">📸 Photo Editing</button>
+    <button class="tab-btn" onclick="showSection('ppt')">📊 PPT Creation</button>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div class="container">
+  <input class="search-bar" type="text" placeholder="Search tools across all categories..." id="searchInput" onkeyup="filterTools()" />
+
+  <!-- ===== CHATBOTS ===== -->
+  <div class="section active" id="chatbots">
+    <div class="section-header">
+      <div class="section-icon">🧠</div>
+      <div class="section-meta">
+        <h2>Chatbots / Assistants</h2>
+        <p>Beyond ChatGPT — specialized, private, and niche AI assistants that crush specific tasks.</p>
+        <span class="tool-count-badge">20 tools</span>
+      </div>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Poe by Quora</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Aggregates Claude, GPT-4, Mistral, LLaMA, and 100+ models in one place. Switch models mid-conversation without losing context.</p><div class="tool-superpower">💡 Superpower: One subscription, every major model</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Phind</span><span class="tool-tag tag-free">Free</span></div><p class="tool-desc">Search engine built for developers. Gives code-first answers with citations from docs, GitHub, and Stack Overflow. Faster than ChatGPT for debugging.</p><div class="tool-superpower">💡 Superpower: Thinks like a senior engineer</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">ChatLLM (Abacus.AI)</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Bundles GPT, Claude, Gemini, and Llama under one interface. Supports multi-model comparison in split view — no switching tabs.</p><div class="tool-superpower">💡 Superpower: Side-by-side model battles</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Merlin AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Browser extension that brings AI into any webpage via a keyboard shortcut. Summarize, rewrite, or ask about content without leaving the tab.</p><div class="tool-superpower">💡 Superpower: AI everywhere with one hotkey</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Neuroflash</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">European AI assistant with a special focus on German-language content quality. GDPR-compliant — all data stays in the EU. Best ChatGPT alt for European businesses.</p><div class="tool-superpower">💡 Superpower: GDPR-native with superior German output</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">YourGPT</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Build custom AI agents trained on your business data — no coding. Deploys to WhatsApp, web chat, and internal tools in minutes.</p><div class="tool-superpower">💡 Superpower: No-code AI agent for your business</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Kagi Assistant</span><span class="tool-tag tag-paid">Paid</span></div><p class="tool-desc">Privacy-first AI search + assistant with zero ads and no data selling. Combines web search with AI responses. Built for people who hate Google's AI Overviews.</p><div class="tool-superpower">💡 Superpower: 100% private, ad-free, no tracking</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">HuggingChat</span><span class="tool-tag tag-free">Free</span></div><p class="tool-desc">Open-source ChatGPT alternative powered by the best open models (Mistral, Llama, Falcon). No account needed, completely free — and you can run models locally.</p><div class="tool-superpower">💡 Superpower: Best free open-source chatbot</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Cohere Command</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Enterprise-grade LLM with a focus on RAG (retrieval-augmented generation). Best for chatbots that need to search YOUR documents — not just general knowledge.</p><div class="tool-superpower">💡 Superpower: RAG-first enterprise AI</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Inflection Pi</span><span class="tool-tag tag-free">Free</span></div><p class="tool-desc">Personal AI designed for emotional depth and empathy. Doesn't just answer — it listens, remembers, and engages naturally. Better than ChatGPT for personal reflection.</p><div class="tool-superpower">💡 Superpower: Most emotionally intelligent AI</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Mistral Le Chat</span><span class="tool-tag tag-free">Free</span></div><p class="tool-desc">Europe's best LLM. Extremely fast, multilingual, and privacy-focused. The French-built model that rivals GPT-4 for coding and reasoning tasks.</p><div class="tool-superpower">💡 Superpower: GPT-4 quality, EU sovereign, ultra fast</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Aria by Opera</span><span class="tool-tag tag-free">Free</span></div><p class="tool-desc">Built into Opera browser — browse and chat simultaneously. Summarizes tabs, answers questions from the page you're on, and works offline for basic tasks.</p><div class="tool-superpower">💡 Superpower: AI baked into your browser, zero setup</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Venice AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Fully private AI — conversations are never stored, logged, or used for training. Runs open-source models locally on their servers. For truly sensitive work.</p><div class="tool-superpower">💡 Superpower: Zero data retention, truly private AI</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Glean</span><span class="tool-tag tag-paid">Paid</span></div><p class="tool-desc">Enterprise AI search that connects to your entire work stack — Slack, Drive, Jira, Notion, email. Answers questions using your company's internal knowledge.</p><div class="tool-superpower">💡 Superpower: Your company's brain in one AI</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">WizardLM (Microsoft)</span><span class="tool-tag tag-open">Open Source</span></div><p class="tool-desc">Open-weight LLM fine-tuned for following complex instructions better than base models. Ideal for agentic tasks and multi-step reasoning. Run it free on Ollama.</p><div class="tool-superpower">💡 Superpower: Best instruction-following open model</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">OpenRouter</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">API gateway to 200+ AI models with a single key. Auto-routes to the cheapest available model that meets your quality threshold. Developers' secret weapon.</p><div class="tool-superpower">💡 Superpower: One API key, every AI model on earth</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Ora.ai</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Build and publish custom AI chatbots as shareable web apps — no backend needed. Has a marketplace where thousands of community bots live.</p><div class="tool-superpower">💡 Superpower: Publish AI chatbots like websites</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Elicit</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Research AI that searches, reads, and synthesizes academic papers for you. Not a chatbot — it's a research workflow engine with citation tracking.</p><div class="tool-superpower">💡 Superpower: Your AI literature review assistant</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Forefront AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Fine-tune and deploy custom versions of open-source models. Add your knowledge base, set a persona, and ship your own AI — no ML expertise needed.</p><div class="tool-superpower">💡 Superpower: Fine-tune LLMs without code</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Luzia</span><span class="tool-tag tag-free">Free</span></div><p class="tool-desc">AI assistant natively inside WhatsApp — no app install. Huge in Latin America. Answers questions, generates images, and helps with tasks via chat.</p><div class="tool-superpower">💡 Superpower: AI inside WhatsApp, zero friction</div></div>
+    </div>
+  </div>
+
+  <!-- ===== IMAGE GEN ===== -->
+  <div class="section" id="image">
+    <div class="section-header">
+      <div class="section-icon">🖼️</div>
+      <div class="section-meta">
+        <h2>Image Generation</h2>
+        <p>Beyond Midjourney & DALL·E — tools that beat them in specific areas like typography, vectors, and photorealism.</p>
+        <span class="tool-count-badge">20 tools</span>
+      </div>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Recraft V3</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">The only AI image model that generates real SVG vectors — exportable to Illustrator, Figma, or print in CMYK. Midjourney cannot do this at all.</p><div class="tool-superpower">💡 Superpower: True SVG vector output from text prompts</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">FLUX.2 (Black Forest Labs)</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Most photorealistic AI image model in 2026. Built by ex-Stability AI researchers. Delivers skin texture and lighting accuracy that beats Midjourney for portraits.</p><div class="tool-superpower">💡 Superpower: #1 photorealism, 3¢/image via API</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Ideogram 4.0</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">The only model that generates truly legible text inside images. Ideal for posters, logos, signage, and thumbnails. Midjourney still can't spell reliably.</p><div class="tool-superpower">💡 Superpower: Perfect text-in-image generation</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Seedream 5.0</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Production-focused image model from ByteDance with high-resolution output and structured prompt control. Best for batch asset pipelines and commercial design.</p><div class="tool-superpower">💡 Superpower: Production-grade batch image generation</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Nano Banana 2 (Google)</span><span class="tool-tag tag-free">Free</span></div><p class="tool-desc">Google's Gemini-powered image model — free inside the Gemini app. Tops benchmarks for UGC ad creatives and character consistency. Criminally underused.</p><div class="tool-superpower">💡 Superpower: Best free image model for ad creatives</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Wireflow AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Chains multiple AI image models into visual workflows. Instead of one model, you run Flux → upscaler → background remover as a pipeline. No other tool does this.</p><div class="tool-superpower">💡 Superpower: Multi-model image pipeline automation</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Adobe Firefly Image 5</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Only major AI image tool trained exclusively on licensed content. The only option with full commercial IP indemnification — Midjourney cannot legally guarantee this.</p><div class="tool-superpower">💡 Superpower: 100% IP-safe commercial images</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Krea AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Real-time AI image generation — see results as you type. Also offers AI video, enhancement tools, and a canvas editor. The fastest creative feedback loop available.</p><div class="tool-superpower">💡 Superpower: Real-time generation as you type</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Magnific AI</span><span class="tool-tag tag-paid">Paid</span></div><p class="tool-desc">AI upscaler and detail enhancer that adds photographic micro-detail to any image. Turns blurry AI art into high-res, printable assets. Used by pro photographers.</p><div class="tool-superpower">💡 Superpower: AI upscaling that adds real detail</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Higgsfield AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Specializes in dynamic, motion-infused AI images and "living photos." Makes static portraits breathe and move. Unique intersection of image and video generation.</p><div class="tool-superpower">💡 Superpower: Living, breathing AI portraits</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">ComfyUI (Local)</span><span class="tool-tag tag-open">Open Source</span></div><p class="tool-desc">Node-based visual workflow for running Stable Diffusion locally. Unlimited generations, no censorship, full control. The most powerful setup for serious creators.</p><div class="tool-superpower">💡 Superpower: Unlimited free images on your own GPU</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Canopy (by Scenario)</span><span class="tool-tag tag-paid">Paid</span></div><p class="tool-desc">Train custom AI image models on YOUR art style in minutes. Generate consistent characters, assets, and environments that look like your unique style — not generic AI.</p><div class="tool-superpower">💡 Superpower: Train AI on YOUR specific art style</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Freepik AI Image</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Built into Freepik's stock library. Generate images that automatically match stock photo quality standards. The output is commercially licensable without watermarks.</p><div class="tool-superpower">💡 Superpower: Stock-photo quality, instant licensing</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Lexica Aperture</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Photorealistic people and product shots without copyright issues. Also a searchable database of 10M+ AI images with their exact prompts — learn by example.</p><div class="tool-superpower">💡 Superpower: Search 10M AI images + their prompts</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Artbreeder</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Blend and evolve images using sliders — no prompting needed. Unique gene-based image creation. Perfect for character design, concept art, and face generation.</p><div class="tool-superpower">💡 Superpower: Blend images like mixing DNA</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Nightcafe Studio</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Multi-algorithm platform with SDXL, Flux, Dalle, and more. Has a social community for sharing and remixing. Free daily credits that actually last a week of casual use.</p><div class="tool-superpower">💡 Superpower: Best social community for AI art</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Tensor.Art</span><span class="tool-tag tag-free">Free</span></div><p class="tool-desc">Free cloud GPU for Stable Diffusion with thousands of community models and LoRAs. Run models that need a $2000 GPU — in your browser, for free.</p><div class="tool-superpower">💡 Superpower: Free GPU for any Stable Diffusion model</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Photoroom</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI photo studio for product photography. Remove backgrounds, add studio lighting, generate lifestyle contexts for products — in seconds. Built for e-commerce.</p><div class="tool-superpower">💡 Superpower: Product photos without a real studio</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Dzine (formerly Stylar)</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI design tool with style-lock technology — maintain consistent aesthetics across many images. Ideal for brand kits, product lines, and social media series.</p><div class="tool-superpower">💡 Superpower: Style-locked consistency across images</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Pixlr AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Full Photoshop-like editor with AI generation built in. Generate, edit, retouch, and export — all in one browser-based tool. Zero install needed.</p><div class="tool-superpower">💡 Superpower: Photoshop + AI generator in one browser tab</div></div>
+    </div>
+  </div>
+
+  <!-- ===== VIDEO GEN ===== -->
+  <div class="section" id="video">
+    <div class="section-header">
+      <div class="section-icon">🎥</div>
+      <div class="section-meta">
+        <h2>Video Generation</h2>
+        <p>Beyond Runway & Sora — tools for cinematic output, social content, and open-source freedom.</p>
+        <span class="tool-count-badge">20 tools</span>
+      </div>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Veo 3 (Google AI Studio)</span><span class="tool-tag tag-free">Free</span></div><p class="tool-desc">The most underrated free AI video tool in 2026. Cinematic quality with native audio generation — rain sounds, ambient noise — that matches your scene automatically.</p><div class="tool-superpower">💡 Superpower: Free cinematic video + auto audio</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Kling 3.0</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Benchmark for photorealistic video. Scored 8.4/10 for visual fidelity in 2026 testing — the highest of any tool. Best for product B-roll with realistic physics.</p><div class="tool-superpower">💡 Superpower: Most photorealistic AI video available</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Hailuo AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Daily-reset free credits — 3-5 clips per day that refresh every 24h. More practical for daily creators than one-time credit dumps. Popular in Asian markets first.</p><div class="tool-superpower">💡 Superpower: Best daily-reset free video credits</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">PixVerse V6</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Multi-shot video generation with native audio. Strong text-to-video and image-to-video. 10–20 second clips with coherent lighting and motion. Best for social media.</p><div class="tool-superpower">💡 Superpower: Multi-shot generation with native audio</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Hedra</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Specializes in talking-head videos from a single image. Upload a photo, add audio, and get a realistic lip-synced video. No green screen, no filming needed.</p><div class="tool-superpower">💡 Superpower: Any photo becomes a talking video</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">FLORA</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Multi-model video generator with a unified interface. Access Wan, Kling, and other models from one dashboard. Ranked for workflow efficiency by independent testers.</p><div class="tool-superpower">💡 Superpower: Multi-model video hub in one UI</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Dreamina (Jianying)</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">ByteDance's video generation platform. Tight integration with CapCut for editing. Excels at short-form social content with cinematic effects and transitions.</p><div class="tool-superpower">💡 Superpower: CapCut + video gen, built for TikTok</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Wan 2.6</span><span class="tool-tag tag-open">Open Source</span></div><p class="tool-desc">Open-source video model with flexible prompt interpretation and no content filters at the platform level. Run locally or via cloud APIs. Best open-source video model.</p><div class="tool-superpower">💡 Superpower: Best open-source video generation model</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Open-Generative-AI</span><span class="tool-tag tag-open">Open Source</span></div><p class="tool-desc">Self-hosted studio with 200+ image and video models under MIT license. Replaces Midjourney + Kling + lip-sync tools. Hit GitHub Trending with 7,500 stars in 2026.</p><div class="tool-superpower">💡 Superpower: 4 subscription tools → 1 self-hosted studio</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Seedance 2.0</span><span class="tool-tag tag-paid">Paid</span></div><p class="tool-desc">Most cinematic AI video output in 2026 — but hard to access. Rivals Hollywood-grade color grading and temporal consistency. For premium production work only.</p><div class="tool-superpower">💡 Superpower: Hollywood-grade cinematic output</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Gemini Omni Video</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Google's filmmaking AI with automatic multi-shot generation. Understands story arcs and generates scene sequences — not just single clips. For narrative storytelling.</p><div class="tool-superpower">💡 Superpower: Multi-shot story arc from one prompt</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">HappyHorse 1.0</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Emerging video-with-native-audio model that synchronizes sound generation with visual motion. Newer competitor to Veo in the native audio video space.</p><div class="tool-superpower">💡 Superpower: Motion-synchronized native audio video</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Arcads</span><span class="tool-tag tag-paid">Paid</span></div><p class="tool-desc">Creates UGC-style ad videos with AI actors in 2 minutes. Choose an AI actor, write a script, publish to TikTok or Meta — no film crew, no actors, no studio.</p><div class="tool-superpower">💡 Superpower: UGC ads with AI actors in 2 min</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Pika 2.5</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Playful, fast video tool optimized for viral-style social content. Great for meme videos, product reveals, and quick concept tests. Lower resolution but very fast.</p><div class="tool-superpower">💡 Superpower: Fastest viral-style video clips</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Grok Video (xAI)</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Elon Musk's AI video model via X. Excels at imaginative, emotionally driven, and sometimes surreal visuals. Available through X Premium — bundled with Grok AI.</p><div class="tool-superpower">💡 Superpower: Surreal, emotion-driven AI visuals</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Luma Ray 3</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Beautiful UX with elegant visual output and a multi-shot generation workflow. Generates 6 keyframes first so you can preview before committing to a full generation.</p><div class="tool-superpower">💡 Superpower: Preview keyframes before full generation</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">OpenArt Video</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Multi-model platform — access Wan, Kling, and others with one subscription. Has a unique AI art remix feature that converts images to animated video art.</p><div class="tool-superpower">💡 Superpower: Image-to-animated-art-video pipeline</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Descript Video AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Edit video by editing the transcript. Delete a word in text → the word disappears from video. Also has AI background removal, Studio Sound, and eye contact correction.</p><div class="tool-superpower">💡 Superpower: Edit video like a Google Doc</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Morph Studio</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Consistent character video generation — maintain the same face, outfit, and style across multiple clips. Solves the biggest problem in AI video: character continuity.</p><div class="tool-superpower">💡 Superpower: Consistent characters across video clips</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Veed.io AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Full AI video editing suite — auto subtitles, translations in 100+ languages, background remover, and avatar generation. Best all-in-one for content creators.</p><div class="tool-superpower">💡 Superpower: Auto subtitles + translation in 100+ languages</div></div>
+    </div>
+  </div>
+
+  <!-- ===== AUDIO / VOICE ===== -->
+  <div class="section" id="audio">
+    <div class="section-header">
+      <div class="section-icon">🔊</div>
+      <div class="section-meta">
+        <h2>Audio / Voice</h2>
+        <p>Voice cloning, TTS, audio cleanup, and vocal separation tools beyond ElevenLabs.</p>
+        <span class="tool-count-badge">18 tools</span>
+      </div>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Fish Audio</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Best emotionally varied and character-led speech synthesis. Beats ElevenLabs for anime-style, dramatic, and regional accent voices. Strong API with low latency.</p><div class="tool-superpower">💡 Superpower: Most emotionally expressive voice AI</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">PlayHT 3.0</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Best multilingual TTS platform — 800+ voices in 140+ languages with fine-grained tone control (calm, bright, serious, dramatic). Powers voiceovers, game dialogue, demos.</p><div class="tool-superpower">💡 Superpower: 140+ languages, granular tone control</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">LALAL.AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Separates vocals, instruments, bass, drums, and background noise from any audio file with scary accuracy. Used by producers, remixers, and podcast editors worldwide.</p><div class="tool-superpower">💡 Superpower: Extract any stem from any song</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">OpenVoice</span><span class="tool-tag tag-open">Open Source</span></div><p class="tool-desc">Voice cloning from a 10-second recording with precise control over tone, accent, and rhythm. Free for commercial use. Clone voices and adapt to any language.</p><div class="tool-superpower">💡 Superpower: Voice clone in 10 seconds, free commercial use</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Adobe Podcast Enhancer</span><span class="tool-tag tag-free">Free</span></div><p class="tool-desc">One-click audio cleanup that transforms bathroom recordings into studio quality. Removes echo, background noise, and HVAC hum. Free, no Adobe subscription needed.</p><div class="tool-superpower">💡 Superpower: Studio quality from any microphone, free</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Auphonic</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Automatic audio post-production — normalize levels, reduce noise, and master audio in one click. Used by professional podcast producers globally. Two free hours/month.</p><div class="tool-superpower">💡 Superpower: Broadcast-quality audio in one click</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">WellSaid Labs</span><span class="tool-tag tag-paid">Paid</span></div><p class="tool-desc">Corporate narration specialists. Voices are trained to sound professional and neutral — ideal for e-learning, training videos, and enterprise presentations. SSML support.</p><div class="tool-superpower">💡 Superpower: Enterprise-grade narration voices</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Murf AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI voiceover studio with a built-in script editor, slide sync, and video timeline. Best for explainer videos and training content — everything in one UI.</p><div class="tool-superpower">💡 Superpower: Script → voiceover → synced video</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Podcastle</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Remote podcast recording + AI editing. "Magic Dust" removes filler words, background noise, and sharpens voice clarity automatically. Real-time AI voice cloning included.</p><div class="tool-superpower">💡 Superpower: Magic Dust = filler words vanish automatically</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">VoicePen</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Converts audio files, podcasts, and voice recordings into structured blog posts. Transcribes AND reformats content for written publishing — one tool, two outputs.</p><div class="tool-superpower">💡 Superpower: Audio → polished blog post automatically</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Lalamu Studio</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Lip-sync video creation with text-to-speech and facial synchronization. Supports multiple languages, face selection, and voice editing. Niche but unmatched in its lane.</p><div class="tool-superpower">💡 Superpower: Multilingual lip-sync video creation</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">ProducerAI (ex-Riffusion)</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Acquired by Google in 2026. Now runs on Lyria 3 — Google DeepMind's pro music model — with Gemini conversational interface and Veo for music videos. Hidden gem.</p><div class="tool-superpower">💡 Superpower: Google's pro music AI — most don't know it exists</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Krisp</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Real-time noise cancellation for any call — Zoom, Teams, Discord, anything. Runs locally on your device, no audio leaves your machine. Works with any mic and headset.</p><div class="tool-superpower">💡 Superpower: Real-time background noise killer for calls</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Resemble AI</span><span class="tool-tag tag-paid">Paid</span></div><p class="tool-desc">Build custom voice agents with sub-200ms latency. Perfect for AI phone systems, games, and real-time applications. Includes a deepfake detection API as a bonus.</p><div class="tool-superpower">💡 Superpower: Real-time voice AI with deepfake detection</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Cleanvoice</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Automatically removes filler sounds ("um", "uh", "like"), mouth noises, and breathing from podcast recordings. Saves hours of manual audio editing per episode.</p><div class="tool-superpower">💡 Superpower: Removes all filler words automatically</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Speechify Studio</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Text-to-audio at superhuman speed — up to 4.5x listening speed with natural prosody. Also converts documents, PDFs, and articles into audio. Best for speed learners.</p><div class="tool-superpower">💡 Superpower: Listen to anything at 4.5x speed, naturally</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">TextFX (Google)</span><span class="tool-tag tag-free">Free</span></div><p class="tool-desc">Free AI tool for rappers, writers, and songwriters — 9 creative tools for lyrics, rhymes, wordplay, and spoken word. Powered by Gemini. Totally underappreciated.</p><div class="tool-superpower">💡 Superpower: 9 free AI tools for lyric writing</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Aiva</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI composer for cinematic, game, and background music — not generic loops. Generates full orchestral pieces in your chosen style, tempo, and emotion. Used in film.</p><div class="tool-superpower">💡 Superpower: Full orchestral AI composition on demand</div></div>
+    </div>
+  </div>
+
+  <!-- ===== SEARCH / RESEARCH ===== -->
+  <div class="section" id="search">
+    <div class="section-header">
+      <div class="section-icon">🔍</div>
+      <div class="section-meta">
+        <h2>Search / Research</h2>
+        <p>AI-powered research tools that go deeper than Perplexity — for academics, analysts, and knowledge workers.</p>
+        <span class="tool-count-badge">17 tools</span>
+      </div>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Elicit</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Searches, reads, and synthesizes academic literature for you. Not a chatbot — a structured research workflow that extracts data from 200M+ papers with citation tracking.</p><div class="tool-superpower">💡 Superpower: AI that reads 200M academic papers for you</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Consensus</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Ask a research question and get a "consensus meter" — shows what percentage of studies agree or disagree. Eliminates cherry-picking and confirmation bias in research.</p><div class="tool-superpower">💡 Superpower: Shows scientific consensus instantly</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Scite.ai</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Shows how papers have been cited — whether they were supported or contradicted by later studies. Reveals if a study's findings held up or got debunked over time.</p><div class="tool-superpower">💡 Superpower: See if a study was later debunked</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Semantic Scholar</span><span class="tool-tag tag-free">Free</span></div><p class="tool-desc">AI-powered academic search engine from the Allen Institute for AI. Extracts key facts, figures, and methods from papers. Free, no paywall, 200M+ papers indexed.</p><div class="tool-superpower">💡 Superpower: Best free academic search with AI summaries</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Kagi Search</span><span class="tool-tag tag-paid">Paid</span></div><p class="tool-desc">Ad-free, privacy-first search engine with AI summaries. Block SEO-spam sites, boost trusted sources, and get cleaner results than Google — no tracking, ever.</p><div class="tool-superpower">💡 Superpower: Google without ads, SEO spam, or tracking</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Tavily</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI search API optimized for AI agents and RAG pipelines. Returns structured, LLM-ready results — not raw HTML. The search backbone behind many AI products.</p><div class="tool-superpower">💡 Superpower: Search API built for AI agents and RAG</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Grok (with X data)</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Only AI with real-time access to all of X (Twitter). Best for monitoring breaking trends, viral debates, and what people are actually saying — not what media reports.</p><div class="tool-superpower">💡 Superpower: Real-time X/Twitter data for trend research</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Explainpaper</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Upload any academic paper and highlight confusing sections — AI explains them in plain English. Best tool for reading papers outside your expertise area.</p><div class="tool-superpower">💡 Superpower: Understand any paper, any field</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Connected Papers</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Visualizes the network of papers connected to any study. Find related works, trace idea evolution, and discover the most influential papers in a research area visually.</p><div class="tool-superpower">💡 Superpower: Visual research network map of any topic</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Undermind</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Deep research AI that creates comprehensive research briefings on complex topics. Goes 10x deeper than Perplexity — synthesizes sources into structured reports.</p><div class="tool-superpower">💡 Superpower: 10x deeper research briefings than Perplexity</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Lumina Chat</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Chat with scientific literature — ask questions, get answers grounded in peer-reviewed studies. Specializes in biomedical and life sciences research retrieval.</p><div class="tool-superpower">💡 Superpower: Chat with biomedical literature</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Andi Search</span><span class="tool-tag tag-free">Free</span></div><p class="tool-desc">Conversational AI search that explains answers instead of listing links. Feels like texting a smart friend who researches things for you. Ad-free and privacy-focused.</p><div class="tool-superpower">💡 Superpower: AI friend explains the web to you</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Liner AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Research assistant that highlights and summarizes web pages and PDFs as you browse. Builds a personal knowledge base from everything you read online.</p><div class="tool-superpower">💡 Superpower: Build a personal knowledge base while browsing</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">ResearchRabbit</span><span class="tool-tag tag-free">Free</span></div><p class="tool-desc">"Spotify for research papers." Recommends related papers based on your reading history. Free forever — the Spotify-like discovery engine for academic research.</p><div class="tool-superpower">💡 Superpower: Spotify-style discovery for academic papers</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Factiva AI</span><span class="tool-tag tag-paid">Paid</span></div><p class="tool-desc">Dow Jones' AI-enhanced news database. Search 33,000+ sources with AI summarization. Trusted by journalists, analysts, and investment firms for due diligence research.</p><div class="tool-superpower">💡 Superpower: 33,000 verified news sources with AI summaries</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">SciSpace (Typeset)</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI research tool with a "Copilot" that answers questions as you read papers. Also auto-generates literature review summaries from multiple papers simultaneously.</p><div class="tool-superpower">💡 Superpower: Copilot that reads papers alongside you</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">ChatPDF</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Upload any PDF and chat with it. Instant Q&A, summaries, and quotes from documents. Works for textbooks, contracts, research papers, and manuals. No account needed.</p><div class="tool-superpower">💡 Superpower: Q&A with any PDF, no account needed</div></div>
+    </div>
+  </div>
+
+  <!-- ===== WRITING / DOCS ===== -->
+  <div class="section" id="writing">
+    <div class="section-header">
+      <div class="section-icon">📄</div>
+      <div class="section-meta">
+        <h2>Document / Writing</h2>
+        <p>AI writing tools that specialize beyond generic content generation — for technical, legal, scientific, and creative writing.</p>
+        <span class="tool-count-badge">18 tools</span>
+      </div>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Napkin AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Paste text → get instant flowcharts, mindmaps, and infographics. No design skills needed, no prompting. Converts any written content into visual diagrams automatically.</p><div class="tool-superpower">💡 Superpower: Text → diagram without any prompt writing</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Wordtune</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Rewrites sentences to say exactly what you mean — not just grammar fixes. Offers multiple tone options (casual, formal, concise). Feels like a human editor, not a bot.</p><div class="tool-superpower">💡 Superpower: Rewrite at sentence-level for exact meaning</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Anyword</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Predicts conversion rates for marketing copy BEFORE you publish. Shows a "performance score" for headlines, emails, and ads — backed by billions of data points.</p><div class="tool-superpower">💡 Superpower: Predicts copy performance before publishing</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Jenni AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Academic writing assistant that autocompletes your thesis as you type — with built-in citations and plagiarism check. Knows APA, MLA, Chicago formats natively.</p><div class="tool-superpower">💡 Superpower: Autocompletes academic papers with citations</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Lex</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Minimalist AI writing editor. Press "Ctrl+Enter" when stuck — AI suggests the next sentence. Built for essays and long-form writing where flow matters more than templates.</p><div class="tool-superpower">💡 Superpower: One keystroke unsticks writer's block</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Sudowrite</span><span class="tool-tag tag-paid">Paid</span></div><p class="tool-desc">AI writing tool built specifically for fiction writers. Understands story beats, character arcs, and prose style. Rewrites for sensory detail, pacing, and emotional depth.</p><div class="tool-superpower">💡 Superpower: Fiction AI that understands story craft</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Grammarly GO</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Grammarly's generative AI layer — not just corrections, but full drafts, tone adjustments, and audience-specific rewrites. Works inside 500,000+ apps via browser extension.</p><div class="tool-superpower">💡 Superpower: AI writing in literally every app you use</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Writesonic</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI writer with live web access for factual articles and a built-in SEO optimizer. Generates factual, cited content with current information — not hallucinated facts.</p><div class="tool-superpower">💡 Superpower: Real-time web access for factual content</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Moonbeam</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Long-form AI writer that maintains narrative consistency across 10,000+ word documents. Tracks plot points, defined characters, and style rules so it never contradicts itself.</p><div class="tool-superpower">💡 Superpower: Maintains consistency across 10K+ word docs</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Hyperwrite</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI that learns YOUR writing style from your past work. The more you use it, the more it sounds like you — not generic AI output. Has a Chrome extension for everywhere.</p><div class="tool-superpower">💡 Superpower: Learns and mimics your personal writing style</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Rytr</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">40+ content formats with tone selection — from professional to funny to inspirational. Best budget AI writing tool — generates 10,000 characters/month free with no trial expiry.</p><div class="tool-superpower">💡 Superpower: Best value AI writer, 40+ formats free</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">AI21 Wordspice</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Rephrases existing text with context-awareness — understands the full document before rewriting any sentence. Produces more coherent edits than word-by-word tools.</p><div class="tool-superpower">💡 Superpower: Context-aware rephrase of whole documents</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Compose AI</span><span class="tool-tag tag-free">Free</span></div><p class="tool-desc">Free Chrome extension that autocompletes emails and documents with AI. Works in Gmail, Google Docs, and any text field. Adapts to your tone over time.</p><div class="tool-superpower">💡 Superpower: Free AI autocomplete in every text box</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Longshot AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI that fact-checks its own output in real time using live web search. Flags unsupported claims as you write — reduces hallucinations in long-form content significantly.</p><div class="tool-superpower">💡 Superpower: AI that fact-checks its own writing</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Quillbot</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Paraphrasing engine with 8 modes (fluency, creative, formal, academic...). Also has a grammar checker, summarizer, and citation generator. Used by 35M+ students.</p><div class="tool-superpower">💡 Superpower: 8 paraphrase modes including academic</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Calmly Writer</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Distraction-free writing editor that fades out everything except the paragraph you're writing. AI suggestions appear only when you pause — designed for deep focus.</p><div class="tool-superpower">💡 Superpower: Distraction-free writing with focus mode</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Authory</span><span class="tool-tag tag-paid">Paid</span></div><p class="tool-desc">Auto-archives everything you've published online — articles, tweets, newsletters. Then AI helps you repurpose them into new content, summaries, and portfolios.</p><div class="tool-superpower">💡 Superpower: Auto-archive + repurpose your published work</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Hemingway Editor AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Highlights complex sentences, passive voice, and unnecessary adverbs. Now with AI rewriting — turns complex, wordy text into clear, direct prose automatically.</p><div class="tool-superpower">💡 Superpower: Makes any text bold and clear like Hemingway</div></div>
+    </div>
+  </div>
+
+  <!-- ===== EDUCATION ===== -->
+  <div class="section" id="education">
+    <div class="section-header">
+      <div class="section-icon">🎓</div>
+      <div class="section-meta">
+        <h2>Education & Learning</h2>
+        <p>AI tutors, flashcard generators, learning path builders, and tools for students, teachers, and self-learners.</p>
+        <span class="tool-count-badge">17 tools</span>
+      </div>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Khanmigo</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Khan Academy's Socratic AI tutor — never gives answers directly, asks leading questions instead. Teaches you to think, not to copy. Best free educational AI for students.</p><div class="tool-superpower">💡 Superpower: Socratic method — teaches thinking, not answers</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Synthesis Tutor</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Adaptive AI math tutor originally built for SpaceX employees' children. Uses game-based learning with NASA/SpaceX missions as contexts. Accelerates math 2-3x faster.</p><div class="tool-superpower">💡 Superpower: SpaceX-developed AI math tutor for kids</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Quizlet AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Generates smart flashcards from any notes, textbook, or PDF. "Magic Notes" converts lecture notes into study sets instantly. Used by 300M+ students globally.</p><div class="tool-superpower">💡 Superpower: Turn any document into smart flashcards</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Socratic by Google</span><span class="tool-tag tag-free">Free</span></div><p class="tool-desc">Point your camera at any problem — math, science, history — and get step-by-step visual explanations. Free, no account needed, works for K-12 and intro college courses.</p><div class="tool-superpower">💡 Superpower: Camera → instant step-by-step explanation</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Explain Everything AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Interactive whiteboard with AI that explains concepts in real time as you draw. Teachers create interactive lessons; students engage with visual AI explanations.</p><div class="tool-superpower">💡 Superpower: Interactive AI whiteboard for teaching</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Numerade</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI video tutor for STEM — 1M+ step-by-step video solutions to textbook problems. Snap a photo of a problem; AI matches it to the right video explanation instantly.</p><div class="tool-superpower">💡 Superpower: Video solutions to 1M+ STEM problems</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Otter.ai for Education</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Live transcription + AI notes for lectures. Captures and syncs audio, slides, and notes simultaneously. Students who miss class get an AI-generated lecture summary.</p><div class="tool-superpower">💡 Superpower: Full AI notes for any lecture, live or recorded</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Photomath</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Point camera at any math problem — handwritten or printed — and get instant step-by-step solutions. Goes from basic arithmetic to university calculus. 300M+ downloads.</p><div class="tool-superpower">💡 Superpower: Solves handwritten math from camera</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Mindsmith</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI-powered e-learning course builder. Upload a document or enter a topic → get a full interactive course with quizzes, images, and branching scenarios in minutes.</p><div class="tool-superpower">💡 Superpower: Full e-learning course from a single topic</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Scholarcy</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI that reads academic papers and generates "flashcard summaries" — key contributions, methods, findings, and limitations in structured, skimmable format.</p><div class="tool-superpower">💡 Superpower: Academic papers → structured flashcard summaries</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Wisdolia</span><span class="tool-tag tag-free">Free</span></div><p class="tool-desc">Chrome extension that generates flashcards from any article, PDF, or YouTube video you're watching. One click on any web page → instant study material.</p><div class="tool-superpower">💡 Superpower: Flashcards from any webpage or YouTube video</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Duolingo Max</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Duolingo's GPT-4 powered tier. "Roleplay" feature lets you have real AI conversations in your target language. "Explain My Answer" breaks down grammar mistakes in depth.</p><div class="tool-superpower">💡 Superpower: Real conversational AI roleplay for language learning</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Coursebox AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Turn any content — YouTube videos, PDFs, websites — into full online courses with quizzes, certificates, and a learner management system. White-label options available.</p><div class="tool-superpower">💡 Superpower: Any content → full online course with LMS</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Brainscape</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Confidence-based repetition flashcards — rates your confidence per card and optimizes review scheduling for maximum retention. Scientifically proven faster than Anki.</p><div class="tool-superpower">💡 Superpower: Confidence-based spaced repetition system</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">MagicSchool AI</span><span class="tool-tag tag-free">Free</span></div><p class="tool-desc">60+ AI tools built specifically for teachers — lesson plans, rubrics, IEP accommodations, parent emails, quizzes. Saves teachers 7+ hours per week on average.</p><div class="tool-superpower">💡 Superpower: 60+ AI tools designed for teachers, free</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Gizmo</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI quiz and flashcard generator optimized for exam preparation. Generates practice tests from your notes, predicts likely exam questions, and tracks weak areas.</p><div class="tool-superpower">💡 Superpower: Predicts exam questions from your notes</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Sana Labs</span><span class="tool-tag tag-paid">Paid</span></div><p class="tool-desc">Enterprise AI learning platform used by Spotify and Klarna. Personalizes learning paths per employee, generates training from company docs, and tracks knowledge gaps.</p><div class="tool-superpower">💡 Superpower: AI learning personalization at enterprise scale</div></div>
+    </div>
+  </div>
+
+  <!-- ===== GAMING / 3D ===== -->
+  <div class="section" id="gaming">
+    <div class="section-header">
+      <div class="section-icon">🎮</div>
+      <div class="section-meta">
+        <h2>Gaming & 3D</h2>
+        <p>AI for game asset creation, 3D model generation, world-building, and NPC behavior — the future of game development.</p>
+        <span class="tool-count-badge">17 tools</span>
+      </div>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Meshy AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Text or 2D image → complete 3D model with PBR textures, rigging, and animation in under 60 seconds. Exports to FBX, GLB, OBJ, STL, USDZ. Used for e-commerce and gaming.</p><div class="tool-superpower">💡 Superpower: Photo → game-ready 3D model in 60 seconds</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Genie by Luma Labs</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Text → fully textured 3D models in under 10 seconds. Type "low poly treasure chest with gold coins" and download a Blender/Unity-ready asset immediately.</p><div class="tool-superpower">💡 Superpower: 3D model generation in 10 seconds flat</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Scenario.gg</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Train custom AI image models on your game's art style. Generate infinite characters, environments, and props that all look like they belong in YOUR game — not generic AI.</p><div class="tool-superpower">💡 Superpower: Style-locked infinite game asset generation</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Inworld AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Build AI NPCs with persistent memory, unique personalities, and real conversations. NPCs remember what the player did last session and respond accordingly. Used in Fortnite.</p><div class="tool-superpower">💡 Superpower: AI NPCs with real memory and personality</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Convai</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Real-time voice-enabled AI characters for games and VR. Characters listen to voice, understand intent, and respond naturally in real time. Unreal Engine and Unity SDKs.</p><div class="tool-superpower">💡 Superpower: Voice-enabled AI characters in real time</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Luma AI (3D Capture)</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Capture real-world objects with your phone camera → high-quality 3D model in minutes. No 3D scanner needed. Used for game assets, architecture, and product visualization.</p><div class="tool-superpower">💡 Superpower: Real world → 3D model with just your phone</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Promethean AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI that builds and furnishes 3D environments. Describe a scene in words → AI places assets, sets lighting, and dresses the space. World-building for games and film.</p><div class="tool-superpower">💡 Superpower: Describe a world in text → AI builds it in 3D</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">CSM (Common Sense Machines)</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">World's first AI that generates complete, navigable 3D worlds from a single image or text prompt. Entire playable environments — not just static models.</p><div class="tool-superpower">💡 Superpower: Single image → entire 3D navigable world</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">G3D.AI (Google)</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Google's experimental 3D generation model — generates complex multi-part 3D scenes with accurate spatial relationships. Integrates with Google Earth data.</p><div class="tool-superpower">💡 Superpower: Complex multi-object 3D scene generation</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Leonardo.AI (Game)</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Game-focused image AI with a Canvas Editor, 3D texture generation, and motion tool. 150 free tokens daily. Built with game art workflows in mind — not generic design.</p><div class="tool-superpower">💡 Superpower: 150 free game asset generations daily</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Pixela AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI that generates pixel art and retro game sprites from text prompts. Multiple resolution options (8-bit, 16-bit, 32-bit). Exports animation frames for sprite sheets.</p><div class="tool-superpower">💡 Superpower: AI pixel art and animated sprites from prompts</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Sloyd.ai</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI 3D model generator with parametric editing. Adjust style, polygon count, and variations via sliders after generation. API available for integration into game editors.</p><div class="tool-superpower">💡 Superpower: Parametric 3D models — tweak after generation</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Blockade Labs Skybox</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Generate 360° panoramic environments from text prompts instantly. Skyboxes for VR, game backgrounds, and 3D scene backgrounds. Real-time preview and editing.</p><div class="tool-superpower">💡 Superpower: 360° game skybox from text in seconds</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">AI Dungeon</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Infinite AI-generated text adventures — every choice leads to a unique story. Also used by game writers to prototype narrative branches and dialogue trees quickly.</p><div class="tool-superpower">💡 Superpower: Infinite AI-generated branching narrative game</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Kaedim</span><span class="tool-tag tag-paid">Paid</span></div><p class="tool-desc">Upload 2D concept art → get a game-ready 3D model with textures and rigging in hours, not days. Used by game studios to speed up asset pipelines dramatically.</p><div class="tool-superpower">💡 Superpower: Concept art → rigged 3D game asset pipeline</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Hypothetic AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Procedural game level generation AI. Describe the mechanics and theme → get playable level layouts, enemy placements, and reward distributions for 2D and 3D games.</p><div class="tool-superpower">💡 Superpower: AI generates full playable game levels</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Opus Pro (Game Clips)</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI clips your best gaming moments automatically from long gameplay footage. Adds captions, highlights kills, and formats for TikTok/YouTube Shorts — no editing needed.</p><div class="tool-superpower">💡 Superpower: Auto-clips your best gaming moments for TikTok</div></div>
+    </div>
+  </div>
+
+  <!-- ===== MUSIC GEN ===== -->
+  <div class="section" id="music">
+    <div class="section-header">
+      <div class="section-icon">🎵</div>
+      <div class="section-meta">
+        <h2>Music Generation</h2>
+        <p>Beyond Suno & Udio — AI music tools for composers, producers, game devs, and content creators.</p>
+        <span class="tool-count-badge">17 tools</span>
+      </div>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Aiva</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI composer for cinematic, orchestral, and game music. Generates full compositions in your chosen style, emotion, and tempo. Music is royalty-free for content creators.</p><div class="tool-superpower">💡 Superpower: Full orchestral film score from a mood</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Soundraw</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Generates royalty-free music customizable by mood, genre, tempo, and length. Unique feature: edit the generated track's structure, instruments, and sections after generation.</p><div class="tool-superpower">💡 Superpower: Edit AI music structure after generation</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Boomy</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Generate songs in seconds and monetize them on Spotify, Apple Music, and TikTok. Boomy handles distribution. Creates 80% of AI music on streaming platforms today.</p><div class="tool-superpower">💡 Superpower: Create, publish, and monetize music in minutes</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Mubert</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Generates endless royalty-free background music for specific contexts — Twitch streams, podcasts, focus work, yoga. Adapts in real-time to match content duration.</p><div class="tool-superpower">💡 Superpower: Infinite context-specific background music</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Beatoven.ai</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Creates mood-based background music that matches the emotional arc of your video. Upload a script or video → AI generates music that follows emotional peaks and valleys.</p><div class="tool-superpower">💡 Superpower: Music that follows your video's emotional arc</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Lyria 3 (Google DeepMind)</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Google DeepMind's professional-grade music generation model. Powers ProducerAI. Industry-benchmark quality — the model film composers are quietly using behind the scenes.</p><div class="tool-superpower">💡 Superpower: Professional film-grade AI music generation</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Stable Audio (Stability AI)</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Open-source audio generation model. Generates 44.1kHz stereo audio up to 3 minutes. Runs locally on your machine with no API costs — audio generation without limits.</p><div class="tool-superpower">💡 Superpower: Run audio generation locally, free, unlimited</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Loudly</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI music generation + a built-in stems editor. Generate a track then layer, mute, or remix individual stems — vocals, bass, drums — without any DAW software.</p><div class="tool-superpower">💡 Superpower: Generate music AND edit its stems, no DAW needed</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Ecrett Music</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Scene-based music generation — describe your video scene (action, drama, documentary) and get perfectly matched background music. Video-first approach unlike most tools.</p><div class="tool-superpower">💡 Superpower: Music matched to video scene description</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">WarpSound</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Real-time generative music that changes based on rules you define — great for games, live performances, and interactive installations. Music that never loops identically.</p><div class="tool-superpower">💡 Superpower: Real-time adaptive music that never repeats</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Musicfy</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Clone any artist's vocal style and use it to cover songs or create originals. Also separates vocals from instrumentals for karaoke or remixing. Voice AI meets music.</p><div class="tool-superpower">💡 Superpower: Clone any artist's voice for covers legally</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Amper Music (Shutterstock)</span><span class="tool-tag tag-paid">Paid</span></div><p class="tool-desc">Enterprise music AI acquired by Shutterstock. Generates fully licensed music for commercial campaigns. Integrated into Shutterstock's licensing — one purchase covers everything.</p><div class="tool-superpower">💡 Superpower: Commercially licensed AI music for brands</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Splash Pro</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI music production studio with AI vocals. Type lyrics → AI sings them in different styles. Also generates beats and mixes. The most complete AI music production experience.</p><div class="tool-superpower">💡 Superpower: Type lyrics → AI sings them with beats</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Riffusion (historical)</span><span class="tool-tag tag-open">Open Source</span></div><p class="tool-desc">The original text-to-music model based on Stable Diffusion applied to spectrograms. Now open-source — run locally, explore the model that started the AI music wave.</p><div class="tool-superpower">💡 Superpower: The OG text-to-music model, now fully open-source</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Harmonai (Stability)</span><span class="tool-tag tag-open">Open Source</span></div><p class="tool-desc">Open-source AI music tools from Stability AI's music research lab. Dance Diffusion generates short audio clips locally. Community-driven and completely free.</p><div class="tool-superpower">💡 Superpower: Community open-source music AI lab</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">TuneFlow</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI-native DAW (Digital Audio Workstation) with built-in AI tools — auto-transcription, smart arrangement, stem separation, and AI-generated accompaniments inside the editor.</p><div class="tool-superpower">💡 Superpower: Full DAW with AI built natively into every step</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Melobytes</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Converts any text, poem, image, or video into music. Quirky and experimental — generates surprising musical interpretations of non-musical inputs. Creative wildcard tool.</p><div class="tool-superpower">💡 Superpower: Turns any text or image into a song</div></div>
+    </div>
+  </div>
+
+  <!-- ===== SPEECH TO TEXT ===== -->
+  <div class="section" id="speech">
+    <div class="section-header">
+      <div class="section-icon">🗣️</div>
+      <div class="section-meta">
+        <h2>Speech to Text</h2>
+        <p>Transcription, live captioning, and meeting intelligence tools beyond Whisper and Otter.ai.</p>
+        <span class="tool-count-badge">16 tools</span>
+      </div>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Whisper (OpenAI)</span><span class="tool-tag tag-open">Open Source</span></div><p class="tool-desc">The open-source STT model that changed the game. Run locally, 99 languages, no API costs, no rate limits. The backbone of dozens of transcription startups. Use it free forever.</p><div class="tool-superpower">💡 Superpower: Run the best STT model locally, free, forever</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Sonix</span><span class="tool-tag tag-paid">Paid</span></div><p class="tool-desc">Highest accuracy transcription in 53+ languages. Searchable, time-stamped, and editable in-browser. Used by broadcasters, legal teams, and researchers who need precision.</p><div class="tool-superpower">💡 Superpower: Industry-leading transcription accuracy</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Fathom</span><span class="tool-tag tag-free">Free</span></div><p class="tool-desc">Free AI meeting recorder — joins Zoom/Teams/Meet, transcribes, and generates action items automatically. Saves 15+ minutes of note-taking per meeting. Genuinely free.</p><div class="tool-superpower">💡 Superpower: Best free AI meeting notes tool</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Fireflies.ai</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI meeting assistant that records, transcribes, and creates searchable databases of all your meetings. Ask "What did the client say about pricing?" — it finds it instantly.</p><div class="tool-superpower">💡 Superpower: Searchable database of all your meetings</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Deepgram</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">API-first STT platform for developers. Sub-300ms real-time transcription, 30+ languages, and models fine-tuned for medical, legal, and call center domains.</p><div class="tool-superpower">💡 Superpower: Sub-300ms real-time transcription API</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Tactiq</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Live transcription Chrome extension for Google Meet, Zoom, and Teams. Creates real-time captions with speaker labels. Exports to Notion, Docs, or email with one click.</p><div class="tool-superpower">💡 Superpower: Live captions + instant export to Notion/Docs</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">AssemblyAI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Developer transcription API with advanced features — sentiment analysis, topic detection, chapter generation, and PII redaction. Built for developers building STT products.</p><div class="tool-superpower">💡 Superpower: Transcription + sentiment + topic + PII redaction</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Whisper Web (Browser)</span><span class="tool-tag tag-free">Free</span></div><p class="tool-desc">Whisper running 100% in your browser — no server, no upload, no account. Transcribes audio locally on your device. Completely private, completely free, works offline.</p><div class="tool-superpower">💡 Superpower: Whisper in browser, offline, zero data shared</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Notta</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Real-time transcription for meetings in 104 languages with AI summary generation. Mobile app transcribes in-person conversations. Best multilingual meeting tool.</p><div class="tool-superpower">💡 Superpower: Real-time transcription in 104 languages</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Cockatoo</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Transcribes audio and video files to text in 90+ languages. Simple drag-and-drop interface, no technical knowledge needed. Best for quick one-off transcriptions.</p><div class="tool-superpower">💡 Superpower: Drag-and-drop transcription, 90+ languages</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Riverside STT</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Studio-quality recording + transcription in one tool. Records locally (no internet lag), transcribes automatically, and allows transcript-based editing of video and audio.</p><div class="tool-superpower">💡 Superpower: Studio recording + transcript editing in one</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Whisper Dictation</span><span class="tool-tag tag-open">Open Source</span></div><p class="tool-desc">Free macOS app using local Whisper — dictate anywhere, no internet needed. Replaces Apple's built-in dictation with dramatically better accuracy. Community-maintained.</p><div class="tool-superpower">💡 Superpower: System-wide dictation on Mac using local Whisper</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Otter for Teams</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Live transcription + AI summary + follow-up email draft automatically after every meeting. OtterPilot joins meetings you're invited to and takes notes even if you skip.</p><div class="tool-superpower">💡 Superpower: OtterPilot attends meetings for you</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Amberscript</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">GDPR-compliant transcription with human review option. Specializes in subtitles for video — auto-generates SRT/VTT files in 30+ languages. Trusted by European broadcasters.</p><div class="tool-superpower">💡 Superpower: GDPR-compliant, broadcast-grade subtitles</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Transkriptor</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Transcribes audio, video, and even Zoom cloud recordings automatically. Has a built-in AI chat — ask questions about your own transcripts. Supports 100+ languages.</p><div class="tool-superpower">💡 Superpower: Chat with your own meeting transcripts</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Cleft (by Notion)</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Notion's AI voice-to-text that converts spoken ideas directly into structured Notion pages. Speak a rambling idea → get a clean, organized page with headings and bullets.</p><div class="tool-superpower">💡 Superpower: Voice → structured Notion page automatically</div></div>
+    </div>
+  </div>
+
+  <!-- ===== PHOTO EDITING ===== -->
+  <div class="section" id="photo">
+    <div class="section-header">
+      <div class="section-icon">📸</div>
+      <div class="section-meta">
+        <h2>Photo Editing</h2>
+        <p>AI photo tools that handle background removal, enhancement, object removal, colorization, and upscaling beyond Photoshop.</p>
+        <span class="tool-count-badge">17 tools</span>
+      </div>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Cleanup.pictures</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Brush over any object, person, or text in a photo → AI removes it and fills the gap seamlessly. No Photoshop skills needed. Works in seconds, completely browser-based.</p><div class="tool-superpower">💡 Superpower: Remove anything from any photo in seconds</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Let's Enhance</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Upscales small or pixelated images up to 16x while adding realistic detail — not just blurring. Perfect for printing old family photos, restoring tiny logos, and archival work.</p><div class="tool-superpower">💡 Superpower: 16x upscale with added realistic detail</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Remini</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Best AI face restoration app — turns blurry, old, or damaged portrait photos into sharp, high-resolution images. Unrivaled at fixing face quality in low-res photos.</p><div class="tool-superpower">💡 Superpower: Best face restoration from any old photo</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Magnific AI</span><span class="tool-tag tag-paid">Paid</span></div><p class="tool-desc">Upscales and adds micro-detail that wasn't in the original — skin texture, fabric weave, hair strands. Used by professional photographers and game texture artists.</p><div class="tool-superpower">💡 Superpower: Adds realistic detail that didn't exist before</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Evoto AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Professional portrait retouching AI used by studio photographers. Batch retouches hundreds of photos — skin smoothing, teeth whitening, eye enhancement — in one click.</p><div class="tool-superpower">💡 Superpower: Batch professional portrait retouching</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Vectorizer.AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Converts any raster image (JPG, PNG) to a perfect vector SVG. Dramatically better than Illustrator's auto-trace — preserves color gradients and fine details accurately.</p><div class="tool-superpower">💡 Superpower: Better raster-to-vector than Illustrator</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Palette.fm</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI colorizes black-and-white photos with historical accuracy. 30+ different colorization styles. Understands context — a 1940s photo gets era-accurate color palettes.</p><div class="tool-superpower">💡 Superpower: Era-accurate colorization of B&W photos</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Picwish</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">One-click background removal + image enhancement suite. 500 free uses per month — the most generous free tier of any background removal tool. Also has a batch mode.</p><div class="tool-superpower">💡 Superpower: 500 free background removals per month</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Deep Nostalgia (MyHeritage)</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Animates old family portrait photos — makes faces blink, smile, and move naturally. Creates an emotional, lifelike video from a static photo. Used for family history projects.</p><div class="tool-superpower">💡 Superpower: Makes historical portrait photos come alive</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Topaz Photo AI</span><span class="tool-tag tag-paid">Paid</span></div><p class="tool-desc">Professional photo enhancement suite — sharpen, denoise, upscale, and remove blur from any photo. Runs locally on your GPU. Used by professional photographers globally.</p><div class="tool-superpower">💡 Superpower: Pro-grade local AI photo enhancement suite</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Canva AI Background</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Remove and replace backgrounds with AI-generated scenes — describe the background in text and Canva generates and composites it onto your subject automatically.</p><div class="tool-superpower">💡 Superpower: AI-generated background replacement in Canva</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Facetune 3</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI portrait editor for mobile. Relight photos after shooting, change hair color, reshape features, and generate completely new AI backgrounds. Everything photographers do manually.</p><div class="tool-superpower">💡 Superpower: Relight a portrait after it's already taken</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Perfectly Clear</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI auto-correction that fixes exposure, white balance, and color in batch — intelligently, not destructively. Used by event and wedding photographers to process thousands of photos fast.</p><div class="tool-superpower">💡 Superpower: Intelligent batch photo correction for events</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Relight by Clipdrop</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Add, move, or change light sources in any photo after it's taken. Place a virtual studio light anywhere and see shadows update in real time. Completely changes product photography.</p><div class="tool-superpower">💡 Superpower: Add studio lighting to any photo post-shoot</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Imagecolorizer</span><span class="tool-tag tag-free">Free</span></div><p class="tool-desc">Free AI colorization and restoration for old photos. Also restores damage, scratches, and fading. Simple upload-and-process interface — no account needed.</p><div class="tool-superpower">💡 Superpower: Free restoration AND colorization in one tool</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">PhotoAI</span><span class="tool-tag tag-paid">Paid</span></div><p class="tool-desc">Train an AI model on 20+ photos of yourself — then generate professional headshots, model photos, and product shots with your face in any setting, outfit, or style.</p><div class="tool-superpower">💡 Superpower: AI headshots in any setting from your selfies</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Luminar Neo</span><span class="tool-tag tag-paid">Paid</span></div><p class="tool-desc">AI-first photo editor with unique tools: AI Sky Replacement, AI Portrait Bokeh, Relight AI, and Dust Spot removal. Does in seconds what Lightroom takes minutes to do.</p><div class="tool-superpower">💡 Superpower: AI sky replacement and portrait bokeh instantly</div></div>
+    </div>
+  </div>
+
+  <!-- ===== PPT CREATION ===== -->
+  <div class="section" id="ppt">
+    <div class="section-header">
+      <div class="section-icon">📊</div>
+      <div class="section-meta">
+        <h2>PPT / Presentation Creation</h2>
+        <p>AI presentation tools beyond Gamma and Beautiful.ai — for sales, education, enterprise, and visual storytelling.</p>
+        <span class="tool-count-badge">16 tools</span>
+      </div>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Prezent AI</span><span class="tool-tag tag-paid">Paid</span></div><p class="tool-desc">AI that structures your presentation around audience, brand guidelines, and business context — not just a design tool. Outputs are usable from the first draft. Used by Fortune 500s.</p><div class="tool-superpower">💡 Superpower: Audience-aware, brand-locked slide generation</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">SlideSpeak</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Best tool for PowerPoint users — generates slides natively in PPTX format with no export issues. Unlimited AI on paid plans. Also summarizes and Q&As existing decks.</p><div class="tool-superpower">💡 Superpower: Native PPTX generation, no export formatting issues</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Pitch</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI presentation tool built for teams — 25+ AI actions including brand tone check, audience personalization, image editing, proofreading, and social media repurposing.</p><div class="tool-superpower">💡 Superpower: 25+ AI actions including brand tone checking</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Slidesgo AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Free AI presentation maker with an AI Quiz Maker, AI PDF-to-PPT Converter, and AI Lesson Plan Generator built in. Best completely free option for students and educators.</p><div class="tool-superpower">💡 Superpower: Most complete free AI presentation suite</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Napkin AI (Visuals)</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Converts your notes and text into visual slides, diagrams, and infographic slides — no design work. Paste your content; Napkin generates visual explanations for each idea.</p><div class="tool-superpower">💡 Superpower: Text → visual slide without any design work</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">MagicSlides</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Google Slides add-on that generates a full presentation from a topic or URL in 2 minutes. Works inside Google Slides natively — no new app to learn or switch to.</p><div class="tool-superpower">💡 Superpower: URL → full presentation inside Google Slides</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">SlidesAI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Google Slides add-on that generates slides from text. Creates native Google Slides — not an export. Best for users already living in Google Workspace.</p><div class="tool-superpower">💡 Superpower: AI slides native in Google Slides</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Prezi AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Non-linear presentation tool where ideas zoom in and out of a canvas — not slide-by-slide. AI generates the structure. Unmatched for storytelling and complex concept presentations.</p><div class="tool-superpower">💡 Superpower: Non-linear zooming presentation for storytelling</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Decktopus AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI that asks you 5 smart questions then generates a full presentation with speaker notes, recommended content, and multimedia. Best for quick, thorough first drafts.</p><div class="tool-superpower">💡 Superpower: 5 questions → complete deck with speaker notes</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Storydoc</span><span class="tool-tag tag-paid">Paid</span></div><p class="tool-desc">Interactive web-based presentation builder — not flat slides but scrollable, animated documents with CRM integration. Tracks who viewed each slide and for how long.</p><div class="tool-superpower">💡 Superpower: Track which slides viewers spend time on</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Kroma (Color AI)</span><span class="tool-tag tag-free">Free</span></div><p class="tool-desc">AI color palette generator for presentations — generates harmonious, brand-appropriate palettes based on your input color or mood. Fixes the most common slide design problem.</p><div class="tool-superpower">💡 Superpower: Generates perfect color palettes for any brand</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Plus AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI presentation tool that works directly inside Google Slides and PowerPoint. No app switching — AI lives where you already work. Best for existing workflow integration.</p><div class="tool-superpower">💡 Superpower: AI inside your existing Slides/PowerPoint</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Manus AI (Slides)</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Autonomous AI agent that researches a topic online, drafts content, and generates a full presentation deck — completely independently, while you do something else.</p><div class="tool-superpower">💡 Superpower: Autonomous agent builds your deck while you wait</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Tome AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">Rebuilt from scratch in 2026 as an AI-native presentation and document hybrid. Generates interactive, shareable web presentations from a prompt. Includes live data embeds.</p><div class="tool-superpower">💡 Superpower: Live data-embedded interactive presentations</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Piktochart AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI infographic and presentation tool — best for data-heavy slides with charts, icons, and visual storytelling. Turns raw data into beautiful visual summaries instantly.</p><div class="tool-superpower">💡 Superpower: Data → beautiful infographic slides automatically</div></div>
+      <div class="tool-card"><div class="tool-top"><span class="tool-name">Sendsteps AI</span><span class="tool-tag tag-freemium">Freemium</span></div><p class="tool-desc">AI presentation tool with built-in live audience interaction — polls, Q&A, word clouds, and quizzes inside slides. Turns any presentation into a two-way conversation.</p><div class="tool-superpower">💡 Superpower: Interactive polls and Q&A built into slides</div></div>
+    </div>
+  </div>
+
+</div><!-- end container -->
+
+<div class="footer">
+  Built by Nexflow Studio · Jaisurya P · Salem, Tamil Nadu · Updated August 2026
+</div>
+
+<script>
+function showSection(id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  event.target.classList.add('active');
+  document.getElementById('searchInput').value = '';
+  document.querySelectorAll('.tool-card').forEach(c => c.classList.remove('hidden'));
+}
+
+function filterTools() {
+  const q = document.getElementById('searchInput').value.toLowerCase();
+  if (!q) {
+    document.querySelectorAll('.tool-card').forEach(c => c.classList.remove('hidden'));
+    document.querySelectorAll('.section').forEach(s => {
+      if (!s.classList.contains('active')) return;
+    });
+    return;
+  }
+  // Show all sections when searching
+  document.querySelectorAll('.section').forEach(s => s.classList.add('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tool-card').forEach(card => {
+    const text = card.textContent.toLowerCase();
+    card.classList.toggle('hidden', !text.includes(q));
+  });
+}
+</script>
+</body>
+</html>
