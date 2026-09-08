@@ -9,8 +9,27 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  server: {
-    port: 3000,
-    open: true
-  }
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          // Split category data modules into separate chunks
+          if (id.includes('src/data/catalog/categories')) {
+            const parts = id.split('categories');
+            const file = parts[1].replace(/\\.[tj]sx?$/, '');
+            const name = file.replace(/\\W+/g, '-');
+            return `category-${name}`;
+          }
+          // Separate assessment engine code
+          if (id.includes('src/lib/assessmentEngine')) {
+            return 'assessmentEngine';
+          }
+          // Vendor chunk for node_modules
+          if (id.includes('node_modules')) {
+            return 'vendor';
+          }
+        },
+      },
+    },
+  },
 });

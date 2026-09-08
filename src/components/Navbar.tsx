@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Sparkles, LayoutDashboard, Bookmark, GraduationCap, GitCompare, Compass, Flame } from 'lucide-react';
 import { getProgressMap, getUserProfile } from '../lib/storage';
-import { ALL_TOOLS } from '../data/catalog/toolsData';
+import { catalogSummaries } from '../data/catalog/summaryData';
 
 export const Navbar: React.FC = () => {
   const location = useLocation();
@@ -21,7 +21,7 @@ export const Navbar: React.FC = () => {
         <div>
           <span>AI Tools Academy</span>
           <span style={{ fontSize: '10px', color: 'var(--accent2)', display: 'block', fontWeight: 500, lineHeight: 1 }}>
-            2026 EDITION • 1500+ CATALOG
+            2026 EDITION • CURATED CATALOG
           </span>
         </div>
       </Link>
@@ -32,7 +32,7 @@ export const Navbar: React.FC = () => {
           className={`tab-btn ${isActive('/') ? 'active' : ''}`}
           style={{ textDecoration: 'none' }}
         >
-          <Compass size={16} /> Explore Catalog ({ALL_TOOLS.length})
+          <Compass size={16} /> Explore Catalog ({catalogSummaries.length})
         </Link>
 
         <Link

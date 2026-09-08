@@ -105,3 +105,10 @@ export interface AITool {
   badge?: string;
 }
 
+export type ToolSummary = Pick<AITool,
+  'id' | 'slug' | 'name' | 'logo' | 'category' | 'subcategory' |
+  'pricingType' | 'freePlanDetails' | 'platforms' | 'shortDescription' |
+  'superpower' | 'difficulty' | 'learningTime' | 'officialUrl' | 'officialStatus' |
+  'docsUrl' | 'docsStatus' | 'keywords' | 'badge'
+>;
+

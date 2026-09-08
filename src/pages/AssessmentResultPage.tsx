@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useLocation, useParams, useNavigate, Link } from 'react-router-dom';
 import { AssessmentAttempt } from '../types/assessment';
-import { AITool } from '../types/tool';
-import { getToolBySlug } from '../lib/searchIndex';
+import { AITool, ToolSummary } from '../types/tool';
+import { getToolSummaryBySlug } from '../lib/searchIndex';
 import { getAttempts } from '../lib/storage';
 import confetti from 'canvas-confetti';
 import { Award, CheckCircle2, XCircle, RotateCcw, ArrowRight, ArrowLeft, BookOpen } from 'lucide-react';
@@ -14,13 +14,13 @@ export const AssessmentResultPage: React.FC = () => {
 
   // Retrieve attempt state or find from storage
   let attempt: AssessmentAttempt | undefined = location.state?.attempt;
-  let tool: AITool | undefined = location.state?.tool;
+  let tool: AITool | ToolSummary | undefined = location.state?.tool;
 
   if (!attempt && attemptId) {
     const attempts = getAttempts();
     attempt = attempts.find(a => a.id === attemptId);
     if (attempt) {
-      tool = getToolBySlug(attempt.toolId);
+      tool = getToolSummaryBySlug(attempt.toolId);
     }
   }
 

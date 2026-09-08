@@ -5,7 +5,7 @@ import { SearchAndFilter } from '../components/SearchAndFilter';
 import { ToolGrid } from '../components/ToolGrid';
 import { filterTools, FilterOptions } from '../lib/searchIndex';
 import { getProgressMap } from '../lib/storage';
-import { ALL_TOOLS } from '../data/catalog/toolsData';
+import { catalogSummaries } from '../data/catalog/summaryData';
 import { Link } from 'react-router-dom';
 import { PlayCircle, Award, Sparkles } from 'lucide-react';
 
@@ -50,7 +50,7 @@ export const HomePage: React.FC<HomePageProps> = ({ comparedSlugs, onToggleCompa
   // Continue Learning Tools
   const progressMap = getProgressMap();
   const continueLearningTools = useMemo(() => {
-    return ALL_TOOLS.filter(t => {
+    return catalogSummaries.filter(t => {
       const p = progressMap[t.id];
       return p && p.started && !p.assessmentPassed;
     }).slice(0, 3);

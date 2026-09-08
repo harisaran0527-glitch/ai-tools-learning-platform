@@ -1,6 +1,6 @@
 import React from 'react';
 import { Sparkles, CheckCircle2, Award, BookOpen } from 'lucide-react';
-import { ALL_TOOLS } from '../data/catalog/toolsData';
+import { catalogSummaries } from '../data/catalog/summaryData';
 import { getProgressMap } from '../lib/storage';
 
 export const Hero: React.FC = () => {
@@ -14,7 +14,7 @@ export const Hero: React.FC = () => {
         <Sparkles size={13} /> AI Tools Learning & Assessment Platform 2026
       </div>
 
-      <h1>Master 1,500+ AI Tools Step-by-Step</h1>
+      <h1>Master Practical AI Tools Step-by-Step</h1>
 
       <p>
         Designed specifically for faculty, educators, and beginners. Discover verified free & open-source AI tools, watch tutorials, complete practical exercises, and earn certificates through 50-mark assessments.
@@ -22,12 +22,12 @@ export const Hero: React.FC = () => {
 
       <div className="stats-row">
         <div className="stat">
-          <span className="stat-num">{ALL_TOOLS.length.toLocaleString()}+</span>
+          <span className="stat-num">{catalogSummaries.length.toLocaleString()}</span>
           <span className="stat-label">Unique AI Tools</span>
         </div>
 
         <div className="stat">
-          <span className="stat-num">12</span>
+          <span className="stat-num">15</span>
           <span className="stat-label">Categories</span>
         </div>
 

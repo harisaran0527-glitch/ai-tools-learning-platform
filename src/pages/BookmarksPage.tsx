@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ALL_TOOLS } from '../data/catalog/toolsData';
+import { catalogSummaries } from '../data/catalog/summaryData';
 import { getProgressMap } from '../lib/storage';
 import { ToolGrid } from '../components/ToolGrid';
 import { Bookmark, Sparkles } from 'lucide-react';
@@ -14,7 +14,7 @@ export const BookmarksPage: React.FC<BookmarksPageProps> = ({ comparedSlugs, onT
   const [refresh, setRefresh] = useState(0);
   const progressMap = getProgressMap();
 
-  const bookmarkedTools = ALL_TOOLS.filter(t => progressMap[t.id]?.bookmarked);
+  const bookmarkedTools = catalogSummaries.filter(t => progressMap[t.id]?.bookmarked);
 
   return (
     <div className="container">

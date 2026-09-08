@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { LEARNING_PATHS } from '../data/learningPaths';
-import { ALL_TOOLS } from '../data/catalog/toolsData';
+import { catalogSummaries } from '../data/catalog/summaryData';
 import { getProgressMap, saveCertificate, getUserProfile } from '../lib/storage';
 import { ToolCard } from '../components/ToolCard';
 import { Certificate } from '../components/Certificate';
@@ -21,7 +21,7 @@ export const FacultyPathPage: React.FC = () => {
   facultyPath.modules.forEach(mod => {
     mod.recommendedToolSlugs.forEach(slug => {
       totalToolsInPath++;
-      const tool = ALL_TOOLS.find(t => t.slug === slug);
+      const tool = catalogSummaries.find(t => t.slug === slug);
       if (tool && progressMap[tool.id]?.assessmentPassed) {
         passedToolsInPath++;
       }
@@ -111,7 +111,7 @@ export const FacultyPathPage: React.FC = () => {
 
             <div className="tools-grid">
               {mod.recommendedToolSlugs.map(slug => {
-                const tool = ALL_TOOLS.find(t => t.slug === slug);
+                const tool = catalogSummaries.find(t => t.slug === slug);
                 if (!tool) return null;
                 return <ToolCard key={tool.id} tool={tool} />;
               })}

@@ -1,6 +1,7 @@
 // IMPORTANT: For secure institutional exams, assessment scoring should be moved to a backend/server API.
 import { AssessmentAttempt } from '../types/assessment';
-import { getPublicQuestionsForTool, getAnswerKeyMapForTool, getFullQuestionsForTool } from '../data/questions/questionPool';
+import { getPublicQuestionsForTool, getAnswerKeyMapForTool } from '../data/questions/questionPool';
+import { AITool } from '../types/tool';
 import { getAttemptsForTool } from './storage';
 
 export interface GeneratedAssessment {
@@ -33,8 +34,9 @@ function shuffleArray<T>(array: T[]): T[] {
  * Guarantees 0 overlap across Attempt 1, Attempt 2, Attempt 3, and Attempt 4 (25 + 25 + 25 + 25 = 100).
  * Uses controlled Least-Recently-Used (LRU) fallback for Attempt 5+ when inventory is exhausted.
  */
-export function generateAssessmentForTool(toolId: string): GeneratedAssessment {
-  const publicQuestions = getPublicQuestionsForTool(toolId);
+export function generateAssessmentForTool(tool: AITool): GeneratedAssessment {
+  const toolId = tool.id;
+  const publicQuestions = getPublicQuestionsForTool(tool);
   const pastAttempts = getAttemptsForTool(toolId);
   const attemptNumber = pastAttempts.length + 1;
 
@@ -92,11 +94,12 @@ export function generateAssessmentForTool(toolId: string): GeneratedAssessment {
  */
 export function gradeAssessment(
   toolId: string,
+  tool: AITool,
   attemptNumber: number,
   questions: GeneratedAssessment['questions'],
   userAnswers: Record<string, number> // questionId -> selectedShuffledOptionIndex
 ): AssessmentAttempt {
-  const answerKeyMap = getAnswerKeyMapForTool(toolId);
+  const answerKeyMap = getAnswerKeyMapForTool(toolId, tool);
 
   let score = 0;
   const totalMarks = 50;

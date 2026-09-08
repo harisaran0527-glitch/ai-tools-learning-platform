@@ -1,6 +1,6 @@
 import React from 'react';
 import { LEARNING_PATHS } from '../data/learningPaths';
-import { ALL_TOOLS } from '../data/catalog/toolsData';
+import { catalogSummaries } from '../data/catalog/summaryData';
 import { ToolCard } from '../components/ToolCard';
 import { Sparkles, Compass } from 'lucide-react';
 
@@ -48,7 +48,7 @@ export const LearningPathsPage: React.FC = () => {
 
                   <div className="tools-grid">
                     {mod.recommendedToolSlugs.map(slug => {
-                      const tool = ALL_TOOLS.find(t => t.slug === slug);
+                      const tool = catalogSummaries.find(t => t.slug === slug);
                       if (!tool) return null;
                       return <ToolCard key={tool.id} tool={tool} />;
                     })}

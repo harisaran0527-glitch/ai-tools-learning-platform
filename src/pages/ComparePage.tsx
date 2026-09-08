@@ -1,6 +1,6 @@
 import React from 'react';
-import { ALL_TOOLS } from '../data/catalog/toolsData';
-import { AITool } from '../types/tool';
+import { catalogSummaries } from '../data/catalog/summaryData';
+import { ToolSummary } from '../types/tool';
 import { Link } from 'react-router-dom';
 import { GitCompare, ExternalLink, Trash2, CheckCircle2, Clock, ShieldCheck } from 'lucide-react';
 
@@ -15,9 +15,9 @@ export const ComparePage: React.FC<ComparePageProps> = ({
   onRemoveCompare,
   onClearCompare
 }) => {
-  const toolsToCompare: AITool[] = comparedSlugs
-    .map(slug => ALL_TOOLS.find(t => t.slug === slug))
-    .filter((t): t is AITool => t !== undefined)
+  const toolsToCompare: ToolSummary[] = comparedSlugs
+    .map(slug => catalogSummaries.find(t => t.slug === slug))
+    .filter((t): t is ToolSummary => t !== undefined)
     .slice(0, 3); // Max 3 tools
 
   return (

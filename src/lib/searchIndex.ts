@@ -1,5 +1,6 @@
-import { AITool, PricingType, DifficultyLevel } from '../types/tool';
-import { ALL_TOOLS } from '../data/catalog/toolsData';
+import { ToolSummary, PricingType, DifficultyLevel } from '../types/tool';
+import { catalogSummaries } from '../data/catalog/summaryData';
+import { loadToolBySlug } from '../data/catalog/toolLoaders';
 import { getProgressMap } from './storage';
 
 export interface FilterOptions {
@@ -12,7 +13,7 @@ export interface FilterOptions {
   sortBy?: 'a-z' | 'z-a' | 'beginner-first' | 'popular' | 'shortest-time';
 }
 
-export function filterTools(options: FilterOptions): AITool[] {
+export function filterTools(options: FilterOptions): ToolSummary[] {
   const {
     query = '',
     category = 'all',
@@ -26,7 +27,7 @@ export function filterTools(options: FilterOptions): AITool[] {
   const progressMap = getProgressMap();
   const q = query.trim().toLowerCase();
 
-  let results = ALL_TOOLS.filter(tool => {
+  let results = catalogSummaries.filter(tool => {
     // 1. Category filter
     if (category !== 'all' && tool.category.toLowerCase() !== category.toLowerCase()) {
       // Check category ID match or name match
@@ -67,13 +68,12 @@ export function filterTools(options: FilterOptions): AITool[] {
     // 6. Query search across multiple fields
     if (q) {
       const matchName = tool.name.toLowerCase().includes(q);
-      const matchDesc = tool.shortDescription.toLowerCase().includes(q) || tool.fullDescription.toLowerCase().includes(q);
+      const matchDesc = tool.shortDescription.toLowerCase().includes(q);
       const matchCat = tool.category.toLowerCase().includes(q) || tool.subcategory.toLowerCase().includes(q);
       const matchSuper = tool.superpower.toLowerCase().includes(q);
       const matchKeywords = tool.keywords.some(k => k.toLowerCase().includes(q));
-      const matchUseCases = tool.useCases.some(u => u.toLowerCase().includes(q));
 
-      if (!matchName && !matchDesc && !matchCat && !matchSuper && !matchKeywords && !matchUseCases) {
+      if (!matchName && !matchDesc && !matchCat && !matchSuper && !matchKeywords) {
         return false;
       }
     }
@@ -97,6 +97,8 @@ export function filterTools(options: FilterOptions): AITool[] {
   return results;
 }
 
-export function getToolBySlug(slug: string): AITool | undefined {
-  return ALL_TOOLS.find(t => t.slug === slug || t.id === slug);
+export function getToolSummaryBySlug(slug: string): ToolSummary | undefined {
+  return catalogSummaries.find(t => t.slug === slug || t.id === slug);
 }
+
+export { loadToolBySlug };

@@ -1,6 +1,6 @@
 import React from 'react';
 import { CATEGORIES } from '../data/categories';
-import { ALL_TOOLS } from '../data/catalog/toolsData';
+import { catalogSummaries } from '../data/catalog/summaryData';
 
 interface CategoryNavProps {
   selectedCategory: string; // 'all' or category ID/name
@@ -10,7 +10,7 @@ interface CategoryNavProps {
 export const CategoryNav: React.FC<CategoryNavProps> = ({ selectedCategory, onSelectCategory }) => {
   // Count tools per category
   const categoryCounts: Record<string, number> = {};
-  ALL_TOOLS.forEach(t => {
+  catalogSummaries.forEach(t => {
     categoryCounts[t.category] = (categoryCounts[t.category] || 0) + 1;
   });
 
@@ -21,7 +21,7 @@ export const CategoryNav: React.FC<CategoryNavProps> = ({ selectedCategory, onSe
           className={`tab-btn ${selectedCategory === 'all' ? 'active' : ''}`}
           onClick={() => onSelectCategory('all')}
         >
-          ⚡ All Tools ({ALL_TOOLS.length.toLocaleString()})
+          ⚡ Curated Tools ({catalogSummaries.length.toLocaleString()})
         </button>
 
         {CATEGORIES.map(cat => {

@@ -1,11 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Bookmark, Clock, CheckCircle2, Award, Zap, GitCompare } from 'lucide-react';
-import { AITool } from '../types/tool';
+import { ToolSummary } from '../types/tool';
 import { getToolProgress, toggleBookmark } from '../lib/storage';
 
 interface ToolCardProps {
-  tool: AITool;
+  tool: ToolSummary;
   isCompared?: boolean;
   onToggleCompare?: (slug: string) => void;
   onBookmarkChange?: () => void;

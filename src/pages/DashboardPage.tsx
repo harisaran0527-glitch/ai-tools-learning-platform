@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ALL_TOOLS } from '../data/catalog/toolsData';
+import { catalogSummaries } from '../data/catalog/summaryData';
 import { CATEGORIES } from '../data/categories';
 import { getProgressMap, getAttempts, getUserProfile, exportProgressJSON, importProgressJSON } from '../lib/storage';
 import { LayoutDashboard, Award, CheckCircle2, PlayCircle, Flame, GraduationCap, Download, Upload, RotateCcw } from 'lucide-react';
@@ -51,11 +51,11 @@ export const DashboardPage: React.FC = () => {
   const totalScoreSum = attempts.reduce((acc, a) => acc + a.score, 0);
   const avgScore = attempts.length > 0 ? Math.round(totalScoreSum / attempts.length) : 0;
   const highestScoreOverall = attempts.reduce((max, a) => Math.max(max, a.score), 0);
-  const overallPercentage = Math.round((passedCount / ALL_TOOLS.length) * 100);
+  const overallPercentage = Math.round((passedCount / catalogSummaries.length) * 100);
 
   // Category progress breakdown
   const categoryProgress = CATEGORIES.map(cat => {
-    const catTools = ALL_TOOLS.filter(t => t.category.toLowerCase() === cat.name.toLowerCase());
+    const catTools = catalogSummaries.filter(t => t.category.toLowerCase() === cat.name.toLowerCase());
     const catPassed = catTools.filter(t => progressMap[t.id]?.assessmentPassed).length;
     const pct = catTools.length > 0 ? Math.round((catPassed / catTools.length) * 100) : 0;
     return {
@@ -117,7 +117,7 @@ export const DashboardPage: React.FC = () => {
         <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', padding: '20px', borderRadius: '16px' }}>
           <span style={{ fontSize: '12px', color: 'var(--muted)', textTransform: 'uppercase' }}>Total Catalog Tools</span>
           <div style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: '30px', fontWeight: 700, color: '#fff', marginTop: '4px' }}>
-            {ALL_TOOLS.length.toLocaleString()}
+            {catalogSummaries.length.toLocaleString()}
           </div>
         </div>
 
@@ -208,7 +208,7 @@ export const DashboardPage: React.FC = () => {
               </thead>
               <tbody>
                 {attempts.map(att => {
-                  const tool = ALL_TOOLS.find(t => t.id === att.toolId);
+                  const tool = catalogSummaries.find(t => t.id === att.toolId);
                   return (
                     <tr key={att.id} style={{ borderBottom: '1px solid var(--border)' }}>
                       <td style={{ padding: '12px', fontWeight: 600, color: '#fff' }}>

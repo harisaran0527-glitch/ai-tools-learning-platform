@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import { getToolBySlug } from '../lib/searchIndex';
+import { loadToolBySlug } from '../lib/searchIndex';
+import { AITool } from '../types/tool';
 import { generateAssessmentForTool, gradeAssessment, GeneratedAssessment } from '../lib/assessmentEngine';
 import { saveAttempt } from '../lib/storage';
 import { ArrowLeft, ArrowRight, ShieldCheck } from 'lucide-react';
@@ -8,7 +9,7 @@ import { ArrowLeft, ArrowRight, ShieldCheck } from 'lucide-react';
 export const AssessmentPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
-  const tool = slug ? getToolBySlug(slug) : undefined;
+  const [tool, setTool] = useState<AITool>();
 
   const [assessmentData, setAssessmentData] = useState<GeneratedAssessment | null>(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -16,14 +17,19 @@ export const AssessmentPage: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
-    if (tool) {
-      // Generate 25 questions (excludes used IDs for retests!)
-      const data = generateAssessmentForTool(tool.id);
+    let cancelled = false;
+    setTool(undefined);
+    setAssessmentData(null);
+    if (slug) loadToolBySlug(slug).then(loadedTool => {
+      if (cancelled || !loadedTool) return;
+      setTool(loadedTool);
+      const data = generateAssessmentForTool(loadedTool);
       setAssessmentData(data);
       setUserAnswers({});
       setCurrentQuestionIndex(0);
-    }
+    });
     window.scrollTo(0, 0);
+    return () => { cancelled = true; };
   }, [slug]);
 
   if (!tool || !assessmentData) {
@@ -48,7 +54,7 @@ export const AssessmentPage: React.FC = () => {
 
   const handleSubmitAssessment = () => {
     setIsSubmitting(true);
-    const attemptResult = gradeAssessment(tool.id, assessmentData.attemptNumber, questions, userAnswers);
+    const attemptResult = gradeAssessment(tool.id, tool, assessmentData.attemptNumber, questions, userAnswers);
     saveAttempt(attemptResult);
     setIsSubmitting(false);
 

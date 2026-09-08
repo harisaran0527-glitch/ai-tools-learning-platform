@@ -1,8 +1,7 @@
 // IMPORTANT: For secure institutional exams, assessment scoring should be moved to a backend/server API.
 import { Question, PublicQuestion, QuestionAnswerKey } from '../../types/assessment';
-import { ALL_TOOLS } from '../catalog/toolsData';
+import { AITool } from '../../types/tool';
 
-const toolMap = new Map(ALL_TOOLS.map(t => [t.id, t]));
 const questionCache = new Map<string, Question[]>();
 const answerKeyCache = new Map<string, Map<string, QuestionAnswerKey>>();
 
@@ -21,13 +20,11 @@ const answerKeyCache = new Map<string, Map<string, QuestionAnswerKey>>();
  * 11. Student & learner academic benefits
  * 12. Operational limitations & constraints
  */
-export function getFullQuestionsForTool(toolId: string): Question[] {
+export function getFullQuestionsForTool(tool: AITool): Question[] {
+  const toolId = tool.id;
   if (questionCache.has(toolId)) {
     return questionCache.get(toolId)!;
   }
-
-  const tool = toolMap.get(toolId);
-  if (!tool) return [];
 
   const questions: Question[] = [];
 
@@ -128,8 +125,8 @@ export function getFullQuestionsForTool(toolId: string): Question[] {
 /**
  * Return Public Question Data (safe for UI rendering, Stripped of correctAnswer & explanation)
  */
-export function getPublicQuestionsForTool(toolId: string): PublicQuestion[] {
-  const full = getFullQuestionsForTool(toolId);
+export function getPublicQuestionsForTool(tool: AITool): PublicQuestion[] {
+  const full = getFullQuestionsForTool(tool);
   return full.map(q => ({
     id: q.id,
     toolId: q.toolId,
@@ -143,12 +140,12 @@ export function getPublicQuestionsForTool(toolId: string): PublicQuestion[] {
 /**
  * Return Answer Keys exclusively for grading service
  */
-export function getAnswerKeyMapForTool(toolId: string): Map<string, QuestionAnswerKey> {
+export function getAnswerKeyMapForTool(toolId: string, tool: AITool): Map<string, QuestionAnswerKey> {
   if (answerKeyCache.has(toolId)) {
     return answerKeyCache.get(toolId)!;
   }
 
-  const full = getFullQuestionsForTool(toolId);
+  const full = getFullQuestionsForTool(tool);
   const map = new Map<string, QuestionAnswerKey>();
   full.forEach(q => {
     map.set(q.id, {
@@ -162,8 +159,3 @@ export function getAnswerKeyMapForTool(toolId: string): Map<string, QuestionAnsw
   return map;
 }
 
-export const QUESTION_POOLS: Record<string, Question[]> = new Proxy({}, {
-  get(_target, prop: string) {
-    return getFullQuestionsForTool(prop);
-  }
-});

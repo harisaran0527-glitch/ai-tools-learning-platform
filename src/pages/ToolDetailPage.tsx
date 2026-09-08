@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { getToolBySlug } from '../lib/searchIndex';
-import { ALL_TOOLS } from '../data/catalog/toolsData';
+import { loadToolBySlug } from '../lib/searchIndex';
+import { catalogSummaries } from '../data/catalog/summaryData';
+import { AITool } from '../types/tool';
 import { getToolProgress, updateToolProgress, toggleBookmark } from '../lib/storage';
 import { PromptBox } from '../components/PromptBox';
 import { VideoPlayer } from '../components/VideoPlayer';
@@ -15,20 +16,25 @@ export const ToolDetailPage: React.FC = () => {
   const navigate = useNavigate();
   const [activeSection, setActiveSection] = useState('overview');
 
-  const tool = slug ? getToolBySlug(slug) : undefined;
-  const [progress, setProgress] = useState(() => (tool ? getToolProgress(tool.id) : null));
+  const [tool, setTool] = useState<AITool>();
+  const [progress, setProgress] = useState<ReturnType<typeof getToolProgress> | null>(null);
 
   useEffect(() => {
-    if (tool) {
-      const current = getToolProgress(tool.id);
+    let cancelled = false;
+    setTool(undefined);
+    setProgress(null);
+    if (slug) loadToolBySlug(slug).then(loadedTool => {
+      if (cancelled || !loadedTool) return;
+      setTool(loadedTool);
+      const current = getToolProgress(loadedTool.id);
       setProgress(current);
-      // Mark as started if not yet started
       if (!current.started) {
-        updateToolProgress(tool.id, { started: true, learningProgress: Math.max(current.learningProgress || 20, 20) });
-        setProgress(getToolProgress(tool.id));
+        updateToolProgress(loadedTool.id, { started: true, learningProgress: Math.max(current.learningProgress || 20, 20) });
+        setProgress(getToolProgress(loadedTool.id));
       }
-    }
+    });
     window.scrollTo(0, 0);
+    return () => { cancelled = true; };
   }, [slug]);
 
   if (!tool || !progress) {
@@ -42,9 +48,9 @@ export const ToolDetailPage: React.FC = () => {
   }
 
   // Find Prev / Next tools
-  const currentIndex = ALL_TOOLS.findIndex(t => t.id === tool.id);
-  const prevTool = currentIndex > 0 ? ALL_TOOLS[currentIndex - 1] : ALL_TOOLS[ALL_TOOLS.length - 1];
-  const nextTool = currentIndex < ALL_TOOLS.length - 1 ? ALL_TOOLS[currentIndex + 1] : ALL_TOOLS[0];
+  const currentIndex = catalogSummaries.findIndex(t => t.slug === tool.slug);
+  const prevTool = currentIndex > 0 ? catalogSummaries[currentIndex - 1] : catalogSummaries[catalogSummaries.length - 1];
+  const nextTool = currentIndex < catalogSummaries.length - 1 ? catalogSummaries[currentIndex + 1] : catalogSummaries[0];
 
   const handleBookmarkToggle = () => {
     toggleBookmark(tool.id);

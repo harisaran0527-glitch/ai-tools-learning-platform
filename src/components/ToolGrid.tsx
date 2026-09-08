@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { ToolCard } from './ToolCard';
-import { AITool } from '../types/tool';
+import { ToolSummary } from '../types/tool';
 import { ChevronLeft, ChevronRight, SearchX, RotateCcw } from 'lucide-react';
 
 interface ToolGridProps {
-  tools: AITool[];
+  tools: ToolSummary[];
   comparedSlugs: string[];
   onToggleCompare: (slug: string) => void;
   onBookmarkChange: () => void;

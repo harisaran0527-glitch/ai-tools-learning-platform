@@ -166,5 +166,26 @@ export const CATEGORIES: CategoryInfo[] = [
       'Pitch Deck Builders',
       'Presenter AI Assistants'
     ]
+  },
+  {
+    id: 'website-app-creation',
+    name: 'Website / App Creation',
+    icon: '🧩',
+    description: 'AI-assisted website builders, app builders, visual development platforms, and no-code product tools.',
+    subcategories: ['AI Website Builders', 'AI App Builders', 'No-Code App Builders', 'Visual App Builders']
+  },
+  {
+    id: 'coding',
+    name: 'Coding',
+    icon: '💻',
+    description: 'Practical coding assistants for teaching, research prototypes, and maintaining technical projects.',
+    subcategories: ['Coding Assistants']
+  },
+  {
+    id: 'productivity-automation',
+    name: 'Productivity / Automation',
+    icon: '⚙️',
+    description: 'Useful workflow automation for faculty administration, communication, and recurring operations.',
+    subcategories: ['Workflow Automation']
   }
 ];
