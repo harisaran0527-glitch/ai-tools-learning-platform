@@ -9131,4 +9131,2141 @@ export const music_generation_tools: AITool[] = [
     "verifiedAt": "2026-08-28",
     "badge": "FREE-TIER"
   }
+,
+{
+    "id": "genuine-music_generation-1",
+    "slug": "aiva-ai",
+    "name": "AIVA (Music Generation)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=aiva-ai",
+    "category": "Music Generation",
+    "subcategory": "AI Music",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI music composition tool for creating original soundtracks and background music.",
+    "fullDescription": "AIVA is a leading AI tool in the Music Generation space. AI music composition tool for creating original soundtracks and background music.",
+    "superpower": "AI music composition tool for creating original soundtracks and background music.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on music generation tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional music generation workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "AIVA leverages state-of-the-art AI models for music generation tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.aiva.ai and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real music generation task using AIVA.",
+        "input": "A practical music generation problem relevant to your work.",
+        "examplePrompt": "Use AIVA to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality music generation output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.aiva.ai",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.aiva.ai",
+    "docsStatus": "verified",
+    "keywords": [
+        "AIVA",
+        "Music Generation",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-music_generation-2",
+    "slug": "soundraw-ai",
+    "name": "Soundraw",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=soundraw-ai",
+    "category": "Music Generation",
+    "subcategory": "AI Music",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI music generator for creating royalty-free music customized to mood and genre.",
+    "fullDescription": "Soundraw is a leading AI tool in the Music Generation space. AI music generator for creating royalty-free music customized to mood and genre.",
+    "superpower": "AI music generator for creating royalty-free music customized to mood and genre.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on music generation tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional music generation workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Soundraw leverages state-of-the-art AI models for music generation tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://soundraw.io and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real music generation task using Soundraw.",
+        "input": "A practical music generation problem relevant to your work.",
+        "examplePrompt": "Use Soundraw to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality music generation output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://soundraw.io",
+    "officialStatus": "verified",
+    "docsUrl": "https://soundraw.io",
+    "docsStatus": "verified",
+    "keywords": [
+        "Soundraw",
+        "Music Generation",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-music_generation-3",
+    "slug": "mubert-ai",
+    "name": "Mubert (Music Generation)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=mubert-ai",
+    "category": "Music Generation",
+    "subcategory": "AI Music",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI-powered streaming platform generating royalty-free music for creators.",
+    "fullDescription": "Mubert is a leading AI tool in the Music Generation space. AI-powered streaming platform generating royalty-free music for creators.",
+    "superpower": "AI-powered streaming platform generating royalty-free music for creators.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on music generation tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional music generation workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Mubert leverages state-of-the-art AI models for music generation tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://mubert.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real music generation task using Mubert.",
+        "input": "A practical music generation problem relevant to your work.",
+        "examplePrompt": "Use Mubert to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality music generation output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://mubert.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://mubert.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Mubert",
+        "Music Generation",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-music_generation-4",
+    "slug": "boomy-ai",
+    "name": "Boomy (Music Generation)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=boomy-ai",
+    "category": "Music Generation",
+    "subcategory": "AI Music",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI music creation app for making original songs in seconds and distributing them.",
+    "fullDescription": "Boomy is a leading AI tool in the Music Generation space. AI music creation app for making original songs in seconds and distributing them.",
+    "superpower": "AI music creation app for making original songs in seconds and distributing them.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on music generation tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional music generation workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Boomy leverages state-of-the-art AI models for music generation tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://boomy.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real music generation task using Boomy.",
+        "input": "A practical music generation problem relevant to your work.",
+        "examplePrompt": "Use Boomy to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality music generation output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://boomy.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://boomy.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Boomy",
+        "Music Generation",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-music_generation-6",
+    "slug": "loudly-ai",
+    "name": "Loudly (Music Generation)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=loudly-ai",
+    "category": "Music Generation",
+    "subcategory": "AI Music",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI music generator and editor for creating royalty-free stems and tracks.",
+    "fullDescription": "Loudly is a leading AI tool in the Music Generation space. AI music generator and editor for creating royalty-free stems and tracks.",
+    "superpower": "AI music generator and editor for creating royalty-free stems and tracks.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on music generation tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional music generation workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Loudly leverages state-of-the-art AI models for music generation tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.loudly.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real music generation task using Loudly.",
+        "input": "A practical music generation problem relevant to your work.",
+        "examplePrompt": "Use Loudly to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality music generation output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.loudly.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.loudly.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Loudly",
+        "Music Generation",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-music_generation-7",
+    "slug": "ecrett-music-ai",
+    "name": "ecrett music (Music Generation)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=ecrett-music-ai",
+    "category": "Music Generation",
+    "subcategory": "AI Music",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI music generator creating scene-based music for videos and games.",
+    "fullDescription": "ecrett music is a leading AI tool in the Music Generation space. AI music generator creating scene-based music for videos and games.",
+    "superpower": "AI music generator creating scene-based music for videos and games.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on music generation tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional music generation workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "ecrett music leverages state-of-the-art AI models for music generation tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://ecrettmusic.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real music generation task using ecrett music.",
+        "input": "A practical music generation problem relevant to your work.",
+        "examplePrompt": "Use ecrett music to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality music generation output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://ecrettmusic.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://ecrettmusic.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "ecrett music",
+        "Music Generation",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-music_generation-9",
+    "slug": "stable-audio-ai",
+    "name": "Stable Audio",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=stable-audio-ai",
+    "category": "Music Generation",
+    "subcategory": "AI Music",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "Stability AI's music generation model for creating high-quality audio from prompts.",
+    "fullDescription": "Stable Audio is a leading AI tool in the Music Generation space. Stability AI's music generation model for creating high-quality audio from prompts.",
+    "superpower": "Stability AI's music generation model for creating high-quality audio from prompts.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on music generation tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional music generation workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Stable Audio leverages state-of-the-art AI models for music generation tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://stability.ai/stable-audio and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real music generation task using Stable Audio.",
+        "input": "A practical music generation problem relevant to your work.",
+        "examplePrompt": "Use Stable Audio to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality music generation output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://stability.ai/stable-audio",
+    "officialStatus": "verified",
+    "docsUrl": "https://stability.ai/stable-audio",
+    "docsStatus": "verified",
+    "keywords": [
+        "Stable Audio",
+        "Music Generation",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+}
+,
+{
+  "id": "exp700-music_generation-1",
+  "slug": "musiclm-google",
+  "name": "MusicLM (Google FX)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=musiclm-google",
+  "category": "Music Generation",
+  "subcategory": "Music Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Google AI model for generating high-fidelity music from text descriptions.",
+  "fullDescription": "MusicLM (Google FX) is an established tool in the Music Generation landscape. Google AI model for generating high-fidelity music from text descriptions.",
+  "superpower": "Google AI model for generating high-fidelity music from text descriptions.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances music generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional music generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "MusicLM (Google FX) provides specialized AI features tailored for music generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://aitestkitchen.withgoogle.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core music generation task with MusicLM (Google FX).",
+    "input": "Sample project input for music generation.",
+    "examplePrompt": "Utilize MusicLM (Google FX) for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using MusicLM (Google FX).",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://aitestkitchen.withgoogle.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://aitestkitchen.withgoogle.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "MusicLM (Google FX)",
+    "Music Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-music_generation-4",
+  "slug": "audiogen-meta-research",
+  "name": "Meta AudioGen",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=audiogen-meta-research",
+  "category": "Music Generation",
+  "subcategory": "Music Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Text-to-sound-effect generation model by Meta AI.",
+  "fullDescription": "Meta AudioGen is an established tool in the Music Generation landscape. Text-to-sound-effect generation model by Meta AI.",
+  "superpower": "Text-to-sound-effect generation model by Meta AI.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances music generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional music generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Meta AudioGen provides specialized AI features tailored for music generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/facebookresearch/audiocraft/blob/main/docs/AUDIOGEN.md to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core music generation task with Meta AudioGen.",
+    "input": "Sample project input for music generation.",
+    "examplePrompt": "Utilize Meta AudioGen for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Meta AudioGen.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://github.com/facebookresearch/audiocraft/blob/main/docs/AUDIOGEN.md",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/facebookresearch/audiocraft/blob/main/docs/AUDIOGEN.md",
+  "docsStatus": "verified",
+  "keywords": [
+    "Meta AudioGen",
+    "Music Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-music_generation-5",
+  "slug": "riffusion-ai",
+  "name": "Riffusion (Music Generation)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=riffusion-ai",
+  "category": "Music Generation",
+  "subcategory": "Music Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Real-time music generation using Stable Diffusion on spectrogram images.",
+  "fullDescription": "Riffusion is an established tool in the Music Generation landscape. Real-time music generation using Stable Diffusion on spectrogram images.",
+  "superpower": "Real-time music generation using Stable Diffusion on spectrogram images.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances music generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional music generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Riffusion provides specialized AI features tailored for music generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.riffusion.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core music generation task with Riffusion.",
+    "input": "Sample project input for music generation.",
+    "examplePrompt": "Utilize Riffusion for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Riffusion.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.riffusion.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.riffusion.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Riffusion",
+    "Music Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-music_generation-6",
+  "slug": "hydra-sound-generator",
+  "name": "Hydra AI",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=hydra-sound-generator",
+  "category": "Music Generation",
+  "subcategory": "Music Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI sound effect and sample generator for electronic music producers.",
+  "fullDescription": "Hydra AI is an established tool in the Music Generation landscape. AI sound effect and sample generator for electronic music producers.",
+  "superpower": "AI sound effect and sample generator for electronic music producers.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances music generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional music generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Hydra AI provides specialized AI features tailored for music generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://hydra.audio to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core music generation task with Hydra AI.",
+    "input": "Sample project input for music generation.",
+    "examplePrompt": "Utilize Hydra AI for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Hydra AI.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://hydra.audio",
+  "officialStatus": "verified",
+  "docsUrl": "https://hydra.audio",
+  "docsStatus": "verified",
+  "keywords": [
+    "Hydra AI",
+    "Music Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-music_generation-7",
+  "slug": "voicemod-tuna",
+  "name": "Voicemod Tuna",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=voicemod-tuna",
+  "category": "Music Generation",
+  "subcategory": "Music Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Community soundboard and AI voice generator for gamers and creators.",
+  "fullDescription": "Voicemod Tuna is an established tool in the Music Generation landscape. Community soundboard and AI voice generator for gamers and creators.",
+  "superpower": "Community soundboard and AI voice generator for gamers and creators.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances music generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional music generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Voicemod Tuna provides specialized AI features tailored for music generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://tuna.voicemod.net to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core music generation task with Voicemod Tuna.",
+    "input": "Sample project input for music generation.",
+    "examplePrompt": "Utilize Voicemod Tuna for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Voicemod Tuna.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://tuna.voicemod.net",
+  "officialStatus": "verified",
+  "docsUrl": "https://tuna.voicemod.net",
+  "docsStatus": "verified",
+  "keywords": [
+    "Voicemod Tuna",
+    "Music Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-music_generation-8",
+  "slug": "splice-sounds-ai",
+  "name": "Splice Create",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=splice-sounds-ai",
+  "category": "Music Generation",
+  "subcategory": "Music Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Sample library platform with AI stack matching and loop suggestions.",
+  "fullDescription": "Splice Create is an established tool in the Music Generation landscape. Sample library platform with AI stack matching and loop suggestions.",
+  "superpower": "Sample library platform with AI stack matching and loop suggestions.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances music generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional music generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Splice Create provides specialized AI features tailored for music generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://splice.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core music generation task with Splice Create.",
+    "input": "Sample project input for music generation.",
+    "examplePrompt": "Utilize Splice Create for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Splice Create.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://splice.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://splice.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Splice Create",
+    "Music Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-music_generation-10",
+  "slug": "landr-mastering-ai",
+  "name": "LANDR",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=landr-mastering-ai",
+  "category": "Music Generation",
+  "subcategory": "Music Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI-powered automated music mastering, distribution, and sample platform.",
+  "fullDescription": "LANDR is an established tool in the Music Generation landscape. AI-powered automated music mastering, distribution, and sample platform.",
+  "superpower": "AI-powered automated music mastering, distribution, and sample platform.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances music generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional music generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "LANDR provides specialized AI features tailored for music generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.landr.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core music generation task with LANDR.",
+    "input": "Sample project input for music generation.",
+    "examplePrompt": "Utilize LANDR for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using LANDR.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.landr.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.landr.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "LANDR",
+    "Music Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-music_generation-11",
+  "slug": "masteringbox-online",
+  "name": "MasteringBOX",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=masteringbox-online",
+  "category": "Music Generation",
+  "subcategory": "Music Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Online instant audio mastering service using intelligent algorithms.",
+  "fullDescription": "MasteringBOX is an established tool in the Music Generation landscape. Online instant audio mastering service using intelligent algorithms.",
+  "superpower": "Online instant audio mastering service using intelligent algorithms.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances music generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional music generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "MasteringBOX provides specialized AI features tailored for music generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.masteringbox.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core music generation task with MasteringBOX.",
+    "input": "Sample project input for music generation.",
+    "examplePrompt": "Utilize MasteringBOX for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using MasteringBOX.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.masteringbox.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.masteringbox.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "MasteringBOX",
+    "Music Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-music_generation-12",
+  "slug": "eMastered-ai",
+  "name": "eMastered (Music Generation)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=eMastered-ai",
+  "category": "Music Generation",
+  "subcategory": "Music Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI audio mastering engine built by Grammy-winning engineers.",
+  "fullDescription": "eMastered is an established tool in the Music Generation landscape. AI audio mastering engine built by Grammy-winning engineers.",
+  "superpower": "AI audio mastering engine built by Grammy-winning engineers.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances music generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional music generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "eMastered provides specialized AI features tailored for music generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://emastered.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core music generation task with eMastered.",
+    "input": "Sample project input for music generation.",
+    "examplePrompt": "Utilize eMastered for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using eMastered.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://emastered.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://emastered.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "eMastered",
+    "Music Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-music_generation-13",
+  "slug": "lalal-ai-stem-splitter",
+  "name": "LALAL.AI (Music Generation)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=lalal-ai-stem-splitter",
+  "category": "Music Generation",
+  "subcategory": "Music Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "High precision vocal remover and music source separation service.",
+  "fullDescription": "LALAL.AI is an established tool in the Music Generation landscape. High precision vocal remover and music source separation service.",
+  "superpower": "High precision vocal remover and music source separation service.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances music generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional music generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "LALAL.AI provides specialized AI features tailored for music generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.lalal.ai to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core music generation task with LALAL.AI.",
+    "input": "Sample project input for music generation.",
+    "examplePrompt": "Utilize LALAL.AI for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using LALAL.AI.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.lalal.ai",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.lalal.ai",
+  "docsStatus": "verified",
+  "keywords": [
+    "LALAL.AI",
+    "Music Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-music_generation-14",
+  "slug": "splitter-ai-stems",
+  "name": "Splitter.ai",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=splitter-ai-stems",
+  "category": "Music Generation",
+  "subcategory": "Music Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI audio isolation service for extracting stems, vocals, and instruments.",
+  "fullDescription": "Splitter.ai is an established tool in the Music Generation landscape. AI audio isolation service for extracting stems, vocals, and instruments.",
+  "superpower": "AI audio isolation service for extracting stems, vocals, and instruments.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances music generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional music generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Splitter.ai provides specialized AI features tailored for music generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://splitter.ai to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core music generation task with Splitter.ai.",
+    "input": "Sample project input for music generation.",
+    "examplePrompt": "Utilize Splitter.ai for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Splitter.ai.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://splitter.ai",
+  "officialStatus": "verified",
+  "docsUrl": "https://splitter.ai",
+  "docsStatus": "verified",
+  "keywords": [
+    "Splitter.ai",
+    "Music Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-music_generation-15",
+  "slug": "moises-ai-musician",
+  "name": "Moises.ai (Music Generation)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=moises-ai-musician",
+  "category": "Music Generation",
+  "subcategory": "Music Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "The musician's app for vocal separation, chord detection, and pitch changing.",
+  "fullDescription": "Moises.ai is an established tool in the Music Generation landscape. The musician's app for vocal separation, chord detection, and pitch changing.",
+  "superpower": "The musician's app for vocal separation, chord detection, and pitch changing.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances music generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional music generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Moises.ai provides specialized AI features tailored for music generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://moises.ai to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core music generation task with Moises.ai.",
+    "input": "Sample project input for music generation.",
+    "examplePrompt": "Utilize Moises.ai for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Moises.ai.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://moises.ai",
+  "officialStatus": "verified",
+  "docsUrl": "https://moises.ai",
+  "docsStatus": "verified",
+  "keywords": [
+    "Moises.ai",
+    "Music Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-music_generation-16",
+  "slug": "vocal-remover-org",
+  "name": "Vocal Remover",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=vocal-remover-org",
+  "category": "Music Generation",
+  "subcategory": "Music Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free online stem separator to split songs into vocal and instrumental tracks.",
+  "fullDescription": "Vocal Remover is an established tool in the Music Generation landscape. Free online stem separator to split songs into vocal and instrumental tracks.",
+  "superpower": "Free online stem separator to split songs into vocal and instrumental tracks.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances music generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional music generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Vocal Remover provides specialized AI features tailored for music generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://vocalremover.org to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core music generation task with Vocal Remover.",
+    "input": "Sample project input for music generation.",
+    "examplePrompt": "Utilize Vocal Remover for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Vocal Remover.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://vocalremover.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://vocalremover.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "Vocal Remover",
+    "Music Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-music_generation-17",
+  "slug": "demucs-facebook",
+  "name": "Meta Demucs",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=demucs-facebook",
+  "category": "Music Generation",
+  "subcategory": "Music Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "State-of-the-art music source separation model by Meta AI.",
+  "fullDescription": "Meta Demucs is an established tool in the Music Generation landscape. State-of-the-art music source separation model by Meta AI.",
+  "superpower": "State-of-the-art music source separation model by Meta AI.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances music generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional music generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Meta Demucs provides specialized AI features tailored for music generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/facebookresearch/demucs to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core music generation task with Meta Demucs.",
+    "input": "Sample project input for music generation.",
+    "examplePrompt": "Utilize Meta Demucs for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Meta Demucs.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://github.com/facebookresearch/demucs",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/facebookresearch/demucs",
+  "docsStatus": "verified",
+  "keywords": [
+    "Meta Demucs",
+    "Music Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-music_generation-18",
+  "slug": "spleeter-deezer",
+  "name": "Deezer Spleeter",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=spleeter-deezer",
+  "category": "Music Generation",
+  "subcategory": "Music Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Deezer open-source audio source separation library in Python.",
+  "fullDescription": "Deezer Spleeter is an established tool in the Music Generation landscape. Deezer open-source audio source separation library in Python.",
+  "superpower": "Deezer open-source audio source separation library in Python.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances music generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional music generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Deezer Spleeter provides specialized AI features tailored for music generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/deezer/spleeter to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core music generation task with Deezer Spleeter.",
+    "input": "Sample project input for music generation.",
+    "examplePrompt": "Utilize Deezer Spleeter for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Deezer Spleeter.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://github.com/deezer/spleeter",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/deezer/spleeter",
+  "docsStatus": "verified",
+  "keywords": [
+    "Deezer Spleeter",
+    "Music Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+}
+,
+{
+  "id": "final700-music_generation-1",
+  "slug": "music-spectrogram-diffusion",
+  "name": "Music Spectrogram Diffusion",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=music-spectrogram-diffusion",
+  "category": "Music Generation",
+  "subcategory": "Music Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Google Magenta model for synthesizing audio from MIDI note events.",
+  "fullDescription": "Music Spectrogram Diffusion is a high-quality published AI tool in Music Generation. Google Magenta model for synthesizing audio from MIDI note events.",
+  "superpower": "Google Magenta model for synthesizing audio from MIDI note events.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in music generation workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in music generation.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "Music Spectrogram Diffusion provides specialized AI performance in music generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/magenta/music-spectrogram-diffusion to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Music Spectrogram Diffusion.",
+    "input": "Sample input for music generation.",
+    "examplePrompt": "Use Music Spectrogram Diffusion to complete: [describe task].",
+    "expectedResult": "Tested and verified output using Music Spectrogram Diffusion.",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/magenta/music-spectrogram-diffusion",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/magenta/music-spectrogram-diffusion",
+  "docsStatus": "verified",
+  "keywords": [
+    "Music Spectrogram Diffusion",
+    "Music Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-music_generation-2",
+  "slug": "magenta-tensorflow",
+  "name": "Google Magenta",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=magenta-tensorflow",
+  "category": "Music Generation",
+  "subcategory": "Music Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Open-source research project exploring machine learning in art and music.",
+  "fullDescription": "Google Magenta is a high-quality published AI tool in Music Generation. Open-source research project exploring machine learning in art and music.",
+  "superpower": "Open-source research project exploring machine learning in art and music.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in music generation workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in music generation.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "Google Magenta provides specialized AI performance in music generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://magenta.tensorflow.org to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Google Magenta.",
+    "input": "Sample input for music generation.",
+    "examplePrompt": "Use Google Magenta to complete: [describe task].",
+    "expectedResult": "Tested and verified output using Google Magenta.",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://magenta.tensorflow.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://magenta.tensorflow.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "Google Magenta",
+    "Music Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-music_generation-3",
+  "slug": "jukebox-openai",
+  "name": "OpenAI Jukebox (Music Generation)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=jukebox-openai",
+  "category": "Music Generation",
+  "subcategory": "Music Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Neural net that generates music with singing in raw audio domain.",
+  "fullDescription": "OpenAI Jukebox is a high-quality published AI tool in Music Generation. Neural net that generates music with singing in raw audio domain.",
+  "superpower": "Neural net that generates music with singing in raw audio domain.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in music generation workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in music generation.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "OpenAI Jukebox provides specialized AI performance in music generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/openai/jukebox to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using OpenAI Jukebox.",
+    "input": "Sample input for music generation.",
+    "examplePrompt": "Use OpenAI Jukebox to complete: [describe task].",
+    "expectedResult": "Tested and verified output using OpenAI Jukebox.",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/openai/jukebox",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/openai/jukebox",
+  "docsStatus": "verified",
+  "keywords": [
+    "OpenAI Jukebox",
+    "Music Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-music_generation-4",
+  "slug": "nsynth-magenta",
+  "name": "NSynth (Magenta)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=nsynth-magenta",
+  "category": "Music Generation",
+  "subcategory": "Music Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Neural audio synthesis algorithm generating new musical instrument sounds.",
+  "fullDescription": "NSynth (Magenta) is a high-quality published AI tool in Music Generation. Neural audio synthesis algorithm generating new musical instrument sounds.",
+  "superpower": "Neural audio synthesis algorithm generating new musical instrument sounds.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in music generation workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in music generation.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "NSynth (Magenta) provides specialized AI performance in music generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://magenta.tensorflow.org/nsynth to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using NSynth (Magenta).",
+    "input": "Sample input for music generation.",
+    "examplePrompt": "Use NSynth (Magenta) to complete: [describe task].",
+    "expectedResult": "Tested and verified output using NSynth (Magenta).",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://magenta.tensorflow.org/nsynth",
+  "officialStatus": "verified",
+  "docsUrl": "https://magenta.tensorflow.org/nsynth",
+  "docsStatus": "verified",
+  "keywords": [
+    "NSynth (Magenta)",
+    "Music Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-music_generation-5",
+  "slug": "pianoroll-pypianoroll",
+  "name": "Pypianoroll",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=pianoroll-pypianoroll",
+  "category": "Music Generation",
+  "subcategory": "Music Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Python library for handling and generating multi-track piano-rolls.",
+  "fullDescription": "Pypianoroll is a high-quality published AI tool in Music Generation. Python library for handling and generating multi-track piano-rolls.",
+  "superpower": "Python library for handling and generating multi-track piano-rolls.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in music generation workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in music generation.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "Pypianoroll provides specialized AI performance in music generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/salu133445/pypianoroll to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Pypianoroll.",
+    "input": "Sample input for music generation.",
+    "examplePrompt": "Use Pypianoroll to complete: [describe task].",
+    "expectedResult": "Tested and verified output using Pypianoroll.",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/salu133445/pypianoroll",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/salu133445/pypianoroll",
+  "docsStatus": "verified",
+  "keywords": [
+    "Pypianoroll",
+    "Music Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+}
 ];

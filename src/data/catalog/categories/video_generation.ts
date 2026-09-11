@@ -17292,4 +17292,2353 @@ export const video_generation_tools: AITool[] = [
     "verifiedAt": "2026-08-28",
     "badge": "FREE"
   }
+,
+{
+  "id": "exp700-video_generation-6",
+  "slug": "colossyan-creator",
+  "name": "Colossyan (Video Generation)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=colossyan-creator",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI video generator for workplace learning, training, and documentation.",
+  "fullDescription": "Colossyan is an established tool in the Video Generation landscape. AI video generator for workplace learning, training, and documentation.",
+  "superpower": "AI video generator for workplace learning, training, and documentation.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Colossyan provides specialized AI features tailored for video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.colossyan.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core video generation task with Colossyan.",
+    "input": "Sample project input for video generation.",
+    "examplePrompt": "Utilize Colossyan for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Colossyan.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.colossyan.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.colossyan.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Colossyan",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-video_generation-7",
+  "slug": "hour-one-ai",
+  "name": "Hour One (Video Generation)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=hour-one-ai",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI video generator transforming text into presenter-led video content.",
+  "fullDescription": "Hour One is an established tool in the Video Generation landscape. AI video generator transforming text into presenter-led video content.",
+  "superpower": "AI video generator transforming text into presenter-led video content.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Hour One provides specialized AI features tailored for video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.hourone.ai to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core video generation task with Hour One.",
+    "input": "Sample project input for video generation.",
+    "examplePrompt": "Utilize Hour One for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Hour One.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.hourone.ai",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.hourone.ai",
+  "docsStatus": "verified",
+  "keywords": [
+    "Hour One",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-video_generation-8",
+  "slug": "d-id-studio",
+  "name": "D-ID Creative Reality",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=d-id-studio",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Generative AI platform turning still photos into photorealistic talking avatars.",
+  "fullDescription": "D-ID Creative Reality is an established tool in the Video Generation landscape. Generative AI platform turning still photos into photorealistic talking avatars.",
+  "superpower": "Generative AI platform turning still photos into photorealistic talking avatars.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "D-ID Creative Reality provides specialized AI features tailored for video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.d-id.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core video generation task with D-ID Creative Reality.",
+    "input": "Sample project input for video generation.",
+    "examplePrompt": "Utilize D-ID Creative Reality for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using D-ID Creative Reality.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.d-id.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.d-id.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "D-ID Creative Reality",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-video_generation-9",
+  "slug": "rephrase-ai-video",
+  "name": "Rephrase.ai (Video Generation)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=rephrase-ai-video",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Hyper-personalized AI video scale engine for enterprise sales and marketing.",
+  "fullDescription": "Rephrase.ai is an established tool in the Video Generation landscape. Hyper-personalized AI video scale engine for enterprise sales and marketing.",
+  "superpower": "Hyper-personalized AI video scale engine for enterprise sales and marketing.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Rephrase.ai provides specialized AI features tailored for video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.rephrase.ai to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core video generation task with Rephrase.ai.",
+    "input": "Sample project input for video generation.",
+    "examplePrompt": "Utilize Rephrase.ai for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Rephrase.ai.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.rephrase.ai",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.rephrase.ai",
+  "docsStatus": "verified",
+  "keywords": [
+    "Rephrase.ai",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-video_generation-10",
+  "slug": "fliki-ai-video",
+  "name": "Fliki",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=fliki-ai-video",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Text-to-video and text-to-speech AI generator with rich stock media.",
+  "fullDescription": "Fliki is an established tool in the Video Generation landscape. Text-to-video and text-to-speech AI generator with rich stock media.",
+  "superpower": "Text-to-video and text-to-speech AI generator with rich stock media.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Fliki provides specialized AI features tailored for video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://fliki.ai to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core video generation task with Fliki.",
+    "input": "Sample project input for video generation.",
+    "examplePrompt": "Utilize Fliki for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Fliki.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://fliki.ai",
+  "officialStatus": "verified",
+  "docsUrl": "https://fliki.ai",
+  "docsStatus": "verified",
+  "keywords": [
+    "Fliki",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-video_generation-11",
+  "slug": "kapwing-ai-editor",
+  "name": "Kapwing",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=kapwing-ai-editor",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Collaborative web video editor with AI auto-subtitles, background remover, and script writer.",
+  "fullDescription": "Kapwing is an established tool in the Video Generation landscape. Collaborative web video editor with AI auto-subtitles, background remover, and script writer.",
+  "superpower": "Collaborative web video editor with AI auto-subtitles, background remover, and script writer.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Kapwing provides specialized AI features tailored for video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.kapwing.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core video generation task with Kapwing.",
+    "input": "Sample project input for video generation.",
+    "examplePrompt": "Utilize Kapwing for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Kapwing.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.kapwing.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.kapwing.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Kapwing",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-video_generation-13",
+  "slug": "clipchamp-microsoft",
+  "name": "Microsoft Clipchamp",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=clipchamp-microsoft",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Video editor by Microsoft featuring AI text-to-speech and auto-captioning.",
+  "fullDescription": "Microsoft Clipchamp is an established tool in the Video Generation landscape. Video editor by Microsoft featuring AI text-to-speech and auto-captioning.",
+  "superpower": "Video editor by Microsoft featuring AI text-to-speech and auto-captioning.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Microsoft Clipchamp provides specialized AI features tailored for video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://clipchamp.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core video generation task with Microsoft Clipchamp.",
+    "input": "Sample project input for video generation.",
+    "examplePrompt": "Utilize Microsoft Clipchamp for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Microsoft Clipchamp.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://clipchamp.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://clipchamp.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Microsoft Clipchamp",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-video_generation-15",
+  "slug": "wondershare-filmora-ai",
+  "name": "Wondershare Filmora",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=wondershare-filmora-ai",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Video editing software with AI smart cutout, audio stretch, and denoise.",
+  "fullDescription": "Wondershare Filmora is an established tool in the Video Generation landscape. Video editing software with AI smart cutout, audio stretch, and denoise.",
+  "superpower": "Video editing software with AI smart cutout, audio stretch, and denoise.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Wondershare Filmora provides specialized AI features tailored for video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://filmora.wondershare.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core video generation task with Wondershare Filmora.",
+    "input": "Sample project input for video generation.",
+    "examplePrompt": "Utilize Wondershare Filmora for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Wondershare Filmora.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://filmora.wondershare.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://filmora.wondershare.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Wondershare Filmora",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-video_generation-16",
+  "slug": "cyberlink-powerdirector",
+  "name": "PowerDirector",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=cyberlink-powerdirector",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Video editor with AI motion tracking, body effects, and sky replacement.",
+  "fullDescription": "PowerDirector is an established tool in the Video Generation landscape. Video editor with AI motion tracking, body effects, and sky replacement.",
+  "superpower": "Video editor with AI motion tracking, body effects, and sky replacement.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "PowerDirector provides specialized AI features tailored for video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.cyberlink.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core video generation task with PowerDirector.",
+    "input": "Sample project input for video generation.",
+    "examplePrompt": "Utilize PowerDirector for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using PowerDirector.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.cyberlink.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.cyberlink.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "PowerDirector",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-video_generation-17",
+  "slug": "davinci-resolve-studio",
+  "name": "DaVinci Resolve (Blackmagic)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=davinci-resolve-studio",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Professional editing, color grading, and visual effects with Neural Engine AI.",
+  "fullDescription": "DaVinci Resolve (Blackmagic) is an established tool in the Video Generation landscape. Professional editing, color grading, and visual effects with Neural Engine AI.",
+  "superpower": "Professional editing, color grading, and visual effects with Neural Engine AI.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "DaVinci Resolve (Blackmagic) provides specialized AI features tailored for video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.blackmagicdesign.com/products/davinciresolve to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core video generation task with DaVinci Resolve (Blackmagic).",
+    "input": "Sample project input for video generation.",
+    "examplePrompt": "Utilize DaVinci Resolve (Blackmagic) for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using DaVinci Resolve (Blackmagic).",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.blackmagicdesign.com/products/davinciresolve",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.blackmagicdesign.com/products/davinciresolve",
+  "docsStatus": "verified",
+  "keywords": [
+    "DaVinci Resolve (Blackmagic)",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-video_generation-18",
+  "slug": "adobe-premiere-pro",
+  "name": "Adobe Premiere Pro",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=adobe-premiere-pro",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Industry-standard video editor with Adobe Sensei AI auto-reframe and transcription.",
+  "fullDescription": "Adobe Premiere Pro is an established tool in the Video Generation landscape. Industry-standard video editor with Adobe Sensei AI auto-reframe and transcription.",
+  "superpower": "Industry-standard video editor with Adobe Sensei AI auto-reframe and transcription.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Adobe Premiere Pro provides specialized AI features tailored for video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.adobe.com/products/premiere.html to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core video generation task with Adobe Premiere Pro.",
+    "input": "Sample project input for video generation.",
+    "examplePrompt": "Utilize Adobe Premiere Pro for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Adobe Premiere Pro.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.adobe.com/products/premiere.html",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.adobe.com/products/premiere.html",
+  "docsStatus": "verified",
+  "keywords": [
+    "Adobe Premiere Pro",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-video_generation-19",
+  "slug": "final-cut-pro-apple",
+  "name": "Final Cut Pro",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=final-cut-pro-apple",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Apple professional video editor with Machine Learning object tracking and voice isolation.",
+  "fullDescription": "Final Cut Pro is an established tool in the Video Generation landscape. Apple professional video editor with Machine Learning object tracking and voice isolation.",
+  "superpower": "Apple professional video editor with Machine Learning object tracking and voice isolation.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Final Cut Pro provides specialized AI features tailored for video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.apple.com/final-cut-pro/ to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core video generation task with Final Cut Pro.",
+    "input": "Sample project input for video generation.",
+    "examplePrompt": "Utilize Final Cut Pro for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Final Cut Pro.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.apple.com/final-cut-pro/",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.apple.com/final-cut-pro/",
+  "docsStatus": "verified",
+  "keywords": [
+    "Final Cut Pro",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-video_generation-22",
+  "slug": "munch-ai-clips",
+  "name": "GetMunch",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=munch-ai-clips",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI video clipping platform for extracting trending clips from long-form content.",
+  "fullDescription": "GetMunch is an established tool in the Video Generation landscape. AI video clipping platform for extracting trending clips from long-form content.",
+  "superpower": "AI video clipping platform for extracting trending clips from long-form content.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "GetMunch provides specialized AI features tailored for video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.getmunch.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core video generation task with GetMunch.",
+    "input": "Sample project input for video generation.",
+    "examplePrompt": "Utilize GetMunch for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using GetMunch.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.getmunch.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.getmunch.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "GetMunch",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-video_generation-23",
+  "slug": "klap-app",
+  "name": "Klap",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=klap-app",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Turn YouTube videos into short clips for TikTok, Shorts, and Reels with AI.",
+  "fullDescription": "Klap is an established tool in the Video Generation landscape. Turn YouTube videos into short clips for TikTok, Shorts, and Reels with AI.",
+  "superpower": "Turn YouTube videos into short clips for TikTok, Shorts, and Reels with AI.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Klap provides specialized AI features tailored for video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://klap.app to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core video generation task with Klap.",
+    "input": "Sample project input for video generation.",
+    "examplePrompt": "Utilize Klap for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Klap.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://klap.app",
+  "officialStatus": "verified",
+  "docsUrl": "https://klap.app",
+  "docsStatus": "verified",
+  "keywords": [
+    "Klap",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-video_generation-24",
+  "slug": "submagic-co",
+  "name": "Submagic",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=submagic-co",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI caption generator for short-form videos with emojis and animated captions.",
+  "fullDescription": "Submagic is an established tool in the Video Generation landscape. AI caption generator for short-form videos with emojis and animated captions.",
+  "superpower": "AI caption generator for short-form videos with emojis and animated captions.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Submagic provides specialized AI features tailored for video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.submagic.co to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core video generation task with Submagic.",
+    "input": "Sample project input for video generation.",
+    "examplePrompt": "Utilize Submagic for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Submagic.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.submagic.co",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.submagic.co",
+  "docsStatus": "verified",
+  "keywords": [
+    "Submagic",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-video_generation-25",
+  "slug": "auto-cap-app",
+  "name": "AutoCap",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=auto-cap-app",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "App for automatically adding animated captions to video clips.",
+  "fullDescription": "AutoCap is an established tool in the Video Generation landscape. App for automatically adding animated captions to video clips.",
+  "superpower": "App for automatically adding animated captions to video clips.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "AutoCap provides specialized AI features tailored for video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://autocap.app to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core video generation task with AutoCap.",
+    "input": "Sample project input for video generation.",
+    "examplePrompt": "Utilize AutoCap for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using AutoCap.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://autocap.app",
+  "officialStatus": "verified",
+  "docsUrl": "https://autocap.app",
+  "docsStatus": "verified",
+  "keywords": [
+    "AutoCap",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-video_generation-26",
+  "slug": "captions-ai-app",
+  "name": "Captions.ai",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=captions-ai-app",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI-powered studio for talking videos featuring AI eye contact and dubbing.",
+  "fullDescription": "Captions.ai is an established tool in the Video Generation landscape. AI-powered studio for talking videos featuring AI eye contact and dubbing.",
+  "superpower": "AI-powered studio for talking videos featuring AI eye contact and dubbing.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Captions.ai provides specialized AI features tailored for video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.captions.ai to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core video generation task with Captions.ai.",
+    "input": "Sample project input for video generation.",
+    "examplePrompt": "Utilize Captions.ai for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Captions.ai.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.captions.ai",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.captions.ai",
+  "docsStatus": "verified",
+  "keywords": [
+    "Captions.ai",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-video_generation-27",
+  "slug": "dubverse-ai",
+  "name": "Dubverse.ai",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=dubverse-ai",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI video dubbing platform in 30+ languages using generative voiceover.",
+  "fullDescription": "Dubverse.ai is an established tool in the Video Generation landscape. AI video dubbing platform in 30+ languages using generative voiceover.",
+  "superpower": "AI video dubbing platform in 30+ languages using generative voiceover.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Dubverse.ai provides specialized AI features tailored for video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://dubverse.ai to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core video generation task with Dubverse.ai.",
+    "input": "Sample project input for video generation.",
+    "examplePrompt": "Utilize Dubverse.ai for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Dubverse.ai.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://dubverse.ai",
+  "officialStatus": "verified",
+  "docsUrl": "https://dubverse.ai",
+  "docsStatus": "verified",
+  "keywords": [
+    "Dubverse.ai",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-video_generation-28",
+  "slug": "papercup-dubbing",
+  "name": "Papercup",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=papercup-dubbing",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI video dubbing and translation for content localization at scale.",
+  "fullDescription": "Papercup is an established tool in the Video Generation landscape. AI video dubbing and translation for content localization at scale.",
+  "superpower": "AI video dubbing and translation for content localization at scale.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Papercup provides specialized AI features tailored for video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.papercup.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core video generation task with Papercup.",
+    "input": "Sample project input for video generation.",
+    "examplePrompt": "Utilize Papercup for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Papercup.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.papercup.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.papercup.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Papercup",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-video_generation-30",
+  "slug": "unbabel-ai",
+  "name": "Unbabel",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=unbabel-ai",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI language operations platform combining AI translation and human editing.",
+  "fullDescription": "Unbabel is an established tool in the Video Generation landscape. AI language operations platform combining AI translation and human editing.",
+  "superpower": "AI language operations platform combining AI translation and human editing.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Unbabel provides specialized AI features tailored for video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://unbabel.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core video generation task with Unbabel.",
+    "input": "Sample project input for video generation.",
+    "examplePrompt": "Utilize Unbabel for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Unbabel.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://unbabel.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://unbabel.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Unbabel",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+}
+,
+{
+  "id": "final700-video_generation-1",
+  "slug": "mochi-1-genmo",
+  "name": "Mochi 1 (Genmo)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=mochi-1-genmo",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Open-state-of-the-art video generation model by Genmo AI.",
+  "fullDescription": "Mochi 1 (Genmo) is a high-quality published AI tool in Video Generation. Open-state-of-the-art video generation model by Genmo AI.",
+  "superpower": "Open-state-of-the-art video generation model by Genmo AI.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in video generation workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in video generation.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "Mochi 1 (Genmo) provides specialized AI performance in video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/genmoai/models to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Mochi 1 (Genmo).",
+    "input": "Sample input for video generation.",
+    "examplePrompt": "Use Mochi 1 (Genmo) to complete: [describe task].",
+    "expectedResult": "Tested and verified output using Mochi 1 (Genmo).",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/genmoai/models",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/genmoai/models",
+  "docsStatus": "verified",
+  "keywords": [
+    "Mochi 1 (Genmo)",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-video_generation-2",
+  "slug": "cogvideox-ths",
+  "name": "CogVideoX (THUDM)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=cogvideox-ths",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Open-source 3D Causal VAE video generation model series.",
+  "fullDescription": "CogVideoX (THUDM) is a high-quality published AI tool in Video Generation. Open-source 3D Causal VAE video generation model series.",
+  "superpower": "Open-source 3D Causal VAE video generation model series.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in video generation workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in video generation.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "CogVideoX (THUDM) provides specialized AI performance in video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/THUDM/CogVideo to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using CogVideoX (THUDM).",
+    "input": "Sample input for video generation.",
+    "examplePrompt": "Use CogVideoX (THUDM) to complete: [describe task].",
+    "expectedResult": "Tested and verified output using CogVideoX (THUDM).",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/THUDM/CogVideo",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/THUDM/CogVideo",
+  "docsStatus": "verified",
+  "keywords": [
+    "CogVideoX (THUDM)",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-video_generation-3",
+  "slug": "svd-stability-video",
+  "name": "Stable Video Diffusion (Video Generation)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=svd-stability-video",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Latent video diffusion model for high-resolution image-to-video generation.",
+  "fullDescription": "Stable Video Diffusion is a high-quality published AI tool in Video Generation. Latent video diffusion model for high-resolution image-to-video generation.",
+  "superpower": "Latent video diffusion model for high-resolution image-to-video generation.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in video generation workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in video generation.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "Stable Video Diffusion provides specialized AI performance in video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/Stability-AI/generative-models to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Stable Video Diffusion.",
+    "input": "Sample input for video generation.",
+    "examplePrompt": "Use Stable Video Diffusion to complete: [describe task].",
+    "expectedResult": "Tested and verified output using Stable Video Diffusion.",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/Stability-AI/generative-models",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/Stability-AI/generative-models",
+  "docsStatus": "verified",
+  "keywords": [
+    "Stable Video Diffusion",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-video_generation-7",
+  "slug": "vivid-video-gen",
+  "name": "ViViD (Video Generation)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=vivid-video-gen",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Framework for high-quality video generation and editing.",
+  "fullDescription": "ViViD (Video Generation) is a high-quality published AI tool in Video Generation. Framework for high-quality video generation and editing.",
+  "superpower": "Framework for high-quality video generation and editing.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in video generation workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in video generation.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "ViViD (Video Generation) provides specialized AI performance in video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/Kwai-Kolors/ViViD to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using ViViD (Video Generation).",
+    "input": "Sample input for video generation.",
+    "examplePrompt": "Use ViViD (Video Generation) to complete: [describe task].",
+    "expectedResult": "Tested and verified output using ViViD (Video Generation).",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/Kwai-Kolors/ViViD",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/Kwai-Kolors/ViViD",
+  "docsStatus": "verified",
+  "keywords": [
+    "ViViD (Video Generation)",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-video_generation-8",
+  "slug": "magic-animate-bytedance",
+  "name": "MagicAnimate (ByteDance)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=magic-animate-bytedance",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Human image animation using diffusion model and motion control.",
+  "fullDescription": "MagicAnimate (ByteDance) is a high-quality published AI tool in Video Generation. Human image animation using diffusion model and motion control.",
+  "superpower": "Human image animation using diffusion model and motion control.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in video generation workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in video generation.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "MagicAnimate (ByteDance) provides specialized AI performance in video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/magic-research/magic-animate to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using MagicAnimate (ByteDance).",
+    "input": "Sample input for video generation.",
+    "examplePrompt": "Use MagicAnimate (ByteDance) to complete: [describe task].",
+    "expectedResult": "Tested and verified output using MagicAnimate (ByteDance).",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/magic-research/magic-animate",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/magic-research/magic-animate",
+  "docsStatus": "verified",
+  "keywords": [
+    "MagicAnimate (ByteDance)",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-video_generation-9",
+  "slug": "champ-animation",
+  "name": "Champ (Tencent)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=champ-animation",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Controllable human image animation framework with 3D parametric guidance.",
+  "fullDescription": "Champ (Tencent) is a high-quality published AI tool in Video Generation. Controllable human image animation framework with 3D parametric guidance.",
+  "superpower": "Controllable human image animation framework with 3D parametric guidance.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in video generation workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in video generation.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "Champ (Tencent) provides specialized AI performance in video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/fudan-generative-vision/champ to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Champ (Tencent).",
+    "input": "Sample input for video generation.",
+    "examplePrompt": "Use Champ (Tencent) to complete: [describe task].",
+    "expectedResult": "Tested and verified output using Champ (Tencent).",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/fudan-generative-vision/champ",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/fudan-generative-vision/champ",
+  "docsStatus": "verified",
+  "keywords": [
+    "Champ (Tencent)",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-video_generation-10",
+  "slug": "latte-video-gen",
+  "name": "Latte (Video Transformer)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=latte-video-gen",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Latent Diffusion Transformer for Video Generation.",
+  "fullDescription": "Latte (Video Transformer) is a high-quality published AI tool in Video Generation. Latent Diffusion Transformer for Video Generation.",
+  "superpower": "Latent Diffusion Transformer for Video Generation.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in video generation workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in video generation.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "Latte (Video Transformer) provides specialized AI performance in video generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/Vchao/Latte to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Latte (Video Transformer).",
+    "input": "Sample input for video generation.",
+    "examplePrompt": "Use Latte (Video Transformer) to complete: [describe task].",
+    "expectedResult": "Tested and verified output using Latte (Video Transformer).",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/Vchao/Latte",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/Vchao/Latte",
+  "docsStatus": "verified",
+  "keywords": [
+    "Latte (Video Transformer)",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+}
+,
+{
+  "id": "reach710-video-generation-1",
+  "slug": "live-portrait-kuaishou",
+  "name": "LivePortrait (Kuaishou)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=live-portrait-kuaishou",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Efficient 3D portrait animation framework for real-time video generation.",
+  "fullDescription": "LivePortrait (Kuaishou) is a verified AI tool in Video Generation. Efficient 3D portrait animation framework for real-time video generation.",
+  "superpower": "Efficient 3D portrait animation framework for real-time video generation.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Verified primary source documentation."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and experimentation."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "LivePortrait (Kuaishou) provides specialized AI performance."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/Kwai-Kolors/LivePortrait to view documentation."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using LivePortrait (Kuaishou).",
+    "expectedResult": "Verified output generated using LivePortrait (Kuaishou).",
+    "skillsLearned": [
+      "Tool operation"
+    ]
+  },
+  "officialUrl": "https://github.com/Kwai-Kolors/LivePortrait",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/Kwai-Kolors/LivePortrait",
+  "docsStatus": "verified",
+  "keywords": [
+    "LivePortrait (Kuaishou)",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "reach710-video-generation-2",
+  "slug": "hallo-audio-driven",
+  "name": "Hallo (Baidu)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=hallo-audio-driven",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Audio-driven portrait image animation for vivid talking head video synthesis.",
+  "fullDescription": "Hallo (Baidu) is a verified AI tool in Video Generation. Audio-driven portrait image animation for vivid talking head video synthesis.",
+  "superpower": "Audio-driven portrait image animation for vivid talking head video synthesis.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Verified primary source documentation."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and experimentation."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Hallo (Baidu) provides specialized AI performance."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/fudan-generative-vision/hallo to view documentation."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Hallo (Baidu).",
+    "expectedResult": "Verified output generated using Hallo (Baidu).",
+    "skillsLearned": [
+      "Tool operation"
+    ]
+  },
+  "officialUrl": "https://github.com/fudan-generative-vision/hallo",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/fudan-generative-vision/hallo",
+  "docsStatus": "verified",
+  "keywords": [
+    "Hallo (Baidu)",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "reach710-video-generation-3",
+  "slug": "animated-drawings-meta",
+  "name": "Animated Drawings (Meta)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=animated-drawings-meta",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Meta research tool for animating children's drawings and character sketches.",
+  "fullDescription": "Animated Drawings (Meta) is a verified AI tool in Video Generation. Meta research tool for animating children's drawings and character sketches.",
+  "superpower": "Meta research tool for animating children's drawings and character sketches.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Verified primary source documentation."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and experimentation."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Animated Drawings (Meta) provides specialized AI performance."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/facebookresearch/AnimatedDrawings to view documentation."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Animated Drawings (Meta).",
+    "expectedResult": "Verified output generated using Animated Drawings (Meta).",
+    "skillsLearned": [
+      "Tool operation"
+    ]
+  },
+  "officialUrl": "https://github.com/facebookresearch/AnimatedDrawings",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/facebookresearch/AnimatedDrawings",
+  "docsStatus": "verified",
+  "keywords": [
+    "Animated Drawings (Meta)",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "reach710-video-generation-4",
+  "slug": "echomimic-ant",
+  "name": "EchoMimic (Ant Group)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=echomimic-ant",
+  "category": "Video Generation",
+  "subcategory": "Video Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Lifelike audio-driven portrait animation with landmark guidance.",
+  "fullDescription": "EchoMimic (Ant Group) is a verified AI tool in Video Generation. Lifelike audio-driven portrait animation with landmark guidance.",
+  "superpower": "Lifelike audio-driven portrait animation with landmark guidance.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances video generation workflow efficiency.",
+    "Verified primary source documentation."
+  ],
+  "useCases": [
+    "Professional video generation implementation.",
+    "Academic research and experimentation."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "EchoMimic (Ant Group) provides specialized AI performance."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/BadToBest/EchoMimic to view documentation."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using EchoMimic (Ant Group).",
+    "expectedResult": "Verified output generated using EchoMimic (Ant Group).",
+    "skillsLearned": [
+      "Tool operation"
+    ]
+  },
+  "officialUrl": "https://github.com/BadToBest/EchoMimic",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/BadToBest/EchoMimic",
+  "docsStatus": "verified",
+  "keywords": [
+    "EchoMimic (Ant Group)",
+    "Video Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+}
 ];

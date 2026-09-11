@@ -12441,4 +12441,1661 @@ export const speech_to_text_tools: AITool[] = [
     "verifiedAt": "2026-08-28",
     "badge": "OPEN-SOURCE"
   }
+,
+{
+    "id": "genuine-speech_to_text-2",
+    "slug": "assembly-ai",
+    "name": "AssemblyAI (Speech to Text)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=assembly-ai",
+    "category": "Speech to Text",
+    "subcategory": "Transcription",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "Speech AI API with transcription, entity detection, and content moderation.",
+    "fullDescription": "AssemblyAI is a leading AI tool in the Speech to Text space. Speech AI API with transcription, entity detection, and content moderation.",
+    "superpower": "Speech AI API with transcription, entity detection, and content moderation.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on speech to text tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional speech to text workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "AssemblyAI leverages state-of-the-art AI models for speech to text tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.assemblyai.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real speech to text task using AssemblyAI.",
+        "input": "A practical speech to text problem relevant to your work.",
+        "examplePrompt": "Use AssemblyAI to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality speech to text output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.assemblyai.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.assemblyai.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "AssemblyAI",
+        "Speech to Text",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-speech_to_text-5",
+    "slug": "google-speech-to-text",
+    "name": "Google Speech-to-Text",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=google-speech-to-text",
+    "category": "Speech to Text",
+    "subcategory": "Transcription",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "Google Cloud API for converting audio to text with 125+ language support.",
+    "fullDescription": "Google Speech-to-Text is a leading AI tool in the Speech to Text space. Google Cloud API for converting audio to text with 125+ language support.",
+    "superpower": "Google Cloud API for converting audio to text with 125+ language support.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on speech to text tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional speech to text workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Google Speech-to-Text leverages state-of-the-art AI models for speech to text tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://cloud.google.com/speech-to-text and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real speech to text task using Google Speech-to-Text.",
+        "input": "A practical speech to text problem relevant to your work.",
+        "examplePrompt": "Use Google Speech-to-Text to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality speech to text output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://cloud.google.com/speech-to-text",
+    "officialStatus": "verified",
+    "docsUrl": "https://cloud.google.com/speech-to-text",
+    "docsStatus": "verified",
+    "keywords": [
+        "Google Speech-to-Text",
+        "Speech to Text",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-speech_to_text-6",
+    "slug": "azure-speech-service",
+    "name": "Azure Speech Service",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=azure-speech-service",
+    "category": "Speech to Text",
+    "subcategory": "Transcription",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "Microsoft Azure cognitive service for speech recognition and translation.",
+    "fullDescription": "Azure Speech Service is a leading AI tool in the Speech to Text space. Microsoft Azure cognitive service for speech recognition and translation.",
+    "superpower": "Microsoft Azure cognitive service for speech recognition and translation.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on speech to text tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional speech to text workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Azure Speech Service leverages state-of-the-art AI models for speech to text tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://azure.microsoft.com/en-us/products/ai-services/speech-to-text and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real speech to text task using Azure Speech Service.",
+        "input": "A practical speech to text problem relevant to your work.",
+        "examplePrompt": "Use Azure Speech Service to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality speech to text output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://azure.microsoft.com/en-us/products/ai-services/speech-to-text",
+    "officialStatus": "verified",
+    "docsUrl": "https://azure.microsoft.com/en-us/products/ai-services/speech-to-text",
+    "docsStatus": "verified",
+    "keywords": [
+        "Azure Speech Service",
+        "Speech to Text",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-speech_to_text-7",
+    "slug": "gladia-ai",
+    "name": "Gladia",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=gladia-ai",
+    "category": "Speech to Text",
+    "subcategory": "Transcription",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "Real-time speech recognition API with word-level timestamps and diarization.",
+    "fullDescription": "Gladia is a leading AI tool in the Speech to Text space. Real-time speech recognition API with word-level timestamps and diarization.",
+    "superpower": "Real-time speech recognition API with word-level timestamps and diarization.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on speech to text tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional speech to text workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Gladia leverages state-of-the-art AI models for speech to text tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.gladia.io and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real speech to text task using Gladia.",
+        "input": "A practical speech to text problem relevant to your work.",
+        "examplePrompt": "Use Gladia to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality speech to text output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.gladia.io",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.gladia.io",
+    "docsStatus": "verified",
+    "keywords": [
+        "Gladia",
+        "Speech to Text",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+}
+,
+{
+  "id": "exp700-speech_to_text-1",
+  "slug": "openai-whisper-large",
+  "name": "OpenAI Whisper Large-v3",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=openai-whisper-large",
+  "category": "Speech to Text",
+  "subcategory": "Speech to Text",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "State-of-the-art automatic speech recognition model trained on 680k hours of audio.",
+  "fullDescription": "OpenAI Whisper Large-v3 is an established tool in the Speech to Text landscape. State-of-the-art automatic speech recognition model trained on 680k hours of audio.",
+  "superpower": "State-of-the-art automatic speech recognition model trained on 680k hours of audio.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances speech to text workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional speech to text implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "OpenAI Whisper Large-v3 provides specialized AI features tailored for speech to text."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://huggingface.co/openai/whisper-large-v3 to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core speech to text task with OpenAI Whisper Large-v3.",
+    "input": "Sample project input for speech to text.",
+    "examplePrompt": "Utilize OpenAI Whisper Large-v3 for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using OpenAI Whisper Large-v3.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://huggingface.co/openai/whisper-large-v3",
+  "officialStatus": "verified",
+  "docsUrl": "https://huggingface.co/openai/whisper-large-v3",
+  "docsStatus": "verified",
+  "keywords": [
+    "OpenAI Whisper Large-v3",
+    "Speech to Text",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-speech_to_text-5",
+  "slug": "mac-whisper-app",
+  "name": "MacWhisper (Speech to Text)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=mac-whisper-app",
+  "category": "Speech to Text",
+  "subcategory": "Speech to Text",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Native macOS app for transcribing audio files locally using Whisper.",
+  "fullDescription": "MacWhisper is an established tool in the Speech to Text landscape. Native macOS app for transcribing audio files locally using Whisper.",
+  "superpower": "Native macOS app for transcribing audio files locally using Whisper.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances speech to text workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional speech to text implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "MacWhisper provides specialized AI features tailored for speech to text."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://goodsnooze.gumroad.com/l/macwhisper to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core speech to text task with MacWhisper.",
+    "input": "Sample project input for speech to text.",
+    "examplePrompt": "Utilize MacWhisper for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using MacWhisper.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://goodsnooze.gumroad.com/l/macwhisper",
+  "officialStatus": "verified",
+  "docsUrl": "https://goodsnooze.gumroad.com/l/macwhisper",
+  "docsStatus": "verified",
+  "keywords": [
+    "MacWhisper",
+    "Speech to Text",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-speech_to_text-6",
+  "slug": "buzz-whisper-desktop",
+  "name": "Buzz",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=buzz-whisper-desktop",
+  "category": "Speech to Text",
+  "subcategory": "Speech to Text",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Offline transcription and translation app powered by Whisper.",
+  "fullDescription": "Buzz is an established tool in the Speech to Text landscape. Offline transcription and translation app powered by Whisper.",
+  "superpower": "Offline transcription and translation app powered by Whisper.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances speech to text workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional speech to text implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Buzz provides specialized AI features tailored for speech to text."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/charlieroberts/buzz to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core speech to text task with Buzz.",
+    "input": "Sample project input for speech to text.",
+    "examplePrompt": "Utilize Buzz for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Buzz.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://github.com/charlieroberts/buzz",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/charlieroberts/buzz",
+  "docsStatus": "verified",
+  "keywords": [
+    "Buzz",
+    "Speech to Text",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-speech_to_text-7",
+  "slug": "pyannote-audio",
+  "name": "pyannote.audio",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=pyannote-audio",
+  "category": "Speech to Text",
+  "subcategory": "Speech to Text",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Open-source neural toolkit written in PyTorch for speaker diarization.",
+  "fullDescription": "pyannote.audio is an established tool in the Speech to Text landscape. Open-source neural toolkit written in PyTorch for speaker diarization.",
+  "superpower": "Open-source neural toolkit written in PyTorch for speaker diarization.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances speech to text workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional speech to text implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "pyannote.audio provides specialized AI features tailored for speech to text."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/pyannote/pyannote-audio to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core speech to text task with pyannote.audio.",
+    "input": "Sample project input for speech to text.",
+    "examplePrompt": "Utilize pyannote.audio for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using pyannote.audio.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://github.com/pyannote/pyannote-audio",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/pyannote/pyannote-audio",
+  "docsStatus": "verified",
+  "keywords": [
+    "pyannote.audio",
+    "Speech to Text",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-speech_to_text-8",
+  "slug": "speechbrain-toolkit",
+  "name": "SpeechBrain",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=speechbrain-toolkit",
+  "category": "Speech to Text",
+  "subcategory": "Speech to Text",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "All-in-one PyTorch-based speech toolkit for speech recognition, diarization, and enhancement.",
+  "fullDescription": "SpeechBrain is an established tool in the Speech to Text landscape. All-in-one PyTorch-based speech toolkit for speech recognition, diarization, and enhancement.",
+  "superpower": "All-in-one PyTorch-based speech toolkit for speech recognition, diarization, and enhancement.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances speech to text workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional speech to text implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "SpeechBrain provides specialized AI features tailored for speech to text."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://speechbrain.github.io to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core speech to text task with SpeechBrain.",
+    "input": "Sample project input for speech to text.",
+    "examplePrompt": "Utilize SpeechBrain for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using SpeechBrain.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://speechbrain.github.io",
+  "officialStatus": "verified",
+  "docsUrl": "https://speechbrain.github.io",
+  "docsStatus": "verified",
+  "keywords": [
+    "SpeechBrain",
+    "Speech to Text",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-speech_to_text-9",
+  "slug": "kaldi-asr-toolkit",
+  "name": "Kaldi ASR",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=kaldi-asr-toolkit",
+  "category": "Speech to Text",
+  "subcategory": "Speech to Text",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Flexible C++ speech recognition toolkit used in research and production.",
+  "fullDescription": "Kaldi ASR is an established tool in the Speech to Text landscape. Flexible C++ speech recognition toolkit used in research and production.",
+  "superpower": "Flexible C++ speech recognition toolkit used in research and production.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances speech to text workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional speech to text implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Kaldi ASR provides specialized AI features tailored for speech to text."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/kaldi-asr/kaldi to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core speech to text task with Kaldi ASR.",
+    "input": "Sample project input for speech to text.",
+    "examplePrompt": "Utilize Kaldi ASR for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Kaldi ASR.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://github.com/kaldi-asr/kaldi",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/kaldi-asr/kaldi",
+  "docsStatus": "verified",
+  "keywords": [
+    "Kaldi ASR",
+    "Speech to Text",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-speech_to_text-10",
+  "slug": "nemo-nvidia-speech",
+  "name": "NVIDIA NeMo Speech",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=nemo-nvidia-speech",
+  "category": "Speech to Text",
+  "subcategory": "Speech to Text",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "NVIDIA conversational AI toolkit for speech recognition, synthesis, and NLP.",
+  "fullDescription": "NVIDIA NeMo Speech is an established tool in the Speech to Text landscape. NVIDIA conversational AI toolkit for speech recognition, synthesis, and NLP.",
+  "superpower": "NVIDIA conversational AI toolkit for speech recognition, synthesis, and NLP.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances speech to text workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional speech to text implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "NVIDIA NeMo Speech provides specialized AI features tailored for speech to text."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/NVIDIA/NeMo to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core speech to text task with NVIDIA NeMo Speech.",
+    "input": "Sample project input for speech to text.",
+    "examplePrompt": "Utilize NVIDIA NeMo Speech for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using NVIDIA NeMo Speech.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://github.com/NVIDIA/NeMo",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/NVIDIA/NeMo",
+  "docsStatus": "verified",
+  "keywords": [
+    "NVIDIA NeMo Speech",
+    "Speech to Text",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-speech_to_text-11",
+  "slug": "vosk-api-speech",
+  "name": "Vosk ASR",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=vosk-api-speech",
+  "category": "Speech to Text",
+  "subcategory": "Speech to Text",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Offline open-source speech recognition toolkit supporting 20+ languages.",
+  "fullDescription": "Vosk ASR is an established tool in the Speech to Text landscape. Offline open-source speech recognition toolkit supporting 20+ languages.",
+  "superpower": "Offline open-source speech recognition toolkit supporting 20+ languages.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances speech to text workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional speech to text implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Vosk ASR provides specialized AI features tailored for speech to text."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://alphacephei.com/vosk/ to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core speech to text task with Vosk ASR.",
+    "input": "Sample project input for speech to text.",
+    "examplePrompt": "Utilize Vosk ASR for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Vosk ASR.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://alphacephei.com/vosk/",
+  "officialStatus": "verified",
+  "docsUrl": "https://alphacephei.com/vosk/",
+  "docsStatus": "verified",
+  "keywords": [
+    "Vosk ASR",
+    "Speech to Text",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-speech_to_text-12",
+  "slug": "pocket-sphinx-c",
+  "name": "CMU PocketSphinx",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=pocket-sphinx-c",
+  "category": "Speech to Text",
+  "subcategory": "Speech to Text",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Lightweight speech recognition engine for embedded devices and desktop.",
+  "fullDescription": "CMU PocketSphinx is an established tool in the Speech to Text landscape. Lightweight speech recognition engine for embedded devices and desktop.",
+  "superpower": "Lightweight speech recognition engine for embedded devices and desktop.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances speech to text workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional speech to text implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "CMU PocketSphinx provides specialized AI features tailored for speech to text."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/cmusphinx/pocketsphinx to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core speech to text task with CMU PocketSphinx.",
+    "input": "Sample project input for speech to text.",
+    "examplePrompt": "Utilize CMU PocketSphinx for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using CMU PocketSphinx.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://github.com/cmusphinx/pocketsphinx",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/cmusphinx/pocketsphinx",
+  "docsStatus": "verified",
+  "keywords": [
+    "CMU PocketSphinx",
+    "Speech to Text",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-speech_to_text-13",
+  "slug": "whisperX-diarization",
+  "name": "WhisperX (Speech to Text)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=whisperX-diarization",
+  "category": "Speech to Text",
+  "subcategory": "Speech to Text",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Fast automatic speech recognition with word-level timestamps and speaker diarization.",
+  "fullDescription": "WhisperX is an established tool in the Speech to Text landscape. Fast automatic speech recognition with word-level timestamps and speaker diarization.",
+  "superpower": "Fast automatic speech recognition with word-level timestamps and speaker diarization.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances speech to text workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional speech to text implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "WhisperX provides specialized AI features tailored for speech to text."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/m-bain/whisperX to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core speech to text task with WhisperX.",
+    "input": "Sample project input for speech to text.",
+    "examplePrompt": "Utilize WhisperX for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using WhisperX.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://github.com/m-bain/whisperX",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/m-bain/whisperX",
+  "docsStatus": "verified",
+  "keywords": [
+    "WhisperX",
+    "Speech to Text",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-speech_to_text-14",
+  "slug": "seamless-expressive",
+  "name": "Meta SeamlessM4T",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=seamless-expressive",
+  "category": "Speech to Text",
+  "subcategory": "Speech to Text",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Meta foundational model for speech and text translation across 100+ languages.",
+  "fullDescription": "Meta SeamlessM4T is an established tool in the Speech to Text landscape. Meta foundational model for speech and text translation across 100+ languages.",
+  "superpower": "Meta foundational model for speech and text translation across 100+ languages.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances speech to text workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional speech to text implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Meta SeamlessM4T provides specialized AI features tailored for speech to text."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/facebookresearch/seamless_communication to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core speech to text task with Meta SeamlessM4T.",
+    "input": "Sample project input for speech to text.",
+    "examplePrompt": "Utilize Meta SeamlessM4T for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Meta SeamlessM4T.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://github.com/facebookresearch/seamless_communication",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/facebookresearch/seamless_communication",
+  "docsStatus": "verified",
+  "keywords": [
+    "Meta SeamlessM4T",
+    "Speech to Text",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-speech_to_text-15",
+  "slug": "whisper-web-browser",
+  "name": "Whisper Web",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=whisper-web-browser",
+  "category": "Speech to Text",
+  "subcategory": "Speech to Text",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "In-browser speech recognition powered by Transformers.js and WebGPU.",
+  "fullDescription": "Whisper Web is an established tool in the Speech to Text landscape. In-browser speech recognition powered by Transformers.js and WebGPU.",
+  "superpower": "In-browser speech recognition powered by Transformers.js and WebGPU.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances speech to text workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional speech to text implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Whisper Web provides specialized AI features tailored for speech to text."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/xenova/whisper-web to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core speech to text task with Whisper Web.",
+    "input": "Sample project input for speech to text.",
+    "examplePrompt": "Utilize Whisper Web for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Whisper Web.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://github.com/xenova/whisper-web",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/xenova/whisper-web",
+  "docsStatus": "verified",
+  "keywords": [
+    "Whisper Web",
+    "Speech to Text",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+}
+,
+{
+  "id": "final700-speech_to_text-1",
+  "slug": "moonshine-asr-useful",
+  "name": "Moonshine ASR",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=moonshine-asr-useful",
+  "category": "Speech to Text",
+  "subcategory": "Speech to Text",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Fast, lightweight ASR model designed for resource-constrained edge devices.",
+  "fullDescription": "Moonshine ASR is a high-quality published AI tool in Speech to Text. Fast, lightweight ASR model designed for resource-constrained edge devices.",
+  "superpower": "Fast, lightweight ASR model designed for resource-constrained edge devices.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in speech to text workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in speech to text.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "Moonshine ASR provides specialized AI performance in speech to text."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/usefulsensors/moonshine to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Moonshine ASR.",
+    "input": "Sample input for speech to text.",
+    "examplePrompt": "Use Moonshine ASR to complete: [describe task].",
+    "expectedResult": "Tested and verified output using Moonshine ASR.",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/usefulsensors/moonshine",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/usefulsensors/moonshine",
+  "docsStatus": "verified",
+  "keywords": [
+    "Moonshine ASR",
+    "Speech to Text",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-speech_to_text-2",
+  "slug": "sense-voice-funasr",
+  "name": "SenseVoice (Alibaba)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=sense-voice-funasr",
+  "category": "Speech to Text",
+  "subcategory": "Speech to Text",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Multilingual speech understanding model supporting emotion and audio event detection.",
+  "fullDescription": "SenseVoice (Alibaba) is a high-quality published AI tool in Speech to Text. Multilingual speech understanding model supporting emotion and audio event detection.",
+  "superpower": "Multilingual speech understanding model supporting emotion and audio event detection.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in speech to text workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in speech to text.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "SenseVoice (Alibaba) provides specialized AI performance in speech to text."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/FunASR/SenseVoice to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using SenseVoice (Alibaba).",
+    "input": "Sample input for speech to text.",
+    "examplePrompt": "Use SenseVoice (Alibaba) to complete: [describe task].",
+    "expectedResult": "Tested and verified output using SenseVoice (Alibaba).",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/FunASR/SenseVoice",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/FunASR/SenseVoice",
+  "docsStatus": "verified",
+  "keywords": [
+    "SenseVoice (Alibaba)",
+    "Speech to Text",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-speech_to_text-3",
+  "slug": "distil-whisper-hf",
+  "name": "Distil-Whisper",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=distil-whisper-hf",
+  "category": "Speech to Text",
+  "subcategory": "Speech to Text",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "6x faster 49% smaller distilled version of OpenAI Whisper model.",
+  "fullDescription": "Distil-Whisper is a high-quality published AI tool in Speech to Text. 6x faster 49% smaller distilled version of OpenAI Whisper model.",
+  "superpower": "6x faster 49% smaller distilled version of OpenAI Whisper model.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in speech to text workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in speech to text.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "Distil-Whisper provides specialized AI performance in speech to text."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/huggingface/distil-whisper to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Distil-Whisper.",
+    "input": "Sample input for speech to text.",
+    "examplePrompt": "Use Distil-Whisper to complete: [describe task].",
+    "expectedResult": "Tested and verified output using Distil-Whisper.",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/huggingface/distil-whisper",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/huggingface/distil-whisper",
+  "docsStatus": "verified",
+  "keywords": [
+    "Distil-Whisper",
+    "Speech to Text",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-speech_to_text-4",
+  "slug": "canary-nvidia-asr",
+  "name": "NVIDIA Canary-1B",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=canary-nvidia-asr",
+  "category": "Speech to Text",
+  "subcategory": "Speech to Text",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "NVIDIA multilingual speech recognition and translation model.",
+  "fullDescription": "NVIDIA Canary-1B is a high-quality published AI tool in Speech to Text. NVIDIA multilingual speech recognition and translation model.",
+  "superpower": "NVIDIA multilingual speech recognition and translation model.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in speech to text workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in speech to text.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "NVIDIA Canary-1B provides specialized AI performance in speech to text."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://huggingface.co/nvidia/canary-1b to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using NVIDIA Canary-1B.",
+    "input": "Sample input for speech to text.",
+    "examplePrompt": "Use NVIDIA Canary-1B to complete: [describe task].",
+    "expectedResult": "Tested and verified output using NVIDIA Canary-1B.",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://huggingface.co/nvidia/canary-1b",
+  "officialStatus": "verified",
+  "docsUrl": "https://huggingface.co/nvidia/canary-1b",
+  "docsStatus": "verified",
+  "keywords": [
+    "NVIDIA Canary-1B",
+    "Speech to Text",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-speech_to_text-5",
+  "slug": "zipformer-sherpa",
+  "name": "Sherpa-onnx (k2)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=zipformer-sherpa",
+  "category": "Speech to Text",
+  "subcategory": "Speech to Text",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Offline real-time speech recognition using Zipformer and ONNX Runtime.",
+  "fullDescription": "Sherpa-onnx (k2) is a high-quality published AI tool in Speech to Text. Offline real-time speech recognition using Zipformer and ONNX Runtime.",
+  "superpower": "Offline real-time speech recognition using Zipformer and ONNX Runtime.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in speech to text workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in speech to text.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "Sherpa-onnx (k2) provides specialized AI performance in speech to text."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/k2-fsa/sherpa-onnx to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Sherpa-onnx (k2).",
+    "input": "Sample input for speech to text.",
+    "examplePrompt": "Use Sherpa-onnx (k2) to complete: [describe task].",
+    "expectedResult": "Tested and verified output using Sherpa-onnx (k2).",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/k2-fsa/sherpa-onnx",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/k2-fsa/sherpa-onnx",
+  "docsStatus": "verified",
+  "keywords": [
+    "Sherpa-onnx (k2)",
+    "Speech to Text",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+}
 ];

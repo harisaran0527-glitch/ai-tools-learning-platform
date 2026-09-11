@@ -12658,4 +12658,3339 @@ export const search_research_tools: AITool[] = [
     "verifiedAt": "2026-08-28",
     "badge": "FREE"
   }
+,
+{
+    "id": "genuine-search_research-7",
+    "slug": "undermind-ai",
+    "name": "Undermind",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=undermind-ai",
+    "category": "Search / Research",
+    "subcategory": "Academic Research",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI research agent that does deep academic literature searches with reasoning.",
+    "fullDescription": "Undermind is a leading AI tool in the Search / Research space. AI research agent that does deep academic literature searches with reasoning.",
+    "superpower": "AI research agent that does deep academic literature searches with reasoning.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on search / research tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional search / research workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Undermind leverages state-of-the-art AI models for search / research tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.undermind.ai and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real search / research task using Undermind.",
+        "input": "A practical search / research problem relevant to your work.",
+        "examplePrompt": "Use Undermind to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality search / research output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.undermind.ai",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.undermind.ai",
+    "docsStatus": "verified",
+    "keywords": [
+        "Undermind",
+        "Search / Research",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-search_research-10",
+    "slug": "lens-org",
+    "name": "Lens.org",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=lens-org",
+    "category": "Search / Research",
+    "subcategory": "Academic Research",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "Open global cyberinfrastructure for patent and scholarly search and analysis.",
+    "fullDescription": "Lens.org is a leading AI tool in the Search / Research space. Open global cyberinfrastructure for patent and scholarly search and analysis.",
+    "superpower": "Open global cyberinfrastructure for patent and scholarly search and analysis.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on search / research tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional search / research workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Lens.org leverages state-of-the-art AI models for search / research tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.lens.org and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real search / research task using Lens.org.",
+        "input": "A practical search / research problem relevant to your work.",
+        "examplePrompt": "Use Lens.org to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality search / research output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.lens.org",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.lens.org",
+    "docsStatus": "verified",
+    "keywords": [
+        "Lens.org",
+        "Search / Research",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-search_research-11",
+    "slug": "inciteful-xyz",
+    "name": "Inciteful (Search)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=inciteful-xyz",
+    "category": "Search / Research",
+    "subcategory": "Academic Research",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI-powered academic paper discovery and network analysis tool.",
+    "fullDescription": "Inciteful is a leading AI tool in the Search / Research space. AI-powered academic paper discovery and network analysis tool.",
+    "superpower": "AI-powered academic paper discovery and network analysis tool.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on search / research tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional search / research workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Inciteful leverages state-of-the-art AI models for search / research tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://inciteful.xyz and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real search / research task using Inciteful.",
+        "input": "A practical search / research problem relevant to your work.",
+        "examplePrompt": "Use Inciteful to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality search / research output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://inciteful.xyz",
+    "officialStatus": "verified",
+    "docsUrl": "https://inciteful.xyz",
+    "docsStatus": "verified",
+    "keywords": [
+        "Inciteful",
+        "Search / Research",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-search_research-12",
+    "slug": "openai-deep-research",
+    "name": "OpenAI Deep Research",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=openai-deep-research",
+    "category": "Search / Research",
+    "subcategory": "Academic Research",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "OpenAI's deep research capability for comprehensive multi-step research tasks.",
+    "fullDescription": "OpenAI Deep Research is a leading AI tool in the Search / Research space. OpenAI's deep research capability for comprehensive multi-step research tasks.",
+    "superpower": "OpenAI's deep research capability for comprehensive multi-step research tasks.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on search / research tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional search / research workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "OpenAI Deep Research leverages state-of-the-art AI models for search / research tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://openai.com/research and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real search / research task using OpenAI Deep Research.",
+        "input": "A practical search / research problem relevant to your work.",
+        "examplePrompt": "Use OpenAI Deep Research to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality search / research output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://openai.com/research",
+    "officialStatus": "verified",
+    "docsUrl": "https://openai.com/research",
+    "docsStatus": "verified",
+    "keywords": [
+        "OpenAI Deep Research",
+        "Search / Research",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-search_research-14",
+    "slug": "brave-search-ai",
+    "name": "Brave Search AI",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=brave-search-ai",
+    "category": "Search / Research",
+    "subcategory": "Academic Research",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "Privacy-focused AI search engine with AI answer summarization.",
+    "fullDescription": "Brave Search AI is a leading AI tool in the Search / Research space. Privacy-focused AI search engine with AI answer summarization.",
+    "superpower": "Privacy-focused AI search engine with AI answer summarization.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on search / research tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional search / research workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Brave Search AI leverages state-of-the-art AI models for search / research tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://search.brave.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real search / research task using Brave Search AI.",
+        "input": "A practical search / research problem relevant to your work.",
+        "examplePrompt": "Use Brave Search AI to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality search / research output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://search.brave.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://search.brave.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Brave Search AI",
+        "Search / Research",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-search_research-15",
+    "slug": "metaphor-systems",
+    "name": "Exa (Metaphor)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=metaphor-systems",
+    "category": "Search / Research",
+    "subcategory": "Academic Research",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI-powered semantic search API for finding high-quality web content.",
+    "fullDescription": "Exa (Metaphor) is a leading AI tool in the Search / Research space. AI-powered semantic search API for finding high-quality web content.",
+    "superpower": "AI-powered semantic search API for finding high-quality web content.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on search / research tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional search / research workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Exa (Metaphor) leverages state-of-the-art AI models for search / research tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://exa.ai and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real search / research task using Exa (Metaphor).",
+        "input": "A practical search / research problem relevant to your work.",
+        "examplePrompt": "Use Exa (Metaphor) to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality search / research output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://exa.ai",
+    "officialStatus": "verified",
+    "docsUrl": "https://exa.ai",
+    "docsStatus": "verified",
+    "keywords": [
+        "Exa (Metaphor)",
+        "Search / Research",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-search_research-18",
+    "slug": "research-ai-keenious",
+    "name": "Keenious",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=research-ai-keenious",
+    "category": "Search / Research",
+    "subcategory": "Academic Research",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI research recommendation tool that suggests relevant academic papers.",
+    "fullDescription": "Keenious is a leading AI tool in the Search / Research space. AI research recommendation tool that suggests relevant academic papers.",
+    "superpower": "AI research recommendation tool that suggests relevant academic papers.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on search / research tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional search / research workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Keenious leverages state-of-the-art AI models for search / research tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://keenious.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real search / research task using Keenious.",
+        "input": "A practical search / research problem relevant to your work.",
+        "examplePrompt": "Use Keenious to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality search / research output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://keenious.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://keenious.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Keenious",
+        "Search / Research",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-search_research-19",
+    "slug": "litmaps-ai",
+    "name": "Litmaps (Search)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=litmaps-ai",
+    "category": "Search / Research",
+    "subcategory": "Academic Research",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI-powered literature mapping tool for tracking and discovering research.",
+    "fullDescription": "Litmaps is a leading AI tool in the Search / Research space. AI-powered literature mapping tool for tracking and discovering research.",
+    "superpower": "AI-powered literature mapping tool for tracking and discovering research.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on search / research tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional search / research workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Litmaps leverages state-of-the-art AI models for search / research tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.litmaps.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real search / research task using Litmaps.",
+        "input": "A practical search / research problem relevant to your work.",
+        "examplePrompt": "Use Litmaps to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality search / research output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.litmaps.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.litmaps.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Litmaps",
+        "Search / Research",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-search_research-20",
+    "slug": "paperdigest",
+    "name": "Paper Digest (Search)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=paperdigest",
+    "category": "Search / Research",
+    "subcategory": "Academic Research",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI that summarizes academic papers into concise, structured digests.",
+    "fullDescription": "Paper Digest is a leading AI tool in the Search / Research space. AI that summarizes academic papers into concise, structured digests.",
+    "superpower": "AI that summarizes academic papers into concise, structured digests.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on search / research tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional search / research workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Paper Digest leverages state-of-the-art AI models for search / research tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.paperdigest.org and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real search / research task using Paper Digest.",
+        "input": "A practical search / research problem relevant to your work.",
+        "examplePrompt": "Use Paper Digest to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality search / research output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.paperdigest.org",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.paperdigest.org",
+    "docsStatus": "verified",
+    "keywords": [
+        "Paper Digest",
+        "Search / Research",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-search_research-21",
+    "slug": "r-discovery",
+    "name": "R Discovery",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=r-discovery",
+    "category": "Search / Research",
+    "subcategory": "Academic Research",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI-powered research reading platform for personalized paper discovery.",
+    "fullDescription": "R Discovery is a leading AI tool in the Search / Research space. AI-powered research reading platform for personalized paper discovery.",
+    "superpower": "AI-powered research reading platform for personalized paper discovery.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on search / research tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional search / research workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "R Discovery leverages state-of-the-art AI models for search / research tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://discovery.researcher.life and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real search / research task using R Discovery.",
+        "input": "A practical search / research problem relevant to your work.",
+        "examplePrompt": "Use R Discovery to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality search / research output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://discovery.researcher.life",
+    "officialStatus": "verified",
+    "docsUrl": "https://discovery.researcher.life",
+    "docsStatus": "verified",
+    "keywords": [
+        "R Discovery",
+        "Search / Research",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-search_research-24",
+    "slug": "paperpal-ai",
+    "name": "Paperpal (Search)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=paperpal-ai",
+    "category": "Search / Research",
+    "subcategory": "Academic Research",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI academic writing assistant that helps researchers write and improve papers.",
+    "fullDescription": "Paperpal is a leading AI tool in the Search / Research space. AI academic writing assistant that helps researchers write and improve papers.",
+    "superpower": "AI academic writing assistant that helps researchers write and improve papers.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on search / research tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional search / research workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Paperpal leverages state-of-the-art AI models for search / research tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://paperpal.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real search / research task using Paperpal.",
+        "input": "A practical search / research problem relevant to your work.",
+        "examplePrompt": "Use Paperpal to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality search / research output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://paperpal.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://paperpal.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Paperpal",
+        "Search / Research",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-search_research-26",
+    "slug": "open-alex",
+    "name": "OpenAlex",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=open-alex",
+    "category": "Search / Research",
+    "subcategory": "Academic Research",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "Open catalog of global scholarly research with AI-powered discovery features.",
+    "fullDescription": "OpenAlex is a leading AI tool in the Search / Research space. Open catalog of global scholarly research with AI-powered discovery features.",
+    "superpower": "Open catalog of global scholarly research with AI-powered discovery features.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on search / research tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional search / research workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "OpenAlex leverages state-of-the-art AI models for search / research tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://openalex.org and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real search / research task using OpenAlex.",
+        "input": "A practical search / research problem relevant to your work.",
+        "examplePrompt": "Use OpenAlex to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality search / research output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://openalex.org",
+    "officialStatus": "verified",
+    "docsUrl": "https://openalex.org",
+    "docsStatus": "verified",
+    "keywords": [
+        "OpenAlex",
+        "Search / Research",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-search_research-29",
+    "slug": "wizdom-ai",
+    "name": "Wizdom.ai",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=wizdom-ai",
+    "category": "Search / Research",
+    "subcategory": "Academic Research",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "Academic intelligence platform for research trends and publication insights.",
+    "fullDescription": "Wizdom.ai is a leading AI tool in the Search / Research space. Academic intelligence platform for research trends and publication insights.",
+    "superpower": "Academic intelligence platform for research trends and publication insights.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on search / research tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional search / research workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Wizdom.ai leverages state-of-the-art AI models for search / research tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.wizdom.ai and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real search / research task using Wizdom.ai.",
+        "input": "A practical search / research problem relevant to your work.",
+        "examplePrompt": "Use Wizdom.ai to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality search / research output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.wizdom.ai",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.wizdom.ai",
+    "docsStatus": "verified",
+    "keywords": [
+        "Wizdom.ai",
+        "Search / Research",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-search_research-30",
+    "slug": "pubmed-ai",
+    "name": "PubMed AI Tools",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=pubmed-ai",
+    "category": "Search / Research",
+    "subcategory": "Academic Research",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "NLM biomedical database with AI-enhanced search for life science literature.",
+    "fullDescription": "PubMed AI Tools is a leading AI tool in the Search / Research space. NLM biomedical database with AI-enhanced search for life science literature.",
+    "superpower": "NLM biomedical database with AI-enhanced search for life science literature.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on search / research tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional search / research workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "PubMed AI Tools leverages state-of-the-art AI models for search / research tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://pubmed.ncbi.nlm.nih.gov and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real search / research task using PubMed AI Tools.",
+        "input": "A practical search / research problem relevant to your work.",
+        "examplePrompt": "Use PubMed AI Tools to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality search / research output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://pubmed.ncbi.nlm.nih.gov",
+    "officialStatus": "verified",
+    "docsUrl": "https://pubmed.ncbi.nlm.nih.gov",
+    "docsStatus": "verified",
+    "keywords": [
+        "PubMed AI Tools",
+        "Search / Research",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+}
+,
+{
+  "id": "exp700-search_research-1",
+  "slug": "google-scholar-search",
+  "name": "Google Scholar",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=google-scholar-search",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Freely accessible web search engine indexing full text of scholarly literature.",
+  "fullDescription": "Google Scholar is an established tool in the Search / Research landscape. Freely accessible web search engine indexing full text of scholarly literature.",
+  "superpower": "Freely accessible web search engine indexing full text of scholarly literature.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances search / research workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional search / research implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Google Scholar provides specialized AI features tailored for search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://scholar.google.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core search / research task with Google Scholar.",
+    "input": "Sample project input for search / research.",
+    "examplePrompt": "Utilize Google Scholar for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Google Scholar.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://scholar.google.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://scholar.google.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Google Scholar",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-search_research-2",
+  "slug": "researchgate-net",
+  "name": "ResearchGate",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=researchgate-net",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Commercial European social networking site for scientists and researchers.",
+  "fullDescription": "ResearchGate is an established tool in the Search / Research landscape. Commercial European social networking site for scientists and researchers.",
+  "superpower": "Commercial European social networking site for scientists and researchers.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances search / research workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional search / research implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "ResearchGate provides specialized AI features tailored for search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.researchgate.net to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core search / research task with ResearchGate.",
+    "input": "Sample project input for search / research.",
+    "examplePrompt": "Utilize ResearchGate for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using ResearchGate.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.researchgate.net",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.researchgate.net",
+  "docsStatus": "verified",
+  "keywords": [
+    "ResearchGate",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-search_research-3",
+  "slug": "academia-edu",
+  "name": "Academia.edu",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=academia-edu",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Platform for academics to share research papers and monitor citation impact.",
+  "fullDescription": "Academia.edu is an established tool in the Search / Research landscape. Platform for academics to share research papers and monitor citation impact.",
+  "superpower": "Platform for academics to share research papers and monitor citation impact.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances search / research workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional search / research implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Academia.edu provides specialized AI features tailored for search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.academia.edu to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core search / research task with Academia.edu.",
+    "input": "Sample project input for search / research.",
+    "examplePrompt": "Utilize Academia.edu for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Academia.edu.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.academia.edu",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.academia.edu",
+  "docsStatus": "verified",
+  "keywords": [
+    "Academia.edu",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-search_research-4",
+  "slug": "arxiv-org",
+  "name": "arXiv.org",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=arxiv-org",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Open-access archive for 2+ million scholarly articles in STEM fields.",
+  "fullDescription": "arXiv.org is an established tool in the Search / Research landscape. Open-access archive for 2+ million scholarly articles in STEM fields.",
+  "superpower": "Open-access archive for 2+ million scholarly articles in STEM fields.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances search / research workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional search / research implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "arXiv.org provides specialized AI features tailored for search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://arxiv.org to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core search / research task with arXiv.org.",
+    "input": "Sample project input for search / research.",
+    "examplePrompt": "Utilize arXiv.org for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using arXiv.org.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://arxiv.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://arxiv.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "arXiv.org",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-search_research-5",
+  "slug": "biorxiv-org",
+  "name": "bioRxiv",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=biorxiv-org",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free online archive and distribution service for unpublished preprints in life sciences.",
+  "fullDescription": "bioRxiv is an established tool in the Search / Research landscape. Free online archive and distribution service for unpublished preprints in life sciences.",
+  "superpower": "Free online archive and distribution service for unpublished preprints in life sciences.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances search / research workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional search / research implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "bioRxiv provides specialized AI features tailored for search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.biorxiv.org to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core search / research task with bioRxiv.",
+    "input": "Sample project input for search / research.",
+    "examplePrompt": "Utilize bioRxiv for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using bioRxiv.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.biorxiv.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.biorxiv.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "bioRxiv",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-search_research-6",
+  "slug": "medrxiv-org",
+  "name": "medRxiv",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=medrxiv-org",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Preprint server for health sciences operated by Cold Spring Harbor Laboratory.",
+  "fullDescription": "medRxiv is an established tool in the Search / Research landscape. Preprint server for health sciences operated by Cold Spring Harbor Laboratory.",
+  "superpower": "Preprint server for health sciences operated by Cold Spring Harbor Laboratory.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances search / research workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional search / research implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "medRxiv provides specialized AI features tailored for search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.medrxiv.org to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core search / research task with medRxiv.",
+    "input": "Sample project input for search / research.",
+    "examplePrompt": "Utilize medRxiv for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using medRxiv.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.medrxiv.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.medrxiv.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "medRxiv",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-search_research-7",
+  "slug": "ssrn-abstracts",
+  "name": "SSRN",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=ssrn-abstracts",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Preprint repository for social science, humanities, and legal research.",
+  "fullDescription": "SSRN is an established tool in the Search / Research landscape. Preprint repository for social science, humanities, and legal research.",
+  "superpower": "Preprint repository for social science, humanities, and legal research.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances search / research workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional search / research implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "SSRN provides specialized AI features tailored for search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.ssrn.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core search / research task with SSRN.",
+    "input": "Sample project input for search / research.",
+    "examplePrompt": "Utilize SSRN for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using SSRN.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.ssrn.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.ssrn.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "SSRN",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-search_research-8",
+  "slug": "osf-io-research",
+  "name": "Open Science Framework (OSF)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=osf-io-research",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free, open-source project management repository for open science research.",
+  "fullDescription": "Open Science Framework (OSF) is an established tool in the Search / Research landscape. Free, open-source project management repository for open science research.",
+  "superpower": "Free, open-source project management repository for open science research.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances search / research workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional search / research implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Open Science Framework (OSF) provides specialized AI features tailored for search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://osf.io to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core search / research task with Open Science Framework (OSF).",
+    "input": "Sample project input for search / research.",
+    "examplePrompt": "Utilize Open Science Framework (OSF) for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Open Science Framework (OSF).",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://osf.io",
+  "officialStatus": "verified",
+  "docsUrl": "https://osf.io",
+  "docsStatus": "verified",
+  "keywords": [
+    "Open Science Framework (OSF)",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-search_research-9",
+  "slug": "zenodo-org",
+  "name": "Zenodo",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=zenodo-org",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "General-purpose open-access repository developed under the European OpenAIRE program.",
+  "fullDescription": "Zenodo is an established tool in the Search / Research landscape. General-purpose open-access repository developed under the European OpenAIRE program.",
+  "superpower": "General-purpose open-access repository developed under the European OpenAIRE program.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances search / research workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional search / research implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Zenodo provides specialized AI features tailored for search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://zenodo.org to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core search / research task with Zenodo.",
+    "input": "Sample project input for search / research.",
+    "examplePrompt": "Utilize Zenodo for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Zenodo.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://zenodo.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://zenodo.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "Zenodo",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-search_research-10",
+  "slug": "figshare-data",
+  "name": "figshare",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=figshare-data",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Online open-access repository where researchers can store and share research outputs.",
+  "fullDescription": "figshare is an established tool in the Search / Research landscape. Online open-access repository where researchers can store and share research outputs.",
+  "superpower": "Online open-access repository where researchers can store and share research outputs.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances search / research workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional search / research implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "figshare provides specialized AI features tailored for search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://figshare.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core search / research task with figshare.",
+    "input": "Sample project input for search / research.",
+    "examplePrompt": "Utilize figshare for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using figshare.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://figshare.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://figshare.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "figshare",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-search_research-11",
+  "slug": "dryad-repository",
+  "name": "Dryad",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=dryad-repository",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Curated resource that makes research data discoverable, freely reusable, and citable.",
+  "fullDescription": "Dryad is an established tool in the Search / Research landscape. Curated resource that makes research data discoverable, freely reusable, and citable.",
+  "superpower": "Curated resource that makes research data discoverable, freely reusable, and citable.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances search / research workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional search / research implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Dryad provides specialized AI features tailored for search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://datadryad.org to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core search / research task with Dryad.",
+    "input": "Sample project input for search / research.",
+    "examplePrompt": "Utilize Dryad for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Dryad.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://datadryad.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://datadryad.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "Dryad",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-search_research-12",
+  "slug": "kaggle-datasets",
+  "name": "Kaggle Datasets & Notebooks",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=kaggle-datasets",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Data science community platform hosting thousands of public datasets and AI models.",
+  "fullDescription": "Kaggle Datasets & Notebooks is an established tool in the Search / Research landscape. Data science community platform hosting thousands of public datasets and AI models.",
+  "superpower": "Data science community platform hosting thousands of public datasets and AI models.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances search / research workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional search / research implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Kaggle Datasets & Notebooks provides specialized AI features tailored for search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.kaggle.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core search / research task with Kaggle Datasets & Notebooks.",
+    "input": "Sample project input for search / research.",
+    "examplePrompt": "Utilize Kaggle Datasets & Notebooks for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Kaggle Datasets & Notebooks.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.kaggle.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.kaggle.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Kaggle Datasets & Notebooks",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-search_research-13",
+  "slug": "huggingface-datasets-hub",
+  "name": "Hugging Face Hub",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=huggingface-datasets-hub",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "The central platform for sharing machine learning models, datasets, and applications.",
+  "fullDescription": "Hugging Face Hub is an established tool in the Search / Research landscape. The central platform for sharing machine learning models, datasets, and applications.",
+  "superpower": "The central platform for sharing machine learning models, datasets, and applications.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances search / research workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional search / research implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Hugging Face Hub provides specialized AI features tailored for search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://huggingface.co to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core search / research task with Hugging Face Hub.",
+    "input": "Sample project input for search / research.",
+    "examplePrompt": "Utilize Hugging Face Hub for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Hugging Face Hub.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://huggingface.co",
+  "officialStatus": "verified",
+  "docsUrl": "https://huggingface.co",
+  "docsStatus": "verified",
+  "keywords": [
+    "Hugging Face Hub",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-search_research-14",
+  "slug": "papers-with-code",
+  "name": "Papers with Code",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=papers-with-code",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free resource linking ML research papers with code implementations and benchmarks.",
+  "fullDescription": "Papers with Code is an established tool in the Search / Research landscape. Free resource linking ML research papers with code implementations and benchmarks.",
+  "superpower": "Free resource linking ML research papers with code implementations and benchmarks.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances search / research workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional search / research implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Papers with Code provides specialized AI features tailored for search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://paperswithcode.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core search / research task with Papers with Code.",
+    "input": "Sample project input for search / research.",
+    "examplePrompt": "Utilize Papers with Code for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Papers with Code.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://paperswithcode.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://paperswithcode.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Papers with Code",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-search_research-16",
+  "slug": "site-unpaywall",
+  "name": "Unpaywall",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=site-unpaywall",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Open-source database of 40+ million free-to-read scholarly articles.",
+  "fullDescription": "Unpaywall is an established tool in the Search / Research landscape. Open-source database of 40+ million free-to-read scholarly articles.",
+  "superpower": "Open-source database of 40+ million free-to-read scholarly articles.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances search / research workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional search / research implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Unpaywall provides specialized AI features tailored for search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://unpaywall.org to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core search / research task with Unpaywall.",
+    "input": "Sample project input for search / research.",
+    "examplePrompt": "Utilize Unpaywall for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Unpaywall.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://unpaywall.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://unpaywall.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "Unpaywall",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-search_research-17",
+  "slug": "core-ac-uk",
+  "name": "CORE",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=core-ac-uk",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "The world's largest collection of open access research papers aggregator.",
+  "fullDescription": "CORE is an established tool in the Search / Research landscape. The world's largest collection of open access research papers aggregator.",
+  "superpower": "The world's largest collection of open access research papers aggregator.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances search / research workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional search / research implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "CORE provides specialized AI features tailored for search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://core.ac.uk to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core search / research task with CORE.",
+    "input": "Sample project input for search / research.",
+    "examplePrompt": "Utilize CORE for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using CORE.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://core.ac.uk",
+  "officialStatus": "verified",
+  "docsUrl": "https://core.ac.uk",
+  "docsStatus": "verified",
+  "keywords": [
+    "CORE",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-search_research-18",
+  "slug": "doaj-org",
+  "name": "DOAJ",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=doaj-org",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Directory of Open Access Journals indexing high quality, peer-reviewed open access journals.",
+  "fullDescription": "DOAJ is an established tool in the Search / Research landscape. Directory of Open Access Journals indexing high quality, peer-reviewed open access journals.",
+  "superpower": "Directory of Open Access Journals indexing high quality, peer-reviewed open access journals.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances search / research workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional search / research implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "DOAJ provides specialized AI features tailored for search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://doaj.org to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core search / research task with DOAJ.",
+    "input": "Sample project input for search / research.",
+    "examplePrompt": "Utilize DOAJ for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using DOAJ.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://doaj.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://doaj.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "DOAJ",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-search_research-19",
+  "slug": "base-search-net",
+  "name": "BASE Search",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=base-search-net",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Bielefeld Academic Search Engine indexing over 300 million academic documents.",
+  "fullDescription": "BASE Search is an established tool in the Search / Research landscape. Bielefeld Academic Search Engine indexing over 300 million academic documents.",
+  "superpower": "Bielefeld Academic Search Engine indexing over 300 million academic documents.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances search / research workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional search / research implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "BASE Search provides specialized AI features tailored for search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.base-search.net to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core search / research task with BASE Search.",
+    "input": "Sample project input for search / research.",
+    "examplePrompt": "Utilize BASE Search for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using BASE Search.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.base-search.net",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.base-search.net",
+  "docsStatus": "verified",
+  "keywords": [
+    "BASE Search",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-search_research-20",
+  "slug": "worldwidescience-org",
+  "name": "WorldWideScience",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=worldwidescience-org",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Global science gateway searching national and international scientific databases.",
+  "fullDescription": "WorldWideScience is an established tool in the Search / Research landscape. Global science gateway searching national and international scientific databases.",
+  "superpower": "Global science gateway searching national and international scientific databases.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances search / research workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional search / research implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "WorldWideScience provides specialized AI features tailored for search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://worldwidescience.org to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core search / research task with WorldWideScience.",
+    "input": "Sample project input for search / research.",
+    "examplePrompt": "Utilize WorldWideScience for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using WorldWideScience.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://worldwidescience.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://worldwidescience.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "WorldWideScience",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-search_research-21",
+  "slug": "sciencedirect-elsevier",
+  "name": "ScienceDirect",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=sciencedirect-elsevier",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Elsevier platform for peer-reviewed journal articles and book chapters.",
+  "fullDescription": "ScienceDirect is an established tool in the Search / Research landscape. Elsevier platform for peer-reviewed journal articles and book chapters.",
+  "superpower": "Elsevier platform for peer-reviewed journal articles and book chapters.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances search / research workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional search / research implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "ScienceDirect provides specialized AI features tailored for search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.sciencedirect.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core search / research task with ScienceDirect.",
+    "input": "Sample project input for search / research.",
+    "examplePrompt": "Utilize ScienceDirect for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using ScienceDirect.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.sciencedirect.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.sciencedirect.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "ScienceDirect",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-search_research-22",
+  "slug": "springerlink-books",
+  "name": "SpringerLink",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=springerlink-books",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Access to millions of scientific documents from journals, books, and protocols.",
+  "fullDescription": "SpringerLink is an established tool in the Search / Research landscape. Access to millions of scientific documents from journals, books, and protocols.",
+  "superpower": "Access to millions of scientific documents from journals, books, and protocols.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances search / research workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional search / research implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "SpringerLink provides specialized AI features tailored for search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://link.springer.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core search / research task with SpringerLink.",
+    "input": "Sample project input for search / research.",
+    "examplePrompt": "Utilize SpringerLink for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using SpringerLink.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://link.springer.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://link.springer.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "SpringerLink",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-search_research-23",
+  "slug": "ieee-xplore",
+  "name": "IEEE Xplore",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=ieee-xplore",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Digital library for electrical engineering, computer science, and electronics research.",
+  "fullDescription": "IEEE Xplore is an established tool in the Search / Research landscape. Digital library for electrical engineering, computer science, and electronics research.",
+  "superpower": "Digital library for electrical engineering, computer science, and electronics research.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances search / research workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional search / research implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "IEEE Xplore provides specialized AI features tailored for search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://ieeexplore.ieee.org to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core search / research task with IEEE Xplore.",
+    "input": "Sample project input for search / research.",
+    "examplePrompt": "Utilize IEEE Xplore for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using IEEE Xplore.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://ieeexplore.ieee.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://ieeexplore.ieee.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "IEEE Xplore",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-search_research-25",
+  "slug": "jstor-library",
+  "name": "JSTOR",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=jstor-library",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Digital library for academic journals, books, and primary source materials.",
+  "fullDescription": "JSTOR is an established tool in the Search / Research landscape. Digital library for academic journals, books, and primary source materials.",
+  "superpower": "Digital library for academic journals, books, and primary source materials.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances search / research workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional search / research implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "JSTOR provides specialized AI features tailored for search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.jstor.org to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core search / research task with JSTOR.",
+    "input": "Sample project input for search / research.",
+    "examplePrompt": "Utilize JSTOR for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using JSTOR.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.jstor.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.jstor.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "JSTOR",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+}
+,
+{
+  "id": "final700-search_research-1",
+  "slug": "fatcat-scholar-open",
+  "name": "Fatcat (Internet Archive)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=fatcat-scholar-open",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Open academic catalog and paper archive by Internet Archive.",
+  "fullDescription": "Fatcat (Internet Archive) is a high-quality published AI tool in Search / Research. Open academic catalog and paper archive by Internet Archive.",
+  "superpower": "Open academic catalog and paper archive by Internet Archive.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in search / research workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in search / research.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "Fatcat (Internet Archive) provides specialized AI performance in search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://fatcat.wiki to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Fatcat (Internet Archive).",
+    "input": "Sample input for search / research.",
+    "examplePrompt": "Use Fatcat (Internet Archive) to complete: [describe task].",
+    "expectedResult": "Tested and verified output using Fatcat (Internet Archive).",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://fatcat.wiki",
+  "officialStatus": "verified",
+  "docsUrl": "https://fatcat.wiki",
+  "docsStatus": "verified",
+  "keywords": [
+    "Fatcat (Internet Archive)",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-search_research-2",
+  "slug": "crossref-metadata",
+  "name": "CrossRef",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=crossref-metadata",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Official digital object identifier (DOI) registration agency for academic publications.",
+  "fullDescription": "CrossRef is a high-quality published AI tool in Search / Research. Official digital object identifier (DOI) registration agency for academic publications.",
+  "superpower": "Official digital object identifier (DOI) registration agency for academic publications.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in search / research workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in search / research.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "CrossRef provides specialized AI performance in search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.crossref.org to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using CrossRef.",
+    "input": "Sample input for search / research.",
+    "examplePrompt": "Use CrossRef to complete: [describe task].",
+    "expectedResult": "Tested and verified output using CrossRef.",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://www.crossref.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.crossref.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "CrossRef",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-search_research-3",
+  "slug": "datacite-metadata",
+  "name": "DataCite",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=datacite-metadata",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Global non-profit providing DOIs for research data and open outputs.",
+  "fullDescription": "DataCite is a high-quality published AI tool in Search / Research. Global non-profit providing DOIs for research data and open outputs.",
+  "superpower": "Global non-profit providing DOIs for research data and open outputs.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in search / research workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in search / research.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "DataCite provides specialized AI performance in search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://datacite.org to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using DataCite.",
+    "input": "Sample input for search / research.",
+    "examplePrompt": "Use DataCite to complete: [describe task].",
+    "expectedResult": "Tested and verified output using DataCite.",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://datacite.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://datacite.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "DataCite",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-search_research-4",
+  "slug": "orcid-academic-id",
+  "name": "ORCID",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=orcid-academic-id",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Persistent digital identifier connecting researchers to their professional contributions.",
+  "fullDescription": "ORCID is a high-quality published AI tool in Search / Research. Persistent digital identifier connecting researchers to their professional contributions.",
+  "superpower": "Persistent digital identifier connecting researchers to their professional contributions.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in search / research workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in search / research.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "ORCID provides specialized AI performance in search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://orcid.org to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using ORCID.",
+    "input": "Sample input for search / research.",
+    "examplePrompt": "Use ORCID to complete: [describe task].",
+    "expectedResult": "Tested and verified output using ORCID.",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://orcid.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://orcid.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "ORCID",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-search_research-5",
+  "slug": "wikidata-scholarly",
+  "name": "Wikidata Scholarly",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=wikidata-scholarly",
+  "category": "Search / Research",
+  "subcategory": "Search / Research",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Structured knowledge base powering open citations and academic linked data.",
+  "fullDescription": "Wikidata Scholarly is a high-quality published AI tool in Search / Research. Structured knowledge base powering open citations and academic linked data.",
+  "superpower": "Structured knowledge base powering open citations and academic linked data.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in search / research workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in search / research.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "Wikidata Scholarly provides specialized AI performance in search / research."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.wikidata.org to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Wikidata Scholarly.",
+    "input": "Sample input for search / research.",
+    "examplePrompt": "Use Wikidata Scholarly to complete: [describe task].",
+    "expectedResult": "Tested and verified output using Wikidata Scholarly.",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://www.wikidata.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.wikidata.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "Wikidata Scholarly",
+    "Search / Research",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+}
 ];

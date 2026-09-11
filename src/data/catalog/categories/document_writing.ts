@@ -17168,4 +17168,3303 @@ export const document_writing_tools: AITool[] = [
     "verifiedAt": "2026-08-28",
     "badge": "FREE-TRIAL"
   }
+,
+{
+    "id": "genuine-document_writing-7",
+    "slug": "craft-docs-ai",
+    "name": "Craft Docs",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=craft-docs-ai",
+    "category": "Document / Writing",
+    "subcategory": "AI Writing",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI-native document editor for Apple with intelligent writing and organization.",
+    "fullDescription": "Craft Docs is a leading AI tool in the Document / Writing space. AI-native document editor for Apple with intelligent writing and organization.",
+    "superpower": "AI-native document editor for Apple with intelligent writing and organization.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on document / writing tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional document / writing workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Craft Docs leverages state-of-the-art AI models for document / writing tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.craft.do and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real document / writing task using Craft Docs.",
+        "input": "A practical document / writing problem relevant to your work.",
+        "examplePrompt": "Use Craft Docs to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality document / writing output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.craft.do",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.craft.do",
+    "docsStatus": "verified",
+    "keywords": [
+        "Craft Docs",
+        "Document / Writing",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-document_writing-8",
+    "slug": "hemingway-app",
+    "name": "Hemingway Editor",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=hemingway-app",
+    "category": "Document / Writing",
+    "subcategory": "AI Writing",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI writing tool that highlights complex sentences and improves clarity.",
+    "fullDescription": "Hemingway Editor is a leading AI tool in the Document / Writing space. AI writing tool that highlights complex sentences and improves clarity.",
+    "superpower": "AI writing tool that highlights complex sentences and improves clarity.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on document / writing tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional document / writing workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Hemingway Editor leverages state-of-the-art AI models for document / writing tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://hemingwayapp.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real document / writing task using Hemingway Editor.",
+        "input": "A practical document / writing problem relevant to your work.",
+        "examplePrompt": "Use Hemingway Editor to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality document / writing output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://hemingwayapp.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://hemingwayapp.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Hemingway Editor",
+        "Document / Writing",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-document_writing-9",
+    "slug": "wordtune-ai",
+    "name": "Wordtune (Document)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=wordtune-ai",
+    "category": "Document / Writing",
+    "subcategory": "AI Writing",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI writing companion that rephrases, rewrites, and improves text clarity.",
+    "fullDescription": "Wordtune is a leading AI tool in the Document / Writing space. AI writing companion that rephrases, rewrites, and improves text clarity.",
+    "superpower": "AI writing companion that rephrases, rewrites, and improves text clarity.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on document / writing tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional document / writing workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Wordtune leverages state-of-the-art AI models for document / writing tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.wordtune.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real document / writing task using Wordtune.",
+        "input": "A practical document / writing problem relevant to your work.",
+        "examplePrompt": "Use Wordtune to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality document / writing output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.wordtune.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.wordtune.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Wordtune",
+        "Document / Writing",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-document_writing-10",
+    "slug": "anyword-ai",
+    "name": "Anyword (Document)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=anyword-ai",
+    "category": "Document / Writing",
+    "subcategory": "AI Writing",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI writing platform with predictive performance scoring for marketing content.",
+    "fullDescription": "Anyword is a leading AI tool in the Document / Writing space. AI writing platform with predictive performance scoring for marketing content.",
+    "superpower": "AI writing platform with predictive performance scoring for marketing content.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on document / writing tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional document / writing workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Anyword leverages state-of-the-art AI models for document / writing tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://anyword.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real document / writing task using Anyword.",
+        "input": "A practical document / writing problem relevant to your work.",
+        "examplePrompt": "Use Anyword to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality document / writing output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://anyword.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://anyword.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Anyword",
+        "Document / Writing",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-document_writing-12",
+    "slug": "lex-ai",
+    "name": "Lex",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=lex-ai",
+    "category": "Document / Writing",
+    "subcategory": "AI Writing",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI-powered word processor designed for writing with GPT-4 assistance built in.",
+    "fullDescription": "Lex is a leading AI tool in the Document / Writing space. AI-powered word processor designed for writing with GPT-4 assistance built in.",
+    "superpower": "AI-powered word processor designed for writing with GPT-4 assistance built in.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on document / writing tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional document / writing workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Lex leverages state-of-the-art AI models for document / writing tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://lex.page and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real document / writing task using Lex.",
+        "input": "A practical document / writing problem relevant to your work.",
+        "examplePrompt": "Use Lex to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality document / writing output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://lex.page",
+    "officialStatus": "verified",
+    "docsUrl": "https://lex.page",
+    "docsStatus": "verified",
+    "keywords": [
+        "Lex",
+        "Document / Writing",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-document_writing-13",
+    "slug": "sudowrite-ai",
+    "name": "Sudowrite (Document)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=sudowrite-ai",
+    "category": "Document / Writing",
+    "subcategory": "AI Writing",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI writing tool for fiction writers offering story brainstorming and prose generation.",
+    "fullDescription": "Sudowrite is a leading AI tool in the Document / Writing space. AI writing tool for fiction writers offering story brainstorming and prose generation.",
+    "superpower": "AI writing tool for fiction writers offering story brainstorming and prose generation.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on document / writing tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional document / writing workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Sudowrite leverages state-of-the-art AI models for document / writing tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.sudowrite.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real document / writing task using Sudowrite.",
+        "input": "A practical document / writing problem relevant to your work.",
+        "examplePrompt": "Use Sudowrite to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality document / writing output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.sudowrite.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.sudowrite.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Sudowrite",
+        "Document / Writing",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-document_writing-14",
+    "slug": "ai21-wordspice",
+    "name": "AI21 Labs Wordspice",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=ai21-wordspice",
+    "category": "Document / Writing",
+    "subcategory": "AI Writing",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI21 Labs text improvement and rewriting API for high-quality language outputs.",
+    "fullDescription": "AI21 Labs Wordspice is a leading AI tool in the Document / Writing space. AI21 Labs text improvement and rewriting API for high-quality language outputs.",
+    "superpower": "AI21 Labs text improvement and rewriting API for high-quality language outputs.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on document / writing tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional document / writing workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "AI21 Labs Wordspice leverages state-of-the-art AI models for document / writing tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.ai21.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real document / writing task using AI21 Labs Wordspice.",
+        "input": "A practical document / writing problem relevant to your work.",
+        "examplePrompt": "Use AI21 Labs Wordspice to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality document / writing output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.ai21.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.ai21.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "AI21 Labs Wordspice",
+        "Document / Writing",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-document_writing-15",
+    "slug": "prowritingaid-ai",
+    "name": "ProWritingAid (Document)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=prowritingaid-ai",
+    "category": "Document / Writing",
+    "subcategory": "AI Writing",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI grammar checker and writing coach for improving style, clarity, and structure.",
+    "fullDescription": "ProWritingAid is a leading AI tool in the Document / Writing space. AI grammar checker and writing coach for improving style, clarity, and structure.",
+    "superpower": "AI grammar checker and writing coach for improving style, clarity, and structure.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on document / writing tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional document / writing workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "ProWritingAid leverages state-of-the-art AI models for document / writing tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://prowritingaid.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real document / writing task using ProWritingAid.",
+        "input": "A practical document / writing problem relevant to your work.",
+        "examplePrompt": "Use ProWritingAid to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality document / writing output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://prowritingaid.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://prowritingaid.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "ProWritingAid",
+        "Document / Writing",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+}
+,
+{
+  "id": "exp700-document_writing-2",
+  "slug": "rephrase-ai-text",
+  "name": "Rephrase.info",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=rephrase-ai-text",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free online paraphrasing tool for rewording sentences and articles.",
+  "fullDescription": "Rephrase.info is an established tool in the Document / Writing landscape. Free online paraphrasing tool for rewording sentences and articles.",
+  "superpower": "Free online paraphrasing tool for rewording sentences and articles.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Rephrase.info provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.rephrase.info to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with Rephrase.info.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize Rephrase.info for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Rephrase.info.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.rephrase.info",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.rephrase.info",
+  "docsStatus": "verified",
+  "keywords": [
+    "Rephrase.info",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-3",
+  "slug": "paraphraser-io",
+  "name": "Paraphraser.io",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=paraphraser-io",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI-based sentence rewriter and article paraphraser.",
+  "fullDescription": "Paraphraser.io is an established tool in the Document / Writing landscape. AI-based sentence rewriter and article paraphraser.",
+  "superpower": "AI-based sentence rewriter and article paraphraser.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Paraphraser.io provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.paraphraser.io to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with Paraphraser.io.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize Paraphraser.io for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Paraphraser.io.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.paraphraser.io",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.paraphraser.io",
+  "docsStatus": "verified",
+  "keywords": [
+    "Paraphraser.io",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-4",
+  "slug": "spinbot-text",
+  "name": "Spinbot",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=spinbot-text",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free automatic text rewriter for spinning content into new variations.",
+  "fullDescription": "Spinbot is an established tool in the Document / Writing landscape. Free automatic text rewriter for spinning content into new variations.",
+  "superpower": "Free automatic text rewriter for spinning content into new variations.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Spinbot provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://spinbot.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with Spinbot.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize Spinbot for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Spinbot.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://spinbot.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://spinbot.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Spinbot",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-5",
+  "slug": "textcortex-ai",
+  "name": "TextCortex (Document)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=textcortex-ai",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI writing copilot for browser with ZenoChat customizable assistant.",
+  "fullDescription": "TextCortex is an established tool in the Document / Writing landscape. AI writing copilot for browser with ZenoChat customizable assistant.",
+  "superpower": "AI writing copilot for browser with ZenoChat customizable assistant.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "TextCortex provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://textcortex.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with TextCortex.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize TextCortex for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using TextCortex.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://textcortex.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://textcortex.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "TextCortex",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-7",
+  "slug": "simplified-ai-writer",
+  "name": "Simplified AI Writer",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=simplified-ai-writer",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "All-in-one platform with AI content writer, graphic design, and video editor.",
+  "fullDescription": "Simplified AI Writer is an established tool in the Document / Writing landscape. All-in-one platform with AI content writer, graphic design, and video editor.",
+  "superpower": "All-in-one platform with AI content writer, graphic design, and video editor.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Simplified AI Writer provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://simplified.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with Simplified AI Writer.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize Simplified AI Writer for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Simplified AI Writer.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://simplified.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://simplified.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Simplified AI Writer",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-8",
+  "slug": "neuroflash-ai",
+  "name": "neuroflash",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=neuroflash-ai",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "German and European leading AI text and image generator for copywriters.",
+  "fullDescription": "neuroflash is an established tool in the Document / Writing landscape. German and European leading AI text and image generator for copywriters.",
+  "superpower": "German and European leading AI text and image generator for copywriters.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "neuroflash provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://neuroflash.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with neuroflash.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize neuroflash for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using neuroflash.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://neuroflash.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://neuroflash.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "neuroflash",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-10",
+  "slug": "scalenut-ai",
+  "name": "Scalenut (Document)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=scalenut-ai",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI-powered SEO content research and copywriting platform.",
+  "fullDescription": "Scalenut is an established tool in the Document / Writing landscape. AI-powered SEO content research and copywriting platform.",
+  "superpower": "AI-powered SEO content research and copywriting platform.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Scalenut provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.scalenut.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with Scalenut.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize Scalenut for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Scalenut.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.scalenut.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.scalenut.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Scalenut",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-11",
+  "slug": "surfer-seo-writer",
+  "name": "Surfer SEO Writer",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=surfer-seo-writer",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "SEO workflow and AI content generator for ranking articles in Google.",
+  "fullDescription": "Surfer SEO Writer is an established tool in the Document / Writing landscape. SEO workflow and AI content generator for ranking articles in Google.",
+  "superpower": "SEO workflow and AI content generator for ranking articles in Google.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Surfer SEO Writer provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://surferseo.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with Surfer SEO Writer.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize Surfer SEO Writer for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Surfer SEO Writer.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://surferseo.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://surferseo.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Surfer SEO Writer",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-12",
+  "slug": "clearscope-io",
+  "name": "Clearscope",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=clearscope-io",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "SEO content optimization platform using natural language processing.",
+  "fullDescription": "Clearscope is an established tool in the Document / Writing landscape. SEO content optimization platform using natural language processing.",
+  "superpower": "SEO content optimization platform using natural language processing.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Clearscope provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.clearscope.io to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with Clearscope.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize Clearscope for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Clearscope.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.clearscope.io",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.clearscope.io",
+  "docsStatus": "verified",
+  "keywords": [
+    "Clearscope",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-13",
+  "slug": "frase-io-writer",
+  "name": "Frase",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=frase-io-writer",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI content engine for creating SEO research briefs and writing optimized copy.",
+  "fullDescription": "Frase is an established tool in the Document / Writing landscape. AI content engine for creating SEO research briefs and writing optimized copy.",
+  "superpower": "AI content engine for creating SEO research briefs and writing optimized copy.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Frase provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.frase.io to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with Frase.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize Frase for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Frase.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.frase.io",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.frase.io",
+  "docsStatus": "verified",
+  "keywords": [
+    "Frase",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-14",
+  "slug": "outranking-io",
+  "name": "Outranking (Document)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=outranking-io",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI SEO content strategy and writing platform.",
+  "fullDescription": "Outranking is an established tool in the Document / Writing landscape. AI SEO content strategy and writing platform.",
+  "superpower": "AI SEO content strategy and writing platform.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Outranking provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.outranking.io to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with Outranking.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize Outranking for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Outranking.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.outranking.io",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.outranking.io",
+  "docsStatus": "verified",
+  "keywords": [
+    "Outranking",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-15",
+  "slug": "growthbar-seo",
+  "name": "GrowthBar (Document)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=growthbar-seo",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI writing and SEO tool for blogging, keyword research, and outlines.",
+  "fullDescription": "GrowthBar is an established tool in the Document / Writing landscape. AI writing and SEO tool for blogging, keyword research, and outlines.",
+  "superpower": "AI writing and SEO tool for blogging, keyword research, and outlines.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "GrowthBar provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.growthbarseo.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with GrowthBar.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize GrowthBar for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using GrowthBar.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.growthbarseo.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.growthbarseo.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "GrowthBar",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-16",
+  "slug": "dashword-seo",
+  "name": "Dashword (Document)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=dashword-seo",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "SEO content editor and brief builder for content teams.",
+  "fullDescription": "Dashword is an established tool in the Document / Writing landscape. SEO content editor and brief builder for content teams.",
+  "superpower": "SEO content editor and brief builder for content teams.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Dashword provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.dashword.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with Dashword.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize Dashword for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Dashword.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.dashword.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.dashword.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Dashword",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-17",
+  "slug": "content-at-scale",
+  "name": "Content at Scale",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=content-at-scale",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Long-form AI blogging engine designed for publishing bulk SEO articles.",
+  "fullDescription": "Content at Scale is an established tool in the Document / Writing landscape. Long-form AI blogging engine designed for publishing bulk SEO articles.",
+  "superpower": "Long-form AI blogging engine designed for publishing bulk SEO articles.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Content at Scale provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://contentatscale.ai to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with Content at Scale.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize Content at Scale for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Content at Scale.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://contentatscale.ai",
+  "officialStatus": "verified",
+  "docsUrl": "https://contentatscale.ai",
+  "docsStatus": "verified",
+  "keywords": [
+    "Content at Scale",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-18",
+  "slug": "brandwell-ai",
+  "name": "BrandWell",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=brandwell-ai",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Enterprise AI content engine with humanlike writing and plagiarism checks.",
+  "fullDescription": "BrandWell is an established tool in the Document / Writing landscape. Enterprise AI content engine with humanlike writing and plagiarism checks.",
+  "superpower": "Enterprise AI content engine with humanlike writing and plagiarism checks.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "BrandWell provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://brandwell.ai to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with BrandWell.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize BrandWell for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using BrandWell.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://brandwell.ai",
+  "officialStatus": "verified",
+  "docsUrl": "https://brandwell.ai",
+  "docsStatus": "verified",
+  "keywords": [
+    "BrandWell",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-19",
+  "slug": "ink-forall-ai",
+  "name": "INK",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=ink-forall-ai",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI web content editor combining SEO optimization and audience protection.",
+  "fullDescription": "INK is an established tool in the Document / Writing landscape. AI web content editor combining SEO optimization and audience protection.",
+  "superpower": "AI web content editor combining SEO optimization and audience protection.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "INK provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://inkforall.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with INK.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize INK for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using INK.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://inkforall.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://inkforall.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "INK",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-20",
+  "slug": "marketmuse-ai",
+  "name": "MarketMuse (Document)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=marketmuse-ai",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI content strategy and competitive analysis software.",
+  "fullDescription": "MarketMuse is an established tool in the Document / Writing landscape. AI content strategy and competitive analysis software.",
+  "superpower": "AI content strategy and competitive analysis software.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "MarketMuse provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.marketmuse.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with MarketMuse.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize MarketMuse for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using MarketMuse.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.marketmuse.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.marketmuse.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "MarketMuse",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-21",
+  "slug": "grammarly-go-writer",
+  "name": "GrammarlyGO",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=grammarly-go-writer",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Generative AI writing assistance built into Grammarly browser extension.",
+  "fullDescription": "GrammarlyGO is an established tool in the Document / Writing landscape. Generative AI writing assistance built into Grammarly browser extension.",
+  "superpower": "Generative AI writing assistance built into Grammarly browser extension.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "GrammarlyGO provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.grammarly.com/grammarlygo to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with GrammarlyGO.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize GrammarlyGO for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using GrammarlyGO.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.grammarly.com/grammarlygo",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.grammarly.com/grammarlygo",
+  "docsStatus": "verified",
+  "keywords": [
+    "GrammarlyGO",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-22",
+  "slug": "language-tool-ai",
+  "name": "LanguageTool",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=language-tool-ai",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Open-source multilingual grammar, style, and spell checker.",
+  "fullDescription": "LanguageTool is an established tool in the Document / Writing landscape. Open-source multilingual grammar, style, and spell checker.",
+  "superpower": "Open-source multilingual grammar, style, and spell checker.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "LanguageTool provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://languagetool.org to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with LanguageTool.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize LanguageTool for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using LanguageTool.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://languagetool.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://languagetool.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "LanguageTool",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-24",
+  "slug": "slick-write",
+  "name": "Slick Write",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=slick-write",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free application that checks writing for grammar errors and stylistic flaws.",
+  "fullDescription": "Slick Write is an established tool in the Document / Writing landscape. Free application that checks writing for grammar errors and stylistic flaws.",
+  "superpower": "Free application that checks writing for grammar errors and stylistic flaws.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Slick Write provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.slickwrite.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with Slick Write.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize Slick Write for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Slick Write.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.slickwrite.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.slickwrite.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Slick Write",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-25",
+  "slug": "paper-rater",
+  "name": "PaperRater",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=paper-rater",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free online proofreading tool for essays and papers.",
+  "fullDescription": "PaperRater is an established tool in the Document / Writing landscape. Free online proofreading tool for essays and papers.",
+  "superpower": "Free online proofreading tool for essays and papers.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "PaperRater provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.paperrater.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with PaperRater.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize PaperRater for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using PaperRater.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.paperrater.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.paperrater.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "PaperRater",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-27",
+  "slug": "duplichecker-ai",
+  "name": "DupliChecker",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=duplichecker-ai",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free online plagiarism detector and text analysis software.",
+  "fullDescription": "DupliChecker is an established tool in the Document / Writing landscape. Free online plagiarism detector and text analysis software.",
+  "superpower": "Free online plagiarism detector and text analysis software.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "DupliChecker provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.duplichecker.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with DupliChecker.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize DupliChecker for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using DupliChecker.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.duplichecker.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.duplichecker.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "DupliChecker",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-28",
+  "slug": "smallseotools-plag",
+  "name": "SmallSEOTools Plagiarism Checker",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=smallseotools-plag",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Popular free suite of web tools for text checking and paraphrasing.",
+  "fullDescription": "SmallSEOTools Plagiarism Checker is an established tool in the Document / Writing landscape. Popular free suite of web tools for text checking and paraphrasing.",
+  "superpower": "Popular free suite of web tools for text checking and paraphrasing.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "SmallSEOTools Plagiarism Checker provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://smallseotools.com/plagiarism-checker/ to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with SmallSEOTools Plagiarism Checker.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize SmallSEOTools Plagiarism Checker for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using SmallSEOTools Plagiarism Checker.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://smallseotools.com/plagiarism-checker/",
+  "officialStatus": "verified",
+  "docsUrl": "https://smallseotools.com/plagiarism-checker/",
+  "docsStatus": "verified",
+  "keywords": [
+    "SmallSEOTools Plagiarism Checker",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-29",
+  "slug": "scribbr-citation",
+  "name": "Scribbr",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=scribbr-citation",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "APA citation generator, plagiarism checker, and proofreading service.",
+  "fullDescription": "Scribbr is an established tool in the Document / Writing landscape. APA citation generator, plagiarism checker, and proofreading service.",
+  "superpower": "APA citation generator, plagiarism checker, and proofreading service.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Scribbr provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.scribbr.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with Scribbr.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize Scribbr for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Scribbr.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.scribbr.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.scribbr.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Scribbr",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-30",
+  "slug": "citation-machine",
+  "name": "Citation Machine",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=citation-machine",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Automated bibliography and citation maker for MLA, APA, and Chicago styles.",
+  "fullDescription": "Citation Machine is an established tool in the Document / Writing landscape. Automated bibliography and citation maker for MLA, APA, and Chicago styles.",
+  "superpower": "Automated bibliography and citation maker for MLA, APA, and Chicago styles.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Citation Machine provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.citationmachine.net to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with Citation Machine.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize Citation Machine for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Citation Machine.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.citationmachine.net",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.citationmachine.net",
+  "docsStatus": "verified",
+  "keywords": [
+    "Citation Machine",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-31",
+  "slug": "bibme-citations",
+  "name": "BibMe",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=bibme-citations",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free citation maker for research papers and annotated bibliographies.",
+  "fullDescription": "BibMe is an established tool in the Document / Writing landscape. Free citation maker for research papers and annotated bibliographies.",
+  "superpower": "Free citation maker for research papers and annotated bibliographies.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "BibMe provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.bibme.org to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with BibMe.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize BibMe for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using BibMe.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.bibme.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.bibme.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "BibMe",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-32",
+  "slug": "easybib-chegg",
+  "name": "EasyBib",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=easybib-chegg",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free bibliography generator and writing aid.",
+  "fullDescription": "EasyBib is an established tool in the Document / Writing landscape. Free bibliography generator and writing aid.",
+  "superpower": "Free bibliography generator and writing aid.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "EasyBib provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.easybib.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with EasyBib.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize EasyBib for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using EasyBib.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.easybib.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.easybib.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "EasyBib",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-33",
+  "slug": "cite-this-for-me",
+  "name": "Cite This For Me",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=cite-this-for-me",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Automatic reference and citation tool for students.",
+  "fullDescription": "Cite This For Me is an established tool in the Document / Writing landscape. Automatic reference and citation tool for students.",
+  "superpower": "Automatic reference and citation tool for students.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Cite This For Me provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.citethisforme.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with Cite This For Me.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize Cite This For Me for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Cite This For Me.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.citethisforme.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.citethisforme.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Cite This For Me",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-34",
+  "slug": "endnote-clarivate",
+  "name": "EndNote",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=endnote-clarivate",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Reference management software for managing bibliographies and citations.",
+  "fullDescription": "EndNote is an established tool in the Document / Writing landscape. Reference management software for managing bibliographies and citations.",
+  "superpower": "Reference management software for managing bibliographies and citations.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "EndNote provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://endnote.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with EndNote.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize EndNote for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using EndNote.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://endnote.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://endnote.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "EndNote",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-document_writing-35",
+  "slug": "refworks-proquest",
+  "name": "RefWorks",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=refworks-proquest",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Web-based research management and citation tool for academic institutions.",
+  "fullDescription": "RefWorks is an established tool in the Document / Writing landscape. Web-based research management and citation tool for academic institutions.",
+  "superpower": "Web-based research management and citation tool for academic institutions.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "RefWorks provides specialized AI features tailored for document / writing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.refworks.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core document / writing task with RefWorks.",
+    "input": "Sample project input for document / writing.",
+    "examplePrompt": "Utilize RefWorks for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using RefWorks.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.refworks.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.refworks.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "RefWorks",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+}
+,
+{
+  "id": "reach710-document-writing-1",
+  "slug": "mistral-large-llm",
+  "name": "Mistral Large (Mistral AI)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=mistral-large-llm",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Flagship multilingual reasoning model by Mistral AI.",
+  "fullDescription": "Mistral Large (Mistral AI) is a verified AI tool in Document / Writing. Flagship multilingual reasoning model by Mistral AI.",
+  "superpower": "Flagship multilingual reasoning model by Mistral AI.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Verified primary source documentation."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and experimentation."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Mistral Large (Mistral AI) provides specialized AI performance."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://mistral.ai/news/mistral-large/ to view documentation."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Mistral Large (Mistral AI).",
+    "expectedResult": "Verified output generated using Mistral Large (Mistral AI).",
+    "skillsLearned": [
+      "Tool operation"
+    ]
+  },
+  "officialUrl": "https://mistral.ai/news/mistral-large/",
+  "officialStatus": "verified",
+  "docsUrl": "https://mistral.ai/news/mistral-large/",
+  "docsStatus": "verified",
+  "keywords": [
+    "Mistral Large (Mistral AI)",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "reach710-document-writing-2",
+  "slug": "claude-3-5-sonnet",
+  "name": "Claude 3.5 Sonnet",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=claude-3-5-sonnet",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Anthropic's industry-leading intelligence model for coding and writing.",
+  "fullDescription": "Claude 3.5 Sonnet is a verified AI tool in Document / Writing. Anthropic's industry-leading intelligence model for coding and writing.",
+  "superpower": "Anthropic's industry-leading intelligence model for coding and writing.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Verified primary source documentation."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and experimentation."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Claude 3.5 Sonnet provides specialized AI performance."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.anthropic.com/news/claude-3-5-sonnet to view documentation."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Claude 3.5 Sonnet.",
+    "expectedResult": "Verified output generated using Claude 3.5 Sonnet.",
+    "skillsLearned": [
+      "Tool operation"
+    ]
+  },
+  "officialUrl": "https://www.anthropic.com/news/claude-3-5-sonnet",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.anthropic.com/news/claude-3-5-sonnet",
+  "docsStatus": "verified",
+  "keywords": [
+    "Claude 3.5 Sonnet",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "reach710-document-writing-3",
+  "slug": "llama-3-meta-ai",
+  "name": "Llama 3 (Meta)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=llama-3-meta-ai",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Meta open-access state-of-the-art language model series.",
+  "fullDescription": "Llama 3 (Meta) is a verified AI tool in Document / Writing. Meta open-access state-of-the-art language model series.",
+  "superpower": "Meta open-access state-of-the-art language model series.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Verified primary source documentation."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and experimentation."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Llama 3 (Meta) provides specialized AI performance."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://llama.meta.com to view documentation."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Llama 3 (Meta).",
+    "expectedResult": "Verified output generated using Llama 3 (Meta).",
+    "skillsLearned": [
+      "Tool operation"
+    ]
+  },
+  "officialUrl": "https://llama.meta.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://llama.meta.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Llama 3 (Meta)",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "reach710-document-writing-4",
+  "slug": "gemma-2-google",
+  "name": "Gemma 2 (Google)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=gemma-2-google",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Google lightweight open model family for developers and researchers.",
+  "fullDescription": "Gemma 2 (Google) is a verified AI tool in Document / Writing. Google lightweight open model family for developers and researchers.",
+  "superpower": "Google lightweight open model family for developers and researchers.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Verified primary source documentation."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and experimentation."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Gemma 2 (Google) provides specialized AI performance."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://blog.google/technology/developers/gemma-2-marvels-of-open-models/ to view documentation."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Gemma 2 (Google).",
+    "expectedResult": "Verified output generated using Gemma 2 (Google).",
+    "skillsLearned": [
+      "Tool operation"
+    ]
+  },
+  "officialUrl": "https://blog.google/technology/developers/gemma-2-marvels-of-open-models/",
+  "officialStatus": "verified",
+  "docsUrl": "https://blog.google/technology/developers/gemma-2-marvels-of-open-models/",
+  "docsStatus": "verified",
+  "keywords": [
+    "Gemma 2 (Google)",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "reach710-document-writing-5",
+  "slug": "command-r-cohere",
+  "name": "Command R+ (Cohere)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=command-r-cohere",
+  "category": "Document / Writing",
+  "subcategory": "Document / Writing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Enterprise-grade RAG optimized LLM by Cohere.",
+  "fullDescription": "Command R+ (Cohere) is a verified AI tool in Document / Writing. Enterprise-grade RAG optimized LLM by Cohere.",
+  "superpower": "Enterprise-grade RAG optimized LLM by Cohere.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances document / writing workflow efficiency.",
+    "Verified primary source documentation."
+  ],
+  "useCases": [
+    "Professional document / writing implementation.",
+    "Academic research and experimentation."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Command R+ (Cohere) provides specialized AI performance."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://cohere.com/command to view documentation."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Command R+ (Cohere).",
+    "expectedResult": "Verified output generated using Command R+ (Cohere).",
+    "skillsLearned": [
+      "Tool operation"
+    ]
+  },
+  "officialUrl": "https://cohere.com/command",
+  "officialStatus": "verified",
+  "docsUrl": "https://cohere.com/command",
+  "docsStatus": "verified",
+  "keywords": [
+    "Command R+ (Cohere)",
+    "Document / Writing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+}
 ];
