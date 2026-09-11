@@ -108,7 +108,7 @@ export const speech_to_text_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official GitHub →",
     "docsUrl": "https://github.com/openai/whisper",
     "tutorialVideo": {
@@ -540,8 +540,8 @@ export const speech_to_text_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://fathom.video",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -554,7 +554,7 @@ export const speech_to_text_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE"
   },
   {
@@ -6715,7 +6715,7 @@ export const speech_to_text_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official GitHub →",
     "docsUrl": "https://github.com/ggerganov/whisper.cpp"
   },
@@ -7047,7 +7047,7 @@ export const speech_to_text_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official GitHub →",
     "docsUrl": "https://github.com/SYSTRAN/faster-whisper"
   },

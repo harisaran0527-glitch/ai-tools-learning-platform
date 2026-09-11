@@ -113,7 +113,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →",
     "docsUrl": "https://docs.midjourney.com"
   },
@@ -224,7 +224,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official GitHub →",
     "docsUrl": "https://platform.stability.ai/docs"
   },
@@ -335,7 +335,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →",
     "docsUrl": "https://platform.openai.com/docs/guides/images"
   },
@@ -446,7 +446,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official Hugging Face →",
     "docsUrl": "https://blackforestlabs.ai"
   },
@@ -557,7 +557,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →",
     "docsUrl": "https://docs.leonardo.ai",
     "tutorialVideo": {
@@ -673,7 +673,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →"
   },
   {
@@ -783,7 +783,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →"
   },
   {
@@ -893,7 +893,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →"
   },
   {
@@ -1003,7 +1003,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →"
   },
   {
@@ -1099,8 +1099,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.seaart.ai",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -1113,7 +1113,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TIER"
   },
   {
@@ -1319,8 +1319,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.craiyon.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -1333,7 +1333,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TRIAL"
   },
   {
@@ -1429,8 +1429,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://tensor.art",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -1443,7 +1443,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE"
   },
   {
@@ -1553,7 +1553,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official GitHub →",
     "docsUrl": "https://github.com/lllyasviel/Fooocus"
   },
@@ -1664,7 +1664,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official GitHub →",
     "docsUrl": "https://docs.comfy.org"
   },
@@ -1775,7 +1775,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official GitHub →",
     "docsUrl": "https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki"
   },
@@ -1886,7 +1886,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →",
     "docsUrl": "https://helpx.adobe.com/firefly"
   },
@@ -1997,7 +1997,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →"
   },
   {
@@ -2093,8 +2093,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://creator.nightcafe.studio",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -2107,7 +2107,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "OPEN-SOURCE"
   },
   {
@@ -2203,8 +2203,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.artbreeder.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -2217,7 +2217,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TRIAL"
   },
   {
@@ -2313,8 +2313,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://deepai.org",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -2327,7 +2327,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE"
   },
   {
@@ -2423,8 +2423,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://picsart.com/ai-image-generator",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -2437,7 +2437,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TIER"
   },
   {
@@ -2533,8 +2533,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://designer.microsoft.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -2547,7 +2547,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "OPEN-SOURCE"
   },
   {
@@ -2863,8 +2863,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://magnific.ai",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -2877,7 +2877,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TIER"
   },
   {
@@ -2973,8 +2973,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.freepik.com/ai",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -2987,7 +2987,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "OPEN-SOURCE"
   },
   {
@@ -3083,8 +3083,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://lexica.art",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -3097,7 +3097,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TRIAL"
   },
   {
@@ -3207,7 +3207,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →",
     "docsUrl": "https://education.civitai.com"
   },
@@ -3304,8 +3304,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.bluewillow.ai",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -3318,7 +3318,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TIER"
   },
   {
@@ -3414,8 +3414,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://starryai.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -3428,7 +3428,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "OPEN-SOURCE"
   },
   {
@@ -3524,8 +3524,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://dreamstudio.ai",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -3538,7 +3538,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TRIAL"
   },
   {
@@ -3634,8 +3634,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://runwayml.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -3648,7 +3648,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE"
   },
   {
@@ -3744,8 +3744,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://dream.ai",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -3758,7 +3758,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TIER"
   },
   {
@@ -4184,8 +4184,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://openart.ai",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -4198,7 +4198,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TIER"
   },
   {
@@ -4404,8 +4404,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.scenario.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -4418,7 +4418,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TRIAL"
   },
   {
@@ -5064,8 +5064,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://github.com/HVision-NKU/StoryDiffusion",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -5078,7 +5078,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TIER"
   },
   {
@@ -12764,8 +12764,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://diffusionbee.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -12778,7 +12778,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TRIAL"
   },
   {
@@ -13094,8 +13094,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://novelai.net",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -13108,7 +13108,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "OPEN-SOURCE"
   },
   {
@@ -13314,8 +13314,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://github.com/lllyasviel/ControlNet",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -13328,7 +13328,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE"
   },
   {
@@ -13424,8 +13424,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://github.com/tencent-ailab/IP-Adapter",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -13438,7 +13438,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TIER"
   },
   {
@@ -15425,7 +15425,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official Hugging Face →",
     "docsUrl": "https://github.com/black-forest-labs/flux"
   },
@@ -15522,8 +15522,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://github.com/Kwai-Kolors/Kolors",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -15536,7 +15536,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE"
   },
   {
@@ -15852,8 +15852,8 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://github.com/PixArt-alpha/PixArt-alpha",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -15866,7 +15866,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TRIAL"
   },
   {
@@ -17172,7 +17172,7 @@ export const image_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "https://stability.ai/news/sdxl-turbo",
+    "officialUrl": "https://huggingface.co/stabilityai/sdxl-turbo",
     "officialStatus": "verified",
     "docsStatus": "verified",
     "tutorialVideoStatus": "unavailable",
@@ -17186,7 +17186,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official Hugging Face →",
     "docsUrl": "https://huggingface.co/stabilityai/sdxl-turbo"
   },
@@ -18947,7 +18947,7 @@ export const image_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official Hugging Face →",
     "docsUrl": "https://huggingface.co/docs/diffusers/index"
   }

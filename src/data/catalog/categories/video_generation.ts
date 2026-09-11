@@ -108,7 +108,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →",
     "docsUrl": "https://help.runwayml.com",
     "tutorialVideo": {
@@ -224,7 +224,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →"
   },
   {
@@ -334,7 +334,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "View Official Project →"
   },
   {
@@ -444,7 +444,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →"
   },
   {
@@ -554,7 +554,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →"
   },
   {
@@ -650,8 +650,8 @@ export const video_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://haiper.ai",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -664,7 +664,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TIER"
   },
   {
@@ -987,8 +987,8 @@ export const video_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://elai.io",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -1001,7 +1001,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE"
   },
   {
@@ -1648,8 +1648,8 @@ export const video_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.kaiber.ai",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -1662,7 +1662,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "OPEN-SOURCE"
   },
   {
@@ -1758,8 +1758,8 @@ export const video_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.deepbrain.io",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -1772,7 +1772,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TRIAL"
   },
   {
@@ -1868,8 +1868,8 @@ export const video_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.colossyan.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -1882,7 +1882,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE"
   },
   {
@@ -2088,8 +2088,8 @@ export const video_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.d-id.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -2102,7 +2102,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "OPEN-SOURCE"
   },
   {
@@ -2420,8 +2420,8 @@ export const video_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.hedra.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -2434,7 +2434,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TIER"
   },
   {
@@ -2530,8 +2530,8 @@ export const video_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://viggle.ai",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -2544,7 +2544,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "OPEN-SOURCE"
   },
   {
@@ -3190,8 +3190,8 @@ export const video_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://pixverse.ai",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -3204,7 +3204,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE"
   },
   {
@@ -3300,8 +3300,8 @@ export const video_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.vidu.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -3314,7 +3314,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TIER"
   },
   {
@@ -3410,8 +3410,8 @@ export const video_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://hailuoai.video",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -3424,7 +3424,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "OPEN-SOURCE"
   },
   {
@@ -3520,8 +3520,8 @@ export const video_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.domoai.app",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -3534,7 +3534,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TRIAL"
   },
   {
@@ -4071,8 +4071,8 @@ export const video_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.topazlabs.com/topaz-video-ai",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -4085,7 +4085,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE"
   },
   {
@@ -4841,8 +4841,8 @@ export const video_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://fliki.ai",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -4855,7 +4855,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TRIAL"
   },
   {
@@ -5061,8 +5061,8 @@ export const video_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.tavus.io",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -5075,7 +5075,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TIER"
   },
   {
@@ -6491,8 +6491,8 @@ export const video_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.getmunch.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -6505,7 +6505,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "OPEN-SOURCE"
   },
   {
@@ -6711,8 +6711,8 @@ export const video_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://vizard.ai",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -6725,7 +6725,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE"
   },
   {
@@ -6931,8 +6931,8 @@ export const video_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://klap.app",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -6945,7 +6945,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "OPEN-SOURCE"
   },
   {
@@ -7371,8 +7371,8 @@ export const video_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://pictory.ai",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -7385,7 +7385,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "OPEN-SOURCE"
   },
   {
@@ -7481,8 +7481,8 @@ export const video_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://lumen5.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -7495,7 +7495,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TRIAL"
   },
   {
@@ -10563,8 +10563,8 @@ export const video_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.rask.ai",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -10577,7 +10577,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TRIAL"
   },
   {
@@ -11553,8 +11553,8 @@ export const video_generation_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.kapwing.com/ai",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -11567,7 +11567,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE"
   },
   {

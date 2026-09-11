@@ -225,7 +225,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →"
   },
   {
@@ -335,7 +335,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →"
   },
   {
@@ -445,7 +445,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →"
   },
   {
@@ -541,8 +541,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.briskteaching.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -555,7 +555,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE"
   },
   {
@@ -651,8 +651,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.eduaide.ai",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -665,7 +665,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TIER"
   },
   {
@@ -775,7 +775,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →",
     "docsUrl": "https://teachablemachine.withgoogle.com/faq"
   },
@@ -872,8 +872,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://curipod.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -886,7 +886,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TRIAL"
   },
   {
@@ -982,8 +982,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://monic.ai",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -996,7 +996,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE"
   },
   {
@@ -1106,7 +1106,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →",
     "docsUrl": "https://help.gradescope.com"
   },
@@ -1203,8 +1203,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.classpoint.io",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -1217,7 +1217,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "OPEN-SOURCE"
   },
   {
@@ -1327,7 +1327,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →"
   },
   {
@@ -1437,7 +1437,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →"
   },
   {
@@ -1533,8 +1533,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://questionwell.org",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -1547,7 +1547,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TIER"
   },
   {
@@ -1767,7 +1767,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →"
   },
   {
@@ -1863,8 +1863,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://quizlet.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -1877,7 +1877,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE"
   },
   {
@@ -1973,8 +1973,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.duolingo.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -1987,7 +1987,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TIER"
   },
   {
@@ -2523,8 +2523,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://quizgecko.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -2537,7 +2537,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "OPEN-SOURCE"
   },
   {
@@ -2633,8 +2633,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.formative.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -2647,7 +2647,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TRIAL"
   },
   {
@@ -2743,8 +2743,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://edpuzzle.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -2757,7 +2757,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE"
   },
   {
@@ -2853,8 +2853,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://nearpod.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -2867,7 +2867,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TIER"
   },
   {
@@ -4173,8 +4173,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://photomath.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -4187,7 +4187,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TIER"
   },
   {
@@ -4283,8 +4283,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.symbolab.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -4297,7 +4297,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "OPEN-SOURCE"
   },
   {
@@ -4503,8 +4503,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.mathway.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -4517,7 +4517,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE"
   },
   {
@@ -4613,8 +4613,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://mathsolver.microsoft.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -4627,7 +4627,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TIER"
   },
   {
@@ -4723,8 +4723,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://gauthmath.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -4737,7 +4737,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "OPEN-SOURCE"
   },
   {
@@ -4833,8 +4833,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://socratic.org",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -4847,7 +4847,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TRIAL"
   },
   {
@@ -5383,8 +5383,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://brainly.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -5397,7 +5397,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE"
   },
   {
@@ -6373,8 +6373,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://elsaspeak.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -6387,7 +6387,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TIER"
   },
   {
@@ -6813,8 +6813,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://talkpal.ai",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -6827,7 +6827,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TIER"
   },
   {
@@ -7363,8 +7363,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.memrise.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -7377,7 +7377,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "OPEN-SOURCE"
   },
   {
@@ -7583,8 +7583,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.busuu.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -7597,7 +7597,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE"
   },
   {
@@ -8023,8 +8023,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.hellotalk.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -8037,7 +8037,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE"
   },
   {
@@ -11103,8 +11103,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.turnitin.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -11117,7 +11117,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE"
   },
   {
@@ -11213,8 +11213,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://copyleaks.com",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -11227,7 +11227,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TIER"
   },
   {
@@ -11653,8 +11653,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://gptzero.me",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -11667,7 +11667,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TIER"
   },
   {
@@ -11763,8 +11763,8 @@ export const education_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://originality.ai",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -11777,7 +11777,7 @@ export const education_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "OPEN-SOURCE"
   },
   {

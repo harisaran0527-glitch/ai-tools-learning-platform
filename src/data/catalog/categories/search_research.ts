@@ -108,7 +108,7 @@ export const search_research_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →"
   },
   {
@@ -218,7 +218,7 @@ export const search_research_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →"
   },
   {
@@ -328,7 +328,7 @@ export const search_research_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →"
   },
   {
@@ -438,7 +438,7 @@ export const search_research_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →"
   },
   {
@@ -548,7 +548,7 @@ export const search_research_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →"
   },
   {
@@ -768,7 +768,7 @@ export const search_research_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →"
   },
   {
@@ -878,7 +878,7 @@ export const search_research_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →"
   },
   {
