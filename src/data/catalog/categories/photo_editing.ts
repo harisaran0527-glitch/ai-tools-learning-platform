@@ -108,7 +108,7 @@ export const photo_editing_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →",
     "docsUrl": "https://www.photoroom.com/api"
   },
@@ -205,8 +205,8 @@ export const photo_editing_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://clipdrop.co",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -219,7 +219,7 @@ export const photo_editing_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TIER"
   },
   {
@@ -329,7 +329,7 @@ export const photo_editing_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →",
     "docsUrl": "https://www.remove.bg/api"
   },
@@ -6490,7 +6490,7 @@ export const photo_editing_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official GitHub →",
     "docsUrl": "https://github.com/geekyutao/Inpaint-Anything"
   },

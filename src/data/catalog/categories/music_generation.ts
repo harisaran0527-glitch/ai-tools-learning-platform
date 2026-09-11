@@ -11268,4 +11268,83 @@ export const music_generation_tools: AITool[] = [
   "lastVerified": "2026-09-11",
   "badge": "VERIFIED"
 }
+,
+{
+  "id": "exp700-music_generation-3",
+  "slug": "musicgen-huggingface",
+  "name": "Meta MusicGen",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=musicgen-huggingface",
+  "category": "Music Generation",
+  "subcategory": "Music Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "State-of-the-art controllable music generation model by Meta AI.",
+  "fullDescription": "Meta MusicGen is an established tool in the Music Generation landscape. State-of-the-art controllable music generation model by Meta AI.",
+  "superpower": "State-of-the-art controllable music generation model by Meta AI.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances music generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional music generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Meta MusicGen provides specialized AI features tailored for music generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://huggingface.co/spaces/facebook/MusicGen to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core music generation task with Meta MusicGen.",
+    "input": "Sample project input for music generation.",
+    "examplePrompt": "Utilize Meta MusicGen for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Meta MusicGen.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://huggingface.co/spaces/facebook/MusicGen",
+  "officialStatus": "verified",
+  "docsUrl": "https://huggingface.co/spaces/facebook/MusicGen",
+  "docsStatus": "verified",
+  "keywords": [
+    "Meta MusicGen",
+    "Music Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+}
 ];
