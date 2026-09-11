@@ -13626,7 +13626,7 @@ export const document_writing_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "https://github.com/outlines-dev/outlines",
+    "officialUrl": "https://github.com/dottxt-ai/outlines",
     "officialStatus": "verified",
     "docsStatus": "verified",
     "tutorialVideoStatus": "unavailable",
@@ -13640,7 +13640,7 @@ export const document_writing_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official GitHub →",
     "docsUrl": "https://outlines-dev.github.io/outlines/"
   },
@@ -13751,7 +13751,7 @@ export const document_writing_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official GitHub →",
     "docsUrl": "https://github.com/guidance-ai/guidance"
   },
@@ -14413,7 +14413,7 @@ export const document_writing_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official GitHub →",
     "docsUrl": "https://github.com/Pythagora-io/gpt-pilot"
   },
@@ -14524,7 +14524,7 @@ export const document_writing_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official GitHub →",
     "docsUrl": "https://docs.all-hands.dev"
   },

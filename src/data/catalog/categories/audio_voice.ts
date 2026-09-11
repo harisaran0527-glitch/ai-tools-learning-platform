@@ -1442,7 +1442,7 @@ export const audio_voice_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official GitHub →",
     "docsUrl": "https://github.com/suno-ai/bark"
   },
@@ -1553,7 +1553,7 @@ export const audio_voice_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official GitHub →",
     "docsUrl": "https://tts.readthedocs.io"
   },
@@ -3204,7 +3204,7 @@ export const audio_voice_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official Hugging Face →",
     "docsUrl": "https://huggingface.co/coqui/XTTS-v2"
   },
@@ -5391,7 +5391,7 @@ export const audio_voice_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "https://huggingface.co/spaces/facebook/MusicGen",
+    "officialUrl": "https://github.com/facebookresearch/audiocraft",
     "officialStatus": "verified",
     "docsStatus": "verified",
     "tutorialVideoStatus": "unavailable",
@@ -5405,7 +5405,7 @@ export const audio_voice_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official Hugging Face →",
     "docsUrl": "https://github.com/facebookresearch/audiocraft"
   },
@@ -5516,7 +5516,7 @@ export const audio_voice_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official GitHub →",
     "docsUrl": "https://github.com/facebookresearch/audiocraft"
   },

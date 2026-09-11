@@ -3366,7 +3366,7 @@ export const chatbots_assistants_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →",
     "docsUrl": "https://docs.tabnine.com"
   },
@@ -6004,8 +6004,8 @@ export const chatbots_assistants_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://typeset.io",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -6018,7 +6018,7 @@ export const chatbots_assistants_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "OPEN-SOURCE"
   },
   {
@@ -8653,8 +8653,8 @@ export const chatbots_assistants_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://www.make.com/en/ai-automation",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -8667,7 +8667,7 @@ export const chatbots_assistants_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "OPEN-SOURCE"
   },
   {
@@ -9203,7 +9203,7 @@ export const chatbots_assistants_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "https://flowiseai.com",
+    "officialUrl": "https://github.com/FlowiseAI/Flowise",
     "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
@@ -9313,7 +9313,7 @@ export const chatbots_assistants_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "https://www.langflow.org",
+    "officialUrl": "https://github.com/langflow-ai/langflow",
     "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
@@ -9533,7 +9533,7 @@ export const chatbots_assistants_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "https://dify.ai",
+    "officialUrl": "https://github.com/langgenius/dify",
     "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
@@ -10083,7 +10083,7 @@ export const chatbots_assistants_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "https://botpress.com",
+    "officialUrl": "https://github.com/botpress/botpress",
     "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
@@ -15379,7 +15379,7 @@ export const chatbots_assistants_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official GitHub →",
     "docsUrl": "https://learn.microsoft.com/en-us/semantic-kernel/"
   },
@@ -15601,7 +15601,7 @@ export const chatbots_assistants_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official GitHub →",
     "docsUrl": "https://python.useinstructor.com"
   },
@@ -15712,7 +15712,7 @@ export const chatbots_assistants_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official GitHub →",
     "docsUrl": "https://docs.embedchain.ai"
   },
@@ -16267,7 +16267,7 @@ export const chatbots_assistants_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →",
     "docsUrl": "https://docs.pinecone.io"
   },
@@ -16378,7 +16378,7 @@ export const chatbots_assistants_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official GitHub →",
     "docsUrl": "https://milvus.io/docs"
   },
@@ -16489,7 +16489,7 @@ export const chatbots_assistants_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official GitHub →",
     "docsUrl": "https://lancedb.github.io/lancedb/"
   },
@@ -16600,7 +16600,7 @@ export const chatbots_assistants_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official GitHub →",
     "docsUrl": "https://memgpt.readme.io/docs"
   },
@@ -17922,7 +17922,7 @@ export const chatbots_assistants_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official GitHub →",
     "docsUrl": "https://github.com/lm-sys/FastChat"
   },
@@ -18033,7 +18033,7 @@ export const chatbots_assistants_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official GitHub →",
     "docsUrl": "https://docs.vllm.ai"
   },
@@ -18790,8 +18790,8 @@ export const chatbots_assistants_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://github.com/jxnl/instructor",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -18804,7 +18804,7 @@ export const chatbots_assistants_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "OPEN-SOURCE"
   },
   {
@@ -19230,8 +19230,8 @@ export const chatbots_assistants_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://github.com/Pythagora-io/gpt-pilot",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -19244,7 +19244,7 @@ export const chatbots_assistants_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "OPEN-SOURCE"
   },
   {
@@ -19340,8 +19340,8 @@ export const chatbots_assistants_tools: AITool[] = [
         "Exporting assets"
       ]
     },
-    "officialUrl": "",
-    "officialStatus": "unavailable",
+    "officialUrl": "https://github.com/All-Hands-AI/OpenHands",
+    "officialStatus": "verified",
     "docsStatus": "unavailable",
     "tutorialVideoStatus": "unavailable",
     "keywords": [
@@ -19354,7 +19354,7 @@ export const chatbots_assistants_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "FREE-TRIAL"
   },
   {

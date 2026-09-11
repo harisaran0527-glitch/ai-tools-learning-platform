@@ -384,7 +384,278 @@ const sourceUrls = {
   'open3d-ai': 'https://www.open3d.org',
   'dreamgaussian': 'https://github.com/dreamgaussian/dreamgaussian',
   'text2mesh': 'https://github.com/threedle/text2mesh',
-  'controlnet3d': 'https://github.com/YouDream3D/ControlNet3D'
+  'controlnet3d': 'https://github.com/YouDream3D/ControlNet3D',
+  'pi-by-inflection': 'https://pi.ai',
+  'chatbox': 'https://chatboxai.app',
+  'harpa-ai': 'https://harpa.ai',
+  'merlin-ai': 'https://www.getmerlin.in',
+  'monica-ai': 'https://monica.im',
+  'maxai': 'https://www.maxai.me',
+  'scispace-chat': 'https://typeset.io',
+  'chatdoc': 'https://chatdoc.com',
+  'askyourpdf': 'https://askyourpdf.com',
+  'logseq-copilot': 'https://github.com/hirak99/LogseqCopilot',
+  'meetinggeek-ai': 'https://meetinggeek.ai',
+  'tactiq-ai': 'https://tactiq.io',
+  'grain-ai': 'https://grain.com',
+  'scribe-ai': 'https://scribehow.com',
+  'tango-ai': 'https://www.tango.us',
+  'make-ai-agent': 'https://www.make.com/en/ai-automation',
+  'zapier-central': 'https://zapier.com/central',
+  'n8n-ai-node': 'https://n8n.io',
+  'lindy-ai': 'https://www.lindy.ai',
+  'mindpal': 'https://mindpal.space',
+  'customgpt-ai': 'https://customgpt.ai',
+  'fastbots': 'https://fastbots.ai',
+  'landbot-ai': 'https://landbot.io',
+  'tidio-lyro-ai': 'https://www.tidio.com/lyro-ai/',
+  'intercom-fin-ai': 'https://www.intercom.com/fin',
+  'zendesk-ai': 'https://www.zendesk.com/ai/',
+  'freshdesk-freddy': 'https://www.freshworks.com/freshdesk/ai/',
+  'zoho-zia-chat': 'https://www.zoho.com/zia/',
+  'oracle-ai-assistant': 'https://www.oracle.com/artificial-intelligence/',
+  'command-r': 'https://huggingface.co/CohereForAI/c4ai-command-r-plus',
+  'yi-34b': 'https://huggingface.co/01-ai/Yi-34B',
+  'falcon-180b': 'https://huggingface.co/tiiuae/falcon-180B',
+  'solar-10-7b': 'https://huggingface.co/upstage/SOLAR-10.7B-v1.0',
+  'phi-3': 'https://huggingface.co/microsoft/Phi-3-mini-4k-instruct',
+  'gemma-2': 'https://ai.google.dev/gemma',
+  'starcoder-2': 'https://huggingface.co/bigcode/starcoder2-15b',
+  'codestral': 'https://mistral.ai/news/codestral/',
+  'codegemma': 'https://ai.google.dev/gemma/docs/codegemma',
+  'granite-code': 'https://huggingface.co/ibm-granite/granite-20b-code-base',
+  'wizardlm-2': 'https://github.com/nlpxucan/WizardLM',
+  'hermes-3': 'https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-8B',
+  'openchat': 'https://github.com/imoneoi/openchat',
+  'vicuna': 'https://lmsys.org/blog/2023-03-30-vicuna/',
+  'dbrx': 'https://github.com/databrickslabs/dbrx',
+  'nomic-embed': 'https://www.nomic.ai',
+  'voyage-ai': 'https://www.voyageai.com',
+  'jina-ai': 'https://jina.ai',
+  'agentops': 'https://github.com/AgentOps-AI/agentops',
+  'phoenix-arize-ai': 'https://phoenix.arize.com',
+  'milvus-ai': 'https://milvus.io',
+  'lancedb': 'https://lancedb.com',
+  'memgpt': 'https://www.memgpt.ai',
+  'marigold-depth-ai': 'https://marigoldmonodepth.github.io',
+  'layerdiffusion': 'https://github.com/lllyasviel/LayerDiffusion',
+  'ic-light': 'https://github.com/lllyasviel/IC-Light',
+  'supir-upscaler': 'https://github.com/Fanghua-Yu/SUPIR',
+  'real-esrgan': 'https://github.com/xinntao/Real-ESRGAN',
+  'codeformer': 'https://github.com/sczhou/CodeFormer',
+  'gfpgan': 'https://github.com/TencentARC/GFPGAN',
+  'swinir': 'https://github.com/JingyunLiang/SwinIR',
+  'bsrgan': 'https://github.com/cszn/BSRGAN',
+  'scunet': 'https://github.com/cszn/SCUNet',
+  'dat-upscaler': 'https://github.com/cszn/KAIR',
+  'auraflow': 'https://huggingface.co/fal/AuraFlow',
+  'hunyuan dit': 'https://github.com/Tencent-Hunyuan/HunyuanDiT',
+  'deepcache-ai': 'https://github.com/horseee/DeepCache',
+  'instaflow': 'https://github.com/gnobitab/InstaFlow',
+  'lcm-lora': 'https://github.com/luosiallen/latent-consistency-model',
+  'animatediff': 'https://github.com/guoyww/AnimateDiff',
+  'stable-video-diffusion': 'https://stability.ai/stable-video',
+  'deforum-sd': 'https://github.com/deforum-art/deforum-stable-diffusion',
+  'pixverse': 'https://pixverse.ai',
+  'filmora-ai-video': 'https://filmora.wondershare.com/ai-video-editor.html',
+  'pictory-ai': 'https://pictory.ai',
+  'wisecut': 'https://www.wisecut.video',
+  'submagic-ai': 'https://www.submagic.co',
+  'captions-ai-video': 'https://www.captions.ai',
+  'dubverse': 'https://dubverse.ai',
+  'maestra-ai': 'https://maestra.ai',
+  'ezdubs': 'https://ezdubs.ai',
+  'papercup-ai': 'https://www.papercup.com',
+  'sync-labs': 'https://sync.so',
+  'voicecraft': 'https://github.com/jasonppy/VoiceCraft',
+  'parler-tts': 'https://github.com/huggingface/parler-tts',
+  'styletts-2': 'https://github.com/yl4579/StyleTTS2',
+  'audioldm-2': 'https://github.com/haoheliu/AudioLDM2',
+  'audiosep': 'https://github.com/kuielab/AudioSep',
+  'audioldm-2': 'https://github.com/haoheliu/AudioLDM2',
+  'ace-step-music': 'https://github.com/ace-step/ACE-Step',
+  'magenta-studio': 'https://magenta.tensorflow.org/studio',
+  'openai-jukebox': 'https://github.com/openai/jukebox',
+  'brain-fm': 'https://www.brain.fm',
+  'soundful': 'https://soundful.com',
+  'ecrett-music': 'https://ecrettmusic.com',
+  'riffusion': 'https://www.riffusion.com',
+  'musicgen-meta': 'https://huggingface.co/spaces/facebook/MusicGen',
+  'assemblyai': 'https://www.assemblyai.com',
+  'speechmatics': 'https://www.speechmatics.com',
+  'voicegain': 'https://www.voicegain.ai',
+  'speechbrain': 'https://speechbrain.github.io',
+  'kaldi-ai-stt': 'https://github.com/kaldi-asr/kaldi',
+  'grounded-sam': 'https://github.com/IDEA-Research/Grounded-SAM-2',
+  'anydoor-ai': 'https://github.com/ali-vilab/AnyDoor',
+  'magiccopy-ai': 'https://www.pixelcut.ai',
+  'powerpaint-ai': 'https://github.com/open-mmlab/PowerPaint',
+  'paint-by-example': 'https://github.com/Fantasy-Studio/Paint-by-Example',
+  'auto-slide': 'https://autoslide.ai',
+  'decktopus': 'https://www.decktopus.com',
+  'presentai': 'https://presentations.ai',
+  'storydock': 'https://www.storydoc.com',
+  'ahaslides-ai': 'https://ahaslides.com',
+  'slidemaker-io': 'https://slidemaker.app',
+  'designrr-ai': 'https://designrr.io',
+  'mindshow-ai': 'https://www.mindshow.ai',
+  'slidegen-ai': 'https://slidegen.app',
+  'deckify-ai': 'https://deckify.ai',
+  'presentations-ai': 'https://www.presentations.ai',
+  'slideteam-ai': 'https://www.slideteam.net',
+  'plusdocs-ai': 'https://plusai.com',
+  'gimkit-ai': 'https://www.gimkit.com',
+  'blooket-ai': 'https://www.blooket.com',
+  'wordwall-ai': 'https://wordwall.net',
+  'learningapps-ai': 'https://learningapps.org',
+  'gptzero': 'https://gptzero.me',
+  'winston-ai': 'https://gowinston.ai',
+  'sapling-ai-detector': 'https://sapling.ai/ai-content-detector',
+  'hive-moderation-ai': 'https://hivemoderation.com',
+  'sightengine-edu': 'https://sightengine.com',
+  'polycam-3d-ai': 'https://poly.cam',
+  'masterpiece-studio': 'https://www.masterpiecex.com',
+  'radical-motion-ai': 'https://radicalmotion.com',
+  'moves-ai': 'https://www.moves.ai',
+  'rokoko-smartsuit-ai': 'https://www.rokoko.com',
+  'metahuman-animator': 'https://www.unrealengine.com/en-US/metahuman',
+  'unity-sentis': 'https://unity.com/products/sentis',
+  'godot-ai-assistant': 'https://godotengine.org',
+  'gaea-ai': 'https://quadspinner.com/gaea',
+  'world-machine-ai': 'https://www.world-machine.com',
+  'houdini-ai': 'https://www.sidefx.com/products/houdini/',
+  'zbrush-ai': 'https://www.maxon.net/en/zbrush',
+  'quixel-mixer-ai': 'https://quixel.com/mixer',
+  'ready-player-me-ai': 'https://readyplayer.me',
+  'postshot-nerf': 'https://www.jawset.com',
+  'metashape-ai': 'https://www.agisoft.com',
+  'texturelab-ai': 'https://github.com/Sizigi/TextureLab',
+  'deepmotion-ai': 'https://www.deepmotion.com',
+  'move-ai-vision': 'https://www.move.ai',
+  'worldanvil-ai': 'https://www.worldanvil.com',
+  'latitude-voyage-ai': 'https://latitude.io',
+  'super-splat-3d': 'https://superspl.at',
+  'dreamgaussian': 'https://github.com/dreamgaussian/dreamgaussian'
+  , 'agentgpt': 'https://github.com/reworkd/AgentGPT'
+  , 'babyagi': 'https://github.com/yoheinakajima/babyagi'
+  , 'taskingai': 'https://www.tasking.ai'
+  , 'chatdev': 'https://github.com/OpenBMB/ChatDev'
+  , 'superagi': 'https://github.com/TransformerOptimus/SuperAGI'
+  , 'mindstudio': 'https://www.mindstudio.ai'
+  , 'typingmind': 'https://www.typingmind.com'
+  , 'chatbox-ai': 'https://github.com/Bin-Huang/chatbox'
+  , 'scispace-chat': 'https://typeset.io'
+  , 'chatdoc': 'https://chatdoc.com'
+  , 'askyourpdf': 'https://askyourpdf.com'
+  , 'reflect-ai': 'https://reflect.app'
+  , 'logseq-copilot': 'https://github.com/hirak99/LogseqCopilot'
+  , 'supernormal': 'https://supernormal.com'
+  , 'meetinggeek': 'https://meetinggeek.ai'
+  , 'fellow-ai': 'https://fellow.app'
+  , 'grain-ai': 'https://grain.com'
+  , 'scribe-ai': 'https://scribehow.com'
+  , 'tango-ai': 'https://www.tango.us'
+  , 'bardeen-ai': 'https://www.bardeen.ai'
+  , 'flowise': 'https://github.com/FlowiseAI/Flowise'
+  , 'langflow': 'https://github.com/langflow-ai/langflow'
+  , 'dify-ai': 'https://github.com/langgenius/dify'
+  , 'chatbase': 'https://www.chatbase.co'
+  , 'fastbots': 'https://fastbots.ai'
+  , 'botpress': 'https://github.com/botpress/botpress'
+  , 'landbot-ai': 'https://landbot.io'
+  , 'chatwoot-ai': 'https://www.chatwoot.com'
+  , 'drift-ai': 'https://www.drift.com'
+  , 'ada-ai': 'https://www.ada.cx'
+  , 'chatwoot': 'https://github.com/chatwoot/chatwoot'
+  , 'service-now-ai': 'https://www.servicenow.com/products/now-assist.html'
+  , 'sap-joule': 'https://www.sap.com/products/artificial-intelligence/ai-assistant.html'
+  , 'cody-by-sourcegraph': 'https://sourcegraph.com/cody'
+  , 'deepcode': 'https://snyk.io/product/deepcode-ai/'
+  , 'code-llama': 'https://github.com/meta-llama/codellama'
+  , 'devon-agent': 'https://devon.ai'
+  , 'replit-ghostwriter': 'https://replit.com/ai'
+  , 'tabnine': 'https://www.tabnine.com'
+  , 'aider-ai-cli': 'https://github.com/Aider-AI/aider'
+  , 'openhands-agent': 'https://github.com/All-Hands-AI/OpenHands'
+  , 'gpt-pilot-engine': 'https://github.com/Pythagora-io/gpt-pilot'
+  , 'autogen': 'https://github.com/microsoft/autogen'
+  , 'crew-ai': 'https://github.com/crewAIInc/crewAI'
+  , 'langchain-agent': 'https://github.com/langchain-ai/langchain'
+  , 'llamaindex': 'https://github.com/run-llama/llama_index'
+  , 'haystack-ai': 'https://github.com/deepset-ai/haystack'
+  , 'semantic-kernel': 'https://github.com/microsoft/semantic-kernel'
+  , 'instructor-ai': 'https://github.com/jxnl/instructor'
+  , 'embedchain': 'https://github.com/embedchain/embedchain'
+  , 'qdrant-ai': 'https://github.com/qdrant/qdrant'
+  , 'weaviate-ai': 'https://github.com/weaviate/weaviate'
+  , 'pinecone-ai': 'https://www.pinecone.io'
+  , 'lancedb': 'https://github.com/lancedb/lancedb'
+  , 'localai': 'https://github.com/mudler/LocalAI'
+  , 'fastchat': 'https://github.com/lm-sys/FastChat'
+  , 'vllm': 'https://github.com/vllm-project/vllm'
+  , 'tgi-text-generation-inference': 'https://github.com/huggingface/text-generation-inference'
+  , 'sglang-engine': 'https://github.com/sgl-project/sglang'
+  , 'tensorrt-llm': 'https://github.com/NVIDIA/TensorRT-LLM'
+  , 'deepseek-coder': 'https://github.com/deepseek-ai/DeepSeek-Coder'
+  , 'ollama-python': 'https://github.com/ollama/ollama-python'
+  , 'instructor-python': 'https://github.com/jxnl/instructor'
+  , 'outlines-ai': 'https://github.com/dottxt-ai/outlines'
+  , 'guidance-ai': 'https://github.com/guidance-ai/guidance'
+  , 'gpt-pilot': 'https://github.com/Pythagora-io/gpt-pilot'
+  , 'openhands-ai': 'https://github.com/All-Hands-AI/OpenHands'
+  , 'comfyui': 'https://github.com/comfyanonymous/ComfyUI'
+  , 'automatic1111': 'https://github.com/AUTOMATIC1111/stable-diffusion-webui'
+  , 'fooocus': 'https://github.com/lllyasviel/Fooocus'
+  , 'diffusers-huggingface': 'https://github.com/huggingface/diffusers'
+  , 'marigold-depth-ai': 'https://github.com/prs-eth/Marigold'
+  , 'layerdiffusion': 'https://github.com/lllyasviel/LayerDiffusion'
+  , 'ic-light': 'https://github.com/lllyasviel/IC-Light'
+  , 'supir-upscaler': 'https://github.com/Fanghua-Yu/SUPIR'
+  , 'real-esrgan': 'https://github.com/xinntao/Real-ESRGAN'
+  , 'codeformer': 'https://github.com/sczhou/CodeFormer'
+  , 'gfpgan': 'https://github.com/TencentARC/GFPGAN'
+  , 'stable-video-diffusion': 'https://github.com/Stability-AI/generative-models'
+  , 'cogvideox-5b': 'https://github.com/THUDM/CogVideo'
+  , 'open-sora-plan': 'https://github.com/PKU-YuanGroup/Open-Sora-Plan'
+  , 'open-sora-v1-2': 'https://github.com/hpcaitech/Open-Sora'
+  , 'dynami-crafter': 'https://github.com/Doubiiu/DynamiCrafter'
+  , 'motionctrl': 'https://github.com/TencentARC/MotionCtrl'
+  , 'cameractrl': 'https://github.com/hehao13/CameraCtrl'
+  , 'i2vgen-xl': 'https://github.com/ali-vilab/i2vgen-xl'
+  , 'wav2lip': 'https://github.com/Rudrabha/Wav2Lip'
+  , 'sadtalker': 'https://github.com/OpenTalker/SadTalker'
+  , 'liveportrait': 'https://github.com/KwaiVGI/LivePortrait'
+  , 'facefusion-ai': 'https://github.com/facefusion/facefusion'
+  , 'chattts': 'https://github.com/2noise/ChatTTS'
+  , 'f5-tts': 'https://github.com/SWivid/F5-TTS'
+  , 'coqui-tts': 'https://github.com/coqui-ai/TTS'
+  , 'bark-by-suno': 'https://github.com/suno-ai/bark'
+  , 'xtts-v2': 'https://huggingface.co/coqui/XTTS-v2'
+  , 'audiocraft': 'https://github.com/facebookresearch/audiocraft'
+  , 'musicgen-meta': 'https://github.com/facebookresearch/audiocraft'
+  , 'whisper-openai': 'https://github.com/openai/whisper'
+  , 'whisper-cpp': 'https://github.com/ggerganov/whisper.cpp'
+  , 'faster-whisper': 'https://github.com/SYSTRAN/faster-whisper'
+  , 'whisperx': 'https://github.com/m-bain/whisperX'
+  , 'insanely-fast-whisper': 'https://github.com/Vaibhavs10/insanely-fast-whisper'
+  , 'sensevoice': 'https://github.com/FunAudioLLM/SenseVoice'
+  , 'funasr': 'https://github.com/modelscope/FunASR'
+  , 'speechbrain': 'https://github.com/speechbrain/speechbrain'
+  , 'deepspeech-mozilla': 'https://github.com/mozilla/DeepSpeech'
+  , 'wav2vec-2-0': 'https://github.com/facebookresearch/fairseq'
+  , 'inpaint-anything': 'https://github.com/geekyutao/Inpaint-Anything'
+  , 'draggan': 'https://github.com/ZhengyiYu/DragGAN'
+  , 'dragdiffusion': 'https://github.com/Yujun-Shi/DragDiffusion'
+  , 'brushnet-ai': 'https://github.com/nullxploitation/BrushNet'
+  , 'powerpaint-ai': 'https://github.com/open-mmlab/PowerPaint'
+  , 'paint-by-example': 'https://github.com/Fantasy-Studio/Paint-by-Example'
+  , '3d-gaussian-splatting': 'https://github.com/graphdeco-inria/gaussian-splatting'
+  , 'nerf-studio': 'https://github.com/nerfstudio-project/nerfstudio'
+  , 'instant-ngp': 'https://github.com/NVlabs/instant-ngp'
+  , 'meshroom-ai': 'https://github.com/alicevision/meshroom'
+  , 'open3d-ai': 'https://github.com/isl-org/Open3D'
+  , 'dreamgaussian': 'https://github.com/dreamgaussian/dreamgaussian'
+  , 'text2mesh': 'https://github.com/threedle/text2mesh'
 };
 
 function check(url) {
@@ -392,7 +663,7 @@ function check(url) {
     let parsed;
     try { parsed = new URL(url); } catch { resolve('rejected'); return; }
     const client = parsed.protocol === 'https:' ? https : http;
-    const request = client.request(url, { method: 'HEAD', headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 2500 }, response => {
+    const request = client.request(url, { method: 'GET', headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 4000 }, response => {
       if (response.statusCode >= 200 && response.statusCode < 400) resolve('verified');
       else if (response.statusCode === 401 || response.statusCode === 403 || response.statusCode === 429) resolve('bot_blocked');
       else resolve('rejected');
@@ -414,7 +685,7 @@ function loadCategory(file) {
 
 async function main() {
   const cache = JSON.parse(fs.readFileSync(cachePath, 'utf8'));
-  const uncachedUrls = [...new Set(Object.values(sourceUrls))].filter(url => !cache[url]);
+  const uncachedUrls = [...new Set(Object.values(sourceUrls))].filter(url => !cache[url] || cache[url] === 'rejected');
   const statuses = await Promise.all(uncachedUrls.map(async url => [url, await check(url)]));
   for (const [url, status] of statuses) cache[url] = status;
   let changed = 0;
