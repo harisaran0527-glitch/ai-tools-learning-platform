@@ -57,7 +57,10 @@ body {
 
 /* HEADER & HERO */
 .hero {
-  background: linear-gradient(135deg, #080b14 0%, #0d0f1f 50%, #080b14 100%);
+  background-color: var(--bg);
+  background-image: url('/images/anime-ai-hero.jpg');
+  background-size: cover;
+  background-position: center;
   padding: 50px 24px 40px;
   text-align: center;
   border-bottom: 1px solid var(--border);
@@ -67,13 +70,15 @@ body {
 .hero::before {
   content: '';
   position: absolute;
-  top: -120px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 600px;
-  height: 300px;
-  background: radial-gradient(ellipse, rgba(108,99,255,0.18) 0%, transparent 70%);
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(180deg, rgba(8,11,20,0.78) 0%, rgba(8,11,20,0.66) 58%, rgba(8,11,20,0.98) 100%);
   pointer-events: none;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-badge {
