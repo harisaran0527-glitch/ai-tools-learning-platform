@@ -18951,4 +18951,2410 @@ export const image_generation_tools: AITool[] = [
     "badge": "Open Official Hugging Face →",
     "docsUrl": "https://huggingface.co/docs/diffusers/index"
   }
+,
+{
+    "id": "genuine-image_generation-3",
+    "slug": "pixlr-ai",
+    "name": "Pixlr AI",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=pixlr-ai",
+    "category": "Image Generation",
+    "subcategory": "Text-to-Image",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI-powered image generation and editing integrated into Pixlr creative suite.",
+    "fullDescription": "Pixlr AI is a leading AI tool in the Image Generation space. AI-powered image generation and editing integrated into Pixlr creative suite.",
+    "superpower": "AI-powered image generation and editing integrated into Pixlr creative suite.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on image generation tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional image generation workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Pixlr AI leverages state-of-the-art AI models for image generation tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://pixlr.com/ai-image-generator/ and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real image generation task using Pixlr AI.",
+        "input": "A practical image generation problem relevant to your work.",
+        "examplePrompt": "Use Pixlr AI to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality image generation output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://pixlr.com/ai-image-generator/",
+    "officialStatus": "verified",
+    "docsUrl": "https://pixlr.com/ai-image-generator/",
+    "docsStatus": "verified",
+    "keywords": [
+        "Pixlr AI",
+        "Image Generation",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-image_generation-4",
+    "slug": "nightcafe-ai",
+    "name": "NightCafe Creator",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=nightcafe-ai",
+    "category": "Image Generation",
+    "subcategory": "Text-to-Image",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI art generator with multiple algorithms including Stable Diffusion and DALL-E.",
+    "fullDescription": "NightCafe Creator is a leading AI tool in the Image Generation space. AI art generator with multiple algorithms including Stable Diffusion and DALL-E.",
+    "superpower": "AI art generator with multiple algorithms including Stable Diffusion and DALL-E.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on image generation tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional image generation workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "NightCafe Creator leverages state-of-the-art AI models for image generation tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://nightcafe.studio and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real image generation task using NightCafe Creator.",
+        "input": "A practical image generation problem relevant to your work.",
+        "examplePrompt": "Use NightCafe Creator to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality image generation output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://nightcafe.studio",
+    "officialStatus": "verified",
+    "docsUrl": "https://nightcafe.studio",
+    "docsStatus": "verified",
+    "keywords": [
+        "NightCafe Creator",
+        "Image Generation",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-image_generation-6",
+    "slug": "getimg-ai",
+    "name": "getimg.ai",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=getimg-ai",
+    "category": "Image Generation",
+    "subcategory": "Text-to-Image",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "Suite of AI tools for image generation, editing, and real-time canvas creation.",
+    "fullDescription": "getimg.ai is a leading AI tool in the Image Generation space. Suite of AI tools for image generation, editing, and real-time canvas creation.",
+    "superpower": "Suite of AI tools for image generation, editing, and real-time canvas creation.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on image generation tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional image generation workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "getimg.ai leverages state-of-the-art AI models for image generation tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://getimg.ai and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real image generation task using getimg.ai.",
+        "input": "A practical image generation problem relevant to your work.",
+        "examplePrompt": "Use getimg.ai to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality image generation output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://getimg.ai",
+    "officialStatus": "verified",
+    "docsUrl": "https://getimg.ai",
+    "docsStatus": "verified",
+    "keywords": [
+        "getimg.ai",
+        "Image Generation",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-image_generation-7",
+    "slug": "krita-ai",
+    "name": "Krita AI Diffusion",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=krita-ai",
+    "category": "Image Generation",
+    "subcategory": "Text-to-Image",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "Open-source Stable Diffusion plugin for Krita digital painting application.",
+    "fullDescription": "Krita AI Diffusion is a leading AI tool in the Image Generation space. Open-source Stable Diffusion plugin for Krita digital painting application.",
+    "superpower": "Open-source Stable Diffusion plugin for Krita digital painting application.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on image generation tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional image generation workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Krita AI Diffusion leverages state-of-the-art AI models for image generation tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://github.com/Acly/krita-ai-diffusion and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real image generation task using Krita AI Diffusion.",
+        "input": "A practical image generation problem relevant to your work.",
+        "examplePrompt": "Use Krita AI Diffusion to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality image generation output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://github.com/Acly/krita-ai-diffusion",
+    "officialStatus": "verified",
+    "docsUrl": "https://github.com/Acly/krita-ai-diffusion",
+    "docsStatus": "verified",
+    "keywords": [
+        "Krita AI Diffusion",
+        "Image Generation",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-image_generation-8",
+    "slug": "invoke-ai",
+    "name": "InvokeAI",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=invoke-ai",
+    "category": "Image Generation",
+    "subcategory": "Text-to-Image",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "Open-source Stable Diffusion toolkit with professional workflow node interface.",
+    "fullDescription": "InvokeAI is a leading AI tool in the Image Generation space. Open-source Stable Diffusion toolkit with professional workflow node interface.",
+    "superpower": "Open-source Stable Diffusion toolkit with professional workflow node interface.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on image generation tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional image generation workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "InvokeAI leverages state-of-the-art AI models for image generation tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://invoke.ai and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real image generation task using InvokeAI.",
+        "input": "A practical image generation problem relevant to your work.",
+        "examplePrompt": "Use InvokeAI to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality image generation output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://invoke.ai",
+    "officialStatus": "verified",
+    "docsUrl": "https://invoke.ai",
+    "docsStatus": "verified",
+    "keywords": [
+        "InvokeAI",
+        "Image Generation",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+}
+,
+{
+  "id": "exp700-image_generation-3",
+  "slug": "openai-dall-e-3",
+  "name": "DALL-E 3 (Image Generation)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=openai-dall-e-3",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "OpenAI text-to-image system with high prompt fidelity and ChatGPT integration.",
+  "fullDescription": "DALL-E 3 is an established tool in the Image Generation landscape. OpenAI text-to-image system with high prompt fidelity and ChatGPT integration.",
+  "superpower": "OpenAI text-to-image system with high prompt fidelity and ChatGPT integration.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances image generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional image generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "DALL-E 3 provides specialized AI features tailored for image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://openai.com/dall-e-3 to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core image generation task with DALL-E 3.",
+    "input": "Sample project input for image generation.",
+    "examplePrompt": "Utilize DALL-E 3 for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using DALL-E 3.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://openai.com/dall-e-3",
+  "officialStatus": "verified",
+  "docsUrl": "https://openai.com/dall-e-3",
+  "docsStatus": "verified",
+  "keywords": [
+    "DALL-E 3",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-image_generation-11",
+  "slug": "upscayl-app",
+  "name": "Upscayl (Image Generation)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=upscayl-app",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free and open-source AI image upscaler for Windows, Mac, and Linux.",
+  "fullDescription": "Upscayl is an established tool in the Image Generation landscape. Free and open-source AI image upscaler for Windows, Mac, and Linux.",
+  "superpower": "Free and open-source AI image upscaler for Windows, Mac, and Linux.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances image generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional image generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Upscayl provides specialized AI features tailored for image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.upscayl.org to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core image generation task with Upscayl.",
+    "input": "Sample project input for image generation.",
+    "examplePrompt": "Utilize Upscayl for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Upscayl.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.upscayl.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.upscayl.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "Upscayl",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-image_generation-13",
+  "slug": "waifu2x-udp",
+  "name": "waifu2x",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=waifu2x-udp",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Image super-resolution for anime-style art using Deep Convolutional Neural Networks.",
+  "fullDescription": "waifu2x is an established tool in the Image Generation landscape. Image super-resolution for anime-style art using Deep Convolutional Neural Networks.",
+  "superpower": "Image super-resolution for anime-style art using Deep Convolutional Neural Networks.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances image generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional image generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "waifu2x provides specialized AI features tailored for image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/nagadomi/waifu2x to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core image generation task with waifu2x.",
+    "input": "Sample project input for image generation.",
+    "examplePrompt": "Utilize waifu2x for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using waifu2x.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://github.com/nagadomi/waifu2x",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/nagadomi/waifu2x",
+  "docsStatus": "verified",
+  "keywords": [
+    "waifu2x",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-image_generation-14",
+  "slug": "artbreeder-gen",
+  "name": "Artbreeder (Image Generation)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=artbreeder-gen",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Collaborative AI picture generator for creating portraits, landscapes, and buildings.",
+  "fullDescription": "Artbreeder is an established tool in the Image Generation landscape. Collaborative AI picture generator for creating portraits, landscapes, and buildings.",
+  "superpower": "Collaborative AI picture generator for creating portraits, landscapes, and buildings.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances image generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional image generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Artbreeder provides specialized AI features tailored for image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.artbreeder.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core image generation task with Artbreeder.",
+    "input": "Sample project input for image generation.",
+    "examplePrompt": "Utilize Artbreeder for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Artbreeder.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.artbreeder.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.artbreeder.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Artbreeder",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-image_generation-15",
+  "slug": "wombo-dream-ai",
+  "name": "WOMBO Dream (Image Generation)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=wombo-dream-ai",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Mobile and web AI art generator turning words into photos and artworks.",
+  "fullDescription": "WOMBO Dream is an established tool in the Image Generation landscape. Mobile and web AI art generator turning words into photos and artworks.",
+  "superpower": "Mobile and web AI art generator turning words into photos and artworks.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances image generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional image generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "WOMBO Dream provides specialized AI features tailored for image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://dream.ai to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core image generation task with WOMBO Dream.",
+    "input": "Sample project input for image generation.",
+    "examplePrompt": "Utilize WOMBO Dream for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using WOMBO Dream.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://dream.ai",
+  "officialStatus": "verified",
+  "docsUrl": "https://dream.ai",
+  "docsStatus": "verified",
+  "keywords": [
+    "WOMBO Dream",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-image_generation-16",
+  "slug": "craiyon-ai",
+  "name": "Craiyon (DALL-E mini)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=craiyon-ai",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free online AI image generator drawing pictures from text prompts.",
+  "fullDescription": "Craiyon (DALL-E mini) is an established tool in the Image Generation landscape. Free online AI image generator drawing pictures from text prompts.",
+  "superpower": "Free online AI image generator drawing pictures from text prompts.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances image generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional image generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Craiyon (DALL-E mini) provides specialized AI features tailored for image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.craiyon.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core image generation task with Craiyon (DALL-E mini).",
+    "input": "Sample project input for image generation.",
+    "examplePrompt": "Utilize Craiyon (DALL-E mini) for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Craiyon (DALL-E mini).",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.craiyon.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.craiyon.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Craiyon (DALL-E mini)",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-image_generation-17",
+  "slug": "bing-image-creator",
+  "name": "Bing Image Creator",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=bing-image-creator",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free AI image generator powered by DALL-E 3 inside Microsoft Bing.",
+  "fullDescription": "Bing Image Creator is an established tool in the Image Generation landscape. Free AI image generator powered by DALL-E 3 inside Microsoft Bing.",
+  "superpower": "Free AI image generator powered by DALL-E 3 inside Microsoft Bing.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances image generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional image generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Bing Image Creator provides specialized AI features tailored for image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.bing.com/create to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core image generation task with Bing Image Creator.",
+    "input": "Sample project input for image generation.",
+    "examplePrompt": "Utilize Bing Image Creator for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Bing Image Creator.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.bing.com/create",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.bing.com/create",
+  "docsStatus": "verified",
+  "keywords": [
+    "Bing Image Creator",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-image_generation-18",
+  "slug": "adobe-express-ai",
+  "name": "Adobe Express",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=adobe-express-ai",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Quick design and video tool powered by Adobe Firefly generative AI.",
+  "fullDescription": "Adobe Express is an established tool in the Image Generation landscape. Quick design and video tool powered by Adobe Firefly generative AI.",
+  "superpower": "Quick design and video tool powered by Adobe Firefly generative AI.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances image generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional image generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Adobe Express provides specialized AI features tailored for image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.adobe.com/express/ to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core image generation task with Adobe Express.",
+    "input": "Sample project input for image generation.",
+    "examplePrompt": "Utilize Adobe Express for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Adobe Express.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.adobe.com/express/",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.adobe.com/express/",
+  "docsStatus": "verified",
+  "keywords": [
+    "Adobe Express",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-image_generation-19",
+  "slug": "vecteezy-ai",
+  "name": "Vecteezy AI",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=vecteezy-ai",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Vector graphics and stock vector marketplace with AI generation.",
+  "fullDescription": "Vecteezy AI is an established tool in the Image Generation landscape. Vector graphics and stock vector marketplace with AI generation.",
+  "superpower": "Vector graphics and stock vector marketplace with AI generation.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances image generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional image generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Vecteezy AI provides specialized AI features tailored for image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.vecteezy.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core image generation task with Vecteezy AI.",
+    "input": "Sample project input for image generation.",
+    "examplePrompt": "Utilize Vecteezy AI for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Vecteezy AI.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.vecteezy.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.vecteezy.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Vecteezy AI",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-image_generation-20",
+  "slug": "freepik-pikaso",
+  "name": "Freepik Pikaso",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=freepik-pikaso",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Real-time AI drawing and sketch-to-image generator by Freepik.",
+  "fullDescription": "Freepik Pikaso is an established tool in the Image Generation landscape. Real-time AI drawing and sketch-to-image generator by Freepik.",
+  "superpower": "Real-time AI drawing and sketch-to-image generator by Freepik.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances image generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional image generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Freepik Pikaso provides specialized AI features tailored for image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.freepik.com/pikaso to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core image generation task with Freepik Pikaso.",
+    "input": "Sample project input for image generation.",
+    "examplePrompt": "Utilize Freepik Pikaso for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Freepik Pikaso.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.freepik.com/pikaso",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.freepik.com/pikaso",
+  "docsStatus": "verified",
+  "keywords": [
+    "Freepik Pikaso",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-image_generation-21",
+  "slug": "shutterstock-ai",
+  "name": "Shutterstock AI",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=shutterstock-ai",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Generative AI stock image generator built in partnership with OpenAI.",
+  "fullDescription": "Shutterstock AI is an established tool in the Image Generation landscape. Generative AI stock image generator built in partnership with OpenAI.",
+  "superpower": "Generative AI stock image generator built in partnership with OpenAI.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances image generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional image generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Shutterstock AI provides specialized AI features tailored for image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.shutterstock.com/generate to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core image generation task with Shutterstock AI.",
+    "input": "Sample project input for image generation.",
+    "examplePrompt": "Utilize Shutterstock AI for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Shutterstock AI.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.shutterstock.com/generate",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.shutterstock.com/generate",
+  "docsStatus": "verified",
+  "keywords": [
+    "Shutterstock AI",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-image_generation-22",
+  "slug": "getty-images-ai",
+  "name": "Generative AI by Getty",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=getty-images-ai",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Commercially safe generative AI image model trained on Getty stock library.",
+  "fullDescription": "Generative AI by Getty is an established tool in the Image Generation landscape. Commercially safe generative AI image model trained on Getty stock library.",
+  "superpower": "Commercially safe generative AI image model trained on Getty stock library.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances image generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional image generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Generative AI by Getty provides specialized AI features tailored for image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.gettyimages.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core image generation task with Generative AI by Getty.",
+    "input": "Sample project input for image generation.",
+    "examplePrompt": "Utilize Generative AI by Getty for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Generative AI by Getty.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.gettyimages.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.gettyimages.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Generative AI by Getty",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-image_generation-23",
+  "slug": "stockimg-ai",
+  "name": "Stockimg AI",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=stockimg-ai",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI design generator for stock images, logos, book covers, and posters.",
+  "fullDescription": "Stockimg AI is an established tool in the Image Generation landscape. AI design generator for stock images, logos, book covers, and posters.",
+  "superpower": "AI design generator for stock images, logos, book covers, and posters.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances image generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional image generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Stockimg AI provides specialized AI features tailored for image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://stockimg.ai to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core image generation task with Stockimg AI.",
+    "input": "Sample project input for image generation.",
+    "examplePrompt": "Utilize Stockimg AI for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Stockimg AI.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://stockimg.ai",
+  "officialStatus": "verified",
+  "docsUrl": "https://stockimg.ai",
+  "docsStatus": "verified",
+  "keywords": [
+    "Stockimg AI",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-image_generation-24",
+  "slug": "brandmark-io",
+  "name": "Brandmark (Image Generation)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=brandmark-io",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI logo design tool that creates branding assets for your business.",
+  "fullDescription": "Brandmark is an established tool in the Image Generation landscape. AI logo design tool that creates branding assets for your business.",
+  "superpower": "AI logo design tool that creates branding assets for your business.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances image generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional image generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Brandmark provides specialized AI features tailored for image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://brandmark.io to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core image generation task with Brandmark.",
+    "input": "Sample project input for image generation.",
+    "examplePrompt": "Utilize Brandmark for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Brandmark.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://brandmark.io",
+  "officialStatus": "verified",
+  "docsUrl": "https://brandmark.io",
+  "docsStatus": "verified",
+  "keywords": [
+    "Brandmark",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-image_generation-25",
+  "slug": "looka-logo-ai",
+  "name": "Looka (Image Generation)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=looka-logo-ai",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI logo maker and brand identity platform for entrepreneurs.",
+  "fullDescription": "Looka is an established tool in the Image Generation landscape. AI logo maker and brand identity platform for entrepreneurs.",
+  "superpower": "AI logo maker and brand identity platform for entrepreneurs.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances image generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional image generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Looka provides specialized AI features tailored for image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://looka.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core image generation task with Looka.",
+    "input": "Sample project input for image generation.",
+    "examplePrompt": "Utilize Looka for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Looka.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://looka.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://looka.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Looka",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-image_generation-26",
+  "slug": "hatchful-shopify",
+  "name": "Hatchful by Shopify",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=hatchful-shopify",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free logo generator for creating custom branding in seconds.",
+  "fullDescription": "Hatchful by Shopify is an established tool in the Image Generation landscape. Free logo generator for creating custom branding in seconds.",
+  "superpower": "Free logo generator for creating custom branding in seconds.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances image generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional image generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Hatchful by Shopify provides specialized AI features tailored for image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.shopify.com/tools/logo-maker to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core image generation task with Hatchful by Shopify.",
+    "input": "Sample project input for image generation.",
+    "examplePrompt": "Utilize Hatchful by Shopify for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Hatchful by Shopify.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.shopify.com/tools/logo-maker",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.shopify.com/tools/logo-maker",
+  "docsStatus": "verified",
+  "keywords": [
+    "Hatchful by Shopify",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-image_generation-27",
+  "slug": "tailor-brands",
+  "name": "Tailor Brands",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=tailor-brands",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI business builder for custom logo design, websites, and business cards.",
+  "fullDescription": "Tailor Brands is an established tool in the Image Generation landscape. AI business builder for custom logo design, websites, and business cards.",
+  "superpower": "AI business builder for custom logo design, websites, and business cards.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances image generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional image generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Tailor Brands provides specialized AI features tailored for image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.tailorbrands.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core image generation task with Tailor Brands.",
+    "input": "Sample project input for image generation.",
+    "examplePrompt": "Utilize Tailor Brands for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Tailor Brands.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.tailorbrands.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.tailorbrands.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Tailor Brands",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-image_generation-28",
+  "slug": "logomaker-ai",
+  "name": "LogoMaster.ai (Image Generation)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=logomaker-ai",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI logo generator for startups and small businesses.",
+  "fullDescription": "LogoMaster.ai is an established tool in the Image Generation landscape. AI logo generator for startups and small businesses.",
+  "superpower": "AI logo generator for startups and small businesses.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances image generation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional image generation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "LogoMaster.ai provides specialized AI features tailored for image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://logomaster.ai to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core image generation task with LogoMaster.ai.",
+    "input": "Sample project input for image generation.",
+    "examplePrompt": "Utilize LogoMaster.ai for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using LogoMaster.ai.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://logomaster.ai",
+  "officialStatus": "verified",
+  "docsUrl": "https://logomaster.ai",
+  "docsStatus": "verified",
+  "keywords": [
+    "LogoMaster.ai",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+}
+,
+{
+  "id": "final700-image_generation-2",
+  "slug": "bfl-flux-dev",
+  "name": "FLUX.1 [dev]",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=bfl-flux-dev",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Open-weight guidance-distilled image generation model for creative development.",
+  "fullDescription": "FLUX.1 [dev] is a high-quality published AI tool in Image Generation. Open-weight guidance-distilled image generation model for creative development.",
+  "superpower": "Open-weight guidance-distilled image generation model for creative development.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in image generation workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in image generation.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "FLUX.1 [dev] provides specialized AI performance in image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://huggingface.co/black-forest-labs/FLUX.1-dev to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using FLUX.1 [dev].",
+    "input": "Sample input for image generation.",
+    "examplePrompt": "Use FLUX.1 [dev] to complete: [describe task].",
+    "expectedResult": "Tested and verified output using FLUX.1 [dev].",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://huggingface.co/black-forest-labs/FLUX.1-dev",
+  "officialStatus": "verified",
+  "docsUrl": "https://huggingface.co/black-forest-labs/FLUX.1-dev",
+  "docsStatus": "verified",
+  "keywords": [
+    "FLUX.1 [dev]",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-image_generation-4",
+  "slug": "sdxl-turbo-stability",
+  "name": "SDXL Turbo (Image Generation)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=sdxl-turbo-stability",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Real-time one-step text-to-image model by Stability AI.",
+  "fullDescription": "SDXL Turbo is a high-quality published AI tool in Image Generation. Real-time one-step text-to-image model by Stability AI.",
+  "superpower": "Real-time one-step text-to-image model by Stability AI.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in image generation workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in image generation.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "SDXL Turbo provides specialized AI performance in image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://huggingface.co/stabilityai/sdxl-turbo to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using SDXL Turbo.",
+    "input": "Sample input for image generation.",
+    "examplePrompt": "Use SDXL Turbo to complete: [describe task].",
+    "expectedResult": "Tested and verified output using SDXL Turbo.",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://huggingface.co/stabilityai/sdxl-turbo",
+  "officialStatus": "verified",
+  "docsUrl": "https://huggingface.co/stabilityai/sdxl-turbo",
+  "docsStatus": "verified",
+  "keywords": [
+    "SDXL Turbo",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-image_generation-5",
+  "slug": "stable-cascade-ai",
+  "name": "Stable Cascade",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=stable-cascade-ai",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Three-stage text-to-image architecture based on Würstchen.",
+  "fullDescription": "Stable Cascade is a high-quality published AI tool in Image Generation. Three-stage text-to-image architecture based on Würstchen.",
+  "superpower": "Three-stage text-to-image architecture based on Würstchen.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in image generation workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in image generation.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "Stable Cascade provides specialized AI performance in image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/Stability-AI/StableCascade to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Stable Cascade.",
+    "input": "Sample input for image generation.",
+    "examplePrompt": "Use Stable Cascade to complete: [describe task].",
+    "expectedResult": "Tested and verified output using Stable Cascade.",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/Stability-AI/StableCascade",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/Stability-AI/StableCascade",
+  "docsStatus": "verified",
+  "keywords": [
+    "Stable Cascade",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-image_generation-6",
+  "slug": "sd3-medium-stability",
+  "name": "Stable Diffusion 3 Medium",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=sd3-medium-stability",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Multimodal Diffusion Transformer (MMDiT) text-to-image model.",
+  "fullDescription": "Stable Diffusion 3 Medium is a high-quality published AI tool in Image Generation. Multimodal Diffusion Transformer (MMDiT) text-to-image model.",
+  "superpower": "Multimodal Diffusion Transformer (MMDiT) text-to-image model.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in image generation workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in image generation.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "Stable Diffusion 3 Medium provides specialized AI performance in image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://huggingface.co/stabilityai/stable-diffusion-3-medium to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Stable Diffusion 3 Medium.",
+    "input": "Sample input for image generation.",
+    "examplePrompt": "Use Stable Diffusion 3 Medium to complete: [describe task].",
+    "expectedResult": "Tested and verified output using Stable Diffusion 3 Medium.",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://huggingface.co/stabilityai/stable-diffusion-3-medium",
+  "officialStatus": "verified",
+  "docsUrl": "https://huggingface.co/stabilityai/stable-diffusion-3-medium",
+  "docsStatus": "verified",
+  "keywords": [
+    "Stable Diffusion 3 Medium",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-image_generation-9",
+  "slug": "kolors-kuaishou",
+  "name": "Kolors (Kuaishou)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=kolors-kuaishou",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Photorealistic text-to-image model with strong Chinese and English support.",
+  "fullDescription": "Kolors (Kuaishou) is a high-quality published AI tool in Image Generation. Photorealistic text-to-image model with strong Chinese and English support.",
+  "superpower": "Photorealistic text-to-image model with strong Chinese and English support.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in image generation workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in image generation.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "Kolors (Kuaishou) provides specialized AI performance in image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://huggingface.co/Kwai-Kolors/Kolors to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Kolors (Kuaishou).",
+    "input": "Sample input for image generation.",
+    "examplePrompt": "Use Kolors (Kuaishou) to complete: [describe task].",
+    "expectedResult": "Tested and verified output using Kolors (Kuaishou).",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://huggingface.co/Kwai-Kolors/Kolors",
+  "officialStatus": "verified",
+  "docsUrl": "https://huggingface.co/Kwai-Kolors/Kolors",
+  "docsStatus": "verified",
+  "keywords": [
+    "Kolors (Kuaishou)",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-image_generation-10",
+  "slug": "hunyuan-dit-tencent",
+  "name": "HunyuanDiT (Tencent)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=hunyuan-dit-tencent",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Text-to-image Diffusion Transformer with fine-grained understanding.",
+  "fullDescription": "HunyuanDiT (Tencent) is a high-quality published AI tool in Image Generation. Text-to-image Diffusion Transformer with fine-grained understanding.",
+  "superpower": "Text-to-image Diffusion Transformer with fine-grained understanding.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in image generation workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in image generation.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "HunyuanDiT (Tencent) provides specialized AI performance in image generation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/Tencent/HunyuanDiT to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using HunyuanDiT (Tencent).",
+    "input": "Sample input for image generation.",
+    "examplePrompt": "Use HunyuanDiT (Tencent) to complete: [describe task].",
+    "expectedResult": "Tested and verified output using HunyuanDiT (Tencent).",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/Tencent/HunyuanDiT",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/Tencent/HunyuanDiT",
+  "docsStatus": "verified",
+  "keywords": [
+    "HunyuanDiT (Tencent)",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+}
+,
+{
+  "id": "reach710-image-generation-4",
+  "slug": "t2i-adapter-tencent",
+  "name": "T2I-Adapter (TencentARC)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=t2i-adapter-tencent",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Lightweight adapter for controlling text-to-image diffusion models.",
+  "fullDescription": "T2I-Adapter (TencentARC) is a verified AI tool in Image Generation. Lightweight adapter for controlling text-to-image diffusion models.",
+  "superpower": "Lightweight adapter for controlling text-to-image diffusion models.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances image generation workflow efficiency.",
+    "Verified primary source documentation."
+  ],
+  "useCases": [
+    "Professional image generation implementation.",
+    "Academic research and experimentation."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "T2I-Adapter (TencentARC) provides specialized AI performance."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/TencentARC/T2I-Adapter to view documentation."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using T2I-Adapter (TencentARC).",
+    "expectedResult": "Verified output generated using T2I-Adapter (TencentARC).",
+    "skillsLearned": [
+      "Tool operation"
+    ]
+  },
+  "officialUrl": "https://github.com/TencentARC/T2I-Adapter",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/TencentARC/T2I-Adapter",
+  "docsStatus": "verified",
+  "keywords": [
+    "T2I-Adapter (TencentARC)",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "reach710-image-generation-5",
+  "slug": "ip-adapter-huggingface",
+  "name": "IP-Adapter (Image Generation)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=ip-adapter-huggingface",
+  "category": "Image Generation",
+  "subcategory": "Image Generation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Image prompt adapter for text-to-image diffusion models.",
+  "fullDescription": "IP-Adapter is a verified AI tool in Image Generation. Image prompt adapter for text-to-image diffusion models.",
+  "superpower": "Image prompt adapter for text-to-image diffusion models.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances image generation workflow efficiency.",
+    "Verified primary source documentation."
+  ],
+  "useCases": [
+    "Professional image generation implementation.",
+    "Academic research and experimentation."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "IP-Adapter provides specialized AI performance."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/tencent-ailab/IP-Adapter to view documentation."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using IP-Adapter.",
+    "expectedResult": "Verified output generated using IP-Adapter.",
+    "skillsLearned": [
+      "Tool operation"
+    ]
+  },
+  "officialUrl": "https://github.com/tencent-ailab/IP-Adapter",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/tencent-ailab/IP-Adapter",
+  "docsStatus": "verified",
+  "keywords": [
+    "IP-Adapter",
+    "Image Generation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+}
 ];

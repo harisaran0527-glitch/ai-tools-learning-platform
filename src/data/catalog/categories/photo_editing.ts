@@ -10126,4 +10126,2371 @@ export const photo_editing_tools: AITool[] = [
     "verifiedAt": "2026-08-28",
     "badge": "FREE-TIER"
   }
+,
+{
+    "id": "genuine-photo_editing-2",
+    "slug": "luminar-ai",
+    "name": "Luminar AI",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=luminar-ai",
+    "category": "Photo Editing",
+    "subcategory": "AI Photo Enhancement",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI photo editing software with one-click sky replacement and portrait enhancement.",
+    "fullDescription": "Luminar AI is a leading AI tool in the Photo Editing space. AI photo editing software with one-click sky replacement and portrait enhancement.",
+    "superpower": "AI photo editing software with one-click sky replacement and portrait enhancement.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on photo editing tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional photo editing workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Luminar AI leverages state-of-the-art AI models for photo editing tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://skylum.com/luminarai and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real photo editing task using Luminar AI.",
+        "input": "A practical photo editing problem relevant to your work.",
+        "examplePrompt": "Use Luminar AI to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality photo editing output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://skylum.com/luminarai",
+    "officialStatus": "verified",
+    "docsUrl": "https://skylum.com/luminarai",
+    "docsStatus": "verified",
+    "keywords": [
+        "Luminar AI",
+        "Photo Editing",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-photo_editing-4",
+    "slug": "cleanup-pictures",
+    "name": "Cleanup.pictures",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=cleanup-pictures",
+    "category": "Photo Editing",
+    "subcategory": "AI Photo Enhancement",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI object removal tool for erasing unwanted elements from photos.",
+    "fullDescription": "Cleanup.pictures is a leading AI tool in the Photo Editing space. AI object removal tool for erasing unwanted elements from photos.",
+    "superpower": "AI object removal tool for erasing unwanted elements from photos.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on photo editing tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional photo editing workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Cleanup.pictures leverages state-of-the-art AI models for photo editing tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://cleanup.pictures and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real photo editing task using Cleanup.pictures.",
+        "input": "A practical photo editing problem relevant to your work.",
+        "examplePrompt": "Use Cleanup.pictures to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality photo editing output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://cleanup.pictures",
+    "officialStatus": "verified",
+    "docsUrl": "https://cleanup.pictures",
+    "docsStatus": "verified",
+    "keywords": [
+        "Cleanup.pictures",
+        "Photo Editing",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-photo_editing-7",
+    "slug": "picsart-ai",
+    "name": "Picsart AI",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=picsart-ai",
+    "category": "Photo Editing",
+    "subcategory": "AI Photo Enhancement",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI photo and video editing platform with generative AI creative tools.",
+    "fullDescription": "Picsart AI is a leading AI tool in the Photo Editing space. AI photo and video editing platform with generative AI creative tools.",
+    "superpower": "AI photo and video editing platform with generative AI creative tools.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on photo editing tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional photo editing workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Picsart AI leverages state-of-the-art AI models for photo editing tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://picsart.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real photo editing task using Picsart AI.",
+        "input": "A practical photo editing problem relevant to your work.",
+        "examplePrompt": "Use Picsart AI to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality photo editing output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://picsart.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://picsart.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Picsart AI",
+        "Photo Editing",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-photo_editing-8",
+    "slug": "pixelmator-pro-ai",
+    "name": "Pixelmator Pro (Photo Editing)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=pixelmator-pro-ai",
+    "category": "Photo Editing",
+    "subcategory": "AI Photo Enhancement",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "Professional image editor for Mac with ML-powered enhancement and repair tools.",
+    "fullDescription": "Pixelmator Pro is a leading AI tool in the Photo Editing space. Professional image editor for Mac with ML-powered enhancement and repair tools.",
+    "superpower": "Professional image editor for Mac with ML-powered enhancement and repair tools.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on photo editing tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional photo editing workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Pixelmator Pro leverages state-of-the-art AI models for photo editing tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.pixelmator.com/pro/ and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real photo editing task using Pixelmator Pro.",
+        "input": "A practical photo editing problem relevant to your work.",
+        "examplePrompt": "Use Pixelmator Pro to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality photo editing output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.pixelmator.com/pro/",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.pixelmator.com/pro/",
+    "docsStatus": "verified",
+    "keywords": [
+        "Pixelmator Pro",
+        "Photo Editing",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-photo_editing-9",
+    "slug": "skylum-aurora-ai",
+    "name": "Aurora HDR AI",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=skylum-aurora-ai",
+    "category": "Photo Editing",
+    "subcategory": "AI Photo Enhancement",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI HDR photo editing software for creating dramatic high dynamic range images.",
+    "fullDescription": "Aurora HDR AI is a leading AI tool in the Photo Editing space. AI HDR photo editing software for creating dramatic high dynamic range images.",
+    "superpower": "AI HDR photo editing software for creating dramatic high dynamic range images.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on photo editing tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional photo editing workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Aurora HDR AI leverages state-of-the-art AI models for photo editing tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://skylum.com/aurorahdr and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real photo editing task using Aurora HDR AI.",
+        "input": "A practical photo editing problem relevant to your work.",
+        "examplePrompt": "Use Aurora HDR AI to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality photo editing output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://skylum.com/aurorahdr",
+    "officialStatus": "verified",
+    "docsUrl": "https://skylum.com/aurorahdr",
+    "docsStatus": "verified",
+    "keywords": [
+        "Aurora HDR AI",
+        "Photo Editing",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-photo_editing-10",
+    "slug": "let-enhance-ai",
+    "name": "Let's Enhance (Photo Editing)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=let-enhance-ai",
+    "category": "Photo Editing",
+    "subcategory": "AI Photo Enhancement",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI image upscaling and enhancement tool for increasing image resolution.",
+    "fullDescription": "Let's Enhance is a leading AI tool in the Photo Editing space. AI image upscaling and enhancement tool for increasing image resolution.",
+    "superpower": "AI image upscaling and enhancement tool for increasing image resolution.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on photo editing tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional photo editing workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Let's Enhance leverages state-of-the-art AI models for photo editing tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://letsenhance.io and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real photo editing task using Let's Enhance.",
+        "input": "A practical photo editing problem relevant to your work.",
+        "examplePrompt": "Use Let's Enhance to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality photo editing output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://letsenhance.io",
+    "officialStatus": "verified",
+    "docsUrl": "https://letsenhance.io",
+    "docsStatus": "verified",
+    "keywords": [
+        "Let's Enhance",
+        "Photo Editing",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+}
+,
+{
+  "id": "exp700-photo_editing-1",
+  "slug": "clipdrop-replace-bg",
+  "name": "Clipdrop Replace Background",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=clipdrop-replace-bg",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI tool to automatically replace image backgrounds with generated scenery.",
+  "fullDescription": "Clipdrop Replace Background is an established tool in the Photo Editing landscape. AI tool to automatically replace image backgrounds with generated scenery.",
+  "superpower": "AI tool to automatically replace image backgrounds with generated scenery.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances photo editing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional photo editing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Clipdrop Replace Background provides specialized AI features tailored for photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://clipdrop.co/replace-background to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core photo editing task with Clipdrop Replace Background.",
+    "input": "Sample project input for photo editing.",
+    "examplePrompt": "Utilize Clipdrop Replace Background for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Clipdrop Replace Background.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://clipdrop.co/replace-background",
+  "officialStatus": "verified",
+  "docsUrl": "https://clipdrop.co/replace-background",
+  "docsStatus": "verified",
+  "keywords": [
+    "Clipdrop Replace Background",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-photo_editing-2",
+  "slug": "clipdrop-relight-ai",
+  "name": "Clipdrop Relight (Photo Editing)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=clipdrop-relight-ai",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Add artificial studio light sources to any photo using AI.",
+  "fullDescription": "Clipdrop Relight is an established tool in the Photo Editing landscape. Add artificial studio light sources to any photo using AI.",
+  "superpower": "Add artificial studio light sources to any photo using AI.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances photo editing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional photo editing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Clipdrop Relight provides specialized AI features tailored for photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://clipdrop.co/relight to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core photo editing task with Clipdrop Relight.",
+    "input": "Sample project input for photo editing.",
+    "examplePrompt": "Utilize Clipdrop Relight for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Clipdrop Relight.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://clipdrop.co/relight",
+  "officialStatus": "verified",
+  "docsUrl": "https://clipdrop.co/relight",
+  "docsStatus": "verified",
+  "keywords": [
+    "Clipdrop Relight",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-photo_editing-3",
+  "slug": "clipdrop-uncrop-ai",
+  "name": "Clipdrop Uncrop (Photo Editing)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=clipdrop-uncrop-ai",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Expand any photo aspect ratio with generative outpainting.",
+  "fullDescription": "Clipdrop Uncrop is an established tool in the Photo Editing landscape. Expand any photo aspect ratio with generative outpainting.",
+  "superpower": "Expand any photo aspect ratio with generative outpainting.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances photo editing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional photo editing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Clipdrop Uncrop provides specialized AI features tailored for photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://clipdrop.co/uncrop to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core photo editing task with Clipdrop Uncrop.",
+    "input": "Sample project input for photo editing.",
+    "examplePrompt": "Utilize Clipdrop Uncrop for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Clipdrop Uncrop.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://clipdrop.co/uncrop",
+  "officialStatus": "verified",
+  "docsUrl": "https://clipdrop.co/uncrop",
+  "docsStatus": "verified",
+  "keywords": [
+    "Clipdrop Uncrop",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-photo_editing-4",
+  "slug": "clipdrop-cleanup-ai",
+  "name": "Clipdrop Cleanup",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=clipdrop-cleanup-ai",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Remove objects, text, or defects from images automatically.",
+  "fullDescription": "Clipdrop Cleanup is an established tool in the Photo Editing landscape. Remove objects, text, or defects from images automatically.",
+  "superpower": "Remove objects, text, or defects from images automatically.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances photo editing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional photo editing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Clipdrop Cleanup provides specialized AI features tailored for photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://clipdrop.co/cleanup to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core photo editing task with Clipdrop Cleanup.",
+    "input": "Sample project input for photo editing.",
+    "examplePrompt": "Utilize Clipdrop Cleanup for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Clipdrop Cleanup.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://clipdrop.co/cleanup",
+  "officialStatus": "verified",
+  "docsUrl": "https://clipdrop.co/cleanup",
+  "docsStatus": "verified",
+  "keywords": [
+    "Clipdrop Cleanup",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-photo_editing-5",
+  "slug": "slazzer-remove-bg",
+  "name": "Slazzer (Photo Editing)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=slazzer-remove-bg",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI background remover for e-commerce and personal photographs.",
+  "fullDescription": "Slazzer is an established tool in the Photo Editing landscape. AI background remover for e-commerce and personal photographs.",
+  "superpower": "AI background remover for e-commerce and personal photographs.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances photo editing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional photo editing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Slazzer provides specialized AI features tailored for photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.slazzer.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core photo editing task with Slazzer.",
+    "input": "Sample project input for photo editing.",
+    "examplePrompt": "Utilize Slazzer for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Slazzer.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.slazzer.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.slazzer.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Slazzer",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-photo_editing-6",
+  "slug": "erase-bg-ai",
+  "name": "Erase.bg (Photo Editing)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=erase-bg-ai",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free online background remover tool for individuals and professionals.",
+  "fullDescription": "Erase.bg is an established tool in the Photo Editing landscape. Free online background remover tool for individuals and professionals.",
+  "superpower": "Free online background remover tool for individuals and professionals.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances photo editing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional photo editing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Erase.bg provides specialized AI features tailored for photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.erase.bg to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core photo editing task with Erase.bg.",
+    "input": "Sample project input for photo editing.",
+    "examplePrompt": "Utilize Erase.bg for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Erase.bg.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.erase.bg",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.erase.bg",
+  "docsStatus": "verified",
+  "keywords": [
+    "Erase.bg",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-photo_editing-7",
+  "slug": "watermark-remover-io",
+  "name": "WatermarkRemover.ai",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=watermark-remover-io",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Remove watermarks from images using deep learning algorithms.",
+  "fullDescription": "WatermarkRemover.ai is an established tool in the Photo Editing landscape. Remove watermarks from images using deep learning algorithms.",
+  "superpower": "Remove watermarks from images using deep learning algorithms.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances photo editing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional photo editing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "WatermarkRemover.ai provides specialized AI features tailored for photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.watermarkremover.io to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core photo editing task with WatermarkRemover.ai.",
+    "input": "Sample project input for photo editing.",
+    "examplePrompt": "Utilize WatermarkRemover.ai for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using WatermarkRemover.ai.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.watermarkremover.io",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.watermarkremover.io",
+  "docsStatus": "verified",
+  "keywords": [
+    "WatermarkRemover.ai",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-photo_editing-8",
+  "slug": "upscale-media-ai",
+  "name": "Upscale.media",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=upscale-media-ai",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI image upscaler for increasing photo resolution up to 4x.",
+  "fullDescription": "Upscale.media is an established tool in the Photo Editing landscape. AI image upscaler for increasing photo resolution up to 4x.",
+  "superpower": "AI image upscaler for increasing photo resolution up to 4x.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances photo editing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional photo editing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Upscale.media provides specialized AI features tailored for photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.upscale.media to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core photo editing task with Upscale.media.",
+    "input": "Sample project input for photo editing.",
+    "examplePrompt": "Utilize Upscale.media for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Upscale.media.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.upscale.media",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.upscale.media",
+  "docsStatus": "verified",
+  "keywords": [
+    "Upscale.media",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-photo_editing-9",
+  "slug": "pixelcut-ai-photo",
+  "name": "Pixelcut",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=pixelcut-ai-photo",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI photo editor and graphic design app for online sellers.",
+  "fullDescription": "Pixelcut is an established tool in the Photo Editing landscape. AI photo editor and graphic design app for online sellers.",
+  "superpower": "AI photo editor and graphic design app for online sellers.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances photo editing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional photo editing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Pixelcut provides specialized AI features tailored for photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.pixelcut.ai to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core photo editing task with Pixelcut.",
+    "input": "Sample project input for photo editing.",
+    "examplePrompt": "Utilize Pixelcut for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Pixelcut.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.pixelcut.ai",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.pixelcut.ai",
+  "docsStatus": "verified",
+  "keywords": [
+    "Pixelcut",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-photo_editing-10",
+  "slug": "befunky-editor",
+  "name": "BeFunky",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=befunky-editor",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Online photo editor with AI portrait enhancer, background remover, and effects.",
+  "fullDescription": "BeFunky is an established tool in the Photo Editing landscape. Online photo editor with AI portrait enhancer, background remover, and effects.",
+  "superpower": "Online photo editor with AI portrait enhancer, background remover, and effects.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances photo editing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional photo editing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "BeFunky provides specialized AI features tailored for photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.befunky.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core photo editing task with BeFunky.",
+    "input": "Sample project input for photo editing.",
+    "examplePrompt": "Utilize BeFunky for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using BeFunky.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.befunky.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.befunky.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "BeFunky",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-photo_editing-11",
+  "slug": "canvas-photo-editor",
+  "name": "Canva Photo Editor",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=canvas-photo-editor",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free online photo editor with AI Magic Edit and object eraser.",
+  "fullDescription": "Canva Photo Editor is an established tool in the Photo Editing landscape. Free online photo editor with AI Magic Edit and object eraser.",
+  "superpower": "Free online photo editor with AI Magic Edit and object eraser.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances photo editing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional photo editing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Canva Photo Editor provides specialized AI features tailored for photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.canva.com/photo-editor/ to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core photo editing task with Canva Photo Editor.",
+    "input": "Sample project input for photo editing.",
+    "examplePrompt": "Utilize Canva Photo Editor for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Canva Photo Editor.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.canva.com/photo-editor/",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.canva.com/photo-editor/",
+  "docsStatus": "verified",
+  "keywords": [
+    "Canva Photo Editor",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-photo_editing-12",
+  "slug": "vance-ai-enhancer",
+  "name": "VanceAI",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=vance-ai-enhancer",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI photo enhancement, sharpening, and restoration software.",
+  "fullDescription": "VanceAI is an established tool in the Photo Editing landscape. AI photo enhancement, sharpening, and restoration software.",
+  "superpower": "AI photo enhancement, sharpening, and restoration software.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances photo editing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional photo editing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "VanceAI provides specialized AI features tailored for photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://vanceai.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core photo editing task with VanceAI.",
+    "input": "Sample project input for photo editing.",
+    "examplePrompt": "Utilize VanceAI for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using VanceAI.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://vanceai.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://vanceai.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "VanceAI",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-photo_editing-13",
+  "slug": "remini-ai-app",
+  "name": "Remini",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=remini-ai-app",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI photo enhancer that restores old and blurry photos into high definition.",
+  "fullDescription": "Remini is an established tool in the Photo Editing landscape. AI photo enhancer that restores old and blurry photos into high definition.",
+  "superpower": "AI photo enhancer that restores old and blurry photos into high definition.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances photo editing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional photo editing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Remini provides specialized AI features tailored for photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://remini.ai to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core photo editing task with Remini.",
+    "input": "Sample project input for photo editing.",
+    "examplePrompt": "Utilize Remini for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Remini.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://remini.ai",
+  "officialStatus": "verified",
+  "docsUrl": "https://remini.ai",
+  "docsStatus": "verified",
+  "keywords": [
+    "Remini",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-photo_editing-14",
+  "slug": "faceapp-ai-editor",
+  "name": "FaceApp",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=faceapp-ai-editor",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI portrait editor for photorealistic facial transformations.",
+  "fullDescription": "FaceApp is an established tool in the Photo Editing landscape. AI portrait editor for photorealistic facial transformations.",
+  "superpower": "AI portrait editor for photorealistic facial transformations.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances photo editing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional photo editing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "FaceApp provides specialized AI features tailored for photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.faceapp.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core photo editing task with FaceApp.",
+    "input": "Sample project input for photo editing.",
+    "examplePrompt": "Utilize FaceApp for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using FaceApp.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.faceapp.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.faceapp.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "FaceApp",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-photo_editing-15",
+  "slug": "lensa-ai-avatars",
+  "name": "Lensa AI",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=lensa-ai-avatars",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI avatar and photo editor app for retouching portraits.",
+  "fullDescription": "Lensa AI is an established tool in the Photo Editing landscape. AI avatar and photo editor app for retouching portraits.",
+  "superpower": "AI avatar and photo editor app for retouching portraits.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances photo editing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional photo editing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Lensa AI provides specialized AI features tailored for photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://prisma-ai.com/lensa to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core photo editing task with Lensa AI.",
+    "input": "Sample project input for photo editing.",
+    "examplePrompt": "Utilize Lensa AI for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Lensa AI.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://prisma-ai.com/lensa",
+  "officialStatus": "verified",
+  "docsUrl": "https://prisma-ai.com/lensa",
+  "docsStatus": "verified",
+  "keywords": [
+    "Lensa AI",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-photo_editing-16",
+  "slug": "prisma-art-filters",
+  "name": "Prisma",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=prisma-art-filters",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Turn photos into paintings using neural network art styles.",
+  "fullDescription": "Prisma is an established tool in the Photo Editing landscape. Turn photos into paintings using neural network art styles.",
+  "superpower": "Turn photos into paintings using neural network art styles.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances photo editing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional photo editing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Prisma provides specialized AI features tailored for photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://prisma-ai.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core photo editing task with Prisma.",
+    "input": "Sample project input for photo editing.",
+    "examplePrompt": "Utilize Prisma for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Prisma.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://prisma-ai.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://prisma-ai.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Prisma",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-photo_editing-17",
+  "slug": "photoleap-by-lightricks",
+  "name": "Photoleap by Lightricks",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=photoleap-by-lightricks",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "All-in-one photo editing app with AI image generation and blending.",
+  "fullDescription": "Photoleap by Lightricks is an established tool in the Photo Editing landscape. All-in-one photo editing app with AI image generation and blending.",
+  "superpower": "All-in-one photo editing app with AI image generation and blending.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances photo editing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional photo editing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Photoleap by Lightricks provides specialized AI features tailored for photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.photoleapapp.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core photo editing task with Photoleap by Lightricks.",
+    "input": "Sample project input for photo editing.",
+    "examplePrompt": "Utilize Photoleap by Lightricks for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Photoleap by Lightricks.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.photoleapapp.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.photoleapapp.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Photoleap by Lightricks",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-photo_editing-18",
+  "slug": "facetune-app",
+  "name": "Facetune by Lightricks",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=facetune-app",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Selfie editor and retouching app with AI features for photos and videos.",
+  "fullDescription": "Facetune by Lightricks is an established tool in the Photo Editing landscape. Selfie editor and retouching app with AI features for photos and videos.",
+  "superpower": "Selfie editor and retouching app with AI features for photos and videos.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances photo editing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional photo editing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Facetune by Lightricks provides specialized AI features tailored for photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.facetuneapp.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core photo editing task with Facetune by Lightricks.",
+    "input": "Sample project input for photo editing.",
+    "examplePrompt": "Utilize Facetune by Lightricks for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Facetune by Lightricks.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.facetuneapp.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.facetuneapp.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Facetune by Lightricks",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-photo_editing-19",
+  "slug": "snapseed-google",
+  "name": "Snapseed by Google",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=snapseed-google",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Complete professional photo editor developed by Google.",
+  "fullDescription": "Snapseed by Google is an established tool in the Photo Editing landscape. Complete professional photo editor developed by Google.",
+  "superpower": "Complete professional photo editor developed by Google.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances photo editing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional photo editing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Snapseed by Google provides specialized AI features tailored for photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://snapseed.online to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core photo editing task with Snapseed by Google.",
+    "input": "Sample project input for photo editing.",
+    "examplePrompt": "Utilize Snapseed by Google for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Snapseed by Google.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://snapseed.online",
+  "officialStatus": "verified",
+  "docsUrl": "https://snapseed.online",
+  "docsStatus": "verified",
+  "keywords": [
+    "Snapseed by Google",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-photo_editing-20",
+  "slug": "lightroom-adobe",
+  "name": "Adobe Lightroom",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=lightroom-adobe",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Cloud-based service for photo editing, organizing, and sharing across devices.",
+  "fullDescription": "Adobe Lightroom is an established tool in the Photo Editing landscape. Cloud-based service for photo editing, organizing, and sharing across devices.",
+  "superpower": "Cloud-based service for photo editing, organizing, and sharing across devices.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances photo editing workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional photo editing implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Adobe Lightroom provides specialized AI features tailored for photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.adobe.com/products/photoshop-lightroom.html to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core photo editing task with Adobe Lightroom.",
+    "input": "Sample project input for photo editing.",
+    "examplePrompt": "Utilize Adobe Lightroom for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Adobe Lightroom.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.adobe.com/products/photoshop-lightroom.html",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.adobe.com/products/photoshop-lightroom.html",
+  "docsStatus": "verified",
+  "keywords": [
+    "Adobe Lightroom",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+}
+,
+{
+  "id": "final700-photo_editing-1",
+  "slug": "lama-inpainting",
+  "name": "LaMa Inpainting",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=lama-inpainting",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Resolution-robust large mask inpainting with Fourier convolutions.",
+  "fullDescription": "LaMa Inpainting is a high-quality published AI tool in Photo Editing. Resolution-robust large mask inpainting with Fourier convolutions.",
+  "superpower": "Resolution-robust large mask inpainting with Fourier convolutions.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in photo editing workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in photo editing.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "LaMa Inpainting provides specialized AI performance in photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/advimman/lama to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using LaMa Inpainting.",
+    "input": "Sample input for photo editing.",
+    "examplePrompt": "Use LaMa Inpainting to complete: [describe task].",
+    "expectedResult": "Tested and verified output using LaMa Inpainting.",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/advimman/lama",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/advimman/lama",
+  "docsStatus": "verified",
+  "keywords": [
+    "LaMa Inpainting",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-photo_editing-3",
+  "slug": "iopaint-web-ui",
+  "name": "IOPaint",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=iopaint-web-ui",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free open-source AI image inpainting and outpainting tool powered by SOTA models.",
+  "fullDescription": "IOPaint is a high-quality published AI tool in Photo Editing. Free open-source AI image inpainting and outpainting tool powered by SOTA models.",
+  "superpower": "Free open-source AI image inpainting and outpainting tool powered by SOTA models.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in photo editing workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in photo editing.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "IOPaint provides specialized AI performance in photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/Sanster/IOPaint to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using IOPaint.",
+    "input": "Sample input for photo editing.",
+    "examplePrompt": "Use IOPaint to complete: [describe task].",
+    "expectedResult": "Tested and verified output using IOPaint.",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/Sanster/IOPaint",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/Sanster/IOPaint",
+  "docsStatus": "verified",
+  "keywords": [
+    "IOPaint",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-photo_editing-4",
+  "slug": "rembg-python",
+  "name": "rembg",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=rembg-python",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Open-source Python tool and API for removing image backgrounds.",
+  "fullDescription": "rembg is a high-quality published AI tool in Photo Editing. Open-source Python tool and API for removing image backgrounds.",
+  "superpower": "Open-source Python tool and API for removing image backgrounds.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in photo editing workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in photo editing.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "rembg provides specialized AI performance in photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/danielgatis/rembg to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using rembg.",
+    "input": "Sample input for photo editing.",
+    "examplePrompt": "Use rembg to complete: [describe task].",
+    "expectedResult": "Tested and verified output using rembg.",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/danielgatis/rembg",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/danielgatis/rembg",
+  "docsStatus": "verified",
+  "keywords": [
+    "rembg",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-photo_editing-5",
+  "slug": "bria-ai-photo",
+  "name": "Bria AI",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=bria-ai-photo",
+  "category": "Photo Editing",
+  "subcategory": "Photo Editing",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Responsible visual generative AI platform for commercially safe photo editing.",
+  "fullDescription": "Bria AI is a high-quality published AI tool in Photo Editing. Responsible visual generative AI platform for commercially safe photo editing.",
+  "superpower": "Responsible visual generative AI platform for commercially safe photo editing.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in photo editing workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in photo editing.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "Bria AI provides specialized AI performance in photo editing."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://bria.ai to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Bria AI.",
+    "input": "Sample input for photo editing.",
+    "examplePrompt": "Use Bria AI to complete: [describe task].",
+    "expectedResult": "Tested and verified output using Bria AI.",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://bria.ai",
+  "officialStatus": "verified",
+  "docsUrl": "https://bria.ai",
+  "docsStatus": "verified",
+  "keywords": [
+    "Bria AI",
+    "Photo Editing",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+}
 ];

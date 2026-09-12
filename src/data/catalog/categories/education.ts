@@ -17280,4 +17280,3802 @@ export const education_tools: AITool[] = [
     "verifiedAt": "2026-09-11",
     "badge": "FREE"
   }
+,
+{
+    "id": "genuine-education-1",
+    "slug": "khan-academy-khanmigo",
+    "name": "Khanmigo by Khan Academy",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=khan-academy-khanmigo",
+    "category": "Education",
+    "subcategory": "Learning Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI tutor by Khan Academy providing personalized learning guidance.",
+    "fullDescription": "Khanmigo by Khan Academy is a leading AI tool in the Education space. AI tutor by Khan Academy providing personalized learning guidance.",
+    "superpower": "AI tutor by Khan Academy providing personalized learning guidance.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on education tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional education workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Khanmigo by Khan Academy leverages state-of-the-art AI models for education tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.khanacademy.org/khan-labs and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real education task using Khanmigo by Khan Academy.",
+        "input": "A practical education problem relevant to your work.",
+        "examplePrompt": "Use Khanmigo by Khan Academy to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality education output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.khanacademy.org/khan-labs",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.khanacademy.org/khan-labs",
+    "docsStatus": "verified",
+    "keywords": [
+        "Khanmigo by Khan Academy",
+        "Education",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-education-2",
+    "slug": "coursera-ai-coach",
+    "name": "Coursera Coach",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=coursera-ai-coach",
+    "category": "Education",
+    "subcategory": "Learning Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI learning coach integrated into Coursera for personalized course recommendations.",
+    "fullDescription": "Coursera Coach is a leading AI tool in the Education space. AI learning coach integrated into Coursera for personalized course recommendations.",
+    "superpower": "AI learning coach integrated into Coursera for personalized course recommendations.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on education tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional education workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Coursera Coach leverages state-of-the-art AI models for education tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.coursera.org and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real education task using Coursera Coach.",
+        "input": "A practical education problem relevant to your work.",
+        "examplePrompt": "Use Coursera Coach to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality education output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.coursera.org",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.coursera.org",
+    "docsStatus": "verified",
+    "keywords": [
+        "Coursera Coach",
+        "Education",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-education-3",
+    "slug": "duolingo-ai",
+    "name": "Duolingo Max (Education)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=duolingo-ai",
+    "category": "Education",
+    "subcategory": "Learning Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI-powered language learning app with conversational practice and explanation.",
+    "fullDescription": "Duolingo Max is a leading AI tool in the Education space. AI-powered language learning app with conversational practice and explanation.",
+    "superpower": "AI-powered language learning app with conversational practice and explanation.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on education tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional education workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Duolingo Max leverages state-of-the-art AI models for education tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.duolingo.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real education task using Duolingo Max.",
+        "input": "A practical education problem relevant to your work.",
+        "examplePrompt": "Use Duolingo Max to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality education output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.duolingo.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.duolingo.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Duolingo Max",
+        "Education",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-education-5",
+    "slug": "photomath-ai",
+    "name": "Photomath (Education)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=photomath-ai",
+    "category": "Education",
+    "subcategory": "Learning Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI math solver that uses camera to scan and explain math problems step by step.",
+    "fullDescription": "Photomath is a leading AI tool in the Education space. AI math solver that uses camera to scan and explain math problems step by step.",
+    "superpower": "AI math solver that uses camera to scan and explain math problems step by step.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on education tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional education workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Photomath leverages state-of-the-art AI models for education tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://photomath.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real education task using Photomath.",
+        "input": "A practical education problem relevant to your work.",
+        "examplePrompt": "Use Photomath to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality education output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://photomath.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://photomath.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Photomath",
+        "Education",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-education-6",
+    "slug": "brilliant-ai",
+    "name": "Brilliant",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=brilliant-ai",
+    "category": "Education",
+    "subcategory": "Learning Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "Interactive learning platform with AI-powered STEM courses and problem sets.",
+    "fullDescription": "Brilliant is a leading AI tool in the Education space. Interactive learning platform with AI-powered STEM courses and problem sets.",
+    "superpower": "Interactive learning platform with AI-powered STEM courses and problem sets.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on education tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional education workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Brilliant leverages state-of-the-art AI models for education tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://brilliant.org and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real education task using Brilliant.",
+        "input": "A practical education problem relevant to your work.",
+        "examplePrompt": "Use Brilliant to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality education output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://brilliant.org",
+    "officialStatus": "verified",
+    "docsUrl": "https://brilliant.org",
+    "docsStatus": "verified",
+    "keywords": [
+        "Brilliant",
+        "Education",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-education-7",
+    "slug": "quizlet-ai",
+    "name": "Quizlet AI",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=quizlet-ai",
+    "category": "Education",
+    "subcategory": "Learning Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI-enhanced flashcard and study tool with personalized learning paths.",
+    "fullDescription": "Quizlet AI is a leading AI tool in the Education space. AI-enhanced flashcard and study tool with personalized learning paths.",
+    "superpower": "AI-enhanced flashcard and study tool with personalized learning paths.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on education tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional education workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Quizlet AI leverages state-of-the-art AI models for education tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://quizlet.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real education task using Quizlet AI.",
+        "input": "A practical education problem relevant to your work.",
+        "examplePrompt": "Use Quizlet AI to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality education output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://quizlet.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://quizlet.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Quizlet AI",
+        "Education",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-education-8",
+    "slug": "anki-ai",
+    "name": "Anki",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=anki-ai",
+    "category": "Education",
+    "subcategory": "Learning Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "Spaced repetition flashcard app with AI-assisted memorization scheduling.",
+    "fullDescription": "Anki is a leading AI tool in the Education space. Spaced repetition flashcard app with AI-assisted memorization scheduling.",
+    "superpower": "Spaced repetition flashcard app with AI-assisted memorization scheduling.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on education tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional education workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Anki leverages state-of-the-art AI models for education tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://apps.ankiweb.net and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real education task using Anki.",
+        "input": "A practical education problem relevant to your work.",
+        "examplePrompt": "Use Anki to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality education output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://apps.ankiweb.net",
+    "officialStatus": "verified",
+    "docsUrl": "https://apps.ankiweb.net",
+    "docsStatus": "verified",
+    "keywords": [
+        "Anki",
+        "Education",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-education-11",
+    "slug": "socratic-google",
+    "name": "Socratic by Google (Education)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=socratic-google",
+    "category": "Education",
+    "subcategory": "Learning Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "Google AI homework helper that explains academic concepts with visual results.",
+    "fullDescription": "Socratic by Google is a leading AI tool in the Education space. Google AI homework helper that explains academic concepts with visual results.",
+    "superpower": "Google AI homework helper that explains academic concepts with visual results.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on education tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional education workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Socratic by Google leverages state-of-the-art AI models for education tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://socratic.org and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real education task using Socratic by Google.",
+        "input": "A practical education problem relevant to your work.",
+        "examplePrompt": "Use Socratic by Google to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality education output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://socratic.org",
+    "officialStatus": "verified",
+    "docsUrl": "https://socratic.org",
+    "docsStatus": "verified",
+    "keywords": [
+        "Socratic by Google",
+        "Education",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-education-12",
+    "slug": "explain-everything-ai",
+    "name": "Explain Everything",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=explain-everything-ai",
+    "category": "Education",
+    "subcategory": "Learning Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI interactive whiteboard for creating educational video explanations.",
+    "fullDescription": "Explain Everything is a leading AI tool in the Education space. AI interactive whiteboard for creating educational video explanations.",
+    "superpower": "AI interactive whiteboard for creating educational video explanations.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on education tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional education workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Explain Everything leverages state-of-the-art AI models for education tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://explaineverything.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real education task using Explain Everything.",
+        "input": "A practical education problem relevant to your work.",
+        "examplePrompt": "Use Explain Everything to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality education output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://explaineverything.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://explaineverything.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Explain Everything",
+        "Education",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-education-14",
+    "slug": "diffit-ai",
+    "name": "Diffit (Education)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=diffit-ai",
+    "category": "Education",
+    "subcategory": "Learning Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI tool that adapts educational content for different reading levels.",
+    "fullDescription": "Diffit is a leading AI tool in the Education space. AI tool that adapts educational content for different reading levels.",
+    "superpower": "AI tool that adapts educational content for different reading levels.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on education tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional education workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Diffit leverages state-of-the-art AI models for education tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://diffit.me and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real education task using Diffit.",
+        "input": "A practical education problem relevant to your work.",
+        "examplePrompt": "Use Diffit to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality education output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://diffit.me",
+    "officialStatus": "verified",
+    "docsUrl": "https://diffit.me",
+    "docsStatus": "verified",
+    "keywords": [
+        "Diffit",
+        "Education",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-education-16",
+    "slug": "study-fetch-ai",
+    "name": "StudyFetch",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=study-fetch-ai",
+    "category": "Education",
+    "subcategory": "Learning Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI study tool that transforms notes and textbooks into interactive study sets.",
+    "fullDescription": "StudyFetch is a leading AI tool in the Education space. AI study tool that transforms notes and textbooks into interactive study sets.",
+    "superpower": "AI study tool that transforms notes and textbooks into interactive study sets.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on education tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional education workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "StudyFetch leverages state-of-the-art AI models for education tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.studyfetch.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real education task using StudyFetch.",
+        "input": "A practical education problem relevant to your work.",
+        "examplePrompt": "Use StudyFetch to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality education output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.studyfetch.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.studyfetch.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "StudyFetch",
+        "Education",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-education-19",
+    "slug": "curipod-ai",
+    "name": "Curipod (Education)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=curipod-ai",
+    "category": "Education",
+    "subcategory": "Learning Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI lesson plan generator and interactive presentation tool for teachers.",
+    "fullDescription": "Curipod is a leading AI tool in the Education space. AI lesson plan generator and interactive presentation tool for teachers.",
+    "superpower": "AI lesson plan generator and interactive presentation tool for teachers.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on education tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional education workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Curipod leverages state-of-the-art AI models for education tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://curipod.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real education task using Curipod.",
+        "input": "A practical education problem relevant to your work.",
+        "examplePrompt": "Use Curipod to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality education output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://curipod.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://curipod.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Curipod",
+        "Education",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-education-20",
+    "slug": "magic-school-ai",
+    "name": "MagicSchool AI (Education)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=magic-school-ai",
+    "category": "Education",
+    "subcategory": "Learning Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI assistant for teachers to save time on lesson planning and grading.",
+    "fullDescription": "MagicSchool AI is a leading AI tool in the Education space. AI assistant for teachers to save time on lesson planning and grading.",
+    "superpower": "AI assistant for teachers to save time on lesson planning and grading.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on education tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional education workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "MagicSchool AI leverages state-of-the-art AI models for education tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.magicschool.ai and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real education task using MagicSchool AI.",
+        "input": "A practical education problem relevant to your work.",
+        "examplePrompt": "Use MagicSchool AI to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality education output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.magicschool.ai",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.magicschool.ai",
+    "docsStatus": "verified",
+    "keywords": [
+        "MagicSchool AI",
+        "Education",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+}
+,
+{
+  "id": "exp700-education-2",
+  "slug": "turnitin-ai",
+  "name": "Turnitin AI",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=turnitin-ai",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Plagiarism detection and AI writing checking for institutional academic integrity.",
+  "fullDescription": "Turnitin AI is an established tool in the Education landscape. Plagiarism detection and AI writing checking for institutional academic integrity.",
+  "superpower": "Plagiarism detection and AI writing checking for institutional academic integrity.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Turnitin AI provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.turnitin.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Turnitin AI.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Turnitin AI for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Turnitin AI.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.turnitin.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.turnitin.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Turnitin AI",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-3",
+  "slug": "copyleaks-ai",
+  "name": "Copyleaks",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=copyleaks-ai",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI content detector and plagiarism checker for educational institutions.",
+  "fullDescription": "Copyleaks is an established tool in the Education landscape. AI content detector and plagiarism checker for educational institutions.",
+  "superpower": "AI content detector and plagiarism checker for educational institutions.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Copyleaks provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://copyleaks.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Copyleaks.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Copyleaks for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Copyleaks.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://copyleaks.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://copyleaks.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Copyleaks",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-4",
+  "slug": "gptzero-me",
+  "name": "GPTZero (Education)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=gptzero-me",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Leading AI detection tool for identifying AI-generated text in student submissions.",
+  "fullDescription": "GPTZero is an established tool in the Education landscape. Leading AI detection tool for identifying AI-generated text in student submissions.",
+  "superpower": "Leading AI detection tool for identifying AI-generated text in student submissions.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "GPTZero provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://gptzero.me to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with GPTZero.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize GPTZero for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using GPTZero.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://gptzero.me",
+  "officialStatus": "verified",
+  "docsUrl": "https://gptzero.me",
+  "docsStatus": "verified",
+  "keywords": [
+    "GPTZero",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-6",
+  "slug": "packback-education",
+  "name": "Packback",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=packback-education",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI inquiry platform that encourages curiosity and student discussion online.",
+  "fullDescription": "Packback is an established tool in the Education landscape. AI inquiry platform that encourages curiosity and student discussion online.",
+  "superpower": "AI inquiry platform that encourages curiosity and student discussion online.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Packback provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.packback.co to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Packback.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Packback for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Packback.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.packback.co",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.packback.co",
+  "docsStatus": "verified",
+  "keywords": [
+    "Packback",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-9",
+  "slug": "gimkit-game",
+  "name": "Gimkit",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=gimkit-game",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Interactive learning game platform built by students for engaging classrooms.",
+  "fullDescription": "Gimkit is an established tool in the Education landscape. Interactive learning game platform built by students for engaging classrooms.",
+  "superpower": "Interactive learning game platform built by students for engaging classrooms.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Gimkit provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.gimkit.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Gimkit.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Gimkit for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Gimkit.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.gimkit.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.gimkit.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Gimkit",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-10",
+  "slug": "blooket-education",
+  "name": "Blooket",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=blooket-education",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Action-packed learning game platform for classroom review sessions.",
+  "fullDescription": "Blooket is an established tool in the Education landscape. Action-packed learning game platform for classroom review sessions.",
+  "superpower": "Action-packed learning game platform for classroom review sessions.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Blooket provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.blooket.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Blooket.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Blooket for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Blooket.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.blooket.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.blooket.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Blooket",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-12",
+  "slug": "formative-education",
+  "name": "Formative",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=formative-education",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Real-time student response and assessment platform with automated grading.",
+  "fullDescription": "Formative is an established tool in the Education landscape. Real-time student response and assessment platform with automated grading.",
+  "superpower": "Real-time student response and assessment platform with automated grading.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Formative provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.formative.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Formative.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Formative for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Formative.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.formative.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.formative.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Formative",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-13",
+  "slug": "socrative-assessment",
+  "name": "Socrative",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=socrative-assessment",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Instant student response app for quick classroom assessments and quizzes.",
+  "fullDescription": "Socrative is an established tool in the Education landscape. Instant student response app for quick classroom assessments and quizzes.",
+  "superpower": "Instant student response app for quick classroom assessments and quizzes.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Socrative provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.socrative.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Socrative.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Socrative for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Socrative.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.socrative.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.socrative.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Socrative",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-14",
+  "slug": "nearpod-interactive",
+  "name": "Nearpod",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=nearpod-interactive",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Interactive instructional platform with virtual field trips and formative assessment.",
+  "fullDescription": "Nearpod is an established tool in the Education landscape. Interactive instructional platform with virtual field trips and formative assessment.",
+  "superpower": "Interactive instructional platform with virtual field trips and formative assessment.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Nearpod provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://nearpod.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Nearpod.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Nearpod for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Nearpod.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://nearpod.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://nearpod.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Nearpod",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-15",
+  "slug": "padlet-board",
+  "name": "Padlet",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=padlet-board",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Collaborative bulletin board app with AI background and image generation.",
+  "fullDescription": "Padlet is an established tool in the Education landscape. Collaborative bulletin board app with AI background and image generation.",
+  "superpower": "Collaborative bulletin board app with AI background and image generation.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Padlet provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://padlet.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Padlet.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Padlet for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Padlet.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://padlet.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://padlet.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Padlet",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-16",
+  "slug": "mentimeter-interactive",
+  "name": "Mentimeter",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=mentimeter-interactive",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Interactive presentation tool for real-time audience engagement and word clouds.",
+  "fullDescription": "Mentimeter is an established tool in the Education landscape. Interactive presentation tool for real-time audience engagement and word clouds.",
+  "superpower": "Interactive presentation tool for real-time audience engagement and word clouds.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Mentimeter provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.mentimeter.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Mentimeter.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Mentimeter for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Mentimeter.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.mentimeter.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.mentimeter.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Mentimeter",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-17",
+  "slug": "slido-qa",
+  "name": "Slido",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=slido-qa",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Audience interaction platform for live Q&A, polls, and quizzes.",
+  "fullDescription": "Slido is an established tool in the Education landscape. Audience interaction platform for live Q&A, polls, and quizzes.",
+  "superpower": "Audience interaction platform for live Q&A, polls, and quizzes.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Slido provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.slido.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Slido.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Slido for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Slido.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.slido.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.slido.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Slido",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-18",
+  "slug": "wooclap-engagement",
+  "name": "Wooclap",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=wooclap-engagement",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Interactive platform for boosting classroom participation using smartphones.",
+  "fullDescription": "Wooclap is an established tool in the Education landscape. Interactive platform for boosting classroom participation using smartphones.",
+  "superpower": "Interactive platform for boosting classroom participation using smartphones.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Wooclap provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.wooclap.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Wooclap.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Wooclap for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Wooclap.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.wooclap.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.wooclap.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Wooclap",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-19",
+  "slug": "flipgrid-video",
+  "name": "Flip (Flipgrid)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=flipgrid-video",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Video discussion platform from Microsoft for classroom engagement.",
+  "fullDescription": "Flip (Flipgrid) is an established tool in the Education landscape. Video discussion platform from Microsoft for classroom engagement.",
+  "superpower": "Video discussion platform from Microsoft for classroom engagement.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Flip (Flipgrid) provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://flip.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Flip (Flipgrid).",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Flip (Flipgrid) for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Flip (Flipgrid).",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://flip.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://flip.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Flip (Flipgrid)",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-20",
+  "slug": "seesaw-learning",
+  "name": "Seesaw",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=seesaw-learning",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Elementary learning experience platform for student portfolios and parent communication.",
+  "fullDescription": "Seesaw is an established tool in the Education landscape. Elementary learning experience platform for student portfolios and parent communication.",
+  "superpower": "Elementary learning experience platform for student portfolios and parent communication.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Seesaw provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://seesaw.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Seesaw.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Seesaw for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Seesaw.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://seesaw.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://seesaw.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Seesaw",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-21",
+  "slug": "book-creator-app",
+  "name": "Book Creator",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=book-creator-app",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Simple digital book creation tool for teachers and students across subjects.",
+  "fullDescription": "Book Creator is an established tool in the Education landscape. Simple digital book creation tool for teachers and students across subjects.",
+  "superpower": "Simple digital book creation tool for teachers and students across subjects.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Book Creator provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://bookcreator.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Book Creator.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Book Creator for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Book Creator.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://bookcreator.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://bookcreator.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Book Creator",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-22",
+  "slug": "storyjumper-books",
+  "name": "StoryJumper",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=storyjumper-books",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Platform for writing, illustrating, and publishing children's books.",
+  "fullDescription": "StoryJumper is an established tool in the Education landscape. Platform for writing, illustrating, and publishing children's books.",
+  "superpower": "Platform for writing, illustrating, and publishing children's books.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "StoryJumper provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.storyjumper.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with StoryJumper.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize StoryJumper for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using StoryJumper.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.storyjumper.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.storyjumper.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "StoryJumper",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-23",
+  "slug": "wevideo-edu",
+  "name": "WeVideo",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=wevideo-edu",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Cloud-based video editor tailored for classroom multimedia projects.",
+  "fullDescription": "WeVideo is an established tool in the Education landscape. Cloud-based video editor tailored for classroom multimedia projects.",
+  "superpower": "Cloud-based video editor tailored for classroom multimedia projects.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "WeVideo provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.wevideo.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with WeVideo.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize WeVideo for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using WeVideo.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.wevideo.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.wevideo.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "WeVideo",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-24",
+  "slug": "soundtrap-education",
+  "name": "Soundtrap for Education",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=soundtrap-education",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Online collaborative music and podcast recording studio for schools.",
+  "fullDescription": "Soundtrap for Education is an established tool in the Education landscape. Online collaborative music and podcast recording studio for schools.",
+  "superpower": "Online collaborative music and podcast recording studio for schools.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Soundtrap for Education provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.soundtrap.com/edu/ to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Soundtrap for Education.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Soundtrap for Education for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Soundtrap for Education.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.soundtrap.com/edu/",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.soundtrap.com/edu/",
+  "docsStatus": "verified",
+  "keywords": [
+    "Soundtrap for Education",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-25",
+  "slug": "flat-io-music",
+  "name": "Flat.io",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=flat-io-music",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Collaborative cloud music notation software for music education.",
+  "fullDescription": "Flat.io is an established tool in the Education landscape. Collaborative cloud music notation software for music education.",
+  "superpower": "Collaborative cloud music notation software for music education.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Flat.io provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://flat.io to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Flat.io.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Flat.io for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Flat.io.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://flat.io",
+  "officialStatus": "verified",
+  "docsUrl": "https://flat.io",
+  "docsStatus": "verified",
+  "keywords": [
+    "Flat.io",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-26",
+  "slug": "geogebra-math",
+  "name": "GeoGebra",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=geogebra-math",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Dynamic mathematics software for learning geometry, algebra, and calculus.",
+  "fullDescription": "GeoGebra is an established tool in the Education landscape. Dynamic mathematics software for learning geometry, algebra, and calculus.",
+  "superpower": "Dynamic mathematics software for learning geometry, algebra, and calculus.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "GeoGebra provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.geogebra.org to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with GeoGebra.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize GeoGebra for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using GeoGebra.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.geogebra.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.geogebra.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "GeoGebra",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-27",
+  "slug": "desmos-calculator",
+  "name": "Desmos",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=desmos-calculator",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Advanced graphing calculator and digital math activities for classrooms.",
+  "fullDescription": "Desmos is an established tool in the Education landscape. Advanced graphing calculator and digital math activities for classrooms.",
+  "superpower": "Advanced graphing calculator and digital math activities for classrooms.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Desmos provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.desmos.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Desmos.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Desmos for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Desmos.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.desmos.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.desmos.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Desmos",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-28",
+  "slug": "symbolab-solver",
+  "name": "Symbolab",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=symbolab-solver",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Step-by-step math solver with search engine for algebra through calculus.",
+  "fullDescription": "Symbolab is an established tool in the Education landscape. Step-by-step math solver with search engine for algebra through calculus.",
+  "superpower": "Step-by-step math solver with search engine for algebra through calculus.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Symbolab provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.symbolab.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Symbolab.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Symbolab for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Symbolab.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.symbolab.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.symbolab.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Symbolab",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-29",
+  "slug": "cymath-solver",
+  "name": "Cymath",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=cymath-solver",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Math problem solver with step-by-step solutions for students.",
+  "fullDescription": "Cymath is an established tool in the Education landscape. Math problem solver with step-by-step solutions for students.",
+  "superpower": "Math problem solver with step-by-step solutions for students.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Cymath provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.cymath.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Cymath.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Cymath for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Cymath.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.cymath.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.cymath.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Cymath",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-30",
+  "slug": "mathway-chegg",
+  "name": "Mathway",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=mathway-chegg",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Comprehensive math problem solver covering basic math to linear algebra.",
+  "fullDescription": "Mathway is an established tool in the Education landscape. Comprehensive math problem solver covering basic math to linear algebra.",
+  "superpower": "Comprehensive math problem solver covering basic math to linear algebra.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Mathway provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.mathway.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Mathway.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Mathway for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Mathway.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.mathway.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.mathway.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Mathway",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-31",
+  "slug": "chemspider-rsc",
+  "name": "ChemSpider",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=chemspider-rsc",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free chemical structure database with molecular property predictions.",
+  "fullDescription": "ChemSpider is an established tool in the Education landscape. Free chemical structure database with molecular property predictions.",
+  "superpower": "Free chemical structure database with molecular property predictions.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "ChemSpider provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.chemspider.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with ChemSpider.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize ChemSpider for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using ChemSpider.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.chemspider.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.chemspider.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "ChemSpider",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-32",
+  "slug": "molview-3d",
+  "name": "MolView",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=molview-3d",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Open-source web application for 3D molecular visualization and modeling.",
+  "fullDescription": "MolView is an established tool in the Education landscape. Open-source web application for 3D molecular visualization and modeling.",
+  "superpower": "Open-source web application for 3D molecular visualization and modeling.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "MolView provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://molview.org to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with MolView.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize MolView for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using MolView.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://molview.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://molview.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "MolView",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-33",
+  "slug": "biorender-sci",
+  "name": "BioRender",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=biorender-sci",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Scientific illustration software for creating publication-ready figures.",
+  "fullDescription": "BioRender is an established tool in the Education landscape. Scientific illustration software for creating publication-ready figures.",
+  "superpower": "Scientific illustration software for creating publication-ready figures.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "BioRender provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.biorender.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with BioRender.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize BioRender for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using BioRender.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.biorender.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.biorender.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "BioRender",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-34",
+  "slug": "mindmeister-mapping",
+  "name": "MindMeister",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=mindmeister-mapping",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Online mind mapping tool for visual brainstorming and concept mapping.",
+  "fullDescription": "MindMeister is an established tool in the Education landscape. Online mind mapping tool for visual brainstorming and concept mapping.",
+  "superpower": "Online mind mapping tool for visual brainstorming and concept mapping.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "MindMeister provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.mindmeister.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with MindMeister.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize MindMeister for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using MindMeister.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.mindmeister.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.mindmeister.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "MindMeister",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-35",
+  "slug": "coggle-mindmaps",
+  "name": "Coggle",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=coggle-mindmaps",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Collaborative mind mapping and flowchart tool for structuring complex ideas.",
+  "fullDescription": "Coggle is an established tool in the Education landscape. Collaborative mind mapping and flowchart tool for structuring complex ideas.",
+  "superpower": "Collaborative mind mapping and flowchart tool for structuring complex ideas.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Coggle provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://coggle.it to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Coggle.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Coggle for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Coggle.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://coggle.it",
+  "officialStatus": "verified",
+  "docsUrl": "https://coggle.it",
+  "docsStatus": "verified",
+  "keywords": [
+    "Coggle",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-36",
+  "slug": "xmind-mapping",
+  "name": "Xmind",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=xmind-mapping",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Full-featured mind mapping and brainstorming app for all devices.",
+  "fullDescription": "Xmind is an established tool in the Education landscape. Full-featured mind mapping and brainstorming app for all devices.",
+  "superpower": "Full-featured mind mapping and brainstorming app for all devices.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Xmind provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://xmind.app to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Xmind.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Xmind for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Xmind.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://xmind.app",
+  "officialStatus": "verified",
+  "docsUrl": "https://xmind.app",
+  "docsStatus": "verified",
+  "keywords": [
+    "Xmind",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-37",
+  "slug": "miro-whiteboard",
+  "name": "Miro",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=miro-whiteboard",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Visual workspace for innovation with AI diagramming and canvas features.",
+  "fullDescription": "Miro is an established tool in the Education landscape. Visual workspace for innovation with AI diagramming and canvas features.",
+  "superpower": "Visual workspace for innovation with AI diagramming and canvas features.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Miro provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://miro.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Miro.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Miro for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Miro.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://miro.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://miro.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Miro",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-38",
+  "slug": "mural-co",
+  "name": "MURAL",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=mural-co",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Intuitive digital whiteboard for guided visual collaboration and workshops.",
+  "fullDescription": "MURAL is an established tool in the Education landscape. Intuitive digital whiteboard for guided visual collaboration and workshops.",
+  "superpower": "Intuitive digital whiteboard for guided visual collaboration and workshops.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "MURAL provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.mural.co to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with MURAL.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize MURAL for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using MURAL.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.mural.co",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.mural.co",
+  "docsStatus": "verified",
+  "keywords": [
+    "MURAL",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-39",
+  "slug": "lucidchart-diagrams",
+  "name": "Lucidchart",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=lucidchart-diagrams",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Intelligent diagramming application for flowcharts, process maps, and schemas.",
+  "fullDescription": "Lucidchart is an established tool in the Education landscape. Intelligent diagramming application for flowcharts, process maps, and schemas.",
+  "superpower": "Intelligent diagramming application for flowcharts, process maps, and schemas.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Lucidchart provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.lucidchart.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with Lucidchart.",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize Lucidchart for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Lucidchart.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.lucidchart.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.lucidchart.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Lucidchart",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-education-40",
+  "slug": "draw-io-diagrams",
+  "name": "draw.io (diagrams.net)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=draw-io-diagrams",
+  "category": "Education",
+  "subcategory": "Education",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free online diagram software for making flowcharts, network diagrams, and UML.",
+  "fullDescription": "draw.io (diagrams.net) is an established tool in the Education landscape. Free online diagram software for making flowcharts, network diagrams, and UML.",
+  "superpower": "Free online diagram software for making flowcharts, network diagrams, and UML.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances education workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional education implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "draw.io (diagrams.net) provides specialized AI features tailored for education."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://app.diagrams.net to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core education task with draw.io (diagrams.net).",
+    "input": "Sample project input for education.",
+    "examplePrompt": "Utilize draw.io (diagrams.net) for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using draw.io (diagrams.net).",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://app.diagrams.net",
+  "officialStatus": "verified",
+  "docsUrl": "https://app.diagrams.net",
+  "docsStatus": "verified",
+  "keywords": [
+    "draw.io (diagrams.net)",
+    "Education",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+}
 ];

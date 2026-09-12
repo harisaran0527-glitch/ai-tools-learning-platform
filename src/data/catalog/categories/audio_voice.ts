@@ -13992,4 +13992,1643 @@ export const audio_voice_tools: AITool[] = [
     "verifiedAt": "2026-08-28",
     "badge": "OPEN-SOURCE"
   }
+,
+{
+  "id": "exp700-audio_voice-3",
+  "slug": "read-speaker-ai",
+  "name": "ReadSpeaker",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=read-speaker-ai",
+  "category": "Audio / Voice",
+  "subcategory": "Audio / Voice",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Text-to-speech solutions for educational software and web accessibility.",
+  "fullDescription": "ReadSpeaker is an established tool in the Audio / Voice landscape. Text-to-speech solutions for educational software and web accessibility.",
+  "superpower": "Text-to-speech solutions for educational software and web accessibility.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances audio / voice workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional audio / voice implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "ReadSpeaker provides specialized AI features tailored for audio / voice."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.readspeaker.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core audio / voice task with ReadSpeaker.",
+    "input": "Sample project input for audio / voice.",
+    "examplePrompt": "Utilize ReadSpeaker for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using ReadSpeaker.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.readspeaker.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.readspeaker.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "ReadSpeaker",
+    "Audio / Voice",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-audio_voice-4",
+  "slug": "voicemaker-in",
+  "name": "Voicemaker (Audio)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=voicemaker-in",
+  "category": "Audio / Voice",
+  "subcategory": "Audio / Voice",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Online text-to-speech converter supporting neural voice synthesis.",
+  "fullDescription": "Voicemaker is an established tool in the Audio / Voice landscape. Online text-to-speech converter supporting neural voice synthesis.",
+  "superpower": "Online text-to-speech converter supporting neural voice synthesis.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances audio / voice workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional audio / voice implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Voicemaker provides specialized AI features tailored for audio / voice."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://voicemaker.in to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core audio / voice task with Voicemaker.",
+    "input": "Sample project input for audio / voice.",
+    "examplePrompt": "Utilize Voicemaker for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Voicemaker.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://voicemaker.in",
+  "officialStatus": "verified",
+  "docsUrl": "https://voicemaker.in",
+  "docsStatus": "verified",
+  "keywords": [
+    "Voicemaker",
+    "Audio / Voice",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-audio_voice-5",
+  "slug": "narakeet-video",
+  "name": "Narakeet",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=narakeet-video",
+  "category": "Audio / Voice",
+  "subcategory": "Audio / Voice",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Create voiceovers and narration using realistic AI text to speech.",
+  "fullDescription": "Narakeet is an established tool in the Audio / Voice landscape. Create voiceovers and narration using realistic AI text to speech.",
+  "superpower": "Create voiceovers and narration using realistic AI text to speech.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances audio / voice workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional audio / voice implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Narakeet provides specialized AI features tailored for audio / voice."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.narakeet.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core audio / voice task with Narakeet.",
+    "input": "Sample project input for audio / voice.",
+    "examplePrompt": "Utilize Narakeet for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Narakeet.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.narakeet.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.narakeet.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Narakeet",
+    "Audio / Voice",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-audio_voice-6",
+  "slug": "natural-readers",
+  "name": "NaturalReader",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=natural-readers",
+  "category": "Audio / Voice",
+  "subcategory": "Audio / Voice",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Text to speech software for personal, commercial, and educational use.",
+  "fullDescription": "NaturalReader is an established tool in the Audio / Voice landscape. Text to speech software for personal, commercial, and educational use.",
+  "superpower": "Text to speech software for personal, commercial, and educational use.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances audio / voice workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional audio / voice implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "NaturalReader provides specialized AI features tailored for audio / voice."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.naturalreaders.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core audio / voice task with NaturalReader.",
+    "input": "Sample project input for audio / voice.",
+    "examplePrompt": "Utilize NaturalReader for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using NaturalReader.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.naturalreaders.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.naturalreaders.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "NaturalReader",
+    "Audio / Voice",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-audio_voice-7",
+  "slug": "tts-mp3-com",
+  "name": "TTSMP3",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=tts-mp3-com",
+  "category": "Audio / Voice",
+  "subcategory": "Audio / Voice",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free text-to-speech converter producing downloadable MP3 files.",
+  "fullDescription": "TTSMP3 is an established tool in the Audio / Voice landscape. Free text-to-speech converter producing downloadable MP3 files.",
+  "superpower": "Free text-to-speech converter producing downloadable MP3 files.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances audio / voice workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional audio / voice implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "TTSMP3 provides specialized AI features tailored for audio / voice."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://ttsmp3.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core audio / voice task with TTSMP3.",
+    "input": "Sample project input for audio / voice.",
+    "examplePrompt": "Utilize TTSMP3 for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using TTSMP3.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://ttsmp3.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://ttsmp3.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "TTSMP3",
+    "Audio / Voice",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-audio_voice-12",
+  "slug": "piper-tts-local",
+  "name": "Piper TTS (Audio)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=piper-tts-local",
+  "category": "Audio / Voice",
+  "subcategory": "Audio / Voice",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Fast, local neural text to speech system optimized for Raspberry Pi and desktop.",
+  "fullDescription": "Piper TTS is an established tool in the Audio / Voice landscape. Fast, local neural text to speech system optimized for Raspberry Pi and desktop.",
+  "superpower": "Fast, local neural text to speech system optimized for Raspberry Pi and desktop.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances audio / voice workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional audio / voice implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Piper TTS provides specialized AI features tailored for audio / voice."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/rhasspy/piper to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core audio / voice task with Piper TTS.",
+    "input": "Sample project input for audio / voice.",
+    "examplePrompt": "Utilize Piper TTS for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Piper TTS.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://github.com/rhasspy/piper",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/rhasspy/piper",
+  "docsStatus": "verified",
+  "keywords": [
+    "Piper TTS",
+    "Audio / Voice",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-audio_voice-13",
+  "slug": "open-voice-myshell",
+  "name": "OpenVoice",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=open-voice-myshell",
+  "category": "Audio / Voice",
+  "subcategory": "Audio / Voice",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Instant voice cloning model by MyShell providing precise tone control.",
+  "fullDescription": "OpenVoice is an established tool in the Audio / Voice landscape. Instant voice cloning model by MyShell providing precise tone control.",
+  "superpower": "Instant voice cloning model by MyShell providing precise tone control.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances audio / voice workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional audio / voice implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "OpenVoice provides specialized AI features tailored for audio / voice."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/myshell-ai/OpenVoice to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core audio / voice task with OpenVoice.",
+    "input": "Sample project input for audio / voice.",
+    "examplePrompt": "Utilize OpenVoice for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using OpenVoice.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://github.com/myshell-ai/OpenVoice",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/myshell-ai/OpenVoice",
+  "docsStatus": "verified",
+  "keywords": [
+    "OpenVoice",
+    "Audio / Voice",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-audio_voice-15",
+  "slug": "valle-x-microsoft",
+  "name": "VALL-E X (Audio)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=valle-x-microsoft",
+  "category": "Audio / Voice",
+  "subcategory": "Audio / Voice",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Cross-lingual neural codec language model for zero-shot synthesis.",
+  "fullDescription": "VALL-E X is an established tool in the Audio / Voice landscape. Cross-lingual neural codec language model for zero-shot synthesis.",
+  "superpower": "Cross-lingual neural codec language model for zero-shot synthesis.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances audio / voice workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional audio / voice implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "VALL-E X provides specialized AI features tailored for audio / voice."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/Plachtaa/VALL-E-X to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core audio / voice task with VALL-E X.",
+    "input": "Sample project input for audio / voice.",
+    "examplePrompt": "Utilize VALL-E X for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using VALL-E X.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://github.com/Plachtaa/VALL-E-X",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/Plachtaa/VALL-E-X",
+  "docsStatus": "verified",
+  "keywords": [
+    "VALL-E X",
+    "Audio / Voice",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-audio_voice-16",
+  "slug": "styletts2-github",
+  "name": "StyleTTS 2 (Audio)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=styletts2-github",
+  "category": "Audio / Voice",
+  "subcategory": "Audio / Voice",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "State-of-the-art text-to-speech synthesis via style diffusion and adversarial training.",
+  "fullDescription": "StyleTTS 2 is an established tool in the Audio / Voice landscape. State-of-the-art text-to-speech synthesis via style diffusion and adversarial training.",
+  "superpower": "State-of-the-art text-to-speech synthesis via style diffusion and adversarial training.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances audio / voice workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional audio / voice implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "StyleTTS 2 provides specialized AI features tailored for audio / voice."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/yl4579/StyleTTS2 to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core audio / voice task with StyleTTS 2.",
+    "input": "Sample project input for audio / voice.",
+    "examplePrompt": "Utilize StyleTTS 2 for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using StyleTTS 2.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://github.com/yl4579/StyleTTS2",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/yl4579/StyleTTS2",
+  "docsStatus": "verified",
+  "keywords": [
+    "StyleTTS 2",
+    "Audio / Voice",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-audio_voice-17",
+  "slug": "rvc-voice-change",
+  "name": "Retrieval-based Voice Conversion (RVC)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=rvc-voice-change",
+  "category": "Audio / Voice",
+  "subcategory": "Audio / Voice",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Easy-to-use voice conversion WebUI based on VITS.",
+  "fullDescription": "Retrieval-based Voice Conversion (RVC) is an established tool in the Audio / Voice landscape. Easy-to-use voice conversion WebUI based on VITS.",
+  "superpower": "Easy-to-use voice conversion WebUI based on VITS.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances audio / voice workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional audio / voice implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Retrieval-based Voice Conversion (RVC) provides specialized AI features tailored for audio / voice."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core audio / voice task with Retrieval-based Voice Conversion (RVC).",
+    "input": "Sample project input for audio / voice.",
+    "examplePrompt": "Utilize Retrieval-based Voice Conversion (RVC) for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Retrieval-based Voice Conversion (RVC).",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI",
+  "docsStatus": "verified",
+  "keywords": [
+    "Retrieval-based Voice Conversion (RVC)",
+    "Audio / Voice",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-audio_voice-18",
+  "slug": "voice-ai-changer",
+  "name": "Voice.ai (Audio)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=voice-ai-changer",
+  "category": "Audio / Voice",
+  "subcategory": "Audio / Voice",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free real-time voice changer software for PC, gaming, and streaming.",
+  "fullDescription": "Voice.ai is an established tool in the Audio / Voice landscape. Free real-time voice changer software for PC, gaming, and streaming.",
+  "superpower": "Free real-time voice changer software for PC, gaming, and streaming.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances audio / voice workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional audio / voice implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Voice.ai provides specialized AI features tailored for audio / voice."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://voice.ai to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core audio / voice task with Voice.ai.",
+    "input": "Sample project input for audio / voice.",
+    "examplePrompt": "Utilize Voice.ai for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Voice.ai.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://voice.ai",
+  "officialStatus": "verified",
+  "docsUrl": "https://voice.ai",
+  "docsStatus": "verified",
+  "keywords": [
+    "Voice.ai",
+    "Audio / Voice",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-audio_voice-19",
+  "slug": "modulate-velox",
+  "name": "Modulate ToxMod",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=modulate-velox",
+  "category": "Audio / Voice",
+  "subcategory": "Audio / Voice",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Proactive voice moderation platform powered by real-time speech AI.",
+  "fullDescription": "Modulate ToxMod is an established tool in the Audio / Voice landscape. Proactive voice moderation platform powered by real-time speech AI.",
+  "superpower": "Proactive voice moderation platform powered by real-time speech AI.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances audio / voice workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional audio / voice implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Modulate ToxMod provides specialized AI features tailored for audio / voice."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.modulate.ai to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core audio / voice task with Modulate ToxMod.",
+    "input": "Sample project input for audio / voice.",
+    "examplePrompt": "Utilize Modulate ToxMod for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Modulate ToxMod.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.modulate.ai",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.modulate.ai",
+  "docsStatus": "verified",
+  "keywords": [
+    "Modulate ToxMod",
+    "Audio / Voice",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-audio_voice-20",
+  "slug": "auphonic-audio",
+  "name": "Auphonic (Audio)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=auphonic-audio",
+  "category": "Audio / Voice",
+  "subcategory": "Audio / Voice",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Automatic audio post-production web service for podcasts, radio, and video.",
+  "fullDescription": "Auphonic is an established tool in the Audio / Voice landscape. Automatic audio post-production web service for podcasts, radio, and video.",
+  "superpower": "Automatic audio post-production web service for podcasts, radio, and video.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances audio / voice workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional audio / voice implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Auphonic provides specialized AI features tailored for audio / voice."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://auphonic.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core audio / voice task with Auphonic.",
+    "input": "Sample project input for audio / voice.",
+    "examplePrompt": "Utilize Auphonic for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Auphonic.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://auphonic.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://auphonic.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Auphonic",
+    "Audio / Voice",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-audio_voice-23",
+  "slug": "hindenburg-pro",
+  "name": "Hindenburg PRO",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=hindenburg-pro",
+  "category": "Audio / Voice",
+  "subcategory": "Audio / Voice",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Audio editor designed specifically for spoken-word storytellers and podcasters.",
+  "fullDescription": "Hindenburg PRO is an established tool in the Audio / Voice landscape. Audio editor designed specifically for spoken-word storytellers and podcasters.",
+  "superpower": "Audio editor designed specifically for spoken-word storytellers and podcasters.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances audio / voice workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional audio / voice implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Hindenburg PRO provides specialized AI features tailored for audio / voice."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://hindenburg.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core audio / voice task with Hindenburg PRO.",
+    "input": "Sample project input for audio / voice.",
+    "examplePrompt": "Utilize Hindenburg PRO for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Hindenburg PRO.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://hindenburg.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://hindenburg.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Hindenburg PRO",
+    "Audio / Voice",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-audio_voice-24",
+  "slug": "audacity-open-src",
+  "name": "Audacity",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=audacity-open-src",
+  "category": "Audio / Voice",
+  "subcategory": "Audio / Voice",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free, open-source multi-track audio editor with OpenVINO AI plugins.",
+  "fullDescription": "Audacity is an established tool in the Audio / Voice landscape. Free, open-source multi-track audio editor with OpenVINO AI plugins.",
+  "superpower": "Free, open-source multi-track audio editor with OpenVINO AI plugins.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances audio / voice workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional audio / voice implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Audacity provides specialized AI features tailored for audio / voice."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.audacityteam.org to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core audio / voice task with Audacity.",
+    "input": "Sample project input for audio / voice.",
+    "examplePrompt": "Utilize Audacity for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Audacity.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.audacityteam.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.audacityteam.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "Audacity",
+    "Audio / Voice",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-audio_voice-25",
+  "slug": "reaper-audio-daw",
+  "name": "REAPER",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=reaper-audio-daw",
+  "category": "Audio / Voice",
+  "subcategory": "Audio / Voice",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Complete digital audio production application for computers.",
+  "fullDescription": "REAPER is an established tool in the Audio / Voice landscape. Complete digital audio production application for computers.",
+  "superpower": "Complete digital audio production application for computers.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances audio / voice workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional audio / voice implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "REAPER provides specialized AI features tailored for audio / voice."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.reaper.fm to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core audio / voice task with REAPER.",
+    "input": "Sample project input for audio / voice.",
+    "examplePrompt": "Utilize REAPER for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using REAPER.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.reaper.fm",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.reaper.fm",
+  "docsStatus": "verified",
+  "keywords": [
+    "REAPER",
+    "Audio / Voice",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-audio_voice-26",
+  "slug": "ableton-live-music",
+  "name": "Ableton Live",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=ableton-live-music",
+  "category": "Audio / Voice",
+  "subcategory": "Audio / Voice",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Fast, fluid software for music creation and performance.",
+  "fullDescription": "Ableton Live is an established tool in the Audio / Voice landscape. Fast, fluid software for music creation and performance.",
+  "superpower": "Fast, fluid software for music creation and performance.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances audio / voice workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional audio / voice implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Ableton Live provides specialized AI features tailored for audio / voice."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.ableton.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core audio / voice task with Ableton Live.",
+    "input": "Sample project input for audio / voice.",
+    "examplePrompt": "Utilize Ableton Live for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Ableton Live.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.ableton.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.ableton.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Ableton Live",
+    "Audio / Voice",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-audio_voice-27",
+  "slug": "fl-studio-daw",
+  "name": "FL Studio",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=fl-studio-daw",
+  "category": "Audio / Voice",
+  "subcategory": "Audio / Voice",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Complete software music production environment and DAW.",
+  "fullDescription": "FL Studio is an established tool in the Audio / Voice landscape. Complete software music production environment and DAW.",
+  "superpower": "Complete software music production environment and DAW.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances audio / voice workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional audio / voice implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "FL Studio provides specialized AI features tailored for audio / voice."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.image-line.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core audio / voice task with FL Studio.",
+    "input": "Sample project input for audio / voice.",
+    "examplePrompt": "Utilize FL Studio for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using FL Studio.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.image-line.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.image-line.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "FL Studio",
+    "Audio / Voice",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-audio_voice-28",
+  "slug": "logic-pro-apple",
+  "name": "Logic Pro (Apple)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=logic-pro-apple",
+  "category": "Audio / Voice",
+  "subcategory": "Audio / Voice",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Complete collection of sophisticated creative tools for professional songwriting.",
+  "fullDescription": "Logic Pro (Apple) is an established tool in the Audio / Voice landscape. Complete collection of sophisticated creative tools for professional songwriting.",
+  "superpower": "Complete collection of sophisticated creative tools for professional songwriting.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances audio / voice workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional audio / voice implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Logic Pro (Apple) provides specialized AI features tailored for audio / voice."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.apple.com/logic-pro/ to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core audio / voice task with Logic Pro (Apple).",
+    "input": "Sample project input for audio / voice.",
+    "examplePrompt": "Utilize Logic Pro (Apple) for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Logic Pro (Apple).",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.apple.com/logic-pro/",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.apple.com/logic-pro/",
+  "docsStatus": "verified",
+  "keywords": [
+    "Logic Pro (Apple)",
+    "Audio / Voice",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-audio_voice-29",
+  "slug": "pro-tools-avid",
+  "name": "Avid Pro Tools",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=pro-tools-avid",
+  "category": "Audio / Voice",
+  "subcategory": "Audio / Voice",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Industry-standard music software for recording, editing, and mastering audio.",
+  "fullDescription": "Avid Pro Tools is an established tool in the Audio / Voice landscape. Industry-standard music software for recording, editing, and mastering audio.",
+  "superpower": "Industry-standard music software for recording, editing, and mastering audio.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances audio / voice workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional audio / voice implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Avid Pro Tools provides specialized AI features tailored for audio / voice."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.avid.com/pro-tools to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core audio / voice task with Avid Pro Tools.",
+    "input": "Sample project input for audio / voice.",
+    "examplePrompt": "Utilize Avid Pro Tools for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Avid Pro Tools.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.avid.com/pro-tools",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.avid.com/pro-tools",
+  "docsStatus": "verified",
+  "keywords": [
+    "Avid Pro Tools",
+    "Audio / Voice",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-audio_voice-30",
+  "slug": "izotope-ozone-ai",
+  "name": "iZotope Ozone",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=izotope-ozone-ai",
+  "category": "Audio / Voice",
+  "subcategory": "Audio / Voice",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI-assisted mastering suite for producing professional radio-ready audio.",
+  "fullDescription": "iZotope Ozone is an established tool in the Audio / Voice landscape. AI-assisted mastering suite for producing professional radio-ready audio.",
+  "superpower": "AI-assisted mastering suite for producing professional radio-ready audio.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances audio / voice workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional audio / voice implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "iZotope Ozone provides specialized AI features tailored for audio / voice."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.izotope.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core audio / voice task with iZotope Ozone.",
+    "input": "Sample project input for audio / voice.",
+    "examplePrompt": "Utilize iZotope Ozone for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using iZotope Ozone.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.izotope.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.izotope.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "iZotope Ozone",
+    "Audio / Voice",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+}
 ];

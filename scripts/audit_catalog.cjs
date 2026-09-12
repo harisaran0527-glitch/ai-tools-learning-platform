@@ -57,6 +57,7 @@ const duplicateSlugs = [];
 const duplicateNames = [];
 
 detailedTools.forEach(tool => {
+  if (!tool) return;
   const slug = (tool.slug || '').toLowerCase();
   const name = (tool.name || '').toLowerCase();
 
@@ -90,6 +91,7 @@ let rejectedCount = 0;
 let websiteAppCreationCount = 0;
 
 detailedTools.forEach(tool => {
+  if (!tool) return;
   const url = (tool.officialUrl || '').trim();
   const cacheStatus = urlCache[url];
 
@@ -110,12 +112,7 @@ detailedTools.forEach(tool => {
   } else if (tool.verificationStatus === 'rejected') {
     rejectedCount++;
   } else if (url && !cacheStatus) {
-    // If has URL but not explicitly cached
-    if (tool.officialStatus === 'verified') {
-      verifiedReachable++;
-    } else {
-      candidateCount++;
-    }
+    needsReviewCount++;
   } else if (!url) {
     needsReviewCount++;
   }

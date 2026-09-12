@@ -10351,4 +10351,2530 @@ export const ppt_presentation_creation_tools: AITool[] = [
     "verifiedAt": "2026-08-28",
     "badge": "FREE-TIER"
   }
+,
+{
+    "id": "genuine-ppt_presentation_creation-4",
+    "slug": "canva-ai-presentations",
+    "name": "Canva AI Presentations",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=canva-ai-presentations",
+    "category": "PPT / Presentation Creation",
+    "subcategory": "Slide Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI-powered presentation maker with Magic Design and auto-layout capabilities.",
+    "fullDescription": "Canva AI Presentations is a leading AI tool in the PPT / Presentation Creation space. AI-powered presentation maker with Magic Design and auto-layout capabilities.",
+    "superpower": "AI-powered presentation maker with Magic Design and auto-layout capabilities.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on ppt / presentation creation tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional ppt / presentation creation workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Canva AI Presentations leverages state-of-the-art AI models for ppt / presentation creation tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.canva.com/presentations/ and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real ppt / presentation creation task using Canva AI Presentations.",
+        "input": "A practical ppt / presentation creation problem relevant to your work.",
+        "examplePrompt": "Use Canva AI Presentations to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality ppt / presentation creation output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.canva.com/presentations/",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.canva.com/presentations/",
+    "docsStatus": "verified",
+    "keywords": [
+        "Canva AI Presentations",
+        "PPT / Presentation Creation",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-ppt_presentation_creation-6",
+    "slug": "slidesgo-ai",
+    "name": "Slidesgo AI",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=slidesgo-ai",
+    "category": "PPT / Presentation Creation",
+    "subcategory": "Slide Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI-powered Google Slides and PowerPoint template generator with customization.",
+    "fullDescription": "Slidesgo AI is a leading AI tool in the PPT / Presentation Creation space. AI-powered Google Slides and PowerPoint template generator with customization.",
+    "superpower": "AI-powered Google Slides and PowerPoint template generator with customization.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on ppt / presentation creation tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional ppt / presentation creation workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Slidesgo AI leverages state-of-the-art AI models for ppt / presentation creation tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://slidesgo.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real ppt / presentation creation task using Slidesgo AI.",
+        "input": "A practical ppt / presentation creation problem relevant to your work.",
+        "examplePrompt": "Use Slidesgo AI to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality ppt / presentation creation output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://slidesgo.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://slidesgo.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Slidesgo AI",
+        "PPT / Presentation Creation",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-ppt_presentation_creation-7",
+    "slug": "decktopus-ai",
+    "name": "Decktopus AI",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=decktopus-ai",
+    "category": "PPT / Presentation Creation",
+    "subcategory": "Slide Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI presentation generator that creates complete slide decks from topic input.",
+    "fullDescription": "Decktopus AI is a leading AI tool in the PPT / Presentation Creation space. AI presentation generator that creates complete slide decks from topic input.",
+    "superpower": "AI presentation generator that creates complete slide decks from topic input.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on ppt / presentation creation tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional ppt / presentation creation workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Decktopus AI leverages state-of-the-art AI models for ppt / presentation creation tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.decktopus.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real ppt / presentation creation task using Decktopus AI.",
+        "input": "A practical ppt / presentation creation problem relevant to your work.",
+        "examplePrompt": "Use Decktopus AI to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality ppt / presentation creation output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.decktopus.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.decktopus.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Decktopus AI",
+        "PPT / Presentation Creation",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-ppt_presentation_creation-8",
+    "slug": "sendsteps-ai",
+    "name": "Sendsteps",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=sendsteps-ai",
+    "category": "PPT / Presentation Creation",
+    "subcategory": "Slide Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI interactive presentation maker with live polls, Q&A, and quizzes.",
+    "fullDescription": "Sendsteps is a leading AI tool in the PPT / Presentation Creation space. AI interactive presentation maker with live polls, Q&A, and quizzes.",
+    "superpower": "AI interactive presentation maker with live polls, Q&A, and quizzes.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on ppt / presentation creation tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional ppt / presentation creation workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Sendsteps leverages state-of-the-art AI models for ppt / presentation creation tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.sendsteps.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real ppt / presentation creation task using Sendsteps.",
+        "input": "A practical ppt / presentation creation problem relevant to your work.",
+        "examplePrompt": "Use Sendsteps to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality ppt / presentation creation output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.sendsteps.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.sendsteps.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Sendsteps",
+        "PPT / Presentation Creation",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-ppt_presentation_creation-9",
+    "slug": "plus-ai-slides",
+    "name": "Plus AI for Google Slides",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=plus-ai-slides",
+    "category": "PPT / Presentation Creation",
+    "subcategory": "Slide Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI presentation maker that creates and edits Google Slides with AI.",
+    "fullDescription": "Plus AI for Google Slides is a leading AI tool in the PPT / Presentation Creation space. AI presentation maker that creates and edits Google Slides with AI.",
+    "superpower": "AI presentation maker that creates and edits Google Slides with AI.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on ppt / presentation creation tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional ppt / presentation creation workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Plus AI for Google Slides leverages state-of-the-art AI models for ppt / presentation creation tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.plusai.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real ppt / presentation creation task using Plus AI for Google Slides.",
+        "input": "A practical ppt / presentation creation problem relevant to your work.",
+        "examplePrompt": "Use Plus AI for Google Slides to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality ppt / presentation creation output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.plusai.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.plusai.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Plus AI for Google Slides",
+        "PPT / Presentation Creation",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-ppt_presentation_creation-10",
+    "slug": "visme-ai",
+    "name": "Visme AI",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=visme-ai",
+    "category": "PPT / Presentation Creation",
+    "subcategory": "Slide Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "Visual content platform with AI presentation designer and data visualization.",
+    "fullDescription": "Visme AI is a leading AI tool in the PPT / Presentation Creation space. Visual content platform with AI presentation designer and data visualization.",
+    "superpower": "Visual content platform with AI presentation designer and data visualization.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on ppt / presentation creation tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional ppt / presentation creation workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Visme AI leverages state-of-the-art AI models for ppt / presentation creation tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.visme.co and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real ppt / presentation creation task using Visme AI.",
+        "input": "A practical ppt / presentation creation problem relevant to your work.",
+        "examplePrompt": "Use Visme AI to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality ppt / presentation creation output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.visme.co",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.visme.co",
+    "docsStatus": "verified",
+    "keywords": [
+        "Visme AI",
+        "PPT / Presentation Creation",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-ppt_presentation_creation-12",
+    "slug": "marp-ai",
+    "name": "Marp",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=marp-ai",
+    "category": "PPT / Presentation Creation",
+    "subcategory": "Slide Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "Open-source Markdown presentation ecosystem for developer-friendly slide creation.",
+    "fullDescription": "Marp is a leading AI tool in the PPT / Presentation Creation space. Open-source Markdown presentation ecosystem for developer-friendly slide creation.",
+    "superpower": "Open-source Markdown presentation ecosystem for developer-friendly slide creation.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on ppt / presentation creation tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional ppt / presentation creation workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Marp leverages state-of-the-art AI models for ppt / presentation creation tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://marp.app and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real ppt / presentation creation task using Marp.",
+        "input": "A practical ppt / presentation creation problem relevant to your work.",
+        "examplePrompt": "Use Marp to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality ppt / presentation creation output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://marp.app",
+    "officialStatus": "verified",
+    "docsUrl": "https://marp.app",
+    "docsStatus": "verified",
+    "keywords": [
+        "Marp",
+        "PPT / Presentation Creation",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+}
+,
+{
+  "id": "exp700-ppt_presentation_creation-1",
+  "slug": "pitch-presentation-app",
+  "name": "Pitch App",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=pitch-presentation-app",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Fast, beautiful presentation software for modern teams.",
+  "fullDescription": "Pitch App is an established tool in the PPT / Presentation Creation landscape. Fast, beautiful presentation software for modern teams.",
+  "superpower": "Fast, beautiful presentation software for modern teams.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Pitch App provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://pitch.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with Pitch App.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize Pitch App for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Pitch App.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://pitch.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://pitch.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Pitch App",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-5",
+  "slug": "canva-magic-design",
+  "name": "Canva Magic Design",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=canva-magic-design",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "AI design generator for presentation slides, visual content, and graphics.",
+  "fullDescription": "Canva Magic Design is an established tool in the PPT / Presentation Creation landscape. AI design generator for presentation slides, visual content, and graphics.",
+  "superpower": "AI design generator for presentation slides, visual content, and graphics.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Canva Magic Design provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.canva.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with Canva Magic Design.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize Canva Magic Design for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Canva Magic Design.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.canva.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.canva.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Canva Magic Design",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-6",
+  "slug": "slides-ai-io",
+  "name": "SlidesAI.io (PPT)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=slides-ai-io",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Google Slides extension that transforms text into presentation slides.",
+  "fullDescription": "SlidesAI.io is an established tool in the PPT / Presentation Creation landscape. Google Slides extension that transforms text into presentation slides.",
+  "superpower": "Google Slides extension that transforms text into presentation slides.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "SlidesAI.io provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.slidesai.io to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with SlidesAI.io.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize SlidesAI.io for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using SlidesAI.io.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.slidesai.io",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.slidesai.io",
+  "docsStatus": "verified",
+  "keywords": [
+    "SlidesAI.io",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-8",
+  "slug": "prezi-ai-presentations",
+  "name": "Prezi AI (PPT)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=prezi-ai-presentations",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Zooming presentation software with AI-assisted layout and motion effects.",
+  "fullDescription": "Prezi AI is an established tool in the PPT / Presentation Creation landscape. Zooming presentation software with AI-assisted layout and motion effects.",
+  "superpower": "Zooming presentation software with AI-assisted layout and motion effects.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Prezi AI provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://prezi.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with Prezi AI.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize Prezi AI for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Prezi AI.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://prezi.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://prezi.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Prezi AI",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-9",
+  "slug": "haiku-deck",
+  "name": "Haiku Deck",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=haiku-deck",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Simple presentation software focused on high-impact imagery and minimal text.",
+  "fullDescription": "Haiku Deck is an established tool in the PPT / Presentation Creation landscape. Simple presentation software focused on high-impact imagery and minimal text.",
+  "superpower": "Simple presentation software focused on high-impact imagery and minimal text.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Haiku Deck provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.haikudeck.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with Haiku Deck.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize Haiku Deck for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Haiku Deck.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.haikudeck.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.haikudeck.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Haiku Deck",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-10",
+  "slug": "slidedog-app",
+  "name": "SlideDog",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=slidedog-app",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Presentation media player that seamlessly combines PDFs, PPTs, videos, and web.",
+  "fullDescription": "SlideDog is an established tool in the PPT / Presentation Creation landscape. Presentation media player that seamlessly combines PDFs, PPTs, videos, and web.",
+  "superpower": "Presentation media player that seamlessly combines PDFs, PPTs, videos, and web.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "SlideDog provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://slidedog.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with SlideDog.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize SlideDog for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using SlideDog.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://slidedog.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://slidedog.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "SlideDog",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-11",
+  "slug": "kチャー-pitch",
+  "name": "Keynote (Apple)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=kチャー-pitch",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Apple presentation app with elegant templates and seamless device sync.",
+  "fullDescription": "Keynote (Apple) is an established tool in the PPT / Presentation Creation landscape. Apple presentation app with elegant templates and seamless device sync.",
+  "superpower": "Apple presentation app with elegant templates and seamless device sync.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Keynote (Apple) provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.apple.com/keynote/ to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with Keynote (Apple).",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize Keynote (Apple) for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Keynote (Apple).",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.apple.com/keynote/",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.apple.com/keynote/",
+  "docsStatus": "verified",
+  "keywords": [
+    "Keynote (Apple)",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-12",
+  "slug": "google-slides",
+  "name": "Google Slides",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=google-slides",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Cloud-based presentation app with real-time collaboration and AI Gemini integration.",
+  "fullDescription": "Google Slides is an established tool in the PPT / Presentation Creation landscape. Cloud-based presentation app with real-time collaboration and AI Gemini integration.",
+  "superpower": "Cloud-based presentation app with real-time collaboration and AI Gemini integration.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Google Slides provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.google.com/slides/about/ to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with Google Slides.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize Google Slides for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Google Slides.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.google.com/slides/about/",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.google.com/slides/about/",
+  "docsStatus": "verified",
+  "keywords": [
+    "Google Slides",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-13",
+  "slug": "microsoft-powerpoint",
+  "name": "Microsoft PowerPoint",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=microsoft-powerpoint",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Industry-standard presentation software with Microsoft 365 Copilot designer.",
+  "fullDescription": "Microsoft PowerPoint is an established tool in the PPT / Presentation Creation landscape. Industry-standard presentation software with Microsoft 365 Copilot designer.",
+  "superpower": "Industry-standard presentation software with Microsoft 365 Copilot designer.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Microsoft PowerPoint provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.microsoft.com/en-us/microsoft-365/powerpoint to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with Microsoft PowerPoint.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize Microsoft PowerPoint for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Microsoft PowerPoint.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.microsoft.com/en-us/microsoft-365/powerpoint",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.microsoft.com/en-us/microsoft-365/powerpoint",
+  "docsStatus": "verified",
+  "keywords": [
+    "Microsoft PowerPoint",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-14",
+  "slug": "zoho-show-app",
+  "name": "Zoho Show App",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=zoho-show-app",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Cloud presentation software for contextual story crafting.",
+  "fullDescription": "Zoho Show App is an established tool in the PPT / Presentation Creation landscape. Cloud presentation software for contextual story crafting.",
+  "superpower": "Cloud presentation software for contextual story crafting.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Zoho Show App provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.zoho.com/show/ to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with Zoho Show App.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize Zoho Show App for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Zoho Show App.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.zoho.com/show/",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.zoho.com/show/",
+  "docsStatus": "verified",
+  "keywords": [
+    "Zoho Show App",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-15",
+  "slug": "wps-presentation",
+  "name": "WPS Presentation",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=wps-presentation",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free office suite presentation software with rich template library.",
+  "fullDescription": "WPS Presentation is an established tool in the PPT / Presentation Creation landscape. Free office suite presentation software with rich template library.",
+  "superpower": "Free office suite presentation software with rich template library.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "WPS Presentation provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.wps.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with WPS Presentation.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize WPS Presentation for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using WPS Presentation.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.wps.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.wps.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "WPS Presentation",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-16",
+  "slug": "libreoffice-impress",
+  "name": "LibreOffice Impress",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=libreoffice-impress",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free open-source presentation software part of the LibreOffice suite.",
+  "fullDescription": "LibreOffice Impress is an established tool in the PPT / Presentation Creation landscape. Free open-source presentation software part of the LibreOffice suite.",
+  "superpower": "Free open-source presentation software part of the LibreOffice suite.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "LibreOffice Impress provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.libreoffice.org to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with LibreOffice Impress.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize LibreOffice Impress for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using LibreOffice Impress.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.libreoffice.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.libreoffice.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "LibreOffice Impress",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-17",
+  "slug": "onlyoffice-presentation",
+  "name": "ONLYOFFICE Presentation",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=onlyoffice-presentation",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Open-source collaborative presentation editor compatible with PPTX.",
+  "fullDescription": "ONLYOFFICE Presentation is an established tool in the PPT / Presentation Creation landscape. Open-source collaborative presentation editor compatible with PPTX.",
+  "superpower": "Open-source collaborative presentation editor compatible with PPTX.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "ONLYOFFICE Presentation provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.onlyoffice.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with ONLYOFFICE Presentation.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize ONLYOFFICE Presentation for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using ONLYOFFICE Presentation.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.onlyoffice.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.onlyoffice.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "ONLYOFFICE Presentation",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-18",
+  "slug": "ludus-one",
+  "name": "Ludus",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=ludus-one",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Presentation tool built for digital creators integrating 3D, code, and web content.",
+  "fullDescription": "Ludus is an established tool in the PPT / Presentation Creation landscape. Presentation tool built for digital creators integrating 3D, code, and web content.",
+  "superpower": "Presentation tool built for digital creators integrating 3D, code, and web content.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Ludus provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://ludus.one to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with Ludus.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize Ludus for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Ludus.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://ludus.one",
+  "officialStatus": "verified",
+  "docsUrl": "https://ludus.one",
+  "docsStatus": "verified",
+  "keywords": [
+    "Ludus",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-19",
+  "slug": "genially-interactive",
+  "name": "Genially",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=genially-interactive",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Interactive visual content tool for creating presentations, infographics, and gamified content.",
+  "fullDescription": "Genially is an established tool in the PPT / Presentation Creation landscape. Interactive visual content tool for creating presentations, infographics, and gamified content.",
+  "superpower": "Interactive visual content tool for creating presentations, infographics, and gamified content.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Genially provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://genial.ly to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with Genially.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize Genially for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Genially.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://genial.ly",
+  "officialStatus": "verified",
+  "docsUrl": "https://genial.ly",
+  "docsStatus": "verified",
+  "keywords": [
+    "Genially",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-20",
+  "slug": "thinglink-interactive",
+  "name": "ThingLink",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=thinglink-interactive",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Create interactive images, videos, and 3D models with clickable hotspots.",
+  "fullDescription": "ThingLink is an established tool in the PPT / Presentation Creation landscape. Create interactive images, videos, and 3D models with clickable hotspots.",
+  "superpower": "Create interactive images, videos, and 3D models with clickable hotspots.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "ThingLink provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.thinglink.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with ThingLink.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize ThingLink for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using ThingLink.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.thinglink.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.thinglink.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "ThingLink",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-21",
+  "slug": "infogram-charts",
+  "name": "Infogram",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=infogram-charts",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Data visualization tool for making interactive charts, reports, and maps.",
+  "fullDescription": "Infogram is an established tool in the PPT / Presentation Creation landscape. Data visualization tool for making interactive charts, reports, and maps.",
+  "superpower": "Data visualization tool for making interactive charts, reports, and maps.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Infogram provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://infogram.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with Infogram.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize Infogram for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Infogram.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://infogram.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://infogram.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Infogram",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-22",
+  "slug": "piktochart-visual",
+  "name": "Piktochart",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=piktochart-visual",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Visual maker for infographics, reports, presentations, and print graphics.",
+  "fullDescription": "Piktochart is an established tool in the PPT / Presentation Creation landscape. Visual maker for infographics, reports, presentations, and print graphics.",
+  "superpower": "Visual maker for infographics, reports, presentations, and print graphics.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Piktochart provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://piktochart.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with Piktochart.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize Piktochart for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Piktochart.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://piktochart.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://piktochart.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Piktochart",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-23",
+  "slug": "venngage-infographics",
+  "name": "Venngage",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=venngage-infographics",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Infographic design platform with smart templates for data communication.",
+  "fullDescription": "Venngage is an established tool in the PPT / Presentation Creation landscape. Infographic design platform with smart templates for data communication.",
+  "superpower": "Infographic design platform with smart templates for data communication.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Venngage provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://venngage.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with Venngage.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize Venngage for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Venngage.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://venngage.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://venngage.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Venngage",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-25",
+  "slug": "easel-ly-graphics",
+  "name": "Easel.ly",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=easel-ly-graphics",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Simple infographic creator for educational and business presentations.",
+  "fullDescription": "Easel.ly is an established tool in the PPT / Presentation Creation landscape. Simple infographic creator for educational and business presentations.",
+  "superpower": "Simple infographic creator for educational and business presentations.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Easel.ly provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.easel.ly to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with Easel.ly.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize Easel.ly for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Easel.ly.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.easel.ly",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.easel.ly",
+  "docsStatus": "verified",
+  "keywords": [
+    "Easel.ly",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-26",
+  "slug": "mind-the-graph",
+  "name": "Mind the Graph",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=mind-the-graph",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Scientific infographic maker for creating publication-ready figures.",
+  "fullDescription": "Mind the Graph is an established tool in the PPT / Presentation Creation landscape. Scientific infographic maker for creating publication-ready figures.",
+  "superpower": "Scientific infographic maker for creating publication-ready figures.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Mind the Graph provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://mindthegraph.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with Mind the Graph.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize Mind the Graph for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Mind the Graph.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://mindthegraph.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://mindthegraph.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Mind the Graph",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-27",
+  "slug": "vizzlo-charts",
+  "name": "Vizzlo",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=vizzlo-charts",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Create beautiful charts and business graphics for PowerPoint and Google Slides.",
+  "fullDescription": "Vizzlo is an established tool in the PPT / Presentation Creation landscape. Create beautiful charts and business graphics for PowerPoint and Google Slides.",
+  "superpower": "Create beautiful charts and business graphics for PowerPoint and Google Slides.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Vizzlo provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://vizzlo.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with Vizzlo.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize Vizzlo for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Vizzlo.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://vizzlo.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://vizzlo.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Vizzlo",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-28",
+  "slug": "flourish-studio",
+  "name": "Flourish",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=flourish-studio",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Data visualization and story telling platform for newsrooms and presentations.",
+  "fullDescription": "Flourish is an established tool in the PPT / Presentation Creation landscape. Data visualization and story telling platform for newsrooms and presentations.",
+  "superpower": "Data visualization and story telling platform for newsrooms and presentations.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Flourish provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://flourish.studio to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with Flourish.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize Flourish for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Flourish.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://flourish.studio",
+  "officialStatus": "verified",
+  "docsUrl": "https://flourish.studio",
+  "docsStatus": "verified",
+  "keywords": [
+    "Flourish",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-29",
+  "slug": "rawgraphs-io",
+  "name": "RAWGraphs",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=rawgraphs-io",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Open-source data visualization framework for creating vector graphics.",
+  "fullDescription": "RAWGraphs is an established tool in the PPT / Presentation Creation landscape. Open-source data visualization framework for creating vector graphics.",
+  "superpower": "Open-source data visualization framework for creating vector graphics.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "RAWGraphs provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.rawgraphs.io to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with RAWGraphs.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize RAWGraphs for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using RAWGraphs.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.rawgraphs.io",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.rawgraphs.io",
+  "docsStatus": "verified",
+  "keywords": [
+    "RAWGraphs",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-ppt_presentation_creation-30",
+  "slug": "chartblocks-app",
+  "name": "ChartBlocks",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=chartblocks-app",
+  "category": "PPT / Presentation Creation",
+  "subcategory": "PPT / Presentation Creation",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Online chart builder for designing custom interactive graphs.",
+  "fullDescription": "ChartBlocks is an established tool in the PPT / Presentation Creation landscape. Online chart builder for designing custom interactive graphs.",
+  "superpower": "Online chart builder for designing custom interactive graphs.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances ppt / presentation creation workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional ppt / presentation creation implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "ChartBlocks provides specialized AI features tailored for ppt / presentation creation."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.chartblocks.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core ppt / presentation creation task with ChartBlocks.",
+    "input": "Sample project input for ppt / presentation creation.",
+    "examplePrompt": "Utilize ChartBlocks for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using ChartBlocks.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.chartblocks.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.chartblocks.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "ChartBlocks",
+    "PPT / Presentation Creation",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+}
 ];

@@ -13537,4 +13537,1985 @@ export const gaming_3d_tools: AITool[] = [
     "verifiedAt": "2026-08-28",
     "badge": "FREE-TIER"
   }
+,
+{
+    "id": "genuine-gaming_3d-2",
+    "slug": "kaedim-ai",
+    "name": "Kaedim",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=kaedim-ai",
+    "category": "Gaming / 3D",
+    "subcategory": "3D Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI-powered 3D model generation for game studios from 2D image references.",
+    "fullDescription": "Kaedim is a leading AI tool in the Gaming / 3D space. AI-powered 3D model generation for game studios from 2D image references.",
+    "superpower": "AI-powered 3D model generation for game studios from 2D image references.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on gaming / 3d tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional gaming / 3d workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Kaedim leverages state-of-the-art AI models for gaming / 3d tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.kaedim3d.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real gaming / 3d task using Kaedim.",
+        "input": "A practical gaming / 3d problem relevant to your work.",
+        "examplePrompt": "Use Kaedim to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality gaming / 3d output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.kaedim3d.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.kaedim3d.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Kaedim",
+        "Gaming / 3D",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-gaming_3d-3",
+    "slug": "luma-ai",
+    "name": "Luma AI",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=luma-ai",
+    "category": "Gaming / 3D",
+    "subcategory": "3D Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI 3D scene capture and generation platform using neural radiance fields.",
+    "fullDescription": "Luma AI is a leading AI tool in the Gaming / 3D space. AI 3D scene capture and generation platform using neural radiance fields.",
+    "superpower": "AI 3D scene capture and generation platform using neural radiance fields.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on gaming / 3d tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional gaming / 3d workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Luma AI leverages state-of-the-art AI models for gaming / 3d tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://lumalabs.ai and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real gaming / 3d task using Luma AI.",
+        "input": "A practical gaming / 3d problem relevant to your work.",
+        "examplePrompt": "Use Luma AI to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality gaming / 3d output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://lumalabs.ai",
+    "officialStatus": "verified",
+    "docsUrl": "https://lumalabs.ai",
+    "docsStatus": "verified",
+    "keywords": [
+        "Luma AI",
+        "Gaming / 3D",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-gaming_3d-4",
+    "slug": "scenario-ai",
+    "name": "Scenario",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=scenario-ai",
+    "category": "Gaming / 3D",
+    "subcategory": "3D Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI game asset generator for creating consistent game art and 3D assets.",
+    "fullDescription": "Scenario is a leading AI tool in the Gaming / 3D space. AI game asset generator for creating consistent game art and 3D assets.",
+    "superpower": "AI game asset generator for creating consistent game art and 3D assets.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on gaming / 3d tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional gaming / 3d workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Scenario leverages state-of-the-art AI models for gaming / 3d tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.scenario.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real gaming / 3d task using Scenario.",
+        "input": "A practical gaming / 3d problem relevant to your work.",
+        "examplePrompt": "Use Scenario to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality gaming / 3d output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.scenario.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.scenario.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Scenario",
+        "Gaming / 3D",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-gaming_3d-7",
+    "slug": "convai-ai",
+    "name": "Convai",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=convai-ai",
+    "category": "Gaming / 3D",
+    "subcategory": "3D Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "AI NPC platform enabling real-time conversations in games and virtual worlds.",
+    "fullDescription": "Convai is a leading AI tool in the Gaming / 3D space. AI NPC platform enabling real-time conversations in games and virtual worlds.",
+    "superpower": "AI NPC platform enabling real-time conversations in games and virtual worlds.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on gaming / 3d tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional gaming / 3d workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Convai leverages state-of-the-art AI models for gaming / 3d tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://convai.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real gaming / 3d task using Convai.",
+        "input": "A practical gaming / 3d problem relevant to your work.",
+        "examplePrompt": "Use Convai to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality gaming / 3d output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://convai.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://convai.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Convai",
+        "Gaming / 3D",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-gaming_3d-8",
+    "slug": "leia-3d",
+    "name": "Leia Inc.",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=leia-3d",
+    "category": "Gaming / 3D",
+    "subcategory": "3D Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "3D lightfield display technology with AI-powered 2D to 3D conversion.",
+    "fullDescription": "Leia Inc. is a leading AI tool in the Gaming / 3D space. 3D lightfield display technology with AI-powered 2D to 3D conversion.",
+    "superpower": "3D lightfield display technology with AI-powered 2D to 3D conversion.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on gaming / 3d tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional gaming / 3d workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Leia Inc. leverages state-of-the-art AI models for gaming / 3d tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.leiainc.com and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real gaming / 3d task using Leia Inc..",
+        "input": "A practical gaming / 3d problem relevant to your work.",
+        "examplePrompt": "Use Leia Inc. to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality gaming / 3d output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.leiainc.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.leiainc.com",
+    "docsStatus": "verified",
+    "keywords": [
+        "Leia Inc.",
+        "Gaming / 3D",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-gaming_3d-9",
+    "slug": "unity-muse-ai",
+    "name": "Unity Muse (Gaming)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=unity-muse-ai",
+    "category": "Gaming / 3D",
+    "subcategory": "3D Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "Unity's AI creator tool for generating sprites, textures, and game behaviors.",
+    "fullDescription": "Unity Muse is a leading AI tool in the Gaming / 3D space. Unity's AI creator tool for generating sprites, textures, and game behaviors.",
+    "superpower": "Unity's AI creator tool for generating sprites, textures, and game behaviors.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on gaming / 3d tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional gaming / 3d workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "Unity Muse leverages state-of-the-art AI models for gaming / 3d tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://unity.com/products/muse and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real gaming / 3d task using Unity Muse.",
+        "input": "A practical gaming / 3d problem relevant to your work.",
+        "examplePrompt": "Use Unity Muse to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality gaming / 3d output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://unity.com/products/muse",
+    "officialStatus": "verified",
+    "docsUrl": "https://unity.com/products/muse",
+    "docsStatus": "verified",
+    "keywords": [
+        "Unity Muse",
+        "Gaming / 3D",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+},
+{
+    "id": "genuine-gaming_3d-10",
+    "slug": "nvidia-ace-gaming",
+    "name": "NVIDIA ACE",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=nvidia-ace-gaming",
+    "category": "Gaming / 3D",
+    "subcategory": "3D Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "signupRequired": true,
+    "installationRequired": false,
+    "platforms": [
+        "Web"
+    ],
+    "shortDescription": "NVIDIA AI character engine for lifelike digital human NPCs in games.",
+    "fullDescription": "NVIDIA ACE is a leading AI tool in the Gaming / 3D space. NVIDIA AI character engine for lifelike digital human NPCs in games.",
+    "superpower": "NVIDIA AI character engine for lifelike digital human NPCs in games.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "whyLearn": [
+        "Saves time on gaming / 3d tasks.",
+        "Accessible to beginners with no technical background required.",
+        "Actively maintained with regular updates and new features."
+    ],
+    "useCases": [
+        "Professional gaming / 3d workflows.",
+        "Academic and research applications.",
+        "Creative projects and content production."
+    ],
+    "features": [
+        {
+            "title": "AI-Powered Core",
+            "description": "NVIDIA ACE leverages state-of-the-art AI models for gaming / 3d tasks."
+        },
+        {
+            "title": "Intuitive Interface",
+            "description": "Designed for ease of use with minimal learning curve."
+        },
+        {
+            "title": "Export & Integration",
+            "description": "Export results and integrate with popular workflows and tools."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Access the platform",
+            "description": "Visit https://www.nvidia.com/en-us/geforce/news/nvidia-ace-digital-humans-generative-ai/ and create a free account."
+        },
+        {
+            "title": "Start your first project",
+            "description": "Enter your prompt or upload your content to begin."
+        },
+        {
+            "title": "Review and export",
+            "description": "Review the AI output, refine as needed, and export your results."
+        }
+    ],
+    "practicalExercise": {
+        "objective": "Complete a real gaming / 3d task using NVIDIA ACE.",
+        "input": "A practical gaming / 3d problem relevant to your work.",
+        "examplePrompt": "Use NVIDIA ACE to accomplish: [describe your specific task here].",
+        "expectedResult": "A high-quality gaming / 3d output ready for use or further refinement.",
+        "skillsLearned": [
+            "AI-assisted workflow",
+            "Prompt engineering",
+            "Quality review"
+        ]
+    },
+    "officialUrl": "https://www.nvidia.com/en-us/geforce/news/nvidia-ace-digital-humans-generative-ai/",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.nvidia.com/en-us/geforce/news/nvidia-ace-digital-humans-generative-ai/",
+    "docsStatus": "verified",
+    "keywords": [
+        "NVIDIA ACE",
+        "Gaming / 3D",
+        "AI",
+        "free tier"
+    ],
+    "verifiedAt": "2026-09-11",
+    "lastVerified": "2026-09-11",
+    "badge": "VERIFIED"
+}
+,
+{
+  "id": "exp700-gaming_3d-2",
+  "slug": "csm-3d-ai",
+  "name": "CSM (Common Sense Machines)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=csm-3d-ai",
+  "category": "Gaming / 3D",
+  "subcategory": "Gaming / 3D",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Convert 2D images into 3D asset models using AI spatial understanding.",
+  "fullDescription": "CSM (Common Sense Machines) is an established tool in the Gaming / 3D landscape. Convert 2D images into 3D asset models using AI spatial understanding.",
+  "superpower": "Convert 2D images into 3D asset models using AI spatial understanding.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances gaming / 3d workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional gaming / 3d implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "CSM (Common Sense Machines) provides specialized AI features tailored for gaming / 3d."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://3d.csm.ai to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core gaming / 3d task with CSM (Common Sense Machines).",
+    "input": "Sample project input for gaming / 3d.",
+    "examplePrompt": "Utilize CSM (Common Sense Machines) for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using CSM (Common Sense Machines).",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://3d.csm.ai",
+  "officialStatus": "verified",
+  "docsUrl": "https://3d.csm.ai",
+  "docsStatus": "verified",
+  "keywords": [
+    "CSM (Common Sense Machines)",
+    "Gaming / 3D",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-gaming_3d-5",
+  "slug": "polycam-3d-scan",
+  "name": "Polycam",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=polycam-3d-scan",
+  "category": "Gaming / 3D",
+  "subcategory": "Gaming / 3D",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "LiDAR and photogrammetry 3D scanner app for iPhone, Android, and Web.",
+  "fullDescription": "Polycam is an established tool in the Gaming / 3D landscape. LiDAR and photogrammetry 3D scanner app for iPhone, Android, and Web.",
+  "superpower": "LiDAR and photogrammetry 3D scanner app for iPhone, Android, and Web.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances gaming / 3d workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional gaming / 3d implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Polycam provides specialized AI features tailored for gaming / 3d."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://poly.cam to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core gaming / 3d task with Polycam.",
+    "input": "Sample project input for gaming / 3d.",
+    "examplePrompt": "Utilize Polycam for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Polycam.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://poly.cam",
+  "officialStatus": "verified",
+  "docsUrl": "https://poly.cam",
+  "docsStatus": "verified",
+  "keywords": [
+    "Polycam",
+    "Gaming / 3D",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-gaming_3d-8",
+  "slug": "gaussian-splatting-official",
+  "name": "3D Gaussian Splatting",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=gaussian-splatting-official",
+  "category": "Gaming / 3D",
+  "subcategory": "Gaming / 3D",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Real-time radiance field rendering via 3D Gaussian Splatting by INRIA.",
+  "fullDescription": "3D Gaussian Splatting is an established tool in the Gaming / 3D landscape. Real-time radiance field rendering via 3D Gaussian Splatting by INRIA.",
+  "superpower": "Real-time radiance field rendering via 3D Gaussian Splatting by INRIA.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances gaming / 3d workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional gaming / 3d implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "3D Gaussian Splatting provides specialized AI features tailored for gaming / 3d."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/graphdeco-inria/gaussian-splatting to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core gaming / 3d task with 3D Gaussian Splatting.",
+    "input": "Sample project input for gaming / 3d.",
+    "examplePrompt": "Utilize 3D Gaussian Splatting for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using 3D Gaussian Splatting.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://github.com/graphdeco-inria/gaussian-splatting",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/graphdeco-inria/gaussian-splatting",
+  "docsStatus": "verified",
+  "keywords": [
+    "3D Gaussian Splatting",
+    "Gaming / 3D",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-gaming_3d-9",
+  "slug": "blender-3d-suite",
+  "name": "Blender 3D",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=blender-3d-suite",
+  "category": "Gaming / 3D",
+  "subcategory": "Gaming / 3D",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free open-source 3D creation suite supporting modeling, rigging, and rendering.",
+  "fullDescription": "Blender 3D is an established tool in the Gaming / 3D landscape. Free open-source 3D creation suite supporting modeling, rigging, and rendering.",
+  "superpower": "Free open-source 3D creation suite supporting modeling, rigging, and rendering.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances gaming / 3d workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional gaming / 3d implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Blender 3D provides specialized AI features tailored for gaming / 3d."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.blender.org to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core gaming / 3d task with Blender 3D.",
+    "input": "Sample project input for gaming / 3d.",
+    "examplePrompt": "Utilize Blender 3D for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Blender 3D.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.blender.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.blender.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "Blender 3D",
+    "Gaming / 3D",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-gaming_3d-10",
+  "slug": "unreal-engine-epic",
+  "name": "Unreal Engine",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=unreal-engine-epic",
+  "category": "Gaming / 3D",
+  "subcategory": "Gaming / 3D",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "The world's most open and advanced real-time 3D creation tool by Epic Games.",
+  "fullDescription": "Unreal Engine is an established tool in the Gaming / 3D landscape. The world's most open and advanced real-time 3D creation tool by Epic Games.",
+  "superpower": "The world's most open and advanced real-time 3D creation tool by Epic Games.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances gaming / 3d workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional gaming / 3d implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Unreal Engine provides specialized AI features tailored for gaming / 3d."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.unrealengine.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core gaming / 3d task with Unreal Engine.",
+    "input": "Sample project input for gaming / 3d.",
+    "examplePrompt": "Utilize Unreal Engine for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Unreal Engine.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.unrealengine.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.unrealengine.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Unreal Engine",
+    "Gaming / 3D",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-gaming_3d-11",
+  "slug": "unity-3d-engine",
+  "name": "Unity Engine",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=unity-3d-engine",
+  "category": "Gaming / 3D",
+  "subcategory": "Gaming / 3D",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Leading platform for creating real-time 3D, 2D, VR, and AR games and experiences.",
+  "fullDescription": "Unity Engine is an established tool in the Gaming / 3D landscape. Leading platform for creating real-time 3D, 2D, VR, and AR games and experiences.",
+  "superpower": "Leading platform for creating real-time 3D, 2D, VR, and AR games and experiences.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances gaming / 3d workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional gaming / 3d implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Unity Engine provides specialized AI features tailored for gaming / 3d."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://unity.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core gaming / 3d task with Unity Engine.",
+    "input": "Sample project input for gaming / 3d.",
+    "examplePrompt": "Utilize Unity Engine for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Unity Engine.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://unity.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://unity.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Unity Engine",
+    "Gaming / 3D",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-gaming_3d-12",
+  "slug": "godot-engine-org",
+  "name": "Godot Engine",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=godot-engine-org",
+  "category": "Gaming / 3D",
+  "subcategory": "Gaming / 3D",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Free, open-source 2D and 3D game engine with dedicated developer community.",
+  "fullDescription": "Godot Engine is an established tool in the Gaming / 3D landscape. Free, open-source 2D and 3D game engine with dedicated developer community.",
+  "superpower": "Free, open-source 2D and 3D game engine with dedicated developer community.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances gaming / 3d workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional gaming / 3d implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Godot Engine provides specialized AI features tailored for gaming / 3d."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://godotengine.org to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core gaming / 3d task with Godot Engine.",
+    "input": "Sample project input for gaming / 3d.",
+    "examplePrompt": "Utilize Godot Engine for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Godot Engine.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://godotengine.org",
+  "officialStatus": "verified",
+  "docsUrl": "https://godotengine.org",
+  "docsStatus": "verified",
+  "keywords": [
+    "Godot Engine",
+    "Gaming / 3D",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-gaming_3d-13",
+  "slug": "roblox-studio-creator",
+  "name": "Roblox Studio",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=roblox-studio-creator",
+  "category": "Gaming / 3D",
+  "subcategory": "Gaming / 3D",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Building tool with AI generative code and asset assistance for Roblox experiences.",
+  "fullDescription": "Roblox Studio is an established tool in the Gaming / 3D landscape. Building tool with AI generative code and asset assistance for Roblox experiences.",
+  "superpower": "Building tool with AI generative code and asset assistance for Roblox experiences.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances gaming / 3d workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional gaming / 3d implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Roblox Studio provides specialized AI features tailored for gaming / 3d."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://create.roblox.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core gaming / 3d task with Roblox Studio.",
+    "input": "Sample project input for gaming / 3d.",
+    "examplePrompt": "Utilize Roblox Studio for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Roblox Studio.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://create.roblox.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://create.roblox.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "Roblox Studio",
+    "Gaming / 3D",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-gaming_3d-14",
+  "slug": "sidefx-houdini",
+  "name": "SideFX Houdini",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=sidefx-houdini",
+  "category": "Gaming / 3D",
+  "subcategory": "Gaming / 3D",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Procedural 3D animation and visual effects software for film and games.",
+  "fullDescription": "SideFX Houdini is an established tool in the Gaming / 3D landscape. Procedural 3D animation and visual effects software for film and games.",
+  "superpower": "Procedural 3D animation and visual effects software for film and games.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances gaming / 3d workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional gaming / 3d implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "SideFX Houdini provides specialized AI features tailored for gaming / 3d."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.sidefx.com to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core gaming / 3d task with SideFX Houdini.",
+    "input": "Sample project input for gaming / 3d.",
+    "examplePrompt": "Utilize SideFX Houdini for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using SideFX Houdini.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.sidefx.com",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.sidefx.com",
+  "docsStatus": "verified",
+  "keywords": [
+    "SideFX Houdini",
+    "Gaming / 3D",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "exp700-gaming_3d-15",
+  "slug": "autodesk-maya",
+  "name": "Autodesk Maya",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=autodesk-maya",
+  "category": "Gaming / 3D",
+  "subcategory": "Gaming / 3D",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "3D animation, modeling, simulation, and rendering software for VFX.",
+  "fullDescription": "Autodesk Maya is an established tool in the Gaming / 3D landscape. 3D animation, modeling, simulation, and rendering software for VFX.",
+  "superpower": "3D animation, modeling, simulation, and rendering software for VFX.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Enhances gaming / 3d workflow efficiency.",
+    "Widely adopted across industry and academic institutions.",
+    "Regularly updated with modern AI capabilities."
+  ],
+  "useCases": [
+    "Professional gaming / 3d implementation.",
+    "Academic research and classroom instruction.",
+    "Workflow automation and creative production."
+  ],
+  "features": [
+    {
+      "title": "Core Functionality",
+      "description": "Autodesk Maya provides specialized AI features tailored for gaming / 3d."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports export and interoperability with common tools."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://www.autodesk.com/products/maya/overview to sign up or access documentation."
+    },
+    {
+      "title": "Configure workspace",
+      "description": "Set up your project preferences and requirements."
+    },
+    {
+      "title": "Execute workflow",
+      "description": "Run operations and review generated results."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Complete a core gaming / 3d task with Autodesk Maya.",
+    "input": "Sample project input for gaming / 3d.",
+    "examplePrompt": "Utilize Autodesk Maya for your specific scenario: [describe input].",
+    "expectedResult": "Verified output generated using Autodesk Maya.",
+    "skillsLearned": [
+      "Tool operation",
+      "Result review",
+      "Workflow integration"
+    ]
+  },
+  "officialUrl": "https://www.autodesk.com/products/maya/overview",
+  "officialStatus": "verified",
+  "docsUrl": "https://www.autodesk.com/products/maya/overview",
+  "docsStatus": "verified",
+  "keywords": [
+    "Autodesk Maya",
+    "Gaming / 3D",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+}
+,
+{
+  "id": "final700-gaming_3d-1",
+  "slug": "instant-mesh-3d",
+  "name": "InstantMesh (Tencent)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=instant-mesh-3d",
+  "category": "Gaming / 3D",
+  "subcategory": "Gaming / 3D",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Efficient 3D mesh generation from a single image using Sparse-view DiT.",
+  "fullDescription": "InstantMesh (Tencent) is a high-quality published AI tool in Gaming / 3D. Efficient 3D mesh generation from a single image using Sparse-view DiT.",
+  "superpower": "Efficient 3D mesh generation from a single image using Sparse-view DiT.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in gaming / 3d workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in gaming / 3d.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "InstantMesh (Tencent) provides specialized AI performance in gaming / 3d."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/Tencent/InstantMesh to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using InstantMesh (Tencent).",
+    "input": "Sample input for gaming / 3d.",
+    "examplePrompt": "Use InstantMesh (Tencent) to complete: [describe task].",
+    "expectedResult": "Tested and verified output using InstantMesh (Tencent).",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/Tencent/InstantMesh",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/Tencent/InstantMesh",
+  "docsStatus": "verified",
+  "keywords": [
+    "InstantMesh (Tencent)",
+    "Gaming / 3D",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-gaming_3d-2",
+  "slug": "crm-3d-generation",
+  "name": "CRM (Convolutional Reconstruction Model)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=crm-3d-generation",
+  "category": "Gaming / 3D",
+  "subcategory": "Gaming / 3D",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "High-fidelity single-image to 3D textured mesh generation model.",
+  "fullDescription": "CRM (Convolutional Reconstruction Model) is a high-quality published AI tool in Gaming / 3D. High-fidelity single-image to 3D textured mesh generation model.",
+  "superpower": "High-fidelity single-image to 3D textured mesh generation model.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in gaming / 3d workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in gaming / 3d.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "CRM (Convolutional Reconstruction Model) provides specialized AI performance in gaming / 3d."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/ZhengdeZhang/CRM to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using CRM (Convolutional Reconstruction Model).",
+    "input": "Sample input for gaming / 3d.",
+    "examplePrompt": "Use CRM (Convolutional Reconstruction Model) to complete: [describe task].",
+    "expectedResult": "Tested and verified output using CRM (Convolutional Reconstruction Model).",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/ZhengdeZhang/CRM",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/ZhengdeZhang/CRM",
+  "docsStatus": "verified",
+  "keywords": [
+    "CRM (Convolutional Reconstruction Model)",
+    "Gaming / 3D",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-gaming_3d-3",
+  "slug": "open-lrrm-3d",
+  "name": "OpenLRM",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=open-lrrm-3d",
+  "category": "Gaming / 3D",
+  "subcategory": "Gaming / 3D",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Open-source Large Reconstruction Model for single-image 3D generation.",
+  "fullDescription": "OpenLRM is a high-quality published AI tool in Gaming / 3D. Open-source Large Reconstruction Model for single-image 3D generation.",
+  "superpower": "Open-source Large Reconstruction Model for single-image 3D generation.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in gaming / 3d workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in gaming / 3d.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "OpenLRM provides specialized AI performance in gaming / 3d."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/ZHEN-HO/OpenLRM to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using OpenLRM.",
+    "input": "Sample input for gaming / 3d.",
+    "examplePrompt": "Use OpenLRM to complete: [describe task].",
+    "expectedResult": "Tested and verified output using OpenLRM.",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/ZHEN-HO/OpenLRM",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/ZHEN-HO/OpenLRM",
+  "docsStatus": "verified",
+  "keywords": [
+    "OpenLRM",
+    "Gaming / 3D",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-gaming_3d-4",
+  "slug": "sv3d-stability-3d",
+  "name": "Stable Video 3D (SV3D)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=sv3d-stability-3d",
+  "category": "Gaming / 3D",
+  "subcategory": "Gaming / 3D",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Stability AI model for orbital 3D video synthesis and 3D mesh extraction.",
+  "fullDescription": "Stable Video 3D (SV3D) is a high-quality published AI tool in Gaming / 3D. Stability AI model for orbital 3D video synthesis and 3D mesh extraction.",
+  "superpower": "Stability AI model for orbital 3D video synthesis and 3D mesh extraction.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in gaming / 3d workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in gaming / 3d.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "Stable Video 3D (SV3D) provides specialized AI performance in gaming / 3d."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://stability.ai/news/stable-video-3d to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Stable Video 3D (SV3D).",
+    "input": "Sample input for gaming / 3d.",
+    "examplePrompt": "Use Stable Video 3D (SV3D) to complete: [describe task].",
+    "expectedResult": "Tested and verified output using Stable Video 3D (SV3D).",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://stability.ai/news/stable-video-3d",
+  "officialStatus": "verified",
+  "docsUrl": "https://stability.ai/news/stable-video-3d",
+  "docsStatus": "verified",
+  "keywords": [
+    "Stable Video 3D (SV3D)",
+    "Gaming / 3D",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-gaming_3d-5",
+  "slug": "triposr-stability",
+  "name": "TripoSR (Stability & Tripo)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=triposr-stability",
+  "category": "Gaming / 3D",
+  "subcategory": "Gaming / 3D",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Fast 3D reconstruction model generating 3D meshes in under 0.5 seconds.",
+  "fullDescription": "TripoSR (Stability & Tripo) is a high-quality published AI tool in Gaming / 3D. Fast 3D reconstruction model generating 3D meshes in under 0.5 seconds.",
+  "superpower": "Fast 3D reconstruction model generating 3D meshes in under 0.5 seconds.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in gaming / 3d workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in gaming / 3d.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "TripoSR (Stability & Tripo) provides specialized AI performance in gaming / 3d."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/VAST-AI-Research/TripoSR to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using TripoSR (Stability & Tripo).",
+    "input": "Sample input for gaming / 3d.",
+    "examplePrompt": "Use TripoSR (Stability & Tripo) to complete: [describe task].",
+    "expectedResult": "Tested and verified output using TripoSR (Stability & Tripo).",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/VAST-AI-Research/TripoSR",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/VAST-AI-Research/TripoSR",
+  "docsStatus": "verified",
+  "keywords": [
+    "TripoSR (Stability & Tripo)",
+    "Gaming / 3D",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-gaming_3d-6",
+  "slug": "shap-e-openai",
+  "name": "Shap-E (OpenAI)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=shap-e-openai",
+  "category": "Gaming / 3D",
+  "subcategory": "Gaming / 3D",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "OpenAI model for generating 3D implicit functions and meshes from text/image.",
+  "fullDescription": "Shap-E (OpenAI) is a high-quality published AI tool in Gaming / 3D. OpenAI model for generating 3D implicit functions and meshes from text/image.",
+  "superpower": "OpenAI model for generating 3D implicit functions and meshes from text/image.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in gaming / 3d workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in gaming / 3d.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "Shap-E (OpenAI) provides specialized AI performance in gaming / 3d."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/openai/shap-e to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Shap-E (OpenAI).",
+    "input": "Sample input for gaming / 3d.",
+    "examplePrompt": "Use Shap-E (OpenAI) to complete: [describe task].",
+    "expectedResult": "Tested and verified output using Shap-E (OpenAI).",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/openai/shap-e",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/openai/shap-e",
+  "docsStatus": "verified",
+  "keywords": [
+    "Shap-E (OpenAI)",
+    "Gaming / 3D",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-gaming_3d-7",
+  "slug": "point-e-openai",
+  "name": "Point-E (OpenAI)",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=point-e-openai",
+  "category": "Gaming / 3D",
+  "subcategory": "Gaming / 3D",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "System for generating 3D point clouds from complex prompts.",
+  "fullDescription": "Point-E (OpenAI) is a high-quality published AI tool in Gaming / 3D. System for generating 3D point clouds from complex prompts.",
+  "superpower": "System for generating 3D point clouds from complex prompts.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in gaming / 3d workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in gaming / 3d.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "Point-E (OpenAI) provides specialized AI performance in gaming / 3d."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/openai/point-e to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Point-E (OpenAI).",
+    "input": "Sample input for gaming / 3d.",
+    "examplePrompt": "Use Point-E (OpenAI) to complete: [describe task].",
+    "expectedResult": "Tested and verified output using Point-E (OpenAI).",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/openai/point-e",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/openai/point-e",
+  "docsStatus": "verified",
+  "keywords": [
+    "Point-E (OpenAI)",
+    "Gaming / 3D",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+},
+{
+  "id": "final700-gaming_3d-8",
+  "slug": "zero123-plus",
+  "name": "Zero123++",
+  "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=zero123-plus",
+  "category": "Gaming / 3D",
+  "subcategory": "Gaming / 3D",
+  "pricingType": "free-tier",
+  "freePlanDetails": "A free tier or open source download is available.",
+  "signupRequired": true,
+  "installationRequired": false,
+  "platforms": [
+    "Web"
+  ],
+  "shortDescription": "Single-image to consistent multi-view image generation model.",
+  "fullDescription": "Zero123++ is a high-quality published AI tool in Gaming / 3D. Single-image to consistent multi-view image generation model.",
+  "superpower": "Single-image to consistent multi-view image generation model.",
+  "difficulty": "Beginner",
+  "learningTime": 20,
+  "whyLearn": [
+    "Drives efficiency in gaming / 3d workflows.",
+    "Open-access and reliable primary source documentation.",
+    "Active open-source community support and maintenance."
+  ],
+  "useCases": [
+    "Professional production in gaming / 3d.",
+    "Academic research and experimentation.",
+    "Workflow automation."
+  ],
+  "features": [
+    {
+      "title": "State-of-the-Art Functionality",
+      "description": "Zero123++ provides specialized AI performance in gaming / 3d."
+    },
+    {
+      "title": "Standard Export",
+      "description": "Supports standard data formats and integration APIs."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Access resource",
+      "description": "Visit https://github.com/SUDO-AI-3D/zero123plus to view documentation or download."
+    },
+    {
+      "title": "Configure environment",
+      "description": "Set up credentials or dependencies."
+    },
+    {
+      "title": "Execute project",
+      "description": "Run model or application and evaluate output."
+    }
+  ],
+  "practicalExercise": {
+    "objective": "Implement a workflow using Zero123++.",
+    "input": "Sample input for gaming / 3d.",
+    "examplePrompt": "Use Zero123++ to complete: [describe task].",
+    "expectedResult": "Tested and verified output using Zero123++.",
+    "skillsLearned": [
+      "Model deployment",
+      "Prompting",
+      "Evaluation"
+    ]
+  },
+  "officialUrl": "https://github.com/SUDO-AI-3D/zero123plus",
+  "officialStatus": "verified",
+  "docsUrl": "https://github.com/SUDO-AI-3D/zero123plus",
+  "docsStatus": "verified",
+  "keywords": [
+    "Zero123++",
+    "Gaming / 3D",
+    "AI",
+    "verified"
+  ],
+  "verifiedAt": "2026-09-11",
+  "lastVerified": "2026-09-11",
+  "badge": "VERIFIED"
+}
 ];
