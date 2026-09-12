@@ -1554,6 +1554,118 @@ export const catalogSummaries: ToolSummary[] = [
     "badge": "Open Official GitHub →"
   },
   {
+    "id": "exp700-audio_voice-12",
+    "slug": "piper-tts-local",
+    "name": "Piper TTS (Audio)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=piper-tts-local",
+    "category": "Audio / Voice",
+    "subcategory": "Audio / Voice",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Fast, local neural text to speech system optimized for Raspberry Pi and desktop.",
+    "superpower": "Fast, local neural text to speech system optimized for Raspberry Pi and desktop.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://github.com/rhasspy/piper",
+    "officialStatus": "verified",
+    "docsUrl": "https://github.com/rhasspy/piper",
+    "docsStatus": "verified",
+    "keywords": [
+      "Piper TTS",
+      "Audio / Voice",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-audio_voice-18",
+    "slug": "voice-ai-changer",
+    "name": "Voice.ai (Audio)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=voice-ai-changer",
+    "category": "Audio / Voice",
+    "subcategory": "Audio / Voice",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Free real-time voice changer software for PC, gaming, and streaming.",
+    "superpower": "Free real-time voice changer software for PC, gaming, and streaming.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://voice.ai",
+    "officialStatus": "verified",
+    "docsUrl": "https://voice.ai",
+    "docsStatus": "verified",
+    "keywords": [
+      "Voice.ai",
+      "Audio / Voice",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-audio_voice-20",
+    "slug": "auphonic-audio",
+    "name": "Auphonic (Audio)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=auphonic-audio",
+    "category": "Audio / Voice",
+    "subcategory": "Audio / Voice",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Automatic audio post-production web service for podcasts, radio, and video.",
+    "superpower": "Automatic audio post-production web service for podcasts, radio, and video.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://auphonic.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://auphonic.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Auphonic",
+      "Audio / Voice",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-audio_voice-24",
+    "slug": "audacity-open-src",
+    "name": "Audacity",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=audacity-open-src",
+    "category": "Audio / Voice",
+    "subcategory": "Audio / Voice",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Free, open-source multi-track audio editor with OpenVINO AI plugins.",
+    "superpower": "Free, open-source multi-track audio editor with OpenVINO AI plugins.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.audacityteam.org",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.audacityteam.org",
+    "docsStatus": "verified",
+    "keywords": [
+      "Audacity",
+      "Audio / Voice",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
     "id": "tool-1",
     "slug": "chatgpt",
     "name": "ChatGPT",
@@ -5976,6 +6088,286 @@ export const catalogSummaries: ToolSummary[] = [
     "badge": "FREE-TIER"
   },
   {
+    "id": "genuine-document_writing-9",
+    "slug": "wordtune-ai",
+    "name": "Wordtune (Document)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=wordtune-ai",
+    "category": "Document / Writing",
+    "subcategory": "AI Writing",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI writing companion that rephrases, rewrites, and improves text clarity.",
+    "superpower": "AI writing companion that rephrases, rewrites, and improves text clarity.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.wordtune.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.wordtune.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Wordtune",
+      "Document / Writing",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-document_writing-10",
+    "slug": "anyword-ai",
+    "name": "Anyword (Document)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=anyword-ai",
+    "category": "Document / Writing",
+    "subcategory": "AI Writing",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI writing platform with predictive performance scoring for marketing content.",
+    "superpower": "AI writing platform with predictive performance scoring for marketing content.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://anyword.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://anyword.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Anyword",
+      "Document / Writing",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-document_writing-12",
+    "slug": "lex-ai",
+    "name": "Lex",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=lex-ai",
+    "category": "Document / Writing",
+    "subcategory": "AI Writing",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI-powered word processor designed for writing with GPT-4 assistance built in.",
+    "superpower": "AI-powered word processor designed for writing with GPT-4 assistance built in.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://lex.page",
+    "officialStatus": "verified",
+    "docsUrl": "https://lex.page",
+    "docsStatus": "verified",
+    "keywords": [
+      "Lex",
+      "Document / Writing",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-document_writing-15",
+    "slug": "prowritingaid-ai",
+    "name": "ProWritingAid (Document)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=prowritingaid-ai",
+    "category": "Document / Writing",
+    "subcategory": "AI Writing",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI grammar checker and writing coach for improving style, clarity, and structure.",
+    "superpower": "AI grammar checker and writing coach for improving style, clarity, and structure.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://prowritingaid.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://prowritingaid.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "ProWritingAid",
+      "Document / Writing",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-document_writing-5",
+    "slug": "textcortex-ai",
+    "name": "TextCortex (Document)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=textcortex-ai",
+    "category": "Document / Writing",
+    "subcategory": "Document / Writing",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI writing copilot for browser with ZenoChat customizable assistant.",
+    "superpower": "AI writing copilot for browser with ZenoChat customizable assistant.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://textcortex.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://textcortex.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "TextCortex",
+      "Document / Writing",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-document_writing-7",
+    "slug": "simplified-ai-writer",
+    "name": "Simplified AI Writer",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=simplified-ai-writer",
+    "category": "Document / Writing",
+    "subcategory": "Document / Writing",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "All-in-one platform with AI content writer, graphic design, and video editor.",
+    "superpower": "All-in-one platform with AI content writer, graphic design, and video editor.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://simplified.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://simplified.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Simplified AI Writer",
+      "Document / Writing",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-document_writing-11",
+    "slug": "surfer-seo-writer",
+    "name": "Surfer SEO Writer",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=surfer-seo-writer",
+    "category": "Document / Writing",
+    "subcategory": "Document / Writing",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "SEO workflow and AI content generator for ranking articles in Google.",
+    "superpower": "SEO workflow and AI content generator for ranking articles in Google.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://surferseo.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://surferseo.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Surfer SEO Writer",
+      "Document / Writing",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-document_writing-13",
+    "slug": "frase-io-writer",
+    "name": "Frase",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=frase-io-writer",
+    "category": "Document / Writing",
+    "subcategory": "Document / Writing",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI content engine for creating SEO research briefs and writing optimized copy.",
+    "superpower": "AI content engine for creating SEO research briefs and writing optimized copy.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.frase.io",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.frase.io",
+    "docsStatus": "verified",
+    "keywords": [
+      "Frase",
+      "Document / Writing",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-document_writing-20",
+    "slug": "marketmuse-ai",
+    "name": "MarketMuse (Document)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=marketmuse-ai",
+    "category": "Document / Writing",
+    "subcategory": "Document / Writing",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI content strategy and competitive analysis software.",
+    "superpower": "AI content strategy and competitive analysis software.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.marketmuse.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.marketmuse.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "MarketMuse",
+      "Document / Writing",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-document_writing-22",
+    "slug": "language-tool-ai",
+    "name": "LanguageTool",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=language-tool-ai",
+    "category": "Document / Writing",
+    "subcategory": "Document / Writing",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Open-source multilingual grammar, style, and spell checker.",
+    "superpower": "Open-source multilingual grammar, style, and spell checker.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://languagetool.org",
+    "officialStatus": "verified",
+    "docsUrl": "https://languagetool.org",
+    "docsStatus": "verified",
+    "keywords": [
+      "LanguageTool",
+      "Document / Writing",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
     "id": "tool-907",
     "slug": "quizizz-ai",
     "name": "Quizizz AI",
@@ -7428,6 +7820,398 @@ export const catalogSummaries: ToolSummary[] = [
     "badge": "FREE"
   },
   {
+    "id": "genuine-education-3",
+    "slug": "duolingo-ai",
+    "name": "Duolingo Max (Education)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=duolingo-ai",
+    "category": "Education",
+    "subcategory": "Learning Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI-powered language learning app with conversational practice and explanation.",
+    "superpower": "AI-powered language learning app with conversational practice and explanation.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.duolingo.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.duolingo.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Duolingo Max",
+      "Education",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-education-5",
+    "slug": "photomath-ai",
+    "name": "Photomath (Education)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=photomath-ai",
+    "category": "Education",
+    "subcategory": "Learning Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI math solver that uses camera to scan and explain math problems step by step.",
+    "superpower": "AI math solver that uses camera to scan and explain math problems step by step.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://photomath.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://photomath.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Photomath",
+      "Education",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-education-7",
+    "slug": "quizlet-ai",
+    "name": "Quizlet AI",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=quizlet-ai",
+    "category": "Education",
+    "subcategory": "Learning Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI-enhanced flashcard and study tool with personalized learning paths.",
+    "superpower": "AI-enhanced flashcard and study tool with personalized learning paths.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://quizlet.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://quizlet.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Quizlet AI",
+      "Education",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-education-11",
+    "slug": "socratic-google",
+    "name": "Socratic by Google (Education)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=socratic-google",
+    "category": "Education",
+    "subcategory": "Learning Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Google AI homework helper that explains academic concepts with visual results.",
+    "superpower": "Google AI homework helper that explains academic concepts with visual results.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://socratic.org",
+    "officialStatus": "verified",
+    "docsUrl": "https://socratic.org",
+    "docsStatus": "verified",
+    "keywords": [
+      "Socratic by Google",
+      "Education",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-education-19",
+    "slug": "curipod-ai",
+    "name": "Curipod (Education)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=curipod-ai",
+    "category": "Education",
+    "subcategory": "Learning Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI lesson plan generator and interactive presentation tool for teachers.",
+    "superpower": "AI lesson plan generator and interactive presentation tool for teachers.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://curipod.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://curipod.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Curipod",
+      "Education",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-education-20",
+    "slug": "magic-school-ai",
+    "name": "MagicSchool AI (Education)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=magic-school-ai",
+    "category": "Education",
+    "subcategory": "Learning Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI assistant for teachers to save time on lesson planning and grading.",
+    "superpower": "AI assistant for teachers to save time on lesson planning and grading.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.magicschool.ai",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.magicschool.ai",
+    "docsStatus": "verified",
+    "keywords": [
+      "MagicSchool AI",
+      "Education",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-education-2",
+    "slug": "turnitin-ai",
+    "name": "Turnitin AI",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=turnitin-ai",
+    "category": "Education",
+    "subcategory": "Education",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Plagiarism detection and AI writing checking for institutional academic integrity.",
+    "superpower": "Plagiarism detection and AI writing checking for institutional academic integrity.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.turnitin.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.turnitin.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Turnitin AI",
+      "Education",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-education-3",
+    "slug": "copyleaks-ai",
+    "name": "Copyleaks",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=copyleaks-ai",
+    "category": "Education",
+    "subcategory": "Education",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI content detector and plagiarism checker for educational institutions.",
+    "superpower": "AI content detector and plagiarism checker for educational institutions.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://copyleaks.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://copyleaks.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Copyleaks",
+      "Education",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-education-4",
+    "slug": "gptzero-me",
+    "name": "GPTZero (Education)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=gptzero-me",
+    "category": "Education",
+    "subcategory": "Education",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Leading AI detection tool for identifying AI-generated text in student submissions.",
+    "superpower": "Leading AI detection tool for identifying AI-generated text in student submissions.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://gptzero.me",
+    "officialStatus": "verified",
+    "docsUrl": "https://gptzero.me",
+    "docsStatus": "verified",
+    "keywords": [
+      "GPTZero",
+      "Education",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-education-12",
+    "slug": "formative-education",
+    "name": "Formative",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=formative-education",
+    "category": "Education",
+    "subcategory": "Education",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Real-time student response and assessment platform with automated grading.",
+    "superpower": "Real-time student response and assessment platform with automated grading.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.formative.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.formative.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Formative",
+      "Education",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-education-13",
+    "slug": "socrative-assessment",
+    "name": "Socrative",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=socrative-assessment",
+    "category": "Education",
+    "subcategory": "Education",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Instant student response app for quick classroom assessments and quizzes.",
+    "superpower": "Instant student response app for quick classroom assessments and quizzes.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.socrative.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.socrative.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Socrative",
+      "Education",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-education-14",
+    "slug": "nearpod-interactive",
+    "name": "Nearpod",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=nearpod-interactive",
+    "category": "Education",
+    "subcategory": "Education",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Interactive instructional platform with virtual field trips and formative assessment.",
+    "superpower": "Interactive instructional platform with virtual field trips and formative assessment.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://nearpod.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://nearpod.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Nearpod",
+      "Education",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-education-28",
+    "slug": "symbolab-solver",
+    "name": "Symbolab",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=symbolab-solver",
+    "category": "Education",
+    "subcategory": "Education",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Step-by-step math solver with search engine for algebra through calculus.",
+    "superpower": "Step-by-step math solver with search engine for algebra through calculus.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.symbolab.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.symbolab.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Symbolab",
+      "Education",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-education-30",
+    "slug": "mathway-chegg",
+    "name": "Mathway",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=mathway-chegg",
+    "category": "Education",
+    "subcategory": "Education",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Comprehensive math problem solver covering basic math to linear algebra.",
+    "superpower": "Comprehensive math problem solver covering basic math to linear algebra.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.mathway.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.mathway.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Mathway",
+      "Education",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
     "id": "code-1",
     "slug": "github-copilot",
     "name": "GitHub Copilot",
@@ -7542,6 +8326,930 @@ export const catalogSummaries: ToolSummary[] = [
       "automation"
     ],
     "badge": "FREE TIER"
+  },
+  {
+    "id": "genuine-coding-2",
+    "slug": "amazon-codewhisperer",
+    "name": "Amazon CodeWhisperer",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=amazon-codewhisperer",
+    "category": "Coding",
+    "subcategory": "Developer Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AWS AI coding companion providing code suggestions and security scanning.",
+    "superpower": "AWS AI coding companion providing code suggestions and security scanning.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://aws.amazon.com/codewhisperer/",
+    "officialStatus": "verified",
+    "docsUrl": "https://aws.amazon.com/codewhisperer/",
+    "docsStatus": "verified",
+    "keywords": [
+      "Amazon CodeWhisperer",
+      "Coding",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-coding-5",
+    "slug": "jetbrains-ai",
+    "name": "JetBrains AI",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=jetbrains-ai",
+    "category": "Coding",
+    "subcategory": "Developer Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI assistant integrated into JetBrains IDEs for code generation and review.",
+    "superpower": "AI assistant integrated into JetBrains IDEs for code generation and review.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.jetbrains.com/ai/",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.jetbrains.com/ai/",
+    "docsStatus": "verified",
+    "keywords": [
+      "JetBrains AI",
+      "Coding",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-coding-11",
+    "slug": "cline-ai",
+    "name": "Cline",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=cline-ai",
+    "category": "Coding",
+    "subcategory": "Developer Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Autonomous coding agent in VS Code that can create and edit files, run commands.",
+    "superpower": "Autonomous coding agent in VS Code that can create and edit files, run commands.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://github.com/cline/cline",
+    "officialStatus": "verified",
+    "docsUrl": "https://github.com/cline/cline",
+    "docsStatus": "verified",
+    "keywords": [
+      "Cline",
+      "Coding",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-coding-13",
+    "slug": "pieces-dev",
+    "name": "Pieces for Developers",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=pieces-dev",
+    "category": "Coding",
+    "subcategory": "Developer Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI-powered developer tool for saving, searching, and sharing code snippets.",
+    "superpower": "AI-powered developer tool for saving, searching, and sharing code snippets.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://pieces.app",
+    "officialStatus": "verified",
+    "docsUrl": "https://pieces.app",
+    "docsStatus": "verified",
+    "keywords": [
+      "Pieces for Developers",
+      "Coding",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-coding-17",
+    "slug": "e2b-dev",
+    "name": "E2B",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=e2b-dev",
+    "category": "Coding",
+    "subcategory": "Developer Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Open-source platform for running AI-generated code in sandboxed environments.",
+    "superpower": "Open-source platform for running AI-generated code in sandboxed environments.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://e2b.dev",
+    "officialStatus": "verified",
+    "docsUrl": "https://e2b.dev",
+    "docsStatus": "verified",
+    "keywords": [
+      "E2B",
+      "Coding",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-coding-19",
+    "slug": "runpod-ai",
+    "name": "RunPod",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=runpod-ai",
+    "category": "Coding",
+    "subcategory": "Developer Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "GPU cloud platform for running and fine-tuning AI models at scale.",
+    "superpower": "GPU cloud platform for running and fine-tuning AI models at scale.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.runpod.io",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.runpod.io",
+    "docsStatus": "verified",
+    "keywords": [
+      "RunPod",
+      "Coding",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-coding-20",
+    "slug": "replicate-ai",
+    "name": "Replicate (Coding)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=replicate-ai",
+    "category": "Coding",
+    "subcategory": "Developer Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Cloud API platform for running and fine-tuning open-source AI models.",
+    "superpower": "Cloud API platform for running and fine-tuning open-source AI models.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://replicate.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://replicate.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Replicate",
+      "Coding",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-coding-21",
+    "slug": "modal-labs",
+    "name": "Modal",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=modal-labs",
+    "category": "Coding",
+    "subcategory": "Developer Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Cloud platform for running AI and ML workloads with simple Python functions.",
+    "superpower": "Cloud platform for running AI and ML workloads with simple Python functions.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://modal.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://modal.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Modal",
+      "Coding",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-coding-29",
+    "slug": "groq-api",
+    "name": "Groq API",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=groq-api",
+    "category": "Coding",
+    "subcategory": "Developer Tools",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Ultra-fast AI inference API built on Language Processing Units (LPUs).",
+    "superpower": "Ultra-fast AI inference API built on Language Processing Units (LPUs).",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://groq.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://groq.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Groq API",
+      "Coding",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-productivity_automation-1",
+    "slug": "motion-ai",
+    "name": "Motion",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=motion-ai",
+    "category": "Productivity / Automation",
+    "subcategory": "Workflow Automation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI project manager that automatically plans and schedules your calendar.",
+    "superpower": "AI project manager that automatically plans and schedules your calendar.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.usemotion.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.usemotion.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Motion",
+      "Productivity / Automation",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-productivity_automation-2",
+    "slug": "reclaim-ai",
+    "name": "Reclaim AI",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=reclaim-ai",
+    "category": "Productivity / Automation",
+    "subcategory": "Workflow Automation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI scheduling tool that automatically finds time for tasks, habits, and meetings.",
+    "superpower": "AI scheduling tool that automatically finds time for tasks, habits, and meetings.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://reclaim.ai",
+    "officialStatus": "verified",
+    "docsUrl": "https://reclaim.ai",
+    "docsStatus": "verified",
+    "keywords": [
+      "Reclaim AI",
+      "Productivity / Automation",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-productivity_automation-3",
+    "slug": "clockwise-ai",
+    "name": "Clockwise",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=clockwise-ai",
+    "category": "Productivity / Automation",
+    "subcategory": "Workflow Automation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI calendar optimization tool that moves meetings to create focus blocks.",
+    "superpower": "AI calendar optimization tool that moves meetings to create focus blocks.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.getclockwise.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.getclockwise.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Clockwise",
+      "Productivity / Automation",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-productivity_automation-6",
+    "slug": "superhuman-ai",
+    "name": "Superhuman",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=superhuman-ai",
+    "category": "Productivity / Automation",
+    "subcategory": "Workflow Automation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI-powered email client designed to make email faster and more productive.",
+    "superpower": "AI-powered email client designed to make email faster and more productive.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://superhuman.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://superhuman.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Superhuman",
+      "Productivity / Automation",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-productivity_automation-9",
+    "slug": "magical-ai",
+    "name": "Magical AI",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=magical-ai",
+    "category": "Productivity / Automation",
+    "subcategory": "Workflow Automation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI text expansion and automation tool for eliminating repetitive messaging.",
+    "superpower": "AI text expansion and automation tool for eliminating repetitive messaging.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.getmagical.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.getmagical.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Magical AI",
+      "Productivity / Automation",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-productivity_automation-13",
+    "slug": "pabbly-connect-ai",
+    "name": "Pabbly Connect",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=pabbly-connect-ai",
+    "category": "Productivity / Automation",
+    "subcategory": "Workflow Automation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Affordable workflow automation platform for connecting apps and AI tools.",
+    "superpower": "Affordable workflow automation platform for connecting apps and AI tools.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.pabbly.com/connect/",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.pabbly.com/connect/",
+    "docsStatus": "verified",
+    "keywords": [
+      "Pabbly Connect",
+      "Productivity / Automation",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-productivity_automation-14",
+    "slug": "integrately-ai",
+    "name": "Integrately",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=integrately-ai",
+    "category": "Productivity / Automation",
+    "subcategory": "Workflow Automation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "One-click automation platform for connecting 1,200+ apps without coding.",
+    "superpower": "One-click automation platform for connecting 1,200+ apps without coding.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://integrately.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://integrately.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Integrately",
+      "Productivity / Automation",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-coding-8",
+    "slug": "llama-cpp",
+    "name": "llama.cpp",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=llama-cpp",
+    "category": "Coding",
+    "subcategory": "Coding",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "LLM inference in C/C++ with zero dependencies for hardware acceleration.",
+    "superpower": "LLM inference in C/C++ with zero dependencies for hardware acceleration.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://github.com/ggerganov/llama.cpp",
+    "officialStatus": "verified",
+    "docsUrl": "https://github.com/ggerganov/llama.cpp",
+    "docsStatus": "verified",
+    "keywords": [
+      "llama.cpp",
+      "Coding",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-coding-11",
+    "slug": "litellm",
+    "name": "LiteLLM",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=litellm",
+    "category": "Coding",
+    "subcategory": "Coding",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Call 100+ LLM APIs using the OpenAI format with load balancing and fallbacks.",
+    "superpower": "Call 100+ LLM APIs using the OpenAI format with load balancing and fallbacks.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://github.com/BerriAI/litellm",
+    "officialStatus": "verified",
+    "docsUrl": "https://github.com/BerriAI/litellm",
+    "docsStatus": "verified",
+    "keywords": [
+      "LiteLLM",
+      "Coding",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-coding-25",
+    "slug": "transformers-huggingface",
+    "name": "Hugging Face Transformers",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=transformers-huggingface",
+    "category": "Coding",
+    "subcategory": "Coding",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX.",
+    "superpower": "State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://github.com/huggingface/transformers",
+    "officialStatus": "verified",
+    "docsUrl": "https://github.com/huggingface/transformers",
+    "docsStatus": "verified",
+    "keywords": [
+      "Hugging Face Transformers",
+      "Coding",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-coding-27",
+    "slug": "datasets-huggingface",
+    "name": "Hugging Face Datasets",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=datasets-huggingface",
+    "category": "Coding",
+    "subcategory": "Coding",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Fast, efficient library to access and share audio, computer vision, and NLP datasets.",
+    "superpower": "Fast, efficient library to access and share audio, computer vision, and NLP datasets.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://github.com/huggingface/datasets",
+    "officialStatus": "verified",
+    "docsUrl": "https://github.com/huggingface/datasets",
+    "docsStatus": "verified",
+    "keywords": [
+      "Hugging Face Datasets",
+      "Coding",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-coding-28",
+    "slug": "gradio-app",
+    "name": "Gradio",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=gradio-app",
+    "category": "Coding",
+    "subcategory": "Coding",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Build and share delightful machine learning web apps in Python in minutes.",
+    "superpower": "Build and share delightful machine learning web apps in Python in minutes.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.gradio.app",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.gradio.app",
+    "docsStatus": "verified",
+    "keywords": [
+      "Gradio",
+      "Coding",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-coding-29",
+    "slug": "streamlit-io",
+    "name": "Streamlit",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=streamlit-io",
+    "category": "Coding",
+    "subcategory": "Coding",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Faster way to build and share data apps using pure Python.",
+    "superpower": "Faster way to build and share data apps using pure Python.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://streamlit.io",
+    "officialStatus": "verified",
+    "docsUrl": "https://streamlit.io",
+    "docsStatus": "verified",
+    "keywords": [
+      "Streamlit",
+      "Coding",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-coding-30",
+    "slug": "chainlit-io",
+    "name": "Chainlit",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=chainlit-io",
+    "category": "Coding",
+    "subcategory": "Coding",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Build production-ready Conversational AI apps in minutes in Python.",
+    "superpower": "Build production-ready Conversational AI apps in minutes in Python.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://github.com/Chainlit/chainlit",
+    "officialStatus": "verified",
+    "docsUrl": "https://github.com/Chainlit/chainlit",
+    "docsStatus": "verified",
+    "keywords": [
+      "Chainlit",
+      "Coding",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-coding-33",
+    "slug": "marimo-notebook",
+    "name": "marimo",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=marimo-notebook",
+    "category": "Coding",
+    "subcategory": "Coding",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Next-generation reactive Python notebook for AI and data science.",
+    "superpower": "Next-generation reactive Python notebook for AI and data science.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://marimo.io",
+    "officialStatus": "verified",
+    "docsUrl": "https://marimo.io",
+    "docsStatus": "verified",
+    "keywords": [
+      "marimo",
+      "Coding",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-coding-39",
+    "slug": "prefect-io",
+    "name": "Prefect",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=prefect-io",
+    "category": "Coding",
+    "subcategory": "Coding",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Workflow orchestration framework for building data pipelines and AI workflows.",
+    "superpower": "Workflow orchestration framework for building data pipelines and AI workflows.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.prefect.io",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.prefect.io",
+    "docsStatus": "verified",
+    "keywords": [
+      "Prefect",
+      "Coding",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-coding-41",
+    "slug": "mlflow-org",
+    "name": "MLflow",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=mlflow-org",
+    "category": "Coding",
+    "subcategory": "Coding",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Open-source platform for the machine learning lifecycle including tracking and registry.",
+    "superpower": "Open-source platform for the machine learning lifecycle including tracking and registry.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://mlflow.org",
+    "officialStatus": "verified",
+    "docsUrl": "https://mlflow.org",
+    "docsStatus": "verified",
+    "keywords": [
+      "MLflow",
+      "Coding",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-coding-43",
+    "slug": "comet-ml",
+    "name": "Comet",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=comet-ml",
+    "category": "Coding",
+    "subcategory": "Coding",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Enterprise machine learning platform for tracking, evaluating, and monitoring models.",
+    "superpower": "Enterprise machine learning platform for tracking, evaluating, and monitoring models.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.comet.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.comet.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Comet",
+      "Coding",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-coding-45",
+    "slug": "clearml-ai",
+    "name": "ClearML",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=clearml-ai",
+    "category": "Coding",
+    "subcategory": "Coding",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Open-source MLOps suite including experiment manager, data management, and orchestration.",
+    "superpower": "Open-source MLOps suite including experiment manager, data management, and orchestration.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://clear.ml",
+    "officialStatus": "verified",
+    "docsUrl": "https://clear.ml",
+    "docsStatus": "verified",
+    "keywords": [
+      "ClearML",
+      "Coding",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-productivity_automation-33",
+    "slug": "shortwave-email",
+    "name": "Shortwave",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=shortwave-email",
+    "category": "Productivity / Automation",
+    "subcategory": "Productivity / Automation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI-powered email app for Gmail with instant summaries and auto-drafting.",
+    "superpower": "AI-powered email app for Gmail with instant summaries and auto-drafting.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.shortwave.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.shortwave.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Shortwave",
+      "Productivity / Automation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-productivity_automation-36",
+    "slug": "sanebox-email",
+    "name": "SaneBox",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=sanebox-email",
+    "category": "Productivity / Automation",
+    "subcategory": "Productivity / Automation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI email filter that automatically categorizes unimportant emails.",
+    "superpower": "AI email filter that automatically categorizes unimportant emails.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.sanebox.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.sanebox.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "SaneBox",
+      "Productivity / Automation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-productivity_automation-42",
+    "slug": "baserow-io",
+    "name": "Baserow",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=baserow-io",
+    "category": "Productivity / Automation",
+    "subcategory": "Productivity / Automation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Open-source no-code database and Airtable alternative.",
+    "superpower": "Open-source no-code database and Airtable alternative.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://baserow.io",
+    "officialStatus": "verified",
+    "docsUrl": "https://baserow.io",
+    "docsStatus": "verified",
+    "keywords": [
+      "Baserow",
+      "Productivity / Automation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-productivity_automation-43",
+    "slug": "nocodb-app",
+    "name": "NocoDB",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=nocodb-app",
+    "category": "Productivity / Automation",
+    "subcategory": "Productivity / Automation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Open-source no-code database platform transforming SQL databases into smart spreadsheets.",
+    "superpower": "Open-source no-code database platform transforming SQL databases into smart spreadsheets.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://nocodb.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://nocodb.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "NocoDB",
+      "Productivity / Automation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "final700-coding-11",
+    "slug": "goose-ai-agent",
+    "name": "Goose by Block",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=goose-ai-agent",
+    "category": "Coding",
+    "subcategory": "Coding",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open source download is available.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Open-source AI agent that automates software engineering tasks.",
+    "superpower": "Open-source AI agent that automates software engineering tasks.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://github.com/block/goose",
+    "officialStatus": "verified",
+    "docsUrl": "https://github.com/block/goose",
+    "docsStatus": "verified",
+    "keywords": [
+      "Goose by Block",
+      "Coding",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
   },
   {
     "id": "tool-1063",
@@ -7773,6 +9481,34 @@ export const catalogSummaries: ToolSummary[] = [
       "education"
     ],
     "badge": "FREE-TIER"
+  },
+  {
+    "id": "genuine-gaming_3d-4",
+    "slug": "scenario-ai",
+    "name": "Scenario",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=scenario-ai",
+    "category": "Gaming / 3D",
+    "subcategory": "3D Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI game asset generator for creating consistent game art and 3D assets.",
+    "superpower": "AI game asset generator for creating consistent game art and 3D assets.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.scenario.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.scenario.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Scenario",
+      "Gaming / 3D",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
   },
   {
     "id": "tool-179",
@@ -9392,6 +11128,174 @@ export const catalogSummaries: ToolSummary[] = [
     "badge": "Open Official Hugging Face →"
   },
   {
+    "id": "exp700-image_generation-14",
+    "slug": "artbreeder-gen",
+    "name": "Artbreeder (Image Generation)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=artbreeder-gen",
+    "category": "Image Generation",
+    "subcategory": "Image Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Collaborative AI picture generator for creating portraits, landscapes, and buildings.",
+    "superpower": "Collaborative AI picture generator for creating portraits, landscapes, and buildings.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.artbreeder.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.artbreeder.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Artbreeder",
+      "Image Generation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-image_generation-15",
+    "slug": "wombo-dream-ai",
+    "name": "WOMBO Dream (Image Generation)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=wombo-dream-ai",
+    "category": "Image Generation",
+    "subcategory": "Image Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Mobile and web AI art generator turning words into photos and artworks.",
+    "superpower": "Mobile and web AI art generator turning words into photos and artworks.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://dream.ai",
+    "officialStatus": "verified",
+    "docsUrl": "https://dream.ai",
+    "docsStatus": "verified",
+    "keywords": [
+      "WOMBO Dream",
+      "Image Generation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-image_generation-16",
+    "slug": "craiyon-ai",
+    "name": "Craiyon (DALL-E mini)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=craiyon-ai",
+    "category": "Image Generation",
+    "subcategory": "Image Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Free online AI image generator drawing pictures from text prompts.",
+    "superpower": "Free online AI image generator drawing pictures from text prompts.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.craiyon.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.craiyon.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Craiyon (DALL-E mini)",
+      "Image Generation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "final700-image_generation-4",
+    "slug": "sdxl-turbo-stability",
+    "name": "SDXL Turbo (Image Generation)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=sdxl-turbo-stability",
+    "category": "Image Generation",
+    "subcategory": "Image Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open source download is available.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Real-time one-step text-to-image model by Stability AI.",
+    "superpower": "Real-time one-step text-to-image model by Stability AI.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://huggingface.co/stabilityai/sdxl-turbo",
+    "officialStatus": "verified",
+    "docsUrl": "https://huggingface.co/stabilityai/sdxl-turbo",
+    "docsStatus": "verified",
+    "keywords": [
+      "SDXL Turbo",
+      "Image Generation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "final700-image_generation-10",
+    "slug": "hunyuan-dit-tencent",
+    "name": "HunyuanDiT (Tencent)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=hunyuan-dit-tencent",
+    "category": "Image Generation",
+    "subcategory": "Image Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open source download is available.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Text-to-image Diffusion Transformer with fine-grained understanding.",
+    "superpower": "Text-to-image Diffusion Transformer with fine-grained understanding.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://github.com/Tencent/HunyuanDiT",
+    "officialStatus": "verified",
+    "docsUrl": "https://github.com/Tencent/HunyuanDiT",
+    "docsStatus": "verified",
+    "keywords": [
+      "HunyuanDiT (Tencent)",
+      "Image Generation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "reach710-image-generation-5",
+    "slug": "ip-adapter-huggingface",
+    "name": "IP-Adapter (Image Generation)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=ip-adapter-huggingface",
+    "category": "Image Generation",
+    "subcategory": "Image Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open source download is available.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Image prompt adapter for text-to-image diffusion models.",
+    "superpower": "Image prompt adapter for text-to-image diffusion models.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://github.com/tencent-ailab/IP-Adapter",
+    "officialStatus": "verified",
+    "docsUrl": "https://github.com/tencent-ailab/IP-Adapter",
+    "docsStatus": "verified",
+    "keywords": [
+      "IP-Adapter",
+      "Image Generation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
     "id": "tool-1186",
     "slug": "suno-ai-v3-5",
     "name": "Suno AI v3.5",
@@ -9656,6 +11560,342 @@ export const catalogSummaries: ToolSummary[] = [
     "badge": "FREE-TIER"
   },
   {
+    "id": "genuine-music_generation-1",
+    "slug": "aiva-ai",
+    "name": "AIVA (Music Generation)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=aiva-ai",
+    "category": "Music Generation",
+    "subcategory": "AI Music",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI music composition tool for creating original soundtracks and background music.",
+    "superpower": "AI music composition tool for creating original soundtracks and background music.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.aiva.ai",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.aiva.ai",
+    "docsStatus": "verified",
+    "keywords": [
+      "AIVA",
+      "Music Generation",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-music_generation-2",
+    "slug": "soundraw-ai",
+    "name": "Soundraw",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=soundraw-ai",
+    "category": "Music Generation",
+    "subcategory": "AI Music",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI music generator for creating royalty-free music customized to mood and genre.",
+    "superpower": "AI music generator for creating royalty-free music customized to mood and genre.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://soundraw.io",
+    "officialStatus": "verified",
+    "docsUrl": "https://soundraw.io",
+    "docsStatus": "verified",
+    "keywords": [
+      "Soundraw",
+      "Music Generation",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-music_generation-3",
+    "slug": "mubert-ai",
+    "name": "Mubert (Music Generation)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=mubert-ai",
+    "category": "Music Generation",
+    "subcategory": "AI Music",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI-powered streaming platform generating royalty-free music for creators.",
+    "superpower": "AI-powered streaming platform generating royalty-free music for creators.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://mubert.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://mubert.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Mubert",
+      "Music Generation",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-music_generation-4",
+    "slug": "boomy-ai",
+    "name": "Boomy (Music Generation)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=boomy-ai",
+    "category": "Music Generation",
+    "subcategory": "AI Music",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI music creation app for making original songs in seconds and distributing them.",
+    "superpower": "AI music creation app for making original songs in seconds and distributing them.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://boomy.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://boomy.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Boomy",
+      "Music Generation",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-music_generation-6",
+    "slug": "loudly-ai",
+    "name": "Loudly (Music Generation)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=loudly-ai",
+    "category": "Music Generation",
+    "subcategory": "AI Music",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI music generator and editor for creating royalty-free stems and tracks.",
+    "superpower": "AI music generator and editor for creating royalty-free stems and tracks.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.loudly.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.loudly.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Loudly",
+      "Music Generation",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-music_generation-5",
+    "slug": "riffusion-ai",
+    "name": "Riffusion (Music Generation)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=riffusion-ai",
+    "category": "Music Generation",
+    "subcategory": "Music Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Real-time music generation using Stable Diffusion on spectrogram images.",
+    "superpower": "Real-time music generation using Stable Diffusion on spectrogram images.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.riffusion.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.riffusion.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Riffusion",
+      "Music Generation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-music_generation-10",
+    "slug": "landr-mastering-ai",
+    "name": "LANDR",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=landr-mastering-ai",
+    "category": "Music Generation",
+    "subcategory": "Music Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI-powered automated music mastering, distribution, and sample platform.",
+    "superpower": "AI-powered automated music mastering, distribution, and sample platform.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.landr.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.landr.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "LANDR",
+      "Music Generation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-music_generation-12",
+    "slug": "eMastered-ai",
+    "name": "eMastered (Music Generation)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=eMastered-ai",
+    "category": "Music Generation",
+    "subcategory": "Music Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI audio mastering engine built by Grammy-winning engineers.",
+    "superpower": "AI audio mastering engine built by Grammy-winning engineers.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://emastered.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://emastered.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "eMastered",
+      "Music Generation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-music_generation-13",
+    "slug": "lalal-ai-stem-splitter",
+    "name": "LALAL.AI (Music Generation)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=lalal-ai-stem-splitter",
+    "category": "Music Generation",
+    "subcategory": "Music Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "High precision vocal remover and music source separation service.",
+    "superpower": "High precision vocal remover and music source separation service.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.lalal.ai",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.lalal.ai",
+    "docsStatus": "verified",
+    "keywords": [
+      "LALAL.AI",
+      "Music Generation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-music_generation-15",
+    "slug": "moises-ai-musician",
+    "name": "Moises.ai (Music Generation)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=moises-ai-musician",
+    "category": "Music Generation",
+    "subcategory": "Music Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "The musician's app for vocal separation, chord detection, and pitch changing.",
+    "superpower": "The musician's app for vocal separation, chord detection, and pitch changing.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://moises.ai",
+    "officialStatus": "verified",
+    "docsUrl": "https://moises.ai",
+    "docsStatus": "verified",
+    "keywords": [
+      "Moises.ai",
+      "Music Generation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-music_generation-16",
+    "slug": "vocal-remover-org",
+    "name": "Vocal Remover",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=vocal-remover-org",
+    "category": "Music Generation",
+    "subcategory": "Music Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Free online stem separator to split songs into vocal and instrumental tracks.",
+    "superpower": "Free online stem separator to split songs into vocal and instrumental tracks.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://vocalremover.org",
+    "officialStatus": "verified",
+    "docsUrl": "https://vocalremover.org",
+    "docsStatus": "verified",
+    "keywords": [
+      "Vocal Remover",
+      "Music Generation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-music_generation-3",
+    "slug": "musicgen-huggingface",
+    "name": "Meta MusicGen",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=musicgen-huggingface",
+    "category": "Music Generation",
+    "subcategory": "Music Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "State-of-the-art controllable music generation model by Meta AI.",
+    "superpower": "State-of-the-art controllable music generation model by Meta AI.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://huggingface.co/spaces/facebook/MusicGen",
+    "officialStatus": "verified",
+    "docsUrl": "https://huggingface.co/spaces/facebook/MusicGen",
+    "docsStatus": "verified",
+    "keywords": [
+      "Meta MusicGen",
+      "Music Generation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
     "id": "tool-1382",
     "slug": "photoroom",
     "name": "Photoroom",
@@ -9821,6 +12061,90 @@ export const catalogSummaries: ToolSummary[] = [
     "badge": "OPEN-SOURCE"
   },
   {
+    "id": "exp700-photo_editing-5",
+    "slug": "slazzer-remove-bg",
+    "name": "Slazzer (Photo Editing)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=slazzer-remove-bg",
+    "category": "Photo Editing",
+    "subcategory": "Photo Editing",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI background remover for e-commerce and personal photographs.",
+    "superpower": "AI background remover for e-commerce and personal photographs.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.slazzer.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.slazzer.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Slazzer",
+      "Photo Editing",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-photo_editing-6",
+    "slug": "erase-bg-ai",
+    "name": "Erase.bg (Photo Editing)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=erase-bg-ai",
+    "category": "Photo Editing",
+    "subcategory": "Photo Editing",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Free online background remover tool for individuals and professionals.",
+    "superpower": "Free online background remover tool for individuals and professionals.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.erase.bg",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.erase.bg",
+    "docsStatus": "verified",
+    "keywords": [
+      "Erase.bg",
+      "Photo Editing",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "final700-photo_editing-1",
+    "slug": "lama-inpainting",
+    "name": "LaMa Inpainting",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=lama-inpainting",
+    "category": "Photo Editing",
+    "subcategory": "Photo Editing",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open source download is available.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Resolution-robust large mask inpainting with Fourier convolutions.",
+    "superpower": "Resolution-robust large mask inpainting with Fourier convolutions.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://github.com/advimman/lama",
+    "officialStatus": "verified",
+    "docsUrl": "https://github.com/advimman/lama",
+    "docsStatus": "verified",
+    "keywords": [
+      "LaMa Inpainting",
+      "Photo Editing",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
     "id": "tool-1474",
     "slug": "napkin-ai",
     "name": "Napkin AI",
@@ -9951,6 +12275,174 @@ export const catalogSummaries: ToolSummary[] = [
       "education"
     ],
     "badge": "OPEN-SOURCE"
+  },
+  {
+    "id": "genuine-ppt_presentation_creation-4",
+    "slug": "canva-ai-presentations",
+    "name": "Canva AI Presentations",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=canva-ai-presentations",
+    "category": "PPT / Presentation Creation",
+    "subcategory": "Slide Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI-powered presentation maker with Magic Design and auto-layout capabilities.",
+    "superpower": "AI-powered presentation maker with Magic Design and auto-layout capabilities.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.canva.com/presentations/",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.canva.com/presentations/",
+    "docsStatus": "verified",
+    "keywords": [
+      "Canva AI Presentations",
+      "PPT / Presentation Creation",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-ppt_presentation_creation-10",
+    "slug": "visme-ai",
+    "name": "Visme AI",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=visme-ai",
+    "category": "PPT / Presentation Creation",
+    "subcategory": "Slide Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Visual content platform with AI presentation designer and data visualization.",
+    "superpower": "Visual content platform with AI presentation designer and data visualization.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.visme.co",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.visme.co",
+    "docsStatus": "verified",
+    "keywords": [
+      "Visme AI",
+      "PPT / Presentation Creation",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-ppt_presentation_creation-12",
+    "slug": "marp-ai",
+    "name": "Marp",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=marp-ai",
+    "category": "PPT / Presentation Creation",
+    "subcategory": "Slide Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Open-source Markdown presentation ecosystem for developer-friendly slide creation.",
+    "superpower": "Open-source Markdown presentation ecosystem for developer-friendly slide creation.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://marp.app",
+    "officialStatus": "verified",
+    "docsUrl": "https://marp.app",
+    "docsStatus": "verified",
+    "keywords": [
+      "Marp",
+      "PPT / Presentation Creation",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-ppt_presentation_creation-14",
+    "slug": "zoho-show-app",
+    "name": "Zoho Show App",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=zoho-show-app",
+    "category": "PPT / Presentation Creation",
+    "subcategory": "PPT / Presentation Creation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Cloud presentation software for contextual story crafting.",
+    "superpower": "Cloud presentation software for contextual story crafting.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.zoho.com/show/",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.zoho.com/show/",
+    "docsStatus": "verified",
+    "keywords": [
+      "Zoho Show App",
+      "PPT / Presentation Creation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-ppt_presentation_creation-21",
+    "slug": "infogram-charts",
+    "name": "Infogram",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=infogram-charts",
+    "category": "PPT / Presentation Creation",
+    "subcategory": "PPT / Presentation Creation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Data visualization tool for making interactive charts, reports, and maps.",
+    "superpower": "Data visualization tool for making interactive charts, reports, and maps.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://infogram.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://infogram.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Infogram",
+      "PPT / Presentation Creation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-ppt_presentation_creation-28",
+    "slug": "flourish-studio",
+    "name": "Flourish",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=flourish-studio",
+    "category": "PPT / Presentation Creation",
+    "subcategory": "PPT / Presentation Creation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Data visualization and story telling platform for newsrooms and presentations.",
+    "superpower": "Data visualization and story telling platform for newsrooms and presentations.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://flourish.studio",
+    "officialStatus": "verified",
+    "docsUrl": "https://flourish.studio",
+    "docsStatus": "verified",
+    "keywords": [
+      "Flourish",
+      "PPT / Presentation Creation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
   },
   {
     "id": "tool-635",
@@ -11108,6 +13600,174 @@ export const catalogSummaries: ToolSummary[] = [
     "badge": "Open Official GitHub →"
   },
   {
+    "id": "genuine-search_research-11",
+    "slug": "inciteful-xyz",
+    "name": "Inciteful (Search)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=inciteful-xyz",
+    "category": "Search / Research",
+    "subcategory": "Academic Research",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI-powered academic paper discovery and network analysis tool.",
+    "superpower": "AI-powered academic paper discovery and network analysis tool.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://inciteful.xyz",
+    "officialStatus": "verified",
+    "docsUrl": "https://inciteful.xyz",
+    "docsStatus": "verified",
+    "keywords": [
+      "Inciteful",
+      "Search / Research",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-search_research-15",
+    "slug": "metaphor-systems",
+    "name": "Exa (Metaphor)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=metaphor-systems",
+    "category": "Search / Research",
+    "subcategory": "Academic Research",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI-powered semantic search API for finding high-quality web content.",
+    "superpower": "AI-powered semantic search API for finding high-quality web content.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://exa.ai",
+    "officialStatus": "verified",
+    "docsUrl": "https://exa.ai",
+    "docsStatus": "verified",
+    "keywords": [
+      "Exa (Metaphor)",
+      "Search / Research",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-search_research-20",
+    "slug": "paperdigest",
+    "name": "Paper Digest (Search)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=paperdigest",
+    "category": "Search / Research",
+    "subcategory": "Academic Research",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI that summarizes academic papers into concise, structured digests.",
+    "superpower": "AI that summarizes academic papers into concise, structured digests.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.paperdigest.org",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.paperdigest.org",
+    "docsStatus": "verified",
+    "keywords": [
+      "Paper Digest",
+      "Search / Research",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-search_research-24",
+    "slug": "paperpal-ai",
+    "name": "Paperpal (Search)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=paperpal-ai",
+    "category": "Search / Research",
+    "subcategory": "Academic Research",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI academic writing assistant that helps researchers write and improve papers.",
+    "superpower": "AI academic writing assistant that helps researchers write and improve papers.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://paperpal.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://paperpal.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Paperpal",
+      "Search / Research",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-search_research-26",
+    "slug": "open-alex",
+    "name": "OpenAlex",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=open-alex",
+    "category": "Search / Research",
+    "subcategory": "Academic Research",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Open catalog of global scholarly research with AI-powered discovery features.",
+    "superpower": "Open catalog of global scholarly research with AI-powered discovery features.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://openalex.org",
+    "officialStatus": "verified",
+    "docsUrl": "https://openalex.org",
+    "docsStatus": "verified",
+    "keywords": [
+      "OpenAlex",
+      "Search / Research",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-search_research-4",
+    "slug": "arxiv-org",
+    "name": "arXiv.org",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=arxiv-org",
+    "category": "Search / Research",
+    "subcategory": "Search / Research",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Open-access archive for 2+ million scholarly articles in STEM fields.",
+    "superpower": "Open-access archive for 2+ million scholarly articles in STEM fields.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://arxiv.org",
+    "officialStatus": "verified",
+    "docsUrl": "https://arxiv.org",
+    "docsStatus": "verified",
+    "keywords": [
+      "arXiv.org",
+      "Search / Research",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
     "id": "tool-1269",
     "slug": "whisper-openai",
     "name": "Whisper OpenAI",
@@ -11768,6 +14428,90 @@ export const catalogSummaries: ToolSummary[] = [
     "badge": "Open Official GitHub →"
   },
   {
+    "id": "genuine-speech_to_text-2",
+    "slug": "assembly-ai",
+    "name": "AssemblyAI (Speech to Text)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=assembly-ai",
+    "category": "Speech to Text",
+    "subcategory": "Transcription",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Speech AI API with transcription, entity detection, and content moderation.",
+    "superpower": "Speech AI API with transcription, entity detection, and content moderation.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.assemblyai.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.assemblyai.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "AssemblyAI",
+      "Speech to Text",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "genuine-speech_to_text-7",
+    "slug": "gladia-ai",
+    "name": "Gladia",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=gladia-ai",
+    "category": "Speech to Text",
+    "subcategory": "Transcription",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier is available; check the official website for current limits.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Real-time speech recognition API with word-level timestamps and diarization.",
+    "superpower": "Real-time speech recognition API with word-level timestamps and diarization.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.gladia.io",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.gladia.io",
+    "docsStatus": "verified",
+    "keywords": [
+      "Gladia",
+      "Speech to Text",
+      "AI",
+      "free tier"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-speech_to_text-5",
+    "slug": "mac-whisper-app",
+    "name": "MacWhisper (Speech to Text)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=mac-whisper-app",
+    "category": "Speech to Text",
+    "subcategory": "Speech to Text",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Native macOS app for transcribing audio files locally using Whisper.",
+    "superpower": "Native macOS app for transcribing audio files locally using Whisper.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://goodsnooze.gumroad.com/l/macwhisper",
+    "officialStatus": "verified",
+    "docsUrl": "https://goodsnooze.gumroad.com/l/macwhisper",
+    "docsStatus": "verified",
+    "keywords": [
+      "MacWhisper",
+      "Speech to Text",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
     "id": "expansion-1-1",
     "slug": "continue-dev",
     "name": "Continue",
@@ -11789,34 +14533,6 @@ export const catalogSummaries: ToolSummary[] = [
     "docsStatus": "unavailable",
     "keywords": [
       "Continue",
-      "Coding",
-      "Developer Assistants",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-1-2",
-    "slug": "cline",
-    "name": "Cline",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=cline",
-    "category": "Coding",
-    "subcategory": "Developer Assistants",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Cline provides AI-assisted capabilities for developer assistants.",
-    "superpower": "Accelerates developer assistants work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://github.com/cline/cline",
-    "officialStatus": "verified",
-    "docsUrl": "https://github.com/cline/cline",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Cline",
       "Coding",
       "Developer Assistants",
       "AI"
@@ -12328,34 +15044,6 @@ export const catalogSummaries: ToolSummary[] = [
     "badge": "FREE TIER"
   },
   {
-    "id": "expansion-1-25",
-    "slug": "amazon-codewhisperer",
-    "name": "Amazon CodeWhisperer",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=amazon-codewhisperer",
-    "category": "Coding",
-    "subcategory": "Developer Assistants",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Amazon CodeWhisperer provides AI-assisted capabilities for developer assistants.",
-    "superpower": "Accelerates developer assistants work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://aws.amazon.com/codewhisperer/",
-    "officialStatus": "verified",
-    "docsUrl": "https://aws.amazon.com/codewhisperer/",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Amazon CodeWhisperer",
-      "Coding",
-      "Developer Assistants",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
     "id": "expansion-1-26",
     "slug": "google-duet-code",
     "name": "Gemini Code Assist",
@@ -12461,34 +15149,6 @@ export const catalogSummaries: ToolSummary[] = [
     "docsStatus": "unavailable",
     "keywords": [
       "Tabnine Enterprise",
-      "Coding",
-      "Developer Assistants",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-1-30",
-    "slug": "pieces-for-developers",
-    "name": "Pieces for Developers",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=pieces-for-developers",
-    "category": "Coding",
-    "subcategory": "Developer Assistants",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Pieces for Developers provides AI-assisted capabilities for developer assistants.",
-    "superpower": "Accelerates developer assistants work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://pieces.app",
-    "officialStatus": "verified",
-    "docsUrl": "https://pieces.app",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Pieces for Developers",
       "Coding",
       "Developer Assistants",
       "AI"
@@ -12972,34 +15632,6 @@ export const catalogSummaries: ToolSummary[] = [
     "badge": "FREE TIER"
   },
   {
-    "id": "expansion-1-49",
-    "slug": "modal-ai",
-    "name": "Modal",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=modal-ai",
-    "category": "Coding",
-    "subcategory": "ML Infrastructure",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Modal provides AI-assisted capabilities for ml infrastructure.",
-    "superpower": "Accelerates ml infrastructure work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://modal.com",
-    "officialStatus": "verified",
-    "docsUrl": "https://modal.com",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Modal",
-      "Coding",
-      "ML Infrastructure",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
     "id": "expansion-1-50",
     "slug": "replicate-api",
     "name": "Replicate API",
@@ -13140,34 +15772,6 @@ export const catalogSummaries: ToolSummary[] = [
     "badge": "FREE TIER"
   },
   {
-    "id": "expansion-1-55",
-    "slug": "runpod",
-    "name": "RunPod",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=runpod",
-    "category": "Coding",
-    "subcategory": "ML Infrastructure",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "RunPod provides AI-assisted capabilities for ml infrastructure.",
-    "superpower": "Accelerates ml infrastructure work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://www.runpod.io",
-    "officialStatus": "verified",
-    "docsUrl": "https://www.runpod.io",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "RunPod",
-      "Coding",
-      "ML Infrastructure",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
     "id": "expansion-1-56",
     "slug": "vast-ai",
     "name": "Vast.ai",
@@ -13189,90 +15793,6 @@ export const catalogSummaries: ToolSummary[] = [
     "docsStatus": "unavailable",
     "keywords": [
       "Vast.ai",
-      "Coding",
-      "ML Infrastructure",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-1-58",
-    "slug": "mlflow",
-    "name": "MLflow",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=mlflow",
-    "category": "Coding",
-    "subcategory": "ML Infrastructure",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "MLflow provides AI-assisted capabilities for ml infrastructure.",
-    "superpower": "Accelerates ml infrastructure work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://mlflow.org",
-    "officialStatus": "verified",
-    "docsUrl": "https://mlflow.org",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "MLflow",
-      "Coding",
-      "ML Infrastructure",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-1-59",
-    "slug": "clearml",
-    "name": "ClearML",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=clearml",
-    "category": "Coding",
-    "subcategory": "ML Infrastructure",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "ClearML provides AI-assisted capabilities for ml infrastructure.",
-    "superpower": "Accelerates ml infrastructure work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://clear.ml",
-    "officialStatus": "verified",
-    "docsUrl": "https://clear.ml",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "ClearML",
-      "Coding",
-      "ML Infrastructure",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-1-61",
-    "slug": "comet-ml",
-    "name": "Comet",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=comet-ml",
-    "category": "Coding",
-    "subcategory": "ML Infrastructure",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Comet provides AI-assisted capabilities for ml infrastructure.",
-    "superpower": "Accelerates ml infrastructure work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://www.comet.com",
-    "officialStatus": "verified",
-    "docsUrl": "https://www.comet.com",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Comet",
       "Coding",
       "ML Infrastructure",
       "AI"
@@ -13303,34 +15823,6 @@ export const catalogSummaries: ToolSummary[] = [
       "DagsHub",
       "Coding",
       "ML Infrastructure",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-1-64",
-    "slug": "prefect-ai",
-    "name": "Prefect",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=prefect-ai",
-    "category": "Productivity / Automation",
-    "subcategory": "Workflow Automation",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Prefect provides AI-assisted capabilities for workflow automation.",
-    "superpower": "Accelerates workflow automation work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://www.prefect.io",
-    "officialStatus": "verified",
-    "docsUrl": "https://www.prefect.io",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Prefect",
-      "Productivity / Automation",
-      "Workflow Automation",
       "AI"
     ],
     "badge": "FREE TIER"
@@ -13497,62 +15989,6 @@ export const catalogSummaries: ToolSummary[] = [
     "docsStatus": "unavailable",
     "keywords": [
       "Parabola",
-      "Productivity / Automation",
-      "Workflow Automation",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-1-72",
-    "slug": "integrately",
-    "name": "Integrately",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=integrately",
-    "category": "Productivity / Automation",
-    "subcategory": "Workflow Automation",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Integrately provides AI-assisted capabilities for workflow automation.",
-    "superpower": "Accelerates workflow automation work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://integrately.com",
-    "officialStatus": "verified",
-    "docsUrl": "https://integrately.com",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Integrately",
-      "Productivity / Automation",
-      "Workflow Automation",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-1-73",
-    "slug": "pabbly-connect",
-    "name": "Pabbly Connect",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=pabbly-connect",
-    "category": "Productivity / Automation",
-    "subcategory": "Workflow Automation",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Pabbly Connect provides AI-assisted capabilities for workflow automation.",
-    "superpower": "Accelerates workflow automation work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://www.pabbly.com/connect/",
-    "officialStatus": "verified",
-    "docsUrl": "https://www.pabbly.com/connect/",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Pabbly Connect",
       "Productivity / Automation",
       "Workflow Automation",
       "AI"
@@ -13980,90 +16416,6 @@ export const catalogSummaries: ToolSummary[] = [
     "badge": "FREE TIER"
   },
   {
-    "id": "expansion-1-90",
-    "slug": "motion-ai",
-    "name": "Motion",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=motion-ai",
-    "category": "Productivity / Automation",
-    "subcategory": "Planning and Scheduling",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Motion provides AI-assisted capabilities for planning and scheduling.",
-    "superpower": "Accelerates planning and scheduling work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://www.usemotion.com",
-    "officialStatus": "verified",
-    "docsUrl": "https://www.usemotion.com",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Motion",
-      "Productivity / Automation",
-      "Planning and Scheduling",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-1-91",
-    "slug": "reclaim-ai",
-    "name": "Reclaim AI",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=reclaim-ai",
-    "category": "Productivity / Automation",
-    "subcategory": "Planning and Scheduling",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Reclaim AI provides AI-assisted capabilities for planning and scheduling.",
-    "superpower": "Accelerates planning and scheduling work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://reclaim.ai",
-    "officialStatus": "verified",
-    "docsUrl": "https://reclaim.ai",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Reclaim AI",
-      "Productivity / Automation",
-      "Planning and Scheduling",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-1-92",
-    "slug": "clockwise",
-    "name": "Clockwise",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=clockwise",
-    "category": "Productivity / Automation",
-    "subcategory": "Planning and Scheduling",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Clockwise provides AI-assisted capabilities for planning and scheduling.",
-    "superpower": "Accelerates planning and scheduling work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://www.getclockwise.com",
-    "officialStatus": "verified",
-    "docsUrl": "https://www.getclockwise.com",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Clockwise",
-      "Productivity / Automation",
-      "Planning and Scheduling",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
     "id": "expansion-1-93",
     "slug": "tana-ai",
     "name": "Tana",
@@ -14260,90 +16612,6 @@ export const catalogSummaries: ToolSummary[] = [
     "badge": "FREE TIER"
   },
   {
-    "id": "expansion-1-103",
-    "slug": "sane-box-ai",
-    "name": "SaneBox",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=sane-box-ai",
-    "category": "Productivity / Automation",
-    "subcategory": "Email Automation",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "SaneBox provides AI-assisted capabilities for email automation.",
-    "superpower": "Accelerates email automation work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://www.sanebox.com",
-    "officialStatus": "verified",
-    "docsUrl": "https://www.sanebox.com",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "SaneBox",
-      "Productivity / Automation",
-      "Email Automation",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-1-104",
-    "slug": "shortwave",
-    "name": "Shortwave",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=shortwave",
-    "category": "Productivity / Automation",
-    "subcategory": "Email Automation",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Shortwave provides AI-assisted capabilities for email automation.",
-    "superpower": "Accelerates email automation work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://www.shortwave.com",
-    "officialStatus": "verified",
-    "docsUrl": "https://www.shortwave.com",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Shortwave",
-      "Productivity / Automation",
-      "Email Automation",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-1-105",
-    "slug": "superhuman-ai",
-    "name": "Superhuman AI",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=superhuman-ai",
-    "category": "Productivity / Automation",
-    "subcategory": "Email Automation",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Superhuman AI provides AI-assisted capabilities for email automation.",
-    "superpower": "Accelerates email automation work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://superhuman.com",
-    "officialStatus": "verified",
-    "docsUrl": "https://superhuman.com",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Superhuman AI",
-      "Productivity / Automation",
-      "Email Automation",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
     "id": "expansion-1-106",
     "slug": "missive-ai",
     "name": "Missive",
@@ -14479,34 +16747,6 @@ export const catalogSummaries: ToolSummary[] = [
       "Slidesgo AI",
       "PPT / Presentation Creation",
       "AI Slide Generators",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-1-114",
-    "slug": "visme-ai",
-    "name": "Visme AI",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=visme-ai",
-    "category": "PPT / Presentation Creation",
-    "subcategory": "Visual Presentations",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Visme AI provides AI-assisted capabilities for visual presentations.",
-    "superpower": "Accelerates visual presentations work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://www.visme.co/ai/",
-    "officialStatus": "verified",
-    "docsUrl": "https://www.visme.co/ai/",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Visme AI",
-      "PPT / Presentation Creation",
-      "Visual Presentations",
       "AI"
     ],
     "badge": "FREE TIER"
@@ -14932,34 +17172,6 @@ export const catalogSummaries: ToolSummary[] = [
     "badge": "FREE TIER"
   },
   {
-    "id": "expansion-1-155",
-    "slug": "scenario",
-    "name": "Scenario",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=scenario",
-    "category": "Gaming / 3D",
-    "subcategory": "Game Assets",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Scenario provides AI-assisted capabilities for game assets.",
-    "superpower": "Accelerates game assets work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://www.scenario.com",
-    "officialStatus": "verified",
-    "docsUrl": "https://www.scenario.com",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Scenario",
-      "Gaming / 3D",
-      "Game Assets",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
     "id": "expansion-1-156",
     "slug": "nvidia-omniverse",
     "name": "NVIDIA Omniverse",
@@ -14983,34 +17195,6 @@ export const catalogSummaries: ToolSummary[] = [
       "NVIDIA Omniverse",
       "Gaming / 3D",
       "3D Collaboration",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-1-157",
-    "slug": "soundraw",
-    "name": "Soundraw",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=soundraw",
-    "category": "Music Generation",
-    "subcategory": "Background Tracks",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Soundraw provides AI-assisted capabilities for background tracks.",
-    "superpower": "Accelerates background tracks work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://soundraw.io",
-    "officialStatus": "verified",
-    "docsUrl": "https://soundraw.io",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Soundraw",
-      "Music Generation",
-      "Background Tracks",
       "AI"
     ],
     "badge": "FREE TIER"
@@ -15067,34 +17251,6 @@ export const catalogSummaries: ToolSummary[] = [
       "Stable Audio",
       "Music Generation",
       "Sound Effects",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-1-161",
-    "slug": "audacity",
-    "name": "Audacity",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=audacity",
-    "category": "Music Generation",
-    "subcategory": "Audio Editing",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Audacity provides AI-assisted capabilities for audio editing.",
-    "superpower": "Accelerates audio editing work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://www.audacityteam.org",
-    "officialStatus": "verified",
-    "docsUrl": "https://www.audacityteam.org",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Audacity",
-      "Music Generation",
-      "Audio Editing",
       "AI"
     ],
     "badge": "FREE TIER"
@@ -15205,34 +17361,6 @@ export const catalogSummaries: ToolSummary[] = [
     "docsStatus": "unavailable",
     "keywords": [
       "Education Perfect",
-      "Education",
-      "Assessment",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-1-166",
-    "slug": "socrative",
-    "name": "Socrative",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=socrative",
-    "category": "Education",
-    "subcategory": "Assessment",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Socrative provides AI-assisted capabilities for assessment.",
-    "superpower": "Accelerates assessment work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://www.socrative.com",
-    "officialStatus": "verified",
-    "docsUrl": "https://www.socrative.com",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Socrative",
       "Education",
       "Assessment",
       "AI"
@@ -15520,34 +17648,6 @@ export const catalogSummaries: ToolSummary[] = [
     "badge": "FREE TIER"
   },
   {
-    "id": "expansion-1-178",
-    "slug": "openalex",
-    "name": "OpenAlex",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=openalex",
-    "category": "Search / Research",
-    "subcategory": "Academic Search",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "OpenAlex provides AI-assisted capabilities for academic search.",
-    "superpower": "Accelerates academic search work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://openalex.org",
-    "officialStatus": "verified",
-    "docsUrl": "https://openalex.org",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "OpenAlex",
-      "Search / Research",
-      "Academic Search",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
     "id": "expansion-1-179",
     "slug": "scite",
     "name": "Scite",
@@ -15716,34 +17816,6 @@ export const catalogSummaries: ToolSummary[] = [
     "badge": "FREE TIER"
   },
   {
-    "id": "expansion-1-185",
-    "slug": "languagetool",
-    "name": "LanguageTool",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=languagetool",
-    "category": "Document / Writing",
-    "subcategory": "Grammar and Revision",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "LanguageTool provides AI-assisted capabilities for grammar and revision.",
-    "superpower": "Accelerates grammar and revision work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://languagetool.org",
-    "officialStatus": "verified",
-    "docsUrl": "https://languagetool.org",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "LanguageTool",
-      "Document / Writing",
-      "Grammar and Revision",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
     "id": "expansion-1-186",
     "slug": "writer",
     "name": "Writer",
@@ -15767,34 +17839,6 @@ export const catalogSummaries: ToolSummary[] = [
       "Writer",
       "Document / Writing",
       "Enterprise Writing",
-      "AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-1-187",
-    "slug": "frase",
-    "name": "Frase",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=frase",
-    "category": "Document / Writing",
-    "subcategory": "SEO Writing",
-    "pricingType": "free-tier",
-    "freePlanDetails": "A free entry point or open-source edition is available; current limits are published by the provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Frase provides AI-assisted capabilities for seo writing.",
-    "superpower": "Accelerates seo writing work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://www.frase.io",
-    "officialStatus": "verified",
-    "docsUrl": "https://www.frase.io",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Frase",
-      "Document / Writing",
-      "SEO Writing",
       "AI"
     ],
     "badge": "FREE TIER"
@@ -16375,33 +18419,6 @@ export const catalogSummaries: ToolSummary[] = [
     "badge": "FREE TIER"
   },
   {
-    "id": "expansion-2-14",
-    "slug": "litellm",
-    "name": "LiteLLM",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=litellm",
-    "category": "Coding",
-    "subcategory": "Model Gateways",
-    "pricingType": "free-tier",
-    "freePlanDetails": "Free entry or open-source access is available; current limits vary by provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "LiteLLM supports AI-assisted model gateways.",
-    "superpower": "Accelerates model gateways work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://github.com/BerriAI/litellm",
-    "officialStatus": "verified",
-    "docsUrl": "https://github.com/BerriAI/litellm",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "LiteLLM",
-      "Coding",
-      "Model Gateways"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
     "id": "expansion-2-15",
     "slug": "llamafile",
     "name": "llamafile",
@@ -16423,33 +18440,6 @@ export const catalogSummaries: ToolSummary[] = [
     "docsStatus": "unavailable",
     "keywords": [
       "llamafile",
-      "Coding",
-      "Local AI"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-2-16",
-    "slug": "llama-cpp-python",
-    "name": "llama.cpp",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=llama-cpp-python",
-    "category": "Coding",
-    "subcategory": "Local AI",
-    "pricingType": "free-tier",
-    "freePlanDetails": "Free entry or open-source access is available; current limits vary by provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "llama.cpp supports AI-assisted local ai.",
-    "superpower": "Accelerates local ai work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://github.com/ggerganov/llama.cpp",
-    "officialStatus": "verified",
-    "docsUrl": "https://github.com/ggerganov/llama.cpp",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "llama.cpp",
       "Coding",
       "Local AI"
     ],
@@ -16861,114 +18851,6 @@ export const catalogSummaries: ToolSummary[] = [
     "badge": "FREE TIER"
   },
   {
-    "id": "expansion-2-32",
-    "slug": "datasets-huggingface",
-    "name": "Hugging Face Datasets",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=datasets-huggingface",
-    "category": "Coding",
-    "subcategory": "ML Frameworks",
-    "pricingType": "free-tier",
-    "freePlanDetails": "Free entry or open-source access is available; current limits vary by provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Hugging Face Datasets supports AI-assisted ml frameworks.",
-    "superpower": "Accelerates ml frameworks work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://github.com/huggingface/datasets",
-    "officialStatus": "verified",
-    "docsUrl": "https://github.com/huggingface/datasets",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Hugging Face Datasets",
-      "Coding",
-      "ML Frameworks"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-2-33",
-    "slug": "gradio",
-    "name": "Gradio",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=gradio",
-    "category": "Coding",
-    "subcategory": "AI Interfaces",
-    "pricingType": "free-tier",
-    "freePlanDetails": "Free entry or open-source access is available; current limits vary by provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Gradio supports AI-assisted ai interfaces.",
-    "superpower": "Accelerates ai interfaces work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://www.gradio.app",
-    "officialStatus": "verified",
-    "docsUrl": "https://www.gradio.app",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Gradio",
-      "Coding",
-      "AI Interfaces"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-2-34",
-    "slug": "streamlit",
-    "name": "Streamlit",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=streamlit",
-    "category": "Coding",
-    "subcategory": "AI Interfaces",
-    "pricingType": "free-tier",
-    "freePlanDetails": "Free entry or open-source access is available; current limits vary by provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Streamlit supports AI-assisted ai interfaces.",
-    "superpower": "Accelerates ai interfaces work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://streamlit.io",
-    "officialStatus": "verified",
-    "docsUrl": "https://streamlit.io",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Streamlit",
-      "Coding",
-      "AI Interfaces"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-2-35",
-    "slug": "chainlit",
-    "name": "Chainlit",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=chainlit",
-    "category": "Coding",
-    "subcategory": "AI Interfaces",
-    "pricingType": "free-tier",
-    "freePlanDetails": "Free entry or open-source access is available; current limits vary by provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Chainlit supports AI-assisted ai interfaces.",
-    "superpower": "Accelerates ai interfaces work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://github.com/Chainlit/chainlit",
-    "officialStatus": "verified",
-    "docsUrl": "https://github.com/Chainlit/chainlit",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Chainlit",
-      "Coding",
-      "AI Interfaces"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
     "id": "expansion-2-36",
     "slug": "giskard",
     "name": "Giskard",
@@ -17374,60 +19256,6 @@ export const catalogSummaries: ToolSummary[] = [
     "badge": "FREE TIER"
   },
   {
-    "id": "expansion-2-52",
-    "slug": "baserow",
-    "name": "Baserow",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=baserow",
-    "category": "Productivity / Automation",
-    "subcategory": "Databases",
-    "pricingType": "free-tier",
-    "freePlanDetails": "Free entry or open-source access is available; current limits vary by provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Baserow supports AI-assisted databases.",
-    "superpower": "Accelerates databases work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://baserow.io",
-    "officialStatus": "verified",
-    "docsUrl": "https://baserow.io",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Baserow",
-      "Productivity / Automation",
-      "Databases"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-2-53",
-    "slug": "nocodb",
-    "name": "NocoDB",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=nocodb",
-    "category": "Productivity / Automation",
-    "subcategory": "Databases",
-    "pricingType": "free-tier",
-    "freePlanDetails": "Free entry or open-source access is available; current limits vary by provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "NocoDB supports AI-assisted databases.",
-    "superpower": "Accelerates databases work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://nocodb.com",
-    "officialStatus": "verified",
-    "docsUrl": "https://nocodb.com",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "NocoDB",
-      "Productivity / Automation",
-      "Databases"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
     "id": "expansion-2-54",
     "slug": "directus",
     "name": "Directus",
@@ -17665,33 +19493,6 @@ export const catalogSummaries: ToolSummary[] = [
     "docsStatus": "unavailable",
     "keywords": [
       "reveal.js",
-      "PPT / Presentation Creation",
-      "Developer Presentations"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-2-63",
-    "slug": "marp",
-    "name": "Marp",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=marp",
-    "category": "PPT / Presentation Creation",
-    "subcategory": "Developer Presentations",
-    "pricingType": "free-tier",
-    "freePlanDetails": "Free entry or open-source access is available; current limits vary by provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Marp supports AI-assisted developer presentations.",
-    "superpower": "Accelerates developer presentations work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://marp.app",
-    "officialStatus": "verified",
-    "docsUrl": "https://marp.app",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Marp",
       "PPT / Presentation Creation",
       "Developer Presentations"
     ],
@@ -17995,33 +19796,6 @@ export const catalogSummaries: ToolSummary[] = [
     "badge": "FREE TIER"
   },
   {
-    "id": "expansion-2-78",
-    "slug": "infogram",
-    "name": "Infogram",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=infogram",
-    "category": "PPT / Presentation Creation",
-    "subcategory": "Infographics",
-    "pricingType": "free-tier",
-    "freePlanDetails": "Free entry or open-source access is available; current limits vary by provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Infogram supports AI-assisted infographics.",
-    "superpower": "Accelerates infographics work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://infogram.com",
-    "officialStatus": "verified",
-    "docsUrl": "https://infogram.com",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Infogram",
-      "PPT / Presentation Creation",
-      "Infographics"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
     "id": "expansion-2-79",
     "slug": "rawgraphs",
     "name": "RAWGraphs",
@@ -18043,33 +19817,6 @@ export const catalogSummaries: ToolSummary[] = [
     "docsStatus": "unavailable",
     "keywords": [
       "RAWGraphs",
-      "PPT / Presentation Creation",
-      "Data Visualization"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-2-80",
-    "slug": "flourish",
-    "name": "Flourish",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=flourish",
-    "category": "PPT / Presentation Creation",
-    "subcategory": "Data Visualization",
-    "pricingType": "free-tier",
-    "freePlanDetails": "Free entry or open-source access is available; current limits vary by provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "Flourish supports AI-assisted data visualization.",
-    "superpower": "Accelerates data visualization work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://flourish.studio",
-    "officialStatus": "verified",
-    "docsUrl": "https://flourish.studio",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "Flourish",
       "PPT / Presentation Creation",
       "Data Visualization"
     ],
@@ -18180,33 +19927,6 @@ export const catalogSummaries: ToolSummary[] = [
       "Photo Restoration AI",
       "Photo Editing",
       "Restoration"
-    ],
-    "badge": "FREE TIER"
-  },
-  {
-    "id": "expansion-2-85",
-    "slug": "lama-inpainting",
-    "name": "LaMa Inpainting",
-    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=lama-inpainting",
-    "category": "Photo Editing",
-    "subcategory": "Inpainting",
-    "pricingType": "free-tier",
-    "freePlanDetails": "Free entry or open-source access is available; current limits vary by provider.",
-    "platforms": [
-      "Web"
-    ],
-    "shortDescription": "LaMa Inpainting supports AI-assisted inpainting.",
-    "superpower": "Accelerates inpainting work from a clear brief.",
-    "difficulty": "Beginner",
-    "learningTime": 20,
-    "officialUrl": "https://github.com/advimman/lama",
-    "officialStatus": "verified",
-    "docsUrl": "https://github.com/advimman/lama",
-    "docsStatus": "unavailable",
-    "keywords": [
-      "LaMa Inpainting",
-      "Photo Editing",
-      "Inpainting"
     ],
     "badge": "FREE TIER"
   },
@@ -20098,6 +21818,118 @@ export const catalogSummaries: ToolSummary[] = [
     "badge": "Open Official GitHub →"
   },
   {
+    "id": "exp700-video_generation-6",
+    "slug": "colossyan-creator",
+    "name": "Colossyan (Video Generation)",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=colossyan-creator",
+    "category": "Video Generation",
+    "subcategory": "Video Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI video generator for workplace learning, training, and documentation.",
+    "superpower": "AI video generator for workplace learning, training, and documentation.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.colossyan.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.colossyan.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "Colossyan",
+      "Video Generation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-video_generation-8",
+    "slug": "d-id-studio",
+    "name": "D-ID Creative Reality",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=d-id-studio",
+    "category": "Video Generation",
+    "subcategory": "Video Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Generative AI platform turning still photos into photorealistic talking avatars.",
+    "superpower": "Generative AI platform turning still photos into photorealistic talking avatars.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.d-id.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.d-id.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "D-ID Creative Reality",
+      "Video Generation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-video_generation-10",
+    "slug": "fliki-ai-video",
+    "name": "Fliki",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=fliki-ai-video",
+    "category": "Video Generation",
+    "subcategory": "Video Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "Text-to-video and text-to-speech AI generator with rich stock media.",
+    "superpower": "Text-to-video and text-to-speech AI generator with rich stock media.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://fliki.ai",
+    "officialStatus": "verified",
+    "docsUrl": "https://fliki.ai",
+    "docsStatus": "verified",
+    "keywords": [
+      "Fliki",
+      "Video Generation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
+    "id": "exp700-video_generation-22",
+    "slug": "munch-ai-clips",
+    "name": "GetMunch",
+    "logo": "https://api.dicebear.com/7.x/identicon/svg?seed=munch-ai-clips",
+    "category": "Video Generation",
+    "subcategory": "Video Generation",
+    "pricingType": "free-tier",
+    "freePlanDetails": "A free tier or open access is available; check official documentation for current details.",
+    "platforms": [
+      "Web"
+    ],
+    "shortDescription": "AI video clipping platform for extracting trending clips from long-form content.",
+    "superpower": "AI video clipping platform for extracting trending clips from long-form content.",
+    "difficulty": "Beginner",
+    "learningTime": 20,
+    "officialUrl": "https://www.getmunch.com",
+    "officialStatus": "verified",
+    "docsUrl": "https://www.getmunch.com",
+    "docsStatus": "verified",
+    "keywords": [
+      "GetMunch",
+      "Video Generation",
+      "AI",
+      "verified"
+    ],
+    "badge": "VERIFIED"
+  },
+  {
     "id": "web-1",
     "slug": "lovable",
     "name": "Lovable",
@@ -21655,6 +23487,10 @@ export const toolModuleBySlug: Record<string, string> = {
   "otter-audio": "audio_voice",
   "chattts": "audio_voice",
   "f5-tts": "audio_voice",
+  "piper-tts-local": "audio_voice",
+  "voice-ai-changer": "audio_voice",
+  "auphonic-audio": "audio_voice",
+  "audacity-open-src": "audio_voice",
   "chatgpt": "chatbots_assistants",
   "claude": "chatbots_assistants",
   "gemini": "chatbots_assistants",
@@ -21789,6 +23625,16 @@ export const toolModuleBySlug: Record<string, string> = {
   "openhands-ai": "document_writing",
   "fabric-ai-cli": "document_writing",
   "openai-canvas-studio": "document_writing",
+  "wordtune-ai": "document_writing",
+  "anyword-ai": "document_writing",
+  "lex-ai": "document_writing",
+  "prowritingaid-ai": "document_writing",
+  "textcortex-ai": "document_writing",
+  "simplified-ai-writer": "document_writing",
+  "surfer-seo-writer": "document_writing",
+  "frase-io-writer": "document_writing",
+  "marketmuse-ai": "document_writing",
+  "language-tool-ai": "document_writing",
   "quizizz-ai": "education",
   "khanmigo": "education",
   "diffit": "education",
@@ -21833,10 +23679,57 @@ export const toolModuleBySlug: Record<string, string> = {
   "kahoot-ai-creator": "education",
   "photomath-studio": "education",
   "symbolab-studio": "education",
+  "duolingo-ai": "education",
+  "photomath-ai": "education",
+  "quizlet-ai": "education",
+  "socratic-google": "education",
+  "curipod-ai": "education",
+  "magic-school-ai": "education",
+  "turnitin-ai": "education",
+  "copyleaks-ai": "education",
+  "gptzero-me": "education",
+  "formative-education": "education",
+  "socrative-assessment": "education",
+  "nearpod-interactive": "education",
+  "symbolab-solver": "education",
+  "mathway-chegg": "education",
   "github-copilot": "focused_tools",
   "cursor": "focused_tools",
   "zapier-ai": "focused_tools",
   "make-ai": "focused_tools",
+  "amazon-codewhisperer": "focused_tools",
+  "jetbrains-ai": "focused_tools",
+  "cline-ai": "focused_tools",
+  "pieces-dev": "focused_tools",
+  "e2b-dev": "focused_tools",
+  "runpod-ai": "focused_tools",
+  "replicate-ai": "focused_tools",
+  "modal-labs": "focused_tools",
+  "groq-api": "focused_tools",
+  "motion-ai": "focused_tools",
+  "reclaim-ai": "focused_tools",
+  "clockwise-ai": "focused_tools",
+  "superhuman-ai": "focused_tools",
+  "magical-ai": "focused_tools",
+  "pabbly-connect-ai": "focused_tools",
+  "integrately-ai": "focused_tools",
+  "llama-cpp": "focused_tools",
+  "litellm": "focused_tools",
+  "transformers-huggingface": "focused_tools",
+  "datasets-huggingface": "focused_tools",
+  "gradio-app": "focused_tools",
+  "streamlit-io": "focused_tools",
+  "chainlit-io": "focused_tools",
+  "marimo-notebook": "focused_tools",
+  "prefect-io": "focused_tools",
+  "mlflow-org": "focused_tools",
+  "comet-ml": "focused_tools",
+  "clearml-ai": "focused_tools",
+  "shortwave-email": "focused_tools",
+  "sanebox-email": "focused_tools",
+  "baserow-io": "focused_tools",
+  "nocodb-app": "focused_tools",
+  "goose-ai-agent": "focused_tools",
   "meshy-ai": "gaming_3d",
   "tripo3d": "gaming_3d",
   "spline-ai": "gaming_3d",
@@ -21844,6 +23737,7 @@ export const toolModuleBySlug: Record<string, string> = {
   "instant-ngp": "gaming_3d",
   "novelai-storyteller": "gaming_3d",
   "nerfstudio-web": "gaming_3d",
+  "scenario-ai": "gaming_3d",
   "midjourney": "image_generation",
   "stable-diffusion": "image_generation",
   "dall-e-3": "image_generation",
@@ -21893,6 +23787,12 @@ export const toolModuleBySlug: Record<string, string> = {
   "pixart-alpha": "image_generation",
   "sdxl-turbo": "image_generation",
   "diffusers-huggingface": "image_generation",
+  "artbreeder-gen": "image_generation",
+  "wombo-dream-ai": "image_generation",
+  "craiyon-ai": "image_generation",
+  "sdxl-turbo-stability": "image_generation",
+  "hunyuan-dit-tencent": "image_generation",
+  "ip-adapter-huggingface": "image_generation",
   "suno-ai-v3-5": "music_generation",
   "udio-v1-5": "music_generation",
   "soundraw-io": "music_generation",
@@ -21901,15 +23801,36 @@ export const toolModuleBySlug: Record<string, string> = {
   "audiocraft-webui": "music_generation",
   "riffusion-studio": "music_generation",
   "open-musicgen": "music_generation",
+  "aiva-ai": "music_generation",
+  "soundraw-ai": "music_generation",
+  "mubert-ai": "music_generation",
+  "boomy-ai": "music_generation",
+  "loudly-ai": "music_generation",
+  "riffusion-ai": "music_generation",
+  "landr-mastering-ai": "music_generation",
+  "eMastered-ai": "music_generation",
+  "lalal-ai-stem-splitter": "music_generation",
+  "moises-ai-musician": "music_generation",
+  "vocal-remover-org": "music_generation",
+  "musicgen-huggingface": "music_generation",
   "photoroom": "photo_editing",
   "clipdrop-edit": "photo_editing",
   "remove-bg": "photo_editing",
   "inpaint-anything": "photo_editing",
   "inpaint-anything-webui": "photo_editing",
+  "slazzer-remove-bg": "photo_editing",
+  "erase-bg-ai": "photo_editing",
+  "lama-inpainting": "photo_editing",
   "napkin-ai": "ppt_presentation_creation",
   "gamma-app": "ppt_presentation_creation",
   "beautiful-ai": "ppt_presentation_creation",
   "genspark-decks": "ppt_presentation_creation",
+  "canva-ai-presentations": "ppt_presentation_creation",
+  "visme-ai": "ppt_presentation_creation",
+  "marp-ai": "ppt_presentation_creation",
+  "zoho-show-app": "ppt_presentation_creation",
+  "infogram-charts": "ppt_presentation_creation",
+  "flourish-studio": "ppt_presentation_creation",
   "consensus-ai": "search_research",
   "elicit-com": "search_research",
   "scite-ai": "search_research",
@@ -21945,6 +23866,12 @@ export const toolModuleBySlug: Record<string, string> = {
   "verba-rag": "search_research",
   "privategpt": "search_research",
   "h2ogpt": "search_research",
+  "inciteful-xyz": "search_research",
+  "metaphor-systems": "search_research",
+  "paperdigest": "search_research",
+  "paperpal-ai": "search_research",
+  "open-alex": "search_research",
+  "arxiv-org": "search_research",
   "whisper-openai": "speech_to_text",
   "otter-ai": "speech_to_text",
   "fireflies-ai": "speech_to_text",
@@ -21965,8 +23892,10 @@ export const toolModuleBySlug: Record<string, string> = {
   "whisper-cpp": "speech_to_text",
   "insanely-fast-whisper": "speech_to_text",
   "faster-whisper": "speech_to_text",
+  "assembly-ai": "speech_to_text",
+  "gladia-ai": "speech_to_text",
+  "mac-whisper-app": "speech_to_text",
   "continue-dev": "verified_expansion_batch_1",
-  "cline": "verified_expansion_batch_1",
   "roo-code": "verified_expansion_batch_1",
   "amazon-q-developer": "verified_expansion_batch_1",
   "augment-code": "verified_expansion_batch_1",
@@ -21985,12 +23914,10 @@ export const toolModuleBySlug: Record<string, string> = {
   "bitbucket-atlassian-intelligence": "verified_expansion_batch_1",
   "jetbrains-ai-assistant": "verified_expansion_batch_1",
   "visual-studio-intellicode": "verified_expansion_batch_1",
-  "amazon-codewhisperer": "verified_expansion_batch_1",
   "google-duet-code": "verified_expansion_batch_1",
   "ibm-watsonx-code-assistant": "verified_expansion_batch_1",
   "salesforce-einstein-for-developers": "verified_expansion_batch_1",
   "tabnine-enterprise": "verified_expansion_batch_1",
-  "pieces-for-developers": "verified_expansion_batch_1",
   "bloop": "verified_expansion_batch_1",
   "grep-app": "verified_expansion_batch_1",
   "sourcegraph": "verified_expansion_batch_1",
@@ -22008,27 +23935,19 @@ export const toolModuleBySlug: Record<string, string> = {
   "jupyter-ai": "verified_expansion_batch_1",
   "pandas-ai": "verified_expansion_batch_1",
   "e2b-code-interpreter": "verified_expansion_batch_1",
-  "modal-ai": "verified_expansion_batch_1",
   "replicate-api": "verified_expansion_batch_1",
   "groqcloud": "verified_expansion_batch_1",
   "baseten": "verified_expansion_batch_1",
   "banana-dev": "verified_expansion_batch_1",
   "beam-cloud": "verified_expansion_batch_1",
-  "runpod": "verified_expansion_batch_1",
   "vast-ai": "verified_expansion_batch_1",
-  "mlflow": "verified_expansion_batch_1",
-  "clearml": "verified_expansion_batch_1",
-  "comet-ml": "verified_expansion_batch_1",
   "dagshub": "verified_expansion_batch_1",
-  "prefect-ai": "verified_expansion_batch_1",
   "windmill": "verified_expansion_batch_1",
   "activepieces": "verified_expansion_batch_1",
   "pipedream": "verified_expansion_batch_1",
   "tray-ai": "verified_expansion_batch_1",
   "workato-ai": "verified_expansion_batch_1",
   "parabola-ai": "verified_expansion_batch_1",
-  "integrately": "verified_expansion_batch_1",
-  "pabbly-connect": "verified_expansion_batch_1",
   "albato": "verified_expansion_batch_1",
   "bardeen": "verified_expansion_batch_1",
   "browserbase": "verified_expansion_batch_1",
@@ -22044,9 +23963,6 @@ export const toolModuleBySlug: Record<string, string> = {
   "gumdrop": "verified_expansion_batch_1",
   "relay-app": "verified_expansion_batch_1",
   "magical": "verified_expansion_batch_1",
-  "motion-ai": "verified_expansion_batch_1",
-  "reclaim-ai": "verified_expansion_batch_1",
-  "clockwise": "verified_expansion_batch_1",
   "tana-ai": "verified_expansion_batch_1",
   "capacities-ai": "verified_expansion_batch_1",
   "reflect-notes": "verified_expansion_batch_1",
@@ -22054,15 +23970,11 @@ export const toolModuleBySlug: Record<string, string> = {
   "supermemory": "verified_expansion_batch_1",
   "fireflies-notes": "verified_expansion_batch_1",
   "fathom": "verified_expansion_batch_1",
-  "sane-box-ai": "verified_expansion_batch_1",
-  "shortwave": "verified_expansion_batch_1",
-  "superhuman-ai": "verified_expansion_batch_1",
   "missive-ai": "verified_expansion_batch_1",
   "lavender-email": "verified_expansion_batch_1",
   "flowrite": "verified_expansion_batch_1",
   "plus-ai": "verified_expansion_batch_1",
   "slidesgo-ai": "verified_expansion_batch_1",
-  "visme-ai": "verified_expansion_batch_1",
   "piktochart-ai": "verified_expansion_batch_1",
   "venngage-ai": "verified_expansion_batch_1",
   "canva-presentations": "verified_expansion_batch_1",
@@ -22078,17 +23990,13 @@ export const toolModuleBySlug: Record<string, string> = {
   "brushnet": "verified_expansion_batch_1",
   "meshy": "verified_expansion_batch_1",
   "tripo": "verified_expansion_batch_1",
-  "scenario": "verified_expansion_batch_1",
   "nvidia-omniverse": "verified_expansion_batch_1",
-  "soundraw": "verified_expansion_batch_1",
   "musicgen": "verified_expansion_batch_1",
   "stable-audio": "verified_expansion_batch_1",
-  "audacity": "verified_expansion_batch_1",
   "ardour": "verified_expansion_batch_1",
   "bandlab": "verified_expansion_batch_1",
   "soundtrap": "verified_expansion_batch_1",
   "education-perfect": "verified_expansion_batch_1",
-  "socrative": "verified_expansion_batch_1",
   "classkick": "verified_expansion_batch_1",
   "kami": "verified_expansion_batch_1",
   "perusall": "verified_expansion_batch_1",
@@ -22099,16 +24007,13 @@ export const toolModuleBySlug: Record<string, string> = {
   "duolingo": "verified_expansion_batch_1",
   "busuu": "verified_expansion_batch_1",
   "consensus": "verified_expansion_batch_1",
-  "openalex": "verified_expansion_batch_1",
   "scite": "verified_expansion_batch_1",
   "humata": "verified_expansion_batch_1",
   "genei": "verified_expansion_batch_1",
   "rayyan": "verified_expansion_batch_1",
   "grammarly": "verified_expansion_batch_1",
   "jasper": "verified_expansion_batch_1",
-  "languagetool": "verified_expansion_batch_1",
   "writer": "verified_expansion_batch_1",
-  "frase": "verified_expansion_batch_1",
   "surfer-seo": "verified_expansion_batch_1",
   "descript": "verified_expansion_batch_1",
   "veed": "verified_expansion_batch_1",
@@ -22130,9 +24035,7 @@ export const toolModuleBySlug: Record<string, string> = {
   "smolagents": "verified_expansion_batch_2",
   "autogen-studio": "verified_expansion_batch_2",
   "pydantic-ai": "verified_expansion_batch_2",
-  "litellm": "verified_expansion_batch_2",
   "llamafile": "verified_expansion_batch_2",
-  "llama-cpp-python": "verified_expansion_batch_2",
   "mlx": "verified_expansion_batch_2",
   "litdata": "verified_expansion_batch_2",
   "lightning-ai": "verified_expansion_batch_2",
@@ -22148,10 +24051,6 @@ export const toolModuleBySlug: Record<string, string> = {
   "jax": "verified_expansion_batch_2",
   "keras": "verified_expansion_batch_2",
   "huggingface-transformers": "verified_expansion_batch_2",
-  "datasets-huggingface": "verified_expansion_batch_2",
-  "gradio": "verified_expansion_batch_2",
-  "streamlit": "verified_expansion_batch_2",
-  "chainlit": "verified_expansion_batch_2",
   "giskard": "verified_expansion_batch_2",
   "guardrails-ai": "verified_expansion_batch_2",
   "deepeval": "verified_expansion_batch_2",
@@ -22167,8 +24066,6 @@ export const toolModuleBySlug: Record<string, string> = {
   "retool": "verified_expansion_batch_2",
   "budibase": "verified_expansion_batch_2",
   "rowy": "verified_expansion_batch_2",
-  "baserow": "verified_expansion_batch_2",
-  "nocodb": "verified_expansion_batch_2",
   "directus": "verified_expansion_batch_2",
   "unstructured": "verified_expansion_batch_2",
   "llamaparse": "verified_expansion_batch_2",
@@ -22178,7 +24075,6 @@ export const toolModuleBySlug: Record<string, string> = {
   "docetl": "verified_expansion_batch_2",
   "slidev": "verified_expansion_batch_2",
   "revealjs": "verified_expansion_batch_2",
-  "marp": "verified_expansion_batch_2",
   "quarto-presentations": "verified_expansion_batch_2",
   "spectacle": "verified_expansion_batch_2",
   "impressjs": "verified_expansion_batch_2",
@@ -22190,14 +24086,11 @@ export const toolModuleBySlug: Record<string, string> = {
   "colossyan-presenter": "verified_expansion_batch_2",
   "presentermedia": "verified_expansion_batch_2",
   "visme": "verified_expansion_batch_2",
-  "infogram": "verified_expansion_batch_2",
   "rawgraphs": "verified_expansion_batch_2",
-  "flourish": "verified_expansion_batch_2",
   "datawrapper": "verified_expansion_batch_2",
   "plotly": "verified_expansion_batch_2",
   "observable": "verified_expansion_batch_2",
   "photo-restore": "verified_expansion_batch_2",
-  "lama-inpainting": "verified_expansion_batch_2",
   "diffusers": "verified_expansion_batch_2",
   "controlnet": "verified_expansion_batch_2",
   "instruct-pix2pix": "verified_expansion_batch_2",
@@ -22259,6 +24152,10 @@ export const toolModuleBySlug: Record<string, string> = {
   "kapwing-video-ai": "video_generation",
   "cogvideox-5b": "video_generation",
   "open-sora-v1-2": "video_generation",
+  "colossyan-creator": "video_generation",
+  "d-id-studio": "video_generation",
+  "fliki-ai-video": "video_generation",
+  "munch-ai-clips": "video_generation",
   "lovable": "website_app_creation",
   "bolt": "website_app_creation",
   "replit": "website_app_creation",

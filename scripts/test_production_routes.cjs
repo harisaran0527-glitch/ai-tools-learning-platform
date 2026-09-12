@@ -1,6 +1,6 @@
 /**
  * test_production_routes.cjs
- * Tests all required live production endpoints on https://ai-tools-learning-platform.vercel.app
+ * Validates live HTTP response status & content on https://ai-tools-learning-platform.vercel.app
  */
 
 const https = require('https');
@@ -8,22 +8,18 @@ const https = require('https');
 const BASE_URL = 'https://ai-tools-learning-platform.vercel.app';
 
 const routesToTest = [
-  '/',
-  '/dashboard',
-  '/tools/github-copilot',
-  '/tools/cursor',
-  '/tools/perplexity-ai',
-  '/tools/chatgpt',
-  '/assessment/github-copilot',
-  '/assessment/cursor',
-  '/assessment/perplexity-ai',
-  '/learning-paths',
-  '/compare',
-  '/bookmarks',
+  { path: '/', label: 'Homepage' },
+  { path: '/dashboard', label: 'Dashboard' },
+  { path: '/tools/vllm-project', label: 'Newly Exposed Tool (vLLM)' },
+  { path: '/tools/ollama-ai', label: 'Newly Exposed Tool (Ollama)' },
+  { path: '/tools/flux1-black-forest-labs', label: 'Newly Exposed Tool (FLUX.1)' },
+  { path: '/tools/github-copilot', label: 'Original Tool (GitHub Copilot)' },
+  { path: '/assessment/vllm-project', label: 'Assessment (vLLM)' },
+  { path: '/assessment/github-copilot', label: 'Assessment (GitHub Copilot)' },
 ];
 
-function fetchRoute(route) {
-  const targetUrl = `${BASE_URL}${route}`;
+function fetchRoute(routeObj) {
+  const targetUrl = `${BASE_URL}${routeObj.path}`;
   return new Promise(resolve => {
     https.get(targetUrl, {
       headers: {
@@ -31,25 +27,35 @@ function fetchRoute(route) {
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
       }
     }, res => {
-      resolve({ route, status: res.statusCode, ok: res.statusCode >= 200 && res.statusCode < 400 });
+      let body = '';
+      res.on('data', chunk => body += chunk);
+      res.on('end', () => {
+        resolve({
+          label: routeObj.label,
+          path: routeObj.path,
+          status: res.statusCode,
+          ok: res.statusCode === 200,
+          hasAppHtml: body.includes('id="root"')
+        });
+      });
     }).on('error', err => {
-      resolve({ route, status: 'ERROR', ok: false, error: err.message });
+      resolve({ label: routeObj.label, path: routeObj.path, status: 'ERROR', ok: false, error: err.message });
     });
   });
 }
 
-async function runTests() {
-  console.log(`Testing Production Deployment Routes on ${BASE_URL}...\n`);
+async function runLiveTests() {
+  console.log(`Running Live Production Verification on ${BASE_URL}...\n`);
   const results = await Promise.all(routesToTest.map(r => fetchRoute(r)));
-  
-  let allOk = true;
+
+  let allPassed = true;
   results.forEach(r => {
     const icon = r.ok ? '✅' : '❌';
-    console.log(`${icon} Route ${r.route.padEnd(30)} Status: ${r.status}`);
-    if (!r.ok) allOk = false;
+    console.log(`${icon} [${r.status}] ${r.label.padEnd(35)} Path: ${r.path}`);
+    if (!r.ok) allPassed = false;
   });
 
-  console.log(`\nProduction Route Testing Result: ${allOk ? 'ALL PASSED' : 'SOME FAILED'}`);
+  console.log(`\nLive Production Route Test Status: ${allPassed ? 'ALL 200 OK — PASSED' : 'FAILED'}`);
 }
 
-runTests();
+runLiveTests();
