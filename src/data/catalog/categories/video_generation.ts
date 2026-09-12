@@ -13327,7 +13327,7 @@ export const video_generation_tools: AITool[] = [
       "education"
     ],
     "lastVerified": "2026-08-28",
-    "verifiedAt": "2026-08-28",
+    "verifiedAt": "2026-09-11",
     "badge": "Open Official Hugging Face →",
     "docsUrl": "https://github.com/THUDM/CogVideoX"
   },
