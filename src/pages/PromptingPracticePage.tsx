@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowLeft,
@@ -14,10 +14,11 @@ import {
   ShieldCheck,
   Layers,
   Zap,
-  TrendingUp,
 } from "lucide-react";
 import { api } from "../lib/platform";
 import { Analysis, CHALLENGES, CRITERIA, qualityBand } from "../lib/practice";
+
+const STORAGE_KEY_PRACTICE_COMPLETED = "ai_verse_practice_completed_challenges";
 
 export default function PromptingPracticePage() {
   const [challenge, setChallenge] = useState(0);
@@ -26,8 +27,35 @@ export default function PromptingPracticePage() {
   const [busy, setBusy] = useState("");
   const [error, setError] = useState("");
   const [output, setOutput] = useState("");
+  const [completedChallenges, setCompletedChallenges] = useState<number[]>([]);
   const revision = useRef(0);
   const editorRef = useRef<HTMLTextAreaElement>(null);
+
+  // Load real completed challenges from localStorage
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY_PRACTICE_COMPLETED);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) setCompletedChallenges(parsed);
+      }
+    } catch {
+      // ignore
+    }
+  }, []);
+
+  const markChallengeCompleted = (idx: number) => {
+    setCompletedChallenges((prev) => {
+      if (prev.includes(idx)) return prev;
+      const updated = [...prev, idx];
+      try {
+        localStorage.setItem(STORAGE_KEY_PRACTICE_COMPLETED, JSON.stringify(updated));
+      } catch {
+        // ignore
+      }
+      return updated;
+    });
+  };
 
   const clear = () => {
     revision.current++;
@@ -43,14 +71,22 @@ export default function PromptingPracticePage() {
     try {
       if (action === "analyze") {
         const result = await api<Analysis>(action, { prompt, challenge });
-        if (current === revision.current) setAnalysis(result);
+        if (current === revision.current) {
+          setAnalysis(result);
+          if (result.score >= 70) {
+            markChallengeCompleted(challenge);
+          }
+        }
       } else {
         const result = await api<{ output: string }>(action, {
           prompt,
           challenge,
           ticket: analysis?.ticket,
         });
-        if (current === revision.current) setOutput(result.output);
+        if (current === revision.current) {
+          setOutput(result.output);
+          markChallengeCompleted(challenge);
+        }
       }
     } catch (e) {
       if (current === revision.current) setError((e as Error).message);
@@ -63,6 +99,21 @@ export default function PromptingPracticePage() {
     editorRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
     editorRef.current?.focus();
   };
+
+  const completedCount = completedChallenges.length;
+  const progressPct = Math.round((completedCount / CHALLENGES.length) * 100);
+
+  // Exact 8 criteria matching CRITERIA weights [15, 15, 20, 15, 10, 10, 5, 10]
+  const criteriaConfig = [
+    { name: "Task / Goal", max: 15, icon: Target, color: "#c084fc", bg: "rgba(192,132,252,0.15)" },
+    { name: "Context", max: 15, icon: FileText, color: "#60a5fa", bg: "rgba(59,130,246,0.15)" },
+    { name: "Requirements", max: 20, icon: CheckSquare, color: "#34d399", bg: "rgba(52,211,153,0.15)" },
+    { name: "Constraints", max: 15, icon: Lock, color: "#fbbf24", bg: "rgba(251,191,36,0.15)" },
+    { name: "Input / Ref", max: 10, icon: Layers, color: "#2dd4bf", bg: "rgba(45,212,191,0.15)" },
+    { name: "Output Format", max: 10, icon: Code, color: "#22d3ee", bg: "rgba(34,211,238,0.15)" },
+    { name: "Style / Tone", max: 5, icon: Zap, color: "#f472b6", bg: "rgba(244,114,182,0.15)" },
+    { name: "Success Criteria", max: 10, icon: ShieldCheck, color: "#fb923c", bg: "rgba(251,146,60,0.15)" },
+  ];
 
   return (
     <main style={{ maxWidth: "1280px", margin: "0 auto", padding: "28px 24px 60px" }}>
@@ -81,34 +132,27 @@ export default function PromptingPracticePage() {
           </p>
         </div>
 
-        {/* Your Progress Card */}
+        {/* Real Progress Card (Backed by actual completed challenge records) */}
         <div className="prompting-progress-card">
           <div className="prompting-progress-header">
             <span style={{ color: "var(--text-muted)" }}>Your Progress</span>
-            <span style={{ color: "#a78bfa", fontWeight: 600 }}>(64%)</span>
+            <span style={{ color: "#a78bfa", fontWeight: 600 }}>({progressPct}%)</span>
           </div>
           <div style={{ display: "flex", alignItems: "baseline", gap: "6px" }}>
-            <span className="prompting-progress-score">320</span>
-            <span style={{ fontSize: "12px", color: "var(--text-muted)" }}>/ 500 pts</span>
+            <span className="prompting-progress-score">{completedCount}</span>
+            <span style={{ fontSize: "12px", color: "var(--text-muted)" }}>
+              / {CHALLENGES.length} Mastered (Score ≥ 70)
+            </span>
           </div>
           <div className="assessment-progress-track" style={{ width: "100%", height: "5px" }}>
-            <div className="assessment-progress-fill" style={{ width: "64%" }} />
+            <div className="assessment-progress-fill" style={{ width: `${progressPct}%` }} />
           </div>
         </div>
       </div>
 
-      {/* Row of 8 Compact Criteria Cards */}
+      {/* Row of 8 Compact Criteria Cards with exact weights totaling 100 */}
       <div className="prompting-criteria-row">
-        {[
-          { name: "Context", weight: "/12", icon: FileText, color: "#60a5fa", bg: "rgba(59,130,246,0.15)" },
-          { name: "Goal Clarity", weight: "/12", icon: Target, color: "#c084fc", bg: "rgba(192,132,252,0.15)" },
-          { name: "Requirements", weight: "/12", icon: CheckSquare, color: "#34d399", bg: "rgba(52,211,153,0.15)" },
-          { name: "Constraints", weight: "/12", icon: Lock, color: "#fbbf24", bg: "rgba(251,191,36,0.15)" },
-          { name: "Output Format", weight: "/12", icon: Code, color: "#22d3ee", bg: "rgba(34,211,238,0.15)" },
-          { name: "Accuracy", weight: "/12", icon: ShieldCheck, color: "#f472b6", bg: "rgba(244,114,182,0.15)" },
-          { name: "Completeness", weight: "/14", icon: Layers, color: "#2dd4bf", bg: "rgba(45,212,191,0.15)" },
-          { name: "Usability", weight: "/14", icon: Zap, color: "#fb923c", bg: "rgba(251,146,60,0.15)" },
-        ].map((item) => {
+        {criteriaConfig.map((item) => {
           const IconComp = item.icon;
           return (
             <div key={item.name} className="criterion-card">
@@ -116,7 +160,7 @@ export default function PromptingPracticePage() {
                 <IconComp size={15} />
               </div>
               <div className="criterion-name">{item.name}</div>
-              <div className="criterion-weight">{item.weight}</div>
+              <div className="criterion-weight">/{item.max}</div>
             </div>
           );
         })}
@@ -131,7 +175,7 @@ export default function PromptingPracticePage() {
           <div>
             <div className="challenge-banner-title">Practice Challenge</div>
             <div className="challenge-banner-desc">
-              Write a prompt to create a study plan for a 2nd year AI & DS student, including skills, resources, and timeline.
+              {CHALLENGES[challenge][1]}
             </div>
           </div>
         </div>

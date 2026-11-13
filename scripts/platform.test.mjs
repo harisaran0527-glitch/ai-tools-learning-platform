@@ -41,6 +41,8 @@ test('draft persistence, summary merge payload and public detail updates', async
 });
 test('HTTPS validation and 50-slot enforcement', async () => {
   assert.equal((await call('save', { method: 'POST', token: 'admin', body: { tool: { ...tool, docsUrl: 'javascript:alert(1)' }, questions: Array(50).fill(null) } })).statusCode, 400);
+  assert.equal((await call('save', { method: 'POST', token: 'admin', body: { tool: { ...tool, logo: 'javascript:alert(1)' }, questions: Array(50).fill(null) } })).statusCode, 400);
+  assert.equal((await call('save', { method: 'POST', token: 'admin', body: { tool: { ...tool, logo: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==' }, questions: Array(50).fill(null) } })).statusCode, 200);
   assert.equal((await call('save', { method: 'POST', token: 'admin', body: { tool, questions: [] } })).statusCode, 400);
   assert.equal((await call('tool', { slug: 'x,or=(true)' })).statusCode, 400);
 });

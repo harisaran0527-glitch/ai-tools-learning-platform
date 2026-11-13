@@ -76,6 +76,18 @@ function safeUrl(value, required = false) {
     fail(400, "URLs must be valid HTTPS addresses.");
   }
 }
+function safeLogo(value) {
+  if (!value) return "";
+  if (typeof value !== "string") fail(400, "Invalid logo format.");
+  const trimmed = value.trim();
+  if (trimmed.startsWith("data:image/")) {
+    const match = trimmed.match(/^data:image\/(png|jpeg|jpg|webp|svg\+xml);base64,[A-Za-z0-9+/=]+$/);
+    if (!match) fail(400, "Invalid image data format.");
+    if (trimmed.length > 2.8 * 1024 * 1024) fail(400, "Uploaded logo exceeds 2MB limit.");
+    return trimmed;
+  }
+  return safeUrl(trimmed);
+}
 async function db(path, init = {}) {
   const key = config("SUPABASE_SERVICE_ROLE_KEY");
   const response = await fetch(`${config("SUPABASE_URL")}/rest/v1/${path}`, {
@@ -178,7 +190,7 @@ function validateTool(tool) {
   )
     fail(400, "Invalid practical exercise.");
   safeUrl(tool.docsUrl);
-  safeUrl(tool.logo);
+  safeLogo(tool.logo);
   safeUrl(tool.tutorialVideo?.url);
   if (tool.documentationResource?.url) safeUrl(tool.documentationResource.url);
   if (tool.tutorialResource?.url) safeUrl(tool.tutorialResource.url);
