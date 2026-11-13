@@ -3,6 +3,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { HomePage } from './pages/HomePage';
+import { refreshCatalog } from './lib/platform';
+const AdminPage = lazy(() => import('./pages/AdminPage'));
+const PromptingPage = lazy(() => import('./pages/PromptingPage'));
+const PromptingPracticePage = lazy(() => import('./pages/PromptingPracticePage'));
 
 const ToolDetailPage = lazy(() => import('./pages/ToolDetailPage').then(m => ({ default: m.ToolDetailPage })));
 const AssessmentPage = lazy(() => import('./pages/AssessmentPage').then(m => ({ default: m.AssessmentPage })));
@@ -21,6 +25,8 @@ const LoadingFallback = () => (
 );
 
 export const App: React.FC = () => {
+  const [, updateCatalog] = React.useState(0);
+  React.useEffect(() => { refreshCatalog().then(() => updateCatalog(n => n + 1)).catch(() => { /* Preserve bundled catalog availability. */ }); }, []);
   const [comparedSlugs, setComparedSlugs] = useState<string[]>([]);
 
   const handleToggleCompare = (slug: string) => {
@@ -52,6 +58,9 @@ export const App: React.FC = () => {
         <div style={{ flexGrow: 1 }}>
           <Suspense fallback={<LoadingFallback />}>
             <Routes>
+              <Route path="/admin/*" element={<AdminPage />} />
+              <Route path="/prompting" element={<PromptingPage />} />
+              <Route path="/prompting/practice" element={<PromptingPracticePage />} />
               <Route
                 path="/"
                 element={

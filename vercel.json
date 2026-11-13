@@ -1,5 +1,7 @@
 {
+  "functions": { "api/platform.js": { "maxDuration": 60 } },
   "rewrites": [
+    { "source": "/api/platform", "destination": "/api/platform" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

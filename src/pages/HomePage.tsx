@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Hero } from '../components/Hero';
+import { getCatalogRevision } from '../lib/platform';
 import { CategoryNav } from '../components/CategoryNav';
 import { SearchAndFilter } from '../components/SearchAndFilter';
 import { ToolGrid } from '../components/ToolGrid';
@@ -29,7 +30,7 @@ export const HomePage: React.FC<HomePageProps> = ({ comparedSlugs, onToggleCompa
 
   const filteredTools = useMemo(() => {
     return filterTools(filters);
-  }, [filters, bookmarkRefresh]);
+  }, [filters, bookmarkRefresh, getCatalogRevision()]);
 
   const handleFilterChange = (newFilters: Partial<FilterOptions>) => {
     setFilters(prev => ({ ...prev, ...newFilters }));

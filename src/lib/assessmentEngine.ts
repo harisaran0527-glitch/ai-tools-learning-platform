@@ -3,8 +3,10 @@ import { AssessmentAttempt } from '../types/assessment';
 import { getPublicQuestionsForTool, getAnswerKeyMapForTool } from '../data/questions/questionPool';
 import { AITool } from '../types/tool';
 import { getAttemptsForTool } from './storage';
+import { api } from './platform';
 
 export interface GeneratedAssessment {
+  managed?: boolean;
   toolId: string;
   attemptNumber: number;
   questions: {
@@ -34,7 +36,11 @@ function shuffleArray<T>(array: T[]): T[] {
  * Guarantees 0 overlap across Attempt 1, Attempt 2, Attempt 3, and Attempt 4 (25 + 25 + 25 + 25 = 100).
  * Uses controlled Least-Recently-Used (LRU) fallback for Attempt 5+ when inventory is exhausted.
  */
-export function generateAssessmentForTool(tool: AITool): GeneratedAssessment {
+export async function generateAssessmentForTool(tool: AITool): Promise<GeneratedAssessment> {
+  let managed: { id: string; question: string; options: string[]; type: string; difficulty: string }[] | null = null;
+  try { managed = await api('assessment', undefined, undefined, tool.slug); } catch { /* Existing bundled assessments remain available. */ }
+  if (managed?.length === 50) return { managed: true, toolId: tool.id, attemptNumber: getAttemptsForTool(tool.id).length + 1, questions: shuffleArray(managed).slice(0, 25).map(q => ({ ...q, originalIndexMap: [0,1,2,3] })) };
+  if (tool.manualAssessmentOnly) return { toolId: tool.id, attemptNumber: 1, questions: [] };
   const toolId = tool.id;
   const publicQuestions = getPublicQuestionsForTool(tool);
   const pastAttempts = getAttemptsForTool(toolId);
@@ -92,13 +98,14 @@ export function generateAssessmentForTool(tool: AITool): GeneratedAssessment {
  * Each question is worth 2 marks. 25 questions * 2 = 50 total marks.
  * Pass mark = 25 / 50 (>= 25 PASS, < 25 FAIL).
  */
-export function gradeAssessment(
+export async function gradeAssessment(
   toolId: string,
   tool: AITool,
   attemptNumber: number,
   questions: GeneratedAssessment['questions'],
   userAnswers: Record<string, number> // questionId -> selectedShuffledOptionIndex
-): AssessmentAttempt {
+): Promise<AssessmentAttempt> {
+  if (questions[0]?.id.startsWith(`${tool.id}-manual-`)) return api('grade', { ids: questions.map(q => q.id), answers: userAnswers, attemptNumber }, undefined, tool.slug);
   const answerKeyMap = getAnswerKeyMapForTool(toolId, tool);
 
   let score = 0;

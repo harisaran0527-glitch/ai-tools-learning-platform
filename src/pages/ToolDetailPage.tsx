@@ -17,14 +17,18 @@ export const ToolDetailPage: React.FC = () => {
   const [activeSection, setActiveSection] = useState('overview');
 
   const [tool, setTool] = useState<AITool>();
+  const [loading, setLoading] = useState(true);
   const [progress, setProgress] = useState<ReturnType<typeof getToolProgress> | null>(null);
 
   useEffect(() => {
     let cancelled = false;
     setTool(undefined);
+    setLoading(true);
     setProgress(null);
     if (slug) loadToolBySlug(slug).then(loadedTool => {
-      if (cancelled || !loadedTool) return;
+      if (cancelled) return;
+      setLoading(false);
+      if (!loadedTool) return;
       setTool(loadedTool);
       const current = getToolProgress(loadedTool.id);
       setProgress(current);
@@ -32,16 +36,17 @@ export const ToolDetailPage: React.FC = () => {
         updateToolProgress(loadedTool.id, { started: true, learningProgress: Math.max(current.learningProgress || 20, 20) });
         setProgress(getToolProgress(loadedTool.id));
       }
-    });
+    }).catch(() => { if (!cancelled) setLoading(false); });
     window.scrollTo(0, 0);
     return () => { cancelled = true; };
   }, [slug]);
 
+  if (loading) return <main className="academy-page" role="status">Loading tool…</main>;
   if (!tool || !progress) {
     return (
       <div className="container" style={{ textAlign: 'center', padding: '80px 20px' }}>
         <h2 style={{ fontFamily: 'Sora, sans-serif', fontSize: '24px', marginBottom: '16px' }}>404 — Tool Not Found</h2>
-        <p style={{ color: 'var(--muted)', marginBottom: '24px' }}>The requested AI tool slug does not exist in our 1500+ tool database.</p>
+        <p style={{ color: 'var(--muted)', marginBottom: '24px' }}>This tool could not be found in the catalog.</p>
         <Link to="/" className="btn-primary">Return to Catalog Home</Link>
       </div>
     );

@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "test": "node --test scripts/platform.test.mjs",
     "dev": "vite",
     "build": "tsc && node --max-old-space-size=4096 node_modules/vite/bin/vite.js build",
     "preview": "vite preview"

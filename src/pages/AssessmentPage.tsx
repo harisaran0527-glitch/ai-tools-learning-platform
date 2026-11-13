@@ -15,15 +15,17 @@ export const AssessmentPage: React.FC = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState<Record<string, number>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState('');
 
   useEffect(() => {
     let cancelled = false;
     setTool(undefined);
     setAssessmentData(null);
-    if (slug) loadToolBySlug(slug).then(loadedTool => {
+    if (slug) loadToolBySlug(slug).then(async loadedTool => {
       if (cancelled || !loadedTool) return;
       setTool(loadedTool);
-      const data = generateAssessmentForTool(loadedTool);
+      const data = await generateAssessmentForTool(loadedTool);
+      if (cancelled) return;
       setAssessmentData(data);
       setUserAnswers({});
       setCurrentQuestionIndex(0);
@@ -41,6 +43,7 @@ export const AssessmentPage: React.FC = () => {
   }
 
   const questions = assessmentData.questions;
+  if (!questions.length) return <main className="academy-page"><h1>Assessment not added yet</h1><p>The administrator is preparing this tool’s assessment.</p><Link to={`/tools/${tool.slug}`} className="btn-primary">Back to tool</Link></main>;
   const currentQ = questions[currentQuestionIndex];
   const answeredCount = Object.keys(userAnswers).length;
   const isLastQuestion = currentQuestionIndex === questions.length - 1;
@@ -52,18 +55,21 @@ export const AssessmentPage: React.FC = () => {
     }));
   };
 
-  const handleSubmitAssessment = () => {
+  const handleSubmitAssessment = async () => {
     setIsSubmitting(true);
-    const attemptResult = gradeAssessment(tool.id, tool, assessmentData.attemptNumber, questions, userAnswers);
+    setError('');
+    try {
+    const attemptResult = await gradeAssessment(tool.id, tool, assessmentData.attemptNumber, questions, userAnswers);
     saveAttempt(attemptResult);
     setIsSubmitting(false);
-
     // Navigate to results page
     navigate(`/results/${attemptResult.id}`, { state: { attempt: attemptResult, tool } });
+    } catch (e) { setError((e as Error).message); setIsSubmitting(false); }
   };
 
   return (
     <div>
+      {error && <p role="alert" className="error-message">{error}</p>}
       {/* Top Banner */}
       <div style={{ background: 'var(--surface)', borderBottom: '1px solid var(--border)', padding: '16px 24px' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>

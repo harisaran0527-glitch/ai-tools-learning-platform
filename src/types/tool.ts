@@ -56,6 +56,7 @@ export interface DocumentationResource {
 }
 
 export interface AITool {
+  manualAssessmentOnly?: boolean;
   id: string;
   slug: string;
   name: string;

@@ -1,5 +1,6 @@
 import { AITool, ToolSummary } from '../../types/tool';
 import { catalogSummaries, toolModuleBySlug } from './summaryData';
+import { api } from '../../lib/platform';
 
 type ToolModule = { default?: AITool[]; [key: string]: unknown };
 
@@ -48,6 +49,10 @@ const exportNames: Record<string, string> = {
 export const getSummaryBySlug = (slug: string): ToolSummary | undefined => catalogSummaries.find(tool => tool.slug === slug);
 
 export async function loadToolBySlug(slug: string): Promise<AITool | undefined> {
+  try {
+    const managed = await api<AITool | null>('tool', undefined, undefined, slug);
+    if (managed) return managed;
+  } catch { /* Preserve bundled tools during backend outages. */ }
   const summary = getSummaryBySlug(slug);
   if (!summary) return undefined;
   const moduleKey = toolModuleBySlug[summary.slug];

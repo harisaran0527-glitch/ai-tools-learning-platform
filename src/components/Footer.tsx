@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
+  const { pathname } = useLocation();
+  if (pathname.startsWith('/admin')) return null;
   return (
     <footer style={{ background: '#05070e', borderTop: '1px solid var(--border)', padding: '40px 24px 30px', color: 'var(--muted)', fontSize: '13px', marginTop: '60px' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '24px' }}>
@@ -10,7 +13,7 @@ export const Footer: React.FC = () => {
             ⚡ AI Tools Learning & Assessment Platform
           </div>
           <p style={{ maxWidth: '400px', lineHeight: 1.5 }}>
-            Empowering faculty, educators, researchers, and beginners to discover, practice, and master 1,500+ verified free and open-source AI tools.
+            Explore AI tools, build practical skills, and learn at your own pace.
           </p>
         </div>
 
@@ -18,18 +21,15 @@ export const Footer: React.FC = () => {
           <div>
             <strong style={{ color: '#fff', display: 'block', marginBottom: '10px' }}>Navigation</strong>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '6px' }}>
-              <li><Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>Home Catalog</Link></li>
-              <li><Link to="/faculty-path" style={{ color: 'inherit', textDecoration: 'none' }}>AI for Faculty</Link></li>
-              <li><Link to="/learning-paths" style={{ color: 'inherit', textDecoration: 'none' }}>Persona Paths</Link></li>
-              <li><Link to="/compare" style={{ color: 'inherit', textDecoration: 'none' }}>Compare Tools</Link></li>
-              <li><Link to="/dashboard" style={{ color: 'inherit', textDecoration: 'none' }}>Learner Dashboard</Link></li>
+              <li><Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>Explore Catalog</Link></li>
+              <li><Link to="/prompting" style={{ color: 'inherit', textDecoration: 'none' }}>Prompting</Link></li>
             </ul>
           </div>
 
           <div>
             <strong style={{ color: '#fff', display: 'block', marginBottom: '10px' }}>Platform Features</strong>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '6px' }}>
-              <li>1,500+ Unique AI Tools</li>
+              <li>Curated AI Tools</li>
               <li>Usable Free Tiers Focus</li>
               <li>50-Mark Assessments</li>
               <li>Non-Repeating Retests</li>
