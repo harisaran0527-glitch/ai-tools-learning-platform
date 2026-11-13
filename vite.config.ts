@@ -14,11 +14,10 @@ export default defineConfig({
       output: {
         manualChunks(id) {
           // Split category data modules into separate chunks
-          if (id.includes('src/data/catalog/categories')) {
-            const parts = id.split('categories');
-            const file = parts[1].replace(/\\.[tj]sx?$/, '');
-            const name = file.replace(/\\W+/g, '-');
-            return `category-${name}`;
+          if (id.includes('src/data/catalog/categories') || id.includes('src\\data\\catalog\\categories')) {
+            const basename = path.basename(id, path.extname(id));
+            const safeName = basename.replace(/[^a-zA-Z0-9_-]/g, '_');
+            return `cat_${safeName}`;
           }
           // Separate assessment engine code
           if (id.includes('src/lib/assessmentEngine')) {

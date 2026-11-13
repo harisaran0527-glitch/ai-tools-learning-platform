@@ -1,6 +1,5 @@
 import React, { useState, useMemo } from 'react';
 import { Hero } from '../components/Hero';
-import { getCatalogRevision } from '../lib/platform';
 import { CategoryNav } from '../components/CategoryNav';
 import { SearchAndFilter } from '../components/SearchAndFilter';
 import { ToolGrid } from '../components/ToolGrid';
@@ -9,6 +8,7 @@ import { getProgressMap } from '../lib/storage';
 import { catalogSummaries } from '../data/catalog/summaryData';
 import { Link } from 'react-router-dom';
 import { PlayCircle, Award, Sparkles } from 'lucide-react';
+import { ToolLogo } from '../components/ToolLogo';
 
 interface HomePageProps {
   comparedSlugs: string[];
@@ -30,7 +30,7 @@ export const HomePage: React.FC<HomePageProps> = ({ comparedSlugs, onToggleCompa
 
   const filteredTools = useMemo(() => {
     return filterTools(filters);
-  }, [filters, bookmarkRefresh, getCatalogRevision()]);
+  }, [filters, bookmarkRefresh]);
 
   const handleFilterChange = (newFilters: Partial<FilterOptions>) => {
     setFilters(prev => ({ ...prev, ...newFilters }));
@@ -61,10 +61,12 @@ export const HomePage: React.FC<HomePageProps> = ({ comparedSlugs, onToggleCompa
     <div>
       <Hero />
 
-      <CategoryNav
-        selectedCategory={filters.category || 'all'}
-        onSelectCategory={catId => handleFilterChange({ category: catId, subcategory: 'all' })}
-      />
+      <div id="catalog-section">
+        <CategoryNav
+          selectedCategory={filters.category || 'all'}
+          onSelectCategory={catId => handleFilterChange({ category: catId, subcategory: 'all' })}
+        />
+      </div>
 
       <div className="container">
         {/* Continue Learning Widget */}
@@ -88,7 +90,7 @@ export const HomePage: React.FC<HomePageProps> = ({ comparedSlugs, onToggleCompa
                     to={`/tools/${tool.slug}`}
                     style={{ textDecoration: 'none', color: 'inherit', background: 'var(--surface2)', border: '1px solid var(--border)', borderRadius: '12px', padding: '14px', display: 'flex', alignItems: 'center', gap: '12px' }}
                   >
-                    <img src={tool.logo} alt={tool.name} style={{ width: '36px', height: '36px', borderRadius: '8px' }} />
+                    <ToolLogo slug={tool.slug} logo={tool.logo} name={tool.name} size={36} />
                     <div style={{ flexGrow: 1 }}>
                       <div style={{ fontSize: '14px', fontWeight: 700, color: '#fff' }}>{tool.name}</div>
                       <div style={{ fontSize: '11px', color: 'var(--muted)' }}>Progress: {prog.learningProgress || 50}%</div>

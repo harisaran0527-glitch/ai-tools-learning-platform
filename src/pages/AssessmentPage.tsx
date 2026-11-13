@@ -5,6 +5,7 @@ import { AITool } from '../types/tool';
 import { generateAssessmentForTool, gradeAssessment, GeneratedAssessment } from '../lib/assessmentEngine';
 import { saveAttempt } from '../lib/storage';
 import { ArrowLeft, ArrowRight, ShieldCheck } from 'lucide-react';
+import { ToolLogo } from '../components/ToolLogo';
 
 export const AssessmentPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -74,7 +75,7 @@ export const AssessmentPage: React.FC = () => {
       <div style={{ background: 'var(--surface)', borderBottom: '1px solid var(--border)', padding: '16px 24px' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <img src={tool.logo} alt={tool.name} style={{ width: '36px', height: '36px', borderRadius: '8px' }} />
+            <ToolLogo slug={tool.slug} logo={tool.logo} name={tool.name} size={36} />
             <div>
               <h2 style={{ fontFamily: 'Sora, sans-serif', fontSize: '18px', color: '#fff' }}>
                 {tool.name} Assessment

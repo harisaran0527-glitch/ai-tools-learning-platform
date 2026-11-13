@@ -3,6 +3,7 @@ import { catalogSummaries } from '../data/catalog/summaryData';
 import { ToolSummary } from '../types/tool';
 import { Link } from 'react-router-dom';
 import { GitCompare, ExternalLink, Trash2, CheckCircle2, Clock, ShieldCheck } from 'lucide-react';
+import { ToolLogo } from '../components/ToolLogo';
 
 interface ComparePageProps {
   comparedSlugs: string[];
@@ -63,7 +64,7 @@ export const ComparePage: React.FC<ComparePageProps> = ({
                 {toolsToCompare.map(t => (
                   <th key={t.id} style={{ padding: '20px', textAlign: 'center', width: '320px' }}>
                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
-                      <img src={t.logo} alt={t.name} style={{ width: '48px', height: '48px', borderRadius: '12px' }} />
+                      <ToolLogo slug={t.slug} logo={t.logo} name={t.name} size={48} />
                       <h3 style={{ fontFamily: 'Sora, sans-serif', fontSize: '18px', color: '#fff' }}>{t.name}</h3>
                       <button
                         onClick={() => onRemoveCompare(t.slug)}

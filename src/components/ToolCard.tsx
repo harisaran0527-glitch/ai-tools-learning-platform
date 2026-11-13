@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Bookmark, Clock, CheckCircle2, Award, Zap, GitCompare } from 'lucide-react';
 import { ToolSummary } from '../types/tool';
 import { getToolProgress, toggleBookmark } from '../lib/storage';
+import { ToolLogo } from './ToolLogo';
 
 interface ToolCardProps {
   tool: ToolSummary;
@@ -48,13 +49,7 @@ export const ToolCard: React.FC<ToolCardProps> = ({
       <div>
         {/* Top Header */}
         <div className="tool-card-header">
-          <div className="tool-logo-box">
-            {tool.logo ? (
-              <img src={tool.logo} alt={tool.name} onError={e => (e.currentTarget.style.display = 'none')} />
-            ) : (
-              <span>⚡</span>
-            )}
-          </div>
+          <ToolLogo slug={tool.slug} logo={tool.logo} name={tool.name} size={36} category={tool.category} />
 
           <div className="tool-card-title">
             <h3>{tool.name}</h3>

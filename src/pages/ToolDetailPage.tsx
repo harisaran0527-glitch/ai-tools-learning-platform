@@ -6,6 +6,7 @@ import { AITool } from '../types/tool';
 import { getToolProgress, updateToolProgress, toggleBookmark } from '../lib/storage';
 import { PromptBox } from '../components/PromptBox';
 import { VideoPlayer } from '../components/VideoPlayer';
+import { ToolLogo } from '../components/ToolLogo';
 import {
   ExternalLink, Bookmark, Clock, CheckCircle2, Award, ArrowLeft, ArrowRight,
   Sparkles, HelpCircle, FileText, CheckSquare, Layers, ShieldCheck, PlayCircle, GraduationCap, BookOpen
@@ -153,7 +154,7 @@ export const ToolDetailPage: React.FC = () => {
           {/* SECTION 1 — Tool Introduction */}
           <section id="overview" style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '20px', padding: '28px', marginBottom: '32px' }}>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '20px', flexWrap: 'wrap' }}>
-              <img src={tool.logo} alt={tool.name} style={{ width: '72px', height: '72px', borderRadius: '16px', border: '1px solid var(--border)', background: 'var(--surface2)' }} />
+              <ToolLogo slug={tool.slug} logo={tool.logo} name={tool.name} size={72} />
 
               <div style={{ flexGrow: 1 }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>

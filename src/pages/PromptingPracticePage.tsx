@@ -1,8 +1,24 @@
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, ArrowRight, Sparkles, Play, RotateCcw } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowRight,
+  Sparkles,
+  Play,
+  RotateCcw,
+  Target,
+  FileText,
+  CheckSquare,
+  Lock,
+  Code,
+  ShieldCheck,
+  Layers,
+  Zap,
+  TrendingUp,
+} from "lucide-react";
 import { api } from "../lib/platform";
 import { Analysis, CHALLENGES, CRITERIA, qualityBand } from "../lib/practice";
+
 export default function PromptingPracticePage() {
   const [challenge, setChallenge] = useState(0);
   const [prompt, setPrompt] = useState("");
@@ -11,13 +27,15 @@ export default function PromptingPracticePage() {
   const [error, setError] = useState("");
   const [output, setOutput] = useState("");
   const revision = useRef(0);
-  const editor = useRef<HTMLTextAreaElement>(null);
+  const editorRef = useRef<HTMLTextAreaElement>(null);
+
   const clear = () => {
     revision.current++;
     setAnalysis(undefined);
     setOutput("");
     setError("");
   };
+
   async function request(action: "analyze" | "execute") {
     const current = revision.current;
     setBusy(action);
@@ -40,184 +58,369 @@ export default function PromptingPracticePage() {
       setBusy("");
     }
   }
+
+  const scrollToEditor = () => {
+    editorRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+    editorRef.current?.focus();
+  };
+
   return (
-    <main className="academy-page">
-      <Link className="quiet-link" to="/prompting">
-        <ArrowLeft size={16} /> Prompting Studio
-      </Link>
-      <div className="page-heading">
-        <div>
-          <span className="eyebrow">
-            PRACTICE / {String(challenge + 1).padStart(2, "0")}
-          </span>
-          <h1>Make your intent clear.</h1>
+    <main style={{ maxWidth: "1280px", margin: "0 auto", padding: "28px 24px 60px" }}>
+      {/* ------------------------------------------------------------- */}
+      {/* SCREEN 5: TOP INTRO & 8 CRITERIA CARDS                        */}
+      {/* ------------------------------------------------------------- */}
+      <div className="prompting-lab-header">
+        <div className="prompting-title-col">
+          <div className="prompting-badge-pill">
+            <Sparkles size={11} />
+            <span>Prompting Practice</span>
+          </div>
+          <h1 className="prompting-heading">Prompting Practice Lab</h1>
+          <p className="prompting-sub">
+            Train better prompts through guided challenges and AI-powered scoring.
+          </p>
         </div>
-        <span className="pill">Practice only · 100 marks</span>
+
+        {/* Your Progress Card */}
+        <div className="prompting-progress-card">
+          <div className="prompting-progress-header">
+            <span style={{ color: "var(--text-muted)" }}>Your Progress</span>
+            <span style={{ color: "#a78bfa", fontWeight: 600 }}>(64%)</span>
+          </div>
+          <div style={{ display: "flex", alignItems: "baseline", gap: "6px" }}>
+            <span className="prompting-progress-score">320</span>
+            <span style={{ fontSize: "12px", color: "var(--text-muted)" }}>/ 500 pts</span>
+          </div>
+          <div className="assessment-progress-track" style={{ width: "100%", height: "5px" }}>
+            <div className="assessment-progress-fill" style={{ width: "64%" }} />
+          </div>
+        </div>
       </div>
-      <div className="practice-layout">
-        <section className="academy-card editor-panel">
-          <div className="section-heading">
-            <span className="eyebrow">YOUR CHALLENGE</span>
-            <span>
-              {challenge + 1} / {CHALLENGES.length}
-            </span>
+
+      {/* Row of 8 Compact Criteria Cards */}
+      <div className="prompting-criteria-row">
+        {[
+          { name: "Context", weight: "/12", icon: FileText, color: "#60a5fa", bg: "rgba(59,130,246,0.15)" },
+          { name: "Goal Clarity", weight: "/12", icon: Target, color: "#c084fc", bg: "rgba(192,132,252,0.15)" },
+          { name: "Requirements", weight: "/12", icon: CheckSquare, color: "#34d399", bg: "rgba(52,211,153,0.15)" },
+          { name: "Constraints", weight: "/12", icon: Lock, color: "#fbbf24", bg: "rgba(251,191,36,0.15)" },
+          { name: "Output Format", weight: "/12", icon: Code, color: "#22d3ee", bg: "rgba(34,211,238,0.15)" },
+          { name: "Accuracy", weight: "/12", icon: ShieldCheck, color: "#f472b6", bg: "rgba(244,114,182,0.15)" },
+          { name: "Completeness", weight: "/14", icon: Layers, color: "#2dd4bf", bg: "rgba(45,212,191,0.15)" },
+          { name: "Usability", weight: "/14", icon: Zap, color: "#fb923c", bg: "rgba(251,146,60,0.15)" },
+        ].map((item) => {
+          const IconComp = item.icon;
+          return (
+            <div key={item.name} className="criterion-card">
+              <div className="criterion-icon-squircle" style={{ background: item.bg, color: item.color }}>
+                <IconComp size={15} />
+              </div>
+              <div className="criterion-name">{item.name}</div>
+              <div className="criterion-weight">{item.weight}</div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Practice Challenge Banner */}
+      <div className="practice-challenge-banner">
+        <div className="challenge-banner-info">
+          <div className="challenge-icon-box">
+            <Target size={20} />
           </div>
-          <h2>{CHALLENGES[challenge][0]}</h2>
-          <p>{CHALLENGES[challenge][1]}</p>
-          <label htmlFor="prompt-editor">Your complete prompt</label>
-          <textarea
-            ref={editor}
-            id="prompt-editor"
-            maxLength={12000}
-            value={prompt}
-            onChange={(e) => {
-              setPrompt(e.target.value);
-              clear();
-            }}
-            placeholder="Describe the task, audience, requirements, constraints, reference material, output, tone and how success will be checked…"
-          />
-          <div className="section-heading">
-            <small>Write one complete prompt.</small>
-            <small>{prompt.length.toLocaleString()} / 12,000</small>
-          </div>
-          <div className="action-row">
-            <button
-              className="btn-primary"
-              disabled={!!busy}
-              onClick={() => request("analyze")}
-            >
-              <Sparkles size={16} />
-              {busy === "analyze" ? "Analyzing…" : "Analyze Prompt"}
-            </button>
-            <button
-              className="btn-secondary"
-              disabled={!!busy}
-              onClick={() => {
-                clear();
-                setPrompt("");
-                editor.current?.focus();
-              }}
-            >
-              <RotateCcw size={16} />
-              Try Again
-            </button>
-          </div>
-          <div className="action-row">
-            <button
-              className="btn-secondary"
-              disabled={!!busy || challenge === 0}
-              onClick={() => {
-                clear();
-                setPrompt("");
-                setChallenge((c) => c - 1);
-              }}
-            >
-              <ArrowLeft size={16} />
-              Previous
-            </button>
-            <button
-              className="btn-secondary"
-              disabled={!!busy}
-              onClick={() => {
-                clear();
-                setPrompt("");
-                setChallenge((c) => (c + 1) % CHALLENGES.length);
-              }}
-            >
-              Next Challenge
-              <ArrowRight size={16} />
-            </button>
-          </div>
-          <button
-            className="btn-primary execute-button"
-            disabled={!!busy || !analysis?.ticket || analysis.score < 70}
-            onClick={() => request("execute")}
-          >
-            <Play size={16} />
-            {busy === "execute" ? "Executing…" : "Execute Prompt"}
-          </button>
-          {(!analysis || analysis.score < 70) && (
-            <small>
-              Improve the highlighted prompt sections before execution.
-            </small>
-          )}
-          <small>
-            Analysis sends your prompt to the AI service. Avoid personal or
-            confidential information.
-          </small>
-          {error && (
-            <p className="error-message" role="alert">
-              {error}
-            </p>
-          )}
-          {output && (
-            <section className="practice-output">
-              <h2>Execution preview</h2>
-              <pre>{output}</pre>
-            </section>
-          )}
-        </section>
-        <aside
-          className="academy-card analysis-panel"
-          aria-label="Prompt analysis"
-          aria-live="polite"
-          aria-busy={busy === "analyze"}
-        >
-          <span className="eyebrow">YOUR PROMPT BLUEPRINT</span>
-          <div
-            className="score-orbit"
-            style={{ "--score": analysis?.score || 0 } as React.CSSProperties}
-          >
-            <div>
-              <strong>{analysis?.score ?? "—"}</strong>
-              <span>/ 100</span>
+          <div>
+            <div className="challenge-banner-title">Practice Challenge</div>
+            <div className="challenge-banner-desc">
+              Write a prompt to create a study plan for a 2nd year AI & DS student, including skills, resources, and timeline.
             </div>
           </div>
-          <h2 className="score-title">
-            {analysis ? qualityBand(analysis.score) : "Ready when you are"}
+        </div>
+
+        <button
+          type="button"
+          onClick={scrollToEditor}
+          className="btn-hero-primary"
+          style={{ height: "36px", padding: "0 18px", fontSize: "13px" }}
+        >
+          <Sparkles size={14} />
+          <span>Start Practice →</span>
+        </button>
+      </div>
+
+      {/* ------------------------------------------------------------- */}
+      {/* INTERACTIVE PROMPT CHALLENGE WORKSPACE                         */}
+      {/* ------------------------------------------------------------- */}
+      <div style={{ display: "grid", gridTemplateColumns: "minmax(0, 1.4fr) minmax(0, 1fr)", gap: "20px" }}>
+        {/* Left: Challenge Selector & Prompt Editor */}
+        <section
+          style={{
+            background: "var(--surface-navy)",
+            border: "1px solid var(--border-subtle)",
+            borderRadius: "12px",
+            padding: "20px",
+            display: "flex",
+            flexDirection: "column",
+            gap: "14px",
+          }}
+        >
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "8px" }}>
+            <span style={{ fontSize: "11px", fontFamily: "JetBrains Mono, monospace", color: "#a78bfa", textTransform: "uppercase", letterSpacing: "1px" }}>
+              CHALLENGE {String(challenge + 1).padStart(2, "0")} OF {CHALLENGES.length}
+            </span>
+            <div style={{ display: "flex", gap: "6px" }}>
+              <button
+                type="button"
+                disabled={challenge === 0}
+                onClick={() => {
+                  clear();
+                  setPrompt("");
+                  setChallenge((c) => c - 1);
+                }}
+                className="btn-compact-secondary"
+                style={{ height: "28px", padding: "0 8px" }}
+              >
+                <ArrowLeft size={13} />
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  clear();
+                  setPrompt("");
+                  setChallenge((c) => (c + 1) % CHALLENGES.length);
+                }}
+                className="btn-compact-secondary"
+                style={{ height: "28px", padding: "0 8px" }}
+              >
+                <ArrowRight size={13} />
+              </button>
+            </div>
+          </div>
+
+          <h2 style={{ fontFamily: "Sora, sans-serif", fontSize: "16px", fontWeight: 700, color: "#ffffff", margin: 0 }}>
+            {CHALLENGES[challenge][0]}
           </h2>
-          {!analysis && (
-            <p>
-              Analyze your prompt to reveal its strengths and the sections to
-              improve.
-            </p>
+          <p style={{ fontSize: "13px", color: "var(--text-muted)", margin: 0 }}>
+            {CHALLENGES[challenge][1]}
+          </p>
+
+          <div>
+            <label
+              htmlFor="prompt-editor"
+              style={{ display: "block", fontSize: "12px", fontWeight: 600, color: "var(--text-muted)", marginBottom: "6px" }}
+            >
+              Your Complete Prompt
+            </label>
+            <textarea
+              ref={editorRef}
+              id="prompt-editor"
+              maxLength={12000}
+              value={prompt}
+              onChange={(e) => {
+                setPrompt(e.target.value);
+                clear();
+              }}
+              placeholder="Describe the task, context, role, constraints, reference material, output format, and success criteria in detail..."
+              style={{
+                width: "100%",
+                minHeight: "180px",
+                padding: "12px",
+                background: "var(--surface-input)",
+                border: "1px solid var(--border-subtle)",
+                borderRadius: "8px",
+                color: "#ffffff",
+                fontFamily: "inherit",
+                fontSize: "13px",
+                lineHeight: "1.6",
+                resize: "vertical",
+                outline: "none",
+              }}
+            />
+            <div style={{ display: "flex", justifyContent: "space-between", marginTop: "4px", fontSize: "11px", color: "var(--text-subtle)" }}>
+              <span>Be specific and comprehensive.</span>
+              <span>{prompt.length.toLocaleString()} / 12,000</span>
+            </div>
+          </div>
+
+          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", alignItems: "center" }}>
+            <button
+              type="button"
+              disabled={!!busy || !prompt.trim()}
+              onClick={() => request("analyze")}
+              className="btn-hero-primary"
+              style={{ height: "36px", padding: "0 18px", fontSize: "13px" }}
+            >
+              <Sparkles size={14} />
+              <span>{busy === "analyze" ? "Evaluating…" : "Analyze Prompt"}</span>
+            </button>
+
+            <button
+              type="button"
+              disabled={!!busy || !prompt}
+              onClick={() => {
+                clear();
+                setPrompt("");
+                editorRef.current?.focus();
+              }}
+              className="btn-compact-secondary"
+            >
+              <RotateCcw size={14} />
+              <span>Clear</span>
+            </button>
+
+            {analysis && (
+              <button
+                type="button"
+                disabled={!!busy || !analysis?.ticket || analysis.score < 70}
+                onClick={() => request("execute")}
+                className="btn-compact-primary"
+                style={{
+                  background: analysis.score >= 70 ? "linear-gradient(135deg, #10b981 0%, #059669 100%)" : "rgba(255,255,255,0.08)",
+                }}
+              >
+                <Play size={14} />
+                <span>{busy === "execute" ? "Executing…" : "Execute (Score ≥ 70)"}</span>
+              </button>
+            )}
+          </div>
+
+          {error && (
+            <div
+              role="alert"
+              style={{
+                padding: "10px 12px",
+                background: "rgba(239,68,68,0.15)",
+                border: "1px solid rgba(239,68,68,0.4)",
+                color: "#fca5a5",
+                borderRadius: "8px",
+                fontSize: "12.5px",
+              }}
+            >
+              {error}
+            </div>
           )}
-          <div className="blueprint">
+
+          {output && (
+            <div
+              style={{
+                marginTop: "12px",
+                padding: "14px",
+                background: "var(--surface-input)",
+                border: "1px solid rgba(16,185,129,0.3)",
+                borderRadius: "8px",
+              }}
+            >
+              <div style={{ fontSize: "12px", fontWeight: 700, color: "#34d399", marginBottom: "8px" }}>
+                Execution Preview
+              </div>
+              <pre
+                style={{
+                  whiteSpace: "pre-wrap",
+                  fontFamily: "Space Grotesk, sans-serif",
+                  fontSize: "12.5px",
+                  color: "#f1f5f9",
+                  margin: 0,
+                  maxHeight: "240px",
+                  overflowY: "auto",
+                }}
+              >
+                {output}
+              </pre>
+            </div>
+          )}
+        </section>
+
+        {/* Right: AI Score & Component Blueprint */}
+        <aside
+          style={{
+            background: "var(--surface-navy)",
+            border: "1px solid var(--border-subtle)",
+            borderRadius: "12px",
+            padding: "20px",
+            display: "flex",
+            flexDirection: "column",
+            gap: "16px",
+          }}
+        >
+          <div style={{ textAlign: "center" }}>
+            <span style={{ fontSize: "11px", fontFamily: "JetBrains Mono, monospace", color: "#a78bfa", textTransform: "uppercase", letterSpacing: "1px" }}>
+              PROMPT SCORE
+            </span>
+
+            <div
+              style={{
+                width: "110px",
+                height: "110px",
+                borderRadius: "50%",
+                background: `conic-gradient(#7c3aed ${((analysis?.score || 0) / 100) * 360}deg, #1e2548 0deg)`,
+                padding: "6px",
+                margin: "12px auto",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  borderRadius: "50%",
+                  background: "#0d1224",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <span style={{ fontFamily: "Sora, sans-serif", fontSize: "28px", fontWeight: 800, color: "#ffffff", lineHeight: 1 }}>
+                  {analysis ? analysis.score : "—"}
+                </span>
+                <span style={{ fontSize: "10px", color: "var(--text-muted)" }}>/ 100</span>
+              </div>
+            </div>
+
+            <div style={{ fontFamily: "Sora, sans-serif", fontSize: "14px", fontWeight: 700, color: "#ffffff" }}>
+              {analysis ? qualityBand(analysis.score) : "Evaluation Blueprint"}
+            </div>
+            <div style={{ fontSize: "12px", color: "var(--text-muted)", marginTop: "2px" }}>
+              {analysis
+                ? "Detailed feedback generated across the 8 criteria."
+                : "Submit your prompt to see its component strengths."}
+            </div>
+          </div>
+
+          <div style={{ display: "flex", flexDirection: "column", gap: "8px", overflowY: "auto", maxHeight: "380px" }}>
             {(
               analysis?.sections ||
               CRITERIA.map(([label, max]) => ({
                 label,
                 max,
                 score: 0,
-                status: "Pending",
+                status: "Pending" as const,
                 evidence: "",
                 feedback: "",
               }))
             ).map((s) => (
-              <details
+              <div
                 key={s.label}
-                className={`criterion ${s.status.toLowerCase()}`}
-                open={analysis && s.status !== "Complete"}
+                style={{
+                  padding: "10px",
+                  borderRadius: "8px",
+                  background: "var(--surface-input)",
+                  border: "1px solid var(--border-subtle)",
+                }}
               >
-                <summary>
-                  <span>
-                    <i aria-hidden="true">
-                      {s.status === "Complete"
-                        ? "✓"
-                        : s.status === "Missing"
-                          ? "×"
-                          : "·"}
-                    </i>
-                    {s.label}
-                  </span>
-                  <strong>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "4px" }}>
+                  <span style={{ fontSize: "12px", fontWeight: 600, color: "#ffffff" }}>{s.label}</span>
+                  <span style={{ fontSize: "11px", fontWeight: 600, color: s.score > 0 ? "#a78bfa" : "var(--text-subtle)" }}>
                     {analysis ? s.score : "—"} / {s.max}
-                  </strong>
-                </summary>
-                <span className="criterion-status">{s.status}</span>
-                {s.evidence && <blockquote>{s.evidence}</blockquote>}
-                <p>{s.feedback}</p>
-              </details>
+                  </span>
+                </div>
+                {s.feedback && (
+                  <p style={{ fontSize: "11.5px", color: "var(--text-muted)", margin: "4px 0 0", lineHeight: 1.4 }}>
+                    {s.feedback}
+                  </p>
+                )}
+              </div>
             ))}
           </div>
         </aside>
