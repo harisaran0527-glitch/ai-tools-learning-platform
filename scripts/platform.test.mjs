@@ -126,26 +126,28 @@ globalThis.fetch = async (url, init = {}) => {
       choices: [{ message: { content } }],
     });
   }
-  if (String(url).includes('/storage/v1/object/upload/sign/theme-assets/')) {
-    const parts = String(url).split('/upload/sign/theme-assets/');
+  if (String(url).includes('/storage/v1/object/upload/sign/')) {
+    const bucket = String(url).includes('/tool-guides/') ? 'tool-guides' : 'theme-assets';
+    const parts = String(url).split(`/upload/sign/${bucket}/`);
     const path = parts[1]?.split('?')[0];
     return Response.json({
-      url: `https://database.test/storage/v1/object/theme-assets/${path}?token=mock-jwt`,
+      url: `https://database.test/storage/v1/object/${bucket}/${path}?token=mock-jwt`,
     });
   }
-  if (String(url).includes('/storage/v1/object/theme-assets')) {
+  if (String(url).includes('/storage/v1/object/theme-assets') || String(url).includes('/storage/v1/object/tool-guides')) {
     const urlStr = String(url);
+    const bucket = urlStr.includes('/tool-guides') ? 'tool-guides' : 'theme-assets';
     if (init.method === 'DELETE') {
       const b = typeof init.body === 'string' ? JSON.parse(init.body) : init.body;
       const prefixes = b?.prefixes || [];
       for (const p of prefixes) storageObjects.delete(p);
       return Response.json({ message: 'Deleted' });
     }
-    const path = urlStr.split('/theme-assets/')[1]?.split('?')[0];
+    const path = urlStr.split(`/${bucket}/`)[1]?.split('?')[0];
     if (init.method === 'POST' || init.method === 'PUT') {
       const data = Buffer.isBuffer(init.body) ? init.body : Buffer.from(init.body || '');
       storageObjects.set(path, data);
-      return Response.json({ Key: `theme-assets/${path}` });
+      return Response.json({ Key: `${bucket}/${path}` });
     }
     if (init.method === 'GET' || !init.method) {
       const asset = storageObjects.get(path);
@@ -891,4 +893,71 @@ test('elevenlabs learning guide: verifies PDF file integrity, URL generation, an
   assert.ok(summaryContent.includes('"officialUrl": "https://elevenlabs.io"'), 'Summary must preserve officialUrl');
   assert.ok(summaryContent.includes('"docsUrl": "https://elevenlabs.io/docs/overview"'), 'Summary must preserve docsUrl');
   assert.ok(summaryContent.includes('ElevenLabs_Human_Handwriting_Style.pdf'), 'Summary must include learning guide PDF URL');
+});
+
+test('universal pdf learning guide upload: validates admin auth, PDF mime/header, signed storage ticket, upload verification, and tool persistence', async () => {
+  // 1. Unauthenticated request to request_guide_upload must fail
+  const unauthRes = await call('request_guide_upload', {
+    method: 'POST',
+    body: { fileName: 'guide.pdf', mimeType: 'application/pdf', fileSize: 1024 * 1024 }
+  });
+  assert.equal(unauthRes.statusCode, 401);
+
+  // 2. Non-PDF upload rejection
+  const invalidMimeRes = await call('request_guide_upload', {
+    method: 'POST',
+    token: 'admin',
+    body: { fileName: 'script.exe', mimeType: 'application/x-msdownload', fileSize: 1024 }
+  });
+  assert.equal(invalidMimeRes.statusCode, 400);
+
+  // 3. Oversized PDF rejection (>20MB)
+  const oversizedRes = await call('request_guide_upload', {
+    method: 'POST',
+    token: 'admin',
+    body: { fileName: 'large.pdf', mimeType: 'application/pdf', fileSize: 25 * 1024 * 1024 }
+  });
+  assert.equal(oversizedRes.statusCode, 400);
+
+  // 4. Valid PDF upload request returns signed ticket or uploadUrl
+  const validReqRes = await call('request_guide_upload', {
+    method: 'POST',
+    token: 'admin',
+    body: { fileName: 'my-custom-guide.pdf', mimeType: 'application/pdf', fileSize: 500 * 1024 }
+  });
+  assert.equal(validReqRes.statusCode, 200);
+  assert.ok(validReqRes.body.ticket, 'Should return HMAC upload ticket');
+  assert.ok(validReqRes.body.publicUrl, 'Should return public target URL');
+  assert.ok(validReqRes.body.path, 'Should return storage path');
+
+  // 5. Direct base64 guide upload endpoint rejects non-PDF magic bytes
+  const badContentRes = await call('upload_guide_document', {
+    method: 'POST',
+    token: 'admin',
+    body: {
+      fileName: 'fake.pdf',
+      mimeType: 'application/pdf',
+      data: Buffer.from('NOT_A_REAL_PDF_CONTENT').toString('base64')
+    }
+  });
+  assert.equal(badContentRes.statusCode, 400);
+
+  // 6. Direct base64 guide upload succeeds with genuine %PDF- header
+  const validPdfBuf = Buffer.concat([
+    Buffer.from('%PDF-1.4\n'),
+    Buffer.from('1 0 obj\n<< /Type /Catalog >>\nendobj\ntrailer\n<< /Root 1 0 R >>\n%%EOF')
+  ]);
+  const goodUploadRes = await call('upload_guide_document', {
+    method: 'POST',
+    token: 'admin',
+    body: {
+      fileName: 'genuine-test-guide.pdf',
+      mimeType: 'application/pdf',
+      data: validPdfBuf.toString('base64'),
+      toolSlug: 'chatgpt'
+    }
+  });
+  assert.equal(goodUploadRes.statusCode, 200);
+  assert.ok(goodUploadRes.body.url, 'Should return permanent public URL');
+  assert.ok(goodUploadRes.body.url.includes('.pdf'), 'URL must end with .pdf extension');
 });

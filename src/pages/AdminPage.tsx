@@ -35,6 +35,11 @@ import {
   Palette,
   Menu,
   X,
+  Download,
+  Copy,
+  Trash2,
+  RefreshCw,
+  ExternalLink,
 } from "lucide-react";
 import { api, refreshCatalog, getCatalogRevision } from "../lib/platform";
 import { catalogSummaries } from "../data/catalog/summaryData";
@@ -163,6 +168,13 @@ export default function AdminPage() {
 
   // Logo upload ref
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  // Guide PDF upload state
+  const guideInputRef = useRef<HTMLInputElement>(null);
+  const [guideUploading, setGuideUploading] = useState(false);
+  const [guideProgress, setGuideProgress] = useState<{ percent: number; stage: string } | null>(null);
+  const [copiedGuideUrl, setCopiedGuideUrl] = useState(false);
+  const [showGuidePreview, setShowGuidePreview] = useState(false);
 
   const categories = useMemo(() => [
     ...new Set([
@@ -335,6 +347,141 @@ export default function AdminPage() {
       setError("Failed to read image file.");
     };
     reader.readAsDataURL(file);
+  };
+
+  // Handle Guide PDF Upload
+  const handleGuideFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file || !tool) return;
+
+    if (!file.name.toLowerCase().endsWith('.pdf') && file.type !== 'application/pdf') {
+      setError('Please select a valid PDF document (.pdf).');
+      return;
+    }
+
+    if (file.size > 20 * 1024 * 1024) {
+      setError('PDF file size exceeds the 20MB limit. Please upload a smaller document.');
+      return;
+    }
+
+    setGuideUploading(true);
+    setError('');
+    setMessage('');
+    setGuideProgress({ percent: 10, stage: 'Step 1/3: Requesting authorized storage token...' });
+
+    try {
+      let publicUrl = '';
+      try {
+        const perm = await api<{
+          uploadUrl: string;
+          path: string;
+          token: string;
+          publicUrl: string;
+        }>('request_guide_upload', {
+          filename: file.name,
+          mimeType: 'application/pdf',
+          size: file.size,
+          toolSlug: tool.slug,
+        }, token);
+
+        setGuideProgress({
+          percent: 25,
+          stage: `Step 2/3: Uploading PDF to storage (0 / ${(file.size / (1024 * 1024)).toFixed(1)} MB)...`,
+        });
+
+        await new Promise<void>((resolve, reject) => {
+          const xhr = new XMLHttpRequest();
+          xhr.open('PUT', perm.uploadUrl);
+          xhr.setRequestHeader('Content-Type', 'application/pdf');
+
+          xhr.upload.onprogress = (event) => {
+            if (event.lengthComputable) {
+              const rawPercent = (event.loaded / event.total) * 100;
+              const scaledPercent = Math.min(90, Math.round(25 + (rawPercent * 0.65)));
+              const loadedMb = (event.loaded / (1024 * 1024)).toFixed(1);
+              const totalMb = (event.total / (1024 * 1024)).toFixed(1);
+              setGuideProgress({
+                percent: scaledPercent,
+                stage: `Step 2/3: Uploading PDF (${loadedMb} / ${totalMb} MB — ${Math.round(rawPercent)}%)...`,
+              });
+            }
+          };
+
+          xhr.onload = () => {
+            if (xhr.status >= 200 && xhr.status < 300) resolve();
+            else reject(new Error(`Storage server error (HTTP ${xhr.status}) during upload.`));
+          };
+          xhr.onerror = () => reject(new Error('Network connection error during upload.'));
+          xhr.ontimeout = () => reject(new Error('Upload timed out.'));
+          xhr.send(file);
+        });
+
+        setGuideProgress({ percent: 95, stage: 'Step 3/3: Verifying PDF structure & generating permanent URL...' });
+        const verifyRes = await api<{ verified: boolean; url: string }>('verify_guide_upload', {
+          path: perm.path,
+          token: perm.token,
+        }, token);
+
+        publicUrl = verifyRes.url;
+      } catch {
+        setGuideProgress({ percent: 50, stage: 'Streaming document directly to platform API...' });
+        const reader = new FileReader();
+        const base64Promise = new Promise<string>((resolve, reject) => {
+          reader.onload = () => resolve(reader.result as string);
+          reader.onerror = () => reject(new Error('Failed to read file from disk.'));
+          reader.readAsDataURL(file);
+        });
+        const base64Data = await base64Promise;
+        const res = await api<{ uploaded: boolean; url: string }>('upload_guide_document', {
+          data: base64Data,
+          fileName: file.name,
+          toolSlug: tool.slug,
+        }, token);
+        publicUrl = res.url;
+      }
+
+      setGuideProgress({ percent: 100, stage: 'Done! PDF verified and ready.' });
+
+      patch({
+        learningGuide: {
+          title: `${tool.name} Learning Guide`,
+          url: publicUrl,
+          fileName: file.name,
+          format: 'pdf',
+          verifiedAt: new Date().toISOString(),
+          description: `Comprehensive AI VERSE learning guide and visual study notes for ${tool.name}.`,
+        },
+        documentationResource: {
+          type: 'platform',
+          title: `${tool.name} Learning Guide`,
+          url: publicUrl,
+          verifiedAt: new Date().toISOString(),
+        }
+      });
+
+      setMessage(`Learning Guide PDF uploaded successfully! Permanent URL: ${publicUrl}. Click "Save Tool" below to persist changes.`);
+    } catch (err) {
+      setError(`Guide upload failed: ${(err as Error).message}`);
+    } finally {
+      setGuideUploading(false);
+      if (guideInputRef.current) guideInputRef.current.value = '';
+    }
+  };
+
+  const handleCopyGuideUrl = () => {
+    if (!tool?.learningGuide?.url) return;
+    navigator.clipboard.writeText(tool.learningGuide.url);
+    setCopiedGuideUrl(true);
+    setTimeout(() => setCopiedGuideUrl(false), 2500);
+  };
+
+  const handleRemoveGuide = () => {
+    if (!window.confirm('Are you sure you want to remove this learning guide from the tool draft?')) return;
+    patch({
+      learningGuide: undefined,
+      documentationResource: undefined,
+    });
+    setMessage('Learning guide removed from draft. Click "Save Tool" to persist.');
   };
 
   // Filtered tools
@@ -1012,6 +1159,177 @@ export default function AdminPage() {
                       onChange={(e) => patch({ superpower: e.target.value })}
                       className="filter-search-input"
                     />
+                  </div>
+
+                  {/* AI VERSE Learning Guide Section */}
+                  <div style={{ gridColumn: "1 / -1", marginTop: "12px", background: "rgba(108,99,255,0.06)", border: "1px solid rgba(108,99,255,0.25)", borderRadius: "14px", padding: "20px" }}>
+                    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "12px", flexWrap: "wrap", gap: "10px" }}>
+                      <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                        <span className="badge" style={{ background: "rgba(108,99,255,0.2)", color: "var(--accent1)", border: "1px solid rgba(108,99,255,0.4)", fontSize: "11px", fontWeight: 700 }}>
+                          LEARNING GUIDE
+                        </span>
+                        <h4 style={{ margin: 0, fontSize: "16px", color: "#fff", display: "flex", alignItems: "center", gap: "8px" }}>
+                          <FileText size={18} color="var(--accent1)" /> AI VERSE Learning Guide (PDF Document)
+                        </h4>
+                      </div>
+                      <span style={{ fontSize: "12px", color: "var(--muted)" }}>
+                        Upload PDF from computer • Stored in Supabase • Permanent HTTPS URL
+                      </span>
+                    </div>
+
+                    <input
+                      ref={guideInputRef}
+                      type="file"
+                      accept=".pdf,application/pdf"
+                      style={{ display: "none" }}
+                      onChange={handleGuideFileUpload}
+                    />
+
+                    {/* Progress Bar during upload */}
+                    {guideUploading && guideProgress && (
+                      <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "10px", padding: "16px", marginBottom: "16px" }}>
+                        <div style={{ display: "flex", justifyContent: "space-between", fontSize: "13px", marginBottom: "8px", color: "#fff" }}>
+                          <span>{guideProgress.stage}</span>
+                          <span style={{ fontWeight: 700, color: "var(--accent1)" }}>{guideProgress.percent}%</span>
+                        </div>
+                        <div style={{ width: "100%", height: "8px", background: "rgba(255,255,255,0.1)", borderRadius: "4px", overflow: "hidden" }}>
+                          <div style={{ width: `${guideProgress.percent}%`, height: "100%", background: "linear-gradient(90deg, var(--accent1), var(--accent2))", transition: "width 0.2s" }} />
+                        </div>
+                      </div>
+                    )}
+
+                    {tool.learningGuide?.url ? (
+                      <div>
+                        <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "10px", padding: "16px", marginBottom: "14px" }}>
+                          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "10px", marginBottom: "12px" }}>
+                            <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                              <div style={{ width: "40px", height: "40px", borderRadius: "8px", background: "rgba(108,99,255,0.15)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                                <FileText size={22} color="var(--accent1)" />
+                              </div>
+                              <div>
+                                <div style={{ fontSize: "14px", fontWeight: 600, color: "#fff" }}>
+                                  {tool.learningGuide.title || `${tool.name} Learning Guide`}
+                                </div>
+                                <div style={{ fontSize: "12px", color: "var(--muted)" }}>
+                                  {tool.learningGuide.fileName || "document.pdf"} • Verified PDF Document
+                                </div>
+                              </div>
+                            </div>
+
+                            <span className="badge" style={{ background: "rgba(6,214,160,0.15)", color: "var(--accent5)", border: "1px solid rgba(6,214,160,0.3)", fontSize: "11px" }}>
+                              <CheckCircle2 size={12} style={{ display: "inline", marginRight: "4px" }} /> ACTIVE IN CATALOG
+                            </span>
+                          </div>
+
+                          {/* Public URL Input & Copy button */}
+                          <div style={{ display: "flex", gap: "8px", marginBottom: "14px" }}>
+                            <input
+                              type="text"
+                              readOnly
+                              value={tool.learningGuide.url}
+                              className="filter-search-input"
+                              style={{ fontSize: "13px", color: "var(--accent1)", background: "rgba(0,0,0,0.2)" }}
+                            />
+                            <button
+                              type="button"
+                              onClick={handleCopyGuideUrl}
+                              className="btn-secondary"
+                              style={{ display: "inline-flex", alignItems: "center", gap: "6px", whiteSpace: "nowrap", padding: "8px 14px", fontSize: "13px" }}
+                            >
+                              {copiedGuideUrl ? <Check size={14} color="var(--accent5)" /> : <Copy size={14} />}
+                              {copiedGuideUrl ? "Copied!" : "Copy URL"}
+                            </button>
+                          </div>
+
+                          {/* Action Buttons */}
+                          <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
+                            <a
+                              href={tool.learningGuide.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="btn-primary"
+                              style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "13px", padding: "6px 12px" }}
+                            >
+                              <Eye size={14} /> View PDF
+                            </a>
+                            <a
+                              href={tool.learningGuide.url}
+                              download={tool.learningGuide.fileName || `${tool.slug}-guide.pdf`}
+                              className="btn-secondary"
+                              style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "13px", padding: "6px 12px" }}
+                            >
+                              <Download size={14} /> Download PDF
+                            </a>
+                            <button
+                              type="button"
+                              onClick={() => guideInputRef.current?.click()}
+                              disabled={guideUploading}
+                              className="btn-secondary"
+                              style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "13px", padding: "6px 12px" }}
+                            >
+                              <RefreshCw size={14} /> Replace PDF
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => setShowGuidePreview((prev) => !prev)}
+                              className="btn-secondary"
+                              style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "13px", padding: "6px 12px" }}
+                            >
+                              <FileText size={14} /> {showGuidePreview ? "Hide Preview" : "Preview PDF"}
+                            </button>
+                            <button
+                              type="button"
+                              onClick={handleRemoveGuide}
+                              className="btn-secondary"
+                              style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "13px", padding: "6px 12px", color: "var(--accent3)" }}
+                            >
+                              <Trash2 size={14} /> Remove
+                            </button>
+                          </div>
+                        </div>
+
+                        {/* Collapsible Live Preview */}
+                        {showGuidePreview && (
+                          <div style={{ width: "100%", height: "450px", borderRadius: "10px", overflow: "hidden", border: "1px solid var(--border)", background: "#070913" }}>
+                            <iframe
+                              src={`${tool.learningGuide.url}#toolbar=1&view=FitH`}
+                              title="PDF Guide Preview"
+                              style={{ width: "100%", height: "100%", border: "none" }}
+                            />
+                          </div>
+                        )}
+                      </div>
+                    ) : (
+                      <div
+                        onClick={() => guideInputRef.current?.click()}
+                        style={{
+                          border: "2px dashed rgba(108,99,255,0.4)",
+                          borderRadius: "10px",
+                          padding: "30px 20px",
+                          textAlign: "center",
+                          cursor: "pointer",
+                          background: "rgba(108,99,255,0.03)",
+                          transition: "border-color 0.2s, background 0.2s",
+                        }}
+                      >
+                        <div style={{ width: "48px", height: "48px", borderRadius: "50%", background: "rgba(108,99,255,0.15)", display: "inline-flex", alignItems: "center", justifyContent: "center", marginBottom: "10px" }}>
+                          <Upload size={24} color="var(--accent1)" />
+                        </div>
+                        <div style={{ fontSize: "15px", fontWeight: 600, color: "#fff", marginBottom: "4px" }}>
+                          Upload Learning Guide PDF
+                        </div>
+                        <div style={{ fontSize: "13px", color: "var(--muted)", maxWidth: "460px", margin: "0 auto 12px" }}>
+                          Choose any PDF file from your computer (Max 20MB). Stores in persistent Supabase Storage with an authorized public HTTPS URL.
+                        </div>
+                        <button
+                          type="button"
+                          className="btn-primary"
+                          style={{ pointerEvents: "none", display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "13px", padding: "8px 16px" }}
+                        >
+                          <FileText size={14} /> Select PDF Document
+                        </button>
+                      </div>
+                    )}
                   </div>
                 </div>
 

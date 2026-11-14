@@ -1060,9 +1060,9 @@ export default async function handler(req, res) {
     if (slug && !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))
       fail(400, "Invalid tool slug.");
     const body = req.body || {};
-    const isMediaUploadAction = action === 'upload_theme_media' || action === 'theme-upload';
+    const isMediaUploadAction = action === 'upload_theme_media' || action === 'theme-upload' || action === 'upload_guide_document';
     const isThemeSavePublish = action === 'save_theme' || action === 'theme-save' || action === 'publish_theme' || action === 'theme-publish';
-    const maxBodyLength = isMediaUploadAction ? 22 * 1024 * 1024 : (isThemeSavePublish ? 5 * 1024 * 1024 : 250000);
+    const maxBodyLength = isMediaUploadAction ? 25 * 1024 * 1024 : (isThemeSavePublish ? 5 * 1024 * 1024 : 250000);
     if (JSON.stringify(body).length > maxBodyLength)
       fail(413, "Request is too large.");
     const method = req.method;
@@ -1122,7 +1122,7 @@ export default async function handler(req, res) {
       }
     }
 
-    if (['themes', 'save_theme', 'theme-save', 'publish_theme', 'theme-publish', 'rollback_theme', 'theme-reset', 'restore_theme', 'delete_theme', 'upload_theme_media', 'theme-upload', 'request_theme_upload', 'theme_upload_sign', 'verify_theme_media', 'theme_upload_verify'].includes(action)) {
+    if (['themes', 'save_theme', 'theme-save', 'publish_theme', 'theme-publish', 'rollback_theme', 'theme-reset', 'restore_theme', 'delete_theme', 'upload_theme_media', 'theme-upload', 'request_theme_upload', 'theme_upload_sign', 'verify_theme_media', 'theme_upload_verify', 'request_guide_upload', 'guide_upload_sign', 'verify_guide_upload', 'guide_upload_verify', 'upload_guide_document'].includes(action)) {
       const user = await admin(req);
       if (action === 'themes' && method === 'GET') {
         try {
@@ -1554,6 +1554,267 @@ export default async function handler(req, res) {
           mimeType: payload.mimeType,
           size: totalSize,
         });
+      }
+
+      if (action === 'request_guide_upload' || action === 'guide_upload_sign') {
+        const mimeType = String(body.mimeType || body.type || '').toLowerCase().trim();
+        const filename = String(body.filename || body.fileName || '').toLowerCase().trim();
+        const isPdf = mimeType === 'application/pdf' || filename.endsWith('.pdf');
+        if (!isPdf) fail(400, 'Unsupported guide document type. Only PDF files are supported.');
+
+        const maxSize = 20 * 1024 * 1024;
+        const size = Number(body.size != null ? body.size : body.fileSize);
+        if (!Number.isFinite(size) || size <= 0) fail(400, 'Provide a valid file size.');
+        if (size > maxSize) fail(400, 'File size exceeds the 20MB limit.');
+
+        const toolSlug = String(body.toolSlug || body.slug || 'tool').replace(/[^a-z0-9-]/gi, '-').toLowerCase();
+        const assetPath = `guide-${toolSlug}-${Date.now()}-${randomUUID().slice(0, 8)}.pdf`;
+
+        const key = config('SUPABASE_SERVICE_ROLE_KEY');
+        const bucket = 'tool-guides';
+        const signUrl = `${config('SUPABASE_URL')}/storage/v1/object/upload/sign/${bucket}/${assetPath}`;
+
+        let targetBucket = bucket;
+        let signRes = await fetch(signUrl, {
+          method: 'POST',
+          headers: {
+            apikey: key,
+            Authorization: `Bearer ${key}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({}),
+        });
+
+        if (!signRes.ok && signRes.status === 404) {
+          try {
+            await fetch(`${config('SUPABASE_URL')}/storage/v1/bucket`, {
+              method: 'POST',
+              headers: {
+                apikey: key,
+                Authorization: `Bearer ${key}`,
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                id: bucket,
+                name: bucket,
+                public: true,
+                file_size_limit: 20971520,
+                allowed_mime_types: ['application/pdf'],
+              }),
+            });
+            signRes = await fetch(signUrl, {
+              method: 'POST',
+              headers: {
+                apikey: key,
+                Authorization: `Bearer ${key}`,
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({}),
+            });
+          } catch {}
+        }
+
+        if (!signRes.ok) {
+          targetBucket = 'theme-assets';
+          const fallbackSignUrl = `${config('SUPABASE_URL')}/storage/v1/object/upload/sign/theme-assets/${assetPath}`;
+          signRes = await fetch(fallbackSignUrl, {
+            method: 'POST',
+            headers: {
+              apikey: key,
+              Authorization: `Bearer ${key}`,
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({}),
+          });
+        }
+
+        if (!signRes.ok) {
+          fail(502, 'Unable to generate signed upload URL from storage service.');
+        }
+
+        const signData = await signRes.json();
+        const rawUrl = signData.url || '';
+        const uploadUrl = rawUrl.startsWith('http')
+          ? rawUrl
+          : `${config('SUPABASE_URL')}/storage/v1${rawUrl.startsWith('/') ? '' : '/'}${rawUrl}`;
+
+        const tokenPayload = {
+          path: assetPath,
+          bucket: targetBucket,
+          mimeType: 'application/pdf',
+          maxSize,
+          adminId: user.id,
+          expires: Date.now() + 600000,
+        };
+        const tokenData = Buffer.from(JSON.stringify(tokenPayload)).toString('base64url');
+        const tokenMac = createHmac('sha256', config('PRACTICE_TOKEN_SECRET')).update(tokenData).digest('base64url');
+        const ticket = `${tokenData}.${tokenMac}`;
+
+        const publicUrl = `${config('SUPABASE_URL')}/storage/v1/object/public/${targetBucket}/${assetPath}`;
+
+        return res.json({
+          uploadUrl,
+          path: assetPath,
+          bucket: targetBucket,
+          token: ticket,
+          ticket,
+          mimeType: 'application/pdf',
+          maxSize,
+          publicUrl,
+        });
+      }
+
+      if (action === 'verify_guide_upload' || action === 'guide_upload_verify') {
+        const ticketStr = String(body.token || '');
+        const [tokenData, tokenMac] = ticketStr.split('.');
+        if (!tokenData || !tokenMac) fail(403, 'Invalid upload ticket.');
+        const expectedMac = createHmac('sha256', config('PRACTICE_TOKEN_SECRET')).update(tokenData).digest('base64url');
+        if (tokenMac.length !== expectedMac.length || !timingSafeEqual(Buffer.from(tokenMac), Buffer.from(expectedMac))) {
+          fail(403, 'Invalid upload ticket signature.');
+        }
+
+        let payload;
+        try {
+          payload = JSON.parse(Buffer.from(tokenData, 'base64url').toString());
+        } catch {
+          fail(403, 'Invalid upload ticket payload.');
+        }
+
+        if (payload.expires < Date.now()) {
+          fail(403, 'Upload authorization ticket has expired.');
+        }
+
+        const assetPath = String(body.path || '');
+        if (!assetPath || assetPath !== payload.path) {
+          fail(403, 'Upload asset path mismatch.');
+        }
+
+        const bucket = payload.bucket || 'tool-guides';
+        const key = config('SUPABASE_SERVICE_ROLE_KEY');
+
+        const cleanUpStorage = async () => {
+          try {
+            await fetch(`${config('SUPABASE_URL')}/storage/v1/object/${bucket}`, {
+              method: 'DELETE',
+              headers: {
+                apikey: key,
+                Authorization: `Bearer ${key}`,
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({ prefixes: [assetPath] }),
+            });
+          } catch {}
+        };
+
+        let checkRes = await fetch(`${config('SUPABASE_URL')}/storage/v1/object/${bucket}/${assetPath}`, {
+          headers: {
+            apikey: key,
+            Authorization: `Bearer ${key}`,
+            Range: 'bytes=0-8191',
+          },
+        });
+
+        if (!checkRes.ok) {
+          checkRes = await fetch(`${config('SUPABASE_URL')}/storage/v1/object/public/${bucket}/${assetPath}`, {
+            headers: {
+              Range: 'bytes=0-8191',
+            },
+          });
+        }
+
+        if (!checkRes.ok) {
+          fail(404, 'Uploaded guide document not found in storage. Ensure direct upload completed.');
+        }
+
+        const contentRange = checkRes.headers.get('content-range') || '';
+        const rangeMatch = contentRange.match(/\/(\d+)$/);
+        const totalSize = rangeMatch ? parseInt(rangeMatch[1], 10) : parseInt(checkRes.headers.get('content-length') || '0', 10);
+
+        if (totalSize > payload.maxSize) {
+          await cleanUpStorage();
+          fail(400, `Uploaded file exceeds the allowed ${(payload.maxSize / (1024 * 1024)).toFixed(0)}MB limit. File deleted.`);
+        }
+
+        const chunkBuffer = Buffer.from(await checkRes.arrayBuffer());
+        if (chunkBuffer.length === 0) {
+          await cleanUpStorage();
+          fail(400, 'Uploaded file is empty. File deleted.');
+        }
+
+        const isPdfMagic = chunkBuffer.length >= 5 && chunkBuffer.subarray(0, 5).toString('ascii') === '%PDF-';
+        if (!isPdfMagic) {
+          await cleanUpStorage();
+          fail(400, 'File content is not a valid PDF document. File deleted from storage.');
+        }
+
+        const finalUrl = `${config('SUPABASE_URL')}/storage/v1/object/public/${bucket}/${assetPath}`;
+        return res.json({
+          verified: true,
+          url: finalUrl,
+          path: assetPath,
+          mimeType: 'application/pdf',
+          size: totalSize,
+        });
+      }
+
+      if (action === 'upload_guide_document') {
+        const rawData = body.data || body.file || '';
+        let base64Data = rawData;
+        if (rawData.startsWith('data:')) {
+          const parts = rawData.split(',');
+          if (parts.length < 2) fail(400, 'Invalid data URI.');
+          base64Data = parts[1];
+        }
+        if (!base64Data) fail(400, 'No document data provided.');
+
+        const buffer = Buffer.from(base64Data, 'base64');
+        if (buffer.length > 20 * 1024 * 1024) fail(400, 'Document exceeds 20MB limit.');
+        if (buffer.length < 5 || buffer.subarray(0, 5).toString('ascii') !== '%PDF-') {
+          fail(400, 'File content is not a valid PDF document.');
+        }
+
+        const toolSlug = String(body.toolSlug || body.slug || 'tool').replace(/[^a-z0-9-]/gi, '-').toLowerCase();
+        const assetPath = `guide-${toolSlug}-${Date.now()}-${randomUUID().slice(0, 8)}.pdf`;
+        const bucket = 'tool-guides';
+        const key = config('SUPABASE_SERVICE_ROLE_KEY');
+
+        let storageRes = await fetch(`${config('SUPABASE_URL')}/storage/v1/object/${bucket}/${assetPath}`, {
+          method: 'POST',
+          headers: {
+            apikey: key,
+            Authorization: `Bearer ${key}`,
+            'Content-Type': 'application/pdf',
+            'x-upsert': 'true',
+          },
+          body: buffer,
+        });
+
+        let targetBucket = bucket;
+        if (!storageRes.ok) {
+          targetBucket = 'theme-assets';
+          storageRes = await fetch(`${config('SUPABASE_URL')}/storage/v1/object/theme-assets/${assetPath}`, {
+            method: 'POST',
+            headers: {
+              apikey: key,
+              Authorization: `Bearer ${key}`,
+              'Content-Type': 'application/pdf',
+              'x-upsert': 'true',
+            },
+            body: buffer,
+          });
+        }
+
+        if (storageRes.ok) {
+          const publicUrl = `${config('SUPABASE_URL')}/storage/v1/object/public/${targetBucket}/${assetPath}`;
+          return res.json({
+            uploaded: true,
+            url: publicUrl,
+            fileName: assetPath,
+            size: buffer.length,
+          });
+        }
+
+        fail(502, 'Failed to store document in storage service.');
       }
     }
 
