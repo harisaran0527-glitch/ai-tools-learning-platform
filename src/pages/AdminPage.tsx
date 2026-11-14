@@ -1,5 +1,5 @@
 import { FormEvent, useEffect, useState, useRef, useMemo, lazy, Suspense } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import {
   ArrowLeft,
   ArrowRight,
@@ -33,6 +33,8 @@ import {
   Database,
   KeyRound,
   Palette,
+  Menu,
+  X,
 } from "lucide-react";
 import { api, refreshCatalog, getCatalogRevision } from "../lib/platform";
 import { catalogSummaries } from "../data/catalog/summaryData";
@@ -103,8 +105,43 @@ export default function AdminPage() {
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
 
-  // Views: dashboard, tools, assessments, categories, appearance, users, settings
-  const [view, setView] = useState<"dashboard" | "tools" | "assessments" | "categories" | "appearance" | "users" | "settings">("dashboard");
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  // Views: dashboard, categories, tools, assessments, prompting, appearance, users, settings
+  // Derived strictly from URL pathname to preserve history, Back/Forward & Refresh state
+  const view = useMemo<"dashboard" | "categories" | "tools" | "assessments" | "prompting" | "appearance" | "users" | "settings">(() => {
+    const normalized = location.pathname.replace(/\/+$/, "");
+    const segment = normalized.replace(/^\/admin\/?/, "").split("/")[0];
+    if (segment === "categories") return "categories";
+    if (segment === "tools") return "tools";
+    if (segment === "assessments") return "assessments";
+    if (segment === "prompting") return "prompting";
+    if (segment === "appearance") return "appearance";
+    if (segment === "users") return "users";
+    if (segment === "settings") return "settings";
+    return "dashboard";
+  }, [location.pathname]);
+
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const navigateTo = (target: "dashboard" | "categories" | "tools" | "assessments" | "prompting" | "appearance" | "users" | "settings") => {
+    if (discard()) {
+      setTool(undefined);
+      setDirty(false);
+      navigate(target === "dashboard" ? "/admin" : `/admin/${target}`);
+      setMobileMenuOpen(false);
+    }
+  };
+
+  const isHighlighted = (target: "dashboard" | "categories" | "tools" | "assessments" | "prompting" | "appearance" | "users" | "settings") => {
+    if (tool) {
+      if (activeTabInEditor === "assessment") return target === "assessments";
+      return target === "tools";
+    }
+    return view === target;
+  };
+
   const editRequest = useRef(0);
   useEffect(() => { editRequest.current++; }, [view, token]);
   const [activeTabInEditor, setActiveTabInEditor] = useState<"info" | "assessment">("info");
@@ -158,7 +195,6 @@ export default function AdminPage() {
       });
       setToken(session.token);
       setPassword("");
-      setView("dashboard");
     } catch (e) {
       setError((e as Error).message || "Sign in failed. Check credentials.");
     } finally {
@@ -481,123 +517,140 @@ export default function AdminPage() {
         style={{ display: "none" }}
       />
 
-      {/* Sleek Admin Sidebar (Width: 216px) */}
-      <aside className="admin-sidebar">
-        <Link to="/" className="admin-sidebar-brand">
+      {/* Mobile Topbar */}
+      <header className="admin-mobile-bar" aria-label="Mobile Navigation Bar">
+        <div className="admin-mobile-brand">
+          <button
+            type="button"
+            className="admin-hamburger-btn"
+            onClick={() => setMobileMenuOpen((o) => !o)}
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileMenuOpen}
+          >
+            {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+          </button>
           <img
             src="/images/ai-verse-logo.png"
             alt="AI Verse Logo"
             className="admin-brand-icon"
+            style={{ width: "26px", height: "26px" }}
           />
-          <div className="admin-brand-text">
-            <span className="admin-brand-title">AI Verse</span>
-            <span className="admin-brand-sub">Admin Portal</span>
-          </div>
-        </Link>
+          <span style={{ fontSize: "14px", fontWeight: 700, color: "#ffffff", fontFamily: "Sora, sans-serif" }}>
+            AI Verse
+          </span>
+        </div>
+        <span className="admin-mobile-pill">{tool ? (activeTabInEditor === "assessment" ? "Assessment" : "Tool Editor") : view}</span>
+      </header>
+
+      {/* Mobile Backdrop */}
+      {mobileMenuOpen && (
+        <div
+          className="admin-mobile-backdrop"
+          onClick={() => setMobileMenuOpen(false)}
+          aria-hidden="true"
+        />
+      )}
+
+      {/* Sleek Admin Sidebar (Width: 216px on desktop, drawer on mobile) */}
+      <aside className={`admin-sidebar ${mobileMenuOpen ? "mobile-open" : ""}`} aria-label="Admin Navigation Sidebar">
+        <div className="admin-sidebar-header-row">
+          <Link to="/" className="admin-sidebar-brand" onClick={() => setMobileMenuOpen(false)}>
+            <img
+              src="/images/ai-verse-logo.png"
+              alt="AI Verse Logo"
+              className="admin-brand-icon"
+            />
+            <div className="admin-brand-text">
+              <span className="admin-brand-title">AI Verse</span>
+              <span className="admin-brand-sub">Admin Portal</span>
+            </div>
+          </Link>
+          <button
+            type="button"
+            className="admin-sidebar-close-btn"
+            onClick={() => setMobileMenuOpen(false)}
+            aria-label="Close sidebar"
+          >
+            <X size={16} />
+          </button>
+        </div>
 
         <nav className="admin-nav-list" aria-label="Admin Navigation">
           <button
-            className={`admin-nav-item ${view === "dashboard" && !tool ? "active" : ""}`}
-            onClick={() => {
-              if (discard()) {
-                setTool(undefined);
-                setDirty(false);
-                setView("dashboard");
-              }
-            }}
+            type="button"
+            className={`admin-nav-item ${isHighlighted("dashboard") ? "active" : ""}`}
+            onClick={() => navigateTo("dashboard")}
+            aria-current={isHighlighted("dashboard") ? "page" : undefined}
           >
             <LayoutDashboard size={16} />
             <span>Dashboard</span>
           </button>
 
           <button
-            className={`admin-nav-item ${view === "categories" && !tool ? "active" : ""}`}
-            onClick={() => {
-              if (discard()) {
-                setTool(undefined);
-                setDirty(false);
-                setView("categories");
-              }
-            }}
+            type="button"
+            className={`admin-nav-item ${isHighlighted("categories") ? "active" : ""}`}
+            onClick={() => navigateTo("categories")}
+            aria-current={isHighlighted("categories") ? "page" : undefined}
           >
             <FolderTree size={16} />
             <span>Categories</span>
           </button>
 
           <button
-            className={`admin-nav-item ${view === "tools" && !tool ? "active" : ""}`}
-            onClick={() => {
-              if (discard()) {
-                setTool(undefined);
-                setDirty(false);
-                setView("tools");
-              }
-            }}
+            type="button"
+            className={`admin-nav-item ${isHighlighted("tools") ? "active" : ""}`}
+            onClick={() => navigateTo("tools")}
+            aria-current={isHighlighted("tools") ? "page" : undefined}
           >
             <Library size={16} />
             <span>Tool Library</span>
           </button>
 
           <button
-            className={`admin-nav-item ${view === "assessments" && !tool ? "active" : ""}`}
-            onClick={() => {
-              if (discard()) {
-                setTool(undefined);
-                setDirty(false);
-                setView("assessments");
-              }
-            }}
+            type="button"
+            className={`admin-nav-item ${isHighlighted("assessments") ? "active" : ""}`}
+            onClick={() => navigateTo("assessments")}
+            aria-current={isHighlighted("assessments") ? "page" : undefined}
           >
             <FileCheck2 size={16} />
             <span>Assessments</span>
           </button>
 
-          <Link
-            to="/prompting"
-            className="admin-nav-item"
-            style={{ textDecoration: "none" }}
+          <button
+            type="button"
+            className={`admin-nav-item ${isHighlighted("prompting") ? "active" : ""}`}
+            onClick={() => navigateTo("prompting")}
+            aria-current={isHighlighted("prompting") ? "page" : undefined}
           >
             <Sparkles size={16} />
             <span>Prompting</span>
-          </Link>
+          </button>
 
           <button
-            className={`admin-nav-item ${view === "appearance" && !tool ? "active" : ""}`}
-            onClick={() => {
-              if (discard()) {
-                setTool(undefined);
-                setDirty(false);
-                setView("appearance");
-              }
-            }}
+            type="button"
+            className={`admin-nav-item ${isHighlighted("appearance") ? "active" : ""}`}
+            onClick={() => navigateTo("appearance")}
+            aria-current={isHighlighted("appearance") ? "page" : undefined}
           >
             <Palette size={16} />
             <span>Appearance</span>
           </button>
 
           <button
-            className={`admin-nav-item ${view === "users" && !tool ? "active" : ""}`}
-            onClick={() => {
-              if (discard()) {
-                setTool(undefined);
-                setDirty(false);
-                setView("users");
-              }
-            }}
+            type="button"
+            className={`admin-nav-item ${isHighlighted("users") ? "active" : ""}`}
+            onClick={() => navigateTo("users")}
+            aria-current={isHighlighted("users") ? "page" : undefined}
           >
             <Users size={16} />
             <span>Users & Access</span>
           </button>
 
           <button
-            className={`admin-nav-item ${view === "settings" && !tool ? "active" : ""}`}
-            onClick={() => {
-              if (discard()) {
-                setTool(undefined);
-                setDirty(false);
-                setView("settings");
-              }
-            }}
+            type="button"
+            className={`admin-nav-item ${isHighlighted("settings") ? "active" : ""}`}
+            onClick={() => navigateTo("settings")}
+            aria-current={isHighlighted("settings") ? "page" : undefined}
           >
             <Settings size={16} />
             <span>Settings</span>
@@ -1217,7 +1270,7 @@ export default function AdminPage() {
               <span className="admin-section-title">Categories Overview</span>
               <button
                 type="button"
-                onClick={() => setView("tools")}
+                onClick={() => navigateTo("tools")}
                 className="admin-link-btn"
               >
                 View All →
@@ -1270,7 +1323,7 @@ export default function AdminPage() {
                     className="category-overview-card"
                     onClick={() => {
                       setCategoryFilter(cat.name);
-                      setView("tools");
+                      navigateTo("tools");
                     }}
                   >
                     <div
@@ -1313,7 +1366,7 @@ export default function AdminPage() {
                     className="category-overview-card"
                     onClick={() => {
                       setCategoryFilter(c);
-                      setView("tools");
+                      navigateTo("tools");
                     }}
                   >
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
@@ -1326,6 +1379,90 @@ export default function AdminPage() {
                   </div>
                 );
               })}
+            </div>
+          </div>
+        ) : view === "prompting" ? (
+          /* Prompting Management & Practice Lab View */
+          <div>
+            <div className="admin-header-row">
+              <div>
+                <h1 className="admin-header-title">Prompting Practice & AI Assessment</h1>
+                <p className="admin-header-sub">
+                  Monitor atomic rate limits, review 8-criteria prompt scoring weights, and launch the interactive lab.
+                </p>
+              </div>
+              <Link to="/prompting/practice" className="btn-compact-primary" style={{ textDecoration: "none" }}>
+                <Sparkles size={14} />
+                <span>Open Practice Lab</span>
+              </Link>
+            </div>
+
+            {/* Metric Cards */}
+            <div className="admin-metrics-row" style={{ marginBottom: "20px" }}>
+              <div className="admin-metric-card">
+                <div className="metric-squircle green">
+                  <ShieldCheck size={20} />
+                </div>
+                <div>
+                  <div className="metric-val" style={{ color: "#34d399" }}>Score ≥ 70</div>
+                  <div className="metric-label">Execution Gate Threshold</div>
+                </div>
+              </div>
+
+              <div className="admin-metric-card">
+                <div className="metric-squircle cyan">
+                  <Sparkles size={20} />
+                </div>
+                <div>
+                  <div className="metric-val">8 Rubrics</div>
+                  <div className="metric-label">100 Total Marks (Strict Assessor)</div>
+                </div>
+              </div>
+
+              <div className="admin-metric-card">
+                <div className="metric-squircle blue">
+                  <Database size={20} />
+                </div>
+                <div>
+                  <div className="metric-val">20 req/IP/hr</div>
+                  <div className="metric-label">200 Global/hr Atomic Quota</div>
+                </div>
+              </div>
+
+              <div className="admin-metric-card">
+                <div className="metric-squircle amber">
+                  <Compass size={20} />
+                </div>
+                <div>
+                  <div className="metric-val">HMAC-SHA256</div>
+                  <div className="metric-label">Signed Verification Ticket</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Rubric Weights Table */}
+            <div style={{ background: "var(--surface-navy)", border: "1px solid var(--border-subtle)", borderRadius: "12px", padding: "20px", marginBottom: "20px" }}>
+              <h3 style={{ fontSize: "14px", fontWeight: 600, color: "#ffffff", marginBottom: "14px", display: "flex", alignItems: "center", gap: "8px" }}>
+                <Sparkles size={16} color="#a78bfa" />
+                Official 8-Component Prompt Scoring Rubric
+              </h3>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "10px" }}>
+                {[
+                  { label: "Task / Goal", max: 15 },
+                  { label: "Context", max: 15 },
+                  { label: "Requirements", max: 20 },
+                  { label: "Constraints", max: 15 },
+                  { label: "Input / Reference", max: 10 },
+                  { label: "Output Format", max: 10 },
+                  { label: "Style / Tone", max: 5 },
+                  { label: "Validation / Criteria", max: 10 },
+                ].map((rubric) => (
+                  <div key={rubric.label} style={{ background: "var(--surface-input)", border: "1px solid var(--border-subtle)", borderRadius: "8px", padding: "10px 12px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <span style={{ fontSize: "12px", color: "var(--text-muted)" }}>{rubric.label}</span>
+                    <span style={{ fontSize: "12px", fontWeight: 700, color: "#a78bfa" }}>{rubric.max} marks</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         ) : view === "users" ? (
@@ -1418,21 +1555,25 @@ export default function AdminPage() {
           </div>
         ) : (
           /* ------------------------------------------------------------- */
-          /* SCREEN 3: TOOL LIBRARY VIEW                                   */
+          /* SCREEN 3: TOOL LIBRARY / ASSESSMENTS VIEW                     */
           /* ------------------------------------------------------------- */
           <div>
             {/* Header */}
             <div className="admin-header-row">
               <div>
-                <h1 className="admin-header-title">Tool Library</h1>
+                <h1 className="admin-header-title">
+                  {view === "assessments" ? "Assessments" : "Tool Library"}
+                </h1>
                 <p className="admin-header-sub">
-                  Browse, search, edit, and manage all AI tools in the platform.
+                  {view === "assessments"
+                    ? "Create, edit, and publish 50-question multiple-choice assessments across verified AI tools."
+                    : "Browse, search, edit, and manage all AI tools in the platform."}
                 </p>
               </div>
 
               <button onClick={() => addNewTool()} className="btn-admin-action">
                 <Plus size={16} />
-                <span>Add Tool</span>
+                <span>{view === "assessments" ? "Add Assessment" : "Add Tool"}</span>
               </button>
             </div>
 
@@ -1556,6 +1697,7 @@ export default function AdminPage() {
                                 onClick={() => editTool(t.slug, "assessment")}
                                 className="btn-table-icon"
                                 title="Edit assessment"
+                                style={view === "assessments" ? { borderColor: "rgba(124, 58, 237, 0.6)", background: "rgba(124, 58, 237, 0.2)", color: "#c4b5fd" } : undefined}
                               >
                                 <FileCheck2 size={14} />
                               </button>
