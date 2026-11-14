@@ -238,8 +238,27 @@ async function db(path, init = {}) {
     },
     signal: AbortSignal.timeout(15000),
   });
-  if (!response.ok) fail(502, "The catalog database request failed.");
-  return response.status === 204 ? null : response.json();
+  if (!response.ok) {
+    const errorText = await response.text().catch(() => "");
+    console.error(`[Supabase DB Error] HTTP ${response.status} on ${path}:`, errorText);
+    let errorDetail = "";
+    try {
+      const parsed = JSON.parse(errorText);
+      errorDetail = parsed.message || parsed.hint || parsed.details || errorText;
+    } catch {
+      errorDetail = errorText;
+    }
+    fail(502, `The catalog database request failed: ${errorDetail || response.statusText}`);
+  }
+  if (response.status === 204) return null;
+  const text = await response.text();
+  if (!text || !text.trim()) return null;
+  try {
+    return JSON.parse(text);
+  } catch (err) {
+    console.warn(`[Supabase DB JSON parse warning] on ${path}:`, err?.message);
+    return null;
+  }
 }
 async function admin(req) {
   const token = req.headers.authorization;
@@ -1030,9 +1049,10 @@ async function model(instructions, input, structured = false) {
 
 export default async function handler(req, res) {
   res.setHeader("Cache-Control", "no-store");
+  let action = 'unknown';
   try {
     const url = new URL(req.url, "https://platform.invalid");
-    const action = url.searchParams.get("action");
+    action = url.searchParams.get("action") || 'unknown';
     const slug = url.searchParams.get("slug");
     if (slug && !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))
       fail(400, "Invalid tool slug.");
@@ -1117,6 +1137,9 @@ export default async function handler(req, res) {
         return res.json({restored:true});
       }
 
+      const isValidUuid = (uid) => typeof uid === 'string' && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(uid);
+      const adminUserId = isValidUuid(user?.id) ? user.id : null;
+
       if (action === 'save_theme' || action === 'theme-save') {
         const theme = validateThemeConfig(body.theme || body);
         const id = theme.id || `theme-${Date.now()}`;
@@ -1133,7 +1156,7 @@ export default async function handler(req, res) {
             status: theme.status || 'draft',
             config: theme,
             scheduled_at: theme.scheduledAt || null,
-            updated_by: user.id,
+            updated_by: adminUserId,
             updated_at: new Date().toISOString(),
           }),
         });
@@ -1148,27 +1171,60 @@ export default async function handler(req, res) {
         }
         const target = body.target || theme.pageTarget || 'global';
         await db('academy_themes?on_conflict=id', {
-          method:'POST', headers:{Prefer:'resolution=merge-duplicates,return=minimal'},
-          body:JSON.stringify({id:theme.id,name:theme.name,page_target:target,status:'published',config:theme,updated_by:user.id,updated_at:new Date().toISOString()}),
-        });
-        let previous = null;
-        try {
-          const existing = await db(`academy_theme_bindings?page_target=eq.${encodeURIComponent(target)}&select=published_config&limit=1`);
-          previous = existing[0]?.published_config || null;
-        } catch {}
-        await db('academy_theme_bindings?on_conflict=page_target', {
           method: 'POST',
           headers: { Prefer: 'resolution=merge-duplicates,return=minimal' },
           body: JSON.stringify({
+            id: theme.id,
+            name: theme.name,
             page_target: target,
-            theme_id: theme.id || `theme-${Date.now()}`,
-            published_config: theme,
-            previous_config: previous,
-            published_by: user.id,
-            published_at: new Date().toISOString(),
+            status: 'published',
+            config: theme,
+            updated_by: adminUserId,
+            updated_at: new Date().toISOString(),
           }),
         });
-        return res.json({ published: true, target });
+
+        let previous = null;
+        try {
+          const existing = await db(`academy_theme_bindings?page_target=eq.${encodeURIComponent(target)}&select=published_config&limit=1`);
+          previous = existing?.[0]?.published_config || null;
+        } catch (e) {
+          console.warn('[Publish Theme] Could not fetch previous config:', e?.message);
+        }
+
+        try {
+          await db('academy_theme_bindings?on_conflict=page_target', {
+            method: 'POST',
+            headers: { Prefer: 'resolution=merge-duplicates,return=minimal' },
+            body: JSON.stringify({
+              page_target: target,
+              theme_id: theme.id || `theme-${Date.now()}`,
+              published_config: theme,
+              previous_config: previous,
+              published_by: adminUserId,
+              published_at: new Date().toISOString(),
+            }),
+          });
+        } catch (bindingErr) {
+          if (String(bindingErr?.message || '').includes('previous_config')) {
+            console.warn('[Publish Theme] Retrying binding upsert without previous_config column...');
+            await db('academy_theme_bindings?on_conflict=page_target', {
+              method: 'POST',
+              headers: { Prefer: 'resolution=merge-duplicates,return=minimal' },
+              body: JSON.stringify({
+                page_target: target,
+                theme_id: theme.id || `theme-${Date.now()}`,
+                published_config: theme,
+                published_by: adminUserId,
+                published_at: new Date().toISOString(),
+              }),
+            });
+          } else {
+            throw bindingErr;
+          }
+        }
+
+        return res.json({ published: true, target, themeId: theme.id });
       }
 
       if (action === 'rollback_theme' || action === 'theme-reset') {
@@ -1176,7 +1232,7 @@ export default async function handler(req, res) {
         let previous = null;
         try {
           const existing = await db(`academy_theme_bindings?page_target=eq.${encodeURIComponent(target)}&select=previous_config&limit=1`);
-          previous = existing[0]?.previous_config || null;
+          previous = existing?.[0]?.previous_config || null;
         } catch {}
         if (!previous) {
           await db(`academy_theme_bindings?page_target=eq.${encodeURIComponent(target)}`, { method: 'DELETE' });
@@ -1190,7 +1246,7 @@ export default async function handler(req, res) {
             theme_id: previous.id || 'reverted',
             published_config: previous,
             previous_config: null,
-            published_by: user.id,
+            published_by: adminUserId,
             published_at: new Date().toISOString(),
           }),
         });
@@ -1976,10 +2032,16 @@ export default async function handler(req, res) {
     }
     fail(404, "Unknown API action.");
   } catch (error) {
+    const reqId = typeof randomUUID === 'function' ? randomUUID().slice(0, 8) : Math.random().toString(36).slice(2, 10);
+    const act = typeof action !== 'undefined' ? action : 'unknown';
+    const m = typeof req !== 'undefined' && req.method ? req.method : 'UNKNOWN';
+    console.error(`[Platform API Error ${reqId}] [${m} action=${act}]:`, error);
     return res.status(error.status || 500).json({
       error: error.status
         ? error.message
         : "An unexpected server error occurred.",
+      code: error.code || (error.status ? `HTTP_${error.status}` : 'INTERNAL_SERVER_ERROR'),
+      requestId: reqId,
     });
   }
 }

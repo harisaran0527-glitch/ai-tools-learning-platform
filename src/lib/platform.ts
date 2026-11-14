@@ -26,7 +26,11 @@ export async function api<T>(
       "The platform API is unavailable. Use the configured Vercel environment.",
     );
   const result = await response.json();
-  if (!response.ok) throw new Error(result.error || "Request failed.");
+  if (!response.ok) {
+    const errorMsg = result.error || "Request failed.";
+    const reqRef = result.requestId ? ` (Ref: ${result.requestId})` : "";
+    throw new Error(`${errorMsg}${reqRef}`);
+  }
   return result;
 }
 let catalogRequest: Promise<void> | undefined;

@@ -27,7 +27,8 @@ globalThis.fetch = async (url, init = {}) => {
     if (init.method === 'POST') {
       const row = JSON.parse(init.body);
       themeRows = themeRows.filter(t => t.id !== row.id).concat(row);
-      return new Response(null, { status: 204 });
+      // Emulate real Supabase PostgREST with Prefer: return=minimal (returns 201 with empty body)
+      return new Response('', { status: 201 });
     }
     if (init.method === 'DELETE') {
       return new Response(null, { status: 204 });
@@ -38,7 +39,8 @@ globalThis.fetch = async (url, init = {}) => {
     if (init.method === 'POST') {
       const row = JSON.parse(init.body);
       bindingRows = bindingRows.filter(b => b.page_target !== row.page_target).concat(row);
-      return new Response(null, { status: 204 });
+      // Emulate real Supabase PostgREST with Prefer: return=minimal (returns 201 with empty body)
+      return new Response('', { status: 201 });
     }
     if (init.method === 'DELETE') {
       const targetMatch = String(url).match(/page_target=eq\.([^&]+)/);
