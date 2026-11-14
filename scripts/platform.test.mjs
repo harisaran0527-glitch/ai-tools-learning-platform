@@ -7,6 +7,7 @@ after(() => { globalThis.fetch = originalFetch; });
 Object.assign(process.env, { SUPABASE_URL: 'https://database.test', SUPABASE_ANON_KEY: 'test-anon', SUPABASE_SERVICE_ROLE_KEY: 'test-service', ADMIN_USER_IDS: 'admin-id', OPENAI_API_KEY: 'test-model', PRACTICE_TOKEN_SECRET: 'test-signing-secret' });
 let rows = [], modelScores = [15,15,20,15,10,10,5,10], allowed = true;
 let themeRows = [], bindingRows = [], promptExampleRows = [];
+let simulateResponsesFail = false, codeFenced = false;
 export const storageObjects = new Map();
 globalThis.fetch = async (url, init = {}) => {
   if (String(url).includes('/auth/v1/token')) {
@@ -68,9 +69,22 @@ globalThis.fetch = async (url, init = {}) => {
     return Response.json(promptExampleRows);
   }
   if (String(url).includes('/responses')) {
+    if (simulateResponsesFail) {
+      return new Response(JSON.stringify({ error: { message: 'Responses endpoint not enabled or model not found' } }), { status: 404 });
+    }
     const request = JSON.parse(init.body);
     assert.equal(request.store, false);
-    return Response.json({ output: [{ content: [{ type: 'output_text', text: request.text ? JSON.stringify({ sections: modelScores.map(score => ({ score, evidence: 'Quoted prompt evidence', feedback: 'Specific improvement' })) }) : 'Execution preview' }] }] });
+    const jsonText = request.text ? JSON.stringify({ sections: modelScores.map(score => ({ score, evidence: 'Quoted prompt evidence', feedback: 'Specific improvement' })) }) : 'Execution preview';
+    const text = codeFenced && request.text ? `\`\`\`json\n${jsonText}\n\`\`\`` : jsonText;
+    return Response.json({ output: [{ content: [{ type: 'output_text', text }] }] });
+  }
+  if (String(url).includes('/chat/completions')) {
+    const request = JSON.parse(init.body);
+    const jsonText = request.response_format ? JSON.stringify({ sections: modelScores.map(score => ({ score, evidence: 'Chat fallback evidence', feedback: 'Chat fallback feedback' })) }) : 'Execution preview';
+    const content = codeFenced && request.response_format ? `\`\`\`json\n${jsonText}\n\`\`\`` : jsonText;
+    return Response.json({
+      choices: [{ message: { content } }],
+    });
   }
   if (String(url).includes('/storage/v1/object/upload/sign/theme-assets/')) {
     const parts = String(url).split('/upload/sign/theme-assets/');
@@ -208,6 +222,7 @@ test('invalid model marks and durable quota fail closed', async () => {
   assert.equal((await call('analyze', { method: 'POST', body: { prompt: 'Test', challenge: 0 } })).statusCode, 502);
   allowed = false;
   assert.equal((await call('analyze', { method: 'POST', body: { prompt: 'Test', challenge: 0 } })).statusCode, 429);
+  allowed = true;
 });
 
 
@@ -545,4 +560,45 @@ test('prompt learning examples: public read fallback, admin CRUD, validation of 
   const adminAfterDelete = await call('prompt_examples', { token: 'admin' });
   const stillExists = adminAfterDelete.body.examples.find(e => e.id === 'test-ex-01');
   assert.equal(stillExists, undefined);
+});
+
+test('prompt analysis regression: handles markdown code fences, fallback to chat/completions, and clear error reporting', async () => {
+  allowed = true;
+  // Scenario 1: Model wraps JSON in markdown code blocks (```json ... ```)
+  codeFenced = true;
+  simulateResponsesFail = false;
+  modelScores = [15, 15, 20, 15, 10, 10, 5, 10];
+  const fencedResult = await call('analyze', {
+    method: 'POST',
+    body: { prompt: 'Write a comprehensive guide for teaching Python to beginners with 5 steps and code examples.', challenge: 0 }
+  });
+  assert.equal(fencedResult.statusCode, 200);
+  assert.equal(fencedResult.body.score, 100);
+  assert.equal(fencedResult.body.sections.length, 8);
+  assert.ok(fencedResult.body.ticket);
+
+  // Scenario 2: Responses API is unavailable / 404, fallback to /chat/completions succeeds
+  simulateResponsesFail = true;
+  codeFenced = false;
+  const fallbackResult = await call('analyze', {
+    method: 'POST',
+    body: { prompt: 'Write a comprehensive guide for teaching Python to beginners with 5 steps and code examples.', challenge: 0 }
+  });
+  assert.equal(fallbackResult.statusCode, 200);
+  assert.equal(fallbackResult.body.score, 100);
+  assert.equal(fallbackResult.body.sections[0].evidence, 'Chat fallback evidence');
+  assert.ok(fallbackResult.body.ticket);
+
+  // Scenario 3: Responses API fails AND output is markdown code-fenced in chat completions
+  codeFenced = true;
+  const fencedFallbackResult = await call('analyze', {
+    method: 'POST',
+    body: { prompt: 'Write a comprehensive guide for teaching Python to beginners with 5 steps and code examples.', challenge: 0 }
+  });
+  assert.equal(fencedFallbackResult.statusCode, 200);
+  assert.equal(fencedFallbackResult.body.score, 100);
+
+  // Reset test flags
+  codeFenced = false;
+  simulateResponsesFail = false;
 });
