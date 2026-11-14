@@ -9,7 +9,8 @@ import { VideoPlayer } from '../components/VideoPlayer';
 import { ToolLogo } from '../components/ToolLogo';
 import {
   ExternalLink, Bookmark, Clock, CheckCircle2, ArrowLeft, ArrowRight,
-  Sparkles, HelpCircle, FileText, CheckSquare, Layers, ShieldCheck, PlayCircle, GraduationCap, BookOpen
+  Sparkles, HelpCircle, FileText, CheckSquare, Layers, ShieldCheck, PlayCircle, GraduationCap, BookOpen,
+  Eye, Download
 } from 'lucide-react';
 
 export const ToolDetailPage: React.FC = () => {
@@ -185,7 +186,7 @@ export const ToolDetailPage: React.FC = () => {
                 </span>
               )}
 
-              {tool.docsStatus === 'verified' && tool.docsUrl ? (
+              {tool.docsStatus === 'verified' && tool.docsUrl && (
                 <a href={tool.docsUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary">
                   <FileText size={16} /> {
                     tool.docsUrl.includes('github.com')
@@ -195,7 +196,26 @@ export const ToolDetailPage: React.FC = () => {
                       : 'Official Documentation →'
                   }
                 </a>
-              ) : (
+              )}
+
+              {tool.learningGuide && (
+                <a
+                  href="#learning-guide"
+                  className="btn-secondary"
+                  style={{
+                    background: 'rgba(108,99,255,0.14)',
+                    border: '1px solid var(--accent1)',
+                    color: '#fff',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '8px'
+                  }}
+                >
+                  <FileText size={16} color="var(--accent1)" /> Handwritten Guide (PDF) ↓
+                </a>
+              )}
+
+              {!tool.docsUrl && !tool.learningGuide && (
                 <a href="#platform-guide" className="btn-secondary" style={{ background: 'rgba(108,99,255,0.12)', border: '1px solid var(--accent1)', color: 'var(--accent1)' }}>
                   <FileText size={16} /> Read Platform Learning Guide ↓
                 </a>
@@ -355,7 +375,7 @@ export const ToolDetailPage: React.FC = () => {
           </section>
 
           {/* SECTION 9B — Documentation Resource */}
-          {tool.docsStatus === 'verified' && tool.docsUrl ? (
+          {tool.docsStatus === 'verified' && tool.docsUrl && (
             <section id="documentation" style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '20px', padding: '28px', marginBottom: '32px' }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px', flexWrap: 'wrap', gap: '8px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -375,7 +395,57 @@ export const ToolDetailPage: React.FC = () => {
                 Access official guides, API references, and user manuals directly from the tool developer.
               </p>
             </section>
-          ) : (
+          )}
+
+          {/* SECTION 9C — Handwritten Learning Guide (PDF) */}
+          {tool.learningGuide && (
+            <section id="learning-guide" style={{ background: 'linear-gradient(135deg, rgba(108,99,255,0.08) 0%, var(--surface) 100%)', border: '1px solid rgba(108,99,255,0.3)', borderRadius: '20px', padding: '28px', marginBottom: '32px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px', flexWrap: 'wrap', gap: '12px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                  <span className="badge" style={{ background: 'rgba(108,99,255,0.2)', color: 'var(--accent1)', border: '1px solid rgba(108,99,255,0.4)', fontSize: '11px', fontWeight: 700 }}>
+                    HANDWRITTEN LEARNING GUIDE
+                  </span>
+                  <h2 style={{ fontFamily: 'Sora, sans-serif', fontSize: '22px', color: '#fff', margin: 0, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <FileText size={22} color="var(--accent1)" /> {tool.learningGuide.title || `${tool.name} Learning Guide`}
+                  </h2>
+                </div>
+
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
+                  <a
+                    href={tool.learningGuide.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary"
+                    style={{ padding: '8px 16px', fontSize: '13px', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                  >
+                    <Eye size={15} /> View PDF
+                  </a>
+                  <a
+                    href={tool.learningGuide.url}
+                    download={tool.learningGuide.fileName || `${tool.slug}-guide.pdf`}
+                    className="btn-secondary"
+                    style={{ padding: '8px 16px', fontSize: '13px', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                  >
+                    <Download size={15} /> Download PDF
+                  </a>
+                </div>
+              </div>
+
+              <p style={{ color: '#d1d5db', fontSize: '14px', lineHeight: 1.6, marginBottom: '20px' }}>
+                {tool.learningGuide.description || `Handwritten learning guide and comprehensive visual study notes for ${tool.name}. Open in a new tab or download for offline study.`}
+              </p>
+
+              <div style={{ position: 'relative', width: '100%', height: '540px', background: '#0a0d18', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border)' }}>
+                <iframe
+                  src={`${tool.learningGuide.url}#toolbar=1&view=FitH`}
+                  title={`${tool.name} Learning Guide PDF`}
+                  style={{ width: '100%', height: '100%', border: 'none' }}
+                />
+              </div>
+            </section>
+          )}
+
+          {!tool.docsUrl && !tool.learningGuide && (
             <section id="platform-guide" style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '20px', padding: '28px', marginBottom: '32px' }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px', flexWrap: 'wrap', gap: '8px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>

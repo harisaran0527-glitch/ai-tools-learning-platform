@@ -33,7 +33,15 @@ export const catalogSummaries: ToolSummary[] = [
       "AI tool",
       "education"
     ],
-    "badge": "Try Tool for Free →"
+    "badge": "Try Tool for Free →",
+    "learningGuide": {
+      "title": "ElevenLabs Human Handwriting Style Learning Guide",
+      "fileName": "ElevenLabs_Human_Handwriting_Style.pdf",
+      "url": "/guides/ElevenLabs_Human_Handwriting_Style.pdf",
+      "format": "pdf",
+      "verifiedAt": "2026-11-14",
+      "description": "Verified human handwriting style study notes and workflow guide for ElevenLabs."
+    }
   },
   {
     "id": "tool-509",

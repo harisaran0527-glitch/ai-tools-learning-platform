@@ -865,3 +865,30 @@ test('automatic free AI model failover, bounded timeouts, circuit breaker cooldo
   simulateGroqFail = false;
   simulateGeminiModelsFail = {};
 });
+
+test('elevenlabs learning guide: verifies PDF file integrity, URL generation, and tool metadata association', async () => {
+  const fs = await import('node:fs');
+  const path = await import('node:path');
+  
+  // 1. Verify physical PDF file exists and has valid PDF magic header
+  const pdfPath = path.resolve('public/guides/ElevenLabs_Human_Handwriting_Style.pdf');
+  assert.ok(fs.existsSync(pdfPath), 'PDF file must exist in public/guides');
+  const buf = fs.readFileSync(pdfPath);
+  assert.ok(buf.length > 500000, 'PDF file must be authentic size (>500KB)');
+  assert.equal(buf.subarray(0, 5).toString('utf8'), '%PDF-', 'PDF file must start with %PDF- header');
+
+  // 2. Verify elevenlabs tool catalog definition in audio_voice.ts
+  const audioVoiceContent = fs.readFileSync(path.resolve('src/data/catalog/categories/audio_voice.ts'), 'utf8');
+  assert.ok(audioVoiceContent.includes('"slug": "elevenlabs"'), 'ElevenLabs tool record must exist');
+  assert.ok(audioVoiceContent.includes('"officialUrl": "https://elevenlabs.io"'), 'Official URL must be preserved');
+  assert.ok(audioVoiceContent.includes('"docsUrl": "https://elevenlabs.io/docs/overview"'), 'Official docs URL must be preserved');
+  assert.ok(audioVoiceContent.includes('"learningGuide"'), 'Learning guide must be attached to ElevenLabs');
+  assert.ok(audioVoiceContent.includes('ElevenLabs_Human_Handwriting_Style.pdf'), 'Learning guide must point to ElevenLabs_Human_Handwriting_Style.pdf');
+
+  // 3. Verify tool summary preservation in summaryData.ts
+  const summaryContent = fs.readFileSync(path.resolve('src/data/catalog/summaryData.ts'), 'utf8');
+  assert.ok(summaryContent.includes('"slug": "elevenlabs"'), 'ElevenLabs summary must exist');
+  assert.ok(summaryContent.includes('"officialUrl": "https://elevenlabs.io"'), 'Summary must preserve officialUrl');
+  assert.ok(summaryContent.includes('"docsUrl": "https://elevenlabs.io/docs/overview"'), 'Summary must preserve docsUrl');
+  assert.ok(summaryContent.includes('ElevenLabs_Human_Handwriting_Style.pdf'), 'Summary must include learning guide PDF URL');
+});

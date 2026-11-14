@@ -206,6 +206,7 @@ function config(name) {
 }
 function safeUrl(value, required = false) {
   if (!value && !required) return "";
+  if (typeof value === "string" && value.startsWith("/")) return value;
   try {
     const u = new URL(value);
     if (u.protocol !== "https:" || u.username || u.password) throw new Error();
@@ -351,6 +352,7 @@ function validateTool(tool) {
   safeUrl(tool.tutorialVideo?.url);
   if (tool.documentationResource?.url) safeUrl(tool.documentationResource.url);
   if (tool.tutorialResource?.url) safeUrl(tool.tutorialResource.url);
+  if (tool.learningGuide?.url) safeUrl(tool.learningGuide.url);
   // Embeds are derived by the public player; never trust an admin-supplied embed origin.
   if (tool.tutorialVideo) delete tool.tutorialVideo.embedUrl;
   if (tool.tutorialResource) delete tool.tutorialResource.embedUrl;
@@ -377,6 +379,7 @@ function summary(tool) {
     "docsStatus",
     "keywords",
     "badge",
+    "learningGuide",
   ];
   return Object.fromEntries(fields.map((key) => [key, tool[key]]));
 }

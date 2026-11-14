@@ -55,6 +55,15 @@ export interface DocumentationResource {
   verifiedAt?: string;
 }
 
+export interface LearningGuide {
+  title: string;
+  url: string;
+  fileName?: string;
+  format?: 'pdf' | 'docx' | 'markdown' | string;
+  verifiedAt?: string;
+  description?: string;
+}
+
 export interface AITool {
   manualAssessmentOnly?: boolean;
   id: string;
@@ -97,6 +106,7 @@ export interface AITool {
   tutorialVideoStatus?: 'verified' | 'unavailable';
   tutorialResource?: TutorialVideo;
   documentationResource?: DocumentationResource;
+  learningGuide?: LearningGuide;
 
   keywords: string[];
 
@@ -110,6 +120,6 @@ export type ToolSummary = Pick<AITool,
   'id' | 'slug' | 'name' | 'logo' | 'category' | 'subcategory' |
   'pricingType' | 'freePlanDetails' | 'platforms' | 'shortDescription' |
   'superpower' | 'difficulty' | 'learningTime' | 'officialUrl' | 'officialStatus' |
-  'docsUrl' | 'docsStatus' | 'keywords' | 'badge'
+  'docsUrl' | 'docsStatus' | 'keywords' | 'badge' | 'learningGuide'
 >;
 

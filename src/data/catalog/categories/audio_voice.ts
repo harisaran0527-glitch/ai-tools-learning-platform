@@ -111,6 +111,20 @@ export const audio_voice_tools: AITool[] = [
     "verifiedAt": "2026-09-11",
     "badge": "Try Tool for Free →",
     "docsUrl": "https://elevenlabs.io/docs/overview",
+    "learningGuide": {
+      "title": "ElevenLabs Human Handwriting Style Learning Guide",
+      "fileName": "ElevenLabs_Human_Handwriting_Style.pdf",
+      "url": "/guides/ElevenLabs_Human_Handwriting_Style.pdf",
+      "format": "pdf",
+      "verifiedAt": "2026-11-14",
+      "description": "Verified human handwriting style study notes and workflow guide for ElevenLabs. Learn prompt formulation, speech synthesis, and voice generation."
+    },
+    "documentationResource": {
+      "type": "platform",
+      "title": "ElevenLabs Human Handwriting Style Learning Guide",
+      "url": "/guides/ElevenLabs_Human_Handwriting_Style.pdf",
+      "verifiedAt": "2026-11-14"
+    },
     "tutorialVideo": {
       "title": "ElevenLabs Voice AI Masterclass",
       "url": "https://www.youtube.com/watch?v=NnO-9V6yH2s",
