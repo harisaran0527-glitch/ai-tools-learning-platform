@@ -961,3 +961,87 @@ test('universal pdf learning guide upload: validates admin auth, PDF mime/header
   assert.ok(goodUploadRes.body.url, 'Should return permanent public URL');
   assert.ok(goodUploadRes.body.url.includes('.pdf'), 'URL must end with .pdf extension');
 });
+
+test('url validation: field-specific diagnostics, whitespace normalization, and optional blank handling', async () => {
+  // 1. Tool with empty/blank officialUrl and docsUrl must save successfully with unavailable status
+  const emptyUrlTool = {
+    ...tool,
+    slug: 'empty-url-tool',
+    officialUrl: '',
+    docsUrl: '   ',
+    logo: '  ',
+  };
+  const emptyRes = await call('save', {
+    method: 'POST',
+    token: 'admin',
+    body: { tool: emptyUrlTool, questions: Array(50).fill(null) }
+  });
+  assert.equal(emptyRes.statusCode, 200, 'Blank optional URLs must be accepted without 400 error');
+
+  // 2. Tool with accidental whitespace in valid HTTPS URL must normalize and save
+  const whitespaceTool = {
+    ...tool,
+    slug: 'whitespace-url-tool',
+    officialUrl: '  https://elevenlabs.io/app  ',
+    docsUrl: ' \n https://docs.elevenlabs.io \t ',
+  };
+  const wsRes = await call('save', {
+    method: 'POST',
+    token: 'admin',
+    body: { tool: whitespaceTool, questions: Array(50).fill(null) }
+  });
+  assert.equal(wsRes.statusCode, 200, 'Whitespace in valid HTTPS URLs must be trimmed and accepted');
+
+  // 3. Insecure HTTP URL must return field-specific error indicating unencrypted http:// is not allowed
+  const httpRes = await call('save', {
+    method: 'POST',
+    token: 'admin',
+    body: {
+      tool: { ...tool, officialUrl: 'http://insecure-domain.org' },
+      questions: Array(50).fill(null)
+    }
+  });
+  assert.equal(httpRes.statusCode, 400);
+  assert.ok(httpRes.body.error.includes('Official Tool URL'), 'Error must specify Official Tool URL');
+  assert.ok(httpRes.body.error.includes('http:// is not permitted'), 'Error must explain http restriction');
+
+  // 4. Insecure script protocol in Documentation URL must return field-specific error
+  const scriptRes = await call('save', {
+    method: 'POST',
+    token: 'admin',
+    body: {
+      tool: { ...tool, docsUrl: 'javascript:alert(1)' },
+      questions: Array(50).fill(null)
+    }
+  });
+  assert.equal(scriptRes.statusCode, 400);
+  assert.ok(scriptRes.body.error.includes('Documentation URL'), 'Error must specify Documentation URL');
+
+  // 5. Insecure protocol in Logo URL must return field-specific error
+  const logoRes = await call('save', {
+    method: 'POST',
+    token: 'admin',
+    body: {
+      tool: { ...tool, logo: 'http://logo-host.com/img.png' },
+      questions: Array(50).fill(null)
+    }
+  });
+  assert.equal(logoRes.statusCode, 400);
+  assert.ok(logoRes.body.error.includes('Logo URL'), 'Error must specify Logo URL');
+
+  // 6. Supabase Storage and relative PDF links in learningGuide must save cleanly
+  const guideTool = {
+    ...tool,
+    slug: 'guide-url-tool',
+    learningGuide: {
+      title: 'Guide',
+      url: '  https://database.test/storage/v1/object/public/tool-guides/guide.pdf  ',
+    }
+  };
+  const guideRes = await call('save', {
+    method: 'POST',
+    token: 'admin',
+    body: { tool: guideTool, questions: Array(50).fill(null) }
+  });
+  assert.equal(guideRes.statusCode, 200, 'Supabase storage PDF URLs must save cleanly');
+});

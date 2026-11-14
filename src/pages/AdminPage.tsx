@@ -292,21 +292,46 @@ export default function AdminPage() {
     setMessage("");
     setError("");
     try {
+      // Normalize accidental whitespace safely across tool fields
+      const cleanTool: AITool = {
+        ...tool,
+        name: (tool.name || "").trim(),
+        slug: (tool.slug || "").trim().toLowerCase(),
+        officialUrl: (tool.officialUrl || "").trim(),
+        docsUrl: (tool.docsUrl || "").trim(),
+        logo: (tool.logo || "").trim(),
+        shortDescription: (tool.shortDescription || "").trim(),
+        fullDescription: (tool.fullDescription || "").trim(),
+        manualAssessmentOnly: isNew || tool.manualAssessmentOnly,
+      };
+      if (cleanTool.learningGuide) {
+        cleanTool.learningGuide = {
+          ...cleanTool.learningGuide,
+          url: (cleanTool.learningGuide.url || "").trim(),
+        };
+        if (!cleanTool.learningGuide.url) {
+          delete cleanTool.learningGuide;
+        }
+      }
+      if (cleanTool.tutorialVideo) {
+        cleanTool.tutorialVideo = {
+          ...cleanTool.tutorialVideo,
+          url: (cleanTool.tutorialVideo.url || "").trim(),
+        };
+      }
+
       const result = await api<{ assessmentPublished: boolean }>(
         "save",
         {
-          tool: {
-            ...tool,
-            manualAssessmentOnly: isNew || tool.manualAssessmentOnly,
-          },
+          tool: cleanTool,
           questions,
           publish,
         },
         token
       );
-      const index = catalogSummaries.findIndex(t => t.slug === tool.slug);
-      if (index < 0) catalogSummaries.push({ ...tool });
-      else catalogSummaries[index] = { ...catalogSummaries[index], ...tool };
+      const index = catalogSummaries.findIndex(t => t.slug === cleanTool.slug);
+      if (index < 0) catalogSummaries.push({ ...cleanTool });
+      else catalogSummaries[index] = { ...catalogSummaries[index], ...cleanTool };
       setRefreshKey((n) => n + 1);
       setDirty(false);
       setIsNew(false);

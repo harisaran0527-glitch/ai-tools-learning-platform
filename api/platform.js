@@ -204,28 +204,76 @@ function config(name) {
     );
   return value;
 }
-function safeUrl(value, required = false) {
-  if (!value && !required) return "";
-  if (typeof value === "string" && value.startsWith("/")) return value;
-  try {
-    const u = new URL(value);
-    if (u.protocol !== "https:" || u.username || u.password) throw new Error();
-    return u.href;
-  } catch {
-    fail(400, "URLs must be valid HTTPS addresses.");
+function safeUrl(value, fieldName = "URL", options = {}) {
+  const isRequired =
+    typeof fieldName === "boolean"
+      ? fieldName
+      : typeof options === "boolean"
+        ? options
+        : Boolean(options?.required);
+  const label = typeof fieldName === "string" ? fieldName : "URL";
+  const allowRelative = options?.allowRelative !== false;
+
+  if (value == null) {
+    if (isRequired) fail(400, `${label} is required and must be a valid HTTPS address.`);
+    return "";
   }
-}
-function safeLogo(value) {
-  if (!value) return "";
-  if (typeof value !== "string") fail(400, "Invalid logo format.");
+  if (typeof value !== "string") {
+    fail(400, `${label} must be a valid URL string.`);
+  }
+
   const trimmed = value.trim();
+  if (!trimmed) {
+    if (isRequired) fail(400, `${label} is required and must be a valid HTTPS address.`);
+    return "";
+  }
+
+  if (allowRelative && trimmed.startsWith("/")) {
+    if (trimmed.startsWith("//") || trimmed.includes("\0") || /[\r\n\t]/.test(trimmed)) {
+      fail(400, `${label} must be a valid HTTPS address or secure internal path.`);
+    }
+    return trimmed;
+  }
+
+  if (/^(javascript|vbscript|data|file|ftp):/i.test(trimmed)) {
+    fail(400, `${label} must use secure HTTPS. Insecure or script protocols are not permitted.`);
+  }
+  if (/^blob:/i.test(trimmed)) {
+    fail(400, `${label} cannot be a temporary browser blob URL.`);
+  }
+  if (/^http:\/\//i.test(trimmed)) {
+    fail(400, `${label} must use secure HTTPS (unencrypted http:// is not permitted).`);
+  }
+
+  let parsed;
+  try {
+    parsed = new URL(trimmed);
+  } catch {
+    fail(400, `${label} must be a valid HTTPS address (e.g., https://example.com).`);
+  }
+
+  if (parsed.protocol !== "https:") {
+    fail(400, `${label} must use the https:// protocol.`);
+  }
+  if (parsed.username || parsed.password) {
+    fail(400, `${label} cannot contain embedded credentials.`);
+  }
+
+  return parsed.href;
+}
+
+function safeLogo(value) {
+  if (value == null) return "";
+  if (typeof value !== "string") fail(400, "Logo URL must be a valid string.");
+  const trimmed = value.trim();
+  if (!trimmed) return "";
   if (trimmed.startsWith("data:image/")) {
     const match = trimmed.match(/^data:image\/(png|jpeg|jpg|webp|svg\+xml);base64,[A-Za-z0-9+/=]+$/);
-    if (!match) fail(400, "Invalid image data format.");
+    if (!match) fail(400, "Logo image data format is invalid.");
     if (trimmed.length > 2.8 * 1024 * 1024) fail(400, "Uploaded logo exceeds 2MB limit.");
     return trimmed;
   }
-  return safeUrl(trimmed);
+  return safeUrl(trimmed, "Logo URL", { required: false, allowRelative: true });
 }
 async function db(path, init = {}) {
   const key = config("SUPABASE_SERVICE_ROLE_KEY");
@@ -323,7 +371,15 @@ function validateTool(tool) {
     "steps",
   ])
     if (!Array.isArray(tool[field])) fail(400, `Invalid ${field}.`);
-  safeUrl(tool.officialUrl, true);
+  // Safe URL normalization with field-specific diagnostics.
+  // Optional blank URLs are accepted as empty strings.
+  tool.officialUrl = safeUrl(tool.officialUrl, "Official Tool URL", { required: false });
+  if (!tool.officialUrl && !tool.officialStatus) {
+    tool.officialStatus = "unavailable";
+  } else if (tool.officialUrl && !tool.officialStatus) {
+    tool.officialStatus = "verified";
+  }
+
   for (const field of ["keywords", "platforms", "whyLearn", "useCases"]) {
     if (tool[field].some((value) => typeof value !== "string"))
       fail(400, `Invalid ${field}.`);
@@ -347,12 +403,41 @@ function validateTool(tool) {
     tool.practicalExercise.skillsLearned.some((v) => typeof v !== "string")
   )
     fail(400, "Invalid practical exercise.");
-  safeUrl(tool.docsUrl);
-  safeLogo(tool.logo);
-  safeUrl(tool.tutorialVideo?.url);
-  if (tool.documentationResource?.url) safeUrl(tool.documentationResource.url);
-  if (tool.tutorialResource?.url) safeUrl(tool.tutorialResource.url);
-  if (tool.learningGuide?.url) safeUrl(tool.learningGuide.url);
+
+  tool.docsUrl = safeUrl(tool.docsUrl, "Documentation URL", { required: false });
+  if (!tool.docsUrl && !tool.docsStatus) {
+    tool.docsStatus = "unavailable";
+  } else if (tool.docsUrl && !tool.docsStatus) {
+    tool.docsStatus = "verified";
+  }
+
+  tool.logo = safeLogo(tool.logo);
+
+  if (tool.tutorialVideo) {
+    if (tool.tutorialVideo.url != null) {
+      tool.tutorialVideo.url = safeUrl(tool.tutorialVideo.url, "Tutorial Video URL", { required: false });
+    }
+    delete tool.tutorialVideo.embedUrl;
+  }
+  if (tool.tutorialResource) {
+    if (tool.tutorialResource.url != null) {
+      tool.tutorialResource.url = safeUrl(tool.tutorialResource.url, "Tutorial Resource URL", { required: false });
+    }
+    delete tool.tutorialResource.embedUrl;
+  }
+  if (tool.documentationResource) {
+    if (tool.documentationResource.url != null) {
+      tool.documentationResource.url = safeUrl(tool.documentationResource.url, "Documentation Resource URL", { required: false });
+    }
+  }
+  if (tool.learningGuide) {
+    if (tool.learningGuide.url != null) {
+      tool.learningGuide.url = safeUrl(tool.learningGuide.url, "Learning Guide URL", { required: false });
+    }
+    if (!tool.learningGuide.url) {
+      delete tool.learningGuide;
+    }
+  }
   // Embeds are derived by the public player; never trust an admin-supplied embed origin.
   if (tool.tutorialVideo) delete tool.tutorialVideo.embedUrl;
   if (tool.tutorialResource) delete tool.tutorialResource.embedUrl;
@@ -1083,7 +1168,7 @@ export default async function handler(req, res) {
           if (!match) fail(400, 'Invalid background image format.');
           if (theme.imageUrl.length > 7 * 1024 * 1024) fail(400, 'Image exceeds 5MB limit.');
         } else if (!theme.imageUrl.startsWith('/')) {
-          safeUrl(theme.imageUrl);
+          theme.imageUrl = safeUrl(theme.imageUrl, "Theme Background Image URL", { required: false });
         }
       }
       if (theme.videoUrl) {
@@ -1095,7 +1180,7 @@ export default async function handler(req, res) {
           if (!match) fail(400, 'Invalid background video format.');
           if (theme.videoUrl.length > 21 * 1024 * 1024) fail(400, 'Video exceeds 15MB limit.');
         } else if (!theme.videoUrl.startsWith('/')) {
-          safeUrl(theme.videoUrl);
+          theme.videoUrl = safeUrl(theme.videoUrl, "Theme Background Video URL", { required: false });
         }
       }
       return theme;
