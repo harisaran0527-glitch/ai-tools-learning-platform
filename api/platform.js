@@ -54,6 +54,144 @@ const scenarios = [
   ],
 ];
 
+const BUILTIN_PROMPT_EXAMPLES = [
+  {
+    id: "ex-task-01",
+    component: "Task / Goal",
+    title: "Beginner Python Tutorial Goal",
+    explanation: "Replaces vague inquiry with a distinct, actionable goal and named deliverable.",
+    weakPrompt: "Write something about Python.",
+    improvedPrompt: "Write a comprehensive 5-step tutorial teaching complete beginners how to install Python 3.12 on Windows and run their first 'Hello, World!' script in VS Code.",
+    whyBetter: "The improved version clearly specifies the task ('write a 5-step tutorial'), target user ('complete beginners'), topic ('install Python 3.12 and run Hello World'), and environment ('Windows with VS Code').",
+    tips: ["Use strong action verbs like 'Write', 'Build', 'Summarize', 'Refactor'.", "Specify the exact scope and end asset produced."],
+    commonMistakes: ["Using 'Tell me about...' which leads to essays rather than structured solutions.", "Leaving the scope open-ended."],
+    difficulty: "beginner",
+    language: "english",
+    status: "published",
+    displayOrder: 1
+  },
+  {
+    id: "ex-task-02",
+    component: "Task / Goal",
+    title: "React Hook Explanation (Tanglish)",
+    explanation: "Provides clear scope and target audience in conversational Tanglish.",
+    weakPrompt: "ReactJS pathi explain pannu.",
+    improvedPrompt: "ReactJS functional components la useState hook epdi work aaguthu nu 3 practical code examples oda complete beginners ku puriyura maari explain pannu.",
+    whyBetter: "General ah kekama, specific ah useState hook, 3 practical examples, and complete beginners kaga clarify pannirukku.",
+    tips: ["Topic ah specific ah narrow down pannunga (e.g. useState).", "Ethana examples venum nu mention pannunga."],
+    commonMistakes: ["Moththa React pathiyum ore prompt la kekurathu.", "Audience level mention pannama vidurathu."],
+    difficulty: "beginner",
+    language: "tanglish",
+    status: "published",
+    displayOrder: 2
+  },
+  {
+    id: "ex-ctx-01",
+    component: "Context",
+    title: "High School Physics Teacher Persona",
+    explanation: "Provides teaching background, audience grade level, and specific student challenges.",
+    weakPrompt: "I am a teacher explaining physics.",
+    improvedPrompt: "You are an experienced high school physics teacher. Your audience is 10th-grade students preparing for their first board examination who find electromagnetic induction confusing and abstract.",
+    whyBetter: "Identifies the instructor persona, the exact grade level, the upcoming examination context, and the psychological hurdle (confusing/abstract concept).",
+    tips: ["Describe the audience's current understanding level.", "Highlight specific pain points or misconceptions they face."],
+    commonMistakes: ["Stating 'I am a teacher' without describing the students or curriculum.", "Assuming the AI knows the age level automatically."],
+    difficulty: "beginner",
+    language: "english",
+    status: "published",
+    displayOrder: 1
+  },
+  {
+    id: "ex-req-01",
+    component: "Requirements",
+    title: "Full-Stack API Design Deliverables",
+    explanation: "Numbers every mandatory feature and technical specification.",
+    weakPrompt: "Include good authentication and API details.",
+    improvedPrompt: "Mandatory Requirements:\n1. Express.js REST route for /api/login with bcrypt password comparison.\n2. JWT generation with 1-hour expiration and signed secret.\n3. HttpOnly cookie storage configuration to prevent XSS.\n4. Error response returning RFC 7807 standard JSON format.",
+    whyBetter: "Replaces vague 'good authentication' with 4 numbered, testable, concrete deliverables with exact security standards (bcrypt, JWT 1hr, HttpOnly, RFC 7807).",
+    tips: ["Use numbered lists for mandatory elements.", "Specify library versions, security standards, and exact parameter names."],
+    commonMistakes: ["Writing 'make it secure' without naming security mechanisms.", "Mixing requirements into a long unstructured paragraph."],
+    difficulty: "advanced",
+    language: "english",
+    status: "published",
+    displayOrder: 1
+  },
+  {
+    id: "ex-con-01",
+    component: "Constraints",
+    title: "Zero-Dependency JavaScript Constraints",
+    explanation: "Imposes strict length limits and forbids external dependencies.",
+    weakPrompt: "Keep it simple and not too long.",
+    improvedPrompt: "Strict Constraints:\n- Maximum word count: 200 words.\n- Do NOT import any external packages (no npm, no Lodash, no jQuery); use only native ES2022 JavaScript.\n- Do NOT write commentary before or after the code block.\n- Avoid any marketing fluff or conversational intros.",
+    whyBetter: "Quantifies the word ceiling (200 words), forbids external dependencies categorically, and eliminates conversational filler.",
+    tips: ["Give an exact word or character ceiling.", "State explicit negative rules using 'Do NOT...'."],
+    commonMistakes: ["Writing 'Keep it short' (which could mean 10 words or 500 words to an AI).", "Forgetting to ban third-party dependencies when writing embedded code."],
+    difficulty: "beginner",
+    language: "english",
+    status: "published",
+    displayOrder: 1
+  },
+  {
+    id: "ex-inp-01",
+    component: "Input / Reference",
+    title: "Customer Support Log Analysis",
+    explanation: "Anchors the answer strictly in verified quotation data.",
+    weakPrompt: "Look at our customer problems and summarize them.",
+    improvedPrompt: "Reference the following customer support ticket verbatim:\n\"Ticket #4092: After updating to v2.4, the bulk export button triggers error code 504 Gateway Timeout whenever CSV rows exceed 10,000.\"\nAnalyze solely the error stated above. Do not infer any unmentioned server causes.",
+    whyBetter: "Quotes the exact ticket text and forbids the AI from fabricating unstated causes.",
+    tips: ["Wrap raw reference text in quotes or triple backticks.", "Instruct: 'Do not extrapolate beyond the provided text'."],
+    commonMistakes: ["Referencing 'our past tickets' without providing the text.", "Allowing the model to speculate on missing information."],
+    difficulty: "intermediate",
+    language: "english",
+    status: "published",
+    displayOrder: 1
+  },
+  {
+    id: "ex-out-01",
+    component: "Output Format",
+    title: "Structured Markdown Table Specifications",
+    explanation: "Defines exact table headers and code block presentation.",
+    weakPrompt: "Give me the result in a table.",
+    improvedPrompt: "Format the output as a Markdown table with exactly 4 columns: | Step Number | Command | Purpose | Expected Output |. Below the table, provide a separate ```bash code block containing the complete execution sequence.",
+    whyBetter: "Explicitly names all 4 table headers and specifies the secondary code block with language identifier.",
+    tips: ["Provide literal column names in pipes: | Col 1 | Col 2 |.", "State whether a code block, JSON schema, or list is expected."],
+    commonMistakes: ["Asking for 'a nice table' without specifying what data goes in each column.", "Allowing explanatory chat before or after the requested format."],
+    difficulty: "beginner",
+    language: "english",
+    status: "published",
+    displayOrder: 1
+  },
+  {
+    id: "ex-sty-01",
+    component: "Style / Tone",
+    title: "Executive Technical Retrospective Tone",
+    explanation: "Sets professional, objective, and blameless tone for leadership.",
+    weakPrompt: "Be professional.",
+    improvedPrompt: "Adopt an objective, empathetic, and blameless post-mortem tone. Write in concise active voice suitable for an engineering VP reviewing an incident retrospective. Avoid emotional exaggeration.",
+    whyBetter: "Combines 3 specific tone descriptors ('objective', 'empathetic', 'blameless') and targets executive-level communication.",
+    tips: ["Specify voice (active vs passive) and emotional posture.", "Name the recipient's seniority (e.g. VP level)."],
+    commonMistakes: ["Using generic words like 'good tone' or 'be polite'.", "Requesting conflicting tones like 'be hilarious yet extremely grave'."],
+    difficulty: "advanced",
+    language: "english",
+    status: "published",
+    displayOrder: 1
+  },
+  {
+    id: "ex-val-01",
+    component: "Validation / Success Criteria",
+    title: "Pre-Flight Self-Verification Audit",
+    explanation: "Provides the model with explicit self-auditing checklist before finalizing.",
+    weakPrompt: "Make sure everything is right.",
+    improvedPrompt: "Before generating the final answer, self-validate against these criteria:\n1. Does the code contain null/undefined safety checks?\n2. Are all 3 requirements from Section 3 addressed?\n3. Is the total word count between 180 and 220 words?\nIf any check fails, revise before printing.",
+    whyBetter: "Forces the LLM's reasoning engine to evaluate its own draft against numbered, measurable quality gates before returning output.",
+    tips: ["Include a revision command: 'If any check fails, revise before output'.", "Check both content completeness and length constraints."],
+    commonMistakes: ["Assuming the AI performs thorough self-auditing without an explicit directive.", "Writing qualitative checks that cannot be verified numerically."],
+    difficulty: "advanced",
+    language: "english",
+    status: "published",
+    displayOrder: 1
+  }
+];
+
 function fail(status, message) {
   throw Object.assign(new Error(message), { status });
 }
@@ -728,6 +866,139 @@ export default async function handler(req, res) {
           mimeType: payload.mimeType,
           size: totalSize,
         });
+      }
+    }
+
+    // ------------------------------------------------------------------------
+    // PROMPT LEARNING EXAMPLES (Public Read & Authenticated Admin CRUD)
+    // ------------------------------------------------------------------------
+    if (['prompt_examples', 'save_prompt_example', 'delete_prompt_example', 'reorder_prompt_examples'].includes(action)) {
+      if (action === 'prompt_examples') {
+        let isAdmin = false;
+        try {
+          await admin(req);
+          isAdmin = true;
+        } catch {
+          isAdmin = false;
+        }
+
+        try {
+          const query = isAdmin
+            ? 'academy_prompt_examples?select=*&order=display_order.asc,created_at.desc'
+            : 'academy_prompt_examples?select=*&status=eq.published&order=display_order.asc,created_at.desc';
+          const rows = await db(query);
+          if (Array.isArray(rows) && rows.length > 0) {
+            return res.json({
+              examples: rows.map(r => ({
+                id: r.id,
+                component: r.component,
+                title: r.title,
+                explanation: r.explanation,
+                weakPrompt: r.weak_prompt,
+                improvedPrompt: r.improved_prompt,
+                whyBetter: r.why_better,
+                tips: r.tips || [],
+                commonMistakes: r.common_mistakes || [],
+                difficulty: r.difficulty,
+                language: r.language,
+                imageUrl: r.image_url || undefined,
+                status: r.status,
+                displayOrder: r.display_order,
+                createdAt: r.created_at,
+                updatedAt: r.updated_at
+              }))
+            });
+          }
+        } catch {
+          // Fall back gracefully to built-in seed examples if database table not yet migrated
+        }
+
+        const filteredSeed = isAdmin ? BUILTIN_PROMPT_EXAMPLES : BUILTIN_PROMPT_EXAMPLES.filter(e => e.status === 'published');
+        return res.json({ examples: filteredSeed });
+      }
+
+      // Admin authorization required for create/update/delete/reorder
+      const user = await admin(req);
+      if (method !== 'POST') fail(405, 'Use POST for prompt example modifications.');
+
+      if (action === 'save_prompt_example') {
+        const p = body.example || body;
+        if (!p || typeof p !== 'object') fail(400, 'Invalid prompt example payload.');
+        if (!labels.includes(p.component)) fail(400, `Invalid prompting component. Must be one of: ${labels.join(', ')}`);
+        if (!['beginner', 'intermediate', 'advanced'].includes(p.difficulty)) fail(400, 'Invalid difficulty level.');
+        if (!['english', 'tamil', 'tanglish'].includes(p.language)) fail(400, 'Invalid language selection.');
+        if (p.status && !['draft', 'published'].includes(p.status)) fail(400, 'Invalid status.');
+
+        const title = String(p.title || '').trim();
+        const explanation = String(p.explanation || '').trim();
+        const weakPrompt = String(p.weakPrompt || '').trim();
+        const improvedPrompt = String(p.improvedPrompt || '').trim();
+        const whyBetter = String(p.whyBetter || '').trim();
+
+        if (!title || title.length > 200) fail(400, 'Title is required (maximum 200 characters).');
+        if (!explanation || explanation.length > 3000) fail(400, 'Explanation is required.');
+        if (!weakPrompt || weakPrompt.length > 3000) fail(400, 'Weak prompt example is required.');
+        if (!improvedPrompt || improvedPrompt.length > 3000) fail(400, 'Improved prompt example is required.');
+        if (!whyBetter || whyBetter.length > 3000) fail(400, 'Why better explanation is required.');
+
+        let imageUrl = null;
+        if (p.imageUrl) {
+          const img = String(p.imageUrl).trim();
+          if (!/^https?:\/\//i.test(img) && !img.startsWith('/storage/')) fail(400, 'Invalid image URL.');
+          imageUrl = img;
+        }
+
+        const id = p.id || `example-${Date.now()}-${randomUUID().slice(0, 6)}`;
+        const status = p.status || 'published';
+        const displayOrder = Number.isInteger(p.displayOrder) ? p.displayOrder : 0;
+        const tips = Array.isArray(p.tips) ? p.tips.map(t => String(t).trim()).filter(Boolean) : [];
+        const commonMistakes = Array.isArray(p.commonMistakes) ? p.commonMistakes.map(m => String(m).trim()).filter(Boolean) : [];
+
+        await db('academy_prompt_examples?on_conflict=id', {
+          method: 'POST',
+          headers: { Prefer: 'resolution=merge-duplicates,return=minimal' },
+          body: JSON.stringify({
+            id,
+            component: p.component,
+            title,
+            explanation,
+            weak_prompt: weakPrompt,
+            improved_prompt: improvedPrompt,
+            why_better: whyBetter,
+            tips,
+            common_mistakes: commonMistakes,
+            difficulty: p.difficulty,
+            language: p.language,
+            image_url: imageUrl,
+            status,
+            display_order: displayOrder,
+            created_by: user.id,
+            updated_at: new Date().toISOString()
+          })
+        });
+
+        return res.json({ saved: true, id, status });
+      }
+
+      if (action === 'delete_prompt_example') {
+        const id = String(body.id || '').trim();
+        if (!id) fail(400, 'Example ID is required for deletion.');
+        await db(`academy_prompt_examples?id=eq.${encodeURIComponent(id)}`, { method: 'DELETE' });
+        return res.json({ deleted: true, id });
+      }
+
+      if (action === 'reorder_prompt_examples') {
+        const items = body.items;
+        if (!Array.isArray(items)) fail(400, 'Items array required.');
+        for (const item of items) {
+          if (item.id && Number.isInteger(item.displayOrder)) {
+            await db(`academy_prompt_examples?id=eq.${encodeURIComponent(item.id)}`, {
+              method: 'PATCH',
+              body: JSON.stringify({ display_order: item.displayOrder, updated_at: new Date().toISOString() })
+            });
+          }
+        }
+        return res.json({ reordered: true });
       }
     }
     if (action === "login" && method === "POST") {

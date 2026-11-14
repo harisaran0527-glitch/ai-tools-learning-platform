@@ -17,10 +17,12 @@ import {
 } from "lucide-react";
 import { api } from "../lib/platform";
 import { Analysis, CHALLENGES, CRITERIA, qualityBand } from "../lib/practice";
+import { InteractivePromptBuilder } from "../components/prompting/InteractivePromptBuilder";
 
 const STORAGE_KEY_PRACTICE_COMPLETED = "ai_verse_practice_completed_challenges";
 
 export default function PromptingPracticePage() {
+  const [activeMode, setActiveMode] = useState<"builder" | "challenges">("builder");
   const [challenge, setChallenge] = useState(0);
   const [prompt, setPrompt] = useState("");
   const [analysis, setAnalysis] = useState<Analysis>();
@@ -87,6 +89,48 @@ export default function PromptingPracticePage() {
           setOutput(result.output);
           markChallengeCompleted(challenge);
         }
+      }
+    } catch (e) {
+      if (current === revision.current) setError((e as Error).message);
+    } finally {
+      setBusy("");
+    }
+  }
+
+  async function handleAnalyzeCustomPrompt(customPromptText: string) {
+    setPrompt(customPromptText);
+    const current = revision.current;
+    setBusy("analyze");
+    setError("");
+    try {
+      const result = await api<Analysis>("analyze", { prompt: customPromptText, challenge });
+      if (current === revision.current) {
+        setAnalysis(result);
+        if (result.score >= 70) {
+          markChallengeCompleted(challenge);
+        }
+      }
+    } catch (e) {
+      if (current === revision.current) setError((e as Error).message);
+    } finally {
+      setBusy("");
+    }
+  }
+
+  async function handleExecuteCustomPrompt() {
+    if (!analysis?.ticket) return;
+    const current = revision.current;
+    setBusy("execute");
+    setError("");
+    try {
+      const result = await api<{ output: string }>("execute", {
+        prompt,
+        challenge,
+        ticket: analysis?.ticket,
+      });
+      if (current === revision.current) {
+        setOutput(result.output);
+        markChallengeCompleted(challenge);
       }
     } catch (e) {
       if (current === revision.current) setError((e as Error).message);
@@ -166,35 +210,96 @@ export default function PromptingPracticePage() {
         })}
       </div>
 
-      {/* Practice Challenge Banner */}
-      <div className="practice-challenge-banner">
-        <div className="challenge-banner-info">
-          <div className="challenge-icon-box">
-            <Target size={20} />
-          </div>
-          <div>
-            <div className="challenge-banner-title">Practice Challenge</div>
-            <div className="challenge-banner-desc">
-              {CHALLENGES[challenge][1]}
-            </div>
-          </div>
-        </div>
+      {/* Mode Selector Tabs */}
+      <div style={{ display: "flex", gap: "10px", margin: "20px 0 24px", borderBottom: "1px solid var(--border-subtle)", paddingBottom: "12px", flexWrap: "wrap" }}>
+        <button
+          type="button"
+          onClick={() => setActiveMode("builder")}
+          style={{
+            background: activeMode === "builder" ? "linear-gradient(90deg, rgba(124, 58, 237, 0.28) 0%, rgba(99, 102, 241, 0.18) 100%)" : "transparent",
+            border: activeMode === "builder" ? "1px solid rgba(124, 58, 237, 0.5)" : "1px solid transparent",
+            borderLeft: activeMode === "builder" ? "3px solid #a78bfa" : "1px solid transparent",
+            color: activeMode === "builder" ? "#ffffff" : "var(--text-muted)",
+            fontWeight: activeMode === "builder" ? 600 : 500,
+            padding: "8px 16px",
+            borderRadius: "8px",
+            cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+            fontSize: "13px",
+            transition: "all 0.15s ease"
+          }}
+        >
+          <Sparkles size={14} color={activeMode === "builder" ? "#c4b5fd" : "currentColor"} />
+          <span>Interactive Prompt Builder & Guide (8 Rubrics)</span>
+        </button>
 
         <button
           type="button"
-          onClick={scrollToEditor}
-          className="btn-hero-primary"
-          style={{ height: "36px", padding: "0 18px", fontSize: "13px" }}
+          onClick={() => setActiveMode("challenges")}
+          style={{
+            background: activeMode === "challenges" ? "linear-gradient(90deg, rgba(124, 58, 237, 0.28) 0%, rgba(99, 102, 241, 0.18) 100%)" : "transparent",
+            border: activeMode === "challenges" ? "1px solid rgba(124, 58, 237, 0.5)" : "1px solid transparent",
+            borderLeft: activeMode === "challenges" ? "3px solid #a78bfa" : "1px solid transparent",
+            color: activeMode === "challenges" ? "#ffffff" : "var(--text-muted)",
+            fontWeight: activeMode === "challenges" ? 600 : 500,
+            padding: "8px 16px",
+            borderRadius: "8px",
+            cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+            fontSize: "13px",
+            transition: "all 0.15s ease"
+          }}
         >
-          <Sparkles size={14} />
-          <span>Start Practice →</span>
+          <Target size={14} color={activeMode === "challenges" ? "#c4b5fd" : "currentColor"} />
+          <span>Guided Scenario Challenges (10 Scenarios)</span>
         </button>
       </div>
 
-      {/* ------------------------------------------------------------- */}
-      {/* INTERACTIVE PROMPT CHALLENGE WORKSPACE                         */}
-      {/* ------------------------------------------------------------- */}
-      <div style={{ display: "grid", gridTemplateColumns: "minmax(0, 1.4fr) minmax(0, 1fr)", gap: "20px" }}>
+      {/* Render Mode Content */}
+      {activeMode === "builder" ? (
+        <InteractivePromptBuilder
+          onAnalyzePrompt={handleAnalyzeCustomPrompt}
+          analysis={analysis}
+          busy={busy}
+          output={output}
+          onExecute={handleExecuteCustomPrompt}
+          error={error}
+        />
+      ) : (
+        <>
+          {/* Practice Challenge Banner */}
+          <div className="practice-challenge-banner">
+            <div className="challenge-banner-info">
+              <div className="challenge-icon-box">
+                <Target size={20} />
+              </div>
+              <div>
+                <div className="challenge-banner-title">Practice Challenge</div>
+                <div className="challenge-banner-desc">
+                  {CHALLENGES[challenge][1]}
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              onClick={scrollToEditor}
+              className="btn-hero-primary"
+              style={{ height: "36px", padding: "0 18px", fontSize: "13px" }}
+            >
+              <Sparkles size={14} />
+              <span>Start Practice →</span>
+            </button>
+          </div>
+
+          {/* ------------------------------------------------------------- */}
+          {/* INTERACTIVE PROMPT CHALLENGE WORKSPACE                         */}
+          {/* ------------------------------------------------------------- */}
+          <div style={{ display: "grid", gridTemplateColumns: "minmax(0, 1.4fr) minmax(0, 1fr)", gap: "20px" }}>
         {/* Left: Challenge Selector & Prompt Editor */}
         <section
           style={{
@@ -469,6 +574,8 @@ export default function PromptingPracticePage() {
           </div>
         </aside>
       </div>
+      </>
+      )}
     </main>
   );
 }

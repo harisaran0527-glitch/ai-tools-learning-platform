@@ -6,7 +6,7 @@ const originalFetch = globalThis.fetch;
 after(() => { globalThis.fetch = originalFetch; });
 Object.assign(process.env, { SUPABASE_URL: 'https://database.test', SUPABASE_ANON_KEY: 'test-anon', SUPABASE_SERVICE_ROLE_KEY: 'test-service', ADMIN_USER_IDS: 'admin-id', OPENAI_API_KEY: 'test-model', PRACTICE_TOKEN_SECRET: 'test-signing-secret' });
 let rows = [], modelScores = [15,15,20,15,10,10,5,10], allowed = true;
-let themeRows = [], bindingRows = [];
+let themeRows = [], bindingRows = [], promptExampleRows = [];
 export const storageObjects = new Map();
 globalThis.fetch = async (url, init = {}) => {
   if (String(url).includes('/auth/v1/token')) {
@@ -42,6 +42,30 @@ globalThis.fetch = async (url, init = {}) => {
       return new Response(null, { status: 204 });
     }
     return Response.json(bindingRows);
+  }
+  if (String(url).includes('/rest/v1/academy_prompt_examples')) {
+    if (init.method === 'POST') {
+      const row = JSON.parse(init.body);
+      promptExampleRows = promptExampleRows.filter(e => e.id !== row.id).concat(row);
+      return new Response(null, { status: 204 });
+    }
+    if (init.method === 'DELETE') {
+      const idMatch = String(url).match(/id=eq\.([^&]+)/);
+      if (idMatch) promptExampleRows = promptExampleRows.filter(e => e.id !== decodeURIComponent(idMatch[1]));
+      return new Response(null, { status: 204 });
+    }
+    if (init.method === 'PATCH') {
+      const idMatch = String(url).match(/id=eq\.([^&]+)/);
+      const patch = JSON.parse(init.body);
+      if (idMatch) {
+        promptExampleRows = promptExampleRows.map(e => e.id === decodeURIComponent(idMatch[1]) ? { ...e, ...patch } : e);
+      }
+      return new Response(null, { status: 204 });
+    }
+    if (String(url).includes('status=eq.published')) {
+      return Response.json(promptExampleRows.filter(e => e.status === 'published'));
+    }
+    return Response.json(promptExampleRows);
   }
   if (String(url).includes('/responses')) {
     const request = JSON.parse(init.body);
@@ -400,4 +424,125 @@ test('settings integrity: admin session authorized, revision inspection, and cat
     assert.equal(catalogRes.body[0].fullDescription, undefined);
     assert.equal(catalogRes.body[0].draft, undefined);
   }
+});
+
+test('prompt learning examples: public read fallback, admin CRUD, validation of 8 rubrics and languages', async () => {
+  // 1. Public read returns seed examples if database is empty
+  const publicRes = await call('prompt_examples');
+  assert.equal(publicRes.statusCode, 200);
+  assert.ok(Array.isArray(publicRes.body.examples));
+  assert.ok(publicRes.body.examples.length >= 8);
+  const sample = publicRes.body.examples[0];
+  assert.ok(sample.component);
+  assert.ok(sample.title);
+  assert.ok(sample.weakPrompt);
+  assert.ok(sample.improvedPrompt);
+  assert.ok(sample.whyBetter);
+
+  // 2. Unauthenticated user cannot create or modify examples
+  const unauthSave = await call('save_prompt_example', { method: 'POST', body: { title: 'Hack' } });
+  assert.equal(unauthSave.statusCode, 401);
+
+  // 3. Validation failure: invalid component
+  const badComponent = await call('save_prompt_example', {
+    method: 'POST',
+    token: 'admin',
+    body: {
+      component: 'Invalid Component Name',
+      title: 'Valid Title',
+      explanation: 'Explanation',
+      weakPrompt: 'Weak',
+      improvedPrompt: 'Strong',
+      whyBetter: 'Better',
+      difficulty: 'beginner',
+      language: 'english'
+    }
+  });
+  assert.equal(badComponent.statusCode, 400);
+
+  // 4. Validation failure: invalid language
+  const badLang = await call('save_prompt_example', {
+    method: 'POST',
+    token: 'admin',
+    body: {
+      component: 'Task / Goal',
+      title: 'Valid Title',
+      explanation: 'Explanation',
+      weakPrompt: 'Weak',
+      improvedPrompt: 'Strong',
+      whyBetter: 'Better',
+      difficulty: 'beginner',
+      language: 'french'
+    }
+  });
+  assert.equal(badLang.statusCode, 400);
+
+  // 5. Admin saves valid example
+  const validSave = await call('save_prompt_example', {
+    method: 'POST',
+    token: 'admin',
+    body: {
+      id: 'test-ex-01',
+      component: 'Requirements',
+      title: 'Automated Test Example',
+      explanation: 'Must specify exact requirements',
+      weakPrompt: 'Add features',
+      improvedPrompt: 'Add 1) Auth, 2) Rate limit, 3) Logging',
+      whyBetter: 'Clear numbered list',
+      tips: ['Tip 1', 'Tip 2'],
+      commonMistakes: ['Mistake 1'],
+      difficulty: 'intermediate',
+      language: 'tanglish',
+      status: 'published',
+      displayOrder: 10
+    }
+  });
+  assert.equal(validSave.statusCode, 200);
+  assert.equal(validSave.body.saved, true);
+  assert.equal(validSave.body.id, 'test-ex-01');
+
+  // 6. Admin saves a draft example
+  const draftSave = await call('save_prompt_example', {
+    method: 'POST',
+    token: 'admin',
+    body: {
+      id: 'test-draft-01',
+      component: 'Context',
+      title: 'Draft Example',
+      explanation: 'Draft explanation',
+      weakPrompt: 'Draft weak',
+      improvedPrompt: 'Draft strong',
+      whyBetter: 'Draft why',
+      difficulty: 'advanced',
+      language: 'tamil',
+      status: 'draft',
+      displayOrder: 20
+    }
+  });
+  assert.equal(draftSave.statusCode, 200);
+  assert.equal(draftSave.body.status, 'draft');
+
+  // 7. Verify public read only includes published
+  const publicAfter = await call('prompt_examples');
+  assert.equal(publicAfter.statusCode, 200);
+  const foundDraftInPublic = publicAfter.body.examples.find(e => e.id === 'test-draft-01');
+  assert.equal(foundDraftInPublic, undefined);
+  const foundPublishedInPublic = publicAfter.body.examples.find(e => e.id === 'test-ex-01');
+  assert.ok(foundPublishedInPublic);
+
+  // 8. Admin read includes both published and draft
+  const adminRead = await call('prompt_examples', { token: 'admin' });
+  assert.equal(adminRead.statusCode, 200);
+  const foundDraftInAdmin = adminRead.body.examples.find(e => e.id === 'test-draft-01');
+  assert.ok(foundDraftInAdmin);
+
+  // 9. Admin delete example
+  const deleteRes = await call('delete_prompt_example', { method: 'POST', token: 'admin', body: { id: 'test-ex-01' } });
+  assert.equal(deleteRes.statusCode, 200);
+  assert.equal(deleteRes.body.deleted, true);
+
+  // Confirm deleted from admin list
+  const adminAfterDelete = await call('prompt_examples', { token: 'admin' });
+  const stillExists = adminAfterDelete.body.examples.find(e => e.id === 'test-ex-01');
+  assert.equal(stillExists, undefined);
 });

@@ -42,6 +42,7 @@ import { loadToolBySlug } from "../data/catalog/toolLoaders";
 import { AITool } from "../types/tool";
 import { CATEGORIES } from "../data/categories";
 import { ToolLogo } from "../components/ToolLogo";
+import { PromptExampleManager } from "../components/admin/PromptExampleManager";
 const ThemeStudio = lazy(() => import('../components/ThemeStudio'));
 
 type DraftQuestion = {
@@ -1382,70 +1383,22 @@ export default function AdminPage() {
             </div>
           </div>
         ) : view === "prompting" ? (
-          /* Prompting Management & Practice Lab View */
+          /* Prompting Management & Learning Content View */
           <div>
-            <div className="admin-header-row">
-              <div>
-                <h1 className="admin-header-title">Prompting Practice & AI Assessment</h1>
-                <p className="admin-header-sub">
-                  Monitor atomic rate limits, review 8-criteria prompt scoring weights, and launch the interactive lab.
-                </p>
-              </div>
-              <Link to="/prompting/practice" className="btn-compact-primary" style={{ textDecoration: "none" }}>
-                <Sparkles size={14} />
-                <span>Open Practice Lab</span>
-              </Link>
-            </div>
+            <PromptExampleManager token={token} />
 
-            {/* Metric Cards */}
-            <div className="admin-metrics-row" style={{ marginBottom: "20px" }}>
-              <div className="admin-metric-card">
-                <div className="metric-squircle green">
-                  <ShieldCheck size={20} />
-                </div>
-                <div>
-                  <div className="metric-val" style={{ color: "#34d399" }}>Score ≥ 70</div>
-                  <div className="metric-label">Execution Gate Threshold</div>
-                </div>
+            {/* Rubric Weights Reference Deck */}
+            <div style={{ background: "var(--surface-navy)", border: "1px solid var(--border-subtle)", borderRadius: "12px", padding: "20px", marginTop: "24px" }}>
+              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "14px", flexWrap: "wrap", gap: "8px" }}>
+                <h3 style={{ fontSize: "14px", fontWeight: 600, color: "#ffffff", display: "flex", alignItems: "center", gap: "8px", margin: 0 }}>
+                  <Sparkles size={16} color="#a78bfa" />
+                  Official 8-Component Prompt Scoring Rubric (100 Marks)
+                </h3>
+                <Link to="/prompting/practice" className="btn-compact-primary" style={{ textDecoration: "none", height: "30px", fontSize: "12px" }}>
+                  <Sparkles size={13} />
+                  <span>Open Student Practice Lab</span>
+                </Link>
               </div>
-
-              <div className="admin-metric-card">
-                <div className="metric-squircle cyan">
-                  <Sparkles size={20} />
-                </div>
-                <div>
-                  <div className="metric-val">8 Rubrics</div>
-                  <div className="metric-label">100 Total Marks (Strict Assessor)</div>
-                </div>
-              </div>
-
-              <div className="admin-metric-card">
-                <div className="metric-squircle blue">
-                  <Database size={20} />
-                </div>
-                <div>
-                  <div className="metric-val">20 req/IP/hr</div>
-                  <div className="metric-label">200 Global/hr Atomic Quota</div>
-                </div>
-              </div>
-
-              <div className="admin-metric-card">
-                <div className="metric-squircle amber">
-                  <Compass size={20} />
-                </div>
-                <div>
-                  <div className="metric-val">HMAC-SHA256</div>
-                  <div className="metric-label">Signed Verification Ticket</div>
-                </div>
-              </div>
-            </div>
-
-            {/* Rubric Weights Table */}
-            <div style={{ background: "var(--surface-navy)", border: "1px solid var(--border-subtle)", borderRadius: "12px", padding: "20px", marginBottom: "20px" }}>
-              <h3 style={{ fontSize: "14px", fontWeight: 600, color: "#ffffff", marginBottom: "14px", display: "flex", alignItems: "center", gap: "8px" }}>
-                <Sparkles size={16} color="#a78bfa" />
-                Official 8-Component Prompt Scoring Rubric
-              </h3>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "10px" }}>
                 {[
                   { label: "Task / Goal", max: 15 },
