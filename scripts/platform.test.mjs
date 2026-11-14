@@ -753,6 +753,7 @@ test('automatic free AI model failover, bounded timeouts, circuit breaker cooldo
   // 6. Secondary also hits 429 and Tertiary hits 429 -> Fast failover to Groq Free Tier (llama-3.3-70b-versatile)
   simulateGeminiModelsFail['gemini-3.8-flash'] = true;
   simulateGeminiModelsFail['gemini-2.5-flash'] = true;
+  simulateGeminiModelsFail['gemini-4-hydrogen'] = true;
   const groqResult = await call('analyze', { method: 'POST', body: { prompt: testPrompt, challenge: 0 } });
   assert.equal(groqResult.statusCode, 200);
   assert.equal(groqResult.body.mode, 'ai');

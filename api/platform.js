@@ -607,6 +607,7 @@ Key Findings & Draft Output:
 
 // Model Cooldown / Circuit Breaker Map
 const modelCooldowns = new Map();
+const modelLastInfo = new Map();
 
 function isModelCoolingDown(key) {
   const expiresAt = modelCooldowns.get(key);
@@ -631,6 +632,7 @@ function getProviderStatus() {
     { provider: 'gemini', model: process.env.GEMINI_MODEL || 'gemini-3.5-flash-lite', label: 'Gemini 3.5 Flash-Lite (Primary Free Tier)', configured: geminiConfigured },
     { provider: 'gemini', model: 'gemini-3.8-flash', label: 'Gemini 3.8 Flash (Secondary Free Tier)', configured: geminiConfigured },
     { provider: 'gemini', model: 'gemini-2.5-flash', label: 'Gemini 2.5 Flash (Tertiary Free Tier)', configured: geminiConfigured },
+    { provider: 'gemini', model: 'gemini-4-hydrogen', label: 'Gemini 4 Hydrogen (Fast Free Tier)', configured: geminiConfigured },
     { provider: 'groq', model: 'llama-3.3-70b-versatile', label: 'Llama 3.3 70B (Groq Free Tier)', configured: groqConfigured },
     { provider: 'groq', model: 'llama-3.1-8b-instant', label: 'Llama 3.1 8B Instant (Groq Free Tier)', configured: groqConfigured },
   ];
@@ -639,6 +641,7 @@ function getProviderStatus() {
     const key = `${m.provider}:${m.model}`;
     const cooling = isModelCoolingDown(key);
     const cooldownSec = cooling ? Math.max(0, Math.ceil(((modelCooldowns.get(key) || 0) - now) / 1000)) : 0;
+    const last = modelLastInfo.get(key);
     return {
       provider: m.provider,
       model: m.model,
@@ -646,6 +649,8 @@ function getProviderStatus() {
       configured: m.configured,
       status: !m.configured ? 'unconfigured' : cooling ? 'cooldown' : 'ready',
       cooldownSeconds: cooldownSec,
+      lastStatus: last?.status || null,
+      lastError: last?.error || null,
     };
   });
 
@@ -660,7 +665,7 @@ function getProviderStatus() {
 
 async function callGeminiApi(instructions, input, structured, modelName, apiKey, timeoutMs = 6000) {
   try {
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent`;
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${apiKey}`;
     const response = await fetch(url, {
       method: "POST",
       headers: {
@@ -930,11 +935,11 @@ async function model(instructions, input, structured = false) {
   if (geminiKey) {
     const preferredGemini = process.env.GEMINI_MODEL || "gemini-3.5-flash-lite";
     candidates.push({ provider: "gemini", model: preferredGemini, key: geminiKey });
-    if (preferredGemini !== "gemini-3.8-flash") {
-      candidates.push({ provider: "gemini", model: "gemini-3.8-flash", key: geminiKey });
-    }
-    if (preferredGemini !== "gemini-2.5-flash") {
-      candidates.push({ provider: "gemini", model: "gemini-2.5-flash", key: geminiKey });
+    const additional = ["gemini-3.8-flash", "gemini-2.5-flash", "gemini-4-hydrogen"];
+    for (const m of additional) {
+      if (m !== preferredGemini) {
+        candidates.push({ provider: "gemini", model: m, key: geminiKey });
+      }
     }
   }
 
@@ -982,6 +987,11 @@ async function model(instructions, input, structured = false) {
     }
 
     const status = res ? res.status : 500;
+    modelLastInfo.set(candidateKey, {
+      status,
+      error: res?.error ? (typeof res.error === "string" ? res.error.slice(0, 300) : JSON.stringify(res.error).slice(0, 300)) : "request failed",
+      timestamp: Date.now(),
+    });
     if (status === 429) {
       console.warn(`[Failover] ${candidateKey} rate-limited (429). Setting 60s cooldown.`);
       setModelCooldown(candidateKey, 60000);
@@ -1721,6 +1731,7 @@ export default async function handler(req, res) {
     if (action === "provider_health") {
       if (url.searchParams.get("reset") === "1") {
         modelCooldowns.clear();
+        modelLastInfo.clear();
       }
       return res.json(getProviderStatus());
     }
