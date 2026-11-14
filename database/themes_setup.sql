@@ -56,13 +56,13 @@ values (
   'theme-assets',
   'theme-assets',
   true,
-  15728640, -- 15 MB limit
-  array['image/jpeg', 'image/png', 'image/webp', 'video/mp4', 'video/webm']
+  20971520, -- 20 MB limit
+  array['image/jpeg', 'image/png', 'image/webp', 'video/mp4', 'video/webm', 'application/pdf']
 )
 on conflict (id) do update set
   public = true,
-  file_size_limit = 15728640,
-  allowed_mime_types = array['image/jpeg', 'image/png', 'image/webp', 'video/mp4', 'video/webm'];
+  file_size_limit = 20971520,
+  allowed_mime_types = array['image/jpeg', 'image/png', 'image/webp', 'video/mp4', 'video/webm', 'application/pdf'];
 
 -- Explicitly drop any known or unauthorized write policies on storage.objects
 drop policy if exists "Public upload for theme assets" on storage.objects;

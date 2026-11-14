@@ -204,6 +204,82 @@ function config(name) {
     );
   return value;
 }
+
+const bucketProvisionCache = new Set();
+
+async function ensureStorageBucket(bucketId, options = {}) {
+  try {
+    const supabaseUrl = process.env.SUPABASE_URL;
+    const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+    if (!supabaseUrl || !key) return false;
+
+    const cacheKey = `${bucketId}:${(options.allowedMimeTypes || []).slice().sort().join(',')}`;
+    if (bucketProvisionCache.has(cacheKey)) return true;
+
+    // 1. Check if bucket exists
+    const checkRes = await fetch(`${supabaseUrl}/storage/v1/bucket/${bucketId}`, {
+      headers: {
+        apikey: key,
+        Authorization: `Bearer ${key}`,
+      },
+    });
+
+    if (checkRes.ok) {
+      const data = await checkRes.json().catch(() => ({}));
+      if (options.allowedMimeTypes && Array.isArray(options.allowedMimeTypes)) {
+        const existingMimes = Array.isArray(data.allowed_mime_types) ? data.allowed_mime_types : [];
+        const missing = options.allowedMimeTypes.some((m) => !existingMimes.includes(m));
+        if (missing && existingMimes.length > 0) {
+          const mergedMimes = Array.from(new Set([...existingMimes, ...options.allowedMimeTypes]));
+          await fetch(`${supabaseUrl}/storage/v1/bucket/${bucketId}`, {
+            method: 'PUT',
+            headers: {
+              apikey: key,
+              Authorization: `Bearer ${key}`,
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              public: true,
+              allowed_mime_types: mergedMimes,
+              file_size_limit: options.fileSizeLimit || 20971520,
+            }),
+          }).catch(() => {});
+        }
+      }
+      bucketProvisionCache.add(cacheKey);
+      return true;
+    }
+
+    // 2. If bucket not found (status 400 or 404), create it
+    const createRes = await fetch(`${supabaseUrl}/storage/v1/bucket`, {
+      method: 'POST',
+      headers: {
+        apikey: key,
+        Authorization: `Bearer ${key}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        id: bucketId,
+        name: bucketId,
+        public: true,
+        file_size_limit: options.fileSizeLimit || 20971520,
+        allowed_mime_types: options.allowedMimeTypes || null,
+      }),
+    });
+
+    if (createRes.ok || createRes.status === 409) {
+      bucketProvisionCache.add(cacheKey);
+      return true;
+    }
+
+    const errBody = await createRes.text().catch(() => '');
+    console.warn(`[Storage Bucket Provisioning] Bucket "${bucketId}" create returned ${createRes.status}: ${errBody}`);
+    return false;
+  } catch (err) {
+    console.warn(`[Storage Bucket Provisioning] Error provisioning bucket "${bucketId}":`, err.message);
+    return false;
+  }
+}
 function safeUrl(value, fieldName = "URL", options = {}) {
   const isRequired =
     typeof fieldName === "boolean"
@@ -1470,6 +1546,11 @@ export default async function handler(req, res) {
         const assetPath = `theme-${Date.now()}-${randomUUID().slice(0, 8)}.${ext}`;
 
         const key = config('SUPABASE_SERVICE_ROLE_KEY');
+        await ensureStorageBucket('theme-assets', {
+          allowedMimeTypes: ['image/jpeg', 'image/png', 'image/webp', 'video/mp4', 'video/webm', 'application/pdf'],
+          fileSizeLimit: 20971520,
+        });
+
         const signUrl = `${config('SUPABASE_URL')}/storage/v1/object/upload/sign/theme-assets/${assetPath}`;
         let signRes = await fetch(signUrl, {
           method: 'POST',
@@ -1481,37 +1562,9 @@ export default async function handler(req, res) {
           body: JSON.stringify({}),
         });
 
-        if (!signRes.ok && signRes.status === 404) {
-          try {
-            await fetch(`${config('SUPABASE_URL')}/storage/v1/bucket`, {
-              method: 'POST',
-              headers: {
-                apikey: key,
-                Authorization: `Bearer ${key}`,
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({
-                id: 'theme-assets',
-                name: 'theme-assets',
-                public: true,
-                file_size_limit: 15728640,
-                allowed_mime_types: ['image/jpeg', 'image/png', 'image/webp', 'video/mp4', 'video/webm'],
-              }),
-            });
-            signRes = await fetch(signUrl, {
-              method: 'POST',
-              headers: {
-                apikey: key,
-                Authorization: `Bearer ${key}`,
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({}),
-            });
-          } catch {}
-        }
-
         if (!signRes.ok) {
-          fail(502, 'Unable to generate signed upload URL from storage service.');
+          const errText = await signRes.text().catch(() => '');
+          fail(502, `Unable to generate signed upload URL from storage service: ${errText || 'Service unavailable.'}`);
         }
 
         const signData = await signRes.json();
@@ -1667,38 +1720,26 @@ export default async function handler(req, res) {
         const assetPath = `guide-${toolSlug}-${Date.now()}-${randomUUID().slice(0, 8)}.pdf`;
 
         const key = config('SUPABASE_SERVICE_ROLE_KEY');
-        const bucket = 'tool-guides';
-        const signUrl = `${config('SUPABASE_URL')}/storage/v1/object/upload/sign/${bucket}/${assetPath}`;
 
-        let targetBucket = bucket;
-        let signRes = await fetch(signUrl, {
-          method: 'POST',
-          headers: {
-            apikey: key,
-            Authorization: `Bearer ${key}`,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({}),
+        // Proactively ensure buckets exist with proper permissions and allowed MIME types
+        await ensureStorageBucket('tool-guides', {
+          allowedMimeTypes: ['application/pdf'],
+          fileSizeLimit: 20971520,
+        });
+        await ensureStorageBucket('theme-assets', {
+          allowedMimeTypes: ['image/jpeg', 'image/png', 'image/webp', 'video/mp4', 'video/webm', 'application/pdf'],
+          fileSizeLimit: 20971520,
         });
 
-        if (!signRes.ok && signRes.status === 404) {
+        const bucketsToTry = ['tool-guides', 'theme-assets'];
+        let signRes = null;
+        let targetBucket = 'tool-guides';
+        let lastErrorText = '';
+
+        for (const bucket of bucketsToTry) {
+          const signUrl = `${config('SUPABASE_URL')}/storage/v1/object/upload/sign/${bucket}/${assetPath}`;
           try {
-            await fetch(`${config('SUPABASE_URL')}/storage/v1/bucket`, {
-              method: 'POST',
-              headers: {
-                apikey: key,
-                Authorization: `Bearer ${key}`,
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({
-                id: bucket,
-                name: bucket,
-                public: true,
-                file_size_limit: 20971520,
-                allowed_mime_types: ['application/pdf'],
-              }),
-            });
-            signRes = await fetch(signUrl, {
+            const res = await fetch(signUrl, {
               method: 'POST',
               headers: {
                 apikey: key,
@@ -1707,29 +1748,26 @@ export default async function handler(req, res) {
               },
               body: JSON.stringify({}),
             });
-          } catch {}
+            if (res.ok) {
+              signRes = res;
+              targetBucket = bucket;
+              break;
+            } else {
+              lastErrorText = await res.text().catch(() => '');
+              console.warn(`[Storage] Failed to generate signed URL for bucket "${bucket}" (HTTP ${res.status}): ${lastErrorText}`);
+            }
+          } catch (e) {
+            lastErrorText = e.message;
+            console.warn(`[Storage] Network error signing for bucket "${bucket}":`, e.message);
+          }
         }
 
-        if (!signRes.ok) {
-          targetBucket = 'theme-assets';
-          const fallbackSignUrl = `${config('SUPABASE_URL')}/storage/v1/object/upload/sign/theme-assets/${assetPath}`;
-          signRes = await fetch(fallbackSignUrl, {
-            method: 'POST',
-            headers: {
-              apikey: key,
-              Authorization: `Bearer ${key}`,
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({}),
-          });
-        }
-
-        if (!signRes.ok) {
-          fail(502, 'Unable to generate signed upload URL from storage service.');
+        if (!signRes) {
+          fail(502, `Unable to generate signed upload URL from storage service: ${lastErrorText || 'Storage service unavailable.'}`);
         }
 
         const signData = await signRes.json();
-        const rawUrl = signData.url || '';
+        const rawUrl = signData.url || signData.signedURL || '';
         const uploadUrl = rawUrl.startsWith('http')
           ? rawUrl
           : `${config('SUPABASE_URL')}/storage/v1${rawUrl.startsWith('/') ? '' : '/'}${rawUrl}`;
@@ -1871,36 +1909,51 @@ export default async function handler(req, res) {
 
         const toolSlug = String(body.toolSlug || body.slug || 'tool').replace(/[^a-z0-9-]/gi, '-').toLowerCase();
         const assetPath = `guide-${toolSlug}-${Date.now()}-${randomUUID().slice(0, 8)}.pdf`;
-        const bucket = 'tool-guides';
         const key = config('SUPABASE_SERVICE_ROLE_KEY');
 
-        let storageRes = await fetch(`${config('SUPABASE_URL')}/storage/v1/object/${bucket}/${assetPath}`, {
-          method: 'POST',
-          headers: {
-            apikey: key,
-            Authorization: `Bearer ${key}`,
-            'Content-Type': 'application/pdf',
-            'x-upsert': 'true',
-          },
-          body: buffer,
+        // Proactively ensure buckets exist with proper permissions and allowed MIME types
+        await ensureStorageBucket('tool-guides', {
+          allowedMimeTypes: ['application/pdf'],
+          fileSizeLimit: 20971520,
+        });
+        await ensureStorageBucket('theme-assets', {
+          allowedMimeTypes: ['image/jpeg', 'image/png', 'image/webp', 'video/mp4', 'video/webm', 'application/pdf'],
+          fileSizeLimit: 20971520,
         });
 
-        let targetBucket = bucket;
-        if (!storageRes.ok) {
-          targetBucket = 'theme-assets';
-          storageRes = await fetch(`${config('SUPABASE_URL')}/storage/v1/object/theme-assets/${assetPath}`, {
-            method: 'POST',
-            headers: {
-              apikey: key,
-              Authorization: `Bearer ${key}`,
-              'Content-Type': 'application/pdf',
-              'x-upsert': 'true',
-            },
-            body: buffer,
-          });
+        const bucketsToTry = ['tool-guides', 'theme-assets'];
+        let uploaded = false;
+        let targetBucket = 'tool-guides';
+        let lastStorageError = '';
+
+        for (const bucket of bucketsToTry) {
+          try {
+            const storageRes = await fetch(`${config('SUPABASE_URL')}/storage/v1/object/${bucket}/${assetPath}`, {
+              method: 'POST',
+              headers: {
+                apikey: key,
+                Authorization: `Bearer ${key}`,
+                'Content-Type': 'application/pdf',
+                'x-upsert': 'true',
+              },
+              body: buffer,
+            });
+
+            if (storageRes.ok) {
+              uploaded = true;
+              targetBucket = bucket;
+              break;
+            } else {
+              lastStorageError = await storageRes.text().catch(() => '');
+              console.warn(`[Storage Direct Upload] Upload to "${bucket}" returned ${storageRes.status}: ${lastStorageError}`);
+            }
+          } catch (e) {
+            lastStorageError = e.message;
+            console.warn(`[Storage Direct Upload] Network error uploading to "${bucket}":`, e.message);
+          }
         }
 
-        if (storageRes.ok) {
+        if (uploaded) {
           const publicUrl = `${config('SUPABASE_URL')}/storage/v1/object/public/${targetBucket}/${assetPath}`;
           return res.json({
             uploaded: true,
@@ -1910,7 +1963,7 @@ export default async function handler(req, res) {
           });
         }
 
-        fail(502, 'Failed to store document in storage service.');
+        fail(502, `Failed to store document in storage service: ${lastStorageError || 'Storage service unavailable.'}`);
       }
     }
 

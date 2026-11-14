@@ -176,6 +176,7 @@ export default function AdminPage() {
   const [guideProgress, setGuideProgress] = useState<{ percent: number; stage: string } | null>(null);
   const [copiedGuideUrl, setCopiedGuideUrl] = useState(false);
   const [showGuidePreview, setShowGuidePreview] = useState(false);
+  const [guideFileToRetry, setGuideFileToRetry] = useState<File | null>(null);
 
   const categories = useMemo(() => [
     ...new Set([
@@ -383,9 +384,8 @@ export default function AdminPage() {
   };
 
   // Handle Guide PDF Upload
-  const handleGuideFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file || !tool) return;
+  const executeGuideUpload = async (file: File) => {
+    if (!tool) return;
 
     if (!file.name.toLowerCase().endsWith('.pdf') && file.type !== 'application/pdf') {
       setError('Please select a valid PDF document (.pdf).');
@@ -398,6 +398,7 @@ export default function AdminPage() {
     }
 
     setGuideUploading(true);
+    setGuideFileToRetry(null);
     setError('');
     setMessage('');
     setGuideProgress({ percent: 10, stage: 'Step 1/3: Requesting authorized storage token...' });
@@ -444,7 +445,7 @@ export default function AdminPage() {
             if (xhr.status >= 200 && xhr.status < 300) resolve();
             else reject(new Error(`Storage server error (HTTP ${xhr.status}) during upload.`));
           };
-          xhr.onerror = () => reject(new Error('Network connection error during upload.'));
+          xhr.onerror = () => reject(new Error('Network connection error during direct upload.'));
           xhr.ontimeout = () => reject(new Error('Upload timed out.'));
           xhr.send(file);
         });
@@ -456,8 +457,9 @@ export default function AdminPage() {
         }, token);
 
         publicUrl = verifyRes.url;
-      } catch {
-        setGuideProgress({ percent: 50, stage: 'Streaming document directly to platform API...' });
+      } catch (directErr) {
+        console.warn('Direct upload failed, switching to platform API streaming fallback:', directErr);
+        setGuideProgress({ percent: 50, stage: 'Step 2/3 (Fallback): Streaming document securely to platform API...' });
         const reader = new FileReader();
         const base64Promise = new Promise<string>((resolve, reject) => {
           reader.onload = () => resolve(reader.result as string);
@@ -493,11 +495,20 @@ export default function AdminPage() {
       });
 
       setMessage(`Learning Guide PDF uploaded successfully! Permanent URL: ${publicUrl}. Click "Save Tool" below to persist changes.`);
+      setGuideFileToRetry(null);
     } catch (err) {
+      setGuideFileToRetry(file);
       setError(`Guide upload failed: ${(err as Error).message}`);
     } finally {
       setGuideUploading(false);
       if (guideInputRef.current) guideInputRef.current.value = '';
+    }
+  };
+
+  const handleGuideFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      await executeGuideUpload(file);
     }
   };
 
@@ -1386,6 +1397,34 @@ export default function AdminPage() {
                         </div>
                         <div style={{ width: "100%", height: "8px", background: "rgba(255,255,255,0.1)", borderRadius: "4px", overflow: "hidden" }}>
                           <div style={{ width: `${guideProgress.percent}%`, height: "100%", background: "linear-gradient(90deg, var(--accent1), var(--accent2))", transition: "width 0.2s" }} />
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Retry Banner if upload failed */}
+                    {guideFileToRetry && !guideUploading && (
+                      <div style={{ background: "rgba(239, 71, 111, 0.1)", border: "1px solid rgba(239, 71, 111, 0.3)", borderRadius: "10px", padding: "12px 16px", marginBottom: "16px", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "10px" }}>
+                        <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "13px", color: "#fff" }}>
+                          <FileText size={16} color="var(--accent3)" />
+                          <span>Selected file: <strong>{guideFileToRetry.name}</strong> ({(guideFileToRetry.size / (1024 * 1024)).toFixed(1)} MB)</span>
+                        </div>
+                        <div style={{ display: "flex", gap: "8px" }}>
+                          <button
+                            type="button"
+                            onClick={() => executeGuideUpload(guideFileToRetry)}
+                            className="btn-primary"
+                            style={{ fontSize: "12px", padding: "6px 14px", display: "inline-flex", alignItems: "center", gap: "6px" }}
+                          >
+                            <RefreshCw size={13} /> Retry Upload
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => setGuideFileToRetry(null)}
+                            className="btn-secondary"
+                            style={{ fontSize: "12px", padding: "6px 10px" }}
+                          >
+                            Dismiss
+                          </button>
                         </div>
                       </div>
                     )}
