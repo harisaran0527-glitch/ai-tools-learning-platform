@@ -40,6 +40,7 @@ import {
   Trash2,
   RefreshCw,
   ExternalLink,
+  Video,
 } from "lucide-react";
 import { api, refreshCatalog, getCatalogRevision } from "../lib/platform";
 import { catalogSummaries } from "../data/catalog/summaryData";
@@ -313,12 +314,19 @@ export default function AdminPage() {
           delete cleanTool.learningGuide;
         }
       }
-      if (cleanTool.tutorialVideo) {
-        cleanTool.tutorialVideo = {
-          ...cleanTool.tutorialVideo,
-          url: (cleanTool.tutorialVideo.url || "").trim(),
-        };
+      let cleanTutorialVideo = undefined;
+      if (tool.tutorialVideo) {
+        const title = (tool.tutorialVideo.title || "").trim();
+        const url = (tool.tutorialVideo.url || "").trim();
+        if (title || url) {
+          cleanTutorialVideo = {
+            ...tool.tutorialVideo,
+            title: title || `${cleanTool.name || "Tool"} Video Tutorial`,
+            url,
+          };
+        }
       }
+      cleanTool.tutorialVideo = cleanTutorialVideo;
 
       const result = await api<{ assessmentPublished: boolean }>(
         "save",
@@ -1184,6 +1192,165 @@ export default function AdminPage() {
                       onChange={(e) => patch({ superpower: e.target.value })}
                       className="filter-search-input"
                     />
+                  </div>
+
+                  {/* Video Tutorial Section */}
+                  <div
+                    style={{
+                      gridColumn: "1 / -1",
+                      marginTop: "12px",
+                      background: "rgba(255,107,107,0.06)",
+                      border: "1px solid rgba(255,107,107,0.25)",
+                      borderRadius: "14px",
+                      padding: "20px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                        marginBottom: "14px",
+                        flexWrap: "wrap",
+                        gap: "10px",
+                      }}
+                    >
+                      <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                        <span
+                          className="badge"
+                          style={{
+                            background: "rgba(255,107,107,0.2)",
+                            color: "#ff6b6b",
+                            border: "1px solid rgba(255,107,107,0.4)",
+                            fontSize: "11px",
+                            fontWeight: 700,
+                          }}
+                        >
+                          VIDEO TUTORIAL
+                        </span>
+                        <h4
+                          style={{
+                            margin: 0,
+                            fontSize: "16px",
+                            color: "#fff",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "8px",
+                          }}
+                        >
+                          <Video size={18} color="#ff6b6b" /> Video Tutorial
+                        </h4>
+                      </div>
+                      <span style={{ fontSize: "12px", color: "var(--muted)" }}>
+                        Supports YouTube, Vimeo, and valid HTTPS video links
+                      </span>
+                    </div>
+
+                    <div
+                      style={{
+                        display: "grid",
+                        gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
+                        gap: "14px",
+                      }}
+                    >
+                      <div>
+                        <label className="assessment-field-label">Video Tutorial Name</label>
+                        <input
+                          type="text"
+                          placeholder="e.g. ElevenLabs Voice AI Masterclass"
+                          value={tool.tutorialVideo?.title || ""}
+                          onChange={(e) =>
+                            patch({
+                              tutorialVideo: {
+                                ...(tool.tutorialVideo || { title: "", url: "" }),
+                                title: e.target.value,
+                              },
+                            })
+                          }
+                          className="filter-search-input"
+                        />
+                      </div>
+
+                      <div>
+                        <label className="assessment-field-label">
+                          Video Tutorial URL (valid HTTPS link)
+                        </label>
+                        <input
+                          type="url"
+                          placeholder="https://www.youtube.com/watch?v=..."
+                          value={tool.tutorialVideo?.url || ""}
+                          onChange={(e) =>
+                            patch({
+                              tutorialVideo: {
+                                ...(tool.tutorialVideo || { title: "", url: "" }),
+                                url: e.target.value,
+                              },
+                            })
+                          }
+                          className="filter-search-input"
+                        />
+                      </div>
+                    </div>
+
+                    {tool.tutorialVideo?.url && (
+                      <div
+                        style={{
+                          marginTop: "14px",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "space-between",
+                          background: "rgba(0,0,0,0.25)",
+                          padding: "10px 14px",
+                          borderRadius: "8px",
+                          border: "1px solid var(--border)",
+                          flexWrap: "wrap",
+                          gap: "8px",
+                        }}
+                      >
+                        <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "13px", color: "#e8eaf0" }}>
+                          <CheckCircle2 size={16} color="var(--accent5)" />
+                          <span>
+                            <strong>{tool.tutorialVideo.title || `${tool.name} Video Tutorial`}</strong>:{" "}
+                            <span style={{ color: "var(--muted)", wordBreak: "break-all" }}>
+                              {tool.tutorialVideo.url}
+                            </span>
+                          </span>
+                        </div>
+                        <div style={{ display: "flex", gap: "8px" }}>
+                          <a
+                            href={tool.tutorialVideo.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn-secondary"
+                            style={{
+                              fontSize: "12px",
+                              padding: "5px 12px",
+                              display: "inline-flex",
+                              alignItems: "center",
+                              gap: "5px",
+                              whiteSpace: "nowrap",
+                            }}
+                          >
+                            <ExternalLink size={13} /> Watch Tutorial
+                          </a>
+                          <button
+                            type="button"
+                            onClick={() => patch({ tutorialVideo: undefined })}
+                            className="btn-secondary"
+                            style={{
+                              fontSize: "12px",
+                              padding: "5px 12px",
+                              display: "inline-flex",
+                              alignItems: "center",
+                              gap: "5px",
+                              color: "var(--accent3)",
+                            }}
+                          >
+                            <Trash2 size={13} /> Clear
+                          </button>
+                        </div>
+                      </div>
+                    )}
                   </div>
 
                   {/* AI VERSE Learning Guide Section */}

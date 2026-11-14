@@ -1045,3 +1045,79 @@ test('url validation: field-specific diagnostics, whitespace normalization, and 
   });
   assert.equal(guideRes.statusCode, 200, 'Supabase storage PDF URLs must save cleanly');
 });
+
+test('video tutorial: validates video name and https url save, edit, and rejection of insecure schemes', async () => {
+  // 1. Valid YouTube video tutorial save
+  const ytTool = {
+    ...tool,
+    slug: 'yt-video-tool',
+    tutorialVideo: {
+      title: 'Mastering AI Tools with YouTube',
+      url: '  https://www.youtube.com/watch?v=dQw4w9WgXcQ  ',
+    }
+  };
+  const ytRes = await call('save', {
+    method: 'POST',
+    token: 'admin',
+    body: { tool: ytTool, questions: Array(50).fill(null) }
+  });
+  assert.equal(ytRes.statusCode, 200, 'Valid YouTube tutorial must save successfully');
+  const fetchedTool = (await call('tool', { slug: 'yt-video-tool' })).body;
+  assert.equal(fetchedTool.tutorialVideo.title, 'Mastering AI Tools with YouTube');
+  assert.equal(fetchedTool.tutorialVideo.url, 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+  assert.equal(fetchedTool.tutorialVideoStatus, 'verified');
+
+  // 2. Valid Vimeo / direct HTTPS video link save
+  const vimeoTool = {
+    ...tool,
+    slug: 'vimeo-video-tool',
+    tutorialVideo: {
+      title: 'Vimeo Hosted Workshop',
+      url: 'https://vimeo.com/123456789',
+    }
+  };
+  const vimeoRes = await call('save', {
+    method: 'POST',
+    token: 'admin',
+    body: { tool: vimeoTool, questions: Array(50).fill(null) }
+  });
+  assert.equal(vimeoRes.statusCode, 200, 'Valid Vimeo tutorial must save successfully');
+
+  // 3. Rejection of insecure http:// video tutorial URL
+  const insecureRes = await call('save', {
+    method: 'POST',
+    token: 'admin',
+    body: {
+      tool: {
+        ...tool,
+        slug: 'insecure-video-tool',
+        tutorialVideo: {
+          title: 'Insecure Video',
+          url: 'http://insecure-cdn.com/video.mp4',
+        }
+      },
+      questions: Array(50).fill(null)
+    }
+  });
+  assert.equal(insecureRes.statusCode, 400);
+  assert.ok(insecureRes.body.error.includes('Video Tutorial URL'), 'Error must specify Video Tutorial URL');
+  assert.ok(insecureRes.body.error.includes('http:// is not permitted'), 'Error must specify http restriction');
+
+  // 4. Clearing/blank video tutorial clears cleanly
+  const clearTool = {
+    ...tool,
+    slug: 'cleared-video-tool',
+    tutorialVideo: {
+      title: '   ',
+      url: '   ',
+    }
+  };
+  const clearRes = await call('save', {
+    method: 'POST',
+    token: 'admin',
+    body: { tool: clearTool, questions: Array(50).fill(null) }
+  });
+  assert.equal(clearRes.statusCode, 200, 'Cleared video tutorial must save cleanly');
+  const fetchedCleared = (await call('tool', { slug: 'cleared-video-tool' })).body;
+  assert.equal(fetchedCleared.tutorialVideo, undefined, 'tutorialVideo should be cleaned');
+});

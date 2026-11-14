@@ -414,10 +414,21 @@ function validateTool(tool) {
   tool.logo = safeLogo(tool.logo);
 
   if (tool.tutorialVideo) {
-    if (tool.tutorialVideo.url != null) {
-      tool.tutorialVideo.url = safeUrl(tool.tutorialVideo.url, "Tutorial Video URL", { required: false });
+    const title = typeof tool.tutorialVideo.title === 'string' ? tool.tutorialVideo.title.trim() : '';
+    const rawUrl = typeof tool.tutorialVideo.url === 'string' ? tool.tutorialVideo.url.trim() : '';
+    if (!title && !rawUrl) {
+      delete tool.tutorialVideo;
+      if (!tool.tutorialVideoStatus) tool.tutorialVideoStatus = 'unavailable';
+    } else {
+      tool.tutorialVideo.title = title || `${tool.name} Video Tutorial`;
+      tool.tutorialVideo.url = safeUrl(rawUrl, "Video Tutorial URL", { required: false });
+      if (tool.tutorialVideo.url) {
+        tool.tutorialVideoStatus = 'verified';
+      } else {
+        tool.tutorialVideoStatus = 'unavailable';
+      }
+      delete tool.tutorialVideo.embedUrl;
     }
-    delete tool.tutorialVideo.embedUrl;
   }
   if (tool.tutorialResource) {
     if (tool.tutorialResource.url != null) {

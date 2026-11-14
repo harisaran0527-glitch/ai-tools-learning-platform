@@ -49,37 +49,79 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({ video, toolName, subca
     return null;
   };
 
-  const isYouTube = video?.url && (video.url.includes('youtube.com') || video.url.includes('youtu.be'));
+  const isYouTube = Boolean(video?.url && (video.url.includes('youtube.com') || video.url.includes('youtu.be')));
+  const isDirectVideo = Boolean(video?.url && (/\.(mp4|webm|ogg|mov)(\?|$)/i.test(video.url) || video.url.includes('/storage/v1/object/')));
+  const isVimeo = Boolean(video?.url && video.url.includes('vimeo.com'));
   const calculatedEmbedUrl = getEmbedUrl(video?.url, video?.embedUrl);
 
-  // Render YouTube Video Player if YouTube URL exists and no loading error
-  if (isYouTube && calculatedEmbedUrl && !hasError) {
+  const vimeoEmbedUrl = isVimeo && video?.url ? (() => {
+    const match = video.url.match(/vimeo\.com\/(?:video\/)?(\d+)/);
+    return match ? `https://player.vimeo.com/video/${match[1]}` : null;
+  })() : null;
+
+  // Render Video Player if valid video URL exists and no loading error
+  if (video?.url && !hasError) {
+    const videoTitle = video.title || `${toolName} Video Tutorial`;
+
     return (
       <div style={{ margin: '24px 0' }}>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '12px', flexWrap: 'wrap', gap: '8px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '14px', flexWrap: 'wrap', gap: '8px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span className="badge badge-open-source" style={{ background: 'rgba(255,107,107,0.15)', color: '#ff6b6b', border: '1px solid rgba(255,107,107,0.3)', fontSize: '11px' }}>
-              YOUTUBE TUTORIAL
+            <span className="badge badge-open-source" style={{ background: isYouTube ? 'rgba(255,107,107,0.15)' : 'rgba(108,99,255,0.15)', color: isYouTube ? '#ff6b6b' : 'var(--accent1)', border: `1px solid ${isYouTube ? 'rgba(255,107,107,0.3)' : 'rgba(108,99,255,0.3)'}`, fontSize: '11px' }}>
+              {isYouTube ? 'YOUTUBE TUTORIAL' : 'VIDEO TUTORIAL'}
             </span>
             <h4 style={{ fontFamily: 'Sora, sans-serif', fontSize: '16px', color: '#fff', margin: 0 }}>
-              {video.title || `${toolName} Video Tutorial`}
+              {videoTitle}
             </h4>
           </div>
 
-          <a href={video.url} target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ padding: '6px 12px', fontSize: '12px', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-            Watch on YouTube <ExternalLink size={13} />
+          <a
+            href={video.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary"
+            style={{ padding: '7px 14px', fontSize: '12px', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+          >
+            <Video size={13} /> Watch Tutorial <ExternalLink size={13} />
           </a>
         </div>
 
         <div style={{ position: 'relative', paddingTop: '56.25%', background: '#090d16', borderRadius: '14px', overflow: 'hidden', border: '1px solid var(--border)' }}>
-          <iframe
-            src={calculatedEmbedUrl}
-            title={video.title || `${toolName} Tutorial`}
-            onError={() => setHasError(true)}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
-          />
+          {isYouTube && calculatedEmbedUrl ? (
+            <iframe
+              src={calculatedEmbedUrl}
+              title={videoTitle}
+              onError={() => setHasError(true)}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
+            />
+          ) : isVimeo && vimeoEmbedUrl ? (
+            <iframe
+              src={vimeoEmbedUrl}
+              title={videoTitle}
+              onError={() => setHasError(true)}
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
+            />
+          ) : isDirectVideo ? (
+            <video
+              controls
+              playsInline
+              src={video.url}
+              onError={() => setHasError(true)}
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none', background: '#090d16' }}
+            />
+          ) : (
+            <iframe
+              src={video.url}
+              title={videoTitle}
+              onError={() => setHasError(true)}
+              allowFullScreen
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
+            />
+          )}
         </div>
 
         <p style={{ fontSize: '12px', color: 'var(--muted)', marginTop: '10px', fontStyle: 'italic' }}>
