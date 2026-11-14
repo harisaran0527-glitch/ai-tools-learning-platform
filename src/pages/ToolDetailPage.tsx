@@ -1,20 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { loadToolBySlug } from '../lib/searchIndex';
 import { catalogSummaries } from '../data/catalog/summaryData';
 import { AITool } from '../types/tool';
-import { getToolProgress, updateToolProgress, toggleBookmark } from '../lib/storage';
+import { getToolProgress, toggleBookmark } from '../lib/storage';
 import { PromptBox } from '../components/PromptBox';
 import { VideoPlayer } from '../components/VideoPlayer';
 import { ToolLogo } from '../components/ToolLogo';
 import {
-  ExternalLink, Bookmark, Clock, CheckCircle2, Award, ArrowLeft, ArrowRight,
+  ExternalLink, Bookmark, Clock, CheckCircle2, ArrowLeft, ArrowRight,
   Sparkles, HelpCircle, FileText, CheckSquare, Layers, ShieldCheck, PlayCircle, GraduationCap, BookOpen
 } from 'lucide-react';
 
 export const ToolDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
-  const navigate = useNavigate();
   const [activeSection, setActiveSection] = useState('overview');
 
   const [tool, setTool] = useState<AITool>();
@@ -31,12 +30,7 @@ export const ToolDetailPage: React.FC = () => {
       setLoading(false);
       if (!loadedTool) return;
       setTool(loadedTool);
-      const current = getToolProgress(loadedTool.id);
-      setProgress(current);
-      if (!current.started) {
-        updateToolProgress(loadedTool.id, { started: true, learningProgress: Math.max(current.learningProgress || 20, 20) });
-        setProgress(getToolProgress(loadedTool.id));
-      }
+      setProgress(getToolProgress(loadedTool.id));
     }).catch(() => { if (!cancelled) setLoading(false); });
     window.scrollTo(0, 0);
     return () => { cancelled = true; };
@@ -61,15 +55,6 @@ export const ToolDetailPage: React.FC = () => {
   const handleBookmarkToggle = () => {
     toggleBookmark(tool.id);
     setProgress(getToolProgress(tool.id));
-  };
-
-  const handleMarkComplete = () => {
-    updateToolProgress(tool.id, { learningCompleted: true, learningProgress: 100 });
-    setProgress(getToolProgress(tool.id));
-  };
-
-  const handleStartAssessment = () => {
-    navigate(`/assessment/${tool.slug}`);
   };
 
   const badgeClass =
@@ -107,8 +92,7 @@ export const ToolDetailPage: React.FC = () => {
               { id: 'free-plan', label: '6. Free Plan Details' },
               { id: 'how-to-use', label: '7. How to Use (Step-by-Step)' },
               { id: 'practice', label: '8. Practical Exercise' },
-              { id: 'video-tutorial', label: '9. Video Tutorial' },
-              { id: 'assessment', label: '10. Take Assessment (50 Marks)' }
+              { id: 'video-tutorial', label: '9. Video Tutorial' }
             ].map(sec => (
               <a
                 key={sec.id}
@@ -129,24 +113,6 @@ export const ToolDetailPage: React.FC = () => {
               </a>
             ))}
           </nav>
-
-          {/* Quick Assessment CTA in sidebar */}
-          <div style={{ marginTop: '20px', paddingTop: '16px', borderTop: '1px solid var(--border)' }}>
-            <div style={{ fontSize: '12px', color: 'var(--muted)', marginBottom: '8px' }}>
-              Learning Progress: <strong style={{ color: 'var(--accent2)' }}>{progress.learningProgress}%</strong>
-            </div>
-            <div style={{ background: 'var(--surface2)', height: '6px', borderRadius: '3px', overflow: 'hidden', marginBottom: '14px' }}>
-              <div style={{ width: `${progress.learningProgress}%`, height: '100%', background: 'linear-gradient(90deg, var(--accent1), var(--accent2))' }} />
-            </div>
-
-            <button
-              className="btn-success"
-              onClick={handleStartAssessment}
-              style={{ width: '100%', fontSize: '13px', padding: '10px' }}
-            >
-              <Award size={16} /> Start Assessment
-            </button>
-          </div>
         </aside>
 
         {/* MAIN CONTENT AREA */}
@@ -239,12 +205,6 @@ export const ToolDetailPage: React.FC = () => {
                 <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
                   <Clock size={14} /> Est. Time: {tool.learningTime} mins
                 </span>
-
-                {progress.assessmentPassed ? (
-                  <span style={{ color: 'var(--accent2)', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '4px' }}>
-                    <Award size={14} /> Score: {progress.highestScore}/50 (Passed)
-                  </span>
-                ) : null}
               </div>
             </div>
           </section>
@@ -464,27 +424,6 @@ export const ToolDetailPage: React.FC = () => {
               </div>
             </section>
           )}
-
-          {/* SECTION 10 — Take Assessment */}
-          <section id="assessment" style={{ background: 'linear-gradient(135deg, #0e1220 0%, #161c32 100%)', border: '2px solid var(--accent1)', borderRadius: '20px', padding: '32px', textAlign: 'center', boxShadow: '0 0 30px rgba(108,99,255,0.2)' }}>
-            <Award size={48} color="var(--accent2)" style={{ margin: '0 auto 16px' }} />
-            <h2 style={{ fontFamily: 'Sora, sans-serif', fontSize: '26px', color: '#fff', marginBottom: '8px' }}>
-              Ready to Test Your Knowledge?
-            </h2>
-            <p style={{ color: 'var(--muted)', maxWidth: '500px', margin: '0 auto 24px', fontSize: '15px' }}>
-              Complete the 50-mark assessment (25 questions × 2 marks). Score 25/50 or higher to pass and earn your completion record.
-            </p>
-
-            <div style={{ display: 'flex', justifyContent: 'center', gap: '14px', flexWrap: 'wrap' }}>
-              <button className="btn-secondary" onClick={handleMarkComplete}>
-                <CheckCircle2 size={16} color="var(--accent5)" /> Mark Learning Complete
-              </button>
-
-              <button className="btn-success" onClick={handleStartAssessment} style={{ padding: '12px 28px', fontSize: '16px' }}>
-                <Award size={18} /> Start Assessment (50 Marks)
-              </button>
-            </div>
-          </section>
 
           {/* Next / Prev Tool Buttons */}
           <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '32px', gap: '16px' }}>

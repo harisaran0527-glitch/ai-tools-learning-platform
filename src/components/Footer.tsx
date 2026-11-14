@@ -39,7 +39,7 @@ export const Footer: React.FC = () => {
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '6px', fontSize: '12.5px' }}>
               <li>768 Verified AI Tools</li>
               <li>15 Core Categories</li>
-              <li>50-Question Assessments</li>
+              <li>Structured Step-by-Step Guides</li>
               <li><Link to="/admin" style={{ color: '#a78bfa', textDecoration: 'none' }}>Admin Access</Link></li>
             </ul>
           </div>
@@ -47,7 +47,7 @@ export const Footer: React.FC = () => {
       </div>
 
       <div style={{ maxWidth: '1200px', margin: '24px auto 0', paddingTop: '16px', borderTop: '1px solid rgba(255, 255, 255, 0.05)', textAlign: 'center', fontFamily: 'JetBrains Mono, monospace', fontSize: '11px', color: 'var(--text-subtle)' }}>
-        AI Verse © 2026 • Practical AI Tools Learning & Assessment Platform
+        AI Verse © 2026 • Practical AI Tools Learning Platform
       </div>
     </footer>
   );

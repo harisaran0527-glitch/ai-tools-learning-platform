@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Bookmark, Clock, CheckCircle2, Award, Zap, GitCompare } from 'lucide-react';
+import { Bookmark, Clock, GitCompare } from 'lucide-react';
 import { ToolSummary } from '../types/tool';
 import { getToolProgress, toggleBookmark } from '../lib/storage';
 import { ToolLogo } from './ToolLogo';
@@ -99,31 +99,9 @@ export const ToolCard: React.FC<ToolCardProps> = ({
         </div>
       </div>
 
-      {/* Footer Status & Compare action */}
-      <div style={{ borderTop: '1px solid var(--border)', paddingTop: '12px', marginTop: '12px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        {/* Status indicator */}
-        <div>
-          {progress.assessmentPassed ? (
-            <span className="status-pill passed">
-              <Award size={14} color="var(--accent2)" /> Assessment Passed ({progress.highestScore}/50)
-            </span>
-          ) : progress.learningCompleted ? (
-            <span className="status-pill passed">
-              <CheckCircle2 size={14} color="var(--accent5)" /> Learning Completed
-            </span>
-          ) : progress.started ? (
-            <span className="status-pill learning">
-              ◔ Learning ({progress.learningProgress}%)
-            </span>
-          ) : (
-            <span className="status-pill">
-              ○ Not Started
-            </span>
-          )}
-        </div>
-
-        {/* Compare Checkbox */}
-        {onToggleCompare && (
+      {/* Footer Compare action */}
+      {onToggleCompare && (
+        <div style={{ borderTop: '1px solid var(--border)', paddingTop: '10px', marginTop: '12px', display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
           <button
             className="interactive-btn"
             onClick={handleCompareClick}
@@ -142,8 +120,8 @@ export const ToolCard: React.FC<ToolCardProps> = ({
           >
             <GitCompare size={12} /> {isCompared ? 'Comparing' : 'Compare'}
           </button>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 };

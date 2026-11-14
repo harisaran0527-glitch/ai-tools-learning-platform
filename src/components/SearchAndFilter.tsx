@@ -100,7 +100,7 @@ export const SearchAndFilter: React.FC<SearchAndFilterProps> = ({
           <option value="Advanced">Advanced</option>
         </select>
 
-        {/* Learning Status Filter */}
+        {/* Bookmarks Filter */}
         <select
           value={filters.learningStatus || 'all'}
           onChange={e => onFilterChange({ learningStatus: e.target.value as any })}
@@ -114,11 +114,7 @@ export const SearchAndFilter: React.FC<SearchAndFilterProps> = ({
             fontSize: '13px'
           }}
         >
-          <option value="all">All Learning Statuses</option>
-          <option value="not-started">○ Not Started</option>
-          <option value="learning">◔ Learning In Progress</option>
-          <option value="completed">✓ Learning Completed</option>
-          <option value="passed">★ Assessment Passed</option>
+          <option value="all">All Tools</option>
           <option value="bookmarked">🔖 Bookmarked Tools</option>
         </select>
 
