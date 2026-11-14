@@ -160,7 +160,7 @@ export const ThemeStudio: React.FC<ThemeStudioProps> = ({ token }) => {
       await api('restore_theme', {target:selectedTarget}, token);
       await refreshThemes();
       setActiveTheme(structuredClone(ORIGINAL_AI_VERSE_PRESET));
-      setStatusMessage({text:'Original default restored successfully.',type:'success'});
+      setStatusMessage({text:'Original default restored.',type:'success'});
     } catch(e) { setStatusMessage({text:(e as Error).message,type:'error'}); }
     finally { setBusy(false); }
   };
