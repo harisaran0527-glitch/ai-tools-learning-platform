@@ -41,7 +41,16 @@ globalThis.fetch = async (url, init = {}) => {
       return new Response(null, { status: 204 });
     }
     if (init.method === 'DELETE') {
+      const targetMatch = String(url).match(/page_target=eq\.([^&]+)/);
+      if (targetMatch) {
+        bindingRows = bindingRows.filter(b => b.page_target !== decodeURIComponent(targetMatch[1]));
+      }
       return new Response(null, { status: 204 });
+    }
+    const targetMatch = String(url).match(/page_target=eq\.([^&]+)/);
+    if (targetMatch) {
+      const target = decodeURIComponent(targetMatch[1]);
+      return Response.json(bindingRows.filter(b => b.page_target === target));
     }
     return Response.json(bindingRows);
   }
@@ -449,6 +458,82 @@ test('direct signed upload verification: rejects spoofed content and auto-cleans
   // 5. Test tampered token rejection
   const tamperedRes = await call('verify_theme_media', { method: 'POST', token: 'admin', body: { path: permRes.body.path, token: 'tampered.ticket', mimeType: 'image/jpeg' } });
   assert.equal(tamperedRes.statusCode, 403);
+});
+
+test('universal video background: rejects temporary URLs, accepts persistent video with positioning, persists, and rolls back cleanly', async () => {
+  // 1. Reject publishing temporary blob: or file: or data: video URLs
+  const tempBlobTheme = {
+    id: 'custom-video-test-blob',
+    name: 'Temporary Video Theme',
+    pageTarget: 'global',
+    bgType: 'cinematic',
+    videoUrl: 'blob:https://ai-verse.test/uuid-1234',
+  };
+  const blobRes = await call('publish_theme', { method: 'POST', token: 'admin', body: { theme: tempBlobTheme, target: 'global' } });
+  assert.equal(blobRes.statusCode, 400);
+  assert.ok(blobRes.body.error.includes('Temporary browser or raw data URLs cannot be published'));
+
+  // 2. Publish valid custom video theme with Character Right positioning and overlay darkness
+  const videoTheme1 = {
+    id: 'custom-video-theme-1',
+    name: 'AI Verse Hero Video V1',
+    pageTarget: 'global',
+    bgType: 'cinematic',
+    videoUrl: 'https://database.test/storage/v1/object/public/theme-assets/bg1.mp4',
+    videoSettings: {
+      loop: true,
+      autoplay: true,
+      muted: true,
+      speed: 1.0,
+      staticFallbackUrl: 'https://database.test/storage/v1/object/public/theme-assets/poster1.jpg',
+      darkOverlay: 0.5,
+      position: '85% 50%',
+      fit: 'cover',
+      orientation: 'landscape',
+      aspectRatio: '16:9',
+      metadata: { width: 1920, height: 1080, duration: 15, orientation: 'landscape', aspectRatio: '16:9' },
+    },
+    motionType: 'none',
+  };
+  const pubRes1 = await call('publish_theme', { method: 'POST', token: 'admin', body: { theme: videoTheme1, target: 'global' } });
+  assert.equal(pubRes1.statusCode, 200);
+  assert.equal(pubRes1.body.published, true);
+
+  // 3. Verify public read returns the published video config for global visitors
+  const publicLive = await call('theme', { method: 'GET' });
+  assert.equal(publicLive.statusCode, 200);
+  assert.equal(publicLive.body.global.id, 'custom-video-theme-1');
+  assert.equal(publicLive.body.global.videoSettings.position, '85% 50%');
+  assert.equal(publicLive.body.global.videoSettings.darkOverlay, 0.5);
+
+  // 4. Publish replacement video V2 and verify previous_config is preserved
+  const videoTheme2 = {
+    id: 'custom-video-theme-2',
+    name: 'AI Verse Hero Video V2',
+    pageTarget: 'global',
+    bgType: 'cinematic',
+    videoUrl: 'https://database.test/storage/v1/object/public/theme-assets/bg2.mp4',
+    videoSettings: {
+      loop: true,
+      autoplay: true,
+      muted: true,
+      speed: 1.0,
+      position: '50% 50%',
+      fit: 'cover',
+    },
+  };
+  const pubRes2 = await call('publish_theme', { method: 'POST', token: 'admin', body: { theme: videoTheme2, target: 'global' } });
+  assert.equal(pubRes2.statusCode, 200);
+
+  // 5. Rollback to previous background
+  const rollbackRes = await call('rollback_theme', { method: 'POST', token: 'admin', body: { target: 'global' } });
+  assert.equal(rollbackRes.statusCode, 200);
+  assert.equal(rollbackRes.body.rolledBack, true);
+
+  // 6. Verify restored config is V1
+  const afterRollback = await call('theme', { method: 'GET' });
+  assert.equal(afterRollback.body.global.id, 'custom-video-theme-1');
+  assert.equal(afterRollback.body.global.videoSettings.position, '85% 50%');
 });
 
 test('settings integrity: admin session authorized, revision inspection, and catalog summary protection', async () => {

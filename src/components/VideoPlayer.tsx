@@ -12,7 +12,6 @@ interface VideoPlayerProps {
 export const VideoPlayer: React.FC<VideoPlayerProps> = ({ video, toolName, subcategory }) => {
   const [hasError, setHasError] = useState(false);
   const [activeStepIndex, setActiveStepIndex] = useState(0);
-  if (!video?.url) return <p style={{ color: 'var(--muted)' }}>Tutorial video not added yet</p>;
 
   // Default 10 Interactive Platform Tutorial Steps when YouTube video is unavailable
   const defaultSteps: InteractiveTutorialStep[] = video?.steps && video.steps.length > 0 ? video.steps : [
@@ -52,7 +51,6 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({ video, toolName, subca
 
   const isYouTube = video?.url && (video.url.includes('youtube.com') || video.url.includes('youtu.be'));
   const calculatedEmbedUrl = getEmbedUrl(video?.url, video?.embedUrl);
-  if (!isYouTube && video?.url) return <a href={video.url} target="_blank" rel="noopener noreferrer" className="btn-primary">Watch tutorial <ExternalLink size={16} /></a>;
 
   // Render YouTube Video Player if YouTube URL exists and no loading error
   if (isYouTube && calculatedEmbedUrl && !hasError) {

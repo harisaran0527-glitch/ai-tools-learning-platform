@@ -16,7 +16,8 @@ export type BackgroundType =
   | 'preset'
   | 'cinematic'
   | 'cosmic'
-  | 'transparent';
+  | 'transparent'
+  | 'video';
 
 export type MotionType =
   | 'none'
@@ -60,6 +61,16 @@ export interface ImageSettings {
   opacity: number; // percentage 0 - 100
 }
 
+export interface VideoMetadata {
+  width?: number;
+  height?: number;
+  duration?: number;
+  fileSize?: number;
+  fileName?: string;
+  orientation?: 'landscape' | 'portrait' | 'square' | 'auto';
+  aspectRatio?: string;
+}
+
 export interface VideoSettings {
   loop: boolean;
   autoplay: boolean;
@@ -67,6 +78,11 @@ export interface VideoSettings {
   speed: number; // 0.25 - 2.0
   staticFallbackUrl: string;
   darkOverlay: number; // 0 - 1
+  position?: string; // e.g. "85% 50%" (character right), "center", "left center", etc.
+  fit?: 'cover' | 'contain'; // default 'cover'
+  orientation?: 'landscape' | 'portrait' | 'square' | 'auto';
+  aspectRatio?: string;
+  metadata?: VideoMetadata;
 }
 
 export interface MotionSettings {

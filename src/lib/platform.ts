@@ -29,7 +29,12 @@ export async function api<T>(
   if (!response.ok) throw new Error(result.error || "Request failed.");
   return result;
 }
-export async function refreshCatalog() {
+let catalogRequest: Promise<void> | undefined;
+export function refreshCatalog(): Promise<void> {
+  if (!catalogRequest) catalogRequest = loadCatalog().finally(() => { catalogRequest = undefined; });
+  return catalogRequest;
+}
+async function loadCatalog() {
   const overrides = await api<AITool[]>("catalog");
   for (const tool of overrides) {
     const index = catalogSummaries.findIndex((t) => t.slug === tool.slug);

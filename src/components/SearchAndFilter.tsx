@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Search, Filter, RotateCcw, SortAsc } from 'lucide-react';
 import { FilterOptions } from '../lib/searchIndex';

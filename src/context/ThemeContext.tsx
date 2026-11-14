@@ -27,24 +27,22 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   // Load initial bindings from localStorage or default
   const [bindings, setBindings] = useState<Record<PageTarget, ThemeConfig>>(() => {
     try {
-      const saved = null;
+      const saved = typeof window !== 'undefined' ? localStorage.getItem(LOCAL_STORAGE_KEY) : null;
       if (saved) {
-        return JSON.parse(saved);
+        const parsed = JSON.parse(saved);
+        if (parsed && typeof parsed === 'object') {
+          return {
+            global: parsed.global || ORIGINAL_AI_VERSE_PRESET,
+            ...parsed,
+          };
+        }
       }
     } catch {
       // Ignore parse failure
     }
     return {
       global: ORIGINAL_AI_VERSE_PRESET,
-      home: ORIGINAL_AI_VERSE_PRESET,
-      catalog: ORIGINAL_AI_VERSE_PRESET,
-      tool_detail: ORIGINAL_AI_VERSE_PRESET,
-      prompting: ORIGINAL_AI_VERSE_PRESET,
-      prompting_practice: ORIGINAL_AI_VERSE_PRESET,
-      admin: ORIGINAL_AI_VERSE_PRESET,
-      admin_login: ORIGINAL_AI_VERSE_PRESET,
-      assessment: ORIGINAL_AI_VERSE_PRESET,
-    };
+    } as Record<PageTarget, ThemeConfig>;
   });
 
   const [previewTheme, setPreviewTheme] = useState<ThemeConfig | null>(null);

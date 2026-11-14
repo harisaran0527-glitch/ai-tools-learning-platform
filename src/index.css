@@ -529,3 +529,11 @@ body {
   .stats-row { gap: 16px; }
   .container { padding: 20px 14px 60px; }
 }
+
+.theme-background-container { isolation:isolate; }
+body:has(.global-theme-bound) #root > div { position:relative; z-index:1; background:transparent !important; }
+body:has(.global-theme-bound) .admin-shell { background:transparent; }
+@media(max-width:768px) { .admin-header-row,.assessment-bottom-actions { flex-wrap:wrap;gap:10px; }.admin-content,.assessment-editor-main,.assessment-questions-nav {min-width:0;}.question-nav-btn {flex-shrink:0;} }
+@media(pointer:coarse) { .admin-shell input,.admin-shell select,.admin-shell textarea {font-size:16px;} }
+.admin-shell button,.admin-shell a {touch-action:manipulation;}
+.admin-shell button:focus-visible,.admin-shell input:focus-visible,.admin-shell select:focus-visible {outline:2px solid #a78bfa;outline-offset:3px;}

@@ -28,6 +28,9 @@ create table if not exists public.academy_theme_bindings (
   published_by uuid references auth.users(id)
 );
 
+-- Safely ensure previous_config column exists on pre-existing tables
+alter table public.academy_theme_bindings add column if not exists previous_config jsonb;
+
 -- 3. Row Level Security & Zero Direct Client Access
 -- Public and admin clients fetch and mutate themes solely through the backend API (/api/platform).
 -- All direct anon/authenticated PostgREST access is revoked; only the server-side service role is granted access.

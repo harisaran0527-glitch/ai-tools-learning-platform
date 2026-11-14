@@ -1037,11 +1037,14 @@ export default async function handler(req, res) {
     if (slug && !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))
       fail(400, "Invalid tool slug.");
     const body = req.body || {};
-    if (JSON.stringify(body).length > 250000)
+    const isMediaUploadAction = action === 'upload_theme_media' || action === 'theme-upload';
+    const isThemeSavePublish = action === 'save_theme' || action === 'theme-save' || action === 'publish_theme' || action === 'theme-publish';
+    const maxBodyLength = isMediaUploadAction ? 22 * 1024 * 1024 : (isThemeSavePublish ? 5 * 1024 * 1024 : 250000);
+    if (JSON.stringify(body).length > maxBodyLength)
       fail(413, "Request is too large.");
     const method = req.method;
     const VALID_THEME_TARGETS = ['global','home','catalog','tool_detail','prompting','prompting_practice','admin','admin_login','assessment'];
-    const VALID_BG_TYPES = ['solid','gradient','image','preset','cinematic','cosmic','transparent'];
+    const VALID_BG_TYPES = ['solid','gradient','image','preset','cinematic','cosmic','transparent','video'];
     const VALID_MOTION_TYPES = ['none','starfield','cosmic_galaxy','aurora_lights','floating_particles','neon_waves','animated_gradients','glowing_orbs','parallax','interactive_particles','video','lightweight_3d'];
 
     function validateThemeConfig(theme) {
@@ -1061,6 +1064,9 @@ export default async function handler(req, res) {
         }
       }
       if (theme.videoUrl) {
+        if (theme.videoUrl.startsWith('blob:') || theme.videoUrl.startsWith('file:')) {
+          fail(400, 'Temporary browser or raw data URLs cannot be published. Please upload the video to storage first.');
+        }
         if (theme.videoUrl.startsWith('data:video/')) {
           const match = theme.videoUrl.match(/^data:video\/(mp4|webm);base64,[A-Za-z0-9+/=]+$/);
           if (!match) fail(400, 'Invalid background video format.');
@@ -1137,6 +1143,9 @@ export default async function handler(req, res) {
       if (action === 'publish_theme' || action === 'theme-publish') {
         const theme = validateThemeConfig(body.theme || body);
         if (typeof theme.id !== 'string' || !/^[a-zA-Z0-9-]{1,100}$/.test(theme.id) || theme.id.startsWith('preset-')) fail(400, 'Create a custom theme before publishing a preset.');
+        if (theme.videoUrl && (theme.videoUrl.startsWith('blob:') || theme.videoUrl.startsWith('file:') || theme.videoUrl.startsWith('data:'))) {
+          fail(400, 'Temporary browser or raw data URLs cannot be published as video background. Upload the video to storage first.');
+        }
         const target = body.target || theme.pageTarget || 'global';
         await db('academy_themes?on_conflict=id', {
           method:'POST', headers:{Prefer:'resolution=merge-duplicates,return=minimal'},
@@ -1307,7 +1316,7 @@ export default async function handler(req, res) {
 
         const key = config('SUPABASE_SERVICE_ROLE_KEY');
         const signUrl = `${config('SUPABASE_URL')}/storage/v1/object/upload/sign/theme-assets/${assetPath}`;
-        const signRes = await fetch(signUrl, {
+        let signRes = await fetch(signUrl, {
           method: 'POST',
           headers: {
             apikey: key,
@@ -1316,6 +1325,35 @@ export default async function handler(req, res) {
           },
           body: JSON.stringify({}),
         });
+
+        if (!signRes.ok && signRes.status === 404) {
+          try {
+            await fetch(`${config('SUPABASE_URL')}/storage/v1/bucket`, {
+              method: 'POST',
+              headers: {
+                apikey: key,
+                Authorization: `Bearer ${key}`,
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                id: 'theme-assets',
+                name: 'theme-assets',
+                public: true,
+                file_size_limit: 15728640,
+                allowed_mime_types: ['image/jpeg', 'image/png', 'image/webp', 'video/mp4', 'video/webm'],
+              }),
+            });
+            signRes = await fetch(signUrl, {
+              method: 'POST',
+              headers: {
+                apikey: key,
+                Authorization: `Bearer ${key}`,
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({}),
+            });
+          } catch {}
+        }
 
         if (!signRes.ok) {
           fail(502, 'Unable to generate signed upload URL from storage service.');
@@ -1396,13 +1434,21 @@ export default async function handler(req, res) {
           }
         };
 
-        const checkRes = await fetch(`${config('SUPABASE_URL')}/storage/v1/object/theme-assets/${assetPath}`, {
+        let checkRes = await fetch(`${config('SUPABASE_URL')}/storage/v1/object/theme-assets/${assetPath}`, {
           headers: {
             apikey: key,
             Authorization: `Bearer ${key}`,
             Range: 'bytes=0-8191',
           },
         });
+
+        if (!checkRes.ok) {
+          checkRes = await fetch(`${config('SUPABASE_URL')}/storage/v1/object/public/theme-assets/${assetPath}`, {
+            headers: {
+              Range: 'bytes=0-8191',
+            },
+          });
+        }
 
         if (!checkRes.ok) {
           fail(404, 'Uploaded asset not found in storage. Ensure direct upload completed.');

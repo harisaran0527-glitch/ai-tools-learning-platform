@@ -4,7 +4,7 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { HomePage } from './pages/HomePage';
 import { refreshCatalog } from './lib/platform';
-import { ThemeProvider } from './context/ThemeContext';
+import { ThemeProvider, useTheme } from './context/ThemeContext';
 
 const AdminPage = lazy(() => import('./pages/AdminPage'));
 const PromptingPage = lazy(() => import('./pages/PromptingPage'));
@@ -55,59 +55,85 @@ export const App: React.FC = () => {
   return (
     <BrowserRouter>
       <ThemeProvider>
-        <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: 'var(--bg)', color: 'var(--text)', position: 'relative' }}>
-          <Navbar />
-
-          <div style={{ flexGrow: 1, position: 'relative', zIndex: 1 }}>
-            <Suspense fallback={<LoadingFallback />}>
-            <Routes>
-              <Route path="/admin/*" element={<AdminPage />} />
-              <Route path="/prompting" element={<PromptingPage />} />
-              <Route path="/prompting/practice" element={<PromptingPracticePage />} />
-              <Route path="/practice" element={<Navigate to="/prompting/practice" replace />} />
-              <Route
-                path="/"
-                element={
-                  <HomePage
-                    comparedSlugs={comparedSlugs}
-                    onToggleCompare={handleToggleCompare}
-                  />
-                }
-              />
-              <Route path="/tools/:slug" element={<ToolDetailPage />} />
-              <Route path="/assessment/:slug" element={<AssessmentPage />} />
-              <Route path="/results/:attemptId" element={<AssessmentResultPage />} />
-              <Route path="/dashboard" element={<DashboardPage />} />
-              <Route
-                path="/bookmarks"
-                element={
-                  <BookmarksPage
-                    comparedSlugs={comparedSlugs}
-                    onToggleCompare={handleToggleCompare}
-                  />
-                }
-              />
-              <Route path="/learning-paths" element={<LearningPathsPage />} />
-              <Route path="/faculty-path" element={<FacultyPathPage />} />
-              <Route
-                path="/compare"
-                element={
-                  <ComparePage
-                    comparedSlugs={comparedSlugs}
-                    onRemoveCompare={handleRemoveCompare}
-                    onClearCompare={handleClearCompare}
-                  />
-                }
-              />
-              <Route path="*" element={<HomePage comparedSlugs={comparedSlugs} onToggleCompare={handleToggleCompare} />} />
-            </Routes>
-          </Suspense>
-        </div>
-
-        <Footer />
-      </div>
+        <AppContent
+          comparedSlugs={comparedSlugs}
+          handleToggleCompare={handleToggleCompare}
+          handleRemoveCompare={handleRemoveCompare}
+          handleClearCompare={handleClearCompare}
+        />
       </ThemeProvider>
     </BrowserRouter>
+  );
+};
+
+const AppContent: React.FC<{
+  comparedSlugs: string[];
+  handleToggleCompare: (slug: string) => void;
+  handleRemoveCompare: (slug: string) => void;
+  handleClearCompare: () => void;
+}> = ({ comparedSlugs, handleToggleCompare, handleRemoveCompare, handleClearCompare }) => {
+  const { currentTheme } = useTheme();
+  const isCustomTheme = currentTheme && (currentTheme.id !== 'preset-original-default' || currentTheme.bgType !== 'preset' || Boolean(currentTheme.videoUrl));
+
+  return (
+    <div style={{
+      minHeight: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      background: isCustomTheme ? 'transparent' : 'var(--bg)',
+      color: 'var(--text)',
+      position: 'relative'
+    }}>
+      <Navbar />
+
+      <div style={{ flexGrow: 1, position: 'relative', zIndex: 1 }}>
+        <Suspense fallback={<LoadingFallback />}>
+        <Routes>
+          <Route path="/admin/*" element={<AdminPage />} />
+          <Route path="/prompting" element={<PromptingPage />} />
+          <Route path="/prompting/practice" element={<PromptingPracticePage />} />
+          <Route path="/practice" element={<Navigate to="/prompting/practice" replace />} />
+          <Route
+            path="/"
+            element={
+              <HomePage
+                comparedSlugs={comparedSlugs}
+                onToggleCompare={handleToggleCompare}
+              />
+            }
+          />
+          <Route path="/tools/:slug" element={<ToolDetailPage />} />
+          <Route path="/assessment/:slug" element={<AssessmentPage />} />
+          <Route path="/results/:attemptId" element={<AssessmentResultPage />} />
+          <Route path="/dashboard" element={<DashboardPage />} />
+          <Route
+            path="/bookmarks"
+            element={
+              <BookmarksPage
+                comparedSlugs={comparedSlugs}
+                onToggleCompare={handleToggleCompare}
+              />
+            }
+          />
+          <Route path="/learning-paths" element={<LearningPathsPage />} />
+          <Route path="/faculty-path" element={<FacultyPathPage />} />
+          <Route
+            path="/compare"
+            element={
+              <ComparePage
+                comparedSlugs={comparedSlugs}
+                onRemoveCompare={handleRemoveCompare}
+                onClearCompare={handleClearCompare}
+              />
+            }
+          />
+          <Route path="*" element={<HomePage comparedSlugs={comparedSlugs} onToggleCompare={handleToggleCompare} />} />
+        </Routes>
+      </Suspense>
+    </div>
+
+    <Footer />
+  </div>
   );
 };
 
