@@ -1,5 +1,5 @@
 import React, { useState, lazy, Suspense } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { HomePage } from './pages/HomePage';
@@ -64,6 +64,7 @@ export const App: React.FC = () => {
               <Route path="/admin/*" element={<AdminPage />} />
               <Route path="/prompting" element={<PromptingPage />} />
               <Route path="/prompting/practice" element={<PromptingPracticePage />} />
+              <Route path="/practice" element={<Navigate to="/prompting/practice" replace />} />
               <Route
                 path="/"
                 element={

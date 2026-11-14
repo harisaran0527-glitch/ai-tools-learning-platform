@@ -735,14 +735,14 @@ test('automatic free AI model failover, bounded timeouts, circuit breaker cooldo
   assert.equal(primaryResult.body.model, 'gemini-3.5-flash-lite');
   assert.ok(primaryResult.body.sections[0].evidence.includes('gemini-3.5-flash-lite'));
 
-  // 4. Primary hits 429 rate limit -> Fast failover to Secondary (gemini-3.8-flash)
+  // 4. Primary hits 429 rate limit -> Fast failover to Secondary (gemini-3.5-flash)
   simulateGeminiModelsFail['gemini-3.5-flash-lite'] = true;
   const secondaryResult = await call('analyze', { method: 'POST', body: { prompt: testPrompt, challenge: 0 } });
   assert.equal(secondaryResult.statusCode, 200);
   assert.equal(secondaryResult.body.mode, 'ai');
   assert.equal(secondaryResult.body.provider, 'gemini');
-  assert.equal(secondaryResult.body.model, 'gemini-3.8-flash');
-  assert.ok(secondaryResult.body.sections[0].evidence.includes('gemini-3.8-flash'));
+  assert.equal(secondaryResult.body.model, 'gemini-3.5-flash');
+  assert.ok(secondaryResult.body.sections[0].evidence.includes('gemini-3.5-flash'));
 
   // 5. Cooldown check: Primary is now marked as cooling down in health check
   const healthWithCooldown = await call('provider_health');
@@ -750,16 +750,14 @@ test('automatic free AI model failover, bounded timeouts, circuit breaker cooldo
   assert.equal(primaryModelStatus.status, 'cooldown');
   assert.ok(primaryModelStatus.cooldownSeconds > 0);
 
-  // 6. Secondary also hits 429 and Tertiary hits 429 -> Fast failover to Groq Free Tier (llama-3.3-70b-versatile)
-  simulateGeminiModelsFail['gemini-3.8-flash'] = true;
-  simulateGeminiModelsFail['gemini-2.5-flash'] = true;
-  simulateGeminiModelsFail['gemini-4-hydrogen'] = true;
+  // 6. Secondary also hits 429 -> Fast failover to Groq Free Tier (openai/gpt-oss-20b)
+  simulateGeminiModelsFail['gemini-3.5-flash'] = true;
   const groqResult = await call('analyze', { method: 'POST', body: { prompt: testPrompt, challenge: 0 } });
   assert.equal(groqResult.statusCode, 200);
   assert.equal(groqResult.body.mode, 'ai');
   assert.equal(groqResult.body.provider, 'groq');
-  assert.equal(groqResult.body.model, 'llama-3.3-70b-versatile');
-  assert.ok(groqResult.body.sections[0].evidence.includes('llama-3.3-70b-versatile'));
+  assert.equal(groqResult.body.model, 'openai/gpt-oss-20b');
+  assert.ok(groqResult.body.sections[0].evidence.includes('openai/gpt-oss-20b'));
 
   // 7. All AI providers fail -> Immediate, graceful fallback to Offline Rule-Based Review
   simulateGroqFail = true;

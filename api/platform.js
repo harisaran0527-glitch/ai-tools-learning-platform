@@ -609,6 +609,15 @@ Key Findings & Draft Output:
 const modelCooldowns = new Map();
 const modelLastInfo = new Map();
 
+function formatPublicError(status) {
+  if (!status) return null;
+  if (status === 429) return "Rate limit exceeded (429)";
+  if (status === 404) return "Model not found (404)";
+  if (status === 400) return "Invalid model request (400)";
+  if (status === 408 || status === 504) return "Request timed out";
+  return `Provider error (${status})`;
+}
+
 function isModelCoolingDown(key) {
   const expiresAt = modelCooldowns.get(key);
   if (!expiresAt) return false;
@@ -630,11 +639,10 @@ function getProviderStatus() {
 
   const candidateModels = [
     { provider: 'gemini', model: process.env.GEMINI_MODEL || 'gemini-3.5-flash-lite', label: 'Gemini 3.5 Flash-Lite (Primary Free Tier)', configured: geminiConfigured },
-    { provider: 'gemini', model: 'gemini-3.8-flash', label: 'Gemini 3.8 Flash (Secondary Free Tier)', configured: geminiConfigured },
-    { provider: 'gemini', model: 'gemini-2.5-flash', label: 'Gemini 2.5 Flash (Tertiary Free Tier)', configured: geminiConfigured },
-    { provider: 'gemini', model: 'gemini-4-hydrogen', label: 'Gemini 4 Hydrogen (Fast Free Tier)', configured: geminiConfigured },
-    { provider: 'groq', model: 'llama-3.3-70b-versatile', label: 'Llama 3.3 70B (Groq Free Tier)', configured: groqConfigured },
-    { provider: 'groq', model: 'llama-3.1-8b-instant', label: 'Llama 3.1 8B Instant (Groq Free Tier)', configured: groqConfigured },
+    { provider: 'gemini', model: 'gemini-3.5-flash', label: 'Gemini 3.5 Flash (Secondary Free Tier)', configured: geminiConfigured },
+    { provider: 'groq', model: 'openai/gpt-oss-20b', label: 'OpenAI GPT-OSS 20B (Groq Free Tier)', configured: groqConfigured },
+    { provider: 'groq', model: 'openai/gpt-oss-120b', label: 'OpenAI GPT-OSS 120B (Groq Free Tier)', configured: groqConfigured },
+    { provider: 'groq', model: 'qwen/qwen3.6-27b', label: 'Qwen 3.6 27B (Groq Free Tier)', configured: groqConfigured },
   ];
 
   const models = candidateModels.map((m) => {
@@ -665,7 +673,7 @@ function getProviderStatus() {
 
 async function callGeminiApi(instructions, input, structured, modelName, apiKey, timeoutMs = 6000) {
   try {
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${apiKey}`;
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent`;
     const response = await fetch(url, {
       method: "POST",
       headers: {
@@ -935,18 +943,16 @@ async function model(instructions, input, structured = false) {
   if (geminiKey) {
     const preferredGemini = process.env.GEMINI_MODEL || "gemini-3.5-flash-lite";
     candidates.push({ provider: "gemini", model: preferredGemini, key: geminiKey });
-    const additional = ["gemini-3.8-flash", "gemini-2.5-flash", "gemini-4-hydrogen"];
-    for (const m of additional) {
-      if (m !== preferredGemini) {
-        candidates.push({ provider: "gemini", model: m, key: geminiKey });
-      }
+    if (preferredGemini !== "gemini-3.5-flash") {
+      candidates.push({ provider: "gemini", model: "gemini-3.5-flash", key: geminiKey });
     }
   }
 
-  // 2. Optional Groq Free-Tier Models
+  // 2. Optional Groq Free-Tier Models (Active Replacements)
   if (groqKey) {
-    candidates.push({ provider: "groq", model: "llama-3.3-70b-versatile", key: groqKey });
-    candidates.push({ provider: "groq", model: "llama-3.1-8b-instant", key: groqKey });
+    candidates.push({ provider: "groq", model: "openai/gpt-oss-20b", key: groqKey });
+    candidates.push({ provider: "groq", model: "openai/gpt-oss-120b", key: groqKey });
+    candidates.push({ provider: "groq", model: "qwen/qwen3.6-27b", key: groqKey });
   }
 
   // Fast failover iteration
@@ -989,7 +995,7 @@ async function model(instructions, input, structured = false) {
     const status = res ? res.status : 500;
     modelLastInfo.set(candidateKey, {
       status,
-      error: res?.error ? (typeof res.error === "string" ? res.error.slice(0, 300) : JSON.stringify(res.error).slice(0, 300)) : "request failed",
+      error: formatPublicError(status),
       timestamp: Date.now(),
     });
     if (status === 429) {
@@ -1849,7 +1855,7 @@ export default async function handler(req, res) {
           }
         }
       } catch (err) {
-        console.warn("AI evaluation model failed or quota resting:", err.message);
+        console.warn("AI evaluation model failed or quota resting:", err?.name || "Inference error");
       }
 
       let sections;
