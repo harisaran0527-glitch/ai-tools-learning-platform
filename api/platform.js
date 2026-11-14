@@ -642,7 +642,7 @@ function getProviderStatus() {
     { provider: 'gemini', model: 'gemini-3.5-flash', label: 'Gemini 3.5 Flash (Secondary Free Tier)', configured: geminiConfigured },
     { provider: 'groq', model: 'openai/gpt-oss-20b', label: 'OpenAI GPT-OSS 20B (Groq Free Tier)', configured: groqConfigured },
     { provider: 'groq', model: 'openai/gpt-oss-120b', label: 'OpenAI GPT-OSS 120B (Groq Free Tier)', configured: groqConfigured },
-    { provider: 'groq', model: 'qwen/qwen3.6-27b', label: 'Qwen 3.6 27B (Groq Free Tier)', configured: groqConfigured },
+    { provider: 'groq', model: 'qwen/qwen3.8-27b', label: 'Qwen 3.8 27B (Groq Free Tier)', configured: groqConfigured },
   ];
 
   const models = candidateModels.map((m) => {
@@ -952,7 +952,7 @@ async function model(instructions, input, structured = false) {
   if (groqKey) {
     candidates.push({ provider: "groq", model: "openai/gpt-oss-20b", key: groqKey });
     candidates.push({ provider: "groq", model: "openai/gpt-oss-120b", key: groqKey });
-    candidates.push({ provider: "groq", model: "qwen/qwen3.6-27b", key: groqKey });
+    candidates.push({ provider: "groq", model: "qwen/qwen3.8-27b", key: groqKey });
   }
 
   // Fast failover iteration
