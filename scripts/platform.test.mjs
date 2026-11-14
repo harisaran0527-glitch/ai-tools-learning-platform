@@ -7,7 +7,7 @@ after(() => { globalThis.fetch = originalFetch; });
 Object.assign(process.env, { SUPABASE_URL: 'https://database.test', SUPABASE_ANON_KEY: 'test-anon', SUPABASE_SERVICE_ROLE_KEY: 'test-service', ADMIN_USER_IDS: 'admin-id', OPENAI_API_KEY: 'test-model', PRACTICE_TOKEN_SECRET: 'test-signing-secret' });
 let rows = [], modelScores = [15,15,20,15,10,10,5,10], allowed = true;
 let themeRows = [], bindingRows = [], promptExampleRows = [];
-let simulateResponsesFail = false, codeFenced = false;
+let simulateResponsesFail = false, codeFenced = false, simulateGeminiFail = false;
 export const storageObjects = new Map();
 globalThis.fetch = async (url, init = {}) => {
   if (String(url).includes('/auth/v1/token')) {
@@ -67,6 +67,19 @@ globalThis.fetch = async (url, init = {}) => {
       return Response.json(promptExampleRows.filter(e => e.status === 'published'));
     }
     return Response.json(promptExampleRows);
+  }
+  if (String(url).includes('generativelanguage.googleapis.com')) {
+    if (simulateGeminiFail) {
+      return new Response(JSON.stringify({ error: { code: 429, message: 'Resource has been exhausted (e.g. check quota).' } }), { status: 429 });
+    }
+    const request = JSON.parse(init.body);
+    const text = request.generationConfig?.responseMimeType === 'application/json'
+      ? (codeFenced ? `\`\`\`json\n${JSON.stringify({ sections: modelScores.map(score => ({ score, evidence: 'Gemini evidence', feedback: 'Gemini feedback' })) })}\n\`\`\``
+                    : JSON.stringify({ sections: modelScores.map(score => ({ score, evidence: 'Gemini evidence', feedback: 'Gemini feedback' })) }))
+      : 'Execution preview';
+    return Response.json({
+      candidates: [{ content: { parts: [{ text }] } }],
+    });
   }
   if (String(url).includes('/responses')) {
     if (simulateResponsesFail) {
@@ -601,4 +614,72 @@ test('prompt analysis regression: handles markdown code fences, fallback to chat
   // Reset test flags
   codeFenced = false;
   simulateResponsesFail = false;
+});
+
+test('gemini free-tier integration and graceful offline rule-based review fallback', async () => {
+  allowed = true;
+  // 1. Abuse prevention: prompt length > 4000
+  const oversized = await call('analyze', {
+    method: 'POST',
+    body: { prompt: 'a'.repeat(4001), challenge: 0 }
+  });
+  assert.equal(oversized.statusCode, 400);
+
+  // 2. Gemini Free-Tier mode
+  process.env.GEMINI_API_KEY = 'test-gemini-key';
+  simulateGeminiFail = false;
+  modelScores = [15, 15, 20, 15, 10, 10, 5, 10];
+  const geminiResult = await call('analyze', {
+    method: 'POST',
+    body: { prompt: 'Write a comprehensive guide for teaching Python to beginners with 5 steps and code examples.', challenge: 0 }
+  });
+  assert.equal(geminiResult.statusCode, 200);
+  assert.equal(geminiResult.body.mode, 'ai');
+  assert.equal(geminiResult.body.provider, 'gemini');
+  assert.equal(geminiResult.body.score, 100);
+  assert.ok(geminiResult.body.ticket);
+
+  // 3. Quota exhausted (429) -> Graceful switch to clearly labeled offline rule-based review
+  simulateGeminiFail = true;
+  delete process.env.OPENAI_API_KEY; // Ensure no paid OpenAI fallback occurs
+
+  // Comprehensive prompt meeting all 8 criteria
+  const strongPrompt = 'You are an experienced high school physics teacher. Your target audience is 10th-grade beginners. Write a comprehensive 5-step tutorial teaching how to install Python 3.12 on Windows. Must include: 1. Download installer, 2. Add to PATH checkbox, 3. Verify in command prompt. Do not use external third-party package managers. Here is the reference url: https://python.org/downloads. Format as a step-by-step markdown guide with code blocks. Write in an approachable, concise tone. Before outputting, verify that all 5 steps are clear and tested for beginners.';
+
+  const ruleResult = await call('analyze', {
+    method: 'POST',
+    body: { prompt: strongPrompt, challenge: 0 }
+  });
+  assert.equal(ruleResult.statusCode, 200);
+  assert.equal(ruleResult.body.mode, 'rule-based');
+  assert.equal(ruleResult.body.provider, 'offline-rules');
+  assert.ok(ruleResult.body.label.includes('Rule-Based'));
+  assert.ok(ruleResult.body.notice.includes('deterministic'));
+  assert.equal(ruleResult.body.sections.length, 8);
+  assert.ok(ruleResult.body.score >= 70);
+  assert.ok(ruleResult.body.ticket);
+
+  // Test execution in offline mode
+  const execResult = await call('execute', {
+    method: 'POST',
+    body: { prompt: strongPrompt, challenge: 0, ticket: ruleResult.body.ticket }
+  });
+  assert.equal(execResult.statusCode, 200);
+  assert.ok(execResult.body.output.includes('Practice Execution Preview'));
+
+  // Weak prompt test in offline mode
+  const weakResult = await call('analyze', {
+    method: 'POST',
+    body: { prompt: 'Tell me about python.', challenge: 0 }
+  });
+  assert.equal(weakResult.statusCode, 200);
+  assert.equal(weakResult.body.mode, 'rule-based');
+  assert.ok(weakResult.body.score < 70);
+  assert.equal(weakResult.body.ticket, undefined);
+  assert.ok(weakResult.body.sections.some(s => s.status === 'Missing'));
+
+  // Reset test environment
+  simulateGeminiFail = false;
+  delete process.env.GEMINI_API_KEY;
+  process.env.OPENAI_API_KEY = 'test-model';
 });

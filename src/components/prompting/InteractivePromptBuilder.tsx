@@ -761,6 +761,17 @@ export const InteractivePromptBuilder: React.FC<InteractivePromptBuilderProps> =
                       {qualityBand(analysis.score)}
                     </span>
                   </div>
+                  {analysis.mode === 'rule-based' ? (
+                    <div style={{ marginTop: '6px', fontSize: '11px', color: '#fcd34d', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                      <span>📋</span>
+                      <span style={{ fontWeight: 600 }}>Rule-Based Review (Offline Mode — Free Quota Protected)</span>
+                    </div>
+                  ) : analysis.mode === 'ai' ? (
+                    <div style={{ marginTop: '6px', fontSize: '11px', color: '#c4b5fd', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                      <span>✨</span>
+                      <span style={{ fontWeight: 600 }}>Evaluated by AI (Gemini Free-Tier)</span>
+                    </div>
+                  ) : null}
                 </div>
 
                 {/* Live Model Execution Gate */}

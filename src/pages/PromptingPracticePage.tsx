@@ -535,6 +535,52 @@ export default function PromptingPracticePage() {
                 ? "Detailed feedback generated across the 8 criteria."
                 : "Submit your prompt to see its component strengths."}
             </div>
+
+            {analysis?.mode === "rule-based" ? (
+              <div
+                style={{
+                  marginTop: "8px",
+                  padding: "6px 10px",
+                  background: "rgba(245, 158, 11, 0.15)",
+                  border: "1px solid rgba(245, 158, 11, 0.4)",
+                  borderRadius: "6px",
+                  fontSize: "11px",
+                  color: "#fcd34d",
+                  textAlign: "center",
+                  lineHeight: "1.4",
+                }}
+              >
+                <div style={{ fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center", gap: "5px" }}>
+                  <span>📋</span>
+                  <span>Rule-Based Review (Offline Mode)</span>
+                </div>
+                {analysis.notice && (
+                  <div style={{ fontSize: "10.5px", color: "#fbbf24", marginTop: "3px" }}>
+                    {analysis.notice}
+                  </div>
+                )}
+              </div>
+            ) : analysis?.mode === "ai" ? (
+              <div
+                style={{
+                  marginTop: "8px",
+                  padding: "4px 8px",
+                  background: "rgba(99, 102, 241, 0.15)",
+                  border: "1px solid rgba(99, 102, 241, 0.3)",
+                  borderRadius: "6px",
+                  fontSize: "11px",
+                  color: "#c4b5fd",
+                  fontWeight: 600,
+                  display: "inline-flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "5px",
+                }}
+              >
+                <span>✨</span>
+                <span>Evaluated by AI (Gemini Free-Tier)</span>
+              </div>
+            ) : null}
           </div>
 
           <div style={{ display: "flex", flexDirection: "column", gap: "8px", overflowY: "auto", maxHeight: "380px" }}>

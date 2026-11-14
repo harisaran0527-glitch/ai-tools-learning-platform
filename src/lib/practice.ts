@@ -63,6 +63,10 @@ export const qualityBand = (score: number) =>
 export interface Analysis {
   score: number;
   ticket?: string;
+  mode?: "ai" | "rule-based";
+  provider?: string;
+  label?: string;
+  notice?: string;
   sections: {
     label: string;
     max: number;
