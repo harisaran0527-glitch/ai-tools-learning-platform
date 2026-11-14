@@ -7,7 +7,8 @@ after(() => { globalThis.fetch = originalFetch; });
 Object.assign(process.env, { SUPABASE_URL: 'https://database.test', SUPABASE_ANON_KEY: 'test-anon', SUPABASE_SERVICE_ROLE_KEY: 'test-service', ADMIN_USER_IDS: 'admin-id', OPENAI_API_KEY: 'test-model', PRACTICE_TOKEN_SECRET: 'test-signing-secret' });
 let rows = [], modelScores = [15,15,20,15,10,10,5,10], allowed = true;
 let themeRows = [], bindingRows = [], promptExampleRows = [];
-let simulateResponsesFail = false, codeFenced = false, simulateGeminiFail = false;
+let simulateResponsesFail = false, codeFenced = false, simulateGeminiFail = false, simulateGroqFail = false;
+let simulateGeminiModelsFail = {};
 export const storageObjects = new Map();
 globalThis.fetch = async (url, init = {}) => {
   if (String(url).includes('/auth/v1/token')) {
@@ -69,16 +70,31 @@ globalThis.fetch = async (url, init = {}) => {
     return Response.json(promptExampleRows);
   }
   if (String(url).includes('generativelanguage.googleapis.com')) {
-    if (simulateGeminiFail) {
-      return new Response(JSON.stringify({ error: { code: 429, message: 'Resource has been exhausted (e.g. check quota).' } }), { status: 429 });
+    const urlStr = String(url);
+    const matchedModel = urlStr.match(/models\/([^:]+):generateContent/)?.[1];
+    if (simulateGeminiFail || (matchedModel && simulateGeminiModelsFail[matchedModel])) {
+      return new Response(JSON.stringify({ error: { code: 429, message: `Resource exhausted for ${matchedModel || 'gemini'}` } }), { status: 429 });
     }
     const request = JSON.parse(init.body);
     const text = request.generationConfig?.responseMimeType === 'application/json'
-      ? (codeFenced ? `\`\`\`json\n${JSON.stringify({ sections: modelScores.map(score => ({ score, evidence: 'Gemini evidence', feedback: 'Gemini feedback' })) })}\n\`\`\``
-                    : JSON.stringify({ sections: modelScores.map(score => ({ score, evidence: 'Gemini evidence', feedback: 'Gemini feedback' })) }))
+      ? (codeFenced ? `\`\`\`json\n${JSON.stringify({ sections: modelScores.map(score => ({ score, evidence: `Gemini ${matchedModel} evidence`, feedback: 'Specific improvement' })) })}\n\`\`\``
+                    : JSON.stringify({ sections: modelScores.map(score => ({ score, evidence: `Gemini ${matchedModel} evidence`, feedback: 'Specific improvement' })) }))
       : 'Execution preview';
     return Response.json({
       candidates: [{ content: { parts: [{ text }] } }],
+    });
+  }
+  if (String(url).includes('api.groq.com')) {
+    if (simulateGroqFail) {
+      return new Response(JSON.stringify({ error: { message: 'Groq free tier rate limit reached' } }), { status: 429 });
+    }
+    const request = JSON.parse(init.body);
+    const content = request.response_format
+      ? (codeFenced ? `\`\`\`json\n${JSON.stringify({ sections: modelScores.map(score => ({ score, evidence: `Groq ${request.model} evidence`, feedback: 'Specific improvement' })) })}\n\`\`\``
+                    : JSON.stringify({ sections: modelScores.map(score => ({ score, evidence: `Groq ${request.model} evidence`, feedback: 'Specific improvement' })) }))
+      : 'Execution preview';
+    return Response.json({
+      choices: [{ message: { content } }],
     });
   }
   if (String(url).includes('/responses')) {
@@ -682,4 +698,84 @@ test('gemini free-tier integration and graceful offline rule-based review fallba
   simulateGeminiFail = false;
   delete process.env.GEMINI_API_KEY;
   process.env.OPENAI_API_KEY = 'test-model';
+});
+
+test('automatic free AI model failover, bounded timeouts, circuit breaker cooldown, and provider health checks', async () => {
+  allowed = true;
+  modelScores = [15, 15, 20, 15, 10, 10, 5, 10];
+  const testPrompt = 'You are an expert tutor. Write a 5-step tutorial on Python for beginners with code examples. Must include setup and hello world. Do not use external libraries. Format as markdown.';
+
+  // 1. Health check returns unconfigured when keys are absent
+  delete process.env.GEMINI_API_KEY;
+  delete process.env.GROQ_API_KEY;
+  const healthUnconfigured = await call('provider_health');
+  assert.equal(healthUnconfigured.statusCode, 200);
+  assert.equal(healthUnconfigured.body.geminiConfigured, false);
+  assert.equal(healthUnconfigured.body.groqConfigured, false);
+  assert.equal(healthUnconfigured.body.offlineFallbackEngine, 'offline-rules');
+
+  // 2. Configure Gemini and Groq
+  process.env.GEMINI_API_KEY = 'test-gemini-key';
+  process.env.GROQ_API_KEY = 'test-groq-key';
+  delete process.env.OPENAI_API_KEY; // Ensure no paid/mock fallback interferes
+  simulateGeminiFail = false;
+  simulateGroqFail = false;
+  simulateGeminiModelsFail = {};
+  await call('provider_health&reset=1');
+
+  const healthConfigured = await call('provider_health');
+  assert.equal(healthConfigured.body.geminiConfigured, true);
+  assert.equal(healthConfigured.body.groqConfigured, true);
+
+  // 3. Normal path: Primary Gemini 3.5 Flash-Lite handles the request
+  const primaryResult = await call('analyze', { method: 'POST', body: { prompt: testPrompt, challenge: 0 } });
+  assert.equal(primaryResult.statusCode, 200);
+  assert.equal(primaryResult.body.mode, 'ai');
+  assert.equal(primaryResult.body.provider, 'gemini');
+  assert.equal(primaryResult.body.model, 'gemini-3.5-flash-lite');
+  assert.ok(primaryResult.body.sections[0].evidence.includes('gemini-3.5-flash-lite'));
+
+  // 4. Primary hits 429 rate limit -> Fast failover to Secondary (gemini-3.8-flash)
+  simulateGeminiModelsFail['gemini-3.5-flash-lite'] = true;
+  const secondaryResult = await call('analyze', { method: 'POST', body: { prompt: testPrompt, challenge: 0 } });
+  assert.equal(secondaryResult.statusCode, 200);
+  assert.equal(secondaryResult.body.mode, 'ai');
+  assert.equal(secondaryResult.body.provider, 'gemini');
+  assert.equal(secondaryResult.body.model, 'gemini-3.8-flash');
+  assert.ok(secondaryResult.body.sections[0].evidence.includes('gemini-3.8-flash'));
+
+  // 5. Cooldown check: Primary is now marked as cooling down in health check
+  const healthWithCooldown = await call('provider_health');
+  const primaryModelStatus = healthWithCooldown.body.models.find(m => m.model === 'gemini-3.5-flash-lite');
+  assert.equal(primaryModelStatus.status, 'cooldown');
+  assert.ok(primaryModelStatus.cooldownSeconds > 0);
+
+  // 6. Secondary also hits 429 and Tertiary hits 429 -> Fast failover to Groq Free Tier (llama-3.3-70b-versatile)
+  simulateGeminiModelsFail['gemini-3.8-flash'] = true;
+  simulateGeminiModelsFail['gemini-2.5-flash'] = true;
+  const groqResult = await call('analyze', { method: 'POST', body: { prompt: testPrompt, challenge: 0 } });
+  assert.equal(groqResult.statusCode, 200);
+  assert.equal(groqResult.body.mode, 'ai');
+  assert.equal(groqResult.body.provider, 'groq');
+  assert.equal(groqResult.body.model, 'llama-3.3-70b-versatile');
+  assert.ok(groqResult.body.sections[0].evidence.includes('llama-3.3-70b-versatile'));
+
+  // 7. All AI providers fail -> Immediate, graceful fallback to Offline Rule-Based Review
+  simulateGroqFail = true;
+  const strongPrompt = 'You are an experienced high school physics teacher. Your target audience is 10th-grade beginners. Write a comprehensive 5-step tutorial teaching how to install Python 3.12 on Windows. Must include: 1. Download installer, 2. Add to PATH checkbox, 3. Verify in command prompt. Do not use external third-party package managers. Here is the reference url: https://python.org/downloads. Format as a step-by-step markdown guide with code blocks. Write in an approachable, concise tone. Before outputting, verify that all 5 steps are clear and tested for beginners.';
+  const offlineResult = await call('analyze', { method: 'POST', body: { prompt: strongPrompt, challenge: 0 } });
+  assert.equal(offlineResult.statusCode, 200);
+  assert.equal(offlineResult.body.mode, 'rule-based');
+  assert.equal(offlineResult.body.provider, 'offline-rules');
+  assert.ok(offlineResult.body.label.includes('Rule-Based'));
+  assert.ok(offlineResult.body.score >= 70);
+  assert.ok(offlineResult.body.ticket);
+
+  // Reset test state
+  delete process.env.GEMINI_API_KEY;
+  delete process.env.GROQ_API_KEY;
+  process.env.OPENAI_API_KEY = 'test-model';
+  simulateGeminiFail = false;
+  simulateGroqFail = false;
+  simulateGeminiModelsFail = {};
 });

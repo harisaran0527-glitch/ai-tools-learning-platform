@@ -552,7 +552,12 @@ export default function PromptingPracticePage() {
               >
                 <div style={{ fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center", gap: "5px" }}>
                   <span>📋</span>
-                  <span>Rule-Based Review (Offline Mode)</span>
+                  <span>{analysis.label || "Rule-Based Review (Offline Mode)"}</span>
+                  {analysis.latencyMs !== undefined && (
+                    <span style={{ fontSize: "10px", opacity: 0.8, background: "rgba(245, 158, 11, 0.2)", padding: "1px 5px", borderRadius: "4px" }}>
+                      ⚡ {analysis.latencyMs}ms
+                    </span>
+                  )}
                 </div>
                 {analysis.notice && (
                   <div style={{ fontSize: "10.5px", color: "#fbbf24", marginTop: "3px" }}>
@@ -564,7 +569,7 @@ export default function PromptingPracticePage() {
               <div
                 style={{
                   marginTop: "8px",
-                  padding: "4px 8px",
+                  padding: "5px 10px",
                   background: "rgba(99, 102, 241, 0.15)",
                   border: "1px solid rgba(99, 102, 241, 0.3)",
                   borderRadius: "6px",
@@ -574,11 +579,17 @@ export default function PromptingPracticePage() {
                   display: "inline-flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  gap: "5px",
+                  gap: "6px",
+                  flexWrap: "wrap",
                 }}
               >
                 <span>✨</span>
-                <span>Evaluated by AI (Gemini Free-Tier)</span>
+                <span>{analysis.label || "Evaluated by AI"}</span>
+                {analysis.latencyMs !== undefined && (
+                  <span style={{ fontSize: "10px", color: "#a78bfa", background: "rgba(99, 102, 241, 0.25)", padding: "1px 5px", borderRadius: "4px" }}>
+                    ⚡ {analysis.latencyMs}ms
+                  </span>
+                )}
               </div>
             ) : null}
           </div>

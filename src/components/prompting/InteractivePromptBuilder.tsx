@@ -762,14 +762,24 @@ export const InteractivePromptBuilder: React.FC<InteractivePromptBuilderProps> =
                     </span>
                   </div>
                   {analysis.mode === 'rule-based' ? (
-                    <div style={{ marginTop: '6px', fontSize: '11px', color: '#fcd34d', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                    <div style={{ marginTop: '6px', fontSize: '11px', color: '#fcd34d', display: 'flex', alignItems: 'center', gap: '6px' }}>
                       <span>📋</span>
-                      <span style={{ fontWeight: 600 }}>Rule-Based Review (Offline Mode — Free Quota Protected)</span>
+                      <span style={{ fontWeight: 600 }}>{analysis.label || 'Rule-Based Review (Offline Mode — Free Quota Protected)'}</span>
+                      {analysis.latencyMs !== undefined && (
+                        <span style={{ fontSize: '10px', background: 'rgba(245, 158, 11, 0.2)', padding: '1px 5px', borderRadius: '4px' }}>
+                          ⚡ {analysis.latencyMs}ms
+                        </span>
+                      )}
                     </div>
                   ) : analysis.mode === 'ai' ? (
-                    <div style={{ marginTop: '6px', fontSize: '11px', color: '#c4b5fd', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                    <div style={{ marginTop: '6px', fontSize: '11px', color: '#c4b5fd', display: 'flex', alignItems: 'center', gap: '6px' }}>
                       <span>✨</span>
-                      <span style={{ fontWeight: 600 }}>Evaluated by AI (Gemini Free-Tier)</span>
+                      <span style={{ fontWeight: 600 }}>{analysis.label || 'Evaluated by AI'}</span>
+                      {analysis.latencyMs !== undefined && (
+                        <span style={{ fontSize: '10px', background: 'rgba(99, 102, 241, 0.25)', color: '#a78bfa', padding: '1px 5px', borderRadius: '4px' }}>
+                          ⚡ {analysis.latencyMs}ms
+                        </span>
+                      )}
                     </div>
                   ) : null}
                 </div>

@@ -65,6 +65,8 @@ export interface Analysis {
   ticket?: string;
   mode?: "ai" | "rule-based";
   provider?: string;
+  model?: string;
+  latencyMs?: number;
   label?: string;
   notice?: string;
   sections: {
