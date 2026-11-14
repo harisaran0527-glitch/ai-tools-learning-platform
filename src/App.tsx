@@ -4,6 +4,8 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { HomePage } from './pages/HomePage';
 import { refreshCatalog } from './lib/platform';
+import { ThemeProvider } from './context/ThemeContext';
+
 const AdminPage = lazy(() => import('./pages/AdminPage'));
 const PromptingPage = lazy(() => import('./pages/PromptingPage'));
 const PromptingPracticePage = lazy(() => import('./pages/PromptingPracticePage'));
@@ -52,11 +54,12 @@ export const App: React.FC = () => {
 
   return (
     <BrowserRouter>
-      <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: 'var(--bg)', color: 'var(--text)' }}>
-        <Navbar />
+      <ThemeProvider>
+        <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: 'var(--bg)', color: 'var(--text)', position: 'relative' }}>
+          <Navbar />
 
-        <div style={{ flexGrow: 1 }}>
-          <Suspense fallback={<LoadingFallback />}>
+          <div style={{ flexGrow: 1, position: 'relative', zIndex: 1 }}>
+            <Suspense fallback={<LoadingFallback />}>
             <Routes>
               <Route path="/admin/*" element={<AdminPage />} />
               <Route path="/prompting" element={<PromptingPage />} />
@@ -102,6 +105,7 @@ export const App: React.FC = () => {
 
         <Footer />
       </div>
+      </ThemeProvider>
     </BrowserRouter>
   );
 };

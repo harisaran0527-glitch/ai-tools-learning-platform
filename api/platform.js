@@ -319,6 +319,417 @@ export default async function handler(req, res) {
     if (JSON.stringify(body).length > 250000)
       fail(413, "Request is too large.");
     const method = req.method;
+    const VALID_THEME_TARGETS = ['global','home','catalog','tool_detail','prompting','prompting_practice','admin','admin_login','assessment'];
+    const VALID_BG_TYPES = ['solid','gradient','image','preset','cinematic','cosmic','transparent'];
+    const VALID_MOTION_TYPES = ['none','starfield','cosmic_galaxy','aurora_lights','floating_particles','neon_waves','animated_gradients','glowing_orbs','parallax','interactive_particles','video','lightweight_3d'];
+
+    function validateThemeConfig(theme) {
+      if (!theme || typeof theme !== 'object') fail(400, 'Invalid theme payload.');
+      if (typeof theme.name !== 'string' || !theme.name.trim() || theme.name.length > 120) fail(400, 'Enter a valid theme name.');
+      const target = theme.pageTarget || 'global';
+      if (!VALID_THEME_TARGETS.includes(target)) fail(400, 'Choose a valid page target.');
+      if (theme.bgType && !VALID_BG_TYPES.includes(theme.bgType)) fail(400, 'Unsupported background type.');
+      if (theme.motionType && !VALID_MOTION_TYPES.includes(theme.motionType)) fail(400, 'Unsupported motion type.');
+      if (theme.imageUrl) {
+        if (theme.imageUrl.startsWith('data:image/')) {
+          const match = theme.imageUrl.match(/^data:image\/(png|jpeg|jpg|webp);base64,[A-Za-z0-9+/=]+$/);
+          if (!match) fail(400, 'Invalid background image format.');
+          if (theme.imageUrl.length > 7 * 1024 * 1024) fail(400, 'Image exceeds 5MB limit.');
+        } else if (!theme.imageUrl.startsWith('/')) {
+          safeUrl(theme.imageUrl);
+        }
+      }
+      if (theme.videoUrl) {
+        if (theme.videoUrl.startsWith('data:video/')) {
+          const match = theme.videoUrl.match(/^data:video\/(mp4|webm);base64,[A-Za-z0-9+/=]+$/);
+          if (!match) fail(400, 'Invalid background video format.');
+          if (theme.videoUrl.length > 21 * 1024 * 1024) fail(400, 'Video exceeds 15MB limit.');
+        } else if (!theme.videoUrl.startsWith('/')) {
+          safeUrl(theme.videoUrl);
+        }
+      }
+      return theme;
+    }
+
+    if ((action === 'theme' || action === 'themes-live') && method === 'GET') {
+      if (!process.env.SUPABASE_URL) return res.json({});
+      try {
+        const rows = await db('academy_theme_bindings?select=page_target,theme_id,published_config,previous_config');
+        const target = url.searchParams.get('page');
+        if (target && !url.searchParams.get('all')) {
+          const match = rows?.find?.(b => b.page_target === target) || rows?.find?.(b => b.page_target === 'global');
+          return res.json(match?.published_config || null);
+        }
+        const map = {};
+        if (Array.isArray(rows)) {
+          for (const b of rows) {
+            map[b.page_target] = b.published_config;
+          }
+        }
+        return res.json(map);
+      } catch {
+        return res.json({});
+      }
+    }
+
+    if (['themes', 'save_theme', 'theme-save', 'publish_theme', 'theme-publish', 'rollback_theme', 'theme-reset', 'restore_theme', 'delete_theme', 'upload_theme_media', 'theme-upload', 'request_theme_upload', 'theme_upload_sign', 'verify_theme_media', 'theme_upload_verify'].includes(action)) {
+      const user = await admin(req);
+      if (action === 'themes' && method === 'GET') {
+        try {
+          const rows = await db('academy_themes?select=id,name,description,is_preset,page_target,status,config,scheduled_at,updated_at&order=updated_at.desc');
+          return res.json({ themes: rows?.map?.(r => r.config || r) || [] });
+        } catch {
+          fail(503, 'Theme storage is unavailable. Verify the theme database migration.');
+        }
+      }
+      if (method !== 'POST') fail(405, 'Use POST for theme changes.');
+      if (body.target && !VALID_THEME_TARGETS.includes(body.target)) fail(400, 'Invalid theme target.');
+      if (action === 'restore_theme') {
+        const target = body.target || 'global';
+        await db(`academy_theme_bindings?page_target=eq.${target}`, {method:'DELETE'});
+        return res.json({restored:true});
+      }
+
+      if (action === 'save_theme' || action === 'theme-save') {
+        const theme = validateThemeConfig(body.theme || body);
+        const id = theme.id || `theme-${Date.now()}`;
+        if (typeof id !== 'string' || !/^[a-zA-Z0-9-]{1,100}$/.test(id) || id.startsWith('preset-')) fail(400, 'Create a custom theme before saving a preset.');
+        await db('academy_themes?on_conflict=id', {
+          method: 'POST',
+          headers: { Prefer: 'resolution=merge-duplicates,return=minimal' },
+          body: JSON.stringify({
+            id,
+            name: theme.name,
+            description: theme.description || '',
+            is_preset: Boolean(theme.isPreset),
+            page_target: theme.pageTarget || 'global',
+            status: theme.status || 'draft',
+            config: theme,
+            scheduled_at: theme.scheduledAt || null,
+            updated_by: user.id,
+            updated_at: new Date().toISOString(),
+          }),
+        });
+        return res.json({ saved: true, id });
+      }
+
+      if (action === 'publish_theme' || action === 'theme-publish') {
+        const theme = validateThemeConfig(body.theme || body);
+        if (typeof theme.id !== 'string' || !/^[a-zA-Z0-9-]{1,100}$/.test(theme.id) || theme.id.startsWith('preset-')) fail(400, 'Create a custom theme before publishing a preset.');
+        const target = body.target || theme.pageTarget || 'global';
+        await db('academy_themes?on_conflict=id', {
+          method:'POST', headers:{Prefer:'resolution=merge-duplicates,return=minimal'},
+          body:JSON.stringify({id:theme.id,name:theme.name,page_target:target,status:'published',config:theme,updated_by:user.id,updated_at:new Date().toISOString()}),
+        });
+        let previous = null;
+        try {
+          const existing = await db(`academy_theme_bindings?page_target=eq.${encodeURIComponent(target)}&select=published_config&limit=1`);
+          previous = existing[0]?.published_config || null;
+        } catch {}
+        await db('academy_theme_bindings?on_conflict=page_target', {
+          method: 'POST',
+          headers: { Prefer: 'resolution=merge-duplicates,return=minimal' },
+          body: JSON.stringify({
+            page_target: target,
+            theme_id: theme.id || `theme-${Date.now()}`,
+            published_config: theme,
+            previous_config: previous,
+            published_by: user.id,
+            published_at: new Date().toISOString(),
+          }),
+        });
+        return res.json({ published: true, target });
+      }
+
+      if (action === 'rollback_theme' || action === 'theme-reset') {
+        const target = body.target || body.pageTarget || 'global';
+        let previous = null;
+        try {
+          const existing = await db(`academy_theme_bindings?page_target=eq.${encodeURIComponent(target)}&select=previous_config&limit=1`);
+          previous = existing[0]?.previous_config || null;
+        } catch {}
+        if (!previous) {
+          await db(`academy_theme_bindings?page_target=eq.${encodeURIComponent(target)}`, { method: 'DELETE' });
+          return res.json({ rolledBack: true, revertedToDefault: true });
+        }
+        await db('academy_theme_bindings?on_conflict=page_target', {
+          method: 'POST',
+          headers: { Prefer: 'resolution=merge-duplicates,return=minimal' },
+          body: JSON.stringify({
+            page_target: target,
+            theme_id: previous.id || 'reverted',
+            published_config: previous,
+            previous_config: null,
+            published_by: user.id,
+            published_at: new Date().toISOString(),
+          }),
+        });
+        return res.json({ rolledBack: true, restored: previous.name });
+      }
+
+      if (action === 'delete_theme') {
+        const id = body.id;
+        if (!id) fail(400, 'Theme ID is required.');
+        if (id.startsWith('preset-')) fail(400, 'Cannot delete built-in presets.');
+        await db(`academy_themes?id=eq.${encodeURIComponent(id)}`, { method: 'DELETE' });
+        return res.json({ deleted: true });
+      }
+
+      if (action === 'upload_theme_media' || action === 'theme-upload') {
+        const rawData = body.data || body.file || '';
+        const mimeType = String(body.mimeType || body.type || '').toLowerCase().trim();
+        const ALLOWED_MIME = ['image/jpeg', 'image/png', 'image/webp', 'video/mp4', 'video/webm'];
+        if (!ALLOWED_MIME.includes(mimeType)) fail(400, 'Unsupported media type. Allowed: JPG, PNG, WebP, MP4, WebM.');
+
+        let base64Data = rawData;
+        if (rawData.startsWith('data:')) {
+          const parts = rawData.split(',');
+          if (parts.length < 2) fail(400, 'Invalid data URI.');
+          base64Data = parts[1];
+        }
+
+        const buffer = Buffer.from(base64Data, 'base64');
+        if (!buffer || buffer.length === 0) fail(400, 'Empty or invalid media payload.');
+
+        const isVideo = mimeType.startsWith('video/');
+        const maxSize = isVideo ? 15 * 1024 * 1024 : 5 * 1024 * 1024;
+        if (buffer.length > maxSize) {
+          fail(400, `File size exceeds the ${isVideo ? '15MB' : '5MB'} limit.`);
+        }
+
+        let validMagic = false;
+        if (mimeType === 'image/jpeg') {
+          validMagic = buffer.length > 3 && buffer[0] === 0xFF && buffer[1] === 0xD8 && buffer[2] === 0xFF;
+        } else if (mimeType === 'image/png') {
+          validMagic = buffer.length > 8 && buffer[0] === 0x89 && buffer[1] === 0x50 && buffer[2] === 0x4E && buffer[3] === 0x47;
+        } else if (mimeType === 'image/webp') {
+          validMagic = buffer.length > 12 && buffer.subarray(0, 4).toString('ascii') === 'RIFF' && buffer.subarray(8, 12).toString('ascii') === 'WEBP';
+        } else if (mimeType === 'video/mp4') {
+          validMagic = buffer.length > 12 && buffer.subarray(4, 8).toString('ascii') === 'ftyp';
+        } else if (mimeType === 'video/webm') {
+          validMagic = buffer.length > 4 && buffer[0] === 0x1A && buffer[1] === 0x45 && buffer[2] === 0xDF && buffer[3] === 0xA3;
+        }
+
+        if (!validMagic) {
+          fail(400, 'File content does not match the specified media type.');
+        }
+
+        const extMap = {
+          'image/jpeg': 'jpg',
+          'image/png': 'png',
+          'image/webp': 'webp',
+          'video/mp4': 'mp4',
+          'video/webm': 'webm',
+        };
+        const ext = extMap[mimeType] || 'bin';
+        const fileId = `${Date.now()}-${randomUUID().slice(0, 8)}.${ext}`;
+
+        if (process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY) {
+          try {
+            const key = config('SUPABASE_SERVICE_ROLE_KEY');
+            const storageRes = await fetch(`${config('SUPABASE_URL')}/storage/v1/object/theme-assets/${fileId}`, {
+              method: 'POST',
+              headers: {
+                apikey: key,
+                Authorization: `Bearer ${key}`,
+                'Content-Type': mimeType,
+                'x-upsert': 'true',
+              },
+              body: buffer,
+            });
+
+            if (storageRes.ok) {
+              const publicUrl = `${config('SUPABASE_URL')}/storage/v1/object/public/theme-assets/${fileId}`;
+              return res.json({
+                uploaded: true,
+                url: publicUrl,
+                fileName: fileId,
+                mimeType,
+                size: buffer.length,
+              });
+            }
+          } catch {
+            // Fall through to fallback
+          }
+        }
+
+        const fallbackUrl = `data:${mimeType};base64,${base64Data}`;
+        return res.json({
+          uploaded: true,
+          url: fallbackUrl,
+          fileName: fileId,
+          mimeType,
+          size: buffer.length,
+        });
+      }
+
+      if (action === 'request_theme_upload' || action === 'theme_upload_sign') {
+        const mimeType = String(body.mimeType || body.type || '').toLowerCase().trim();
+        const ALLOWED_MIME = ['image/jpeg', 'image/png', 'image/webp', 'video/mp4', 'video/webm'];
+        if (!ALLOWED_MIME.includes(mimeType)) fail(400, 'Unsupported media type. Allowed: JPG, PNG, WebP, MP4, WebM.');
+
+        const isVideo = mimeType.startsWith('video/');
+        const maxSize = isVideo ? 15 * 1024 * 1024 : 5 * 1024 * 1024;
+        const size = Number(body.size);
+        if (!Number.isFinite(size) || size <= 0) fail(400, 'Provide a valid file size.');
+        if (size > maxSize) fail(400, `File size exceeds the ${isVideo ? '15MB' : '5MB'} limit.`);
+
+        const extMap = {
+          'image/jpeg': 'jpg',
+          'image/png': 'png',
+          'image/webp': 'webp',
+          'video/mp4': 'mp4',
+          'video/webm': 'webm',
+        };
+        const ext = extMap[mimeType] || 'bin';
+        const assetPath = `theme-${Date.now()}-${randomUUID().slice(0, 8)}.${ext}`;
+
+        const key = config('SUPABASE_SERVICE_ROLE_KEY');
+        const signUrl = `${config('SUPABASE_URL')}/storage/v1/object/upload/sign/theme-assets/${assetPath}`;
+        const signRes = await fetch(signUrl, {
+          method: 'POST',
+          headers: {
+            apikey: key,
+            Authorization: `Bearer ${key}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({}),
+        });
+
+        if (!signRes.ok) {
+          fail(502, 'Unable to generate signed upload URL from storage service.');
+        }
+
+        const signData = await signRes.json();
+        const rawUrl = signData.url || '';
+        const uploadUrl = rawUrl.startsWith('http')
+          ? rawUrl
+          : `${config('SUPABASE_URL')}/storage/v1${rawUrl.startsWith('/') ? '' : '/'}${rawUrl}`;
+
+        const tokenPayload = {
+          path: assetPath,
+          mimeType,
+          maxSize,
+          adminId: user.id,
+          expires: Date.now() + 600000,
+        };
+        const tokenData = Buffer.from(JSON.stringify(tokenPayload)).toString('base64url');
+        const tokenMac = createHmac('sha256', config('PRACTICE_TOKEN_SECRET')).update(tokenData).digest('base64url');
+        const ticket = `${tokenData}.${tokenMac}`;
+
+        const publicUrl = `${config('SUPABASE_URL')}/storage/v1/object/public/theme-assets/${assetPath}`;
+
+        return res.json({
+          uploadUrl,
+          path: assetPath,
+          token: ticket,
+          mimeType,
+          maxSize,
+          publicUrl,
+        });
+      }
+
+      if (action === 'verify_theme_media' || action === 'theme_upload_verify') {
+        const ticketStr = String(body.token || '');
+        const [tokenData, tokenMac] = ticketStr.split('.');
+        if (!tokenData || !tokenMac) fail(403, 'Invalid upload ticket.');
+        const expectedMac = createHmac('sha256', config('PRACTICE_TOKEN_SECRET')).update(tokenData).digest('base64url');
+        if (tokenMac.length !== expectedMac.length || !timingSafeEqual(Buffer.from(tokenMac), Buffer.from(expectedMac))) {
+          fail(403, 'Invalid upload ticket signature.');
+        }
+
+        let payload;
+        try {
+          payload = JSON.parse(Buffer.from(tokenData, 'base64url').toString());
+        } catch {
+          fail(403, 'Invalid upload ticket payload.');
+        }
+
+        if (payload.expires < Date.now()) {
+          fail(403, 'Upload authorization ticket has expired.');
+        }
+
+        const assetPath = String(body.path || '');
+        if (!assetPath || assetPath !== payload.path) {
+          fail(403, 'Upload asset path mismatch.');
+        }
+        if (body.mimeType && body.mimeType !== payload.mimeType) {
+          fail(403, 'Upload asset MIME mismatch.');
+        }
+
+        const key = config('SUPABASE_SERVICE_ROLE_KEY');
+
+        const cleanUpStorage = async () => {
+          try {
+            await fetch(`${config('SUPABASE_URL')}/storage/v1/object/theme-assets`, {
+              method: 'DELETE',
+              headers: {
+                apikey: key,
+                Authorization: `Bearer ${key}`,
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({ prefixes: [assetPath] }),
+            });
+          } catch {
+            // best-effort cleanup
+          }
+        };
+
+        const checkRes = await fetch(`${config('SUPABASE_URL')}/storage/v1/object/theme-assets/${assetPath}`, {
+          headers: {
+            apikey: key,
+            Authorization: `Bearer ${key}`,
+            Range: 'bytes=0-8191',
+          },
+        });
+
+        if (!checkRes.ok) {
+          fail(404, 'Uploaded asset not found in storage. Ensure direct upload completed.');
+        }
+
+        const contentRange = checkRes.headers.get('content-range') || '';
+        const rangeMatch = contentRange.match(/\/(\d+)$/);
+        const totalSize = rangeMatch ? parseInt(rangeMatch[1], 10) : parseInt(checkRes.headers.get('content-length') || '0', 10);
+
+        if (totalSize > payload.maxSize) {
+          await cleanUpStorage();
+          fail(400, `Uploaded file exceeds the allowed ${(payload.maxSize / (1024 * 1024)).toFixed(0)}MB limit. File deleted.`);
+        }
+
+        const chunkBuffer = Buffer.from(await checkRes.arrayBuffer());
+        if (chunkBuffer.length === 0) {
+          await cleanUpStorage();
+          fail(400, 'Uploaded file is empty. File deleted.');
+        }
+
+        let validMagic = false;
+        if (payload.mimeType === 'image/jpeg') {
+          validMagic = chunkBuffer.length > 3 && chunkBuffer[0] === 0xFF && chunkBuffer[1] === 0xD8 && chunkBuffer[2] === 0xFF;
+        } else if (payload.mimeType === 'image/png') {
+          validMagic = chunkBuffer.length > 8 && chunkBuffer[0] === 0x89 && chunkBuffer[1] === 0x50 && chunkBuffer[2] === 0x4E && chunkBuffer[3] === 0x47;
+        } else if (payload.mimeType === 'image/webp') {
+          validMagic = chunkBuffer.length > 12 && chunkBuffer.subarray(0, 4).toString('ascii') === 'RIFF' && chunkBuffer.subarray(8, 12).toString('ascii') === 'WEBP';
+        } else if (payload.mimeType === 'video/mp4') {
+          validMagic = chunkBuffer.length > 12 && chunkBuffer.subarray(4, 8).toString('ascii') === 'ftyp';
+        } else if (payload.mimeType === 'video/webm') {
+          validMagic = chunkBuffer.length > 4 && chunkBuffer[0] === 0x1A && chunkBuffer[1] === 0x45 && chunkBuffer[2] === 0xDF && chunkBuffer[3] === 0xA3;
+        }
+
+        if (!validMagic) {
+          await cleanUpStorage();
+          fail(400, 'File content does not match the specified media type. File deleted from storage.');
+        }
+
+        const finalUrl = `${config('SUPABASE_URL')}/storage/v1/object/public/theme-assets/${assetPath}`;
+        return res.json({
+          verified: true,
+          url: finalUrl,
+          path: assetPath,
+          mimeType: payload.mimeType,
+          size: totalSize,
+        });
+      }
+    }
     if (action === "login" && method === "POST") {
       const response = await fetch(
         `${config("SUPABASE_URL")}/auth/v1/token?grant_type=password`,
@@ -384,7 +795,9 @@ export default async function handler(req, res) {
         )
       )
         fail(400, "Invalid assessment draft question.");
-      const complete = questions.every(validQuestion);
+      if (body.publish !== undefined && typeof body.publish !== 'boolean') fail(400, 'Invalid publish flag.');
+      if (body.publish === true && !questions.every(validQuestion)) fail(400, 'Complete all 50 questions, four options and correct answers before publishing.');
+      const complete = body.publish !== false && questions.every(validQuestion);
       const existing = await db(
         `academy_tools?slug=eq.${encodeURIComponent(tool.slug)}&select=tool,questions&limit=1`,
       );
@@ -419,9 +832,9 @@ export default async function handler(req, res) {
     if (action === "draft" && method === "GET") {
       await admin(req);
       const rows = await db(
-        `academy_tools?slug=eq.${encodeURIComponent(slug)}&select=draft&limit=1`,
+        `academy_tools?slug=eq.${encodeURIComponent(slug)}&select=draft,questions&limit=1`,
       );
-      return res.json(rows[0]?.draft || Array(50).fill(null));
+      return res.json(rows[0]?.draft || rows[0]?.questions || Array(50).fill(null));
     }
     if (action === "assessment" && method === "GET") {
       if (!process.env.SUPABASE_URL) return res.json(null);

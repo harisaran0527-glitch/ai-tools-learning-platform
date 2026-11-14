@@ -1,4 +1,4 @@
-import { FormEvent, useEffect, useState, useRef } from "react";
+import { FormEvent, useEffect, useState, useRef, useMemo, lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowLeft,
@@ -32,6 +32,7 @@ import {
   Check,
   Database,
   KeyRound,
+  Palette,
 } from "lucide-react";
 import { api, refreshCatalog, getCatalogRevision } from "../lib/platform";
 import { catalogSummaries } from "../data/catalog/summaryData";
@@ -39,6 +40,7 @@ import { loadToolBySlug } from "../data/catalog/toolLoaders";
 import { AITool } from "../types/tool";
 import { CATEGORIES } from "../data/categories";
 import { ToolLogo } from "../components/ToolLogo";
+const ThemeStudio = lazy(() => import('../components/ThemeStudio'));
 
 type DraftQuestion = {
   question: string;
@@ -101,8 +103,10 @@ export default function AdminPage() {
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
 
-  // Views: dashboard, tools, assessments, categories, users, settings
-  const [view, setView] = useState<"dashboard" | "tools" | "assessments" | "categories" | "users" | "settings">("dashboard");
+  // Views: dashboard, tools, assessments, categories, appearance, users, settings
+  const [view, setView] = useState<"dashboard" | "tools" | "assessments" | "categories" | "appearance" | "users" | "settings">("dashboard");
+  const editRequest = useRef(0);
+  useEffect(() => { editRequest.current++; }, [view, token]);
   const [activeTabInEditor, setActiveTabInEditor] = useState<"info" | "assessment">("info");
 
   // Filtering & Pagination
@@ -122,12 +126,12 @@ export default function AdminPage() {
   // Logo upload ref
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  const categories = [
+  const categories = useMemo(() => [
     ...new Set([
       ...CATEGORIES.map((c) => c.name),
       ...catalogSummaries.map((t) => t.category),
     ]),
-  ].sort();
+  ].sort(), []);
 
   useEffect(() => {
     if (!dirty) return;
@@ -152,7 +156,6 @@ export default function AdminPage() {
         email,
         password,
       });
-      await refreshCatalog();
       setToken(session.token);
       setPassword("");
       setView("dashboard");
@@ -165,23 +168,26 @@ export default function AdminPage() {
 
   // Load a tool for editing
   async function editTool(slug: string, targetTab: "info" | "assessment" = "info") {
+    if (busy) return;
     if (!discard()) return;
+    const request = ++editRequest.current;
     setBusy(true);
     setError("");
     setMessage("");
     try {
-      await api("session", undefined, token);
-      const loaded = await loadToolBySlug(slug);
+      const [loaded, draft] = await Promise.all([
+        loadToolBySlug(slug), api<Slot[]>("draft", undefined, token, slug),
+      ]);
+      if (request !== editRequest.current) return;
       if (!loaded) throw new Error("Tool record could not be loaded.");
-      const draft = await api<Slot[]>("draft", undefined, token, slug);
       setTool(structuredClone(loaded));
-      setQuestions(draft.length === 50 ? draft : Array(50).fill(null));
+      setQuestions(Array.from({ length: 50 }, (_, i) => draft[i] || null));
       setQuestionIndex(0);
       setIsNew(false);
       setDirty(false);
       setActiveTabInEditor(targetTab);
     } catch (e) {
-      setError((e as Error).message);
+      if (request === editRequest.current) setError((e as Error).message);
     } finally {
       setBusy(false);
     }
@@ -190,6 +196,7 @@ export default function AdminPage() {
   // Create new tool
   function addNewTool(selectedCategory = categories[0] || "Chatbots / Assistants") {
     if (!discard()) return;
+    editRequest.current++;
     setTool(blankTool(selectedCategory));
     setIsNew(true);
     setQuestions(Array(50).fill(null));
@@ -215,9 +222,16 @@ export default function AdminPage() {
   }
 
   // Save tool & assessment draft/publish
-  async function handleSave(event?: FormEvent) {
+  async function handleSave(event?: FormEvent, publish = false) {
     if (event) event.preventDefault();
-    if (!tool) return;
+    if (!tool || busy) return;
+    if (publish && !questions.every(valid)) {
+      const index = questions.findIndex(q => !valid(q));
+      setQuestionIndex(index);
+      setActiveTabInEditor('assessment');
+      setError(`Question ${index + 1}: enter question text, all four options and select the correct answer before publishing.`);
+      return;
+    }
     if (
       isNew &&
       catalogSummaries.some((t) => t.slug === tool.slug || t.id === tool.id)
@@ -237,10 +251,13 @@ export default function AdminPage() {
             manualAssessmentOnly: isNew || tool.manualAssessmentOnly,
           },
           questions,
+          publish,
         },
         token
       );
-      await refreshCatalog();
+      const index = catalogSummaries.findIndex(t => t.slug === tool.slug);
+      if (index < 0) catalogSummaries.push({ ...tool });
+      else catalogSummaries[index] = { ...catalogSummaries[index], ...tool };
       setRefreshKey((n) => n + 1);
       setDirty(false);
       setIsNew(false);
@@ -525,8 +542,8 @@ export default function AdminPage() {
             className={`admin-nav-item ${view === "assessments" && !tool ? "active" : ""}`}
             onClick={() => {
               if (discard()) {
-                const defaultSlug = catalogSummaries[0]?.slug || "chatgpt";
-                editTool(defaultSlug, "assessment");
+                setTool(undefined);
+                setDirty(false);
                 setView("assessments");
               }
             }}
@@ -543,6 +560,20 @@ export default function AdminPage() {
             <Sparkles size={16} />
             <span>Prompting</span>
           </Link>
+
+          <button
+            className={`admin-nav-item ${view === "appearance" && !tool ? "active" : ""}`}
+            onClick={() => {
+              if (discard()) {
+                setTool(undefined);
+                setDirty(false);
+                setView("appearance");
+              }
+            }}
+          >
+            <Palette size={16} />
+            <span>Appearance</span>
+          </button>
 
           <button
             className={`admin-nav-item ${view === "users" && !tool ? "active" : ""}`}
@@ -599,6 +630,7 @@ export default function AdminPage() {
       {/* Main Content Area */}
       <div className="admin-content">
         {statusBanner}
+        {busy && <p role="status" aria-live="polite">Loading / saving…</p>}
 
         {/* ------------------------------------------------------------- */}
         {/* CASE A: EDITING / CREATING A TOOL OR ASSESSMENT (SCREEN 4)     */}
@@ -697,7 +729,7 @@ export default function AdminPage() {
 
                 <button
                   type="button"
-                  onClick={() => handleSave()}
+                  onClick={() => handleSave(undefined, true)}
                   disabled={busy}
                   className="btn-compact-primary"
                 >
@@ -998,6 +1030,7 @@ export default function AdminPage() {
                   <div>
                     <label className="assessment-field-label">Question Text</label>
                     <textarea
+                      aria-label="Question Text"
                       value={currentQuestion.question}
                       onChange={(e) => updateQuestion({ question: e.target.value })}
                       placeholder="e.g., What is the primary use of ChatGPT?"
@@ -1020,6 +1053,7 @@ export default function AdminPage() {
                               ),
                             })
                           }
+                          aria-label={`Option ${letter}`}
                           placeholder={`Option ${letter}`}
                           className="option-field"
                         />
@@ -1032,6 +1066,7 @@ export default function AdminPage() {
                     <div>
                       <label className="assessment-field-label">Correct Answer</label>
                       <select
+                        aria-label="Correct Answer"
                         value={currentQuestion.correctAnswer}
                         onChange={(e) =>
                           updateQuestion({ correctAnswer: Number(e.target.value) })
@@ -1103,6 +1138,7 @@ export default function AdminPage() {
                         type="button"
                         onClick={() => handleSave()}
                         className="btn-compact-primary"
+                        disabled={busy}
                       >
                         <Save size={13} />
                         <span>Save</span>
@@ -1335,6 +1371,12 @@ export default function AdminPage() {
                 </div>
               </div>
             </div>
+          </div>
+        ) : view === "appearance" ? (
+          <div>
+            <Suspense fallback={<p role="status" aria-live="polite">Loading Theme Studio…</p>}>
+              <ThemeStudio token={token} />
+            </Suspense>
           </div>
         ) : view === "settings" ? (
           /* Settings View */

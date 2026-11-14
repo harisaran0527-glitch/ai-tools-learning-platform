@@ -2,14 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Sparkles, ArrowRight, Zap, Layers, Compass, BookOpen } from 'lucide-react';
 import { catalogSummaries } from '../data/catalog/summaryData';
+import { useTheme } from '../context/ThemeContext';
 
 export const Hero: React.FC = () => {
+  const { currentTheme } = useTheme();
+  const isCustomizedTheme = currentTheme && currentTheme.id !== 'preset-original-default' && currentTheme.bgType !== 'preset';
   const totalTools = catalogSummaries.length || 768;
   const totalCategories = new Set(catalogSummaries.map(t => t.category)).size || 15;
 
   return (
-    <section className="hero-reference">
-      <div className="hero-reference-overlay" />
+    <section className="hero-reference" style={isCustomizedTheme ? { background: 'transparent' } : undefined}>
+      <div className="hero-reference-overlay" style={isCustomizedTheme ? { display: 'none' } : undefined} />
 
       <div className="hero-reference-content">
         <div className="hero-badge-pill">
